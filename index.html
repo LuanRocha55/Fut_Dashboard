@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planilha Tática</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Biblioteca para Exportação de Imagem -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+
+<body>
+
+    <aside class="sidebar" id="sidebar">
+        <div id="teamView" style="display: flex; flex-direction: column;">
+            <section class="control-group">
+                <h4>Formação Tática</h4>
+                <div class="custom-select-wrapper" style="margin-top: 10px;">
+                    <select id="formationSelect" title="Dica: Se fizer ajustes manuais no campo, use o botão 'Salvar Tática' antes de trocar a formação!">
+                        <option value="4-2-3-1">4-2-3-1 Classic</option>
+                        <option value="4-3-3">4-3-3 Offensive</option>
+                        <option value="4-4-2">4-4-2 Classic</option>
+                        <option value="4-1-4-1">4-1-4-1 Balanced</option>
+                        <option value="3-5-2">3-5-2 Offensive</option>
+                        <option value="3-4-3">3-4-3 Balanced</option>
+                        <option value="4-2-4">4-2-4 Ultra Offensive</option>
+                        <option value="5-3-2">5-3-2 Defensive</option>
+                        <option value="4-3-2-1">4-3-2-1 Christmas Tree</option>
+                        <option value="3-4-2-1">3-4-2-1 Modern</option>
+                        <option value="5-4-1">5-4-1 Park the Bus</option>
+                        <option value="4-3-1-2">4-3-1-2 Narrow</option>
+                        <option value="4-2-2-2">4-2-2-2 Magic Box</option>
+                    </select>
+                </div>
+                <div class="button-grid">
+                    <button id="toggleViewBtn" class="btn-secondary">Ver Lista</button>
+                    <button id="autoFillBtn" class="btn-primary">Auto-Escalar</button>
+                    <button id="saveTacticBtn" class="btn-secondary" title="Salva a prancheta atual como uma nova opção">Salvar Tática</button>
+                    <button id="exportImageBtn" class="btn-secondary">Exportar PNG</button>
+                    <button id="exportJsonBtn" class="btn-secondary">Salvar JSON</button>
+                    <button id="resetBtn" class="btn-danger">Resetar Dados</button>
+                </div>
+            </section>
+
+            <!-- Painel de Estatísticas -->
+            <section class="stats-container">
+                <h4 class="stats-title">Análise do Time</h4>
+
+                <!-- Gráfico de Equilíbrio de Atributos do Elenco -->
+                <canvas id="teamRadarChart" width="180" height="180"
+                    style="display: block; margin: 5px auto 10px auto;"></canvas>
+
+                <div class="stats-row">
+                    <div class="stat-item center" style="grid-column: 1 / span 2; margin-bottom: 5px;">
+                        <span class="stat-label">NÍVEL DA EQUIPE</span>
+                        <span class="stat-value" id="teamStars" style="color: var(--warning); font-size: 1.5rem; letter-spacing: 2px;">☆☆☆☆☆</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">OVERALL MÉDIO</span>
+                        <span class="stat-value" id="teamOverall">0.0</span>
+                    </div>
+                    <div class="stat-item right">
+                        <span class="stat-label">MÉDIA DE IDADE</span>
+                        <span class="stat-value" id="teamAge">0.0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">SINTONIA TÁTICA</span>
+                        <span class="stat-value" id="teamFitness" style="color: #e0e0e0;">0/11</span>
+                    </div>
+                    <div class="stat-item right">
+                        <span class="stat-label">PÉ DOMINANTE</span>
+                        <span class="stat-value" id="teamFoot"
+                            style="font-size: 1.1rem; color: #a0a0a0; padding-top: 6px;">--</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">FORÇA OFENSIVA</span>
+                        <span class="stat-value" id="teamAtk">0</span>
+                    </div>
+                    <div class="stat-item right">
+                        <span class="stat-label">SOLIDEZ DEFENSIVA</span>
+                        <span class="stat-value" id="teamDef">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">ESTRANGEIROS</span>
+                        <span class="stat-value" id="teamForeigners" style="color: #e0e0e0;">0</span>
+                    </div>
+                    <div class="stat-item right" style="overflow: hidden;">
+                        <span class="stat-label">ESTILO PREDOMINANTE</span>
+                        <span class="stat-value" id="teamPlaystyle"
+                            style="font-size: 0.8rem; padding-top: 10px; color: var(--accent); white-space: nowrap; text-overflow: ellipsis; overflow: hidden;">--</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="playerView" class="view-mode"
+            style="display: none; flex-direction: column; flex: 1; overflow-y: auto; padding-right: 5px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <h4 style="margin: 0; color: var(--accent);">Detalhes do Atleta</h4>
+                    <span id="toggleEditBtn" class="badge-btn badge-btn-dark" title="Alternar Edição">EDITAR</span>
+                </div>
+                <span id="closeMenuBtn"
+                    style="cursor: pointer; font-size: 1.5rem; line-height: 1; color: var(--danger);">&times;</span>
+            </div>
+
+            <div class="info-item" style="margin-bottom: 15px;">
+                <label>NOME DO JOGADOR</label>
+                <span id="viewName" class="view-el"
+                    style="font-size: 1.3rem; color: var(--accent); font-weight: 900;"></span>
+                <input type="text" id="editNameInput" class="edit-el"
+                    style="font-size: 1.1rem; font-weight: bold; color: var(--accent);">
+            </div>
+
+            <div style="margin-bottom: 15px;" class="view-el">
+                <label style="color: var(--danger); font-size: 0.65rem; font-weight: bold;">COMPARAR COM: (Gráfico
+                    Vermelho)</label>
+                <select id="compareSelect"
+                    style="margin-top: 5px; padding: 8px; border-color: rgba(255, 77, 77, 0.3); font-size: 0.8rem;">
+                    <option value="">-- Selecione um jogador --</option>
+                </select>
+            </div>
+
+            <div class="view-el">
+                <!-- Gráfico de Radar de Atributos -->
+                <canvas id="radarChart" width="200" height="200" style="display: block; margin: 0 auto;"></canvas>
+
+                <!-- Números das Habilidades (Injetados via JS) -->
+                <div id="statsNumbers" class="stats-compare-container"></div>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <label>NOTA GERAL</label>
+                    <span id="viewRating" class="view-el" style="font-size: 1.1rem; font-weight: 900;"></span>
+                    <input type="number" id="editRatingInput" class="edit-el" disabled
+                        title="Calculado automaticamente a partir dos atributos"
+                        style="opacity: 0.3; cursor: not-allowed;">
+                </div>
+                <div class="info-item">
+                    <label>IDADE</label>
+                    <span id="viewAge" class="view-el"></span>
+                    <input type="number" id="editAgeInput" class="edit-el" min="15" max="50">
+                </div>
+                <div class="info-item">
+                    <label>PÉ PREFERIDO</label>
+                    <span id="viewFoot" class="view-el"></span>
+                    <select id="editFootInput" class="edit-el">
+                        <option value="Destro">Destro</option>
+                        <option value="Canhoto">Canhoto</option>
+                        <option value="Ambidestro">Ambidestro</option>
+                    </select>
+                </div>
+                <div class="info-item">
+                    <label>PAÍS</label>
+                    <span id="viewNation" class="view-el"></span>
+                    <select id="editNationInput" class="edit-el">
+                        <option value="BR">BR</option>
+                        <option value="AR">AR</option>
+                        <option value="UY">UY</option>
+                        <option value="CO">CO</option>
+                        <option value="PT">PT</option>
+                        <option value="CL">CL</option>
+                        <option value="INT">INT</option>
+                    </select>
+                </div>
+                <div class="info-item" style="grid-column: 1 / span 2;">
+                    <label>STATUS DA PARTIDA (LIVE EVENTS)</label>
+                    <span id="viewMatchStatus" class="view-el" style="font-weight: bold; color: #aaa;">Apto para Jogo</span>
+                    <select id="editMatchStatusInput" class="edit-el">
+                        <option value="normal">Apto para Jogo</option>
+                        <option value="yellow">Cartão Amarelo (Risco)</option>
+                        <option value="red">Cartão Vermelho (Suspenso)</option>
+                        <option value="injury">Lesionado (Indisponível)</option>
+                    </select>
+                </div>
+                <div class="info-item" style="grid-column: 1 / span 2;">
+                    <label>CONDIÇÃO / MOMENTO</label>
+                    <span id="viewForm" class="view-el" style="font-weight: bold;"></span>
+                    <select id="editFormInput" class="edit-el">
+                        <option value="2">➔ Excelente (Seta pra cima)</option>
+                        <option value="1">➔ Boa (Diagonal cima)</option>
+                        <option value="0">➔ Normal (Direita)</option>
+                        <option value="-1">➔ Ruim (Diagonal baixo)</option>
+                        <option value="-2">➔ Péssima (Seta pra baixo)</option>
+                    </select>
+                </div>
+                <div class="info-item edit-el" style="grid-column: 1 / span 2;">
+                    <label>ATRIBUTOS (DESLIZE PARA EDITAR)</label>
+                    <div id="editSlidersContainer"
+                        style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;"></div>
+                </div>
+                <div class="info-item" style="grid-column: 1 / span 2;">
+                    <label>ESTILO DE JOGO</label>
+                    <span id="viewPlaystyle" class="view-el" style="color: var(--warning);"></span>
+                    <select id="editPlaystyleInput" class="edit-el"></select>
+                </div>
+            </div>
+
+            <div id="viewCaptain" class="view-el"
+                style="margin-top: 10px; color: var(--warning); font-size: 0.8rem; font-weight: bold; text-align: center;">
+            </div>
+
+            <label class="edit-el"
+                style="display: flex; align-items: center; gap: 8px; margin-top: 15px; margin-bottom: 5px; cursor: pointer; background: #111; padding: 10px; border-radius: 8px; border: 1px solid #222;">
+                <input type="checkbox" id="editCaptainInput" style="width: auto; margin: 0;">
+                <strong style="color: var(--warning); font-size: 0.75rem;">MARCAR COMO CAPITÃO</strong>
+            </label>
+
+            <div class="info-item" style="margin-top: 15px; margin-bottom: 20px;">
+                <label>POSIÇÕES <span class="edit-el" style="color: var(--accent); display: inline;">(Clique para
+                        Editar)</span></label>
+                <div id="editPositions" class="positions-container" style="margin-top: 8px;"></div>
+            </div>
+
+            <button id="saveBtn" class="edit-el btn-primary" style="margin-top: auto;">SALVAR ALTERAÇÕES</button>
+            <button id="deletePlayerBtn" class="edit-el btn-danger" style="margin-top: 10px; margin-bottom: 20px; border-color: var(--danger); color: var(--danger);">DISPENSAR ATLETA (VENDER)</button>
+        </div>
+    </aside>
+
+    <div class="main-wrapper">
+        <main class="main-content">
+
+            <!-- Modo Tabela (Lista Completa) -->
+            <div id="tableView" class="table-view" style="display: none;">
+                <!-- Destaques do Elenco -->
+                <div id="squadHighlights" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-bottom: 20px;"></div>
+                
+                <!-- Barra de Ferramentas da Tabela -->
+                <div style="display: flex; gap: 15px; margin-bottom: 15px; flex-wrap: wrap;">
+                    <input type="text" id="tableSearchInput" placeholder="Buscar jogador por nome..."
+                        style="flex: 1; padding: 10px; background: #1a1a1a; border: 1px solid #333; color: white; border-radius: 6px; outline: none;">
+                    <select id="tablePosFilter"
+                        style="width: 200px; padding: 10px; background: #1a1a1a; border: 1px solid #333; color: white; border-radius: 6px; outline: none;">
+                        <option value="">Todas as Posições</option>
+                        <option value="GL">GL</option>
+                        <option value="ZE">ZE</option>
+                        <option value="ZD">ZD</option>
+                        <option value="LE">LE</option>
+                        <option value="LD">LD</option>
+                        <option value="VOL">VOL</option>
+                        <option value="MC">MC</option>
+                        <option value="MEI">MEI</option>
+                        <option value="ME">ME</option>
+                        <option value="MD">MD</option>
+                        <option value="PE">PE</option>
+                        <option value="PD">PD</option>
+                        <option value="SA">SA</option>
+                        <option value="CA">CA</option>
+                    </select>
+                    <button id="addPlayerBtn" class="btn-primary" style="width: auto; margin-top: 0; padding: 10px 20px; font-size: 0.7rem;">+ NOVO ATLETA</button>
+                </div>
+                <table class="roster-table">
+                    <thead>
+                        <tr>
+                            <th data-sort="pos" class="sortable">Pos<span class="sort-icon"></span></th>
+                            <th data-sort="name" class="sortable">Nome do Jogador<span class="sort-icon"></span></th>
+                            <th data-sort="form" class="sortable" style="text-align: center;">Cond<span
+                                    class="sort-icon"></span></th>
+                            <th data-sort="rating" class="sortable desc">OVR<span class="sort-icon"></span></th>
+                            <th data-sort="age" class="sortable">Idade<span class="sort-icon"></span></th>
+                            <th data-sort="foot" class="sortable">Pé<span class="sort-icon"></span></th>
+                            <th data-sort="nationality" class="sortable">Nac<span class="sort-icon"></span></th>
+                            <th data-sort="playstyle" class="sortable">Estilo de Jogo<span class="sort-icon"></span>
+                            </th>
+                            <th data-sort="status" class="sortable">Status<span class="sort-icon"></span></th>
+                        </tr>
+                    </thead>
+                    <tbody id="rosterTableBody"></tbody>
+                </table>
+            </div>
+
+            <div class="pitch" id="pitch">
+                <!-- Sistema de Entrosamento (Linhas SVG) -->
+                <svg id="chemistryLines"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none;"></svg>
+
+                <!-- Linhas do Campo Desenhadas em CSS -->
+                <div class="pitch-lines">
+                    <div class="half-way-line"></div>
+                    <div class="center-circle"></div>
+                    <div class="center-spot"></div>
+                    <div class="penalty-box left">
+                        <div class="penalty-arc"></div>
+                        <div class="goal-box"></div>
+                    </div>
+                    <div class="penalty-box right">
+                        <div class="penalty-arc"></div>
+                        <div class="goal-box"></div>
+                    </div>
+                </div>
+
+                <!-- Grid de Zonas Táticas (Mapeamento Horizontal) -->
+                <div class="pitch-grid" id="pitchGrid">
+                    <!-- Coluna 1: GL -->
+                    <div class="grid-cell" data-pos="GL" style="grid-column: 1; grid-row: 2;">GL</div>
+
+                    <!-- Coluna 2: Linha de Defesa Central (ZE/ZD) -->
+                    <div style="grid-column: 2; grid-row: 2; display: flex; flex-direction: column; gap: 2px;">
+                        <div class="grid-cell" data-pos="ZE" style="flex: 1;">ZE</div>
+                        <div class="grid-cell" data-pos="ZD" style="flex: 1;">ZD</div>
+                    </div>
+
+                    <!-- Colunas 2 a 7: Flancos e Meio/Ataque Enfileirados -->
+                    <!-- Lado Esquerdo -->
+                    <div class="grid-cell" data-pos="LE" style="grid-column: 2 / span 2; grid-row: 1;">LE</div>
+                    <div class="grid-cell" data-pos="ME" style="grid-column: 4 / span 2; grid-row: 1;">ME</div>
+                    <div class="grid-cell" data-pos="PE" style="grid-column: 6 / span 2; grid-row: 1;">PE</div>
+
+                    <!-- Corredor Central (Enfileirados em Profundidade) -->
+                    <div class="grid-cell" data-pos="VOL" style="grid-column: 3; grid-row: 2;">VOL</div>
+                    <div class="grid-cell" data-pos="MC" style="grid-column: 4; grid-row: 2;">MC</div>
+                    <div class="grid-cell" data-pos="MEI" style="grid-column: 5; grid-row: 2;">MEI</div>
+                    <div class="grid-cell" data-pos="SA" style="grid-column: 6; grid-row: 2;">SA</div>
+                    <div class="grid-cell" data-pos="CA" style="grid-column: 7; grid-row: 2;">CA</div>
+
+                    <!-- Lado Direito -->
+                    <div class="grid-cell" data-pos="LD" style="grid-column: 2 / span 2; grid-row: 3;">LD</div>
+                    <div class="grid-cell" data-pos="MD" style="grid-column: 4 / span 2; grid-row: 3;">MD</div>
+                    <div class="grid-cell" data-pos="PD" style="grid-column: 6 / span 2; grid-row: 3;">PD</div>
+                </div>
+                <!-- Jogadores injetados via script.js -->
+            </div>
+        </main>
+
+        <section class="bottom-bench">
+            <div class="bench-header">
+                <h4 style="margin: 0; color: var(--text);">Banco de Reservas</h4>
+                <div style="display: flex; gap: 10px;">
+                    <input type="text" id="benchSearchInput" placeholder=" Buscar jogador ou posição..."
+                        style="width: 250px; padding: 6px 10px; background: #1a1a1a; border: 1px solid #333; color: white; border-radius: 4px; font-size: 0.8rem; outline: none;">
+                    <select id="benchSortSelect"
+                        style="width: auto; padding: 6px; background: #1a1a1a; border: 1px solid #333; color: white; border-radius: 4px; font-size: 0.8rem; outline: none;">
+                        <option value="position">Ordenar por: Posição</option>
+                        <option value="rating">Ordenar por: Maior Nota</option>
+                    </select>
+                </div>
+            </div>
+            <div id="benchList"></div>
+        </section>
+    </div>
+
+    <!-- Modais Customizados -->
+    <div id="customModal" class="modal-overlay">
+        <div class="modal-content">
+            <p id="customModalMessage"></p>
+            <input type="text" id="customModalInput" style="display: none; margin-bottom: 20px;">
+            <div class="modal-buttons">
+                <button id="customModalCancel" class="btn-secondary">Cancelar</button>
+                <button id="customModalOk" class="btn-primary">Confirmar</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="script/ui.js"></script>
+</body>
+
+</html>
