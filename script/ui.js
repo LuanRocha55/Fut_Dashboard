@@ -14,7 +14,8 @@ import {
   syncRealData,
   addNewPlayer,
   removePlayer,
-  saveToLocal
+  saveToLocal,
+  matchInfo
 } from "./core.js";
 
 import {
@@ -96,12 +97,12 @@ function updatePlaystyleOptions(primaryPos, currentPlaystyle) {
   if (!select) return;
   select.innerHTML = "";
   const options = PLAYSTYLES[primaryPos] || ["Sem Estilo"];
-  
+
   // Impede que o jogador perca um estilo antigo se não estiver na lista padrão
   if (currentPlaystyle && !options.includes(currentPlaystyle)) {
     options.unshift(currentPlaystyle);
   }
-  
+
   options.forEach(opt => {
     const optionEl = document.createElement("option");
     optionEl.value = opt;
@@ -248,21 +249,21 @@ function drawRadar(canvasId, stats1, stats2 = null, isGK = false) {
   const getVals = (s) =>
     isGK
       ? [
-          s.div || s.def || 75, // Salto
-          s.han || s.def || 75, // Manejo
-          s.kic || s.pas || 60, // Reposição
-          s.ref || s.def || 75, // Reflexo
-          s.spd || s.pac || 40, // Velocidade
-          s.pos || s.def || 75, // Posicionamento
-        ].map((v) => v / 100)
+        s.div || s.def || 75, // Salto
+        s.han || s.def || 75, // Manejo
+        s.kic || s.pas || 60, // Reposição
+        s.ref || s.def || 75, // Reflexo
+        s.spd || s.pac || 40, // Velocidade
+        s.pos || s.def || 75, // Posicionamento
+      ].map((v) => v / 100)
       : [
-          s.pac || s.spd || 50,
-          s.sho || s.atk || 50,
-          s.pas || 50,
-          s.dri || s.atk || 50,
-          s.def || 50,
-          s.phy || s.str || 50,
-        ].map((v) => v / 100);
+        s.pac || s.spd || 50,
+        s.sho || s.atk || 50,
+        s.pas || 50,
+        s.dri || s.atk || 50,
+        s.def || 50,
+        s.phy || s.str || 50,
+      ].map((v) => v / 100);
 
   const drawPolygon = (playerStats, fillColor, strokeColor) => {
     const values = getVals(playerStats);
@@ -294,21 +295,21 @@ function renderStatsNumbers(stats1, stats2 = null, isGK = false) {
 
   const labels = isGK
     ? [
-        { key: "div", fallback: "def", name: "SAL" },
-        { key: "han", fallback: "def", name: "MAN" },
-        { key: "kic", fallback: "pas", name: "REP" },
-        { key: "ref", fallback: "def", name: "REF" },
-        { key: "spd", fallback: "pac", name: "VEL" },
-        { key: "pos", fallback: "def", name: "POS" },
-      ]
+      { key: "div", fallback: "def", name: "SAL" },
+      { key: "han", fallback: "def", name: "MAN" },
+      { key: "kic", fallback: "pas", name: "REP" },
+      { key: "ref", fallback: "def", name: "REF" },
+      { key: "spd", fallback: "pac", name: "VEL" },
+      { key: "pos", fallback: "def", name: "POS" },
+    ]
     : [
-        { key: "pac", fallback: "spd", name: "VEL" },
-        { key: "sho", fallback: "atk", name: "FIN" },
-        { key: "pas", fallback: "pas", name: "PAS" },
-        { key: "dri", fallback: "atk", name: "DRI" },
-        { key: "def", fallback: "def", name: "DEF" },
-        { key: "phy", fallback: "str", name: "FÍS" },
-      ];
+      { key: "pac", fallback: "spd", name: "VEL" },
+      { key: "sho", fallback: "atk", name: "FIN" },
+      { key: "pas", fallback: "pas", name: "PAS" },
+      { key: "dri", fallback: "atk", name: "DRI" },
+      { key: "def", fallback: "def", name: "DEF" },
+      { key: "phy", fallback: "str", name: "FÍS" },
+    ];
 
   const s1 = stats1 || {};
 
@@ -432,21 +433,21 @@ async function openMenu(id) {
     sliderContainer.innerHTML = "";
     const statKeys = isGK
       ? [
-          { key: "div", label: "SAL" },
-          { key: "han", label: "MAN" },
-          { key: "kic", label: "REP" },
-          { key: "ref", label: "REF" },
-          { key: "spd", label: "VEL" },
-          { key: "pos", label: "POS" },
-        ]
+        { key: "div", label: "SAL" },
+        { key: "han", label: "MAN" },
+        { key: "kic", label: "REP" },
+        { key: "ref", label: "REF" },
+        { key: "spd", label: "VEL" },
+        { key: "pos", label: "POS" },
+      ]
       : [
-          { key: "pac", label: "VEL" },
-          { key: "sho", label: "FIN" },
-          { key: "pas", label: "PAS" },
-          { key: "dri", label: "DRI" },
-          { key: "def", label: "DEF" },
-          { key: "phy", label: "FÍS" },
-        ];
+        { key: "pac", label: "VEL" },
+        { key: "sho", label: "FIN" },
+        { key: "pas", label: "PAS" },
+        { key: "dri", label: "DRI" },
+        { key: "def", label: "DEF" },
+        { key: "phy", label: "FÍS" },
+      ];
 
     const getFallback = (key) => {
       if (pStats[key] !== undefined) return pStats[key];
@@ -477,10 +478,10 @@ async function openMenu(id) {
       const newStats = {};
       statKeys.forEach(
         (s) =>
-          (newStats[s.key] = parseInt(
-            document.getElementById(`slider_${s.key}`).value,
-            10,
-          )),
+        (newStats[s.key] = parseInt(
+          document.getElementById(`slider_${s.key}`).value,
+          10,
+        )),
       );
 
       const compId = document.getElementById("compareSelect").value;
@@ -551,7 +552,7 @@ async function openMenu(id) {
         p.aptitude.push(pos);
         chip.classList.add("primary");
       }
-      
+
       // Se ele alterar a posição do jogador, atualiza as opções do Select em tempo real
       const newMainPos = p.aptitude && p.aptitude.length > 0 ? p.aptitude[0] : "CA";
       const currentSelectedStyle = document.getElementById("editPlaystyleInput").value;
@@ -614,7 +615,7 @@ function renderTable() {
   const tbody = document.getElementById("rosterTableBody");
   if (!tbody) return;
   tbody.innerHTML = "";
-  
+
   renderHighlights();
 
   // Atualiza os ícones do cabeçalho da tabela
@@ -764,10 +765,10 @@ function render() {
     let displayRating = pRating;
     if (fitClass === "fit-warning")
       displayRating =
-        p.aptitude.includes("GL") || currentZone === "GL"
+        (p.aptitude && p.aptitude.includes("GL")) || currentZone === "GL"
           ? 1.0
           : Math.max(1.0, pRating - 2.5);
-          
+
     let liveStatusClass = "";
     if (p.matchStatus === 'red') liveStatusClass = "is-suspended";
     if (p.matchStatus === 'injury') liveStatusClass = "is-injured";
@@ -960,7 +961,7 @@ function render() {
     document.getElementById("benchSortSelect").value === "rating"
       ? (b.rating ?? 0) - (a.rating ?? 0)
       : (ALL_POSITIONS.indexOf(a.aptitude?.[0]) ?? 99) -
-        (ALL_POSITIONS.indexOf(b.aptitude?.[0]) ?? 99),
+      (ALL_POSITIONS.indexOf(b.aptitude?.[0]) ?? 99),
   );
   reservas.forEach((p) => {
     const res = document.createElement("div");
@@ -1043,6 +1044,172 @@ function initDragAndDrop() {
   };
 }
 
+// =========================================================
+// ENGINE DE SIMULAÇÃO DE PARTIDA (Live Commentary)
+// =========================================================
+let simInterval = null;
+
+async function loadOpponentData(selectedValue) {
+  if (selectedValue === "generic") {
+    return {
+      name: matchInfo.away || "Adversário Genérico",
+      atk: 65,
+      def: 65,
+      squad: []
+    };
+  }
+  try {
+    // O timestamp previne que o navegador grave o arquivo JSON velho no cache
+    const res = await fetch("data/" + selectedValue + "?t=" + new Date().getTime());
+    if (res.ok) {
+      const oppData = await res.json();
+      const oppTitulares = (oppData.squad || []).filter(p => p.status === "titular");
+      const len = oppTitulares.length > 0 ? oppTitulares.length : 11;
+      return {
+        name: oppData.matchInfo?.away || "Adversário Desconhecido",
+        atk: oppTitulares.reduce((sum, p) => sum + ((p.stats?.sho || 65) + (p.stats?.pac || 65)) / 2, 0) / len,
+        def: oppTitulares.reduce((sum, p) => sum + ((p.stats?.def || 65) + (p.stats?.phy || 65)) / 2, 0) / len,
+        squad: oppTitulares
+      };
+    }
+  } catch (e) {
+    console.error("Erro ao carregar o arquivo:", e);
+  }
+  return { name: "Adversário (Erro de Leitura)", atk: 65, def: 65, squad: [] };
+}
+
+async function openMatchSimulation() {
+  const titulares = squad.filter((p) => p.status === "titular");
+  if (titulares.length < 11) {
+    showCustomModal("Atenção: Você precisa de exatos 11 jogadores titulares na prancheta para iniciar uma partida!", "alert", "btn-danger");
+    return;
+  }
+
+  const modal = document.getElementById("simulationModal");
+  const logContainer = document.getElementById("simLog");
+  const timeEl = document.getElementById("simTime");
+  const scoreEl = document.getElementById("simScore");
+  const startBtn = document.getElementById("startSimBtn");
+  const opponentSelect = document.getElementById("simOpponentSelect");
+
+  modal.classList.add("show");
+
+  // Reset da UI para aguardar carregamento
+  logContainer.innerHTML = "<div class='log-entry log-neutral'>Carregando informações da partida...</div>";
+  timeEl.innerText = "00'";
+  scoreEl.innerText = "0 x 0";
+  startBtn.style.display = "none";
+  if (opponentSelect) opponentSelect.disabled = false;
+
+  // Carrega os dados baseados no arquivo selecionado
+  let currentOpponent = await loadOpponentData(opponentSelect ? opponentSelect.value : "generic");
+
+  const updateUI = () => {
+    document.getElementById("simHomeTeam").innerText = matchInfo.home || "Seu Time";
+    document.getElementById("simAwayTeam").innerText = currentOpponent.name;
+    document.getElementById("simMatchTitle").innerText = matchInfo.tournament || "Amistoso Internacional";
+  };
+  updateUI();
+
+  if (opponentSelect) {
+    opponentSelect.onchange = async (e) => {
+      startBtn.style.display = "none";
+      logContainer.innerHTML = "<div class='log-entry log-neutral'>Escaneando dados do arquivo JSON...</div>";
+      currentOpponent = await loadOpponentData(e.target.value);
+      updateUI();
+      logContainer.innerHTML = "<div class='log-entry log-neutral'>Arquivos do adversário carregados! Aguardando o apito inicial...</div>";
+      startBtn.style.display = "block";
+    };
+  }
+
+  logContainer.innerHTML = "<div class='log-entry log-neutral'>Equipes perfiladas. Aguardando o apito do árbitro...</div>";
+  startBtn.innerText = "Apito Inicial";
+  startBtn.style.display = "block";
+
+  let minute = 0;
+  let homeScore = 0;
+  let awayScore = 0;
+
+  // Cálcula a Força do seu time (Ataque e Defesa baseada nos titulares)
+  const homeAtk = titulares.reduce((sum, p) => sum + ((p.stats?.sho || 50) + (p.stats?.pac || 50)) / 2, 0) / 11;
+  const homeDef = titulares.reduce((sum, p) => sum + ((p.stats?.def || 50) + (p.stats?.phy || 50)) / 2, 0) / 11;
+
+  const addLog = (text, type = "log-neutral") => {
+    const el = document.createElement("div");
+    el.className = `log-entry ${type}`;
+    el.innerHTML = `<strong style="font-size:0.9rem;">${minute}'</strong> &nbsp; ${text}`;
+    logContainer.appendChild(el);
+    logContainer.scrollTop = logContainer.scrollHeight;
+  };
+
+  const runMinute = () => {
+    minute += Math.floor(Math.random() * 3) + 2; // Pula entre 2 a 4 minutos por rodada
+    if (minute >= 90) {
+      timeEl.innerText = "90'";
+      clearInterval(simInterval);
+      addLog("Fim de Papo! O árbitro encerra a partida.", "log-neutral");
+      startBtn.innerText = "Fechar Tela";
+      startBtn.style.display = "block";
+      if (opponentSelect) opponentSelect.disabled = false;
+      startBtn.onclick = () => modal.classList.remove("show");
+      return;
+    }
+
+    timeEl.innerText = minute + "'";
+    const rand = Math.random() * 100;
+
+    // LÓGICA 1: O Seu Time Ataca
+    if (rand < (homeAtk / (homeAtk + currentOpponent.def)) * 15) {
+      // Encontra um atacante ou meia do seu time para participar da jogada
+      const atacantes = titulares.filter(p => ["CA", "SA", "PE", "PD", "MEI"].includes(p.aptitude?.[0]));
+      let jogador = titulares[Math.floor(Math.random() * 11)];
+      if (atacantes.length > 0) jogador = atacantes[Math.floor(Math.random() * atacantes.length)];
+
+      if (Math.random() * 100 < (jogador.stats?.sho || 50) + 10) { // Bônus base
+        homeScore++;
+        scoreEl.innerText = `${homeScore} x ${awayScore}`;
+        addLog(`GOOOOOOOOL! Que finalização perfeita de ${jogador.name}! Bateu sem chances pro goleiro.`, "log-goal");
+      } else {
+        addLog(`Uuuuuh! ${jogador.name} recebe em boa condição mas a bola passa raspando a trave.`, "log-chance");
+      }
+    }
+    // LÓGICA 2: O Adversário Ataca
+    else if (rand > 100 - (currentOpponent.atk / (currentOpponent.atk + homeDef)) * 12) {
+      // O seu goleiro é testado
+      const goleiros = titulares.filter(p => p.aptitude?.[0] === "GL");
+      const goleiro = goleiros.length > 0 ? goleiros[0] : titulares[0];
+
+      // Tenta descobrir o nome de um atacante do time adversário lido do JSON
+      let oppAttackerName = "O atacante adversário";
+      if (currentOpponent.squad.length > 0) {
+        const oppAttackers = currentOpponent.squad.filter(p => ["CA", "SA", "PE", "PD", "MEI"].includes(p.aptitude?.[0]));
+        if (oppAttackers.length > 0) {
+          oppAttackerName = oppAttackers[Math.floor(Math.random() * oppAttackers.length)].name;
+        } else {
+          oppAttackerName = currentOpponent.squad[Math.floor(Math.random() * currentOpponent.squad.length)].name;
+        }
+      }
+
+      if (Math.random() * 100 < 35 - ((goleiro.stats?.ref || 50) / 4)) { // Falha da defesa / Goleiro não pegou
+        awayScore++;
+        scoreEl.innerText = `${homeScore} x ${awayScore}`;
+        addLog(`Gol... ${oppAttackerName} se aproveita da bobeira da zaga e manda a bola pro fundo da rede.`, "log-foul");
+      } else {
+        addLog(`DEFESAÇA! ${oppAttackerName} chegou com muito perigo, mas ${goleiro.name} operou um milagre!`, "log-chance");
+      }
+    }
+  };
+
+  startBtn.onclick = () => {
+    if (opponentSelect) opponentSelect.disabled = true; // Trava o seletor durante a partida
+    startBtn.style.display = "none";
+    addLog("Bola rolando!", "log-neutral");
+    simInterval = setInterval(runMinute, 1200); // 1.2 segundos da vida real = X minutos do jogo
+  };
+
+  document.getElementById("closeSimBtn").onclick = () => { clearInterval(simInterval); modal.classList.remove("show"); };
+}
+
 function setupEventListeners() {
   // Contratar / Dispensar Jogadores
   document.getElementById("addPlayerBtn").addEventListener("click", async () => {
@@ -1068,11 +1235,13 @@ function setupEventListeners() {
     }
   });
 
+  document.getElementById("simulateMatchBtn").addEventListener("click", openMatchSimulation);
+
   document.getElementById("saveTacticBtn").addEventListener("click", async () => {
     const select = document.getElementById("formationSelect");
     const currentFormat = select.value;
     const newName = await showCustomModal("Digite um nome para sua nova Formação (ex: 4-1-3-2 Atacante):", "prompt", "btn-primary");
-    
+
     if (newName && newName.trim() !== "") {
       const name = newName.trim();
       if (formations[name]) {
@@ -1081,7 +1250,7 @@ function setupEventListeners() {
       }
       formations[name] = JSON.parse(JSON.stringify(formations[currentFormat]));
       saveToLocal();
-      
+
       const opt = document.createElement("option");
       opt.value = opt.innerText = name;
       select.appendChild(opt);
@@ -1178,11 +1347,11 @@ function setupEventListeners() {
     const statKeys = isGK ? ['div', 'han', 'kic', 'ref', 'spd', 'pos'] : ['pac', 'sho', 'pas', 'dri', 'def', 'phy'];
 
     let s1;
-    if(document.getElementById(`slider_${statKeys[0]}`)) {
-        s1 = {};
-        statKeys.forEach(k => s1[k] = parseInt(document.getElementById(`slider_${k}`).value, 10));
+    if (document.getElementById(`slider_${statKeys[0]}`)) {
+      s1 = {};
+      statKeys.forEach(k => s1[k] = parseInt(document.getElementById(`slider_${k}`).value, 10));
     } else {
-        s1 = p1.stats || {};
+      s1 = p1.stats || {};
     }
 
     const p2 = squad.find((x) => x.id === parseInt(e.target.value, 10));
@@ -1252,7 +1421,7 @@ async function main() {
   // 1. Garante que o botão de Resetar funcione SEMPRE, mesmo se a tela quebrar ao carregar!
   document.getElementById("resetBtn").onclick = async () => {
     const proceed = await showCustomModal("ATENÇÃO: Isso apagará todas as suas edições, contratações e táticas salvas. Deseja realmente resetar o aplicativo para os padrões de fábrica?", "confirm", "btn-danger");
-    if(proceed) {
+    if (proceed) {
       resetData();
     }
   };
@@ -1265,18 +1434,22 @@ async function main() {
     const select = document.getElementById("formationSelect");
     const currentVal = select.value;
     select.innerHTML = "";
-    Object.keys(formations).forEach((f) => {
+    
+    // Organiza a lista de táticas em ordem alfabética/numérica (ex: 3-4-3 vem antes de 4-3-3)
+    const sortedFormations = Object.keys(formations).sort((a, b) => a.localeCompare(b));
+    
+    sortedFormations.forEach((f) => {
       const opt = document.createElement("option");
       opt.value = opt.innerText = f;
       select.appendChild(opt);
     });
-    if (Object.keys(formations).includes(currentVal)) select.value = currentVal;
+    if (sortedFormations.includes(currentVal)) select.value = currentVal;
     render();
     setupEventListeners();
   } else {
     // Alerta de Erro Crítico de JSON
     await showCustomModal(
-      "Erro crítico: Seu arquivo data.json contém algum erro de formatação (como uma vírgula faltando). Corrija o arquivo ou clique em Resetar Dados.",
+      "Erro crítico: O painel não conseguiu ler o arquivo JSON. Certifique-se de estar usando o 'Live Server' no VS Code e verifique se o arquivo data/vasco.json não contém erros.",
       "alert",
       "btn-danger"
     );

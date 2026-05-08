@@ -157,13 +157,28 @@ export async function initSystem() {
     const savedTactics = localStorage.getItem("futTactics");
 
     // O "?t=..." impede que o navegador grave o data.json e fique te mostrando a versão velha
-    const response = await fetch("data.json?t=" + new Date().getTime());
+    const response = await fetch("data/vasco.json?t=" + new Date().getTime());
     const remoteData = await response.json();
     
     // O 'Object.assign' permite que as variáveis exportadas sejam modificadas
     Object.assign(matchInfo, remoteData.matchInfo || {});
-    Object.assign(defaultFormations, JSON.parse(JSON.stringify(remoteData.tactics)));
-    const loadedFormations = savedTactics ? JSON.parse(savedTactics) : remoteData.tactics;
+    
+    // Fallback de segurança: Se o arquivo JSON não tiver a chave "tactics" (ex: um json focado só no elenco)
+    const fallbackTactics = {
+      "4-2-3-1": [
+        { "t": 50, "l": 5 }, { "t": 20, "l": 20 }, { "t": 80, "l": 20 }, { "t": 35, "l": 20 }, { "t": 65, "l": 20 },
+        { "t": 35, "l": 40 }, { "t": 65, "l": 40 }, { "t": 20, "l": 65 }, { "t": 80, "l": 65 }, { "t": 50, "l": 65 }, { "t": 50, "l": 85 }
+      ],
+      "4-3-3": [
+        { "t": 50, "l": 5 }, { "t": 20, "l": 20 }, { "t": 80, "l": 20 }, { "t": 35, "l": 20 }, { "t": 65, "l": 20 },
+        { "t": 50, "l": 40 }, { "t": 25, "l": 50 }, { "t": 75, "l": 50 }, { "t": 20, "l": 80 }, { "t": 80, "l": 80 }, { "t": 50, "l": 85 }
+      ]
+    };
+    
+    const tacticsData = remoteData.tactics || fallbackTactics;
+
+    Object.assign(defaultFormations, JSON.parse(JSON.stringify(tacticsData)));
+    const loadedFormations = savedTactics ? JSON.parse(savedTactics) : tacticsData;
     Object.assign(formations, loadedFormations);
 
     if (savedTactics) {
@@ -179,16 +194,25 @@ export async function initSystem() {
       // Trava de segurança: Se o cache for antigo ou algum jogador estiver sem nota (undefined)
       if ((localSquad.length > 0 && localSquad[0].positions) || localSquad.length !== remoteData.squad.length || localSquad[0].rating === undefined) {
         console.log("Atualização de Arquitetura ou Elenco Detectada. Migrando...");
-        remoteData.squad.forEach(p => p.rating = calculateOVR(p.stats, p.form, p.aptitude && p.aptitude[0] === "GL"));
+        remoteData.squad.forEach(p => {
+          if (!p.aptitude) p.aptitude = p.positions || ["CA"];
+          p.rating = calculateOVR(p.stats, p.form, p.aptitude[0] === "GL");
+        });
         squad.push(...remoteData.squad);
         saveToLocal();
       } else {
         console.log("Dados carregados do cache local.");
-        localSquad.forEach(p => p.rating = calculateOVR(p.stats, p.form, p.aptitude && p.aptitude[0] === "GL"));
+        localSquad.forEach(p => {
+          if (!p.aptitude) p.aptitude = p.positions || ["CA"];
+          p.rating = calculateOVR(p.stats, p.form, p.aptitude[0] === "GL");
+        });
         squad.push(...localSquad);
       }
     } else {
-      remoteData.squad.forEach(p => p.rating = calculateOVR(p.stats, p.form, p.aptitude && p.aptitude[0] === "GL"));
+      remoteData.squad.forEach(p => {
+        if (!p.aptitude) p.aptitude = p.positions || ["CA"];
+        p.rating = calculateOVR(p.stats, p.form, p.aptitude[0] === "GL");
+      });
       squad.push(...remoteData.squad);
       saveToLocal();
     }
