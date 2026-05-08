@@ -1226,3 +1226,36 @@ input[type=range]::-moz-range-track {
     transform: translateX(0);
   }
 }
+
+/* ========================================================= */
+/* Botões Gigantes do Menu Principal (Modo Carreira)         */
+/* ========================================================= */
+.dash-btn {
+  background: #111;
+  border: 1px solid #333;
+  color: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.dash-btn:hover {
+  border-color: var(--accent);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 255, 136, 0.1);
+}
+.dash-btn-play {
+  background: var(--warning);
+  color: #000;
+  border: none;
+  box-shadow: 0 10px 30px rgba(255, 208, 0, 0.2);
+}
+.dash-btn-play:hover {
+  background: #e6bc00;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(255, 208, 0, 0.4);
+}

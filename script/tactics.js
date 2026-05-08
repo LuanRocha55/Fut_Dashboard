@@ -1,4 +1,4 @@
-import { squad, formations, saveToLocal } from './core.js';
+import { squad, formations, saveToLocal } from "./core.js";
 
 export function getEfootballPosition(top, left) {
   // Goleiro
@@ -21,7 +21,7 @@ export function getEfootballPosition(top, left) {
   if (left > 28 && left <= 42) return "VOL";
   if (left > 42 && left <= 57) return "MC";
   if (left > 57 && left <= 71) return "MEI";
-  if (left > 71 && left <= 85) return "SA";
+  if (left > 71 && left <= 80) return "SA";
   return "CA";
 }
 
@@ -41,14 +41,19 @@ export function autoFillTeam() {
     index: index,
   }));
 
-  const availablePlayers = [...squad].sort((a, b) => b.rating - a.rating);
+  const availablePlayers = [...squad]
+    .filter((p) => p.matchStatus !== "red" && p.matchStatus !== "injury")
+    .sort((a, b) => b.rating - a.rating);
   const newTitulares = new Array(11).fill(null);
   const assignedPlayerIds = new Set();
 
   // Passo 1: Preencher com a melhor aptidão e nota
   requiredPositions.forEach((req) => {
     const bestFitIndex = availablePlayers.findIndex(
-      (p) => p.aptitude && p.aptitude.includes(req.pos) && !assignedPlayerIds.has(p.id)
+      (p) =>
+        p.aptitude &&
+        p.aptitude.includes(req.pos) &&
+        !assignedPlayerIds.has(p.id),
     );
     if (bestFitIndex !== -1) {
       const player = availablePlayers[bestFitIndex];
@@ -60,7 +65,9 @@ export function autoFillTeam() {
   // Passo 2: Preencher vagas restantes com as maiores notas
   newTitulares.forEach((p, i) => {
     if (!p) {
-      const nextBestPlayer = availablePlayers.find(player => !assignedPlayerIds.has(player.id));
+      const nextBestPlayer = availablePlayers.find(
+        (player) => !assignedPlayerIds.has(player.id),
+      );
       if (nextBestPlayer) {
         newTitulares[i] = nextBestPlayer;
         assignedPlayerIds.add(nextBestPlayer.id);
@@ -70,9 +77,17 @@ export function autoFillTeam() {
 
   // Passo 3: Remontar o array 'squad' original, alterando o status
   const finalSquad = [];
-  newTitulares.forEach(p => { if (p) { p.status = "titular"; finalSquad.push(p); } });
-  const reserves = squad.filter(p => !assignedPlayerIds.has(p.id));
-  reserves.forEach(p => { p.status = "reserva"; finalSquad.push(p); });
+  newTitulares.forEach((p) => {
+    if (p) {
+      p.status = "titular";
+      finalSquad.push(p);
+    }
+  });
+  const reserves = squad.filter((p) => !assignedPlayerIds.has(p.id));
+  reserves.forEach((p) => {
+    p.status = "reserva";
+    finalSquad.push(p);
+  });
 
   // Muta o array original para refletir as mudanças
   squad.length = 0;
@@ -90,8 +105,10 @@ export function swapTitulares(id1, id2) {
     const currentFormat = document.getElementById("formationSelect").value;
     if (formations[currentFormat]) {
       // Troca as coordenadas t e l no template da formação
-      [formations[currentFormat][idx1], formations[currentFormat][idx2]] = 
-      [formations[currentFormat][idx2], formations[currentFormat][idx1]];
+      [formations[currentFormat][idx1], formations[currentFormat][idx2]] = [
+        formations[currentFormat][idx2],
+        formations[currentFormat][idx1],
+      ];
       saveToLocal();
     }
   }

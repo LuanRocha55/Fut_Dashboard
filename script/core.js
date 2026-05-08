@@ -3,6 +3,7 @@ export let formations = {};
 export let defaultFormations = {};
 export let matchInfo = {};
 export let activePlayerId = null;
+export let matchHistory = [];
 
 export const ALL_POSITIONS = [
   "GL", "ZE", "ZD", "LE", "LD", "ME", "MD",
@@ -11,6 +12,58 @@ export const ALL_POSITIONS = [
 
 export function setActivePlayerId(id) {
   activePlayerId = id;
+}
+
+export function healSquad() {
+  let updated = false;
+  squad.forEach((p) => {
+    if (p.matchStatus === "injury" || p.matchStatus === "red" || p.matchStatus === "yellow") {
+      p.matchStatus = "normal";
+      updated = true;
+    }
+  });
+  if (updated) saveToLocal();
+  return updated;
+}
+
+export function registerMatchResult(homeTeam, awayTeam, homeScore, awayScore) {
+  matchHistory.push({ homeTeam, awayTeam, homeScore, awayScore });
+  if (matchHistory.length > 5) matchHistory.shift();
+  localStorage.setItem("matchHistory", JSON.stringify(matchHistory));
+}
+
+export function applyMatchResults(scorersIds, cards, injuriesList) {
+  let updated = false;
+
+  squad.forEach(p => {
+    // Recupera jogadores suspensos ou machucados (1 jogo de punição/recuperação)
+    if (p.matchStatus === 'red' && !cards.some(c => c.id === p.id && c.type === 'red')) { p.matchStatus = 'normal'; updated = true; }
+    if (p.matchStatus === 'injury' && !injuriesList.some(inj => inj.id === p.id)) { p.matchStatus = 'normal'; updated = true; }
+  });
+
+  scorersIds.forEach(id => {
+    let p = squad.find(x => x.id === id);
+    if(p) { p.goals = (p.goals || 0) + 1; updated = true; }
+  });
+
+  cards.forEach(c => {
+    let p = squad.find(x => x.id === c.id);
+    if(p) {
+      if(c.type === 'red') { p.matchStatus = 'red'; p.status = 'reserva'; updated = true; } 
+      else if(c.type === 'yellow') {
+        p.yellowCards = (p.yellowCards || 0) + 1;
+        if(p.yellowCards >= 3) { p.matchStatus = 'red'; p.status = 'reserva'; p.yellowCards = 0; }
+        updated = true;
+      }
+    }
+  });
+
+  injuriesList.forEach(inj => {
+    let p = squad.find(x => x.id === inj.id);
+    if(p) { p.matchStatus = 'injury'; p.status = 'reserva'; updated = true; }
+  });
+
+  if (updated) saveToLocal();
 }
 
 export function calculateOVR(stats, form = 0, isGK = false) {
@@ -91,8 +144,7 @@ export function performSwap(titularId, reserveId) {
 export function downloadJSON() {
   const dataToSave = {
     matchInfo: matchInfo,
-    squad: squad,
-    tactics: formations,
+    squad: squad
   };
   const dataStr =
     "data:text/json;charset=utf-8," +
@@ -153,22 +205,51 @@ export async function syncRealData() {
 
 export async function initSystem() {
   try {
+    let currentTeamFile = localStorage.getItem("currentTeamFile") || "vasco.json";
     const savedSquad = localStorage.getItem("squad_data");
     const savedTactics = localStorage.getItem("futTactics");
 
-    let remoteData = { squad: null, tactics: null, matchInfo: null };
+    const savedHistory = localStorage.getItem("matchHistory");
+    if (savedHistory) matchHistory = JSON.parse(savedHistory);
+
+    let remoteData = { squad: null, matchInfo: null };
     let fetchSuccess = false;
 
     try {
       // O "?t=..." impede que o navegador grave o data.json e fique te mostrando a versão velha
-      const response = await fetch("data/vasco.json?t=" + new Date().getTime());
+      const response = await fetch("data/" + currentTeamFile + "?t=" + new Date().getTime());
       if (response.ok) {
-        remoteData = await response.json();
-        fetchSuccess = true;
-        Object.assign(matchInfo, remoteData.matchInfo || {});
+        const textData = await response.text();
+        try {
+          remoteData = JSON.parse(textData);
+          fetchSuccess = true;
+          Object.assign(matchInfo, remoteData.matchInfo || {});
+        } catch (err) {
+          return `ERRO DE SINTAXE no arquivo ${currentTeamFile}! Verifique se você não apagou chaves "}" ou colchetes "]" sem querer. Detalhe: ${err.message}`;
+        }
+      } else {
+        if (currentTeamFile !== "vasco.json") localStorage.removeItem("currentTeamFile");
+        return `ARQUIVO NÃO ENCONTRADO: data/${currentTeamFile} (Erro ${response.status}). Você salvou na pasta correta e com o nome exato? (Cuidado com nomes terminados em .json.json)`;
       }
     } catch (e) {
-      console.warn("Aviso: Falha ao baixar JSON (Provavelmente rodando sem Live Server). Tentando recuperar pelo cache...");
+      if (!savedSquad) {
+        return "FALHA DE REDE: O sistema não conseguiu baixar os arquivos locais. O Live Server está realmente rodando na pasta raiz do projeto?";
+      }
+    }
+    
+    let tacticsData = null;
+    try {
+      const tacticsResponse = await fetch("data/tactics.json?t=" + new Date().getTime());
+      if (tacticsResponse.ok) {
+        const txtTac = await tacticsResponse.text();
+        try {
+          tacticsData = JSON.parse(txtTac);
+        } catch(err) {
+          return `ERRO DE SINTAXE no arquivo tactics.json! Detalhe: ${err.message}`;
+        }
+      }
+    } catch (e) {
+      console.warn("Falha ao carregar tactics.json separadamente.");
     }
 
     // Fallback de segurança garantida
@@ -183,16 +264,16 @@ export async function initSystem() {
       ]
     };
     
-    const tacticsData = remoteData.tactics || fallbackTactics;
+    tacticsData = tacticsData || fallbackTactics;
 
     Object.assign(defaultFormations, JSON.parse(JSON.stringify(tacticsData)));
     const loadedFormations = savedTactics ? JSON.parse(savedTactics) : tacticsData;
     Object.assign(formations, loadedFormations);
 
-    if (savedTactics && fetchSuccess && remoteData.tactics) {
+    if (savedTactics && tacticsData) {
       let updated = false;
-      for (let f in remoteData.tactics) {
-        if (!formations[f]) { formations[f] = remoteData.tactics[f]; updated = true; }
+      for (let f in tacticsData) {
+        if (!formations[f]) { formations[f] = tacticsData[f]; updated = true; }
       }
       if (updated) saveToLocal();
     }
@@ -224,13 +305,12 @@ export async function initSystem() {
       squad.push(...remoteData.squad);
       saveToLocal();
     } else {
-      console.error("Nenhum dado local salvo e falha ao ler arquivo. A prancheta ficará vazia.");
-      return false; // Força a exibição do modal de erro crítico do Live Server
+      return `O arquivo ${currentTeamFile} foi lido, mas não possui a lista de jogadores ("squad").`;
     }
-    return true; // Sucesso
+    return true; 
   } catch (error) {
     console.error("Erro ao carregar o sistema tático:", error);
-    return false; // Falha
+    return `ERRO INESPERADO NA ENGINE: ${error.message}`;
   }
 }
 
