@@ -15,7 +15,7 @@ import {
   addNewPlayer,
   removePlayer,
   saveToLocal,
-  matchInfo
+  matchInfo,
 } from "./core.js";
 
 import {
@@ -33,13 +33,22 @@ let tableSortDesc = true;
 
 // Utilitário para polimento de busca (Ignora acentos)
 const normalizeStr = (str) => {
-  return str ? str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase() : "";
+  return str
+    ? str
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase()
+    : "";
 };
 
 // =========================================================
 // Modal Customizado (Substitui confirm, alert e prompt feios)
 // =========================================================
-function showCustomModal(message, type = "confirm", confirmClass = "btn-primary") {
+function showCustomModal(
+  message,
+  type = "confirm",
+  confirmClass = "btn-primary",
+) {
   return new Promise((resolve) => {
     const modal = document.getElementById("customModal");
     const msgEl = document.getElementById("customModalMessage");
@@ -58,38 +67,83 @@ function showCustomModal(message, type = "confirm", confirmClass = "btn-primary"
     } else if (type === "alert") {
       inputEl.style.display = "none";
       btnCancel.style.display = "none";
-    } else { // confirm padrão
+    } else {
+      // confirm padrão
       inputEl.style.display = "none";
       btnCancel.style.display = "block";
     }
 
     const cleanup = () => {
       modal.classList.remove("show");
-      setTimeout(() => { btnOk.onclick = null; btnCancel.onclick = null; }, 300);
+      setTimeout(() => {
+        btnOk.onclick = null;
+        btnCancel.onclick = null;
+      }, 300);
     };
 
-    btnOk.onclick = () => { cleanup(); resolve(type === "prompt" ? inputEl.value : true); };
-    btnCancel.onclick = () => { cleanup(); resolve(type === "prompt" ? null : false); };
+    btnOk.onclick = () => {
+      cleanup();
+      resolve(type === "prompt" ? inputEl.value : true);
+    };
+    btnCancel.onclick = () => {
+      cleanup();
+      resolve(type === "prompt" ? null : false);
+    };
 
     modal.classList.add("show");
   });
 }
 
 const PLAYSTYLES = {
-  "GL": ["Goleiro Defensivo", "Goleiro Ofensivo"],
-  "ZE": ["Defensor Criativo", "Zagueiro Destruidor", "Zagueiro Rebatedor", "Atacante Extra"],
-  "ZD": ["Defensor Criativo", "Zagueiro Destruidor", "Zagueiro Rebatedor", "Atacante Extra"],
-  "LE": ["Lateral Ofensivo", "Lateral Defensivo", "Especialista Cruzamento", "Lateral Invertido"],
-  "LD": ["Lateral Ofensivo", "Lateral Defensivo", "Especialista Cruzamento", "Lateral Invertido"],
-  "VOL": ["Primeiro Volante", "Cão de Guarda", "Orquestrador", "Motorzinho"],
-  "MC": ["Orquestrador", "Infiltrador", "Meia Versátil", "Motorzinho"],
-  "ME": ["Ala Veloz", "Especialista Cruzamento", "Meia de Ligação", "Falso Ala"],
-  "MD": ["Ala Veloz", "Especialista Cruzamento", "Meia de Ligação", "Falso Ala"],
-  "MEI": ["Armador Criativo", "Clássico Nº 10", "Infiltrador", "Jogador de Buraco"],
-  "PE": ["Ponta Prolífico", "Ala Veloz", "Atacante de Infiltração", "Armador Criativo"],
-  "PD": ["Ponta Prolífico", "Ala Veloz", "Atacante de Infiltração", "Armador Criativo"],
-  "SA": ["Atacante de Infiltração", "Falso 9", "Armador Criativo", "Engodo"],
-  "CA": ["Artilheiro", "Homem de Referência", "Caçador de Gols", "Falso 9"]
+  GL: ["Goleiro Defensivo", "Goleiro Ofensivo"],
+  ZE: [
+    "Defensor Criativo",
+    "Zagueiro Destruidor",
+    "Zagueiro Rebatedor",
+    "Atacante Extra",
+  ],
+  ZD: [
+    "Defensor Criativo",
+    "Zagueiro Destruidor",
+    "Zagueiro Rebatedor",
+    "Atacante Extra",
+  ],
+  LE: [
+    "Lateral Ofensivo",
+    "Lateral Defensivo",
+    "Especialista Cruzamento",
+    "Lateral Invertido",
+  ],
+  LD: [
+    "Lateral Ofensivo",
+    "Lateral Defensivo",
+    "Especialista Cruzamento",
+    "Lateral Invertido",
+  ],
+  VOL: ["Primeiro Volante", "Cão de Guarda", "Orquestrador", "Motorzinho"],
+  MC: ["Orquestrador", "Infiltrador", "Meia Versátil", "Motorzinho"],
+  ME: ["Ala Veloz", "Especialista Cruzamento", "Meia de Ligação", "Falso Ala"],
+  MD: ["Ala Veloz", "Especialista Cruzamento", "Meia de Ligação", "Falso Ala"],
+  MEI: [
+    "Armador Criativo",
+    "Clássico Nº 10",
+    "Infiltrador",
+    "Jogador de Buraco",
+  ],
+  PE: [
+    "Ponta Prolífico",
+    "Ala Veloz",
+    "Atacante de Infiltração",
+    "Armador Criativo",
+  ],
+  PD: [
+    "Ponta Prolífico",
+    "Ala Veloz",
+    "Atacante de Infiltração",
+    "Armador Criativo",
+  ],
+  SA: ["Atacante de Infiltração", "Falso 9", "Armador Criativo", "Engodo"],
+  CA: ["Artilheiro", "Homem de Referência", "Caçador de Gols", "Falso 9"],
 };
 
 function updatePlaystyleOptions(primaryPos, currentPlaystyle) {
@@ -103,7 +157,7 @@ function updatePlaystyleOptions(primaryPos, currentPlaystyle) {
     options.unshift(currentPlaystyle);
   }
 
-  options.forEach(opt => {
+  options.forEach((opt) => {
     const optionEl = document.createElement("option");
     optionEl.value = opt;
     optionEl.innerText = opt;
@@ -158,14 +212,22 @@ function getFormHTML(form) {
 }
 
 function getMatchStatusHTML(status) {
-  if (status === 'yellow') return `<div class="match-status-icon status-yellow" title="Amarelado"></div>`;
-  if (status === 'red') return `<div class="match-status-icon status-red" title="Suspenso"></div>`;
-  if (status === 'injury') return `<div class="match-status-icon status-injury" title="Lesionado">✚</div>`;
-  return '';
+  if (status === "yellow")
+    return `<div class="match-status-icon status-yellow" title="Amarelado"></div>`;
+  if (status === "red")
+    return `<div class="match-status-icon status-red" title="Suspenso"></div>`;
+  if (status === "injury")
+    return `<div class="match-status-icon status-injury" title="Lesionado">✚</div>`;
+  return "";
 }
 function getMatchStatusLabel(status) {
-  const labels = { 'normal': 'Apto para Jogo', 'yellow': 'Amarelado (Risco)', 'red': 'Suspenso', 'injury': 'Lesionado' };
-  return labels[status] || 'Apto para Jogo';
+  const labels = {
+    normal: "Apto para Jogo",
+    yellow: "Amarelado (Risco)",
+    red: "Suspenso",
+    injury: "Lesionado",
+  };
+  return labels[status] || "Apto para Jogo";
 }
 
 function highlightZones(player) {
@@ -249,21 +311,21 @@ function drawRadar(canvasId, stats1, stats2 = null, isGK = false) {
   const getVals = (s) =>
     isGK
       ? [
-        s.div || s.def || 75, // Salto
-        s.han || s.def || 75, // Manejo
-        s.kic || s.pas || 60, // Reposição
-        s.ref || s.def || 75, // Reflexo
-        s.spd || s.pac || 40, // Velocidade
-        s.pos || s.def || 75, // Posicionamento
-      ].map((v) => v / 100)
+          s.sal || s.div || s.def || 75, // Salto
+          s.man || s.han || s.def || 75, // Manejo
+          s.rep || s.kic || s.pas || 60, // Reposição
+          s.ref || s.def || 75, // Reflexo
+          s.vel || s.spd || s.pac || 40, // Velocidade
+          s.pos || s.def || 75, // Posicionamento
+        ].map((v) => v / 100)
       : [
-        s.pac || s.spd || 50,
-        s.sho || s.atk || 50,
-        s.pas || 50,
-        s.dri || s.atk || 50,
-        s.def || 50,
-        s.phy || s.str || 50,
-      ].map((v) => v / 100);
+          s.vel || s.pac || s.spd || 50,
+          s.fin || s.sho || s.atk || 50,
+          s.pas || 50,
+          s.dri || s.atk || 50,
+          s.def || 50,
+          s.fis || s.phy || s.str || 50,
+        ].map((v) => v / 100);
 
   const drawPolygon = (playerStats, fillColor, strokeColor) => {
     const values = getVals(playerStats);
@@ -295,21 +357,21 @@ function renderStatsNumbers(stats1, stats2 = null, isGK = false) {
 
   const labels = isGK
     ? [
-      { key: "div", fallback: "def", name: "SAL" },
-      { key: "han", fallback: "def", name: "MAN" },
-      { key: "kic", fallback: "pas", name: "REP" },
-      { key: "ref", fallback: "def", name: "REF" },
-      { key: "spd", fallback: "pac", name: "VEL" },
-      { key: "pos", fallback: "def", name: "POS" },
-    ]
+        { key: "sal", fallback: "div", name: "SAL" },
+        { key: "man", fallback: "han", name: "MAN" },
+        { key: "rep", fallback: "kic", name: "REP" },
+        { key: "ref", fallback: "ref", name: "REF" },
+        { key: "vel", fallback: "spd", name: "VEL" },
+        { key: "pos", fallback: "pos", name: "POS" },
+      ]
     : [
-      { key: "pac", fallback: "spd", name: "VEL" },
-      { key: "sho", fallback: "atk", name: "FIN" },
-      { key: "pas", fallback: "pas", name: "PAS" },
-      { key: "dri", fallback: "atk", name: "DRI" },
-      { key: "def", fallback: "def", name: "DEF" },
-      { key: "phy", fallback: "str", name: "FÍS" },
-    ];
+        { key: "vel", fallback: "pac", name: "VEL" },
+        { key: "fin", fallback: "sho", name: "FIN" },
+        { key: "pas", fallback: "pas", name: "PAS" },
+        { key: "dri", fallback: "dri", name: "DRI" },
+        { key: "def", fallback: "def", name: "DEF" },
+        { key: "fis", fallback: "phy", name: "FÍS" },
+      ];
 
   const s1 = stats1 || {};
 
@@ -356,7 +418,9 @@ function setEditMode(enable) {
   const toggleBtn = document.getElementById("toggleEditBtn");
 
   playerView.className = enable ? "edit-mode" : "view-mode";
-  toggleBtn.className = enable ? "badge-btn badge-btn-danger" : "badge-btn badge-btn-dark";
+  toggleBtn.className = enable
+    ? "badge-btn badge-btn-danger"
+    : "badge-btn badge-btn-dark";
   toggleBtn.innerText = enable ? "CANCELAR EDIÇÃO" : "EDITAR";
   document.getElementById("editPositions").style.pointerEvents = enable
     ? "auto"
@@ -367,7 +431,11 @@ function setEditMode(enable) {
 async function openMenu(id) {
   // Proteção contra perda de dados ao trocar de jogador durante a edição
   if (isEditMode && id !== activePlayerId) {
-    const proceed = await showCustomModal("Você tem edições em andamento. Deseja descartar e abrir outro jogador?", "confirm", "btn-primary");
+    const proceed = await showCustomModal(
+      "Você tem edições em andamento. Deseja descartar e abrir outro jogador?",
+      "confirm",
+      "btn-primary",
+    );
     if (!proceed) return;
   }
 
@@ -406,7 +474,8 @@ async function openMenu(id) {
 
   // Live Events
   const mStatus = p.matchStatus || "normal";
-  document.getElementById("viewMatchStatus").innerHTML = `${getMatchStatusHTML(mStatus)} ${getMatchStatusLabel(mStatus)}`;
+  document.getElementById("viewMatchStatus").innerHTML =
+    `${getMatchStatusHTML(mStatus)} ${getMatchStatusLabel(mStatus)}`;
   document.getElementById("editMatchStatusInput").value = mStatus;
 
   // Condição e Sliders de Atributos
@@ -420,12 +489,12 @@ async function openMenu(id) {
 
   const isGK = p.aptitude && p.aptitude[0] === "GL";
   const pStats = p.stats || {
-    pac: 50,
-    sho: 50,
+    vel: 50,
+    fin: 50,
     pas: 50,
     dri: 50,
     def: 50,
-    phy: 50,
+    fis: 50,
   };
 
   const sliderContainer = document.getElementById("editSlidersContainer");
@@ -433,34 +502,44 @@ async function openMenu(id) {
     sliderContainer.innerHTML = "";
     const statKeys = isGK
       ? [
-        { key: "div", label: "SAL" },
-        { key: "han", label: "MAN" },
-        { key: "kic", label: "REP" },
-        { key: "ref", label: "REF" },
-        { key: "spd", label: "VEL" },
-        { key: "pos", label: "POS" },
-      ]
+          { key: "sal", label: "SAL" },
+          { key: "man", label: "MAN" },
+          { key: "rep", label: "REP" },
+          { key: "ref", label: "REF" },
+          { key: "vel", label: "VEL" },
+          { key: "pos", label: "POS" },
+        ]
       : [
-        { key: "pac", label: "VEL" },
-        { key: "sho", label: "FIN" },
-        { key: "pas", label: "PAS" },
-        { key: "dri", label: "DRI" },
-        { key: "def", label: "DEF" },
-        { key: "phy", label: "FÍS" },
-      ];
+          { key: "vel", label: "VEL" },
+          { key: "fin", label: "FIN" },
+          { key: "pas", label: "PAS" },
+          { key: "dri", label: "DRI" },
+          { key: "def", label: "DEF" },
+          { key: "fis", label: "FÍS" },
+        ];
 
     const getFallback = (key) => {
       if (pStats[key] !== undefined) return pStats[key];
-      if (!isGK) return 50;
+      if (isGK) {
+        const fb = {
+          sal: pStats.div || pStats.def || 75,
+          man: pStats.han || pStats.def || 75,
+          rep: pStats.kic || pStats.pas || 60,
+          ref: pStats.ref || pStats.def || 75,
+          vel: pStats.spd || pStats.pac || 40,
+          pos: pStats.pos || pStats.def || 75,
+        };
+        return fb[key] !== undefined ? fb[key] : 75;
+      }
       const fb = {
-        div: pStats.def || 75,
-        han: pStats.def || 75,
-        kic: pStats.pas || 60,
-        ref: pStats.def || 75,
-        spd: pStats.pac || 40,
-        pos: pStats.def || 75,
+        vel: pStats.pac || pStats.spd || 50,
+        fin: pStats.sho || pStats.atk || 50,
+        pas: pStats.pas || 50,
+        dri: pStats.dri || pStats.atk || 50,
+        def: pStats.def || 50,
+        fis: pStats.phy || pStats.str || 50,
       };
-      return fb[key];
+      return fb[key] !== undefined ? fb[key] : 50;
     };
 
     statKeys.forEach((s) => {
@@ -478,10 +557,10 @@ async function openMenu(id) {
       const newStats = {};
       statKeys.forEach(
         (s) =>
-        (newStats[s.key] = parseInt(
-          document.getElementById(`slider_${s.key}`).value,
-          10,
-        )),
+          (newStats[s.key] = parseInt(
+            document.getElementById(`slider_${s.key}`).value,
+            10,
+          )),
       );
 
       const compId = document.getElementById("compareSelect").value;
@@ -554,8 +633,10 @@ async function openMenu(id) {
       }
 
       // Se ele alterar a posição do jogador, atualiza as opções do Select em tempo real
-      const newMainPos = p.aptitude && p.aptitude.length > 0 ? p.aptitude[0] : "CA";
-      const currentSelectedStyle = document.getElementById("editPlaystyleInput").value;
+      const newMainPos =
+        p.aptitude && p.aptitude.length > 0 ? p.aptitude[0] : "CA";
+      const currentSelectedStyle =
+        document.getElementById("editPlaystyleInput").value;
       updatePlaystyleOptions(newMainPos, currentSelectedStyle);
     };
     posContainer.appendChild(chip);
@@ -565,7 +646,11 @@ async function openMenu(id) {
 async function closeMenu() {
   // Proteção contra clique no botão de fechar durante a edição
   if (isEditMode) {
-    const proceed = await showCustomModal("Você tem edições em andamento. Deseja sair sem salvar?", "confirm", "btn-primary");
+    const proceed = await showCustomModal(
+      "Você tem edições em andamento. Deseja sair sem salvar?",
+      "confirm",
+      "btn-primary",
+    );
     if (!proceed) return;
   }
   document.getElementById("playerView").style.display = "none";
@@ -580,21 +665,26 @@ function renderHighlights() {
   container.innerHTML = "";
 
   const statsConfig = [
-    { key: 'pac', fallback: 'spd', label: 'Mais Rápido (VEL)' },
-    { key: 'sho', fallback: 'atk', label: 'Artilheiro (FIN)' },
-    { key: 'pas', fallback: 'pas', label: 'Garçom (PAS)' },
-    { key: 'dri', fallback: 'atk', label: 'Liso (DRI)' },
-    { key: 'def', fallback: 'def', label: 'Xerife (DEF)' },
-    { key: 'phy', fallback: 'str', label: 'Trator (FÍS)' }
+    { key: "vel", fallback: "pac", label: "Mais Rápido (VEL)" },
+    { key: "fin", fallback: "sho", label: "Artilheiro (FIN)" },
+    { key: "pas", fallback: "pas", label: "Garçom (PAS)" },
+    { key: "dri", fallback: "dri", label: "Liso (DRI)" },
+    { key: "def", fallback: "def", label: "Xerife (DEF)" },
+    { key: "fis", fallback: "phy", label: "Trator (FÍS)" },
   ];
 
-  statsConfig.forEach(stat => {
+  statsConfig.forEach((stat) => {
     let topPlayer = null;
     let maxVal = -1;
 
-    squad.forEach(p => {
-      const val = p.stats ? (p.stats[stat.key] || p.stats[stat.fallback] || 50) : 50;
-      if (val > maxVal) { maxVal = val; topPlayer = p; }
+    squad.forEach((p) => {
+      const val = p.stats
+        ? p.stats[stat.key] || p.stats[stat.fallback] || 50
+        : 50;
+      if (val > maxVal) {
+        maxVal = val;
+        topPlayer = p;
+      }
     });
 
     if (topPlayer) {
@@ -605,7 +695,10 @@ function renderHighlights() {
         <strong class="highlight-card-name">${topPlayer.name}</strong>
         <span class="highlight-card-val">${maxVal}</span>
       `;
-      card.onclick = () => { document.getElementById("toggleViewBtn").click(); openMenu(topPlayer.id); };
+      card.onclick = () => {
+        document.getElementById("toggleViewBtn").click();
+        openMenu(topPlayer.id);
+      };
       container.appendChild(card);
     }
   });
@@ -627,7 +720,9 @@ function renderTable() {
   });
 
   // Filtros
-  const searchTerm = normalizeStr(document.getElementById("tableSearchInput")?.value);
+  const searchTerm = normalizeStr(
+    document.getElementById("tableSearchInput")?.value,
+  );
   const posFilter = document.getElementById("tablePosFilter")?.value || "";
 
   let filteredPlayers = squad.filter((p) => {
@@ -746,12 +841,12 @@ function render() {
     canhotosCount = 0,
     ambiCount = 0,
     estrangeirosCount = 0;
-  let totalPac = 0,
-    totalSho = 0,
+  let totalVel = 0,
+    totalFin = 0,
     totalPas = 0,
     totalDri = 0,
     totalDef = 0,
-    totalPhy = 0;
+    totalFis = 0;
   let outfieldCount = 0;
   let playstylesCount = {};
 
@@ -770,8 +865,8 @@ function render() {
           : Math.max(1.0, pRating - 2.5);
 
     let liveStatusClass = "";
-    if (p.matchStatus === 'red') liveStatusClass = "is-suspended";
-    if (p.matchStatus === 'injury') liveStatusClass = "is-injured";
+    if (p.matchStatus === "red") liveStatusClass = "is-suspended";
+    if (p.matchStatus === "injury") liveStatusClass = "is-injured";
 
     totalRating += displayRating;
     totalAge += p.age || 25;
@@ -782,12 +877,12 @@ function render() {
 
     if (!isGK) {
       const s = p.stats || {};
-      totalPac += s.pac || s.spd || 50;
-      totalSho += s.sho || s.atk || 50;
+      totalVel += s.vel || s.pac || s.spd || 50;
+      totalFin += s.fin || s.sho || s.atk || 50;
       totalPas += s.pas || 50;
       totalDri += s.dri || s.atk || 50;
       totalDef += s.def || 50;
-      totalPhy += s.phy || s.str || 50;
+      totalFis += s.fis || s.phy || s.str || 50;
       outfieldCount++;
     }
 
@@ -829,19 +924,21 @@ function render() {
       }
     };
     // UX Melhorada: Duplo clique ou clique simples (com verificação para não conflitar com drag)
-    el.onclick = () => { if (!el.classList.contains("dragging")) openMenu(p.id); };
+    el.onclick = () => {
+      if (!el.classList.contains("dragging")) openMenu(p.id);
+    };
     pitch.appendChild(el);
   });
 
   if (titulares.length > 0) {
     const divBy = outfieldCount > 0 ? outfieldCount : 1;
     const avgStats = {
-      pac: Math.round(totalPac / divBy),
-      sho: Math.round(totalSho / divBy),
+      vel: Math.round(totalVel / divBy),
+      fin: Math.round(totalFin / divBy),
       pas: Math.round(totalPas / divBy),
       dri: Math.round(totalDri / divBy),
       def: Math.round(totalDef / divBy),
-      phy: Math.round(totalPhy / divBy),
+      fis: Math.round(totalFis / divBy),
     };
     drawRadar("teamRadarChart", avgStats);
 
@@ -864,9 +961,9 @@ function render() {
     document.getElementById("teamFoot").innerText =
       `${destrosCount}D | ${canhotosCount}C${ambiCount > 0 ? ` | ${ambiCount}A` : ""}`;
 
-    document.getElementById("teamAtk").innerText = avgStats.sho;
+    document.getElementById("teamAtk").innerText = avgStats.fin;
     document.getElementById("teamAtk").style.color = getRatingColor(
-      avgStats.sho / 10,
+      avgStats.fin / 10,
     );
     document.getElementById("teamDef").innerText = avgStats.def;
     document.getElementById("teamDef").style.color = getRatingColor(
@@ -961,7 +1058,7 @@ function render() {
     document.getElementById("benchSortSelect").value === "rating"
       ? (b.rating ?? 0) - (a.rating ?? 0)
       : (ALL_POSITIONS.indexOf(a.aptitude?.[0]) ?? 99) -
-      (ALL_POSITIONS.indexOf(b.aptitude?.[0]) ?? 99),
+        (ALL_POSITIONS.indexOf(b.aptitude?.[0]) ?? 99),
   );
   reservas.forEach((p) => {
     const res = document.createElement("div");
@@ -970,7 +1067,7 @@ function render() {
     const mStatusHtml = getMatchStatusHTML(p.matchStatus);
     res.className = "reserve-item";
     res.dataset.id = p.id;
-    res.innerHTML = `<div style="display: flex; justify-content: space-between; width: 100%; align-items: center; position: relative;">${mStatusHtml}<span style="font-size: 0.65rem; background: #222; padding: 2px 4px; border-radius: 4px; border: 1px solid #444; font-weight: 800; margin-left: ${mStatusHtml ? '12px' : '0'};">${p.aptitude?.[0] || "??"}</span><div style="display: flex; align-items: center; gap: 4px;">${getFormHTML(p.form)} <span style="background: ${getRatingColor(pRating)}; color: #000; font-size: 0.7rem; font-weight: 900; padding: 2px 4px; border-radius: 4px;">${pRating.toFixed(1)}</span></div></div><svg class="player-silhouette" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg><div style="margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; width: 100%;"><strong>${p.name}</strong></div><div style="font-size: 0.6rem; color: #888; margin-top: 2px;">Nº ${p.number} | ${p.age || "--"}A | ${p.foot ? p.foot.charAt(0).toUpperCase() : "D"}</div>`;
+    res.innerHTML = `<div style="display: flex; justify-content: space-between; width: 100%; align-items: center; position: relative;">${mStatusHtml}<span style="font-size: 0.65rem; background: #222; padding: 2px 4px; border-radius: 4px; border: 1px solid #444; font-weight: 800; margin-left: ${mStatusHtml ? "12px" : "0"};">${p.aptitude?.[0] || "??"}</span><div style="display: flex; align-items: center; gap: 4px;">${getFormHTML(p.form)} <span style="background: ${getRatingColor(pRating)}; color: #000; font-size: 0.7rem; font-weight: 900; padding: 2px 4px; border-radius: 4px;">${pRating.toFixed(1)}</span></div></div><svg class="player-silhouette" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg><div style="margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; width: 100%;"><strong>${p.name}</strong></div><div style="font-size: 0.6rem; color: #888; margin-top: 2px;">Nº ${p.number} | ${p.age || "--"}A | ${p.foot ? p.foot.charAt(0).toUpperCase() : "D"}</div>`;
     res.onclick = () => openMenu(p.id);
     bench.appendChild(res);
   });
@@ -1055,21 +1152,39 @@ async function loadOpponentData(selectedValue) {
       name: matchInfo.away || "Adversário Genérico",
       atk: 65,
       def: 65,
-      squad: []
+      squad: [],
     };
   }
   try {
     // O timestamp previne que o navegador grave o arquivo JSON velho no cache
-    const res = await fetch("data/" + selectedValue + "?t=" + new Date().getTime());
+    const res = await fetch(
+      "data/" + selectedValue + "?t=" + new Date().getTime(),
+    );
     if (res.ok) {
       const oppData = await res.json();
-      const oppTitulares = (oppData.squad || []).filter(p => p.status === "titular");
+      const oppTitulares = (oppData.squad || []).filter(
+        (p) => p.status === "titular",
+      );
       const len = oppTitulares.length > 0 ? oppTitulares.length : 11;
       return {
         name: oppData.matchInfo?.away || "Adversário Desconhecido",
-        atk: oppTitulares.reduce((sum, p) => sum + ((p.stats?.sho || 65) + (p.stats?.pac || 65)) / 2, 0) / len,
-        def: oppTitulares.reduce((sum, p) => sum + ((p.stats?.def || 65) + (p.stats?.phy || 65)) / 2, 0) / len,
-        squad: oppTitulares
+        atk:
+          oppTitulares.reduce(
+            (sum, p) =>
+              sum +
+              ((p.stats?.fin || p.stats?.sho || 65) +
+                (p.stats?.vel || p.stats?.pac || 65)) /
+                2,
+            0,
+          ) / len,
+        def:
+          oppTitulares.reduce(
+            (sum, p) =>
+              sum +
+              ((p.stats?.def || 65) + (p.stats?.fis || p.stats?.phy || 65)) / 2,
+            0,
+          ) / len,
+        squad: oppTitulares,
       };
     }
   } catch (e) {
@@ -1081,7 +1196,11 @@ async function loadOpponentData(selectedValue) {
 async function openMatchSimulation() {
   const titulares = squad.filter((p) => p.status === "titular");
   if (titulares.length < 11) {
-    showCustomModal("Atenção: Você precisa de exatos 11 jogadores titulares na prancheta para iniciar uma partida!", "alert", "btn-danger");
+    showCustomModal(
+      "Atenção: Você precisa de exatos 11 jogadores titulares na prancheta para iniciar uma partida!",
+      "alert",
+      "btn-danger",
+    );
     return;
   }
 
@@ -1095,34 +1214,42 @@ async function openMatchSimulation() {
   modal.classList.add("show");
 
   // Reset da UI para aguardar carregamento
-  logContainer.innerHTML = "<div class='log-entry log-neutral'>Carregando informações da partida...</div>";
+  logContainer.innerHTML =
+    "<div class='log-entry log-neutral'>Carregando informações da partida...</div>";
   timeEl.innerText = "00'";
   scoreEl.innerText = "0 x 0";
   startBtn.style.display = "none";
   if (opponentSelect) opponentSelect.disabled = false;
 
   // Carrega os dados baseados no arquivo selecionado
-  let currentOpponent = await loadOpponentData(opponentSelect ? opponentSelect.value : "generic");
+  let currentOpponent = await loadOpponentData(
+    opponentSelect ? opponentSelect.value : "generic",
+  );
 
   const updateUI = () => {
-    document.getElementById("simHomeTeam").innerText = matchInfo.home || "Seu Time";
+    document.getElementById("simHomeTeam").innerText =
+      matchInfo.home || "Seu Time";
     document.getElementById("simAwayTeam").innerText = currentOpponent.name;
-    document.getElementById("simMatchTitle").innerText = matchInfo.tournament || "Amistoso Internacional";
+    document.getElementById("simMatchTitle").innerText =
+      matchInfo.tournament || "Amistoso Internacional";
   };
   updateUI();
 
   if (opponentSelect) {
     opponentSelect.onchange = async (e) => {
       startBtn.style.display = "none";
-      logContainer.innerHTML = "<div class='log-entry log-neutral'>Escaneando dados do arquivo JSON...</div>";
+      logContainer.innerHTML =
+        "<div class='log-entry log-neutral'>Escaneando dados do arquivo JSON...</div>";
       currentOpponent = await loadOpponentData(e.target.value);
       updateUI();
-      logContainer.innerHTML = "<div class='log-entry log-neutral'>Arquivos do adversário carregados! Aguardando o apito inicial...</div>";
+      logContainer.innerHTML =
+        "<div class='log-entry log-neutral'>Arquivos do adversário carregados! Aguardando o apito inicial...</div>";
       startBtn.style.display = "block";
     };
   }
 
-  logContainer.innerHTML = "<div class='log-entry log-neutral'>Equipes perfiladas. Aguardando o apito do árbitro...</div>";
+  logContainer.innerHTML =
+    "<div class='log-entry log-neutral'>Equipes perfiladas. Aguardando o apito do árbitro...</div>";
   startBtn.innerText = "Apito Inicial";
   startBtn.style.display = "block";
 
@@ -1131,8 +1258,21 @@ async function openMatchSimulation() {
   let awayScore = 0;
 
   // Cálcula a Força do seu time (Ataque e Defesa baseada nos titulares)
-  const homeAtk = titulares.reduce((sum, p) => sum + ((p.stats?.sho || 50) + (p.stats?.pac || 50)) / 2, 0) / 11;
-  const homeDef = titulares.reduce((sum, p) => sum + ((p.stats?.def || 50) + (p.stats?.phy || 50)) / 2, 0) / 11;
+  const homeAtk =
+    titulares.reduce(
+      (sum, p) =>
+        sum +
+        ((p.stats?.fin || p.stats?.sho || 50) +
+          (p.stats?.vel || p.stats?.pac || 50)) /
+          2,
+      0,
+    ) / 11;
+  const homeDef =
+    titulares.reduce(
+      (sum, p) =>
+        sum + ((p.stats?.def || 50) + (p.stats?.fis || p.stats?.phy || 50)) / 2,
+      0,
+    ) / 11;
 
   const addLog = (text, type = "log-neutral") => {
     const el = document.createElement("div");
@@ -1161,41 +1301,70 @@ async function openMatchSimulation() {
     // LÓGICA 1: O Seu Time Ataca
     if (rand < (homeAtk / (homeAtk + currentOpponent.def)) * 15) {
       // Encontra um atacante ou meia do seu time para participar da jogada
-      const atacantes = titulares.filter(p => ["CA", "SA", "PE", "PD", "MEI"].includes(p.aptitude?.[0]));
+      const atacantes = titulares.filter((p) =>
+        ["CA", "SA", "PE", "PD", "MEI"].includes(p.aptitude?.[0]),
+      );
       let jogador = titulares[Math.floor(Math.random() * 11)];
-      if (atacantes.length > 0) jogador = atacantes[Math.floor(Math.random() * atacantes.length)];
+      if (atacantes.length > 0)
+        jogador = atacantes[Math.floor(Math.random() * atacantes.length)];
 
-      if (Math.random() * 100 < (jogador.stats?.sho || 50) + 10) { // Bônus base
+      if (
+        Math.random() * 100 <
+        (jogador.stats?.fin || jogador.stats?.sho || 50) + 10
+      ) {
+        // Bônus base
         homeScore++;
         scoreEl.innerText = `${homeScore} x ${awayScore}`;
-        addLog(`GOOOOOOOOL! Que finalização perfeita de ${jogador.name}! Bateu sem chances pro goleiro.`, "log-goal");
+        addLog(
+          `GOOOOOOOOL! Que finalização perfeita de ${jogador.name}! Bateu sem chances pro goleiro.`,
+          "log-goal",
+        );
       } else {
-        addLog(`Uuuuuh! ${jogador.name} recebe em boa condição mas a bola passa raspando a trave.`, "log-chance");
+        addLog(
+          `Uuuuuh! ${jogador.name} recebe em boa condição mas a bola passa raspando a trave.`,
+          "log-chance",
+        );
       }
     }
     // LÓGICA 2: O Adversário Ataca
-    else if (rand > 100 - (currentOpponent.atk / (currentOpponent.atk + homeDef)) * 12) {
+    else if (
+      rand >
+      100 - (currentOpponent.atk / (currentOpponent.atk + homeDef)) * 12
+    ) {
       // O seu goleiro é testado
-      const goleiros = titulares.filter(p => p.aptitude?.[0] === "GL");
+      const goleiros = titulares.filter((p) => p.aptitude?.[0] === "GL");
       const goleiro = goleiros.length > 0 ? goleiros[0] : titulares[0];
 
       // Tenta descobrir o nome de um atacante do time adversário lido do JSON
       let oppAttackerName = "O atacante adversário";
       if (currentOpponent.squad.length > 0) {
-        const oppAttackers = currentOpponent.squad.filter(p => ["CA", "SA", "PE", "PD", "MEI"].includes(p.aptitude?.[0]));
+        const oppAttackers = currentOpponent.squad.filter((p) =>
+          ["CA", "SA", "PE", "PD", "MEI"].includes(p.aptitude?.[0]),
+        );
         if (oppAttackers.length > 0) {
-          oppAttackerName = oppAttackers[Math.floor(Math.random() * oppAttackers.length)].name;
+          oppAttackerName =
+            oppAttackers[Math.floor(Math.random() * oppAttackers.length)].name;
         } else {
-          oppAttackerName = currentOpponent.squad[Math.floor(Math.random() * currentOpponent.squad.length)].name;
+          oppAttackerName =
+            currentOpponent.squad[
+              Math.floor(Math.random() * currentOpponent.squad.length)
+            ].name;
         }
       }
 
-      if (Math.random() * 100 < 35 - ((goleiro.stats?.ref || 50) / 4)) { // Falha da defesa / Goleiro não pegou
+      if (Math.random() * 100 < 35 - (goleiro.stats?.ref || 50) / 4) {
+        // Falha da defesa / Goleiro não pegou
         awayScore++;
         scoreEl.innerText = `${homeScore} x ${awayScore}`;
-        addLog(`Gol... ${oppAttackerName} se aproveita da bobeira da zaga e manda a bola pro fundo da rede.`, "log-foul");
+        addLog(
+          `Gol... ${oppAttackerName} se aproveita da bobeira da zaga e manda a bola pro fundo da rede.`,
+          "log-foul",
+        );
       } else {
-        addLog(`DEFESAÇA! ${oppAttackerName} chegou com muito perigo, mas ${goleiro.name} operou um milagre!`, "log-chance");
+        addLog(
+          `DEFESAÇA! ${oppAttackerName} chegou com muito perigo, mas ${goleiro.name} operou um milagre!`,
+          "log-chance",
+        );
       }
     }
   };
@@ -1207,56 +1376,85 @@ async function openMatchSimulation() {
     simInterval = setInterval(runMinute, 1200); // 1.2 segundos da vida real = X minutos do jogo
   };
 
-  document.getElementById("closeSimBtn").onclick = () => { clearInterval(simInterval); modal.classList.remove("show"); };
+  document.getElementById("closeSimBtn").onclick = () => {
+    clearInterval(simInterval);
+    modal.classList.remove("show");
+  };
 }
 
 function setupEventListeners() {
   // Contratar / Dispensar Jogadores
-  document.getElementById("addPlayerBtn").addEventListener("click", async () => {
-    if (isEditMode) {
-      const proceed = await showCustomModal("Você tem edições em andamento. Deseja descartar e criar um novo jogador?", "confirm", "btn-primary");
-      if (!proceed) return;
-      isEditMode = false;
-    }
-    const newId = addNewPlayer();
-    document.getElementById("toggleViewBtn").click(); // Volta pro modo prancheta se estiver na tabela
-    render();
-    openMenu(newId);
-    setEditMode(true);
-  });
-
-  document.getElementById("deletePlayerBtn").addEventListener("click", async () => {
-    const proceed = await showCustomModal("Tem certeza que deseja dispensar este jogador permanentemente do clube?", "confirm", "btn-danger");
-    if (proceed) {
-      removePlayer(activePlayerId);
-      isEditMode = false; // Desativa a proteção para o menu poder fechar livremente
-      closeMenu();
-      render();
-    }
-  });
-
-  document.getElementById("simulateMatchBtn").addEventListener("click", openMatchSimulation);
-
-  document.getElementById("saveTacticBtn").addEventListener("click", async () => {
-    const select = document.getElementById("formationSelect");
-    const currentFormat = select.value;
-    const newName = await showCustomModal("Digite um nome para sua nova Formação (ex: 4-1-3-2 Atacante):", "prompt", "btn-primary");
-
-    if (newName && newName.trim() !== "") {
-      const name = newName.trim();
-      if (formations[name]) {
-        await showCustomModal("Já existe uma formação com esse nome! Escolha um nome diferente.", "alert", "btn-danger");
-        return;
+  document
+    .getElementById("addPlayerBtn")
+    .addEventListener("click", async () => {
+      if (isEditMode) {
+        const proceed = await showCustomModal(
+          "Você tem edições em andamento. Deseja descartar e criar um novo jogador?",
+          "confirm",
+          "btn-primary",
+        );
+        if (!proceed) return;
+        isEditMode = false;
       }
-      formations[name] = JSON.parse(JSON.stringify(formations[currentFormat]));
-      saveToLocal();
+      const newId = addNewPlayer();
+      document.getElementById("toggleViewBtn").click(); // Volta pro modo prancheta se estiver na tabela
+      render();
+      openMenu(newId);
+      setEditMode(true);
+    });
 
-      const opt = document.createElement("option");
-      opt.value = opt.innerText = name;
-      select.appendChild(opt);
-      select.value = name;
-    }
-  });
+  document
+    .getElementById("deletePlayerBtn")
+    .addEventListener("click", async () => {
+      const proceed = await showCustomModal(
+        "Tem certeza que deseja dispensar este jogador permanentemente do clube?",
+        "confirm",
+        "btn-danger",
+      );
+      if (proceed) {
+        removePlayer(activePlayerId);
+        isEditMode = false; // Desativa a proteção para o menu poder fechar livremente
+        closeMenu();
+        render();
+      }
+    });
+
+  document
+    .getElementById("simulateMatchBtn")
+    .addEventListener("click", openMatchSimulation);
+
+  document
+    .getElementById("saveTacticBtn")
+    .addEventListener("click", async () => {
+      const select = document.getElementById("formationSelect");
+      const currentFormat = select.value;
+      const newName = await showCustomModal(
+        "Digite um nome para sua nova Formação (ex: 4-1-3-2 Atacante):",
+        "prompt",
+        "btn-primary",
+      );
+
+      if (newName && newName.trim() !== "") {
+        const name = newName.trim();
+        if (formations[name]) {
+          await showCustomModal(
+            "Já existe uma formação com esse nome! Escolha um nome diferente.",
+            "alert",
+            "btn-danger",
+          );
+          return;
+        }
+        formations[name] = JSON.parse(
+          JSON.stringify(formations[currentFormat]),
+        );
+        saveToLocal();
+
+        const opt = document.createElement("option");
+        opt.value = opt.innerText = name;
+        select.appendChild(opt);
+        select.value = name;
+      }
+    });
 
   document.getElementById("formationSelect").addEventListener("change", (e) => {
     resetFormationAlignment(e.target.value);
@@ -1278,20 +1476,22 @@ function setupEventListeners() {
       l.href = c.toDataURL();
       l.click();
     });
-  document
-    .getElementById("benchSearchInput")
-    .addEventListener("input", (e) => {
-      const term = normalizeStr(e.target.value);
-      document
-        .querySelectorAll(".reserve-item")
-        .forEach((i) => {
-          i.style.display = normalizeStr(i.innerText).includes(term) ? "flex" : "none";
-        });
+  document.getElementById("benchSearchInput").addEventListener("input", (e) => {
+    const term = normalizeStr(e.target.value);
+    document.querySelectorAll(".reserve-item").forEach((i) => {
+      i.style.display = normalizeStr(i.innerText).includes(term)
+        ? "flex"
+        : "none";
     });
+  });
   document.getElementById("closeMenuBtn").onclick = closeMenu;
   document.getElementById("toggleEditBtn").onclick = async () => {
     if (isEditMode) {
-      const proceed = await showCustomModal("Cancelar a edição? As alterações não salvas serão perdidas.", "confirm", "btn-danger");
+      const proceed = await showCustomModal(
+        "Cancelar a edição? As alterações não salvas serão perdidas.",
+        "confirm",
+        "btn-danger",
+      );
       if (proceed) {
         openMenu(activePlayerId); // Cancela a edição, recarregando os valores originais
       }
@@ -1305,8 +1505,8 @@ function setupEventListeners() {
       // ANTI-CRASH: Detecta se é GK para mapear os sliders corretos
       const isGK = p.aptitude && p.aptitude[0] === "GL";
       const statKeys = isGK
-        ? ["div", "han", "kic", "ref", "spd", "pos"]
-        : ["pac", "sho", "pas", "dri", "def", "phy"];
+        ? ["sal", "man", "rep", "ref", "vel", "pos"]
+        : ["vel", "fin", "pas", "dri", "def", "fis"];
 
       const newStats = {};
       statKeys.forEach((k) => {
@@ -1344,18 +1544,23 @@ function setupEventListeners() {
     if (!p1) return;
 
     const isGK = p1.aptitude && p1.aptitude[0] === "GL";
-    const statKeys = isGK ? ['div', 'han', 'kic', 'ref', 'spd', 'pos'] : ['pac', 'sho', 'pas', 'dri', 'def', 'phy'];
+    const statKeys = isGK
+      ? ["sal", "man", "rep", "ref", "vel", "pos"]
+      : ["vel", "fin", "pas", "dri", "def", "fis"];
 
     let s1;
     if (document.getElementById(`slider_${statKeys[0]}`)) {
       s1 = {};
-      statKeys.forEach(k => s1[k] = parseInt(document.getElementById(`slider_${k}`).value, 10));
+      statKeys.forEach(
+        (k) =>
+          (s1[k] = parseInt(document.getElementById(`slider_${k}`).value, 10)),
+      );
     } else {
       s1 = p1.stats || {};
     }
 
     const p2 = squad.find((x) => x.id === parseInt(e.target.value, 10));
-    const s2 = p2 ? (p2.stats || {}) : null;
+    const s2 = p2 ? p2.stats || {} : null;
     drawRadar("radarChart", s1, s2, isGK);
     renderStatsNumbers(s1, s2, isGK);
   };
@@ -1420,7 +1625,11 @@ function setupEventListeners() {
 async function main() {
   // 1. Garante que o botão de Resetar funcione SEMPRE, mesmo se a tela quebrar ao carregar!
   document.getElementById("resetBtn").onclick = async () => {
-    const proceed = await showCustomModal("ATENÇÃO: Isso apagará todas as suas edições, contratações e táticas salvas. Deseja realmente resetar o aplicativo para os padrões de fábrica?", "confirm", "btn-danger");
+    const proceed = await showCustomModal(
+      "ATENÇÃO: Isso apagará todas as suas edições, contratações e táticas salvas. Deseja realmente resetar o aplicativo para os padrões de fábrica?",
+      "confirm",
+      "btn-danger",
+    );
     if (proceed) {
       resetData();
     }
@@ -1433,17 +1642,34 @@ async function main() {
   if (await initSystem()) {
     const select = document.getElementById("formationSelect");
     const currentVal = select.value;
+
+    // Salva os nomes traduzidos definidos no HTML antes de recriar a lista
+    const optionLabels = {};
+    Array.from(select.options).forEach(
+      (opt) => (optionLabels[opt.value] = opt.innerText),
+    );
+
     select.innerHTML = "";
-    
+
     // Organiza a lista de táticas em ordem alfabética/numérica (ex: 3-4-3 vem antes de 4-3-3)
-    const sortedFormations = Object.keys(formations).sort((a, b) => a.localeCompare(b));
-    
+    const sortedFormations = Object.keys(formations).sort((a, b) =>
+      a.localeCompare(b),
+    );
+
     sortedFormations.forEach((f) => {
       const opt = document.createElement("option");
-      opt.value = opt.innerText = f;
+      opt.value = f;
+      opt.innerText = optionLabels[f] || f;
       select.appendChild(opt);
     });
-    if (sortedFormations.includes(currentVal)) select.value = currentVal;
+
+    // Força uma seleção tática válida, não permitindo valores fantasmas
+    if (sortedFormations.includes(currentVal)) {
+      select.value = currentVal;
+    } else if (sortedFormations.length > 0) {
+      select.value = sortedFormations[0];
+    }
+
     render();
     setupEventListeners();
   } else {
@@ -1451,7 +1677,7 @@ async function main() {
     await showCustomModal(
       "Erro crítico: O painel não conseguiu ler o arquivo JSON. Certifique-se de estar usando o 'Live Server' no VS Code e verifique se o arquivo data/vasco.json não contém erros.",
       "alert",
-      "btn-danger"
+      "btn-danger",
     );
   }
 }

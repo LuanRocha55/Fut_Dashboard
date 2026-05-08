@@ -18,21 +18,21 @@ export function calculateOVR(stats, form = 0, isGK = false) {
   
   let avg;
   if (isGK) {
-    const div = stats.div || stats.def || 75; // Salto (Herda defesa se for legado)
-    const han = stats.han || stats.def || 75; // Manejo
-    const kic = stats.kic || stats.pas || 60; // Reposição
+    const sal = stats.sal || stats.div || stats.def || 75; // Salto
+    const man = stats.man || stats.han || stats.def || 75; // Manejo
+    const rep = stats.rep || stats.kic || stats.pas || 60; // Reposição
     const ref = stats.ref || stats.def || 75; // Reflexo
-    const spd = stats.spd || stats.pac || 40; // Velocidade
+    const vel = stats.vel || stats.spd || stats.pac || 40; // Velocidade
     const pos = stats.pos || stats.def || 75; // Posicionamento
-    avg = (div + han + kic + ref + spd + pos) / 6;
+    avg = (sal + man + rep + ref + vel + pos) / 6;
   } else {
-    const pac = stats.pac || stats.spd || 50;
-    const sho = stats.sho || stats.atk || 50;
+    const vel = stats.vel || stats.pac || stats.spd || 50;
+    const fin = stats.fin || stats.sho || stats.atk || 50;
     const pas = stats.pas || 50;
     const dri = stats.dri || stats.atk || 50;
     const def = stats.def || 50;
-    const phy = stats.phy || stats.str || 50;
-    avg = (pac + sho + pas + dri + def + phy) / 6;
+    const fis = stats.fis || stats.phy || stats.str || 50;
+    avg = (vel + fin + pas + dri + def + fis) / 6;
   }
   
   const baseOVR = avg / 10;
@@ -119,7 +119,7 @@ export function addNewPlayer() {
     playstyle: "Meia Versátil",
     form: 0,
     matchStatus: "normal",
-    stats: { pac: 50, sho: 50, pas: 50, dri: 50, def: 50, phy: 50 },
+    stats: { vel: 50, fin: 50, pas: 50, dri: 50, def: 50, fis: 50 },
     rating: 5.0,
     captain: false
   };
@@ -156,14 +156,22 @@ export async function initSystem() {
     const savedSquad = localStorage.getItem("squad_data");
     const savedTactics = localStorage.getItem("futTactics");
 
-    // O "?t=..." impede que o navegador grave o data.json e fique te mostrando a versão velha
-    const response = await fetch("data/vasco.json?t=" + new Date().getTime());
-    const remoteData = await response.json();
-    
-    // O 'Object.assign' permite que as variáveis exportadas sejam modificadas
-    Object.assign(matchInfo, remoteData.matchInfo || {});
-    
-    // Fallback de segurança: Se o arquivo JSON não tiver a chave "tactics" (ex: um json focado só no elenco)
+    let remoteData = { squad: null, tactics: null, matchInfo: null };
+    let fetchSuccess = false;
+
+    try {
+      // O "?t=..." impede que o navegador grave o data.json e fique te mostrando a versão velha
+      const response = await fetch("data/vasco.json?t=" + new Date().getTime());
+      if (response.ok) {
+        remoteData = await response.json();
+        fetchSuccess = true;
+        Object.assign(matchInfo, remoteData.matchInfo || {});
+      }
+    } catch (e) {
+      console.warn("Aviso: Falha ao baixar JSON (Provavelmente rodando sem Live Server). Tentando recuperar pelo cache...");
+    }
+
+    // Fallback de segurança garantida
     const fallbackTactics = {
       "4-2-3-1": [
         { "t": 50, "l": 5 }, { "t": 20, "l": 20 }, { "t": 80, "l": 20 }, { "t": 35, "l": 20 }, { "t": 65, "l": 20 },
@@ -181,7 +189,7 @@ export async function initSystem() {
     const loadedFormations = savedTactics ? JSON.parse(savedTactics) : tacticsData;
     Object.assign(formations, loadedFormations);
 
-    if (savedTactics) {
+    if (savedTactics && fetchSuccess && remoteData.tactics) {
       let updated = false;
       for (let f in remoteData.tactics) {
         if (!formations[f]) { formations[f] = remoteData.tactics[f]; updated = true; }
@@ -191,8 +199,8 @@ export async function initSystem() {
 
     if (savedSquad) {
       const localSquad = JSON.parse(savedSquad);
-      // Trava de segurança: Se o cache for antigo ou algum jogador estiver sem nota (undefined)
-      if ((localSquad.length > 0 && localSquad[0].positions) || localSquad.length !== remoteData.squad.length || localSquad[0].rating === undefined) {
+      // Trava de segurança: Verifica se precisa migrar baseado no JSON apenas se a leitura do JSON foi um sucesso
+      if (fetchSuccess && remoteData.squad && ((localSquad.length > 0 && localSquad[0].positions) || localSquad.length !== remoteData.squad.length || localSquad[0].rating === undefined)) {
         console.log("Atualização de Arquitetura ou Elenco Detectada. Migrando...");
         remoteData.squad.forEach(p => {
           if (!p.aptitude) p.aptitude = p.positions || ["CA"];
@@ -208,13 +216,16 @@ export async function initSystem() {
         });
         squad.push(...localSquad);
       }
-    } else {
+    } else if (fetchSuccess && remoteData.squad) {
       remoteData.squad.forEach(p => {
         if (!p.aptitude) p.aptitude = p.positions || ["CA"];
         p.rating = calculateOVR(p.stats, p.form, p.aptitude[0] === "GL");
       });
       squad.push(...remoteData.squad);
       saveToLocal();
+    } else {
+      console.error("Nenhum dado local salvo e falha ao ler arquivo. A prancheta ficará vazia.");
+      return false; // Força a exibição do modal de erro crítico do Live Server
     }
     return true; // Sucesso
   } catch (error) {
