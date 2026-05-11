@@ -133,7 +133,7 @@
       "ovr": 81,
       "status": "titular",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 38,
       "foot": "Destro",
@@ -146,12 +146,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 40
       },
       "detailedStats": {
@@ -251,7 +251,8 @@
       "ovr": 80,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 28,
       "foot": "Destro",
@@ -426,7 +427,8 @@
       "ovr": 79,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 30,
       "foot": "Destro",
@@ -544,7 +546,8 @@
       "ovr": 78,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 25,
       "foot": "Destro",
@@ -887,7 +890,7 @@
       "ovr": 73,
       "status": "reserva",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 33,
       "foot": "Destro",
@@ -897,12 +900,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 37
       },
       "detailedStats": {
@@ -1219,7 +1222,7 @@
       "ovr": 66,
       "status": "reserva",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 25,
       "foot": "Destro",
@@ -1229,12 +1232,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 24
       },
       "detailedStats": {

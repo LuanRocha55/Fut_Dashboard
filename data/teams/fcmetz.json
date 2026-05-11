@@ -68,7 +68,7 @@
       "ovr": 73,
       "status": "titular",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 36,
       "foot": "Destro",
@@ -79,12 +79,12 @@
         "Far Throw"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 31
       },
       "detailedStats": {
@@ -179,7 +179,8 @@
       "ovr": 72,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 38,
       "foot": "Destro",
@@ -235,7 +236,8 @@
       "ovr": 71,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 26,
       "foot": "Destro",
@@ -841,7 +843,8 @@
       "ovr": 65,
       "status": "reserva",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 20,
       "foot": "Destro",
@@ -1061,7 +1064,8 @@
       "ovr": 60,
       "status": "reserva",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 24,
       "foot": "Destro",
@@ -1226,7 +1230,8 @@
       "ovr": 56,
       "status": "reserva",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 20,
       "foot": "Destro",

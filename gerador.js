@@ -156,6 +156,21 @@ const idxRef = getCol("goalkeeping_reflexes", "gk_reflexes", "gk_ref");
 const idxSpd = getCol("goalkeeping_speed", "gk_speed", "gk_spd");
 const idxPosGk = getCol("goalkeeping_positioning", "gk_positioning", "gk_pos");
 
+const FEM_LEAGUES = [
+  "Liga F",
+  "Barclays WSL",
+  "NWSL",
+  "Arkema PL",
+  "GPFBL",
+  "Calcio A Femminile",
+  "Nederland Vrouwen Liga",
+  "Sverige Liga",
+  "Liga Portugal Feminino",
+  "Ceska Liga Zen",
+  "Scottish Women's League",
+  "Schweizer Damen Liga"
+];
+
 if (idxClub === -1 || idxName === -1) {
   console.log(
     "❌ ERRO: Não foi possível identificar as colunas de Clube ou Nome no arquivo.",
@@ -170,8 +185,14 @@ for (let i = 1; i < lines.length; i++) {
   if (!lines[i].trim()) continue;
   const row = parseCSVLine(lines[i], separator);
 
-  const club = row[idxClub];
+  let club = row[idxClub];
   if (!club) continue;
+
+  // Diferencia Masculino e Feminino baseado na Liga
+  const league = idxLeague !== -1 ? row[idxLeague] : "";
+  if (FEM_LEAGUES.some(fem => league.includes(fem))) {
+    club += " (Fem)";
+  }
 
   if (isAll || normalizeString(club).includes(teamNameInput)) {
     if (!equipes[club]) equipes[club] = [];
@@ -200,32 +221,32 @@ console.log(
 
 // Mapeamento de Posições: Inglês/FIFA -> Português/FutDashboard
 const posMap = {
-  GK: "GL", 
-  SW: "ZE", 
-  CB: "ZE", 
-  RCB: "ZE", 
-  LCB: "ZE",
-  RB: "LD", 
-  LB: "LE", 
-  RWB: "LD", 
-  LWB: "LE",
-  CDM: "VOL", 
-  RDM: "VOL", 
-  LDM: "VOL",
-  CM: "MC", 
-  RCM: "MC", 
-  LCM: "MC",
-  CAM: "MEI", 
-  RAM: "MEI", 
-  LAM: "MEI",
-  RM: "MD", 
-  LM: "ME",
-  RW: "PD", 
-  LW: "PE",
-  CF: "SA", 
-  RF: "SA", 
-  LF: "SA",
-  ST: "CA"
+  GK: ["GOL"],
+  SW: ["ZE", "ZD"],
+  CB: ["ZE", "ZD"],
+  RCB: ["ZE", "ZD"],
+  LCB: ["ZE", "ZD"],
+  RB: ["LD"],
+  LB: ["LE"],
+  RWB: ["LD", "MD"],
+  LWB: ["LE", "ME"],
+  CDM: ["VOL"],
+  RDM: ["VOL"],
+  LDM: ["VOL"],
+  CM: ["MC"],
+  RCM: ["MC"],
+  LCM: ["MC"],
+  CAM: ["MEI"],
+  RAM: ["MEI"],
+  LAM: ["MEI"],
+  RM: ["MD"],
+  LM: ["ME"],
+  RW: ["PD"],
+  LW: ["PE"],
+  CF: ["SA", "CA"],
+  RF: ["SA"],
+  LF: ["SA"],
+  ST: ["CA"]
 };
 
 const parseNum = (val, def = 50) => {
@@ -240,11 +261,19 @@ for (const realTeamName of timesEncontrados) {
   const elencoBruto = equipes[realTeamName];
   const squad = elencoBruto.map((p, index) => {
     const rawPositions = idxPos !== -1 ? p[idxPos] : "ST";
-    const aptitudes = rawPositions
+    let aptitudes = [];
+    rawPositions
       .replace(/\"/g, "")
       .split(",")
-      .map((pos) => posMap[pos.trim().toUpperCase()] || "CA");
-    const isGK = aptitudes.includes("GL");
+      .forEach((pos) => {
+        const mapped = posMap[pos.trim().toUpperCase()];
+        if (mapped) {
+          mapped.forEach(m => { if(!aptitudes.includes(m)) aptitudes.push(m); });
+        }
+      });
+    
+    if (aptitudes.length === 0) aptitudes = ["CA"];
+    const isGK = aptitudes.includes("GOL");
 
     const playstylesRaw = idxPlayStyle !== -1 ? p[idxPlayStyle] : "";
     const playstyles = playstylesRaw
@@ -275,12 +304,12 @@ for (const realTeamName of timesEncontrados) {
       playstyles: playstyles,
       stats: isGK
         ? {
-            sal: idxDiv !== -1 ? parseNum(p[idxDiv], 75) : 75,
-            man: idxHan !== -1 ? parseNum(p[idxHan], 75) : 75,
-            rep: idxKic !== -1 ? parseNum(p[idxKic], 60) : 60,
+            alc: idxDiv !== -1 ? parseNum(p[idxDiv], 75) : 75,
+            seg: idxHan !== -1 ? parseNum(p[idxHan], 75) : 75,
+            esp: idxRef !== -1 ? Math.round((parseNum(p[idxRef]) + parseNum(p[idxDiv])) / 2) : 75,
             ref: idxRef !== -1 ? parseNum(p[idxRef], 75) : 75,
-            vel: idxSpd !== -1 ? parseNum(p[idxSpd], 40) : 40,
             pos: idxPosGk !== -1 ? parseNum(p[idxPosGk], 75) : 75,
+            vel: idxSpd !== -1 ? parseNum(p[idxSpd], 40) : 40,
             sta: idxSta !== -1 ? parseNum(p[idxSta], 50) : 50,
           }
         : {

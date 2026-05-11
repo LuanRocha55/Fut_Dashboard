@@ -13,7 +13,7 @@
       "ovr": 85,
       "status": "titular",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 23,
       "foot": "Destro",
@@ -24,12 +24,12 @@
         "Far Throw"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 45
       },
       "detailedStats": {
@@ -181,7 +181,7 @@
       "ovr": 79,
       "status": "titular",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 30,
       "foot": "Destro",
@@ -192,12 +192,12 @@
         "Footwork"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 40
       },
       "detailedStats": {
@@ -406,7 +406,8 @@
       "ovr": 77,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 20,
       "foot": "Destro",
@@ -517,7 +518,8 @@
       "ovr": 76,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 27,
       "foot": "Destro",
@@ -962,7 +964,7 @@
       "ovr": 72,
       "status": "reserva",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 33,
       "foot": "Destro",
@@ -972,12 +974,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 40
       },
       "detailedStats": {
@@ -1072,7 +1074,8 @@
       "ovr": 71,
       "status": "reserva",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 27,
       "foot": "Destro",
@@ -1127,7 +1130,8 @@
       "ovr": 71,
       "status": "reserva",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 22,
       "foot": "Destro",
@@ -1347,7 +1351,8 @@
       "ovr": 67,
       "status": "reserva",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 19,
       "foot": "Destro",
@@ -1457,7 +1462,8 @@
       "ovr": 63,
       "status": "reserva",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 21,
       "foot": "Destro",
@@ -1723,893 +1729,6 @@
         "jumping": 60,
         "strength": 55,
         "aggression": 55
-      }
-    },
-    {
-      "id": 32,
-      "number": 32,
-      "name": "Aida Esteve",
-      "ovr": 78,
-      "status": "reserva",
-      "aptitude": [
-        "MC"
-      ],
-      "age": 23,
-      "foot": "Destro",
-      "captain": false,
-      "nationality": "Spain",
-      "playstyles": [
-        "Press Proven"
-      ],
-      "stats": {
-        "vel": 69,
-        "fin": 72,
-        "pas": 77,
-        "dri": 80,
-        "def": 70,
-        "fis": 63,
-        "sta": 73
-      },
-      "detailedStats": {
-        "acceleration": 69,
-        "sprintSpeed": 69,
-        "positioning": 72,
-        "finishing": 74,
-        "shotPower": 68,
-        "longShots": 77,
-        "volleys": 54,
-        "penalties": 66,
-        "vision": 80,
-        "crossing": 68,
-        "freeKickAccuracy": 66,
-        "shortPassing": 85,
-        "longPassing": 74,
-        "curve": 65,
-        "agility": 77,
-        "balance": 73,
-        "reactions": 75,
-        "ballControl": 80,
-        "composure": 62,
-        "interceptions": 71,
-        "headingAccuracy": 54,
-        "defAwareness": 66,
-        "standingTackle": 80,
-        "slidingTackle": 61,
-        "jumping": 63,
-        "strength": 58,
-        "aggression": 64
-      }
-    },
-    {
-      "id": 33,
-      "number": 33,
-      "name": "Anita Marcos",
-      "ovr": 78,
-      "status": "reserva",
-      "aptitude": [
-        "CA"
-      ],
-      "age": 24,
-      "foot": "Destro",
-      "captain": false,
-      "nationality": "Spain",
-      "playstyles": [
-        "Finesse Shot",
-        "Press Proven",
-        "Relentless"
-      ],
-      "stats": {
-        "vel": 77,
-        "fin": 79,
-        "pas": 72,
-        "dri": 81,
-        "def": 51,
-        "fis": 81,
-        "sta": 81
-      },
-      "detailedStats": {
-        "acceleration": 78,
-        "sprintSpeed": 76,
-        "positioning": 75,
-        "finishing": 82,
-        "shotPower": 79,
-        "longShots": 80,
-        "volleys": 70,
-        "penalties": 70,
-        "vision": 70,
-        "crossing": 70,
-        "freeKickAccuracy": 79,
-        "shortPassing": 75,
-        "longPassing": 69,
-        "curve": 72,
-        "agility": 88,
-        "balance": 74,
-        "reactions": 78,
-        "ballControl": 80,
-        "composure": 71,
-        "interceptions": 45,
-        "headingAccuracy": 70,
-        "defAwareness": 35,
-        "standingTackle": 63,
-        "slidingTackle": 53,
-        "jumping": 86,
-        "strength": 85,
-        "aggression": 69
-      }
-    },
-    {
-      "id": 34,
-      "number": 34,
-      "name": "Enith Salón",
-      "ovr": 77,
-      "status": "reserva",
-      "aptitude": [
-        "GL"
-      ],
-      "age": 22,
-      "foot": "Destro",
-      "captain": false,
-      "nationality": "Spain",
-      "playstyles": [
-        "1v1 Close Down"
-      ],
-      "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
-        "ref": 75,
-        "vel": 40,
-        "pos": 75,
-        "sta": 29
-      },
-      "detailedStats": {
-        "acceleration": 47,
-        "sprintSpeed": 48,
-        "positioning": 8,
-        "finishing": 8,
-        "shotPower": 53,
-        "longShots": 8,
-        "volleys": 7,
-        "penalties": 14,
-        "vision": 27,
-        "crossing": 12,
-        "freeKickAccuracy": 12,
-        "shortPassing": 30,
-        "longPassing": 33,
-        "curve": 12,
-        "agility": 50,
-        "balance": 55,
-        "reactions": 75,
-        "ballControl": 22,
-        "composure": 33,
-        "interceptions": 13,
-        "headingAccuracy": 11,
-        "defAwareness": 11,
-        "standingTackle": 14,
-        "slidingTackle": 13,
-        "jumping": 63,
-        "strength": 60,
-        "aggression": 19
-      }
-    },
-    {
-      "id": 35,
-      "number": 35,
-      "name": "Marta Carro",
-      "ovr": 75,
-      "status": "reserva",
-      "aptitude": [
-        "VOL"
-      ],
-      "age": 33,
-      "foot": "Destro",
-      "captain": false,
-      "nationality": "Spain",
-      "playstyles": [
-        "Block"
-      ],
-      "stats": {
-        "vel": 66,
-        "fin": 67,
-        "pas": 62,
-        "dri": 65,
-        "def": 75,
-        "fis": 76,
-        "sta": 81
-      },
-      "detailedStats": {
-        "acceleration": 63,
-        "sprintSpeed": 69,
-        "positioning": 75,
-        "finishing": 69,
-        "shotPower": 72,
-        "longShots": 70,
-        "volleys": 31,
-        "penalties": 51,
-        "vision": 70,
-        "crossing": 31,
-        "freeKickAccuracy": 59,
-        "shortPassing": 78,
-        "longPassing": 70,
-        "curve": 27,
-        "agility": 76,
-        "balance": 68,
-        "reactions": 65,
-        "ballControl": 74,
-        "composure": 65,
-        "interceptions": 75,
-        "headingAccuracy": 72,
-        "defAwareness": 75,
-        "standingTackle": 77,
-        "slidingTackle": 71,
-        "jumping": 79,
-        "strength": 76,
-        "aggression": 70
-      }
-    },
-    {
-      "id": 36,
-      "number": 36,
-      "name": "Yasmin Mrabet",
-      "ovr": 75,
-      "status": "reserva",
-      "aptitude": [
-        "MC"
-      ],
-      "age": 25,
-      "foot": "Destro",
-      "captain": false,
-      "nationality": "Morocco",
-      "playstyles": [
-        "Slide Tackle"
-      ],
-      "stats": {
-        "vel": 71,
-        "fin": 62,
-        "pas": 67,
-        "dri": 69,
-        "def": 72,
-        "fis": 75,
-        "sta": 83
-      },
-      "detailedStats": {
-        "acceleration": 73,
-        "sprintSpeed": 69,
-        "positioning": 72,
-        "finishing": 64,
-        "shotPower": 59,
-        "longShots": 61,
-        "volleys": 37,
-        "penalties": 71,
-        "vision": 72,
-        "crossing": 52,
-        "freeKickAccuracy": 40,
-        "shortPassing": 80,
-        "longPassing": 72,
-        "curve": 35,
-        "agility": 71,
-        "balance": 69,
-        "reactions": 75,
-        "ballControl": 76,
-        "composure": 72,
-        "interceptions": 74,
-        "headingAccuracy": 82,
-        "defAwareness": 60,
-        "standingTackle": 80,
-        "slidingTackle": 70,
-        "jumping": 87,
-        "strength": 71,
-        "aggression": 71
-      }
-    },
-    {
-      "id": 37,
-      "number": 37,
-      "name": "Asun Martínez",
-      "ovr": 74,
-      "status": "reserva",
-      "aptitude": [
-        "PD"
-      ],
-      "age": 22,
-      "foot": "Destro",
-      "captain": false,
-      "nationality": "Spain",
-      "playstyles": [
-        "Flair",
-        "Technical"
-      ],
-      "stats": {
-        "vel": 84,
-        "fin": 72,
-        "pas": 72,
-        "dri": 73,
-        "def": 41,
-        "fis": 79,
-        "sta": 83
-      },
-      "detailedStats": {
-        "acceleration": 83,
-        "sprintSpeed": 84,
-        "positioning": 75,
-        "finishing": 72,
-        "shotPower": 76,
-        "longShots": 69,
-        "volleys": 69,
-        "penalties": 65,
-        "vision": 74,
-        "crossing": 71,
-        "freeKickAccuracy": 78,
-        "shortPassing": 72,
-        "longPassing": 65,
-        "curve": 75,
-        "agility": 83,
-        "balance": 84,
-        "reactions": 69,
-        "ballControl": 74,
-        "composure": 70,
-        "interceptions": 40,
-        "headingAccuracy": 65,
-        "defAwareness": 35,
-        "standingTackle": 40,
-        "slidingTackle": 35,
-        "jumping": 86,
-        "strength": 81,
-        "aggression": 65
-      }
-    },
-    {
-      "id": 38,
-      "number": 38,
-      "name": "Kerlly Real",
-      "ovr": 74,
-      "status": "reserva",
-      "aptitude": [
-        "LD"
-      ],
-      "age": 25,
-      "foot": "Destro",
-      "captain": false,
-      "nationality": "Ecuador",
-      "playstyles": [
-        "Long Throw"
-      ],
-      "stats": {
-        "vel": 76,
-        "fin": 52,
-        "pas": 61,
-        "dri": 60,
-        "def": 73,
-        "fis": 76,
-        "sta": 75
-      },
-      "detailedStats": {
-        "acceleration": 77,
-        "sprintSpeed": 76,
-        "positioning": 50,
-        "finishing": 50,
-        "shotPower": 61,
-        "longShots": 50,
-        "volleys": 45,
-        "penalties": 55,
-        "vision": 45,
-        "crossing": 69,
-        "freeKickAccuracy": 40,
-        "shortPassing": 71,
-        "longPassing": 60,
-        "curve": 49,
-        "agility": 77,
-        "balance": 67,
-        "reactions": 70,
-        "ballControl": 70,
-        "composure": 77,
-        "interceptions": 75,
-        "headingAccuracy": 67,
-        "defAwareness": 75,
-        "standingTackle": 74,
-        "slidingTackle": 70,
-        "jumping": 82,
-        "strength": 76,
-        "aggression": 75
-      }
-    },
-    {
-      "id": 39,
-      "number": 39,
-      "name": "Pauleta Sancho",
-      "ovr": 74,
-      "status": "reserva",
-      "aptitude": [
-        "LE"
-      ],
-      "age": 26,
-      "foot": "Destro",
-      "captain": false,
-      "nationality": "Spain",
-      "playstyles": [
-        "Rapid",
-        "Relentless",
-        "Whipped Pass"
-      ],
-      "stats": {
-        "vel": 77,
-        "fin": 65,
-        "pas": 68,
-        "dri": 69,
-        "def": 72,
-        "fis": 68,
-        "sta": 75
-      },
-      "detailedStats": {
-        "acceleration": 77,
-        "sprintSpeed": 77,
-        "positioning": 69,
-        "finishing": 67,
-        "shotPower": 65,
-        "longShots": 65,
-        "volleys": 59,
-        "penalties": 55,
-        "vision": 65,
-        "crossing": 70,
-        "freeKickAccuracy": 41,
-        "shortPassing": 76,
-        "longPassing": 65,
-        "curve": 60,
-        "agility": 70,
-        "balance": 67,
-        "reactions": 70,
-        "ballControl": 75,
-        "composure": 66,
-        "interceptions": 75,
-        "headingAccuracy": 60,
-        "defAwareness": 79,
-        "standingTackle": 70,
-        "slidingTackle": 65,
-        "jumping": 74,
-        "strength": 64,
-        "aggression": 70
-      }
-    },
-    {
-      "id": 40,
-      "number": 40,
-      "name": "Ainhoa Alguacil",
-      "ovr": 73,
-      "status": "reserva",
-      "aptitude": [
-        "MC"
-      ],
-      "age": 18,
-      "foot": "Destro",
-      "captain": false,
-      "nationality": "Spain",
-      "playstyles": [
-        "Flair",
-        "Long Ball Pass"
-      ],
-      "stats": {
-        "vel": 76,
-        "fin": 64,
-        "pas": 74,
-        "dri": 69,
-        "def": 65,
-        "fis": 56,
-        "sta": 73
-      },
-      "detailedStats": {
-        "acceleration": 77,
-        "sprintSpeed": 75,
-        "positioning": 70,
-        "finishing": 70,
-        "shotPower": 60,
-        "longShots": 60,
-        "volleys": 45,
-        "penalties": 55,
-        "vision": 70,
-        "crossing": 65,
-        "freeKickAccuracy": 53,
-        "shortPassing": 83,
-        "longPassing": 80,
-        "curve": 61,
-        "agility": 81,
-        "balance": 74,
-        "reactions": 60,
-        "ballControl": 74,
-        "composure": 61,
-        "interceptions": 66,
-        "headingAccuracy": 71,
-        "defAwareness": 55,
-        "standingTackle": 74,
-        "slidingTackle": 55,
-        "jumping": 71,
-        "strength": 49,
-        "aggression": 50
-      }
-    },
-    {
-      "id": 41,
-      "number": 41,
-      "name": "Phoenetia Browne",
-      "ovr": 73,
-      "status": "reserva",
-      "aptitude": [
-        "CA"
-      ],
-      "age": 30,
-      "foot": "Destro",
-      "captain": false,
-      "nationality": "St. Kitts and Nevis",
-      "playstyles": [
-        "Press Proven",
-        "Quick Step"
-      ],
-      "stats": {
-        "vel": 77,
-        "fin": 71,
-        "pas": 65,
-        "dri": 70,
-        "def": 38,
-        "fis": 76,
-        "sta": 73
-      },
-      "detailedStats": {
-        "acceleration": 71,
-        "sprintSpeed": 81,
-        "positioning": 73,
-        "finishing": 70,
-        "shotPower": 80,
-        "longShots": 66,
-        "volleys": 62,
-        "penalties": 71,
-        "vision": 69,
-        "crossing": 68,
-        "freeKickAccuracy": 61,
-        "shortPassing": 70,
-        "longPassing": 48,
-        "curve": 63,
-        "agility": 67,
-        "balance": 61,
-        "reactions": 72,
-        "ballControl": 76,
-        "composure": 69,
-        "interceptions": 42,
-        "headingAccuracy": 72,
-        "defAwareness": 39,
-        "standingTackle": 28,
-        "slidingTackle": 20,
-        "jumping": 87,
-        "strength": 86,
-        "aggression": 54
-      }
-    },
-    {
-      "id": 42,
-      "number": 42,
-      "name": "Claudia Florentino",
-      "ovr": 72,
-      "status": "reserva",
-      "aptitude": [
-        "ZE"
-      ],
-      "age": 26,
-      "foot": "Destro",
-      "captain": false,
-      "nationality": "Spain",
-      "playstyles": [
-        "Slide Tackle"
-      ],
-      "stats": {
-        "vel": 63,
-        "fin": 35,
-        "pas": 59,
-        "dri": 63,
-        "def": 72,
-        "fis": 68,
-        "sta": 55
-      },
-      "detailedStats": {
-        "acceleration": 56,
-        "sprintSpeed": 68,
-        "positioning": 32,
-        "finishing": 31,
-        "shotPower": 45,
-        "longShots": 32,
-        "volleys": 44,
-        "penalties": 35,
-        "vision": 54,
-        "crossing": 34,
-        "freeKickAccuracy": 54,
-        "shortPassing": 75,
-        "longPassing": 65,
-        "curve": 46,
-        "agility": 72,
-        "balance": 63,
-        "reactions": 74,
-        "ballControl": 71,
-        "composure": 63,
-        "interceptions": 70,
-        "headingAccuracy": 69,
-        "defAwareness": 72,
-        "standingTackle": 75,
-        "slidingTackle": 72,
-        "jumping": 79,
-        "strength": 71,
-        "aggression": 72
-      }
-    },
-    {
-      "id": 43,
-      "number": 43,
-      "name": "Marina Martí",
-      "ovr": 70,
-      "status": "reserva",
-      "aptitude": [
-        "PD"
-      ],
-      "age": 28,
-      "foot": "Destro",
-      "captain": false,
-      "nationality": "Spain",
-      "playstyles": [
-        "Meia Versátil"
-      ],
-      "stats": {
-        "vel": 71,
-        "fin": 67,
-        "pas": 66,
-        "dri": 75,
-        "def": 39,
-        "fis": 68,
-        "sta": 70
-      },
-      "detailedStats": {
-        "acceleration": 70,
-        "sprintSpeed": 71,
-        "positioning": 70,
-        "finishing": 65,
-        "shotPower": 72,
-        "longShots": 69,
-        "volleys": 67,
-        "penalties": 55,
-        "vision": 70,
-        "crossing": 70,
-        "freeKickAccuracy": 60,
-        "shortPassing": 70,
-        "longPassing": 50,
-        "curve": 67,
-        "agility": 60,
-        "balance": 60,
-        "reactions": 65,
-        "ballControl": 73,
-        "composure": 69,
-        "interceptions": 45,
-        "headingAccuracy": 45,
-        "defAwareness": 40,
-        "standingTackle": 35,
-        "slidingTackle": 25,
-        "jumping": 62,
-        "strength": 69,
-        "aggression": 65
-      }
-    },
-    {
-      "id": 44,
-      "number": 44,
-      "name": "Antonia Canales",
-      "ovr": 69,
-      "status": "reserva",
-      "aptitude": [
-        "GL"
-      ],
-      "age": 21,
-      "foot": "Destro",
-      "captain": false,
-      "nationality": "Chile",
-      "playstyles": [
-        "Far Reach"
-      ],
-      "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
-        "ref": 75,
-        "vel": 40,
-        "pos": 75,
-        "sta": 21
-      },
-      "detailedStats": {
-        "acceleration": 32,
-        "sprintSpeed": 43,
-        "positioning": 7,
-        "finishing": 9,
-        "shotPower": 50,
-        "longShots": 10,
-        "volleys": 10,
-        "penalties": 14,
-        "vision": 34,
-        "crossing": 9,
-        "freeKickAccuracy": 15,
-        "shortPassing": 16,
-        "longPassing": 11,
-        "curve": 11,
-        "agility": 22,
-        "balance": 31,
-        "reactions": 60,
-        "ballControl": 20,
-        "composure": 15,
-        "interceptions": 11,
-        "headingAccuracy": 9,
-        "defAwareness": 10,
-        "standingTackle": 14,
-        "slidingTackle": 11,
-        "jumping": 41,
-        "strength": 32,
-        "aggression": 17
-      }
-    },
-    {
-      "id": 45,
-      "number": 45,
-      "name": "Malena Ortiz",
-      "ovr": 65,
-      "status": "reserva",
-      "aptitude": [
-        "MC"
-      ],
-      "age": 27,
-      "foot": "Destro",
-      "captain": false,
-      "nationality": "Spain",
-      "playstyles": [
-        "Meia Versátil"
-      ],
-      "stats": {
-        "vel": 53,
-        "fin": 54,
-        "pas": 66,
-        "dri": 60,
-        "def": 60,
-        "fis": 44,
-        "sta": 52
-      },
-      "detailedStats": {
-        "acceleration": 55,
-        "sprintSpeed": 51,
-        "positioning": 61,
-        "finishing": 55,
-        "shotPower": 61,
-        "longShots": 51,
-        "volleys": 41,
-        "penalties": 42,
-        "vision": 61,
-        "crossing": 60,
-        "freeKickAccuracy": 51,
-        "shortPassing": 75,
-        "longPassing": 72,
-        "curve": 42,
-        "agility": 54,
-        "balance": 54,
-        "reactions": 61,
-        "ballControl": 70,
-        "composure": 70,
-        "interceptions": 55,
-        "headingAccuracy": 61,
-        "defAwareness": 52,
-        "standingTackle": 71,
-        "slidingTackle": 60,
-        "jumping": 48,
-        "strength": 34,
-        "aggression": 60
-      }
-    },
-    {
-      "id": 46,
-      "number": 46,
-      "name": "Alice Marques",
-      "ovr": 60,
-      "status": "reserva",
-      "aptitude": [
-        "ZE"
-      ],
-      "age": 19,
-      "foot": "Destro",
-      "captain": false,
-      "nationality": "France",
-      "playstyles": [
-        "Meia Versátil"
-      ],
-      "stats": {
-        "vel": 64,
-        "fin": 43,
-        "pas": 51,
-        "dri": 53,
-        "def": 60,
-        "fis": 57,
-        "sta": 51
-      },
-      "detailedStats": {
-        "acceleration": 61,
-        "sprintSpeed": 67,
-        "positioning": 39,
-        "finishing": 42,
-        "shotPower": 58,
-        "longShots": 35,
-        "volleys": 30,
-        "penalties": 36,
-        "vision": 41,
-        "crossing": 41,
-        "freeKickAccuracy": 33,
-        "shortPassing": 64,
-        "longPassing": 54,
-        "curve": 52,
-        "agility": 59,
-        "balance": 60,
-        "reactions": 51,
-        "ballControl": 60,
-        "composure": 58,
-        "interceptions": 60,
-        "headingAccuracy": 62,
-        "defAwareness": 55,
-        "standingTackle": 64,
-        "slidingTackle": 58,
-        "jumping": 66,
-        "strength": 60,
-        "aggression": 56
-      }
-    },
-    {
-      "id": 47,
-      "number": 47,
-      "name": "Olga San Nicolás",
-      "ovr": 60,
-      "status": "reserva",
-      "aptitude": [
-        "MC"
-      ],
-      "age": 20,
-      "foot": "Destro",
-      "captain": false,
-      "nationality": "Spain",
-      "playstyles": [
-        "Meia Versátil"
-      ],
-      "stats": {
-        "vel": 32,
-        "fin": 58,
-        "pas": 59,
-        "dri": 65,
-        "def": 51,
-        "fis": 42,
-        "sta": 53
-      },
-      "detailedStats": {
-        "acceleration": 33,
-        "sprintSpeed": 32,
-        "positioning": 62,
-        "finishing": 57,
-        "shotPower": 62,
-        "longShots": 60,
-        "volleys": 55,
-        "penalties": 50,
-        "vision": 61,
-        "crossing": 59,
-        "freeKickAccuracy": 50,
-        "shortPassing": 60,
-        "longPassing": 55,
-        "curve": 57,
-        "agility": 34,
-        "balance": 56,
-        "reactions": 62,
-        "ballControl": 65,
-        "composure": 66,
-        "interceptions": 52,
-        "headingAccuracy": 44,
-        "defAwareness": 41,
-        "standingTackle": 62,
-        "slidingTackle": 50,
-        "jumping": 27,
-        "strength": 30,
-        "aggression": 61
       }
     }
   ]

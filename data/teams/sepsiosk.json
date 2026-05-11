@@ -70,7 +70,8 @@
       "ovr": 68,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 26,
       "foot": "Destro",
@@ -125,7 +126,7 @@
       "ovr": 68,
       "status": "titular",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 28,
       "foot": "Destro",
@@ -135,12 +136,12 @@
         "1v1 Close Down"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 25
       },
       "detailedStats": {
@@ -345,7 +346,8 @@
       "ovr": 67,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 30,
       "foot": "Destro",
@@ -621,7 +623,8 @@
       "ovr": 65,
       "status": "reserva",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 28,
       "foot": "Destro",
@@ -786,7 +789,8 @@
       "ovr": 64,
       "status": "reserva",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 28,
       "foot": "Destro",
@@ -896,7 +900,7 @@
       "ovr": 63,
       "status": "reserva",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 34,
       "foot": "Destro",
@@ -906,12 +910,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 36
       },
       "detailedStats": {
@@ -1171,7 +1175,7 @@
       "ovr": 60,
       "status": "reserva",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 23,
       "foot": "Destro",
@@ -1181,12 +1185,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 28
       },
       "detailedStats": {
@@ -1281,7 +1285,7 @@
       "ovr": 54,
       "status": "reserva",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 20,
       "foot": "Destro",
@@ -1291,12 +1295,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 22
       },
       "detailedStats": {

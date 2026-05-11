@@ -13,7 +13,7 @@
       "ovr": 73,
       "status": "titular",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 37,
       "foot": "Destro",
@@ -23,12 +23,12 @@
         "Footwork"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 35
       },
       "detailedStats": {
@@ -235,7 +235,8 @@
       "ovr": 68,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 30,
       "foot": "Destro",
@@ -456,7 +457,8 @@
       "ovr": 65,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 23,
       "foot": "Destro",
@@ -511,7 +513,8 @@
       "ovr": 64,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 23,
       "foot": "Destro",
@@ -566,7 +569,8 @@
       "ovr": 64,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 30,
       "foot": "Destro",

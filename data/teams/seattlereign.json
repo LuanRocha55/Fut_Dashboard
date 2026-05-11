@@ -182,7 +182,8 @@
       "ovr": 81,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 35,
       "foot": "Destro",
@@ -680,7 +681,7 @@
       "ovr": 72,
       "status": "reserva",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 24,
       "foot": "Destro",
@@ -690,12 +691,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 34
       },
       "detailedStats": {
@@ -735,7 +736,7 @@
       "ovr": 72,
       "status": "reserva",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 25,
       "foot": "Destro",
@@ -745,12 +746,12 @@
         "1v1 Close Down"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 32
       },
       "detailedStats": {
@@ -790,7 +791,8 @@
       "ovr": 72,
       "status": "reserva",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 26,
       "foot": "Destro",
@@ -901,7 +903,8 @@
       "ovr": 71,
       "status": "reserva",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 26,
       "foot": "Destro",
@@ -1121,7 +1124,7 @@
       "ovr": 67,
       "status": "reserva",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 24,
       "foot": "Destro",
@@ -1131,12 +1134,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 32
       },
       "detailedStats": {
@@ -1231,7 +1234,8 @@
       "ovr": 66,
       "status": "reserva",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 24,
       "foot": "Destro",

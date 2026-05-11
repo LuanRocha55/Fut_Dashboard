@@ -13,7 +13,7 @@
       "ovr": 81,
       "status": "titular",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 27,
       "foot": "Destro",
@@ -24,12 +24,12 @@
         "Deflector"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 40
       },
       "detailedStats": {
@@ -179,7 +179,7 @@
       "ovr": 77,
       "status": "titular",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 35,
       "foot": "Destro",
@@ -189,12 +189,12 @@
         "Deflector"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 40
       },
       "detailedStats": {
@@ -350,7 +350,8 @@
       "ovr": 76,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 23,
       "foot": "Destro",
@@ -405,7 +406,8 @@
       "ovr": 76,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 31,
       "foot": "Destro",
@@ -625,7 +627,8 @@
       "ovr": 74,
       "status": "reserva",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 30,
       "foot": "Destro",
@@ -1187,7 +1190,8 @@
       "ovr": 71,
       "status": "reserva",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 27,
       "foot": "Destro",
@@ -1411,7 +1415,8 @@
       "ovr": 69,
       "status": "reserva",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 20,
       "foot": "Destro",
@@ -1576,7 +1581,7 @@
       "ovr": 64,
       "status": "reserva",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 25,
       "foot": "Destro",
@@ -1586,12 +1591,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 26
       },
       "detailedStats": {

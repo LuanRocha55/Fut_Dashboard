@@ -13,7 +13,7 @@
       "ovr": 74,
       "status": "titular",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 28,
       "foot": "Destro",
@@ -24,12 +24,12 @@
         "Far Throw"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 20
       },
       "detailedStats": {
@@ -240,7 +240,7 @@
       "ovr": 72,
       "status": "titular",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 32,
       "foot": "Destro",
@@ -251,12 +251,12 @@
         "Footwork"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 37
       },
       "detailedStats": {
@@ -296,7 +296,8 @@
       "ovr": 71,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 34,
       "foot": "Destro",
@@ -351,7 +352,8 @@
       "ovr": 70,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 26,
       "foot": "Destro",
@@ -846,7 +848,7 @@
       "ovr": 66,
       "status": "reserva",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 25,
       "foot": "Destro",
@@ -856,12 +858,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 16
       },
       "detailedStats": {
@@ -1012,7 +1014,8 @@
       "ovr": 65,
       "status": "reserva",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 32,
       "foot": "Destro",
@@ -1123,7 +1126,8 @@
       "ovr": 63,
       "status": "reserva",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 19,
       "foot": "Destro",
@@ -1178,7 +1182,8 @@
       "ovr": 62,
       "status": "reserva",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 23,
       "foot": "Destro",
@@ -1398,7 +1403,8 @@
       "ovr": 60,
       "status": "reserva",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 22,
       "foot": "Destro",

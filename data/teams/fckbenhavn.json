@@ -468,7 +468,8 @@
       "ovr": 72,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 27,
       "foot": "Destro",
@@ -523,7 +524,8 @@
       "ovr": 72,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 27,
       "foot": "Destro",
@@ -633,7 +635,8 @@
       "ovr": 72,
       "status": "reserva",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 24,
       "foot": "Destro",
@@ -748,7 +751,7 @@
       "ovr": 71,
       "status": "reserva",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 29,
       "foot": "Destro",
@@ -759,12 +762,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 41
       },
       "detailedStats": {
@@ -804,7 +807,7 @@
       "ovr": 71,
       "status": "reserva",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 25,
       "foot": "Destro",
@@ -815,12 +818,12 @@
         "Far Reach"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 45
       },
       "detailedStats": {
@@ -1082,7 +1085,8 @@
       "ovr": 68,
       "status": "reserva",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 32,
       "foot": "Destro",
@@ -1247,7 +1251,8 @@
       "ovr": 67,
       "status": "reserva",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 23,
       "foot": "Destro",
@@ -1357,7 +1362,7 @@
       "ovr": 63,
       "status": "reserva",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 19,
       "foot": "Destro",
@@ -1367,12 +1372,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 28
       },
       "detailedStats": {

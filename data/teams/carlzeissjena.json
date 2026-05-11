@@ -123,7 +123,8 @@
       "ovr": 70,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 27,
       "foot": "Destro",
@@ -288,7 +289,8 @@
       "ovr": 69,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 22,
       "foot": "Destro",
@@ -398,7 +400,8 @@
       "ovr": 69,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 25,
       "foot": "Destro",
@@ -508,7 +511,7 @@
       "ovr": 67,
       "status": "titular",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 20,
       "foot": "Destro",
@@ -518,12 +521,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 22
       },
       "detailedStats": {
@@ -728,7 +731,8 @@
       "ovr": 66,
       "status": "reserva",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 21,
       "foot": "Destro",
@@ -783,7 +787,7 @@
       "ovr": 66,
       "status": "reserva",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 19,
       "foot": "Destro",
@@ -793,12 +797,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 15
       },
       "detailedStats": {
@@ -893,7 +897,7 @@
       "ovr": 65,
       "status": "reserva",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 35,
       "foot": "Destro",
@@ -903,12 +907,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 15
       },
       "detailedStats": {

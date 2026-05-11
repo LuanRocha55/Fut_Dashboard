@@ -182,7 +182,8 @@
       "ovr": 68,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 36,
       "foot": "Destro",
@@ -239,7 +240,8 @@
       "ovr": 65,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 34,
       "foot": "Destro",
@@ -294,7 +296,7 @@
       "ovr": 62,
       "status": "titular",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 31,
       "foot": "Destro",
@@ -304,12 +306,12 @@
         "Footwork"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 30
       },
       "detailedStats": {
@@ -1010,7 +1012,7 @@
       "ovr": 51,
       "status": "reserva",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 21,
       "foot": "Destro",
@@ -1020,12 +1022,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 17
       },
       "detailedStats": {
@@ -1065,7 +1067,7 @@
       "ovr": 51,
       "status": "reserva",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 26,
       "foot": "Destro",
@@ -1075,12 +1077,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 16
       },
       "detailedStats": {

@@ -6,6 +6,12 @@
     "ovr": 74
   },
   {
+    "name": "1. FC Köln (Fem)",
+    "file": "1fcklnfem.json",
+    "league": "GPFBL",
+    "ovr": 75
+  },
+  {
     "name": "1. FC Magdeburg",
     "file": "1fcmagdeburg.json",
     "league": "Bundesliga 2",
@@ -112,6 +118,12 @@
     "file": "ajax.json",
     "league": "Eredivisie",
     "ovr": 77
+  },
+  {
+    "name": "Ajax (Fem)",
+    "file": "ajaxfem.json",
+    "league": "Nederland Vrouwen Liga",
+    "ovr": 74
   },
   {
     "name": "Al Ahli",
@@ -270,8 +282,8 @@
     "ovr": 68
   },
   {
-    "name": "Angel City FC",
-    "file": "angelcityfc.json",
+    "name": "Angel City FC (Fem)",
+    "file": "angelcityfcfem.json",
     "league": "NWSL",
     "ovr": 78
   },
@@ -318,6 +330,12 @@
     "ovr": 85
   },
   {
+    "name": "Arsenal (Fem)",
+    "file": "arsenalfem.json",
+    "league": "Barclays WSL",
+    "ovr": 85
+  },
+  {
     "name": "AS Monaco",
     "file": "asmonaco.json",
     "league": "Ligue 1 McDonald's",
@@ -330,8 +348,8 @@
     "ovr": 80
   },
   {
-    "name": "AS Saint Étienne",
-    "file": "assainttienne.json",
+    "name": "AS Saint Étienne (Fem)",
+    "file": "assainttiennefem.json",
     "league": "Arkema PL",
     "ovr": 72
   },
@@ -348,10 +366,22 @@
     "ovr": 82
   },
   {
+    "name": "Aston Villa (Fem)",
+    "file": "astonvillafem.json",
+    "league": "Barclays WSL",
+    "ovr": 80
+  },
+  {
     "name": "Athletic Club",
     "file": "athleticclub.json",
     "league": "LALIGA EA SPORTS",
     "ovr": 81
+  },
+  {
+    "name": "Athletic Club (Fem)",
+    "file": "athleticclubfem.json",
+    "league": "Liga F",
+    "ovr": 78
   },
   {
     "name": "Atl. Nacional",
@@ -370,6 +400,12 @@
     "file": "atlticodemadrid.json",
     "league": "LALIGA EA SPORTS",
     "ovr": 84
+  },
+  {
+    "name": "Atlético de Madrid (Fem)",
+    "file": "atlticodemadridfem.json",
+    "league": "Liga F",
+    "ovr": 80
   },
   {
     "name": "Atlético Tucumán",
@@ -456,8 +492,8 @@
     "ovr": 73
   },
   {
-    "name": "Bay FC",
-    "file": "bayfc.json",
+    "name": "Bay FC (Fem)",
+    "file": "bayfcfem.json",
     "league": "NWSL",
     "ovr": 78
   },
@@ -600,6 +636,12 @@
     "ovr": 79
   },
   {
+    "name": "Brighton (Fem)",
+    "file": "brightonfem.json",
+    "league": "Barclays WSL",
+    "ovr": 76
+  },
+  {
     "name": "Brisbane Roar",
     "file": "brisbaneroar.json",
     "league": "A-League",
@@ -708,8 +750,8 @@
     "ovr": 73
   },
   {
-    "name": "Carl Zeiss Jena",
-    "file": "carlzeissjena.json",
+    "name": "Carl Zeiss Jena (Fem)",
+    "file": "carlzeissjenafem.json",
     "league": "GPFBL",
     "ovr": 69
   },
@@ -852,6 +894,12 @@
     "ovr": 82
   },
   {
+    "name": "Chelsea (Fem)",
+    "file": "chelseafem.json",
+    "league": "Barclays WSL",
+    "ovr": 85
+  },
+  {
     "name": "Cheltenham Town",
     "file": "cheltenhamtown.json",
     "league": "EFL League Two",
@@ -876,8 +924,8 @@
     "ovr": 70
   },
   {
-    "name": "Chicago Red Stars",
-    "file": "chicagoredstars.json",
+    "name": "Chicago Red Stars (Fem)",
+    "file": "chicagoredstarsfem.json",
     "league": "NWSL",
     "ovr": 78
   },
@@ -996,6 +1044,12 @@
     "ovr": 79
   },
   {
+    "name": "Crystal Palace (Fem)",
+    "file": "crystalpalacefem.json",
+    "league": "Barclays WSL",
+    "ovr": 71
+  },
+  {
     "name": "D. Alavés",
     "file": "dalavs.json",
     "league": "LALIGA EA SPORTS",
@@ -1092,8 +1146,8 @@
     "ovr": 63
   },
   {
-    "name": "Dijon FCO",
-    "file": "dijonfco.json",
+    "name": "Dijon FCO (Fem)",
+    "file": "dijonfcofem.json",
     "league": "Arkema PL",
     "ovr": 73
   },
@@ -1182,6 +1236,12 @@
     "ovr": 66
   },
   {
+    "name": "En Avant Guingamp (Fem)",
+    "file": "enavantguingampfem.json",
+    "league": "Arkema PL",
+    "ovr": 73
+  },
+  {
     "name": "Energie Cottbus",
     "file": "energiecottbus.json",
     "league": "3. Liga",
@@ -1222,6 +1282,12 @@
     "file": "everton.json",
     "league": "Premier League",
     "ovr": 78
+  },
+  {
+    "name": "Everton (Fem)",
+    "file": "evertonfem.json",
+    "league": "Barclays WSL",
+    "ovr": 75
   },
   {
     "name": "Exeter City",
@@ -1272,6 +1338,12 @@
     "ovr": 85
   },
   {
+    "name": "FC Barcelona (Fem)",
+    "file": "fcbarcelonafem.json",
+    "league": "Liga F",
+    "ovr": 88
+  },
+  {
     "name": "FC Basel 1893",
     "file": "fcbasel1893.json",
     "league": "CSSL",
@@ -1282,6 +1354,12 @@
     "file": "fcbayernmnchen.json",
     "league": "Bundesliga",
     "ovr": 85
+  },
+  {
+    "name": "FC Bayern München (Fem)",
+    "file": "fcbayernmnchenfem.json",
+    "league": "GPFBL",
+    "ovr": 84
   },
   {
     "name": "FC Botoșani",
@@ -1326,8 +1404,8 @@
     "ovr": 72
   },
   {
-    "name": "FC Fleury 91",
-    "file": "fcfleury91.json",
+    "name": "FC Fleury 91 (Fem)",
+    "file": "fcfleury91fem.json",
     "league": "Arkema PL",
     "ovr": 78
   },
@@ -1410,6 +1488,12 @@
     "ovr": 74
   },
   {
+    "name": "FC Nantes (Fem)",
+    "file": "fcnantesfem.json",
+    "league": "Arkema PL",
+    "ovr": 73
+  },
+  {
     "name": "FC Nordsjælland",
     "file": "fcnordsjlland.json",
     "league": "3F Superliga",
@@ -1434,8 +1518,8 @@
     "ovr": 68
   },
   {
-    "name": "FC Rosengård",
-    "file": "fcrosengrd.json",
+    "name": "FC Rosengård (Fem)",
+    "file": "fcrosengrdfem.json",
     "league": "Sverige Liga",
     "ovr": 75
   },
@@ -1498,6 +1582,12 @@
     "file": "fczrich.json",
     "league": "CSSL",
     "ovr": 70
+  },
+  {
+    "name": "FC Zürich (Fem)",
+    "file": "fczrichfem.json",
+    "league": "Schweizer Damen Liga",
+    "ovr": 71
   },
   {
     "name": "FCSB",
@@ -1570,6 +1660,12 @@
     "file": "frankfurt.json",
     "league": "Bundesliga",
     "ovr": 78
+  },
+  {
+    "name": "Frankfurt (Fem)",
+    "file": "frankfurtfem.json",
+    "league": "GPFBL",
+    "ovr": 81
   },
   {
     "name": "Fredrikstad FK",
@@ -1680,8 +1776,8 @@
     "ovr": 65
   },
   {
-    "name": "Glasgow City FC",
-    "file": "glasgowcityfc.json",
+    "name": "Glasgow City FC (Fem)",
+    "file": "glasgowcityfcfem.json",
     "league": "Scottish Women's League",
     "ovr": 72
   },
@@ -1714,6 +1810,12 @@
     "file": "granadacf.json",
     "league": "LALIGA HYPERMOTION",
     "ovr": 73
+  },
+  {
+    "name": "Granada CF (Fem)",
+    "file": "granadacffem.json",
+    "league": "Liga F",
+    "ovr": 71
   },
   {
     "name": "Grazer AK",
@@ -1806,6 +1908,12 @@
     "ovr": 73
   },
   {
+    "name": "Havre AC (Fem)",
+    "file": "havreacfem.json",
+    "league": "Arkema PL",
+    "ovr": 74
+  },
+  {
     "name": "Hearts",
     "file": "hearts.json",
     "league": "Scottish Prem",
@@ -1860,8 +1968,8 @@
     "ovr": 70
   },
   {
-    "name": "Houston Dash",
-    "file": "houstondash.json",
+    "name": "Houston Dash (Fem)",
+    "file": "houstondashfem.json",
     "league": "NWSL",
     "ovr": 79
   },
@@ -2022,6 +2130,12 @@
     "ovr": 82
   },
   {
+    "name": "Juventus (Fem)",
+    "file": "juventusfem.json",
+    "league": "Calcio A Femminile",
+    "ovr": 82
+  },
+  {
     "name": "K. Beerschot VA",
     "file": "kbeerschotva.json",
     "league": "1A Pro League",
@@ -2064,8 +2178,8 @@
     "ovr": 69
   },
   {
-    "name": "KC Current",
-    "file": "kccurrent.json",
+    "name": "KC Current (Fem)",
+    "file": "kccurrentfem.json",
     "league": "NWSL",
     "ovr": 81
   },
@@ -2214,8 +2328,14 @@
     "ovr": 77
   },
   {
-    "name": "Levante Badalona",
-    "file": "levantebadalona.json",
+    "name": "Leicester City (Fem)",
+    "file": "leicestercityfem.json",
+    "league": "Barclays WSL",
+    "ovr": 75
+  },
+  {
+    "name": "Levante Badalona (Fem)",
+    "file": "levantebadalonafem.json",
     "league": "Liga F",
     "ovr": 76
   },
@@ -2226,10 +2346,22 @@
     "ovr": 72
   },
   {
+    "name": "Levante UD (Fem)",
+    "file": "levanteudfem.json",
+    "league": "Liga F",
+    "ovr": 77
+  },
+  {
     "name": "Leverkusen",
     "file": "leverkusen.json",
     "league": "Bundesliga",
     "ovr": 85
+  },
+  {
+    "name": "Leverkusen (Fem)",
+    "file": "leverkusenfem.json",
+    "league": "GPFBL",
+    "ovr": 75
   },
   {
     "name": "Leyton Orient",
@@ -2260,6 +2392,12 @@
     "file": "liverpool.json",
     "league": "Premier League",
     "ovr": 86
+  },
+  {
+    "name": "Liverpool (Fem)",
+    "file": "liverpoolfem.json",
+    "league": "Barclays WSL",
+    "ovr": 74
   },
   {
     "name": "Lombardia FC",
@@ -2298,8 +2436,8 @@
     "ovr": 66
   },
   {
-    "name": "Madrid CFF",
-    "file": "madridcff.json",
+    "name": "Madrid CFF (Fem)",
+    "file": "madridcfffem.json",
     "league": "Liga F",
     "ovr": 76
   },
@@ -2328,8 +2466,14 @@
     "ovr": 88
   },
   {
-    "name": "Manchester Utd",
-    "file": "manchesterutd.json",
+    "name": "Manchester City (Fem)",
+    "file": "manchestercityfem.json",
+    "league": "Barclays WSL",
+    "ovr": 83
+  },
+  {
+    "name": "Manchester Utd (Fem)",
+    "file": "manchesterutdfem.json",
     "league": "Barclays WSL",
     "ovr": 82
   },
@@ -2442,6 +2586,12 @@
     "ovr": 75
   },
   {
+    "name": "Montpellier (Fem)",
+    "file": "montpellierfem.json",
+    "league": "Arkema PL",
+    "ovr": 78
+  },
+  {
     "name": "Monza",
     "file": "monza.json",
     "league": "Serie A Enilive",
@@ -2514,8 +2664,8 @@
     "ovr": 71
   },
   {
-    "name": "NC Courage",
-    "file": "nccourage.json",
+    "name": "NC Courage (Fem)",
+    "file": "nccouragefem.json",
     "league": "NWSL",
     "ovr": 78
   },
@@ -2556,8 +2706,8 @@
     "ovr": 61
   },
   {
-    "name": "NJ/NY Gotham",
-    "file": "njnygotham.json",
+    "name": "NJ/NY Gotham (Fem)",
+    "file": "njnygothamfem.json",
     "league": "NWSL",
     "ovr": 82
   },
@@ -2622,6 +2772,12 @@
     "ovr": 78
   },
   {
+    "name": "OL (Fem)",
+    "file": "olfem.json",
+    "league": "Arkema PL",
+    "ovr": 86
+  },
+  {
     "name": "Olimpia",
     "file": "olimpia.json",
     "league": "Sudamericana",
@@ -2646,8 +2802,8 @@
     "ovr": 71
   },
   {
-    "name": "Orlando Pride",
-    "file": "orlandopride.json",
+    "name": "Orlando Pride (Fem)",
+    "file": "orlandopridefem.json",
     "league": "NWSL",
     "ovr": 78
   },
@@ -2688,10 +2844,22 @@
     "ovr": 70
   },
   {
+    "name": "Paris FC (Fem)",
+    "file": "parisfcfem.json",
+    "league": "Arkema PL",
+    "ovr": 81
+  },
+  {
     "name": "Paris SG",
     "file": "parissg.json",
     "league": "Ligue 1 McDonald's",
     "ovr": 84
+  },
+  {
+    "name": "Paris SG (Fem)",
+    "file": "parissgfem.json",
+    "league": "Arkema PL",
+    "ovr": 83
   },
   {
     "name": "Parma",
@@ -2784,8 +2952,8 @@
     "ovr": 64
   },
   {
-    "name": "Portland Thorns",
-    "file": "portlandthorns.json",
+    "name": "Portland Thorns (Fem)",
+    "file": "portlandthornsfem.json",
     "league": "NWSL",
     "ovr": 82
   },
@@ -2886,8 +3054,8 @@
     "ovr": 73
   },
   {
-    "name": "Rac. Louisville",
-    "file": "raclouisville.json",
+    "name": "Rac. Louisville (Fem)",
+    "file": "raclouisvillefem.json",
     "league": "NWSL",
     "ovr": 77
   },
@@ -2946,6 +3114,12 @@
     "ovr": 81
   },
   {
+    "name": "RB Leipzig (Fem)",
+    "file": "rbleipzigfem.json",
+    "league": "GPFBL",
+    "ovr": 74
+  },
+  {
     "name": "RB Salzburg",
     "file": "rbsalzburg.json",
     "league": "Ö. Bundesliga",
@@ -2964,6 +3138,12 @@
     "ovr": 73
   },
   {
+    "name": "RC Deportivo (Fem)",
+    "file": "rcdeportivofem.json",
+    "league": "Liga F",
+    "ovr": 70
+  },
+  {
     "name": "RC Lens",
     "file": "rclens.json",
     "league": "Ligue 1 McDonald's",
@@ -2974,6 +3154,12 @@
     "file": "rcdespanyol.json",
     "league": "LALIGA EA SPORTS",
     "ovr": 74
+  },
+  {
+    "name": "RCD Espanyol (Fem)",
+    "file": "rcdespanyolfem.json",
+    "league": "Liga F",
+    "ovr": 71
   },
   {
     "name": "RCD Mallorca",
@@ -2994,14 +3180,20 @@
     "ovr": 79
   },
   {
+    "name": "Real Betis (Fem)",
+    "file": "realbetisfem.json",
+    "league": "Liga F",
+    "ovr": 72
+  },
+  {
     "name": "Real Madrid",
     "file": "realmadrid.json",
     "league": "LALIGA EA SPORTS",
     "ovr": 88
   },
   {
-    "name": "Real Madrid CF",
-    "file": "realmadridcf.json",
+    "name": "Real Madrid CF (Fem)",
+    "file": "realmadridcffem.json",
     "league": "Liga F",
     "ovr": 82
   },
@@ -3016,6 +3208,12 @@
     "file": "realsociedad.json",
     "league": "LALIGA EA SPORTS",
     "ovr": 80
+  },
+  {
+    "name": "Real Sociedad (Fem)",
+    "file": "realsociedadfem.json",
+    "league": "Liga F",
+    "ovr": 78
   },
   {
     "name": "Real Tomayapo",
@@ -3072,8 +3270,8 @@
     "ovr": 65
   },
   {
-    "name": "Roma",
-    "file": "roma.json",
+    "name": "Roma (Fem)",
+    "file": "romafem.json",
     "league": "Calcio A Femminile",
     "ovr": 81
   },
@@ -3168,8 +3366,8 @@
     "ovr": 70
   },
   {
-    "name": "San Diego Wave",
-    "file": "sandiegowave.json",
+    "name": "San Diego Wave (Fem)",
+    "file": "sandiegowavefem.json",
     "league": "NWSL",
     "ovr": 81
   },
@@ -3228,6 +3426,12 @@
     "ovr": 78
   },
   {
+    "name": "SC Freiburg (Fem)",
+    "file": "scfreiburgfem.json",
+    "league": "GPFBL",
+    "ovr": 77
+  },
+  {
     "name": "sc Heerenveen",
     "file": "scheerenveen.json",
     "league": "Eredivisie",
@@ -3264,14 +3468,20 @@
     "ovr": 71
   },
   {
+    "name": "SD Eibar (Fem)",
+    "file": "sdeibarfem.json",
+    "league": "Liga F",
+    "ovr": 73
+  },
+  {
     "name": "SD Huesca",
     "file": "sdhuesca.json",
     "league": "LALIGA HYPERMOTION",
     "ovr": 68
   },
   {
-    "name": "Seattle Reign",
-    "file": "seattlereign.json",
+    "name": "Seattle Reign (Fem)",
+    "file": "seattlereignfem.json",
     "league": "NWSL",
     "ovr": 78
   },
@@ -3294,8 +3504,14 @@
     "ovr": 78
   },
   {
-    "name": "SGS Essen",
-    "file": "sgsessen.json",
+    "name": "Sevilla FC (Fem)",
+    "file": "sevillafcfem.json",
+    "league": "Liga F",
+    "ovr": 74
+  },
+  {
+    "name": "SGS Essen (Fem)",
+    "file": "sgsessenfem.json",
     "league": "GPFBL",
     "ovr": 75
   },
@@ -3396,6 +3612,12 @@
     "ovr": 80
   },
   {
+    "name": "SL Benfica (Fem)",
+    "file": "slbenficafem.json",
+    "league": "Liga Portugal Feminino",
+    "ovr": 75
+  },
+  {
     "name": "Śląsk Wrocław",
     "file": "lskwrocaw.json",
     "league": "PKO BP Ekstraklasa",
@@ -3492,6 +3714,12 @@
     "ovr": 83
   },
   {
+    "name": "Spurs (Fem)",
+    "file": "spursfem.json",
+    "league": "Barclays WSL",
+    "ovr": 78
+  },
+  {
     "name": "SS Juve Stabia",
     "file": "ssjuvestabia.json",
     "league": "Serie BKT",
@@ -3546,6 +3774,12 @@
     "ovr": 76
   },
   {
+    "name": "Stade de Reims (Fem)",
+    "file": "stadedereimsfem.json",
+    "league": "Arkema PL",
+    "ovr": 71
+  },
+  {
     "name": "Stade Rennais FC",
     "file": "staderennaisfc.json",
     "league": "Ligue 1 McDonald's",
@@ -3586,6 +3820,12 @@
     "file": "strasbourg.json",
     "league": "Ligue 1 McDonald's",
     "ovr": 73
+  },
+  {
+    "name": "Strasbourg (Fem)",
+    "file": "strasbourgfem.json",
+    "league": "Arkema PL",
+    "ovr": 69
   },
   {
     "name": "Strømsgodset IF",
@@ -3646,6 +3886,12 @@
     "file": "svwerderbremen.json",
     "league": "Bundesliga",
     "ovr": 75
+  },
+  {
+    "name": "SV Werder Bremen (Fem)",
+    "file": "svwerderbremenfem.json",
+    "league": "GPFBL",
+    "ovr": 74
   },
   {
     "name": "Swansea City",
@@ -3744,14 +3990,20 @@
     "ovr": 77
   },
   {
+    "name": "TSG Hoffenheim (Fem)",
+    "file": "tsghoffenheimfem.json",
+    "league": "GPFBL",
+    "ovr": 78
+  },
+  {
     "name": "TSV Hartberg",
     "file": "tsvhartberg.json",
     "league": "Ö. Bundesliga",
     "ovr": 67
   },
   {
-    "name": "Turbine Potsdam",
-    "file": "turbinepotsdam.json",
+    "name": "Turbine Potsdam (Fem)",
+    "file": "turbinepotsdamfem.json",
     "league": "GPFBL",
     "ovr": 71
   },
@@ -3780,8 +4032,8 @@
     "ovr": 77
   },
   {
-    "name": "UD Tenerife",
-    "file": "udtenerife.json",
+    "name": "UD Tenerife (Fem)",
+    "file": "udtenerifefem.json",
     "league": "Liga F",
     "ovr": 75
   },
@@ -3858,8 +4110,8 @@
     "ovr": 65
   },
   {
-    "name": "Utah Royals FC",
-    "file": "utahroyalsfc.json",
+    "name": "Utah Royals FC (Fem)",
+    "file": "utahroyalsfcfem.json",
     "league": "NWSL",
     "ovr": 76
   },
@@ -3868,6 +4120,12 @@
     "file": "valenciacf.json",
     "league": "LALIGA EA SPORTS",
     "ovr": 79
+  },
+  {
+    "name": "Valencia CF (Fem)",
+    "file": "valenciacffem.json",
+    "league": "Liga F",
+    "ovr": 75
   },
   {
     "name": "Västerås SK",
@@ -3924,6 +4182,12 @@
     "ovr": 77
   },
   {
+    "name": "VfL Wolfsburg (Fem)",
+    "file": "vflwolfsburgfem.json",
+    "league": "GPFBL",
+    "ovr": 83
+  },
+  {
     "name": "Viborg FF",
     "file": "viborgff.json",
     "league": "3F Superliga",
@@ -3972,8 +4236,8 @@
     "ovr": 68
   },
   {
-    "name": "Washington Spirit",
-    "file": "washingtonspirit.json",
+    "name": "Washington Spirit (Fem)",
+    "file": "washingtonspiritfem.json",
     "league": "NWSL",
     "ovr": 80
   },
@@ -4012,6 +4276,12 @@
     "file": "westham.json",
     "league": "Premier League",
     "ovr": 81
+  },
+  {
+    "name": "West Ham (Fem)",
+    "file": "westhamfem.json",
+    "league": "Barclays WSL",
+    "ovr": 77
   },
   {
     "name": "Western United",

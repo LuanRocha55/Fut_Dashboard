@@ -1,28 +1,31 @@
 import { squad, formations, saveToLocal } from "./core.js";
 
 export function getEfootballPosition(top, left) {
-  // Goleiro
-  if (left <= 14) return "GL";
+  // Fatias de 14.28% (100 / 7 colunas)
+  const slice = Math.floor(left / 14.28);
 
-  // Laterais / Meias / Pontas (Flancos)
-  if (top <= 22) {
-    if (left <= 42) return "LE";
-    if (left <= 71) return "ME";
-    return "PE";
-  }
-  if (top >= 78) {
-    if (left <= 42) return "LD";
-    if (left <= 71) return "MD";
-    return "PD";
+  // Coluna 0: Sempre GOL
+  if (slice <= 0) return "GOL";
+
+  // DEFINIÇÃO DAS 4 FAIXAS HORIZONTAIS (0-25 / 25-50 / 50-75 / 75-100)
+  if (top < 25 || top > 75) {
+    const side = top < 25 ? "E" : "D"; // E para Esquerda, D para Direito
+    if (slice <= 2) return "L" + side; // LE ou LD
+    if (slice <= 4) return "M" + side; // ME ou MD
+    return "P" + side; // PE ou PD
   }
 
-  // Corredor Central Enfileirado (22 < top < 78)
-  if (left > 14 && left <= 28) return top < 50 ? "ZE" : "ZD";
-  if (left > 28 && left <= 42) return "VOL";
-  if (left > 42 && left <= 57) return "MC";
-  if (left > 57 && left <= 71) return "MEI";
-  if (left > 71 && left <= 85) return "SA";
-  return "CA";
+  // CORREDOR CENTRAL (25-75)
+  const isLeftCenter = top < 50;
+  if (slice === 1) return isLeftCenter ? "ZE" : "ZD";
+  if (slice === 2) return "VOL";
+  if (slice === 3) return "MC";
+  if (slice === 4) return "MEI";
+  
+  // ZONA DE ATAQUE FINAL (Garante CA em formações com l >= 80)
+  if (left >= 80) return "CA";
+  if (slice === 5) return "SA";
+  return "CA"; 
 }
 
 export function checkPositionFit(player, currentZone) {
@@ -32,94 +35,115 @@ export function checkPositionFit(player, currentZone) {
 }
 
 export function autoFillTeam() {
-  const currentFormat = document.getElementById("formationSelect").value;
+  const currentFormat = document.getElementById("formationSelect")?.value;
   const format = formations[currentFormat];
   if (!format) return;
 
-  const requiredPositions = format.map((pos, index) => ({
-    pos: getEfootballPosition(pos.t, pos.l),
-    index: index,
-  }));
+  // Mapeia cada slot da formação para a zona e preferência de pé
+  const requiredPositions = format.map((pos, index) => {
+    const zone = getEfootballPosition(pos.t, pos.l);
+    let preferredFoot = null;
+    if (["ZE", "LE"].includes(zone)) preferredFoot = "Canhoto";
+    if (["ZD", "LD"].includes(zone)) preferredFoot = "Destro";
+    
+    return { zone, index, preferredFoot };
+  });
 
+  // Ordem de prioridade de preenchimento
+  const FILL_ORDER = ["GOL", "CA", "SA", "PE", "PD", "MEI", "MC", "VOL", "ME", "MD", "LE", "LD", "ZE", "ZD"];
+  const sortedRequired = [...requiredPositions].sort((a, b) => {
+    const ai = FILL_ORDER.indexOf(a.zone);
+    const bi = FILL_ORDER.indexOf(b.zone);
+    return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi);
+  });
+
+  // Coleta TODOS os jogadores aptos (campo e banco)
   const availablePlayers = [...squad]
-    .filter((p) => p.matchStatus !== "red" && p.matchStatus !== "injury")
-    .sort((a, b) => {
-      const fitA = a.fitness !== undefined ? a.fitness : 100;
-      const fitB = b.fitness !== undefined ? b.fitness : 100;
-      
-      // Jogadores com fôlego no vermelho (< 40) vão para o final da fila de prioridade
-      if (fitA >= 40 && fitB < 40) return -1;
-      if (fitB >= 40 && fitA < 40) return 1;
-      
-      return b.rating - a.rating;
-    });
-  const newTitulares = new Array(11).fill(null);
-  const assignedPlayerIds = new Set();
+    .filter((p) => p && p.matchStatus !== "red" && p.matchStatus !== "injury")
+    .sort((a, b) => b.rating - a.rating);
 
-  // Passo 1: Preencher com a melhor aptidão e nota
-  requiredPositions.forEach((req) => {
-    const bestFitIndex = availablePlayers.findIndex(
-      (p) =>
-        p.aptitude &&
-        p.aptitude.includes(req.pos) &&
-        !assignedPlayerIds.has(p.id),
+  const newTitulares = new Array(11).fill(null);
+  const assignedIds = new Set();
+
+  // Passo 1: Melhor jogador para a posição com pé preferencial
+  sortedRequired.forEach((req) => {
+    let best = availablePlayers.find(p => 
+      !assignedIds.has(p.id) && 
+      p.aptitude && p.aptitude[0] === req.zone && 
+      (!req.preferredFoot || p.foot === req.preferredFoot || p.foot === "Ambidestro")
     );
-    if (bestFitIndex !== -1) {
-      const player = availablePlayers[bestFitIndex];
-      newTitulares[req.index] = player;
-      assignedPlayerIds.add(player.id);
+
+    // Passo 2: Melhor jogador com aptidão secundária e pé preferencial
+    if (!best) {
+      best = availablePlayers.find(p => 
+        !assignedIds.has(p.id) && 
+        p.aptitude && p.aptitude.includes(req.zone) && 
+        (!req.preferredFoot || p.foot === req.preferredFoot || p.foot === "Ambidestro")
+      );
+    }
+
+    // Passo 3: Qualquer jogador com aptidão (independente do pé)
+    if (!best) {
+      best = availablePlayers.find(p => 
+        !assignedIds.has(p.id) && 
+        p.aptitude && p.aptitude.includes(req.zone)
+      );
+    }
+
+    if (best) {
+      newTitulares[req.index] = best;
+      assignedIds.add(best.id);
     }
   });
 
-  // Passo 2: Preencher vagas restantes com as maiores notas
+  // Passo 4: Vagas restantes com os melhores que sobraram
   newTitulares.forEach((p, i) => {
     if (!p) {
-      const nextBestPlayer = availablePlayers.find(
-        (player) => !assignedPlayerIds.has(player.id),
-      );
-      if (nextBestPlayer) {
-        newTitulares[i] = nextBestPlayer;
-        assignedPlayerIds.add(nextBestPlayer.id);
+      const next = availablePlayers.find(pl => !assignedIds.has(pl.id));
+      if (next) {
+        newTitulares[i] = next;
+        assignedIds.add(next.id);
       }
     }
   });
 
-  // Passo 3: Remontar o array 'squad' original, alterando o status
-  const finalSquad = [];
-  newTitulares.forEach((p) => {
+  // Passo 3: Reconstrói o squad com exatamente 11 slots iniciais (mesmo se null)
+  const finalSquad = new Array(11).fill(null);
+  newTitulares.forEach((p, i) => {
     if (p) {
       p.status = "titular";
-      finalSquad.push(p);
+      finalSquad[i] = p;
     }
   });
-  const reserves = squad.filter((p) => !assignedPlayerIds.has(p.id));
+
+  // Adiciona os reservas após o índice 10
+  const reserves = squad.filter((p) => p && !assignedIds.has(p.id));
   reserves.forEach((p) => {
     p.status = "reserva";
     finalSquad.push(p);
   });
 
-  // Muta o array original para refletir as mudanças
   squad.length = 0;
   squad.push(...finalSquad);
-
   saveToLocal();
 }
 
 export function swapTitulares(id1, id2) {
+  // Troca APENAS as coordenadas da formação.
+  // O render() usa o squad em memória em ordem, então mover as coords
+  // é suficiente para trocar as posições visuais sem mutar o array.
   const titulares = squad.filter((p) => p.status === "titular");
   const idx1 = titulares.findIndex((p) => p.id === id1);
   const idx2 = titulares.findIndex((p) => p.id === id2);
 
-  if (idx1 !== -1 && idx2 !== -1) {
-    const currentFormat = document.getElementById("formationSelect").value;
-    if (formations[currentFormat]) {
-      // Troca as coordenadas t e l no template da formação
-      [formations[currentFormat][idx1], formations[currentFormat][idx2]] = [
-        formations[currentFormat][idx2],
-        formations[currentFormat][idx1],
-      ];
-      saveToLocal();
-    }
+  if (idx1 === -1 || idx2 === -1) return;
+
+  const currentFormat = document.getElementById("formationSelect")?.value;
+  if (currentFormat && formations[currentFormat]) {
+    const tmp = formations[currentFormat][idx1];
+    formations[currentFormat][idx1] = formations[currentFormat][idx2];
+    formations[currentFormat][idx2] = tmp;
+    saveToLocal();
   }
 }
 

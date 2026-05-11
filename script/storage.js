@@ -1,4 +1,8 @@
-import { get, set, del } from "https://cdn.jsdelivr.net/npm/idb-keyval@6/+esm";
+// Tenta obter as funções do idbKeyval global
+const idb = window.idbKeyval || {};
+const get = async (...args) => { try { return idb.get ? await idb.get(...args) : null; } catch(e) { return null; } };
+const set = async (...args) => { try { if (idb.set) await idb.set(...args); } catch(e) { console.warn('Storage set falhou:', e); } };
+const del = async (...args) => { try { if (idb.del) await idb.del(...args); } catch(e) { console.warn('Storage del falhou:', e); } };
 
 export const Storage = {
   async getSquad() {
@@ -61,4 +65,15 @@ export const Storage = {
   async saveSeasonHistory(history) {
     await set("seasonHistory", history);
   },
+  
+  async getCoachInfo() {
+    return (await get("coachInfo")) || null;
+  },
+  async saveCoachInfo(info) {
+    if (info === null) { await del("coachInfo"); }
+    else { await set("coachInfo", info); }
+  },
+  async removeCoachInfo() {
+    await del("coachInfo");
+  }
 };

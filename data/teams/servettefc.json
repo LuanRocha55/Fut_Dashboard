@@ -184,7 +184,8 @@
       "ovr": 71,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 34,
       "foot": "Destro",
@@ -467,7 +468,7 @@
       "ovr": 69,
       "status": "titular",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 33,
       "foot": "Destro",
@@ -477,12 +478,12 @@
         "Deflector"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 33
       },
       "detailedStats": {
@@ -522,7 +523,8 @@
       "ovr": 69,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 27,
       "foot": "Destro",
@@ -577,7 +579,7 @@
       "ovr": 68,
       "status": "titular",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 31,
       "foot": "Destro",
@@ -589,12 +591,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 28
       },
       "detailedStats": {
@@ -909,7 +911,8 @@
       "ovr": 65,
       "status": "reserva",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 24,
       "foot": "Destro",
@@ -1294,7 +1297,7 @@
       "ovr": 55,
       "status": "reserva",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 21,
       "foot": "Destro",
@@ -1304,12 +1307,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 19
       },
       "detailedStats": {

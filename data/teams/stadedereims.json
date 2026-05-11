@@ -128,7 +128,8 @@
       "ovr": 77,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 27,
       "foot": "Destro",
@@ -186,7 +187,7 @@
       "ovr": 77,
       "status": "titular",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 24,
       "foot": "Destro",
@@ -197,12 +198,12 @@
         "Far Throw"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 44
       },
       "detailedStats": {
@@ -297,7 +298,8 @@
       "ovr": 75,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 27,
       "foot": "Destro",
@@ -579,7 +581,8 @@
       "ovr": 74,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 27,
       "foot": "Destro",
@@ -966,7 +969,7 @@
       "ovr": 68,
       "status": "reserva",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 28,
       "foot": "Destro",
@@ -976,12 +979,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 23
       },
       "detailedStats": {
@@ -1131,7 +1134,7 @@
       "ovr": 66,
       "status": "reserva",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 41,
       "foot": "Destro",
@@ -1141,12 +1144,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 28
       },
       "detailedStats": {
@@ -1342,559 +1345,6 @@
         "jumping": 56,
         "strength": 47,
         "aggression": 48
-      }
-    },
-    {
-      "id": 25,
-      "number": 25,
-      "name": "Rachel Corboz",
-      "ovr": 80,
-      "status": "reserva",
-      "aptitude": [
-        "MC"
-      ],
-      "age": 28,
-      "foot": "Destro",
-      "captain": false,
-      "nationality": "United States",
-      "playstyles": [
-        "Anticipate",
-        "Incisive Pass",
-        "Whipped Pass"
-      ],
-      "stats": {
-        "vel": 58,
-        "fin": 74,
-        "pas": 80,
-        "dri": 82,
-        "def": 71,
-        "fis": 64,
-        "sta": 77
-      },
-      "detailedStats": {
-        "acceleration": 50,
-        "sprintSpeed": 64,
-        "positioning": 75,
-        "finishing": 73,
-        "shotPower": 73,
-        "longShots": 76,
-        "volleys": 62,
-        "penalties": 80,
-        "vision": 80,
-        "crossing": 77,
-        "freeKickAccuracy": 77,
-        "shortPassing": 85,
-        "longPassing": 78,
-        "curve": 69,
-        "agility": 69,
-        "balance": 74,
-        "reactions": 77,
-        "ballControl": 84,
-        "composure": 79,
-        "interceptions": 75,
-        "headingAccuracy": 49,
-        "defAwareness": 79,
-        "standingTackle": 74,
-        "slidingTackle": 56,
-        "jumping": 56,
-        "strength": 62,
-        "aggression": 53
-      }
-    },
-    {
-      "id": 26,
-      "number": 26,
-      "name": "Mélissa Gomes",
-      "ovr": 76,
-      "status": "reserva",
-      "aptitude": [
-        "CA"
-      ],
-      "age": 30,
-      "foot": "Destro",
-      "captain": false,
-      "nationality": "Portugal",
-      "playstyles": [
-        "Flair",
-        "Press Proven"
-      ],
-      "stats": {
-        "vel": 77,
-        "fin": 76,
-        "pas": 71,
-        "dri": 80,
-        "def": 43,
-        "fis": 67,
-        "sta": 70
-      },
-      "detailedStats": {
-        "acceleration": 83,
-        "sprintSpeed": 72,
-        "positioning": 77,
-        "finishing": 75,
-        "shotPower": 77,
-        "longShots": 78,
-        "volleys": 69,
-        "penalties": 72,
-        "vision": 70,
-        "crossing": 65,
-        "freeKickAccuracy": 70,
-        "shortPassing": 77,
-        "longPassing": 64,
-        "curve": 72,
-        "agility": 85,
-        "balance": 76,
-        "reactions": 75,
-        "ballControl": 78,
-        "composure": 80,
-        "interceptions": 34,
-        "headingAccuracy": 73,
-        "defAwareness": 39,
-        "standingTackle": 45,
-        "slidingTackle": 34,
-        "jumping": 82,
-        "strength": 64,
-        "aggression": 67
-      }
-    },
-    {
-      "id": 27,
-      "number": 27,
-      "name": "Monique Ngock",
-      "ovr": 74,
-      "status": "reserva",
-      "aptitude": [
-        "VOL"
-      ],
-      "age": 19,
-      "foot": "Destro",
-      "captain": false,
-      "nationality": "Cameroon",
-      "playstyles": [
-        "Meia Versátil"
-      ],
-      "stats": {
-        "vel": 67,
-        "fin": 52,
-        "pas": 66,
-        "dri": 68,
-        "def": 70,
-        "fis": 67,
-        "sta": 84
-      },
-      "detailedStats": {
-        "acceleration": 65,
-        "sprintSpeed": 68,
-        "positioning": 58,
-        "finishing": 53,
-        "shotPower": 53,
-        "longShots": 49,
-        "volleys": 49,
-        "penalties": 43,
-        "vision": 66,
-        "crossing": 49,
-        "freeKickAccuracy": 45,
-        "shortPassing": 77,
-        "longPassing": 72,
-        "curve": 51,
-        "agility": 67,
-        "balance": 71,
-        "reactions": 69,
-        "ballControl": 72,
-        "composure": 59,
-        "interceptions": 74,
-        "headingAccuracy": 51,
-        "defAwareness": 71,
-        "standingTackle": 73,
-        "slidingTackle": 71,
-        "jumping": 60,
-        "strength": 59,
-        "aggression": 69
-      }
-    },
-    {
-      "id": 28,
-      "number": 28,
-      "name": "Anaële Le Moguédec",
-      "ovr": 72,
-      "status": "reserva",
-      "aptitude": [
-        "MC"
-      ],
-      "age": 22,
-      "foot": "Destro",
-      "captain": false,
-      "nationality": "France",
-      "playstyles": [
-        "Meia Versátil"
-      ],
-      "stats": {
-        "vel": 66,
-        "fin": 62,
-        "pas": 67,
-        "dri": 72,
-        "def": 62,
-        "fis": 67,
-        "sta": 78
-      },
-      "detailedStats": {
-        "acceleration": 65,
-        "sprintSpeed": 66,
-        "positioning": 67,
-        "finishing": 64,
-        "shotPower": 58,
-        "longShots": 67,
-        "volleys": 48,
-        "penalties": 52,
-        "vision": 69,
-        "crossing": 54,
-        "freeKickAccuracy": 47,
-        "shortPassing": 75,
-        "longPassing": 75,
-        "curve": 57,
-        "agility": 67,
-        "balance": 72,
-        "reactions": 68,
-        "ballControl": 72,
-        "composure": 58,
-        "interceptions": 67,
-        "headingAccuracy": 48,
-        "defAwareness": 55,
-        "standingTackle": 71,
-        "slidingTackle": 58,
-        "jumping": 60,
-        "strength": 61,
-        "aggression": 70
-      }
-    },
-    {
-      "id": 29,
-      "number": 29,
-      "name": "Mathilde Kack",
-      "ovr": 71,
-      "status": "reserva",
-      "aptitude": [
-        "ZE"
-      ],
-      "age": 24,
-      "foot": "Destro",
-      "captain": false,
-      "nationality": "France",
-      "playstyles": [
-        "Meia Versátil"
-      ],
-      "stats": {
-        "vel": 66,
-        "fin": 35,
-        "pas": 51,
-        "dri": 51,
-        "def": 72,
-        "fis": 69,
-        "sta": 62
-      },
-      "detailedStats": {
-        "acceleration": 59,
-        "sprintSpeed": 71,
-        "positioning": 35,
-        "finishing": 33,
-        "shotPower": 44,
-        "longShots": 31,
-        "volleys": 33,
-        "penalties": 37,
-        "vision": 37,
-        "crossing": 37,
-        "freeKickAccuracy": 30,
-        "shortPassing": 69,
-        "longPassing": 59,
-        "curve": 36,
-        "agility": 43,
-        "balance": 62,
-        "reactions": 68,
-        "ballControl": 62,
-        "composure": 65,
-        "interceptions": 69,
-        "headingAccuracy": 72,
-        "defAwareness": 71,
-        "standingTackle": 75,
-        "slidingTackle": 67,
-        "jumping": 76,
-        "strength": 72,
-        "aggression": 70
-      }
-    },
-    {
-      "id": 30,
-      "number": 30,
-      "name": "Colette Ndzana",
-      "ovr": 71,
-      "status": "reserva",
-      "aptitude": [
-        "LE"
-      ],
-      "age": 24,
-      "foot": "Destro",
-      "captain": false,
-      "nationality": "Cameroon",
-      "playstyles": [
-        "Meia Versátil"
-      ],
-      "stats": {
-        "vel": 76,
-        "fin": 54,
-        "pas": 63,
-        "dri": 70,
-        "def": 67,
-        "fis": 60,
-        "sta": 66
-      },
-      "detailedStats": {
-        "acceleration": 77,
-        "sprintSpeed": 75,
-        "positioning": 61,
-        "finishing": 51,
-        "shotPower": 62,
-        "longShots": 55,
-        "volleys": 40,
-        "penalties": 42,
-        "vision": 49,
-        "crossing": 70,
-        "freeKickAccuracy": 54,
-        "shortPassing": 69,
-        "longPassing": 58,
-        "curve": 70,
-        "agility": 77,
-        "balance": 70,
-        "reactions": 68,
-        "ballControl": 70,
-        "composure": 68,
-        "interceptions": 68,
-        "headingAccuracy": 61,
-        "defAwareness": 66,
-        "standingTackle": 70,
-        "slidingTackle": 65,
-        "jumping": 71,
-        "strength": 57,
-        "aggression": 57
-      }
-    },
-    {
-      "id": 31,
-      "number": 31,
-      "name": "Jade Nassi",
-      "ovr": 70,
-      "status": "reserva",
-      "aptitude": [
-        "PE"
-      ],
-      "age": 21,
-      "foot": "Destro",
-      "captain": false,
-      "nationality": "France",
-      "playstyles": [
-        "Technical"
-      ],
-      "stats": {
-        "vel": 75,
-        "fin": 63,
-        "pas": 65,
-        "dri": 77,
-        "def": 31,
-        "fis": 57,
-        "sta": 57
-      },
-      "detailedStats": {
-        "acceleration": 77,
-        "sprintSpeed": 73,
-        "positioning": 62,
-        "finishing": 60,
-        "shotPower": 65,
-        "longShots": 66,
-        "volleys": 63,
-        "penalties": 64,
-        "vision": 67,
-        "crossing": 65,
-        "freeKickAccuracy": 57,
-        "shortPassing": 69,
-        "longPassing": 56,
-        "curve": 70,
-        "agility": 78,
-        "balance": 72,
-        "reactions": 65,
-        "ballControl": 74,
-        "composure": 67,
-        "interceptions": 25,
-        "headingAccuracy": 47,
-        "defAwareness": 27,
-        "standingTackle": 35,
-        "slidingTackle": 28,
-        "jumping": 65,
-        "strength": 62,
-        "aggression": 42
-      }
-    },
-    {
-      "id": 32,
-      "number": 32,
-      "name": "Léa Notel",
-      "ovr": 69,
-      "status": "reserva",
-      "aptitude": [
-        "LE"
-      ],
-      "age": 19,
-      "foot": "Destro",
-      "captain": false,
-      "nationality": "France",
-      "playstyles": [
-        "Meia Versátil"
-      ],
-      "stats": {
-        "vel": 58,
-        "fin": 48,
-        "pas": 64,
-        "dri": 63,
-        "def": 67,
-        "fis": 64,
-        "sta": 69
-      },
-      "detailedStats": {
-        "acceleration": 55,
-        "sprintSpeed": 61,
-        "positioning": 54,
-        "finishing": 48,
-        "shotPower": 49,
-        "longShots": 46,
-        "volleys": 45,
-        "penalties": 47,
-        "vision": 57,
-        "crossing": 69,
-        "freeKickAccuracy": 45,
-        "shortPassing": 70,
-        "longPassing": 58,
-        "curve": 58,
-        "agility": 65,
-        "balance": 75,
-        "reactions": 65,
-        "ballControl": 68,
-        "composure": 60,
-        "interceptions": 69,
-        "headingAccuracy": 59,
-        "defAwareness": 66,
-        "standingTackle": 68,
-        "slidingTackle": 71,
-        "jumping": 62,
-        "strength": 61,
-        "aggression": 66
-      }
-    },
-    {
-      "id": 33,
-      "number": 33,
-      "name": "Clara Wibaut",
-      "ovr": 65,
-      "status": "reserva",
-      "aptitude": [
-        "GL"
-      ],
-      "age": 19,
-      "foot": "Destro",
-      "captain": false,
-      "nationality": "France",
-      "playstyles": [
-        "Goleiro Defensivo"
-      ],
-      "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
-        "ref": 75,
-        "vel": 40,
-        "pos": 75,
-        "sta": 27
-      },
-      "detailedStats": {
-        "acceleration": 41,
-        "sprintSpeed": 35,
-        "positioning": 7,
-        "finishing": 8,
-        "shotPower": 47,
-        "longShots": 8,
-        "volleys": 8,
-        "penalties": 13,
-        "vision": 38,
-        "crossing": 15,
-        "freeKickAccuracy": 12,
-        "shortPassing": 22,
-        "longPassing": 21,
-        "curve": 15,
-        "agility": 37,
-        "balance": 45,
-        "reactions": 58,
-        "ballControl": 12,
-        "composure": 23,
-        "interceptions": 13,
-        "headingAccuracy": 13,
-        "defAwareness": 10,
-        "standingTackle": 11,
-        "slidingTackle": 12,
-        "jumping": 44,
-        "strength": 37,
-        "aggression": 21
-      }
-    },
-    {
-      "id": 34,
-      "number": 34,
-      "name": "Léa Bourgain",
-      "ovr": 61,
-      "status": "reserva",
-      "aptitude": [
-        "MC"
-      ],
-      "age": 20,
-      "foot": "Destro",
-      "captain": false,
-      "nationality": "France",
-      "playstyles": [
-        "Meia Versátil"
-      ],
-      "stats": {
-        "vel": 62,
-        "fin": 59,
-        "pas": 56,
-        "dri": 65,
-        "def": 52,
-        "fis": 55,
-        "sta": 59
-      },
-      "detailedStats": {
-        "acceleration": 66,
-        "sprintSpeed": 58,
-        "positioning": 60,
-        "finishing": 56,
-        "shotPower": 70,
-        "longShots": 60,
-        "volleys": 48,
-        "penalties": 47,
-        "vision": 57,
-        "crossing": 43,
-        "freeKickAccuracy": 45,
-        "shortPassing": 62,
-        "longPassing": 63,
-        "curve": 53,
-        "agility": 61,
-        "balance": 66,
-        "reactions": 60,
-        "ballControl": 62,
-        "composure": 55,
-        "interceptions": 56,
-        "headingAccuracy": 55,
-        "defAwareness": 45,
-        "standingTackle": 58,
-        "slidingTackle": 45,
-        "jumping": 61,
-        "strength": 56,
-        "aggression": 45
       }
     }
   ]

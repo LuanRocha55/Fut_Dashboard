@@ -93,6 +93,28 @@ export async function openMatchSimulation() {
   let homePossession = 50;
   let currentReferee = getRandomReferee();
 
+  const coachInfo = await Storage.getCoachInfo();
+  let currentPlaystyle = (coachInfo && coachInfo.playstyle) || "possession";
+
+  const updateTacticButtons = () => {
+    document.querySelectorAll(".tactic-btn").forEach(btn => {
+      if (btn.dataset.style === currentPlaystyle) {
+        btn.classList.add("active");
+      } else {
+        btn.classList.remove("active");
+      }
+    });
+  };
+
+  document.querySelectorAll(".tactic-btn").forEach(btn => {
+    btn.onclick = () => {
+      currentPlaystyle = btn.dataset.style;
+      updateTacticButtons();
+      addLog(`📋 TÁTICA ALTERADA: O time agora joga no estilo <strong>${btn.innerText.trim()}</strong>.`, "log-neutral");
+    };
+  });
+  updateTacticButtons();
+
   switchMainView("simulation");
 
   // Reset da UI para aguardar carregamento
@@ -726,10 +748,38 @@ export async function openMatchSimulation() {
     if (Math.random() < 0.6) awayTackles += Math.floor(Math.random() * 3);
 
     // Sistemas Físicos e Táticos Baseados no Tempo
-    degradeStamina(homeActivePlayers, true, homeFitnessTracker);
+    let staminaDrainFactor = 1.0;
+    
+    // Aplicação dos Estilos de Jogo
+    if (currentPlaystyle === "possession") {
+        homePossession = Math.min(65, homePossession + (Math.random() * 2));
+        staminaDrainFactor = 0.8; // Cansa menos
+    } else if (currentPlaystyle === "counter") {
+        homePossession = Math.max(35, homePossession - (Math.random() * 2));
+        staminaDrainFactor = 1.1; // Cansa um pouco mais pela correria
+    } else if (currentPlaystyle === "attack") {
+        homePossession = Math.min(70, homePossession + (Math.random() * 3));
+        staminaDrainFactor = 1.5; // Cansa MUITO
+    } else if (currentPlaystyle === "bus") {
+        homePossession = Math.max(25, homePossession - (Math.random() * 4));
+        staminaDrainFactor = 0.6; // Economiza energia total
+    }
+
+    degradeStamina(homeActivePlayers, true, homeFitnessTracker, staminaDrainFactor);
     degradeStamina(awayActivePlayers, false, homeFitnessTracker);
     updateSubListsStamina();
     handleAISubstitutions();
+    
+    // Lógica de Chances de Gol baseada no Estilo
+    let homeChanceMod = 1.0;
+    let awayChanceMod = 1.0;
+
+    if (currentPlaystyle === "attack") homeChanceMod = 1.8;
+    if (currentPlaystyle === "bus") { homeChanceMod = 0.3; awayChanceMod = 0.3; }
+    if (currentPlaystyle === "counter") homeChanceMod = 1.4;
+
+    // A lógica de chutes já existe no matchEngine ou abaixo no arquivo, 
+    // vou garantir que esses modificadores sejam usados nos cálculos de chance.
 
     if (minute >= 45 && !isHalfTime) {
       minute = 45;
@@ -851,7 +901,7 @@ export async function openMatchSimulation() {
     timeEl.innerText = minute + "'";
     const rand = Math.random() * 100;
 
-    if (rand < (currentHomeAtk / (currentHomeAtk + currentAwayDef)) * 15) {
+    if (rand < (currentHomeAtk / (currentHomeAtk + currentAwayDef)) * 15 * homeChanceMod) {
       if (homeActivePlayers.length === 0) return;
 
       let jogador;
@@ -988,7 +1038,7 @@ export async function openMatchSimulation() {
       updateStatsUI();
     } else if (
       rand >
-      100 - (currentAwayAtk / (currentAwayAtk + currentHomeDef)) * 15
+      100 - (currentAwayAtk / (currentAwayAtk + currentHomeDef)) * 15 * awayChanceMod
     ) {
       if (awayActivePlayers.length === 0) return;
       const goleiros = homeActivePlayers.filter(

@@ -13,7 +13,8 @@
       "ovr": 69,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 31,
       "foot": "Destro",
@@ -68,7 +69,8 @@
       "ovr": 68,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 34,
       "foot": "Destro",
@@ -178,7 +180,7 @@
       "ovr": 66,
       "status": "titular",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 37,
       "foot": "Destro",
@@ -188,12 +190,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 33
       },
       "detailedStats": {
@@ -343,7 +345,8 @@
       "ovr": 65,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 35,
       "foot": "Destro",

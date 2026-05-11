@@ -70,7 +70,7 @@
       "ovr": 82,
       "status": "titular",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 32,
       "foot": "Destro",
@@ -81,12 +81,12 @@
         "Footwork"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 42
       },
       "detailedStats": {
@@ -182,7 +182,8 @@
       "ovr": 80,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 34,
       "foot": "Destro",
@@ -292,7 +293,8 @@
       "ovr": 80,
       "status": "titular",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 34,
       "foot": "Destro",
@@ -403,7 +405,7 @@
       "ovr": 79,
       "status": "titular",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 29,
       "foot": "Destro",
@@ -414,12 +416,12 @@
         "Far Throw"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 42
       },
       "detailedStats": {
@@ -627,7 +629,8 @@
       "ovr": 77,
       "status": "reserva",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 25,
       "foot": "Destro",
@@ -1017,7 +1020,8 @@
       "ovr": 73,
       "status": "reserva",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 22,
       "foot": "Destro",
@@ -1072,7 +1076,7 @@
       "ovr": 73,
       "status": "reserva",
       "aptitude": [
-        "GL"
+        "GOL"
       ],
       "age": 36,
       "foot": "Destro",
@@ -1082,12 +1086,12 @@
         "Far Throw"
       ],
       "stats": {
-        "sal": 75,
-        "man": 75,
-        "rep": 60,
+        "alc": 75,
+        "seg": 75,
+        "esp": 75,
         "ref": 75,
-        "vel": 40,
         "pos": 75,
+        "vel": 40,
         "sta": 42
       },
       "detailedStats": {
@@ -1127,7 +1131,8 @@
       "ovr": 73,
       "status": "reserva",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 33,
       "foot": "Destro",
@@ -1293,7 +1298,8 @@
       "ovr": 65,
       "status": "reserva",
       "aptitude": [
-        "ZE"
+        "ZE",
+        "ZD"
       ],
       "age": 20,
       "foot": "Destro",

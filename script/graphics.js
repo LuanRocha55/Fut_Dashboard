@@ -81,7 +81,7 @@ export function drawRadar(canvasId, stats1, stats2 = null, isGK = false) {
   const radius = canvas.width / 2 - 25;
 
   const labels = isGK
-    ? ["SAL", "MAN", "REP", "REF", "VEL", "POS", "FÔL"]
+    ? ["alc", "seg", "esp", "REF", "VEL", "POS", "FÔL"]
     : ["VEL", "FIN", "PAS", "DRI", "DEF", "FÍS", "FÔL"];
   const SIDES = labels.length;
 
@@ -172,9 +172,9 @@ export function renderStatsNumbers(stats1, stats2 = null, isGK = false) {
 
   const labels = isGK
     ? [
-        { key: "sal", fallback: "div", name: "SAL" },
-        { key: "man", fallback: "han", name: "MAN" },
-        { key: "rep", fallback: "kic", name: "REP" },
+        { key: "alc", fallback: "div", name: "alc" },
+        { key: "seg", fallback: "han", name: "seg" },
+        { key: "esp", fallback: "kic", name: "esp" },
         { key: "ref", fallback: "ref", name: "REF" },
         { key: "vel", fallback: "spd", name: "VEL" },
         { key: "pos", fallback: "pos", name: "POS" },
@@ -225,4 +225,87 @@ export function renderStatsNumbers(stats1, stats2 = null, isGK = false) {
     }
     container.innerHTML += `<div class="stat-row"><div class="stat-name">${l.name}</div><div class="stat-bar-container"><div class="stat-val p1 ${classV1}">${v1}</div>${vsHtml}${p2Html}</div></div>`;
   });
+}
+
+export function getTeamLogoHTML(teamName) {
+  if (!teamName) return "";
+  const normalized = teamName
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .trim();
+
+  const teamColors = {
+    cruzeiro: { c: "#003aa6", b: "#005ce6" },
+    internacional: { c: "#cc0000", b: "#ff3333" },
+    gremio: { c: "#0d80bf", b: "#1a9cf0" },
+    "atletico mineiro": { c: "#111111", b: "#444444" },
+    flamengo: { c: "#c62828", b: "#ff5252" },
+    fluminense: { c: "#8a1538", b: "#b81c4a" },
+    botafogo: { c: "#111111", b: "#444444" },
+    "athletico-pr": { c: "#c8102e", b: "#f01438" },
+    fortaleza: { c: "#002868", b: "#003c9c" },
+    bahia: { c: "#004c97", b: "#0066cc" },
+    vitoria: { c: "#cc0000", b: "#ff3333" },
+    coritiba: { c: "#005f31", b: "#008c48" },
+    goias: { c: "#006e33", b: "#009947" },
+    criciuma: { c: "#d1ab00", b: "#ffdb29" },
+    "sport recife": { c: "#cc0000", b: "#ff3333" },
+    ceara: { c: "#111111", b: "#444444" },
+    juventude: { c: "#006437", b: "#009954" },
+    bragantino: { c: "#111111", b: "#444444" },
+    santos: { c: "#111111", b: "#444444" },
+    "ponte preta": { c: "#111111", b: "#444444" },
+    "vasco da gama": { c: "#111111", b: "#444444" },
+    palmeiras: { c: "#006437", b: "#009954" },
+    "sao paulo": { c: "#c62828", b: "#ff5252" },
+    corinthians: { c: "#111111", b: "#444444" },
+    "real madrid": { c: "#00529f", b: "#0073e0" },
+    barcelona: { c: "#004d98", b: "#a50044" },
+    "manchester city": { c: "#6cabdd", b: "#98cbf5" },
+    "bayern de munique": { c: "#dc052d", b: "#ff1c47" },
+    psg: { c: "#004170", b: "#005a9c" },
+    arsenal: { c: "#ef0107", b: "#ff3338" },
+    liverpool: { c: "#c8102e", b: "#f01438" },
+    chelsea: { c: "#034694", b: "#0563d1" },
+    tottenham: { c: "#132257", b: "#1d3485" },
+    juventus: { c: "#111111", b: "#444444" },
+    "inter milan": { c: "#00519e", b: "#0072de" },
+    "ac milan": { c: "#c8102e", b: "#f01438" },
+    "bayer leverkusen": { c: "#e32221", b: "#ff4746" },
+    "borussia dortmund": { c: "#e6c600", b: "#ffe233" },
+    "rb leipzig": { c: "#dd013f", b: "#ff1c5d" },
+    "aston villa": { c: "#670e36", b: "#94144e" },
+    newcastle: { c: "#111111", b: "#444444" },
+    "west ham": { c: "#7a263a", b: "#a83550" },
+    brighton: { c: "#0057b8", b: "#007bff" },
+    napoli: { c: "#00a9e0", b: "#33c4ff" },
+    roma: { c: "#8e1f2f", b: "#bc293e" },
+    atalanta: { c: "#2651a8", b: "#3b73e6" },
+    lazio: { c: "#87ceeb", b: "#b5e5ff" },
+    fiorentina: { c: "#482e92", b: "#6a45cf" },
+  };
+
+  let color, borderCol;
+  if (teamColors[normalized]) {
+    color = teamColors[normalized].c;
+    borderCol = teamColors[normalized].b;
+  } else {
+    let hash = 0;
+    for (let i = 0; i < teamName.length; i++) {
+      hash = teamName.charCodeAt(i) + ((hash << 5) - hash);
+    }
+    const hue = Math.abs(hash) % 360;
+    color = `hsl(${hue}, 60%, 40%)`;
+    borderCol = `hsl(${hue}, 70%, 60%)`;
+  }
+
+  const words = teamName.trim().split(/\s+/);
+  const initials = (
+    words.length > 1
+      ? words[0][0] + words[words.length - 1][0]
+      : teamName.substring(0, 2)
+  ).toUpperCase();
+
+  return `<div style="width: 24px; height: 24px; border-radius: 50%; background: linear-gradient(135deg, ${color}, #111); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 0.65rem; font-weight: 900; border: 1px solid ${borderCol}; box-shadow: 0 2px 4px rgba(0,0,0,0.5); flex-shrink: 0;" title="${teamName}">${initials}</div>`;
 }

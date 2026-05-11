@@ -179,9 +179,9 @@ export async function openMenu(id) {
     sliderContainer.innerHTML = "";
     const statKeys = isGK
       ? [
-          { key: "sal", label: "SAL" },
-          { key: "man", label: "MAN" },
-          { key: "rep", label: "REP" },
+          { key: "alc", label: "alc" },
+          { key: "seg", label: "seg" },
+          { key: "esp", label: "esp" },
           { key: "ref", label: "REF" },
           { key: "vel", label: "VEL" },
           { key: "pos", label: "POS" },
@@ -377,7 +377,7 @@ export function initEditorEvents() {
     if (p) {
       const isGK = p.aptitude && p.aptitude[0] === "GL";
       const statKeys = isGK
-        ? ["sal", "man", "rep", "ref", "vel", "pos", "sta"]
+        ? ["alc", "seg", "esp", "ref", "vel", "pos", "sta"]
         : ["vel", "fin", "pas", "dri", "def", "fis", "sta"];
       const newStats = {};
       statKeys.forEach((k) => {
@@ -429,7 +429,7 @@ export function initEditorEvents() {
     if (!p1) return;
     const isGK = p1.aptitude && p1.aptitude[0] === "GL";
     const statKeys = isGK
-      ? ["sal", "man", "rep", "ref", "vel", "pos", "sta"]
+      ? ["alc", "seg", "esp", "ref", "vel", "pos", "sta"]
       : ["vel", "fin", "pas", "dri", "def", "fis", "sta"];
     let s1;
     if (document.getElementById(`slider_${statKeys[0]}`)) {
