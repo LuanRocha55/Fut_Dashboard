@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap');
+
+:root {
+  --bg: #050505;
+  --sidebar: #0f0f0f;
+  --accent: #00ff88;
+  /* Verde Neon Vibrante */
+  --warning: #ffd000;
+  /* Amarelo Ouro */
+  --danger: #ff4d4d;
+  /* Vermelho Vivo */
+  --rating-top: #00e5ff;
+  /* Ciano Vibrante (>= 8.5) */
+  --rating-high: #00ff88;
+  /* Verde Neon (7.5 - 8.4) */
+  --rating-mid: #ffd000;
+  /* Amarelo (6.0 - 7.4) */
+  --rating-low: #ff8c00;
+  /* Laranja (5.0 - 5.9) */
+  --rating-bad: #ff4d4d;
+  /* Vermelho Vivo (< 5.0) */
+  --border: #2a2a2a;
+  --text: #e0e0e0;
+  --pitch: #112610;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  /* Regra de UX: evita seleção de texto acidental */
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  /* Adeus Arial genérico */
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+select,
+input {
+  width: 100%;
+  background: #111;
+  border: 1px solid #333;
+  color: #fff;
+  padding: 12px;
+  border-radius: 6px;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* Estilo para Inputs Bloqueados (Modo Leitura) */
+input:disabled,
+select:disabled {
+  background: transparent;
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  color: var(--text);
+}
+
+/* Botões */
+button {
+  width: 100%;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+  /* Microinteração suave */
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.button-grid button {
+  margin-top: 0;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #000;
+  border: 1px solid var(--accent);
+}
+
+.btn-primary:hover {
+  background: #00cc6a;
+  border-color: #00cc6a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 255, 136, 0.2);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.btn-dark {
+  background: #111;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.btn-dark:hover {
+  background: #222;
+  border-color: #444;
+  transform: translateY(-2px);
+}
+
+.btn-danger {
+  background: rgba(255, 77, 77, 0.05);
+  color: var(--danger);
+  border: 1px solid rgba(255, 77, 77, 0.2);
+}
+
+.btn-danger:hover {
+  background: rgba(255, 77, 77, 0.15);
+  border-color: var(--danger);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+  min-height: 0;
+}
+
+.main-content {
+  flex: 1;
+  padding: 15px;
+  position: relative;
+  min-height: 0;
+}

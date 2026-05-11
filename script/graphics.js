@@ -16,7 +16,7 @@ export function getStarsHTML(rating) {
 
 export function getFlag(nation) {
   if (!nation || nation === "--") return "";
-  if (nation === "INT") return "🌍 ";
+  if (nation === "INT") return `<svg viewBox="0 0 24 24" width="16" height="16" fill="var(--warning)" style="vertical-align: middle; margin-right: 4px;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>`;
   let lowerCode = nation.toLowerCase();
   
   // Mapeamentos Especiais (Reino Unido)
@@ -81,9 +81,9 @@ export function drawRadar(canvasId, stats1, stats2 = null, isGK = false) {
   const radius = canvas.width / 2 - 25;
 
   const labels = isGK
-    ? ["SAL", "MAN", "REP", "REF", "VEL", "POS"]
-    : ["VEL", "FIN", "PAS", "DRI", "DEF", "FÍS"];
-  const SIDES = 6;
+    ? ["SAL", "MAN", "REP", "REF", "VEL", "POS", "FÔL"]
+    : ["VEL", "FIN", "PAS", "DRI", "DEF", "FÍS", "FÔL"];
+  const SIDES = labels.length;
 
   ctx.strokeStyle = "rgba(255,255,255,0.1)";
   ctx.lineWidth = 1;
@@ -130,6 +130,7 @@ export function drawRadar(canvasId, stats1, stats2 = null, isGK = false) {
           s.ref || s.def || 75,
           s.vel || s.spd || s.pac || 40,
           s.pos || s.def || 75,
+          s.sta || s.stm || 50,
         ].map((v) => v / 100)
       : [
           s.vel || s.pac || s.spd || 50,
@@ -138,6 +139,7 @@ export function drawRadar(canvasId, stats1, stats2 = null, isGK = false) {
           s.dri || s.atk || 50,
           s.def || 50,
           s.fis || s.phy || s.str || 50,
+          s.sta || s.stm || 75,
         ].map((v) => v / 100);
 
   const drawPolygon = (playerStats, fillColor, strokeColor) => {
@@ -176,6 +178,7 @@ export function renderStatsNumbers(stats1, stats2 = null, isGK = false) {
         { key: "ref", fallback: "ref", name: "REF" },
         { key: "vel", fallback: "spd", name: "VEL" },
         { key: "pos", fallback: "pos", name: "POS" },
+        { key: "sta", fallback: "stm", name: "FÔL" },
       ]
     : [
         { key: "vel", fallback: "pac", name: "VEL" },
@@ -184,18 +187,28 @@ export function renderStatsNumbers(stats1, stats2 = null, isGK = false) {
         { key: "dri", fallback: "dri", name: "DRI" },
         { key: "def", fallback: "def", name: "DEF" },
         { key: "fis", fallback: "phy", name: "FÍS" },
+        { key: "sta", fallback: "stm", name: "FÔL" },
       ];
 
   const s1 = stats1 || {};
 
   labels.forEach((l) => {
-    const v1 = s1[l.key] || s1[l.fallback] || 50;
+    let defVal = 50;
+    if (isGK) {
+      if (['sal', 'man', 'ref', 'pos'].includes(l.key)) defVal = 75;
+      else if (l.key === 'rep') defVal = 60;
+      else if (l.key === 'vel') defVal = 40;
+      else if (l.key === 'sta') defVal = 50;
+    } else {
+      if (l.key === 'sta') defVal = 75;
+    }
+    const v1 = s1[l.key] || s1[l.fallback] || defVal;
     let p2Html = "",
       vsHtml = "",
       classV1 = "";
 
     if (stats2) {
-      const v2 = stats2[l.key] || stats2[l.fallback] || 50;
+      const v2 = stats2[l.key] || stats2[l.fallback] || defVal;
       let classV2 = "";
       if (v1 > v2) {
         classV1 = "winner";

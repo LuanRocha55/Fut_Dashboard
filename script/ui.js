@@ -12,6 +12,7 @@ import {
   healSquad,
   matchHistory,
   matchInfo,
+  ensureCaptain,
 } from "./core.js";
 
 import {
@@ -42,6 +43,12 @@ import {
   setTableView,
 } from "./tableView.js";
 
+import { initLeagueEvents } from "./league.js";
+import { renderLeagueData } from "./leagueRenderer.js";
+import { Storage } from "./storage.js";
+
+let showOnlyFitPlayers = false;
+
 export function highlightZones(player) {
   const pitch = document.getElementById("pitch");
   pitch.classList.add("active-selection");
@@ -69,10 +76,14 @@ export function clearZones() {
 }
 
 export function switchMainView(viewName) {
+  setTableView(viewName === "table");
+
   const pitch = document.getElementById("pitch");
   const table = document.getElementById("tableView");
   const sim = document.getElementById("simulationView");
   const dashboard = document.getElementById("dashboardView");
+  const league = document.getElementById("leagueView");
+  const teamStats = document.getElementById("teamStatsView");
   const bench = document.querySelector(".bottom-bench");
   const sidebar = document.getElementById("sidebar");
 
@@ -80,6 +91,8 @@ export function switchMainView(viewName) {
   if (table) table.style.display = "none";
   if (sim) sim.style.display = "none";
   if (dashboard) dashboard.style.display = "none";
+  if (league) league.style.display = "none";
+  if (teamStats) teamStats.style.display = "none";
 
   const navDash = document.getElementById("navDashboardBtn");
   const navPitch = document.getElementById("navPitchBtn");
@@ -104,6 +117,16 @@ export function switchMainView(viewName) {
     if (bench) bench.style.display = "flex";
     if (navPitch) navPitch.className = "btn-primary";
     renderApp();
+  } else if (viewName === "league") {
+    if (sidebar) sidebar.style.display = "none";
+    if (league) league.style.display = "block";
+    if (bench) bench.style.display = "none";
+    renderApp();
+  } else if (viewName === "teamStats") {
+    if (sidebar) sidebar.style.display = "none";
+    if (teamStats) teamStats.style.display = "block";
+    if (bench) bench.style.display = "none";
+    renderTeamStats();
   } else {
     // dashboard
     if (sidebar) sidebar.style.display = "none";
@@ -122,6 +145,8 @@ function render() {
   const bench = document.getElementById("benchList");
   pitch.querySelectorAll(".player").forEach((el) => el.remove());
   bench.innerHTML = "";
+
+  ensureCaptain();
 
   const format = formations[document.getElementById("formationSelect").value];
   const titulares = squad.filter((p) => p.status === "titular");
@@ -142,9 +167,12 @@ function render() {
     totalPas = 0,
     totalDri = 0,
     totalDef = 0,
-    totalFis = 0;
+    totalFis = 0,
+    totalSta = 0;
   let outfieldCount = 0;
   let playstylesCount = {};
+
+  const pitchFragment = document.createDocumentFragment();
 
   titulares.forEach((p, i) => {
     if (!format || !format[i]) return;
@@ -159,6 +187,15 @@ function render() {
         (p.aptitude && p.aptitude.includes("GL")) || currentZone === "GL"
           ? 1.0
           : Math.max(1.0, pRating - 2.5);
+
+    const fitLevel = p.fitness !== undefined ? p.fitness : 100;
+    const fitColorBar =
+      fitLevel > 70
+        ? "var(--accent)"
+        : fitLevel > 40
+          ? "var(--warning)"
+          : "var(--danger)";
+    const fitBarHtml = `<div style="position:absolute; bottom: -28px; left: -10%; width: 120%; height: 6px; background: rgba(0,0,0,0.8); border: 1px solid #000; border-radius: 3px; overflow: hidden; z-index: 15; box-shadow: 0 2px 4px rgba(0,0,0,0.5);"><div style="height: 100%; width: ${fitLevel}%; background: ${fitColorBar}; transition: width 0.3s ease, background 0.3s ease;"></div></div>`;
 
     let liveStatusClass = "";
     if (p.matchStatus === "red") liveStatusClass = "is-suspended";
@@ -179,6 +216,7 @@ function render() {
       totalDri += s.dri || s.atk || 50;
       totalDef += s.def || 50;
       totalFis += s.fis || s.phy || s.str || 50;
+      totalSta += s.sta || s.stm || 50;
       outfieldCount++;
     }
 
@@ -190,7 +228,7 @@ function render() {
     el.className = `player ${fitClass} ${liveStatusClass}`;
     el.dataset.id = p.id;
     el.style.cssText = `top: ${topPos}%; left: ${leftPos}%;`;
-    el.innerHTML = `<div class="p-icon" style="border-color: ${getRatingColor(pRating)}">${getMatchStatusHTML(p.matchStatus)}${p.captain ? '<div class="captain-armband">C</div>' : ""}<div class="p-pos-badge">${currentZone}</div><div class="p-form">${getFormHTML(p.form)}</div>${p.number}<span class="p-badge" style="background: ${getRatingColor(displayRating)}">${displayRating.toFixed(1)}</span></div><div class="p-name">${p.name}</div>`;
+    el.innerHTML = `<div class="p-icon" style="border-color: ${getRatingColor(pRating)}">${getMatchStatusHTML(p.matchStatus)}${p.captain ? '<div class="captain-armband">C</div>' : ""}<div class="p-pos-badge">${currentZone}</div><div class="p-form">${getFormHTML(p.form)}</div>${p.number}<span class="p-badge" style="background: ${getRatingColor(displayRating)}">${displayRating.toFixed(1)}</span>${fitBarHtml}</div><div class="p-name">${p.name}</div>`;
     el.draggable = true;
     el.ondragstart = (e) => {
       e.dataTransfer.setData("playerId", p.id);
@@ -236,8 +274,9 @@ function render() {
     el.onclick = () => {
       if (!el.classList.contains("dragging")) openMenu(p.id);
     };
-    pitch.appendChild(el);
+    pitchFragment.appendChild(el);
   });
+  pitch.appendChild(pitchFragment);
 
   if (titulares.length > 0) {
     const divBy = outfieldCount > 0 ? outfieldCount : 1;
@@ -248,6 +287,7 @@ function render() {
       dri: Math.round(totalDri / divBy),
       def: Math.round(totalDef / divBy),
       fis: Math.round(totalFis / divBy),
+      sta: Math.round(totalSta / divBy),
     };
     drawRadar("teamRadarChart", avgStats);
 
@@ -393,26 +433,151 @@ function render() {
     });
   }
 
-  reservas.sort((a, b) =>
-    document.getElementById("benchSortSelect").value === "rating"
-      ? (b.rating ?? 0) - (a.rating ?? 0)
-      : (ALL_POSITIONS.indexOf(a.aptitude?.[0]) ?? 99) -
-        (ALL_POSITIONS.indexOf(b.aptitude?.[0]) ?? 99),
-  );
-  reservas.forEach((p) => {
+  const benchSortValue = document.getElementById("benchSortSelect").value;
+  let reservasDisplay = reservas;
+  if (showOnlyFitPlayers) {
+    reservasDisplay = reservas.filter(
+      (p) => p.matchStatus !== "red" && p.matchStatus !== "injury",
+    );
+  }
+
+  reservasDisplay.sort((a, b) => {
+    if (benchSortValue === "rating") {
+      return (b.rating ?? 0) - (a.rating ?? 0);
+    }
+    if (benchSortValue === "aptos") {
+      const aFit = a.matchStatus !== "red" && a.matchStatus !== "injury";
+      const bFit = b.matchStatus !== "red" && b.matchStatus !== "injury";
+      if (aFit !== bFit) {
+        return bFit - aFit; // Booleans convert to 1/0, so this puts fit players first
+      }
+      // If both are fit or both unfit, sort by rating as a secondary measure
+      return (b.rating ?? 0) - (a.rating ?? 0);
+    }
+    // Default to position sort
+    return (
+      (ALL_POSITIONS.indexOf(a.aptitude?.[0]) ?? 99) -
+      (ALL_POSITIONS.indexOf(b.aptitude?.[0]) ?? 99)
+    );
+  });
+
+  const benchFragment = document.createDocumentFragment();
+  reservasDisplay.forEach((p) => {
     const res = document.createElement("div");
     const isGK = p.aptitude && p.aptitude[0] === "GL";
     const pRating = p.rating ?? calculateOVR(p.stats, p.form, isGK);
     const mStatusHtml = getMatchStatusHTML(p.matchStatus);
+    const fitLevel = p.fitness !== undefined ? p.fitness : 100;
+    const fitColor =
+      fitLevel > 70
+        ? "var(--accent)"
+        : fitLevel > 40
+          ? "var(--warning)"
+          : "var(--danger)";
     res.className = "reserve-item";
     res.dataset.id = p.id;
-    res.innerHTML = `<div style="display: flex; justify-content: space-between; width: 100%; align-items: center; position: relative;">${mStatusHtml}<span style="font-size: 0.65rem; background: #222; padding: 2px 4px; border-radius: 4px; border: 1px solid #444; font-weight: 800; margin-left: ${mStatusHtml ? "12px" : "0"};">${p.aptitude?.[0] || "??"}</span><div style="display: flex; align-items: center; gap: 4px;">${getFormHTML(p.form)} <span style="background: ${getRatingColor(pRating)}; color: #000; font-size: 0.7rem; font-weight: 900; padding: 2px 4px; border-radius: 4px;">${pRating.toFixed(1)}</span></div></div><svg class="player-silhouette" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg><div style="margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; width: 100%;"><strong>${p.name}</strong></div><div style="font-size: 0.6rem; color: #888; margin-top: 2px;">Nº ${p.number} | ${p.age || "--"}A | ${p.foot ? p.foot.charAt(0).toUpperCase() : "D"}</div>`;
+    res.innerHTML = `<div style="display: flex; justify-content: space-between; width: 100%; align-items: center; position: relative;">${mStatusHtml}<span style="font-size: 0.65rem; background: #222; padding: 2px 4px; border-radius: 4px; border: 1px solid #444; font-weight: 800; margin-left: ${mStatusHtml ? "12px" : "0"};">${p.aptitude?.[0] || "??"}</span><div style="display: flex; align-items: center; gap: 4px;">${getFormHTML(p.form)} <span style="background: ${getRatingColor(pRating)}; color: #000; font-size: 0.7rem; font-weight: 900; padding: 2px 4px; border-radius: 4px;">${pRating.toFixed(1)}</span></div></div><svg class="player-silhouette" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg><div style="margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; width: 100%;"><strong>${p.name}</strong></div><div style="width: 90%; height: 6px; background: rgba(0,0,0,0.8); border: 1px solid #000; border-radius: 3px; overflow: hidden; margin-top: 4px; margin-bottom: 5px; box-shadow: inset 0 1px 2px rgba(0,0,0,0.5);"><div style="height: 100%; width: ${fitLevel}%; background: ${fitColor}; transition: width 0.3s ease, background 0.3s ease;"></div></div><div style="font-size: 0.6rem; color: #888; margin-top: 2px;">Nº ${p.number} | ${p.age || "--"}A | ${p.foot ? p.foot.charAt(0).toUpperCase() : "D"}</div>`;
     res.onclick = () => openMenu(p.id);
-    bench.appendChild(res);
+    benchFragment.appendChild(res);
   });
+  bench.appendChild(benchFragment);
   initDragAndDrop();
 
   if (isTableView) renderTable();
+}
+
+export function renderTeamStats() {
+  const goalsBody = document.getElementById("teamStatsGoalsBody");
+  const assistsBody = document.getElementById("teamStatsAssistsBody");
+  const matchesBody = document.getElementById("teamStatsMatchesBody");
+  const ratingBody = document.getElementById("teamStatsRatingBody");
+  const cardsBody = document.getElementById("teamStatsCardsBody");
+  const tacklesBody = document.getElementById("teamStatsTacklesBody");
+
+  if (!goalsBody) return;
+
+  const playersWithStats = squad.filter(
+    (p) =>
+      p.matchesPlayed > 0 ||
+      p.goals > 0 ||
+      p.assists > 0 ||
+      p.yellowCards > 0 ||
+      p.tackles > 0,
+  );
+
+  const renderList = (
+    container,
+    list,
+    valueKey,
+    valueLabel,
+    valueColor,
+    formatValue = null,
+    isRating = false,
+  ) => {
+    container.innerHTML = "";
+    const frag = document.createDocumentFragment();
+    list.slice(0, 15).forEach((p, i) => {
+      const val = formatValue ? formatValue(p[valueKey]) : p[valueKey];
+      if (val == 0 || val == "0.0") return;
+
+      let displayColor = valueColor;
+      if (isRating && p[valueKey]) {
+        displayColor = getRatingColor(p[valueKey]);
+      }
+
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+                <td style="font-weight: bold; color: ${i < 3 ? "var(--warning)" : "#aaa"}; width: 40px;">${i + 1}º</td>
+                <td style="text-align: left; font-weight: bold; color: #fff;">
+                    ${p.name}
+                    <span style="font-size: 0.65rem; color: #888; margin-left: 5px; font-weight: normal;">${p.aptitude?.[0] || "?"}</span>
+                </td>
+                <td style="font-weight: 900; color: ${displayColor}; font-size: 1.1rem; width: 60px;">${val}</td>
+            `;
+      frag.appendChild(tr);
+    });
+    if (frag.childNodes.length === 0) {
+      container.innerHTML = `<tr><td colspan="3" style="padding: 20px; color: #888; text-align: center;">Nenhum registro.</td></tr>`;
+    } else {
+      container.appendChild(frag);
+    }
+  };
+
+  const topScorers = [...playersWithStats].sort(
+    (a, b) => (b.goals || 0) - (a.goals || 0),
+  );
+  renderList(goalsBody, topScorers, "goals", "Gols", "var(--accent)");
+  const topAssists = [...playersWithStats].sort(
+    (a, b) => (b.assists || 0) - (a.assists || 0),
+  );
+  renderList(assistsBody, topAssists, "assists", "Assis.", "#00aaff");
+  const topMatches = [...playersWithStats].sort(
+    (a, b) => (b.matchesPlayed || 0) - (a.matchesPlayed || 0),
+  );
+  renderList(matchesBody, topMatches, "matchesPlayed", "Jogos", "#4caf50");
+  const topRating = [...playersWithStats]
+    .filter((p) => p.matchesPlayed > 0)
+    .sort((a, b) => (b.avgRating || 0) - (a.avgRating || 0));
+  renderList(
+    ratingBody,
+    topRating,
+    "avgRating",
+    "Nota",
+    "var(--warning)",
+    (val) => val.toFixed(1),
+    true,
+  );
+  const topCards = [...playersWithStats].sort(
+    (a, b) => (b.yellowCards || 0) - (a.yellowCards || 0),
+  );
+  renderList(cardsBody, topCards, "yellowCards", "CA", "var(--danger)");
+
+  if (tacklesBody) {
+    const topTackles = [...playersWithStats].sort(
+      (a, b) => (b.tackles || 0) - (a.tackles || 0),
+    );
+    renderList(tacklesBody, topTackles, "tackles", "Desar.", "#9c27b0");
+  }
 }
 
 function handleSubstitution(reserveId, dropX, dropY) {
@@ -517,18 +682,38 @@ function setupEventListeners() {
   });
 
   // Religando os botões do Menu de Navegação Lateral
-  document.getElementById("navDashboardBtn")?.addEventListener("click", () => switchMainView("dashboard"));
-  document.getElementById("navPitchBtn")?.addEventListener("click", () => switchMainView("pitch"));
-  document.getElementById("navTableBtn")?.addEventListener("click", () => {
-    switchMainView("table");
-    setTableView(true);
+  document
+    .getElementById("navDashboardBtn")
+    ?.addEventListener("click", () => switchMainView("dashboard"));
+  document
+    .getElementById("navPitchBtn")
+    ?.addEventListener("click", () => switchMainView("pitch"));
+  document
+    .getElementById("navTableBtn")
+    ?.addEventListener("click", () => switchMainView("table"));
+
+  document
+    .getElementById("dashToPitchBtn")
+    ?.addEventListener("click", () => switchMainView("pitch"));
+  document
+    .getElementById("dashToTableBtn")
+    ?.addEventListener("click", () => switchMainView("table"));
+
+  document.getElementById("dashToLeagueBtn")?.addEventListener("click", () => {
+    switchMainView("league");
+    renderLeagueData();
   });
 
-  document.getElementById("dashToPitchBtn")?.addEventListener("click", () => switchMainView("pitch"));
-  document.getElementById("dashToTableBtn")?.addEventListener("click", () => {
-    switchMainView("table");
-    setTableView(true);
-  });
+  document
+    .getElementById("dashToTeamStatsBtn")
+    ?.addEventListener("click", () => switchMainView("teamStats"));
+  document
+    .getElementById("navTeamStatsDashboardBtn")
+    ?.addEventListener("click", () => switchMainView("dashboard"));
+
+  document
+    .getElementById("navLeagueDashboardBtn")
+    ?.addEventListener("click", () => switchMainView("dashboard"));
 
   const teamSelect = document.getElementById("teamSelect");
   if (teamSelect) {
@@ -539,13 +724,12 @@ function setupEventListeners() {
         "btn-danger",
       );
       if (proceed) {
-        localStorage.setItem("currentTeamFile", e.target.value);
-        localStorage.removeItem("squad_data"); // Limpa progresso pendente
-        localStorage.removeItem("futTactics"); // Limpa progresso pendente
+        await Storage.setCurrentTeamFile(e.target.value);
+        await Storage.removeSquad(); // Limpa progresso pendente
+        await Storage.removeTactics(); // Limpa progresso pendente
         location.reload(); // Recarrega a página engatando no novo time
       } else {
-        e.target.value =
-          localStorage.getItem("currentTeamFile") || "vasco.json";
+        e.target.value = (await Storage.getCurrentTeamFile()) || "vasco.json";
       }
     });
   }
@@ -582,6 +766,10 @@ function setupEventListeners() {
     .addEventListener("click", openMatchSimulation);
 
   document
+    .getElementById("sidebarSimulateMatchBtn")
+    ?.addEventListener("click", openMatchSimulation);
+
+  document
     .getElementById("saveTacticBtn")
     .addEventListener("click", async () => {
       const select = document.getElementById("formationSelect");
@@ -611,15 +799,34 @@ function setupEventListeners() {
         opt.value = opt.innerText = name;
         select.appendChild(opt);
         select.value = name;
-        localStorage.setItem("currentFormation", name);
+        await Storage.setCurrentFormation(name);
       }
     });
 
-  document.getElementById("formationSelect").addEventListener("change", (e) => {
-    localStorage.setItem("currentFormation", e.target.value);
-    resetFormationAlignment(e.target.value);
-    render();
-  });
+  document
+    .getElementById("formationSelect")
+    .addEventListener("change", async (e) => {
+      await Storage.setCurrentFormation(e.target.value);
+      resetFormationAlignment(e.target.value);
+      render();
+    });
+
+  initLeagueEvents();
+
+  const fitFilterBtn = document.getElementById("toggleFitFilterBtn");
+  if (fitFilterBtn) {
+    fitFilterBtn.addEventListener("click", () => {
+      showOnlyFitPlayers = !showOnlyFitPlayers;
+      if (showOnlyFitPlayers) {
+        fitFilterBtn.style.background = "var(--accent)";
+        fitFilterBtn.style.color = "#000";
+      } else {
+        fitFilterBtn.style.background = "transparent";
+        fitFilterBtn.style.color = "var(--text)";
+      }
+      render();
+    });
+  }
   document.getElementById("benchSortSelect").onchange = render;
   document.getElementById("autoFillBtn").onclick = () => {
     autoFillTeam();
@@ -661,7 +868,7 @@ async function main() {
       "btn-danger",
     );
     if (proceed) {
-      resetData();
+      await resetData();
     }
   };
 
@@ -671,7 +878,7 @@ async function main() {
 
   const teamSelect = document.getElementById("teamSelect");
   if (teamSelect) {
-    teamSelect.value = localStorage.getItem("currentTeamFile") || "vasco.json";
+    teamSelect.value = (await Storage.getCurrentTeamFile()) || "vasco.json";
   }
 
   const initResult = await initSystem();
@@ -699,10 +906,12 @@ async function main() {
     });
 
     // Lógica de Memória de Tática do Usuário (Default 4-3-3)
-    let savedFormation = localStorage.getItem("currentFormation");
+    let savedFormation = await Storage.getCurrentFormation();
     if (!savedFormation || !sortedFormations.includes(savedFormation)) {
-      savedFormation = sortedFormations.includes("4-3-3") ? "4-3-3" : sortedFormations[0];
-      localStorage.setItem("currentFormation", savedFormation);
+      savedFormation = sortedFormations.includes("4-3-3")
+        ? "4-3-3"
+        : sortedFormations[0];
+      await Storage.setCurrentFormation(savedFormation);
     }
     select.value = savedFormation;
 

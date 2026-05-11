@@ -10,7 +10,7 @@ export function showCustomModal(
     const btnOk = document.getElementById("customModalOk");
     const btnCancel = document.getElementById("customModalCancel");
 
-    msgEl.innerText = message;
+    msgEl.innerHTML = message;
     btnOk.className = confirmClass;
     inputEl.value = "";
 
@@ -28,10 +28,8 @@ export function showCustomModal(
 
     const cleanup = () => {
       modal.classList.remove("show");
-      setTimeout(() => {
-        btnOk.onclick = null;
-        btnCancel.onclick = null;
-      }, 300);
+      btnOk.onclick = null;
+      btnCancel.onclick = null;
     };
 
     btnOk.onclick = () => {

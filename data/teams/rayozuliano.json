@@ -1,0 +1,285 @@
+{
+  "matchInfo": {
+    "home": "Rayo Zuliano",
+    "away": "Adversário",
+    "tournament": "Sudamericana",
+    "group": ""
+  },
+  "squad": [
+    {
+      "id": 1,
+      "number": 1,
+      "name": "Daniel Valdés",
+      "ovr": 65,
+      "status": "titular",
+      "aptitude": [
+        "GL"
+      ],
+      "age": 39,
+      "foot": "Destro",
+      "captain": true,
+      "nationality": "Venezuela",
+      "playstyles": [
+        "Goleiro Defensivo"
+      ],
+      "stats": {
+        "sal": 75,
+        "man": 75,
+        "rep": 60,
+        "ref": 75,
+        "vel": 40,
+        "pos": 75,
+        "sta": 23
+      },
+      "detailedStats": {
+        "acceleration": 31,
+        "sprintSpeed": 28,
+        "positioning": 9,
+        "finishing": 8,
+        "shotPower": 45,
+        "longShots": 10,
+        "volleys": 9,
+        "penalties": 13,
+        "vision": 34,
+        "crossing": 9,
+        "freeKickAccuracy": 13,
+        "shortPassing": 21,
+        "longPassing": 20,
+        "curve": 11,
+        "agility": 35,
+        "balance": 42,
+        "reactions": 62,
+        "ballControl": 11,
+        "composure": 33,
+        "interceptions": 14,
+        "headingAccuracy": 8,
+        "defAwareness": 13,
+        "standingTackle": 14,
+        "slidingTackle": 12,
+        "jumping": 51,
+        "strength": 55,
+        "aggression": 20
+      }
+    },
+    {
+      "id": 2,
+      "number": 2,
+      "name": "Ángel Faría",
+      "ovr": 64,
+      "status": "titular",
+      "aptitude": [
+        "LD"
+      ],
+      "age": 41,
+      "foot": "Destro",
+      "captain": false,
+      "nationality": "Venezuela",
+      "playstyles": [
+        "Meia Versátil"
+      ],
+      "stats": {
+        "vel": 66,
+        "fin": 41,
+        "pas": 57,
+        "dri": 63,
+        "def": 62,
+        "fis": 56,
+        "sta": 57
+      },
+      "detailedStats": {
+        "acceleration": 71,
+        "sprintSpeed": 61,
+        "positioning": 49,
+        "finishing": 36,
+        "shotPower": 57,
+        "longShots": 33,
+        "volleys": 34,
+        "penalties": 58,
+        "vision": 45,
+        "crossing": 62,
+        "freeKickAccuracy": 52,
+        "shortPassing": 61,
+        "longPassing": 59,
+        "curve": 59,
+        "agility": 74,
+        "balance": 68,
+        "reactions": 66,
+        "ballControl": 55,
+        "composure": 50,
+        "interceptions": 63,
+        "headingAccuracy": 52,
+        "defAwareness": 60,
+        "standingTackle": 66,
+        "slidingTackle": 66,
+        "jumping": 63,
+        "strength": 59,
+        "aggression": 47
+      }
+    },
+    {
+      "id": 3,
+      "number": 3,
+      "name": "Pierangelo Pagnano",
+      "ovr": 62,
+      "status": "titular",
+      "aptitude": [
+        "MC"
+      ],
+      "age": 23,
+      "foot": "Destro",
+      "captain": false,
+      "nationality": "Venezuela",
+      "playstyles": [
+        "Meia Versátil"
+      ],
+      "stats": {
+        "vel": 70,
+        "fin": 60,
+        "pas": 59,
+        "dri": 60,
+        "def": 54,
+        "fis": 52,
+        "sta": 52
+      },
+      "detailedStats": {
+        "acceleration": 70,
+        "sprintSpeed": 70,
+        "positioning": 65,
+        "finishing": 52,
+        "shotPower": 63,
+        "longShots": 70,
+        "volleys": 55,
+        "penalties": 70,
+        "vision": 65,
+        "crossing": 39,
+        "freeKickAccuracy": 65,
+        "shortPassing": 67,
+        "longPassing": 60,
+        "curve": 55,
+        "agility": 70,
+        "balance": 70,
+        "reactions": 60,
+        "ballControl": 60,
+        "composure": 44,
+        "interceptions": 50,
+        "headingAccuracy": 44,
+        "defAwareness": 50,
+        "standingTackle": 62,
+        "slidingTackle": 60,
+        "jumping": 50,
+        "strength": 53,
+        "aggression": 49
+      }
+    },
+    {
+      "id": 4,
+      "number": 4,
+      "name": "Junior Colina",
+      "ovr": 59,
+      "status": "titular",
+      "aptitude": [
+        "MEI"
+      ],
+      "age": 17,
+      "foot": "Destro",
+      "captain": false,
+      "nationality": "Venezuela",
+      "playstyles": [
+        "Meia Versátil"
+      ],
+      "stats": {
+        "vel": 67,
+        "fin": 55,
+        "pas": 48,
+        "dri": 65,
+        "def": 32,
+        "fis": 46,
+        "sta": 46
+      },
+      "detailedStats": {
+        "acceleration": 65,
+        "sprintSpeed": 68,
+        "positioning": 58,
+        "finishing": 60,
+        "shotPower": 54,
+        "longShots": 52,
+        "volleys": 37,
+        "penalties": 40,
+        "vision": 59,
+        "crossing": 39,
+        "freeKickAccuracy": 44,
+        "shortPassing": 52,
+        "longPassing": 40,
+        "curve": 44,
+        "agility": 66,
+        "balance": 75,
+        "reactions": 64,
+        "ballControl": 62,
+        "composure": 58,
+        "interceptions": 24,
+        "headingAccuracy": 37,
+        "defAwareness": 33,
+        "standingTackle": 33,
+        "slidingTackle": 37,
+        "jumping": 45,
+        "strength": 50,
+        "aggression": 35
+      }
+    },
+    {
+      "id": 5,
+      "number": 5,
+      "name": "Gerardo Padrón",
+      "ovr": 59,
+      "status": "titular",
+      "aptitude": [
+        "MC"
+      ],
+      "age": 21,
+      "foot": "Destro",
+      "captain": false,
+      "nationality": "Venezuela",
+      "playstyles": [
+        "Meia Versátil"
+      ],
+      "stats": {
+        "vel": 68,
+        "fin": 49,
+        "pas": 58,
+        "dri": 64,
+        "def": 43,
+        "fis": 39,
+        "sta": 55
+      },
+      "detailedStats": {
+        "acceleration": 62,
+        "sprintSpeed": 72,
+        "positioning": 55,
+        "finishing": 45,
+        "shotPower": 49,
+        "longShots": 57,
+        "volleys": 50,
+        "penalties": 53,
+        "vision": 63,
+        "crossing": 47,
+        "freeKickAccuracy": 44,
+        "shortPassing": 64,
+        "longPassing": 61,
+        "curve": 53,
+        "agility": 60,
+        "balance": 92,
+        "reactions": 52,
+        "ballControl": 63,
+        "composure": 58,
+        "interceptions": 38,
+        "headingAccuracy": 45,
+        "defAwareness": 30,
+        "standingTackle": 55,
+        "slidingTackle": 50,
+        "jumping": 37,
+        "strength": 28,
+        "aggression": 45
+      }
+    }
+  ]
+}

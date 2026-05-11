@@ -140,11 +140,12 @@ export async function openMenu(id) {
   document.getElementById("viewNation").style.display = "flex";
   document.getElementById("viewNation").style.alignItems = "center";
   document.getElementById("viewPlaystyle").innerText = p.playstyle || "--";
-  document.getElementById("viewCaptain").innerText = p.captain
-    ? "⭐ CAPITÃO DA EQUIPE"
+  document.getElementById("viewCaptain").innerHTML = p.captain
+    ? `<svg viewBox="0 0 24 24" width="1.2em" height="1.2em" fill="var(--warning)" style="vertical-align: sub; margin-right: 4px;"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg> CAPITÃO DA EQUIPE`
     : "";
 
   document.getElementById("viewGoals").innerText = p.goals || 0;
+  document.getElementById("viewAssists").innerText = p.assists || 0;
   document.getElementById("viewYellows").innerText = p.yellowCards || 0;
 
   const mainPos = p.aptitude && p.aptitude.length > 0 ? p.aptitude[0] : "CA";
@@ -170,6 +171,7 @@ export async function openMenu(id) {
     dri: 50,
     def: 50,
     fis: 50,
+    sta: 75,
   };
 
   const sliderContainer = document.getElementById("editSlidersContainer");
@@ -183,6 +185,7 @@ export async function openMenu(id) {
           { key: "ref", label: "REF" },
           { key: "vel", label: "VEL" },
           { key: "pos", label: "POS" },
+          { key: "sta", label: "FÔL" },
         ]
       : [
           { key: "vel", label: "VEL" },
@@ -191,6 +194,7 @@ export async function openMenu(id) {
           { key: "dri", label: "DRI" },
           { key: "def", label: "DEF" },
           { key: "fis", label: "FÍS" },
+          { key: "sta", label: "FÔL" },
         ];
 
     const getFallback = (key) => {
@@ -203,8 +207,9 @@ export async function openMenu(id) {
           ref: pStats.ref || pStats.def || 75,
           vel: pStats.spd || pStats.pac || 40,
           pos: pStats.pos || pStats.def || 75,
+          sta: pStats.sta || pStats.stm || 50,
         };
-        return fb[key] !== undefined ? fb[key] : 75;
+        return fb[key] !== undefined ? fb[key] : 50;
       }
       const fb = {
         vel: pStats.pac || pStats.spd || 50,
@@ -213,6 +218,7 @@ export async function openMenu(id) {
         dri: pStats.dri || pStats.atk || 50,
         def: pStats.def || 50,
         fis: pStats.phy || pStats.str || 50,
+        sta: pStats.sta || pStats.stm || 75,
       };
       return fb[key] !== undefined ? fb[key] : 50;
     };
@@ -371,8 +377,8 @@ export function initEditorEvents() {
     if (p) {
       const isGK = p.aptitude && p.aptitude[0] === "GL";
       const statKeys = isGK
-        ? ["sal", "man", "rep", "ref", "vel", "pos"]
-        : ["vel", "fin", "pas", "dri", "def", "fis"];
+        ? ["sal", "man", "rep", "ref", "vel", "pos", "sta"]
+        : ["vel", "fin", "pas", "dri", "def", "fis", "sta"];
       const newStats = {};
       statKeys.forEach((k) => {
         const el = document.getElementById(`slider_${k}`);
@@ -423,8 +429,8 @@ export function initEditorEvents() {
     if (!p1) return;
     const isGK = p1.aptitude && p1.aptitude[0] === "GL";
     const statKeys = isGK
-      ? ["sal", "man", "rep", "ref", "vel", "pos"]
-      : ["vel", "fin", "pas", "dri", "def", "fis"];
+      ? ["sal", "man", "rep", "ref", "vel", "pos", "sta"]
+      : ["vel", "fin", "pas", "dri", "def", "fis", "sta"];
     let s1;
     if (document.getElementById(`slider_${statKeys[0]}`)) {
       s1 = {};

@@ -1,0 +1,290 @@
+/* Sidebar e Inputs */
+.sidebar {
+  width: 440px;
+  background: var(--sidebar);
+  border-right: 1px solid var(--border);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+/* Custom Scrollbars Elegantes */
+.sidebar::-webkit-scrollbar,
+#playerView::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track,
+#playerView::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb,
+#playerView::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover,
+#playerView::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+.sidebar label {
+  font-size: 0.7rem;
+  color: #a0a0a0;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+/* ========================================================= */
+/* UX: Painel do Jogador (Modo Leitura vs Modo Edição)       */
+/* ========================================================= */
+#playerView.view-mode .edit-el {
+  display: none !important;
+}
+
+#playerView.view-mode .view-el {
+  display: block;
+}
+
+
+#playerView.edit-mode .view-el {
+  display: none !important;
+}
+
+/* Grid de Informações do Jogador */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  background: #111;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #222;
+}
+
+.info-item label {
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-size: 0.6rem;
+  color: #888;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.info-item input,
+.info-item select {
+  padding: 8px;
+  margin-top: 5px;
+  font-size: 0.85rem;
+}
+
+.view-el {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Estatísticas Numéricas Comparativas */
+.stats-compare-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: #111;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #222;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+  border-bottom: 1px dashed #222;
+}
+
+.stat-row:last-child {
+  border-bottom: none;
+}
+
+.stat-name {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: #888;
+  width: 40px;
+}
+
+.stat-bar-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.stat-val {
+  font-size: 0.9rem;
+  font-weight: 900;
+  width: 30px;
+  text-align: center;
+}
+
+.stat-val.p1 {
+  color: var(--accent);
+}
+
+/* Verde Neon - Atual */
+.stat-val.p2 {
+  color: var(--danger);
+}
+
+/* Vermelho - Comparado */
+.stat-vs {
+  font-size: 0.6rem;
+  color: #555;
+  font-weight: bold;
+}
+
+.stat-val {
+  transition: all 0.3s ease;
+}
+
+.stat-val.winner {
+  text-shadow: 0 0 12px currentColor;
+  transform: scale(1.2);
+}
+
+.stat-val.loser {
+  opacity: 0.3;
+}
+
+.stat-val.tie {
+  opacity: 0.8;
+}
+
+/* ========================================================= */
+/* Sliders de Edição (Range Inputs)                          */
+/* ========================================================= */
+input[type=range] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  background: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  margin-top: -5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: #333;
+  border-radius: 2px;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+/* Suporte Estendido para Firefox */
+input[type=range]::-moz-range-thumb {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: #333;
+  border-radius: 2px;
+}
+
+/* Itens do Banco de Reservas */
+.bottom-bench {
+  background: var(--sidebar);
+  border-top: 1px solid var(--border);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.bench-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#benchList {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 5px;
+}
+
+/* Customização Minimalista da Barra de Rolagem */
+#benchList::-webkit-scrollbar {
+  height: 8px;
+}
+
+#benchList::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+#benchList::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+.reserve-item {
+  background: #111;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px;
+  cursor: grab;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-width: 100px;
+  flex-shrink: 0;
+}
+
+.reserve-item:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}

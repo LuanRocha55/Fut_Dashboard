@@ -1,0 +1,256 @@
+/* Campo */
+.pitch {
+  height: 100%;
+  background: var(--pitch);
+  background-image: repeating-linear-gradient(90deg,
+      transparent,
+      transparent 5.5%,
+      rgba(0, 0, 0, 0.05) 5.5%,
+      rgba(0, 0, 0, 0.05) 11%);
+  border-radius: 12px;
+  position: relative;
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+}
+
+/* UX: Destaque de Drop Zone */
+.pitch.drag-over {
+  background-color: rgba(46, 204, 113, 0.05);
+  border: 2px dashed var(--accent);
+}
+
+/* Grid Tático Dinâmico */
+.pitch-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  /* 7 Faixas de Profundidade */
+  grid-template-rows: 1fr 2.5fr 1fr;
+  /* Laterais mais estreitas e Corredor Central mais largo */
+  gap: 2px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.grid-cell {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.06);
+  transition: all 0.3s ease;
+}
+
+.pitch.active-selection .pitch-grid {
+  opacity: 1;
+}
+
+.grid-cell.highlight {
+  background: rgba(0, 255, 136, 0.15);
+  /* Verde Neon suave */
+  border: 2px solid var(--accent);
+  box-shadow: inset 0 0 15px rgba(0, 255, 136, 0.2);
+  color: var(--accent);
+}
+
+/* Geometria das Linhas do Campo (Pitch Lines) */
+.pitch-lines {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.half-way-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(-50%);
+}
+
+.center-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 130px;
+  height: 130px;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-spot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.penalty-box {
+  position: absolute;
+  top: 50%;
+  width: 16%;
+  height: 55%;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  transform: translateY(-50%);
+}
+
+.penalty-box.left {
+  left: 0;
+  border-left: none;
+}
+
+.penalty-box.right {
+  right: 0;
+  border-right: none;
+}
+
+.goal-box {
+  position: absolute;
+  top: 50%;
+  width: 35%;
+  height: 45%;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  transform: translateY(-50%);
+}
+
+.penalty-box.left .goal-box {
+  left: 0;
+  border-left: none;
+}
+
+.penalty-box.right .goal-box {
+  right: 0;
+  border-right: none;
+}
+
+.penalty-arc {
+  position: absolute;
+  top: 50%;
+  height: 100px;
+  transform: translateY(-50%);
+}
+
+.penalty-box.left .penalty-arc {
+  right: -40px;
+  width: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-left: none;
+  border-radius: 0 40px 40px 0 / 0 50px 50px 0;
+}
+
+.penalty-box.right .penalty-arc {
+  left: -40px;
+  width: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-right: none;
+  border-radius: 40px 0 0 40px / 50px 0 0 50px;
+}
+
+/* Jogador */
+.player {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  cursor: grab;
+  transition: all 0.3s ease;
+  z-index: 1;
+  /* Permite que o hover fique acima dos demais */
+}
+
+.player:hover {
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.p-icon {
+  width: 38px;
+  height: 38px;
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.player:hover .p-icon {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+  filter: brightness(1.2);
+}
+
+.p-name {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  /* Impede que o nome quebre em várias linhas */
+  pointer-events: none;
+  /* Faz o mouse "atravessar" o texto e ignorá-lo */
+  font-size: 0.65rem;
+  margin-top: 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 3px #000;
+}
+
+/* Lógica de Aptidão de Posição */
+.player.fit-adapted .p-icon {
+  border-style: dashed;
+}
+
+.player.fit-warning {
+  opacity: 0.5;
+  filter: grayscale(60%);
+}
+
+.player.fit-warning .p-icon {
+  border-color: var(--danger) !important;
+  border-style: dotted;
+}
+
+/* UX: Hover Titular sobre Titular (Swap) */
+.player.drag-over-player .p-icon {
+  box-shadow: 0 0 15px var(--warning);
+  border-color: var(--warning) !important;
+}
+
+.player.is-suspended .p-icon {
+  border-color: var(--danger) !important;
+  filter: grayscale(80%);
+  opacity: 0.7;
+}
+
+.player.is-injured .p-icon {
+  border-color: #888 !important;
+  border-style: dotted;
+  opacity: 0.5;
+  filter: grayscale(100%);
+}

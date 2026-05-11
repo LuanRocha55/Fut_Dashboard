@@ -21,7 +21,7 @@ export function getEfootballPosition(top, left) {
   if (left > 28 && left <= 42) return "VOL";
   if (left > 42 && left <= 57) return "MC";
   if (left > 57 && left <= 71) return "MEI";
-  if (left > 71 && left <= 80) return "SA";
+  if (left > 71 && left <= 85) return "SA";
   return "CA";
 }
 
@@ -43,7 +43,16 @@ export function autoFillTeam() {
 
   const availablePlayers = [...squad]
     .filter((p) => p.matchStatus !== "red" && p.matchStatus !== "injury")
-    .sort((a, b) => b.rating - a.rating);
+    .sort((a, b) => {
+      const fitA = a.fitness !== undefined ? a.fitness : 100;
+      const fitB = b.fitness !== undefined ? b.fitness : 100;
+      
+      // Jogadores com fôlego no vermelho (< 40) vão para o final da fila de prioridade
+      if (fitA >= 40 && fitB < 40) return -1;
+      if (fitB >= 40 && fitA < 40) return 1;
+      
+      return b.rating - a.rating;
+    });
   const newTitulares = new Array(11).fill(null);
   const assignedPlayerIds = new Set();
 

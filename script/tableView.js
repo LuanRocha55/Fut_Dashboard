@@ -1,5 +1,10 @@
 import { squad, ALL_POSITIONS, calculateOVR } from "./core.js";
-import { getRatingColor, getFlag, getMatchStatusHTML, getFormHTML } from "./graphics.js";
+import {
+  getRatingColor,
+  getFlag,
+  getMatchStatusHTML,
+  getFormHTML,
+} from "./graphics.js";
 import { openMenu, setEditMode } from "./playerEditor.js";
 import { normalizeStr } from "./utils.js";
 
@@ -23,6 +28,7 @@ export function renderHighlights() {
     { key: "dri", fallback: "dri", label: "Liso (DRI)" },
     { key: "def", fallback: "def", label: "Xerife (DEF)" },
     { key: "fis", fallback: "phy", label: "Trator (FÍS)" },
+    { key: "sta", fallback: "stm", label: "Motor (FÔL)" },
   ];
 
   statsConfig.forEach((stat) => {
@@ -30,8 +36,13 @@ export function renderHighlights() {
     let maxVal = -1;
 
     squad.forEach((p) => {
-      const val = p.stats ? p.stats[stat.key] || p.stats[stat.fallback] || 50 : 50;
-      if (val > maxVal) { maxVal = val; topPlayer = p; }
+      const val = p.stats
+        ? p.stats[stat.key] || p.stats[stat.fallback] || 50
+        : 50;
+      if (val > maxVal) {
+        maxVal = val;
+        topPlayer = p;
+      }
     });
 
     if (topPlayer) {
@@ -43,7 +54,9 @@ export function renderHighlights() {
         <span class="highlight-card-val">${maxVal}</span>
       `;
       card.onclick = () => {
-        window.dispatchEvent(new CustomEvent('viewChanged', { detail: 'pitch' }));
+        window.dispatchEvent(
+          new CustomEvent("viewChanged", { detail: "pitch" }),
+        );
         openMenu(topPlayer.id);
       };
       container.appendChild(card);
@@ -65,36 +78,89 @@ export function renderTable() {
     }
   });
 
-  const searchTerm = normalizeStr(document.getElementById("tableSearchInput")?.value);
+  const searchTerm = normalizeStr(
+    document.getElementById("tableSearchInput")?.value,
+  );
   const posFilter = document.getElementById("tablePosFilter")?.value || "";
 
   let filteredPlayers = squad.filter((p) => {
     const matchName = normalizeStr(p.name).includes(searchTerm);
-    const matchPos = posFilter ? p.aptitude && p.aptitude.includes(posFilter) : true;
+    const matchPos = posFilter
+      ? p.aptitude && p.aptitude.includes(posFilter)
+      : true;
     return matchName && matchPos;
   });
 
   filteredPlayers.sort((a, b) => {
     let valA, valB;
     switch (tableSortCol) {
-      case "name": valA = a.name; valB = b.name; break;
-      case "rating": valA = a.rating; valB = b.rating; break;
-      case "age": valA = a.age || 0; valB = b.age || 0; break;
-      case "foot": valA = a.foot || ""; valB = b.foot || ""; break;
-      case "nationality": valA = a.nationality || ""; valB = b.nationality || ""; break;
-      case "playstyle": valA = a.playstyle || ""; valB = b.playstyle || ""; break;
-      case "form": valA = a.form || 0; valB = b.form || 0; break;
-      case "status": valA = a.status; valB = b.status; break;
-      case "pos":
-        valA = ALL_POSITIONS.indexOf(a.aptitude?.[0]); if (valA === -1) valA = 99;
-        valB = ALL_POSITIONS.indexOf(b.aptitude?.[0]); if (valB === -1) valB = 99;
+      case "name":
+        valA = a.name;
+        valB = b.name;
         break;
-      default: valA = a.rating; valB = b.rating; break;
+      case "rating":
+        valA = a.rating;
+        valB = b.rating;
+        break;
+      case "goals":
+        valA = a.goals || 0;
+        valB = b.goals || 0;
+        break;
+      case "assists":
+        valA = a.assists || 0;
+        valB = b.assists || 0;
+        break;
+      case "avgRating":
+        valA = a.avgRating || 0;
+        valB = b.avgRating || 0;
+        break;
+      case "fitness":
+        valA = a.fitness !== undefined ? a.fitness : 100;
+        valB = b.fitness !== undefined ? b.fitness : 100;
+        break;
+      case "age":
+        valA = a.age || 0;
+        valB = b.age || 0;
+        break;
+      case "foot":
+        valA = a.foot || "";
+        valB = b.foot || "";
+        break;
+      case "nationality":
+        valA = a.nationality || "";
+        valB = b.nationality || "";
+        break;
+      case "playstyle":
+        valA = a.playstyle || "";
+        valB = b.playstyle || "";
+        break;
+      case "form":
+        valA = a.form || 0;
+        valB = b.form || 0;
+        break;
+      case "status":
+        valA = a.status;
+        valB = b.status;
+        break;
+      case "pos":
+        valA = ALL_POSITIONS.indexOf(a.aptitude?.[0]);
+        if (valA === -1) valA = 99;
+        valB = ALL_POSITIONS.indexOf(b.aptitude?.[0]);
+        if (valB === -1) valB = 99;
+        break;
+      default:
+        valA = a.rating;
+        valB = b.rating;
+        break;
     }
-    if (typeof valA === "string") return tableSortDesc ? valB.localeCompare(valA) : valA.localeCompare(valB);
+    if (typeof valA === "string")
+      return tableSortDesc
+        ? valB.localeCompare(valA)
+        : valA.localeCompare(valB);
     else return tableSortDesc ? valB - valA : valA - valB;
   });
 
+  const frag = document.createDocumentFragment();
   filteredPlayers.forEach((p) => {
     const tr = document.createElement("tr");
     const mainPos = p.aptitude && p.aptitude.length > 0 ? p.aptitude[0] : "--";
@@ -104,12 +170,24 @@ export function renderTable() {
     const nat = p.nationality || "--";
     const flagHtml = getFlag(nat);
     const mStatusHtml = getMatchStatusHTML(p.matchStatus);
+    const fitLevel = p.fitness !== undefined ? p.fitness : 100;
+    const fitColor =
+      fitLevel > 70
+        ? "var(--accent)"
+        : fitLevel > 40
+          ? "var(--warning)"
+          : "var(--danger)";
+    const fitColumnHtml = `<div style="display: flex; align-items: center; gap: 6px;" title="Energia: ${Math.floor(fitLevel)}%"><div style="flex: 1; height: 8px; background: rgba(0,0,0,0.8); border: 1px solid #000; border-radius: 4px; box-shadow: inset 0 1px 2px rgba(0,0,0,0.5);"><div style="height: 100%; width: ${fitLevel}%; background: ${fitColor}; border-radius: 3px; transition: width 0.3s ease;"></div></div><span style="font-size: 0.7rem; color: ${fitColor}; font-weight: bold; width: 30px;">${Math.floor(fitLevel)}%</span></div>`;
 
     tr.innerHTML = `
       <td><span class="pos-badge-table">${mainPos}</span></td>
       <td><div style="position:relative; display:inline-block; margin-right: 15px;">${mStatusHtml}</div><strong style="font-size: 0.95rem; color: #fff;">${p.name}</strong> ${p.captain ? '<span style="color: var(--warning); font-size: 0.7rem; font-weight: bold; margin-left: 5px;">(C)</span>' : ""}</td>
+      <td style="min-width: 80px;">${fitColumnHtml}</td>
       <td style="text-align: center;">${getFormHTML(p.form)}</td>
       <td><span style="background: ${ratingColor}; color: #000; padding: 4px 8px; border-radius: 4px; font-weight: 900;">${pRating.toFixed(1)}</span></td>
+      <td style="text-align: center; font-weight: bold; color: var(--accent);">${p.goals || 0}</td>
+      <td style="text-align: center; font-weight: bold; color: #00aaff;">${p.assists || 0}</td>
+      <td style="text-align: center; font-weight: bold; color: var(--warning);">${p.avgRating ? p.avgRating.toFixed(1) : "--"}</td>
       <td>${p.age || "--"}</td>
       <td>${p.foot || "--"}</td>
       <td><span style="font-size: 0.7rem; border: 1px solid #444; padding: 2px 4px; border-radius: 4px; display: inline-flex; align-items: center;">${flagHtml}${nat}</span></td>
@@ -120,22 +198,27 @@ export function renderTable() {
         </span>
       </td>
       <td style="text-align: center;">
-        <button class="edit-btn-table" style="background: transparent; border: none; color: var(--accent); cursor: pointer; font-size: 1.1rem; margin: 0; padding: 0; transition: transform 0.2s;" title="Editar Jogador">✏️</button>
+        <button class="edit-btn-table" style="background: transparent; border: none; color: var(--accent); cursor: pointer; font-size: 1.1rem; margin: 0; padding: 0; transition: transform 0.2s;" title="Editar Jogador"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor"><path d="M3 17.25V21h3.75L17.81 10.19l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg></button>
       </td>
     `;
     tr.onclick = (e) => {
       openMenu(p.id);
-      if(e.target.closest('.edit-btn-table')) {
+      if (e.target.closest(".edit-btn-table")) {
         setEditMode(true);
       }
     };
-    tbody.appendChild(tr);
+    frag.appendChild(tr);
   });
+  tbody.appendChild(frag);
 }
 
 export function initTableEvents() {
-  document.getElementById("tableSearchInput")?.addEventListener("input", renderTable);
-  document.getElementById("tablePosFilter")?.addEventListener("change", renderTable);
+  document
+    .getElementById("tableSearchInput")
+    ?.addEventListener("input", renderTable);
+  document
+    .getElementById("tablePosFilter")
+    ?.addEventListener("change", renderTable);
   document.querySelectorAll(".sortable").forEach((th) => {
     th.addEventListener("click", () => {
       const col = th.dataset.sort;
