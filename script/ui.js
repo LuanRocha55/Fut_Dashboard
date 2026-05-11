@@ -1181,10 +1181,21 @@ let _pendingLeagueFetch = null;
 // Busca escudo de um time via thesportsdb
 async function fetchTeamBadge(teamName) {
   try {
+    let cleanName = teamName.replace(/\s*\(Fem\)$/i, "").trim();
     const r = await fetch(`https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t=${encodeURIComponent(teamName)}`);
     if (!r.ok) return null;
     const data = await r.json();
-    return data?.teams?.[0]?.strTeamBadge || null;
+    
+    let badge = data?.teams?.[0]?.strTeamBadge;
+    
+    // Se não achou com (Fem), tenta com o nome limpo
+    if (!badge && cleanName !== teamName) {
+      const r2 = await fetch(`https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t=${encodeURIComponent(cleanName)}`);
+      const data2 = await r2.json();
+      badge = data2?.teams?.[0]?.strTeamBadge;
+    }
+    
+    return badge || null;
   } catch { return null; }
 }
 
@@ -1198,11 +1209,36 @@ async function getLeagueBadgeMap() {
       if (!r.ok) return {};
       const data = await r.json();
       const map = {};
+      const aliases = {
+        "laliga ea sports": "Spanish La Liga",
+        "premier league": "English Premier League",
+        "bundesliga": "German Bundesliga",
+        "ligue 1 mcdonald's": "French Ligue 1",
+        "serie a enilive": "Italian Serie A",
+        "liga f": "Spanish Liga F",
+        "barclays wsl": "English WSL",
+        "nwsl": "USA NWSL",
+        "gpfbl": "German Frauen Bundesliga",
+        "brasileirão série a": "Brazilian Serie A",
+        "brasileirao serie a": "Brazilian Serie A",
+        "brasileirão série b": "Brazilian Serie B",
+        "libertadores": "Copa Libertadores",
+        "sudamericana": "Copa Sudamericana",
+        "champions league": "UEFA Champions League",
+        "europa league": "UEFA Europa League"
+      };
+
       (data?.leagues || []).forEach(l => {
         if (l.strBadge) {
           map[l.strLeague] = l.strBadge;
-          // Alias lowercase para matching fuzzy
           map[l.strLeague.toLowerCase()] = l.strBadge;
+        }
+      });
+
+      // Aplica aliases se a liga destino existir no mapa
+      Object.entries(aliases).forEach(([alias, target]) => {
+        if (map[target.toLowerCase()]) {
+          map[alias] = map[target.toLowerCase()];
         }
       });
       _leagueBadgeMap = map;
