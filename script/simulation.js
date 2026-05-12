@@ -392,7 +392,7 @@ export async function openMatchSimulation() {
   let selectedOutIdx = -1;
   let selectedInIdx = -1;
 
-  const getTacticalPositions = (formation) => {
+  function getTacticalPositions(formation) {
     const positions = {
       "4-3-3": [
         { x: 10, y: 50, pos: "GL" },
