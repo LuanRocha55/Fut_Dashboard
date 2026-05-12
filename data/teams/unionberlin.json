@@ -23,12 +23,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 79,
+        "seg": 79,
+        "esp": 89,
+        "ref": 81,
+        "pos": 78,
+        "vel": 45,
         "sta": 32
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Danilho Doekhi",
       "ovr": 78,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 2,
       "name": "Josip Juranović",
       "ovr": 76,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 5,
       "name": "Lucas Tousart",
       "ovr": 76,
       "status": "titular",
@@ -236,7 +236,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 9,
       "name": "Kevin Volland",
       "ovr": 76,
       "status": "titular",
@@ -292,7 +292,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 21,
       "name": "Rani Khedira",
       "ovr": 75,
       "status": "titular",
@@ -347,7 +347,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Diogo Leite",
       "ovr": 75,
       "status": "titular",
@@ -403,7 +403,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 13,
       "name": "Christopher Trimmel",
       "ovr": 75,
       "status": "titular",
@@ -459,7 +459,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 25,
       "name": "Kevin Vogt",
       "ovr": 75,
       "status": "titular",
@@ -515,7 +515,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 8,
       "name": "László Bénes",
       "ovr": 74,
       "status": "titular",
@@ -575,7 +575,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 18,
       "name": "Janik Haberer",
       "ovr": 74,
       "status": "titular",
@@ -630,7 +630,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 3,
       "name": "Jérôme Roussillon",
       "ovr": 74,
       "status": "reserva",
@@ -685,7 +685,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "András Schäfer",
       "ovr": 74,
       "status": "reserva",
@@ -742,7 +742,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 10,
       "name": "Yorbe Vertessen",
       "ovr": 74,
       "status": "reserva",
@@ -855,7 +855,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 19,
       "name": "Jordan Siebatcheu",
       "ovr": 73,
       "status": "reserva",
@@ -967,7 +967,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 22,
       "name": "Benedict Hollerbach",
       "ovr": 72,
       "status": "reserva",
@@ -1024,7 +1024,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 23,
       "name": "Jeong Woo Yeong",
       "ovr": 72,
       "status": "reserva",
@@ -1080,7 +1080,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 16,
       "name": "Tom Rothe",
       "ovr": 72,
       "status": "reserva",
@@ -1137,7 +1137,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Ivan Prtajin",
       "ovr": 70,
       "status": "reserva",
@@ -1193,7 +1193,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 12,
       "name": "Alexander Schwolow",
       "ovr": 70,
       "status": "reserva",
@@ -1208,12 +1208,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 72,
+        "seg": 62,
+        "esp": 81,
+        "ref": 73,
+        "pos": 70,
+        "vel": 39,
         "sta": 31
       },
       "detailedStats": {
@@ -1248,7 +1248,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Aljoscha Kemlein",
       "ovr": 68,
       "status": "reserva",
@@ -1303,7 +1303,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 27,
       "name": "Carl Klaus",
       "ovr": 67,
       "status": "reserva",
@@ -1318,12 +1318,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 69,
+        "esp": 76,
+        "ref": 70,
+        "pos": 65,
+        "vel": 32,
         "sta": 31
       },
       "detailedStats": {
@@ -1358,7 +1358,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 28,
       "name": "Yannic Stein",
       "ovr": 58,
       "status": "reserva",
@@ -1373,12 +1373,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 54,
+        "esp": 68,
+        "ref": 62,
+        "pos": 57,
+        "vel": 30,
         "sta": 24
       },
       "detailedStats": {

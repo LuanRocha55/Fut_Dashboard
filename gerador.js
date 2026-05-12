@@ -13,9 +13,9 @@ if (args.length === 0) {
 const normalizeString = (str) => {
   return str
     ? str
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
     : "";
 };
 
@@ -101,7 +101,7 @@ const idxPos = getCol(
   "position",
   "best_position",
 );
-const idxNum = getCol("club_jersey_number", "jersey_number", "kit_number");
+const idxNum = getCol("club_jersey_number", "jersey_number", "kit_number", "number");
 const idxAge = getCol("age");
 const idxFoot = getCol("preferred_foot", "foot");
 const idxNat = getCol("nationality_name", "nationality", "nation");
@@ -148,13 +148,13 @@ const idxStr = getCol("strength");
 const idxAgg = getCol("aggression");
 const idxPlayStyle = getCol("play style", "play_style", "playstyles");
 
-// GK
-const idxDiv = getCol("goalkeeping_diving", "gk_diving", "gk_div");
-const idxHan = getCol("goalkeeping_handling", "gk_handling", "gk_han");
-const idxKic = getCol("goalkeeping_kicking", "gk_kicking", "gk_kic");
-const idxRef = getCol("goalkeeping_reflexes", "gk_reflexes", "gk_ref");
-const idxSpd = getCol("goalkeeping_speed", "gk_speed", "gk_spd");
-const idxPosGk = getCol("goalkeeping_positioning", "gk_positioning", "gk_pos");
+// GK - Ajustado para o padrão FIFA (com espaços)
+const idxDiv = getCol("goalkeeping_diving", "gk diving", "gk_div");
+const idxHan = getCol("goalkeeping_handling", "gk handling", "gk_han");
+const idxKic = getCol("goalkeeping_kicking", "gk kicking", "gk_kic");
+const idxRef = getCol("goalkeeping_reflexes", "gk reflexes", "gk_ref");
+const idxSpd = getCol("goalkeeping_speed", "gk speed", "gk_spd");
+const idxPosGk = getCol("goalkeeping_positioning", "gk positioning", "gk_pos");
 
 const FEM_LEAGUES = [
   "Liga F",
@@ -259,6 +259,7 @@ const listaDeTimes = [];
 
 for (const realTeamName of timesEncontrados) {
   const elencoBruto = equipes[realTeamName];
+  const assignedNumbers = new Set();
   const squad = elencoBruto.map((p, index) => {
     const rawPositions = idxPos !== -1 ? p[idxPos] : "ST";
     let aptitudes = [];
@@ -268,26 +269,41 @@ for (const realTeamName of timesEncontrados) {
       .forEach((pos) => {
         const mapped = posMap[pos.trim().toUpperCase()];
         if (mapped) {
-          mapped.forEach(m => { if(!aptitudes.includes(m)) aptitudes.push(m); });
+          mapped.forEach(m => { if (!aptitudes.includes(m)) aptitudes.push(m); });
         }
       });
-    
+
     if (aptitudes.length === 0) aptitudes = ["CA"];
     const isGK = aptitudes.includes("GOL");
+
+    // Lógica para número da camisa
+    let number = idxNum !== -1 ? parseNum(p[idxNum], 0) : 0;
+    if (number === 0) {
+      const mainPos = aptitudes[0];
+      const defaults = {
+        GOL: [1, 12, 22], LD: [2, 13, 24], LE: [3, 16, 26], ZE: [4, 14, 25], ZD: [5, 15, 33],
+        VOL: [5, 21, 23], MC: [8, 18, 20], MEI: [10, 23, 30], ME: [11, 19, 27], MD: [11, 19, 28],
+        PE: [7, 17, 29], PD: [17, 31, 32], CA: [9, 10, 19, 20]
+      };
+      const possible = defaults[mainPos] || [index + 1];
+      number = possible.find(n => !assignedNumbers.has(n)) || (index + 1);
+      while (assignedNumbers.has(number)) number++;
+    }
+    assignedNumbers.add(number);
 
     const playstylesRaw = idxPlayStyle !== -1 ? p[idxPlayStyle] : "";
     const playstyles = playstylesRaw
       ? playstylesRaw
-          .replace(/\"/g, "")
-          .split(",")
-          .map((s) => s.trim())
+        .replace(/\"/g, "")
+        .split(",")
+        .map((s) => s.trim())
       : isGK
         ? ["Goleiro Defensivo"]
         : ["Meia Versátil"];
 
     return {
       id: index + 1,
-      number: idxNum !== -1 ? parseNum(p[idxNum], index + 1) : index + 1,
+      number: number,
       name: p[idxName].replace(/\"/g, ""),
       ovr: idxOvr !== -1 ? parseNum(p[idxOvr], 75) : 75,
       status: index < 11 ? "titular" : "reserva",
@@ -304,23 +320,23 @@ for (const realTeamName of timesEncontrados) {
       playstyles: playstyles,
       stats: isGK
         ? {
-            alc: idxDiv !== -1 ? parseNum(p[idxDiv], 75) : 75,
-            seg: idxHan !== -1 ? parseNum(p[idxHan], 75) : 75,
-            esp: idxRef !== -1 ? Math.round((parseNum(p[idxRef]) + parseNum(p[idxDiv])) / 2) : 75,
-            ref: idxRef !== -1 ? parseNum(p[idxRef], 75) : 75,
-            pos: idxPosGk !== -1 ? parseNum(p[idxPosGk], 75) : 75,
-            vel: idxSpd !== -1 ? parseNum(p[idxSpd], 40) : 40,
-            sta: idxSta !== -1 ? parseNum(p[idxSta], 50) : 50,
-          }
+          alc: idxDiv !== -1 ? parseNum(p[idxDiv], 75) : 75,
+          seg: idxHan !== -1 ? parseNum(p[idxHan], 75) : 75,
+          esp: idxRef !== -1 ? Math.round((parseNum(p[idxRef]) + parseNum(p[idxDiv])) / 1.8) : 75,
+          ref: idxRef !== -1 ? parseNum(p[idxRef], 75) : 75,
+          pos: idxPosGk !== -1 ? parseNum(p[idxPosGk], 75) : 75,
+          vel: idxSpd !== -1 ? parseNum(p[idxSpd]) : (idxSpr !== -1 ? parseNum(p[idxSpr], 40) : 40),
+          sta: idxSta !== -1 ? parseNum(p[idxSta], 50) : 50,
+        }
         : {
-            vel: idxPac !== -1 ? parseNum(p[idxPac], 50) : 50,
-            fin: idxSho !== -1 ? parseNum(p[idxSho], 50) : 50,
-            pas: idxPas !== -1 ? parseNum(p[idxPas], 50) : 50,
-            dri: idxDri !== -1 ? parseNum(p[idxDri], 50) : 50,
-            def: idxDef !== -1 ? parseNum(p[idxDef], 50) : 50,
-            fis: idxPhy !== -1 ? parseNum(p[idxPhy], 50) : 50,
-            sta: idxSta !== -1 ? parseNum(p[idxSta], 75) : 75,
-          },
+          vel: idxPac !== -1 ? parseNum(p[idxPac], 50) : 50,
+          fin: idxSho !== -1 ? parseNum(p[idxSho], 50) : 50,
+          pas: idxPas !== -1 ? parseNum(p[idxPas], 50) : 50,
+          dri: idxDri !== -1 ? parseNum(p[idxDri], 50) : 50,
+          def: idxDef !== -1 ? parseNum(p[idxDef], 50) : 50,
+          fis: idxPhy !== -1 ? parseNum(p[idxPhy], 50) : 50,
+          sta: idxSta !== -1 ? parseNum(p[idxSta], 75) : 75,
+        },
       detailedStats: {
         acceleration: idxAcc !== -1 ? parseNum(p[idxAcc]) : 50,
         sprintSpeed: idxSpr !== -1 ? parseNum(p[idxSpr]) : 50,
@@ -374,7 +390,7 @@ for (const realTeamName of timesEncontrados) {
     fs.mkdirSync(dir, { recursive: true });
   }
   fs.writeFileSync(`${dir}/${fileName}`, JSON.stringify(finalJson, null, 2));
-  
+
   listaDeTimes.push({ name: realTeamName, file: fileName, league: leagueName, ovr: teamOvr });
   timesGerados++;
 }

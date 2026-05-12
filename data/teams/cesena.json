@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Simone Bastoni",
       "ovr": 71,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Marco Curto",
       "ovr": 71,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Sydney van Hooijdonk",
       "ovr": 71,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 5,
       "name": "Giacomo Calò",
       "ovr": 69,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 10,
       "name": "Mirko Antonucci",
       "ovr": 68,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 3,
       "name": "Daniele Donnarumma",
       "ovr": 68,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Massimiliano Mangraviti",
       "ovr": 68,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 17,
       "name": "Elayis Tavşan",
       "ovr": 68,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 11,
       "name": "Joseph Ceesay",
       "ovr": 67,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 23,
       "name": "Riccardo Chiarello",
       "ovr": 67,
       "status": "titular",
@@ -563,7 +563,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 18,
       "name": "Saber Hraiech",
       "ovr": 66,
       "status": "titular",
@@ -618,7 +618,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 21,
       "name": "Francesco De Rose",
       "ovr": 65,
       "status": "reserva",
@@ -673,7 +673,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 1,
       "name": "Jonathan Klinsmann",
       "ovr": 64,
       "status": "reserva",
@@ -688,12 +688,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 63,
+        "esp": 72,
+        "ref": 65,
+        "pos": 64,
+        "vel": 29,
         "sta": 45
       },
       "detailedStats": {
@@ -728,7 +728,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 19,
       "name": "Augustus Kargbo",
       "ovr": 63,
       "status": "reserva",
@@ -783,7 +783,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "Matteo Piacentini",
       "ovr": 63,
       "status": "reserva",

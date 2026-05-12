@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Oskar Zawada",
       "ovr": 70,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Michiel Kramer",
       "ovr": 69,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 5,
       "name": "Yassin Oukili",
       "ovr": 68,
       "status": "titular",
@@ -173,7 +173,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 11,
       "name": "Denilho Cleonise",
       "ovr": 67,
       "status": "titular",
@@ -228,7 +228,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 2,
       "name": "Julian Lelieveld",
       "ovr": 67,
       "status": "titular",
@@ -284,7 +284,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 4,
       "name": "Dario Van den Buijs",
       "ovr": 67,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 1,
       "name": "Yanick van Osch",
       "ovr": 67,
       "status": "titular",
@@ -357,12 +357,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 63,
+        "esp": 76,
+        "ref": 70,
+        "pos": 66,
+        "vel": 37,
         "sta": 34
       },
       "detailedStats": {
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 12,
       "name": "Jeroen Houwen",
       "ovr": 66,
       "status": "titular",
@@ -412,11 +412,11 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 66,
+        "seg": 65,
+        "esp": 74,
+        "ref": 68,
+        "pos": 64,
         "vel": 40,
         "sta": 25
       },
@@ -452,7 +452,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "Aaron Meijers",
       "ovr": 66,
       "status": "titular",
@@ -507,7 +507,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 8,
       "name": "Richard van der Venne",
       "ovr": 66,
       "status": "titular",
@@ -562,7 +562,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Chris-Emmanuel Lokesa",
       "ovr": 65,
       "status": "titular",
@@ -617,7 +617,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 23,
       "name": "Reuven Niemeijer",
       "ovr": 65,
       "status": "reserva",
@@ -672,7 +672,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 21,
       "name": "Godfried Roemeratoe",
       "ovr": 65,
       "status": "reserva",
@@ -782,7 +782,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 28,
       "name": "Richonell Margaret",
       "ovr": 64,
       "status": "reserva",
@@ -837,7 +837,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 25,
       "name": "Roshon van Eijma",
       "ovr": 63,
       "status": "reserva",
@@ -893,7 +893,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 13,
       "name": "Liam van Gelderen",
       "ovr": 63,
       "status": "reserva",
@@ -1004,7 +1004,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 16,
       "name": "Luuk Wouters",
       "ovr": 62,
       "status": "reserva",
@@ -1114,7 +1114,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 26,
       "name": "Juan Familia-Castillo",
       "ovr": 60,
       "status": "reserva",
@@ -1224,7 +1224,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Daouda Weidmann",
       "ovr": 60,
       "status": "reserva",
@@ -1279,7 +1279,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 27,
       "name": "Joey Kesting",
       "ovr": 59,
       "status": "reserva",
@@ -1294,12 +1294,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 59,
+        "seg": 57,
+        "esp": 67,
+        "ref": 61,
+        "pos": 64,
+        "vel": 33,
         "sta": 24
       },
       "detailedStats": {
@@ -1334,7 +1334,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 30,
       "name": "Nouri El Harmazi",
       "ovr": 56,
       "status": "reserva",

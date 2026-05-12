@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Bartosz Salamon",
       "ovr": 72,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Mikael Ishak",
       "ovr": 71,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 17,
       "name": "Patrik Wålemark",
       "ovr": 71,
       "status": "titular",
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 2,
       "name": "Joel Pereira",
       "ovr": 70,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 14,
       "name": "Miha Blažič",
       "ovr": 69,
       "status": "titular",
@@ -289,7 +289,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 11,
       "name": "Ali Gholizadeh",
       "ovr": 69,
       "status": "titular",
@@ -345,7 +345,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "Dino Hotić",
       "ovr": 69,
       "status": "titular",
@@ -455,7 +455,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 25,
       "name": "Antonio Milić",
       "ovr": 69,
       "status": "titular",
@@ -511,7 +511,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 5,
       "name": "Radosław Murawski",
       "ovr": 69,
       "status": "titular",
@@ -568,7 +568,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 23,
       "name": "Afonso Sousa",
       "ovr": 68,
       "status": "titular",
@@ -623,7 +623,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 1,
       "name": "Bartosz Mrozek",
       "ovr": 68,
       "status": "reserva",
@@ -639,12 +639,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 67,
+        "esp": 77,
+        "ref": 70,
+        "pos": 69,
+        "vel": 37,
         "sta": 36
       },
       "detailedStats": {
@@ -679,7 +679,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 3,
       "name": "Elias Andersson",
       "ovr": 67,
       "status": "reserva",
@@ -734,7 +734,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Filip Dagerstål",
       "ovr": 66,
       "status": "reserva",
@@ -790,7 +790,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 31,
       "name": "Daniel Håkans",
       "ovr": 66,
       "status": "reserva",
@@ -845,7 +845,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 19,
       "name": "Filip Szymczak",
       "ovr": 66,
       "status": "reserva",
@@ -900,7 +900,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 28,
       "name": "Adriel Ba Loua",
       "ovr": 65,
       "status": "reserva",
@@ -956,7 +956,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 12,
       "name": "Filip Bednarek",
       "ovr": 65,
       "status": "reserva",
@@ -971,11 +971,11 @@
         "Far Reach"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 65,
+        "seg": 63,
+        "esp": 72,
+        "ref": 65,
+        "pos": 65,
         "vel": 40,
         "sta": 45
       },
@@ -1011,7 +1011,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 20,
       "name": "Alex Douglas",
       "ovr": 63,
       "status": "reserva",
@@ -1067,7 +1067,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 18,
       "name": "Antoni Kozubal",
       "ovr": 63,
       "status": "reserva",
@@ -1236,7 +1236,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Bryan Fiabema",
       "ovr": 59,
       "status": "reserva",
@@ -1291,7 +1291,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Mateusz Mędrala",
       "ovr": 56,
       "status": "reserva",
@@ -1306,12 +1306,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 57,
+        "seg": 57,
+        "esp": 64,
+        "ref": 58,
+        "pos": 55,
+        "vel": 32,
         "sta": 35
       },
       "detailedStats": {

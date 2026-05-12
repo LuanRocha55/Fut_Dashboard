@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Cryzan",
       "ovr": 76,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Vako",
       "ovr": 75,
       "status": "titular",
@@ -123,7 +123,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "Zeca",
       "ovr": 73,
       "status": "titular",
@@ -180,7 +180,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Wang Dalei",
       "ovr": 72,
       "status": "titular",
@@ -196,12 +196,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 73,
+        "seg": 69,
+        "esp": 82,
+        "ref": 74,
+        "pos": 70,
+        "vel": 56,
         "sta": 45
       },
       "detailedStats": {
@@ -236,7 +236,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 3,
       "name": "Gao Zhunyi",
       "ovr": 69,
       "status": "titular",
@@ -291,7 +291,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 4,
       "name": "Zheng Zheng",
       "ovr": 69,
       "status": "titular",
@@ -349,7 +349,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 19,
       "name": "Chen Pu",
       "ovr": 68,
       "status": "titular",
@@ -404,7 +404,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 28,
       "name": "Liu Binbin",
       "ovr": 67,
       "status": "titular",
@@ -459,7 +459,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "Shi Ke",
       "ovr": 67,
       "status": "titular",
@@ -515,7 +515,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 5,
       "name": "Huang Zhengyu",
       "ovr": 66,
       "status": "titular",
@@ -570,7 +570,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 16,
       "name": "Liu Yang",
       "ovr": 66,
       "status": "titular",
@@ -625,7 +625,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 8,
       "name": "Li Yuanyi",
       "ovr": 65,
       "status": "reserva",
@@ -680,7 +680,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 21,
       "name": "Liao Lisheng",
       "ovr": 65,
       "status": "reserva",
@@ -735,7 +735,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 23,
       "name": "Peng Xinli",
       "ovr": 63,
       "status": "reserva",
@@ -790,7 +790,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 2,
       "name": "Wang Tong",
       "ovr": 63,
       "status": "reserva",
@@ -845,7 +845,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 13,
       "name": "Wu Xinghan",
       "ovr": 63,
       "status": "reserva",
@@ -955,7 +955,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "De Erjiaduo",
       "ovr": 61,
       "status": "reserva",
@@ -1010,7 +1010,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 24,
       "name": "Tong Lei",
       "ovr": 61,
       "status": "reserva",
@@ -1065,7 +1065,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 25,
       "name": "Bi Jinhao",
       "ovr": 60,
       "status": "reserva",
@@ -1121,7 +1121,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 12,
       "name": "Liu Shibo",
       "ovr": 59,
       "status": "reserva",
@@ -1136,12 +1136,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 54,
+        "esp": 68,
+        "ref": 62,
+        "pos": 54,
+        "vel": 50,
         "sta": 40
       },
       "detailedStats": {
@@ -1232,7 +1232,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Zhang Chi",
       "ovr": 56,
       "status": "reserva",
@@ -1287,7 +1287,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 27,
       "name": "Abudulam Abdurasul",
       "ovr": 54,
       "status": "reserva",
@@ -1342,7 +1342,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Mijit Mewlan",
       "ovr": 52,
       "status": "reserva",
@@ -1397,7 +1397,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 30,
       "name": "Liu Guobao",
       "ovr": 51,
       "status": "reserva",
@@ -1452,7 +1452,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 18,
       "name": "Jia Feifan",
       "ovr": 50,
       "status": "reserva",
@@ -1507,7 +1507,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 31,
       "name": "Yu Jinyong",
       "ovr": 50,
       "status": "reserva",
@@ -1522,12 +1522,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 55,
+        "seg": 51,
+        "esp": 62,
+        "ref": 56,
+        "pos": 45,
+        "vel": 26,
         "sta": 21
       },
       "detailedStats": {

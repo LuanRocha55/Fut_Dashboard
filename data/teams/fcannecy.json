@@ -24,12 +24,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
+        "alc": 70,
+        "seg": 69,
         "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "ref": 65,
+        "pos": 68,
+        "vel": 33,
         "sta": 35
       },
       "detailedStats": {
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 5,
       "name": "Ahmed Kashi",
       "ovr": 67,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Vincent Pajot",
       "ovr": 67,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Kapit Djoco",
       "ovr": 66,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 18,
       "name": "Yohan Demoncy",
       "ovr": 65,
       "status": "titular",
@@ -284,7 +284,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 2,
       "name": "François Lajugie",
       "ovr": 65,
       "status": "titular",
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "Samuel Ntamack",
       "ovr": 65,
       "status": "titular",
@@ -395,7 +395,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 11,
       "name": "Clément Billemaz",
       "ovr": 64,
       "status": "titular",
@@ -450,7 +450,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 19,
       "name": "Antoine Larose",
       "ovr": 64,
       "status": "titular",
@@ -505,7 +505,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 27,
       "name": "Noha Lemina",
       "ovr": 64,
       "status": "titular",
@@ -560,7 +560,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 4,
       "name": "Hamjatou Soukouna",
       "ovr": 64,
       "status": "titular",
@@ -631,12 +631,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 64,
+        "esp": 72,
+        "ref": 63,
+        "pos": 61,
+        "vel": 19,
         "sta": 18
       },
       "detailedStats": {
@@ -671,7 +671,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 3,
       "name": "Moïse Mahop",
       "ovr": 63,
       "status": "reserva",
@@ -726,7 +726,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 13,
       "name": "Thibault Delphis",
       "ovr": 60,
       "status": "reserva",
@@ -781,7 +781,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 22,
       "name": "Tidiane Malbec",
       "ovr": 59,
       "status": "reserva",
@@ -796,12 +796,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 62,
+        "esp": 66,
+        "ref": 59,
+        "pos": 58,
+        "vel": 32,
         "sta": 25
       },
       "detailedStats": {

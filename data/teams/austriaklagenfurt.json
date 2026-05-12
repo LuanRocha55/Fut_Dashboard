@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Thorsten Mahrer",
       "ovr": 69,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 14,
       "name": "Kosmas Gezos",
       "ovr": 68,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Christopher Cvetko",
       "ovr": 67,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 11,
       "name": "Florian Jaritz",
       "ovr": 67,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 2,
       "name": "Solomon Bonnah",
       "ovr": 66,
       "status": "titular",
@@ -286,7 +286,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 13,
       "name": "Christopher Wernitznig",
       "ovr": 66,
       "status": "titular",
@@ -341,7 +341,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 24,
       "name": "Simon Straudi",
       "ovr": 65,
       "status": "titular",
@@ -396,7 +396,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 18,
       "name": "Tobias Koch",
       "ovr": 64,
       "status": "titular",
@@ -506,7 +506,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 1,
       "name": "Marco Knaller",
       "ovr": 63,
       "status": "titular",
@@ -521,12 +521,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 64,
+        "esp": 68,
+        "ref": 62,
+        "pos": 63,
+        "vel": 44,
         "sta": 37
       },
       "detailedStats": {
@@ -561,7 +561,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 10,
       "name": "Sebastian Soto",
       "ovr": 63,
       "status": "titular",
@@ -616,7 +616,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 17,
       "name": "Ben Bobzien",
       "ovr": 62,
       "status": "reserva",
@@ -671,7 +671,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 5,
       "name": "Dikeni Salifou",
       "ovr": 62,
       "status": "reserva",
@@ -726,7 +726,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 19,
       "name": "David Toshevski",
       "ovr": 61,
       "status": "reserva",
@@ -781,7 +781,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 23,
       "name": "Laurenz Dehl",
       "ovr": 60,
       "status": "reserva",
@@ -836,7 +836,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 21,
       "name": "Iba May",
       "ovr": 60,
       "status": "reserva",
@@ -891,7 +891,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 25,
       "name": "Jannik Robatsch",
       "ovr": 58,
       "status": "reserva",
@@ -947,7 +947,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Philipp Wydra",
       "ovr": 58,
       "status": "reserva",
@@ -1002,7 +1002,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 3,
       "name": "Jonas Kühn",
       "ovr": 57,
       "status": "reserva",
@@ -1057,7 +1057,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Niklas Szerencsi",
       "ovr": 57,
       "status": "reserva",
@@ -1113,7 +1113,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 16,
       "name": "Matthias Dollinger",
       "ovr": 54,
       "status": "reserva",
@@ -1168,7 +1168,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 12,
       "name": "Simon Spari",
       "ovr": 52,
       "status": "reserva",
@@ -1183,12 +1183,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 51,
+        "seg": 47,
+        "esp": 58,
+        "ref": 54,
+        "pos": 53,
+        "vel": 29,
         "sta": 24
       },
       "detailedStats": {
@@ -1223,7 +1223,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Bego Kujrakovic",
       "ovr": 51,
       "status": "reserva",
@@ -1278,7 +1278,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 27,
       "name": "Min Young Lee",
       "ovr": 50,
       "status": "reserva",
@@ -1333,7 +1333,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 28,
       "name": "Alexander Turkin",
       "ovr": 48,
       "status": "reserva",
@@ -1348,12 +1348,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 55,
+        "seg": 45,
+        "esp": 58,
+        "ref": 49,
+        "pos": 46,
+        "vel": 25,
         "sta": 17
       },
       "detailedStats": {

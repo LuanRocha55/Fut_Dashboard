@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 5,
       "name": "Serhiy Sydorchuk",
       "ovr": 72,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Sinan Bolat",
       "ovr": 71,
       "status": "titular",
@@ -80,12 +80,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 76,
+        "esp": 76,
+        "ref": 68,
+        "pos": 70,
+        "vel": 38,
         "sta": 26
       },
       "detailedStats": {
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 2,
       "name": "Bryan Reynolds",
       "ovr": 71,
       "status": "titular",
@@ -234,7 +234,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 3,
       "name": "Jordan Bos",
       "ovr": 69,
       "status": "titular",
@@ -289,7 +289,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 9,
       "name": "Matija Frigan",
       "ovr": 69,
       "status": "titular",
@@ -344,7 +344,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 21,
       "name": "Doğucan Haspolat",
       "ovr": 69,
       "status": "titular",
@@ -399,7 +399,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Roman Neustädter",
       "ovr": 68,
       "status": "titular",
@@ -455,7 +455,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 11,
       "name": "Allahyar Sayyadmanesh",
       "ovr": 68,
       "status": "titular",
@@ -510,7 +510,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Rubin Seigers",
       "ovr": 68,
       "status": "titular",
@@ -566,7 +566,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 16,
       "name": "Tuur Rommens",
       "ovr": 67,
       "status": "titular",
@@ -621,7 +621,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 19,
       "name": "Thomas Van Den Keybus",
       "ovr": 67,
       "status": "reserva",
@@ -676,7 +676,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 23,
       "name": "Mathias Fixelles",
       "ovr": 66,
       "status": "reserva",
@@ -731,7 +731,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 12,
       "name": "Nick Gillekens",
       "ovr": 66,
       "status": "reserva",
@@ -746,12 +746,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
+        "alc": 69,
+        "seg": 61,
         "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "ref": 66,
+        "pos": 63,
+        "vel": 46,
         "sta": 30
       },
       "detailedStats": {
@@ -786,7 +786,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 28,
       "name": "Griffin Yow",
       "ovr": 66,
       "status": "reserva",
@@ -841,7 +841,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 10,
       "name": "Erdon Daci",
       "ovr": 65,
       "status": "reserva",
@@ -896,7 +896,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 27,
       "name": "Muhammed Gümüşkaya",
       "ovr": 65,
       "status": "reserva",
@@ -951,7 +951,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 13,
       "name": "Edisson Jordanov",
       "ovr": 65,
       "status": "reserva",
@@ -1006,7 +1006,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 20,
       "name": "Arthur Piedfort",
       "ovr": 65,
       "status": "reserva",
@@ -1061,7 +1061,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Koen Van Langendonck",
       "ovr": 64,
       "status": "reserva",
@@ -1076,12 +1076,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 63,
+        "esp": 68,
+        "ref": 60,
+        "pos": 67,
+        "vel": 33,
         "sta": 28
       },
       "detailedStats": {
@@ -1116,7 +1116,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Luka Vušković",
       "ovr": 64,
       "status": "reserva",
@@ -1173,7 +1173,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Bakary Haidara",
       "ovr": 60,
       "status": "reserva",
@@ -1229,7 +1229,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 17,
       "name": "Adedire Mebude",
       "ovr": 60,
       "status": "reserva",
@@ -1284,7 +1284,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 29,
       "name": "Emir Ortakaya",
       "ovr": 57,
       "status": "reserva",
@@ -1340,7 +1340,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 8,
       "name": "Raf Smekens",
       "ovr": 56,
       "status": "reserva",
@@ -1395,7 +1395,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 30,
       "name": "Zenzo De Boeck",
       "ovr": 54,
       "status": "reserva",
@@ -1410,12 +1410,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 48,
+        "seg": 56,
+        "esp": 59,
+        "ref": 59,
+        "pos": 52,
+        "vel": 17,
         "sta": 22
       },
       "detailedStats": {
@@ -1450,7 +1450,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 31,
       "name": "Rhys Youlley",
       "ovr": 54,
       "status": "reserva",
@@ -1505,7 +1505,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 32,
       "name": "Julian Placias",
       "ovr": 51,
       "status": "reserva",

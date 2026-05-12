@@ -25,12 +25,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 83,
+        "seg": 78,
+        "esp": 94,
+        "ref": 86,
+        "pos": 83,
+        "vel": 39,
         "sta": 28
       },
       "detailedStats": {
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Pepê",
       "ovr": 82,
       "status": "titular",
@@ -123,7 +123,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Galeno",
       "ovr": 79,
       "status": "titular",
@@ -182,7 +182,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 5,
       "name": "Alan Varela",
       "ovr": 78,
       "status": "titular",
@@ -242,7 +242,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 23,
       "name": "Fábio Vieira",
       "ovr": 77,
       "status": "titular",
@@ -297,7 +297,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 21,
       "name": "Nico González",
       "ovr": 77,
       "status": "titular",
@@ -352,7 +352,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 3,
       "name": "Wendell",
       "ovr": 77,
       "status": "titular",
@@ -410,7 +410,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 2,
       "name": "João Mário",
       "ovr": 77,
       "status": "titular",
@@ -522,7 +522,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 4,
       "name": "Tiago Djaló",
       "ovr": 76,
       "status": "titular",
@@ -578,7 +578,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 14,
       "name": "Marcano",
       "ovr": 76,
       "status": "titular",
@@ -635,7 +635,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 19,
       "name": "Fran Navarro",
       "ovr": 76,
       "status": "reserva",
@@ -691,7 +691,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 25,
       "name": "Otávio",
       "ovr": 75,
       "status": "reserva",
@@ -747,7 +747,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 8,
       "name": "Marko Grujić",
       "ovr": 75,
       "status": "reserva",
@@ -925,7 +925,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 27,
       "name": "Iván Jaime",
       "ovr": 74,
       "status": "reserva",
@@ -985,7 +985,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 12,
       "name": "Cláudio Ramos",
       "ovr": 73,
       "status": "reserva",
@@ -1002,12 +1002,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 78,
+        "seg": 72,
+        "esp": 83,
+        "ref": 72,
+        "pos": 72,
+        "vel": 54,
         "sta": 44
       },
       "detailedStats": {
@@ -1042,7 +1042,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 20,
       "name": "Samu",
       "ovr": 73,
       "status": "reserva",
@@ -1098,7 +1098,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 28,
       "name": "André Franco",
       "ovr": 73,
       "status": "reserva",
@@ -1153,7 +1153,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Zé Pedro",
       "ovr": 72,
       "status": "reserva",
@@ -1209,7 +1209,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Samuel Portugal",
       "ovr": 72,
       "status": "reserva",
@@ -1224,12 +1224,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "alc": 73,
+        "seg": 67,
+        "esp": 82,
         "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "pos": 71,
+        "vel": 41,
         "sta": 33
       },
       "detailedStats": {
@@ -1264,7 +1264,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Gonçalo Borges",
       "ovr": 71,
       "status": "reserva",
@@ -1320,7 +1320,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 29,
       "name": "Danny Loader",
       "ovr": 71,
       "status": "reserva",
@@ -1375,7 +1375,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 13,
       "name": "Martim Fernandes",
       "ovr": 67,
       "status": "reserva",
@@ -1430,7 +1430,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 30,
       "name": "Rodrigo Mora",
       "ovr": 66,
       "status": "reserva",
@@ -1485,7 +1485,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 31,
       "name": "Gonçalo Sousa",
       "ovr": 64,
       "status": "reserva",
@@ -1540,7 +1540,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 32,
       "name": "Deniz Gül",
       "ovr": 62,
       "status": "reserva",

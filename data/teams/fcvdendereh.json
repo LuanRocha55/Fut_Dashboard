@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Roman Květ",
       "ovr": 69,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 3,
       "name": "Bryan Goncalves",
       "ovr": 68,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 1,
       "name": "Guillaume Dietsch",
       "ovr": 67,
       "status": "titular",
@@ -134,12 +134,12 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 65,
+        "esp": 77,
+        "ref": 70,
+        "pos": 63,
+        "vel": 17,
         "sta": 18
       },
       "detailedStats": {
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Aurélien Scheidler",
       "ovr": 67,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 11,
       "name": "Ragnar Oratmangoen",
       "ovr": 66,
       "status": "titular",
@@ -284,7 +284,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 12,
       "name": "Michael Verrips",
       "ovr": 66,
       "status": "titular",
@@ -299,12 +299,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 64,
+        "esp": 74,
+        "ref": 67,
+        "pos": 63,
+        "vel": 16,
         "sta": 17
       },
       "detailedStats": {
@@ -339,7 +339,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "Lennard Hens",
       "ovr": 65,
       "status": "titular",
@@ -394,7 +394,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 2,
       "name": "David Hrncar",
       "ovr": 65,
       "status": "titular",
@@ -449,7 +449,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 19,
       "name": "Bruny Nsimba",
       "ovr": 65,
       "status": "titular",
@@ -505,7 +505,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 7,
       "name": "Mohamed Berte",
       "ovr": 64,
       "status": "titular",
@@ -560,7 +560,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 4,
       "name": "Gilles Ruyssen",
       "ovr": 64,
       "status": "titular",
@@ -616,7 +616,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 13,
       "name": "Dembo Sylla",
       "ovr": 64,
       "status": "reserva",
@@ -671,7 +671,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Ali Akman",
       "ovr": 63,
       "status": "reserva",
@@ -837,7 +837,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 27,
       "name": "Ridwane M'Barki",
       "ovr": 63,
       "status": "reserva",
@@ -892,7 +892,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 25,
       "name": "Joedrick Pupe",
       "ovr": 63,
       "status": "reserva",
@@ -948,7 +948,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 5,
       "name": "Nathan Rodes",
       "ovr": 62,
       "status": "reserva",
@@ -1003,7 +1003,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Malcolm Viltard",
       "ovr": 61,
       "status": "reserva",
@@ -1058,7 +1058,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 23,
       "name": "Keres Masangu",
       "ovr": 60,
       "status": "reserva",
@@ -1113,7 +1113,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Fabio Ferraro",
       "ovr": 59,
       "status": "reserva",
@@ -1168,7 +1168,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Jordy Soladio",
       "ovr": 58,
       "status": "reserva",
@@ -1223,7 +1223,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 18,
       "name": "Jasper Van Oudenhove",
       "ovr": 58,
       "status": "reserva",
@@ -1278,7 +1278,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 30,
       "name": "Desmond Acquah",
       "ovr": 57,
       "status": "reserva",
@@ -1333,7 +1333,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 17,
       "name": "Abdoulaye Yahaya",
       "ovr": 57,
       "status": "reserva",
@@ -1443,7 +1443,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 28,
       "name": "Julien Devriendt",
       "ovr": 53,
       "status": "reserva",
@@ -1458,12 +1458,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 49,
+        "seg": 60,
+        "esp": 55,
+        "ref": 50,
+        "pos": 46,
+        "vel": 18,
         "sta": 28
       },
       "detailedStats": {

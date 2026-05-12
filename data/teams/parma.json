@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 5,
       "name": "Hernani",
       "ovr": 76,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Adrián Bernabé",
       "ovr": 75,
       "status": "titular",
@@ -125,7 +125,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 2,
       "name": "Enrico Delprato",
       "ovr": 75,
       "status": "titular",
@@ -181,7 +181,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 21,
       "name": "Mandela Keita",
       "ovr": 75,
       "status": "titular",
@@ -236,7 +236,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 11,
       "name": "Dennis Man",
       "ovr": 75,
       "status": "titular",
@@ -294,7 +294,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 9,
       "name": "Yoan Bonny",
       "ovr": 73,
       "status": "titular",
@@ -349,7 +349,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 4,
       "name": "Alessandro Circati",
       "ovr": 73,
       "status": "titular",
@@ -405,7 +405,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Elias Cobbaut",
       "ovr": 73,
       "status": "titular",
@@ -461,7 +461,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 19,
       "name": "Adrian Benedyczak",
       "ovr": 72,
       "status": "titular",
@@ -516,7 +516,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 7,
       "name": "Matteo Cancellieri",
       "ovr": 72,
       "status": "titular",
@@ -572,7 +572,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 1,
       "name": "Leandro Chichizola",
       "ovr": 72,
       "status": "titular",
@@ -588,12 +588,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 70,
+        "esp": 79,
+        "ref": 72,
+        "pos": 74,
+        "vel": 54,
         "sta": 31
       },
       "detailedStats": {
@@ -628,7 +628,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 3,
       "name": "Gianluca Di Chiara",
       "ovr": 72,
       "status": "reserva",
@@ -683,7 +683,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 23,
       "name": "Nahuel Estévez",
       "ovr": 72,
       "status": "reserva",
@@ -741,7 +741,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 27,
       "name": "Valentin Mihăilă",
       "ovr": 72,
       "status": "reserva",
@@ -796,7 +796,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "Yordan Osorio",
       "ovr": 72,
       "status": "reserva",
@@ -909,7 +909,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 13,
       "name": "Woyo Coulibaly",
       "ovr": 71,
       "status": "reserva",
@@ -1019,7 +1019,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 30,
       "name": "Simon Sohm",
       "ovr": 71,
       "status": "reserva",
@@ -1074,7 +1074,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 12,
       "name": "Zion Suzuki",
       "ovr": 71,
       "status": "reserva",
@@ -1089,12 +1089,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 68,
+        "esp": 82,
+        "ref": 76,
+        "pos": 67,
+        "vel": 58,
         "sta": 23
       },
       "detailedStats": {
@@ -1129,7 +1129,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Botond Balogh",
       "ovr": 69,
       "status": "reserva",
@@ -1185,7 +1185,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Lautaro Valenti",
       "ovr": 69,
       "status": "reserva",
@@ -1241,7 +1241,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 20,
       "name": "Gabriel Charpentier",
       "ovr": 68,
       "status": "reserva",
@@ -1296,7 +1296,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 28,
       "name": "Drissa Camara",
       "ovr": 64,
       "status": "reserva",
@@ -1351,7 +1351,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "Edoardo Corvi",
       "ovr": 64,
       "status": "reserva",
@@ -1366,12 +1366,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 63,
+        "esp": 74,
+        "ref": 67,
+        "pos": 58,
+        "vel": 26,
         "sta": 24
       },
       "detailedStats": {
@@ -1406,7 +1406,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Antoine Hainaut",
       "ovr": 63,
       "status": "reserva",

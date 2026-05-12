@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Alin Roman",
       "ovr": 67,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Nicolas Samayoa",
       "ovr": 66,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 5,
       "name": "Mihai Bordeianu",
       "ovr": 65,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 11,
       "name": "Valentin Gheorghe",
       "ovr": 65,
       "status": "titular",
@@ -230,7 +230,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 3,
       "name": "Rareș Ispas",
       "ovr": 65,
       "status": "titular",
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 9,
       "name": "Shayon Harrison",
       "ovr": 64,
       "status": "titular",
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 8,
       "name": "Julián Marchioni",
       "ovr": 64,
       "status": "titular",
@@ -395,7 +395,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 21,
       "name": "Samuel Oum Gouet",
       "ovr": 64,
       "status": "titular",
@@ -450,7 +450,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "Florin Ilie",
       "ovr": 63,
       "status": "titular",
@@ -506,7 +506,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Guilherme Soares",
       "ovr": 62,
       "status": "titular",
@@ -562,7 +562,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 1,
       "name": "Jesús Fernández",
       "ovr": 62,
       "status": "titular",
@@ -577,12 +577,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 64,
+        "esp": 67,
+        "ref": 59,
+        "pos": 58,
+        "vel": 46,
         "sta": 38
       },
       "detailedStats": {
@@ -617,7 +617,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 19,
       "name": "Andrei Gheorghiță",
       "ovr": 62,
       "status": "reserva",
@@ -672,7 +672,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 18,
       "name": "Cătălin Itu",
       "ovr": 62,
       "status": "reserva",
@@ -727,7 +727,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 20,
       "name": "Florian Kamberi",
       "ovr": 62,
       "status": "reserva",
@@ -893,7 +893,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 2,
       "name": "Todor Todoroski",
       "ovr": 62,
       "status": "reserva",
@@ -948,7 +948,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 22,
       "name": "Luca Mihai",
       "ovr": 61,
       "status": "reserva",
@@ -1003,7 +1003,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 26,
       "name": "David Atanaskoski",
       "ovr": 60,
       "status": "reserva",
@@ -1058,7 +1058,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 7,
       "name": "Gonçalo Teixeira",
       "ovr": 60,
       "status": "reserva",
@@ -1113,7 +1113,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 17,
       "name": "Tailson",
       "ovr": 60,
       "status": "reserva",
@@ -1168,7 +1168,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Robert Mišković",
       "ovr": 59,
       "status": "reserva",
@@ -1223,7 +1223,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 29,
       "name": "Matei Tănasă",
       "ovr": 58,
       "status": "reserva",
@@ -1278,7 +1278,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 12,
       "name": "Toma Niga",
       "ovr": 57,
       "status": "reserva",
@@ -1293,12 +1293,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 56,
+        "seg": 55,
+        "esp": 64,
+        "ref": 59,
+        "pos": 53,
+        "vel": 26,
         "sta": 27
       },
       "detailedStats": {

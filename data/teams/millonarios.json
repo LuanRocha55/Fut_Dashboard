@@ -24,11 +24,11 @@
       ],
       "stats": {
         "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "seg": 74,
+        "esp": 84,
+        "ref": 76,
+        "pos": 79,
+        "vel": 44,
         "sta": 45
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Daniel Felipe Ruiz",
       "ovr": 75,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "David Silva",
       "ovr": 75,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Leonardo Castro",
       "ovr": 74,
       "status": "titular",
@@ -230,7 +230,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 23,
       "name": "Daniel Cataño",
       "ovr": 74,
       "status": "titular",
@@ -291,7 +291,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 4,
       "name": "Andrés Llinás",
       "ovr": 74,
       "status": "titular",
@@ -351,7 +351,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Juan Pablo Vargas",
       "ovr": 72,
       "status": "titular",
@@ -411,7 +411,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Danovis Banguero",
       "ovr": 71,
       "status": "titular",
@@ -467,7 +467,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 19,
       "name": "Santiago Giordana",
       "ovr": 71,
       "status": "titular",
@@ -522,7 +522,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Jorge Arias",
       "ovr": 70,
       "status": "titular",
@@ -579,7 +579,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 5,
       "name": "Daniel Giraldo",
       "ovr": 70,
       "status": "titular",
@@ -636,7 +636,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 21,
       "name": "Stiven Vega",
       "ovr": 70,
       "status": "reserva",
@@ -691,7 +691,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 8,
       "name": "Juan Carlos Pereira",
       "ovr": 69,
       "status": "reserva",
@@ -748,7 +748,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 12,
       "name": "Diego Novoa",
       "ovr": 67,
       "status": "reserva",
@@ -763,12 +763,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 72,
+        "esp": 70,
+        "ref": 62,
+        "pos": 68,
+        "vel": 49,
         "sta": 33
       },
       "detailedStats": {
@@ -859,7 +859,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 28,
       "name": "Luis Paredes",
       "ovr": 65,
       "status": "reserva",
@@ -914,7 +914,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 2,
       "name": "Ricardo Rosales",
       "ovr": 64,
       "status": "reserva",
@@ -1024,7 +1024,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 16,
       "name": "Jhoan Hernandez",
       "ovr": 59,
       "status": "reserva",
@@ -1079,7 +1079,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Camilo Romero",
       "ovr": 59,
       "status": "reserva",
@@ -1094,12 +1094,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 58,
+        "esp": 67,
+        "ref": 60,
+        "pos": 58,
+        "vel": 55,
         "sta": 30
       },
       "detailedStats": {

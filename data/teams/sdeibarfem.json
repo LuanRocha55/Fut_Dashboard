@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Arene Altonaga",
       "ovr": 75,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Andrea Álvarez",
       "ovr": 74,
       "status": "titular",
@@ -173,7 +173,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 5,
       "name": "Bernadette Amani",
       "ovr": 74,
       "status": "titular",
@@ -228,7 +228,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 13,
       "name": "Andrea Sierra",
       "ovr": 74,
       "status": "titular",
@@ -283,7 +283,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 3,
       "name": "Eider Arana",
       "ovr": 73,
       "status": "titular",
@@ -338,7 +338,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 1,
       "name": "María Miralles",
       "ovr": 73,
       "status": "titular",
@@ -353,12 +353,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
+        "alc": 72,
+        "seg": 70,
+        "esp": 81,
+        "ref": 74,
         "pos": 75,
-        "vel": 40,
+        "vel": 33,
         "sta": 23
       },
       "detailedStats": {
@@ -393,7 +393,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 4,
       "name": "Patri Ojeda",
       "ovr": 73,
       "status": "titular",
@@ -449,7 +449,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 18,
       "name": "Esperanza Pizarro",
       "ovr": 73,
       "status": "titular",
@@ -504,7 +504,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Carla Andrés",
       "ovr": 72,
       "status": "titular",
@@ -615,7 +615,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 25,
       "name": "Elba Vergés",
       "ovr": 72,
       "status": "reserva",
@@ -671,7 +671,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Eva van Deursen",
       "ovr": 69,
       "status": "reserva",
@@ -726,7 +726,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 10,
       "name": "Ane Campos",
       "ovr": 68,
       "status": "reserva",
@@ -781,7 +781,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 12,
       "name": "Noelia García",
       "ovr": 64,
       "status": "reserva",
@@ -796,12 +796,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 62,
+        "esp": 72,
+        "ref": 69,
+        "pos": 64,
+        "vel": 38,
         "sta": 21
       },
       "detailedStats": {
@@ -836,7 +836,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 21,
       "name": "Leire Peña",
       "ovr": 63,
       "status": "reserva",
@@ -891,7 +891,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 19,
       "name": "Nati Cano",
       "ovr": 57,
       "status": "reserva",

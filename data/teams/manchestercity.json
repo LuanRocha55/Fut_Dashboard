@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 5,
       "name": "Rodri",
       "ovr": 91,
       "status": "titular",
@@ -68,7 +68,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Erling Haaland",
       "ovr": 91,
       "status": "titular",
@@ -127,7 +127,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Kevin De Bruyne",
       "ovr": 90,
       "status": "titular",
@@ -187,7 +187,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 17,
       "name": "Phil Foden",
       "ovr": 88,
       "status": "titular",
@@ -244,7 +244,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Rúben Dias",
       "ovr": 88,
       "status": "titular",
@@ -301,7 +301,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 1,
       "name": "Ederson",
       "ovr": 88,
       "status": "titular",
@@ -318,12 +318,12 @@
         "Pinged Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 87,
+        "seg": 82,
+        "esp": 97,
+        "ref": 87,
+        "pos": 86,
+        "vel": 63,
         "sta": 44
       },
       "detailedStats": {
@@ -358,7 +358,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 18,
       "name": "Bernardo Silva",
       "ovr": 88,
       "status": "titular",
@@ -418,7 +418,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 20,
       "name": "İlkay Gündoğan",
       "ovr": 87,
       "status": "titular",
@@ -476,7 +476,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "John Stones",
       "ovr": 85,
       "status": "titular",
@@ -533,7 +533,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Manuel Akanji",
       "ovr": 84,
       "status": "titular",
@@ -645,7 +645,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 7,
       "name": "Jack Grealish",
       "ovr": 84,
       "status": "reserva",
@@ -703,7 +703,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 2,
       "name": "Kyle Walker",
       "ovr": 84,
       "status": "reserva",
@@ -760,7 +760,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 3,
       "name": "Joško Gvardiol",
       "ovr": 83,
       "status": "reserva",
@@ -877,7 +877,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 29,
       "name": "Savinho",
       "ovr": 82,
       "status": "reserva",
@@ -932,7 +932,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 12,
       "name": "Stefan Ortega",
       "ovr": 81,
       "status": "reserva",
@@ -948,12 +948,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 79,
+        "seg": 77,
+        "esp": 91,
+        "ref": 84,
+        "pos": 81,
+        "vel": 53,
         "sta": 33
       },
       "detailedStats": {
@@ -988,7 +988,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 19,
       "name": "Jérémy Doku",
       "ovr": 80,
       "status": "reserva",
@@ -1046,7 +1046,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Matheus Nunes",
       "ovr": 78,
       "status": "reserva",
@@ -1101,7 +1101,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 13,
       "name": "Rico Lewis",
       "ovr": 76,
       "status": "reserva",
@@ -1156,7 +1156,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 31,
       "name": "Oscar Bobb",
       "ovr": 72,
       "status": "reserva",
@@ -1212,7 +1212,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 32,
       "name": "James McAtee",
       "ovr": 70,
       "status": "reserva",
@@ -1270,7 +1270,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 16,
       "name": "Joshua Wilson-Esbrand",
       "ovr": 67,
       "status": "reserva",
@@ -1380,7 +1380,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "Jadel Katongo",
       "ovr": 64,
       "status": "reserva",
@@ -1435,7 +1435,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 27,
       "name": "Filip Stevanović",
       "ovr": 64,
       "status": "reserva",
@@ -1491,7 +1491,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 22,
       "name": "Scott Carson",
       "ovr": 63,
       "status": "reserva",
@@ -1506,12 +1506,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 63,
+        "esp": 68,
+        "ref": 62,
+        "pos": 65,
+        "vel": 37,
         "sta": 18
       },
       "detailedStats": {
@@ -1546,7 +1546,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 23,
       "name": "Jacob Wright",
       "ovr": 62,
       "status": "reserva",

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Rob Schoofs",
       "ovr": 75,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 7,
       "name": "Kerim Mrabti",
       "ovr": 72,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Nikola Storm",
       "ovr": 72,
       "status": "titular",
@@ -173,7 +173,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 19,
       "name": "Daam Foulon",
       "ovr": 71,
       "status": "titular",
@@ -228,7 +228,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 9,
       "name": "Benito Raman",
       "ovr": 71,
       "status": "titular",
@@ -283,7 +283,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 4,
       "name": "Zinho Vanheusden",
       "ovr": 71,
       "status": "titular",
@@ -339,7 +339,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 17,
       "name": "Geoffry Hairemans",
       "ovr": 70,
       "status": "titular",
@@ -396,7 +396,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 27,
       "name": "Patrick Pflücke",
       "ovr": 70,
       "status": "titular",
@@ -454,7 +454,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 5,
       "name": "Mory Konaté",
       "ovr": 68,
       "status": "titular",
@@ -564,7 +564,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 14,
       "name": "Jules Van Cleemput",
       "ovr": 68,
       "status": "titular",
@@ -620,7 +620,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 2,
       "name": "Sandy Walsh",
       "ovr": 68,
       "status": "reserva",
@@ -675,7 +675,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Julien Ngoy",
       "ovr": 67,
       "status": "reserva",
@@ -730,7 +730,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 1,
       "name": "Ortwin De Wolf",
       "ovr": 66,
       "status": "reserva",
@@ -745,12 +745,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 65,
+        "esp": 74,
+        "ref": 65,
+        "pos": 66,
+        "vel": 37,
         "sta": 23
       },
       "detailedStats": {
@@ -785,7 +785,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "José Marsà",
       "ovr": 66,
       "status": "reserva",
@@ -841,7 +841,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 13,
       "name": "Iebe Swers",
       "ovr": 66,
       "status": "reserva",
@@ -896,7 +896,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 24,
       "name": "Rafik Belghali",
       "ovr": 65,
       "status": "reserva",
@@ -951,7 +951,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 12,
       "name": "Yannick Thoelen",
       "ovr": 65,
       "status": "reserva",
@@ -966,12 +966,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 66,
+        "esp": 69,
+        "ref": 61,
+        "pos": 66,
+        "vel": 42,
         "sta": 27
       },
       "detailedStats": {
@@ -1006,7 +1006,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 23,
       "name": "Bilal Bafdili",
       "ovr": 64,
       "status": "reserva",
@@ -1061,7 +1061,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 21,
       "name": "Aziz Ouattara",
       "ovr": 64,
       "status": "reserva",
@@ -1116,7 +1116,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 28,
       "name": "Bill Antonio",
       "ovr": 63,
       "status": "reserva",
@@ -1171,7 +1171,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 29,
       "name": "Petter Dahl",
       "ovr": 63,
       "status": "reserva",
@@ -1226,7 +1226,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Toon Raemaekers",
       "ovr": 63,
       "status": "reserva",
@@ -1282,7 +1282,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 30,
       "name": "Bas Van Den Eynden",
       "ovr": 59,
       "status": "reserva",
@@ -1337,7 +1337,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 31,
       "name": "Isaac Asante",
       "ovr": 57,
       "status": "reserva",
@@ -1392,7 +1392,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 18,
       "name": "Elton Yeboah",
       "ovr": 57,
       "status": "reserva",
@@ -1447,7 +1447,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 22,
       "name": "Oskar Annell",
       "ovr": 55,
       "status": "reserva",
@@ -1462,12 +1462,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 56,
+        "seg": 60,
+        "esp": 62,
+        "ref": 55,
+        "pos": 58,
+        "vel": 33,
         "sta": 19
       },
       "detailedStats": {

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Éver Banega",
       "ovr": 79,
       "status": "titular",
@@ -68,7 +68,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Gabriel Carabajal",
       "ovr": 73,
       "status": "titular",
@@ -124,7 +124,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Gustavo Velázquez",
       "ovr": 73,
       "status": "titular",
@@ -181,7 +181,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Lucas Hoyos",
       "ovr": 72,
       "status": "titular",
@@ -198,12 +198,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "alc": 74,
+        "seg": 69,
+        "esp": 83,
         "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "pos": 66,
+        "vel": 58,
         "sta": 45
       },
       "detailedStats": {
@@ -238,7 +238,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 12,
       "name": "Ramiro Macagno",
       "ovr": 71,
       "status": "titular",
@@ -255,12 +255,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 73,
+        "seg": 70,
+        "esp": 80,
+        "ref": 71,
+        "pos": 69,
+        "vel": 32,
         "sta": 28
       },
       "detailedStats": {
@@ -295,7 +295,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 2,
       "name": "Armando Méndez",
       "ovr": 71,
       "status": "titular",
@@ -351,7 +351,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 9,
       "name": "Ignacio Ramírez",
       "ovr": 71,
       "status": "titular",
@@ -406,7 +406,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Leonel Vangioni",
       "ovr": 71,
       "status": "titular",
@@ -461,7 +461,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 16,
       "name": "Ángelo Martino",
       "ovr": 70,
       "status": "titular",
@@ -516,7 +516,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 18,
       "name": "Juan Ignacio Méndez",
       "ovr": 70,
       "status": "titular",
@@ -626,7 +626,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 19,
       "name": "Brian Calderara",
       "ovr": 68,
       "status": "reserva",
@@ -681,7 +681,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 28,
       "name": "Fernando Cardozo",
       "ovr": 68,
       "status": "reserva",
@@ -736,7 +736,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 7,
       "name": "Francisco González",
       "ovr": 68,
       "status": "reserva",
@@ -791,7 +791,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 14,
       "name": "Saúl Salcedo",
       "ovr": 68,
       "status": "reserva",
@@ -847,7 +847,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 20,
       "name": "Jeronimo Cacciabue",
       "ovr": 66,
       "status": "reserva",
@@ -902,7 +902,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 13,
       "name": "Augusto Schott",
       "ovr": 66,
       "status": "reserva",
@@ -957,7 +957,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Rodrigo Fernández",
       "ovr": 65,
       "status": "reserva",
@@ -1012,7 +1012,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 24,
       "name": "Tomás Jacob",
       "ovr": 65,
       "status": "reserva",
@@ -1067,7 +1067,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 23,
       "name": "Matko Miljevic",
       "ovr": 65,
       "status": "reserva",
@@ -1122,7 +1122,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 25,
       "name": "Ian Glavinovich",
       "ovr": 64,
       "status": "reserva",
@@ -1233,7 +1233,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "David Sotelo",
       "ovr": 59,
       "status": "reserva",

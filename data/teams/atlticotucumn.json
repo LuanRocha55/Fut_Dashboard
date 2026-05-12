@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Luis Miguel Rodríguez",
       "ovr": 72,
       "status": "titular",
@@ -124,7 +124,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Adrián Sánchez",
       "ovr": 70,
       "status": "titular",
@@ -179,7 +179,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 11,
       "name": "Renzo Tesuri",
       "ovr": 70,
       "status": "titular",
@@ -234,7 +234,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 18,
       "name": "Nicolás Eduardo Castro",
       "ovr": 69,
       "status": "titular",
@@ -289,7 +289,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 10,
       "name": "Mateo Coronel",
       "ovr": 69,
       "status": "titular",
@@ -344,7 +344,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 4,
       "name": "Matías de los Santos",
       "ovr": 69,
       "status": "titular",
@@ -400,7 +400,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 19,
       "name": "Marcelo Estigarribia",
       "ovr": 69,
       "status": "titular",
@@ -455,7 +455,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "Néstor Breitenbruch",
       "ovr": 68,
       "status": "titular",
@@ -513,7 +513,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Nicolás Romero",
       "ovr": 68,
       "status": "titular",
@@ -569,7 +569,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 12,
       "name": "Gianluca Ferrari",
       "ovr": 67,
       "status": "titular",
@@ -625,7 +625,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 3,
       "name": "Juan Infante",
       "ovr": 67,
       "status": "reserva",
@@ -680,7 +680,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 27,
       "name": "Justo Giani",
       "ovr": 66,
       "status": "reserva",
@@ -735,7 +735,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 1,
       "name": "Tomás Durso",
       "ovr": 65,
       "status": "reserva",
@@ -750,12 +750,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
+        "alc": 66,
+        "seg": 58,
         "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "ref": 69,
+        "pos": 69,
+        "vel": 15,
         "sta": 23
       },
       "detailedStats": {
@@ -790,7 +790,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 23,
       "name": "Tomás Castro Ponce",
       "ovr": 64,
       "status": "reserva",
@@ -901,7 +901,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 20,
       "name": "Mateo Bajamich",
       "ovr": 63,
       "status": "reserva",
@@ -957,7 +957,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Lucas Ambrogio",
       "ovr": 62,
       "status": "reserva",

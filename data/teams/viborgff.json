@@ -23,12 +23,12 @@
         "1v1 Close Down"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 68,
+        "esp": 78,
+        "ref": 70,
+        "pos": 69,
+        "vel": 33,
         "sta": 40
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Justin Lonwijk",
       "ovr": 68,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 18,
       "name": "Jean-Manuel Mbom",
       "ovr": 68,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 3,
       "name": "Oliver Bundgaard",
       "ovr": 67,
       "status": "titular",
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 5,
       "name": "Jeppe Grønning",
       "ovr": 67,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 20,
       "name": "Jamie Jacobs",
       "ovr": 67,
       "status": "titular",
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Ivan Näsberg",
       "ovr": 67,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 17,
       "name": "Serginho",
       "ovr": 67,
       "status": "titular",
@@ -509,7 +509,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Daniel Anyembe",
       "ovr": 66,
       "status": "titular",
@@ -622,7 +622,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 9,
       "name": "Anosike Ementa",
       "ovr": 66,
       "status": "reserva",
@@ -733,7 +733,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 31,
       "name": "Ibrahim Said",
       "ovr": 66,
       "status": "reserva",
@@ -844,7 +844,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 7,
       "name": "Isak Jensen",
       "ovr": 65,
       "status": "reserva",
@@ -899,7 +899,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 2,
       "name": "Srdjan Kuzmic",
       "ovr": 65,
       "status": "reserva",
@@ -954,7 +954,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 10,
       "name": "Renato Júnior",
       "ovr": 64,
       "status": "reserva",
@@ -1064,7 +1064,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 12,
       "name": "Oscar Hedvall",
       "ovr": 63,
       "status": "reserva",
@@ -1079,12 +1079,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 62,
+        "esp": 72,
+        "ref": 64,
+        "pos": 63,
+        "vel": 29,
         "sta": 30
       },
       "detailedStats": {
@@ -1174,7 +1174,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Sofus Berger",
       "ovr": 62,
       "status": "reserva",
@@ -1229,7 +1229,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 29,
       "name": "Charly Nouck",
       "ovr": 62,
       "status": "reserva",
@@ -1339,7 +1339,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 22,
       "name": "Kasper Kiilerich",
       "ovr": 57,
       "status": "reserva",
@@ -1354,12 +1354,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 55,
+        "esp": 64,
+        "ref": 57,
+        "pos": 59,
+        "vel": 27,
         "sta": 22
       },
       "detailedStats": {

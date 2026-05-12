@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Georges-Kévin Nkoudou",
       "ovr": 77,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Nicolae Stanciu",
       "ovr": 77,
       "status": "titular",
@@ -123,7 +123,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Habib Diallo",
       "ovr": 74,
       "status": "titular",
@@ -296,7 +296,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Abdelkader Bedrane",
       "ovr": 72,
       "status": "titular",
@@ -354,7 +354,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 21,
       "name": "Adam Maher",
       "ovr": 70,
       "status": "titular",
@@ -410,7 +410,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 1,
       "name": "Florin Niță",
       "ovr": 70,
       "status": "titular",
@@ -425,12 +425,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 70,
+        "esp": 78,
+        "ref": 72,
+        "pos": 73,
+        "vel": 21,
         "sta": 36
       },
       "detailedStats": {
@@ -465,7 +465,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 10,
       "name": "Assan Ceesay",
       "ovr": 69,
       "status": "titular",
@@ -520,7 +520,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 2,
       "name": "Sanousi Hawsawi",
       "ovr": 63,
       "status": "titular",
@@ -577,7 +577,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 3,
       "name": "Dhari Al Enazi",
       "ovr": 60,
       "status": "titular",
@@ -632,7 +632,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 16,
       "name": "Abdulrahman Al Obaid",
       "ovr": 60,
       "status": "reserva",
@@ -687,7 +687,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 23,
       "name": "Bader Monshi",
       "ovr": 60,
       "status": "reserva",
@@ -742,7 +742,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 19,
       "name": "Abdullah Al Meqran",
       "ovr": 59,
       "status": "reserva",
@@ -797,7 +797,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 12,
       "name": "Ameen Bukhari",
       "ovr": 59,
       "status": "reserva",
@@ -812,12 +812,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 55,
+        "esp": 66,
+        "ref": 58,
+        "pos": 57,
+        "vel": 48,
         "sta": 36
       },
       "detailedStats": {
@@ -852,7 +852,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 13,
       "name": "Sultan Faqihi",
       "ovr": 59,
       "status": "reserva",
@@ -907,7 +907,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 25,
       "name": "Noor Al Rashidi",
       "ovr": 58,
       "status": "reserva",
@@ -963,7 +963,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 30,
       "name": "Hassan Abu Sharara",
       "ovr": 56,
       "status": "reserva",
@@ -1018,7 +1018,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 27,
       "name": "Thamer Al Ali",
       "ovr": 56,
       "status": "reserva",
@@ -1073,7 +1073,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Abdulbasit Hawsawi",
       "ovr": 56,
       "status": "reserva",
@@ -1088,12 +1088,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 56,
+        "seg": 55,
+        "esp": 63,
+        "ref": 58,
+        "pos": 53,
+        "vel": 29,
         "sta": 20
       },
       "detailedStats": {
@@ -1128,7 +1128,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 7,
       "name": "Ahmed Horaisi",
       "ovr": 56,
       "status": "reserva",
@@ -1183,7 +1183,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Ramzi Solan",
       "ovr": 56,
       "status": "reserva",
@@ -1238,7 +1238,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 17,
       "name": "Rayan Al Qahtani",
       "ovr": 52,
       "status": "reserva",

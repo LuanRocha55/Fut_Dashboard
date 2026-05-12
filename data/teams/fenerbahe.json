@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Youssef En-Nesyri",
       "ovr": 83,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Dušan Tadić",
       "ovr": 83,
       "status": "titular",
@@ -127,7 +127,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "Edin Džeko",
       "ovr": 82,
       "status": "titular",
@@ -184,7 +184,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 5,
       "name": "Fred",
       "ovr": 81,
       "status": "titular",
@@ -240,7 +240,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 1,
       "name": "Dominik Livaković",
       "ovr": 80,
       "status": "titular",
@@ -256,12 +256,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 80,
+        "seg": 76,
+        "esp": 91,
+        "ref": 83,
+        "pos": 80,
+        "vel": 54,
         "sta": 32
       },
       "detailedStats": {
@@ -296,7 +296,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 19,
       "name": "Allan Saint-Maximin",
       "ovr": 80,
       "status": "titular",
@@ -354,7 +354,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 23,
       "name": "Sebastian Szymański",
       "ovr": 80,
       "status": "titular",
@@ -412,7 +412,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 4,
       "name": "Alexander Djiku",
       "ovr": 79,
       "status": "titular",
@@ -469,7 +469,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 17,
       "name": "İrfan Can Kahveci",
       "ovr": 79,
       "status": "titular",
@@ -529,7 +529,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 21,
       "name": "Sofyan Amrabat",
       "ovr": 78,
       "status": "titular",
@@ -585,7 +585,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 14,
       "name": "Rodrigo Becão",
       "ovr": 78,
       "status": "titular",
@@ -643,7 +643,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 25,
       "name": "Çağlar Söyüncü",
       "ovr": 78,
       "status": "reserva",
@@ -756,7 +756,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 7,
       "name": "Ryan Kent",
       "ovr": 76,
       "status": "reserva",
@@ -814,7 +814,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 2,
       "name": "Bright Osayi-Samuel",
       "ovr": 76,
       "status": "reserva",
@@ -873,7 +873,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 31,
       "name": "Cengiz Ünder",
       "ovr": 76,
       "status": "reserva",
@@ -930,7 +930,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 3,
       "name": "Jayden Oosterwolde",
       "ovr": 75,
       "status": "reserva",
@@ -985,7 +985,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 24,
       "name": "Mert Müldür",
       "ovr": 74,
       "status": "reserva",
@@ -1040,7 +1040,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 20,
       "name": "Cenk Tosun",
       "ovr": 74,
       "status": "reserva",
@@ -1096,7 +1096,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 28,
       "name": "Oğuz Aydın",
       "ovr": 73,
       "status": "reserva",
@@ -1155,7 +1155,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Emre Mor",
       "ovr": 73,
       "status": "reserva",
@@ -1211,7 +1211,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 16,
       "name": "Levent Mercan",
       "ovr": 72,
       "status": "reserva",
@@ -1267,7 +1267,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 8,
       "name": "Mert Hakan Yandaş",
       "ovr": 71,
       "status": "reserva",
@@ -1322,7 +1322,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 12,
       "name": "İrfan Can Eğribayat",
       "ovr": 70,
       "status": "reserva",
@@ -1338,12 +1338,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 70,
+        "esp": 79,
+        "ref": 73,
+        "pos": 68,
+        "vel": 48,
         "sta": 21
       },
       "detailedStats": {
@@ -1378,7 +1378,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "Samet Akaydın",
       "ovr": 69,
       "status": "reserva",
@@ -1435,7 +1435,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 27,
       "name": "Bartuğ Elmaz",
       "ovr": 66,
       "status": "reserva",
@@ -1490,7 +1490,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 29,
       "name": "Burak Kapacak",
       "ovr": 66,
       "status": "reserva",
@@ -1545,7 +1545,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 30,
       "name": "Ertuğrul Çetin",
       "ovr": 60,
       "status": "reserva",
@@ -1560,12 +1560,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 61,
+        "esp": 68,
+        "ref": 60,
+        "pos": 59,
+        "vel": 26,
         "sta": 16
       },
       "detailedStats": {
@@ -1600,7 +1600,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 32,
       "name": "Furkan Onur Akyüz",
       "ovr": 53,
       "status": "reserva",
@@ -1615,12 +1615,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 55,
+        "seg": 52,
+        "esp": 62,
+        "ref": 56,
+        "pos": 48,
+        "vel": 28,
         "sta": 27
       },
       "detailedStats": {

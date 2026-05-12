@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Alejandro Camargo",
       "ovr": 71,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Diego Sánchez",
       "ovr": 70,
       "status": "titular",
@@ -80,12 +80,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 69,
+        "esp": 78,
+        "ref": 70,
+        "pos": 66,
+        "vel": 43,
         "sta": 44
       },
       "detailedStats": {
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Andrés Chávez",
       "ovr": 69,
       "status": "titular",
@@ -286,7 +286,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 18,
       "name": "Jorge Henríquez",
       "ovr": 67,
       "status": "titular",
@@ -341,7 +341,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Bruno Cabrera",
       "ovr": 65,
       "status": "titular",
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 25,
       "name": "Juan Cornejo",
       "ovr": 65,
       "status": "titular",
@@ -454,7 +454,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 21,
       "name": "Sebastián Galani",
       "ovr": 65,
       "status": "titular",
@@ -509,7 +509,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 12,
       "name": "Miguel Pinto",
       "ovr": 64,
       "status": "titular",
@@ -524,12 +524,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 60,
+        "esp": 70,
+        "ref": 63,
+        "pos": 64,
+        "vel": 54,
         "sta": 36
       },
       "detailedStats": {
@@ -619,7 +619,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 3,
       "name": "Sebastián Cabrera",
       "ovr": 63,
       "status": "reserva",
@@ -674,7 +674,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 2,
       "name": "Dylan Escobar",
       "ovr": 63,
       "status": "reserva",
@@ -729,7 +729,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 19,
       "name": "Alejandro Azócar",
       "ovr": 62,
       "status": "reserva",
@@ -784,7 +784,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 27,
       "name": "Benjamín Chandía",
       "ovr": 60,
       "status": "reserva",
@@ -951,7 +951,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Salvador Sánchez",
       "ovr": 60,
       "status": "reserva",
@@ -1007,7 +1007,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 10,
       "name": "Nicolás Johansen",
       "ovr": 58,
       "status": "reserva",
@@ -1062,7 +1062,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 28,
       "name": "Matías Alvarado",
       "ovr": 55,
       "status": "reserva",
@@ -1117,7 +1117,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Diego Alonso Plaza",
       "ovr": 53,
       "status": "reserva",
@@ -1172,7 +1172,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Cristóbal Dorador",
       "ovr": 52,
       "status": "reserva",
@@ -1187,12 +1187,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 53,
+        "esp": 64,
+        "ref": 58,
+        "pos": 41,
+        "vel": 23,
         "sta": 16
       },
       "detailedStats": {

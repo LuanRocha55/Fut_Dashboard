@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Samuel Galindo",
       "ovr": 70,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 3,
       "name": "Daniel Mancilla",
       "ovr": 69,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Martín Prost",
       "ovr": 68,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 1,
       "name": "Carlos Adorno",
       "ovr": 66,
       "status": "titular",
@@ -244,12 +244,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 66,
+        "esp": 73,
+        "ref": 68,
+        "pos": 64,
+        "vel": 28,
         "sta": 16
       },
       "detailedStats": {
@@ -284,7 +284,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 2,
       "name": "Oscar Añez",
       "ovr": 66,
       "status": "titular",
@@ -339,7 +339,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 11,
       "name": "Luis Pavia",
       "ovr": 66,
       "status": "titular",
@@ -394,7 +394,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 5,
       "name": "Pedro Azogue",
       "ovr": 65,
       "status": "titular",
@@ -449,7 +449,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 13,
       "name": "Óscar Baldomar",
       "ovr": 65,
       "status": "titular",
@@ -504,7 +504,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 18,
       "name": "Diego Hoyos",
       "ovr": 65,
       "status": "titular",
@@ -559,7 +559,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 16,
       "name": "Heber Leaños",
       "ovr": 65,
       "status": "titular",
@@ -629,12 +629,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 64,
+        "esp": 71,
+        "ref": 63,
+        "pos": 66,
+        "vel": 23,
         "sta": 16
       },
       "detailedStats": {
@@ -669,7 +669,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 19,
       "name": "Andrés Torrico",
       "ovr": 65,
       "status": "reserva",
@@ -724,7 +724,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 21,
       "name": "Jorge Andia",
       "ovr": 64,
       "status": "reserva",
@@ -779,7 +779,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 28,
       "name": "Saulo Guerra",
       "ovr": 64,
       "status": "reserva",
@@ -834,7 +834,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 10,
       "name": "William Álvarez",
       "ovr": 63,
       "status": "reserva",
@@ -889,7 +889,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 14,
       "name": "Abraham Cabrera",
       "ovr": 62,
       "status": "reserva",
@@ -945,7 +945,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 25,
       "name": "Anyelo Ortíz",
       "ovr": 62,
       "status": "reserva",
@@ -1001,7 +1001,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 24,
       "name": "Javier Guerra",
       "ovr": 60,
       "status": "reserva",
@@ -1056,7 +1056,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Jorge Mejía",
       "ovr": 60,
       "status": "reserva",
@@ -1071,12 +1071,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 59,
+        "seg": 61,
+        "esp": 65,
+        "ref": 58,
+        "pos": 59,
+        "vel": 16,
         "sta": 26
       },
       "detailedStats": {

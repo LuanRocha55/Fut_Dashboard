@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 2,
       "name": "Oliver Sonne",
       "ovr": 70,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Nicolai Larsen",
       "ovr": 69,
       "status": "titular",
@@ -78,12 +78,12 @@
         "1v1 Close Down"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 69,
+        "esp": 77,
+        "ref": 71,
+        "pos": 70,
+        "vel": 46,
         "sta": 32
       },
       "detailedStats": {
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Tonni Adamsen",
       "ovr": 68,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 8,
       "name": "Anders Klynge",
       "ovr": 68,
       "status": "titular",
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 18,
       "name": "Jeppe Andersen",
       "ovr": 67,
       "status": "titular",
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Andreas Poulsen",
       "ovr": 67,
       "status": "titular",
@@ -452,7 +452,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 13,
       "name": "Jens Martin Gammelby",
       "ovr": 66,
       "status": "titular",
@@ -563,7 +563,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 16,
       "name": "Robin Østrøm",
       "ovr": 66,
       "status": "titular",
@@ -618,7 +618,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 20,
       "name": "Pelle Mattsson",
       "ovr": 65,
       "status": "reserva",
@@ -673,7 +673,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 14,
       "name": "Frederik Carlsen",
       "ovr": 64,
       "status": "reserva",
@@ -728,7 +728,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Mads Larsen",
       "ovr": 64,
       "status": "reserva",
@@ -783,7 +783,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "Pedro Ganchas",
       "ovr": 64,
       "status": "reserva",
@@ -839,7 +839,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 17,
       "name": "Pontus Rödin",
       "ovr": 62,
       "status": "reserva",
@@ -895,7 +895,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 19,
       "name": "Ramazan Orazov",
       "ovr": 61,
       "status": "reserva",
@@ -950,7 +950,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 12,
       "name": "Aske Andresen",
       "ovr": 56,
       "status": "reserva",
@@ -965,12 +965,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 56,
+        "seg": 55,
+        "esp": 63,
+        "ref": 58,
+        "pos": 56,
+        "vel": 31,
         "sta": 22
       },
       "detailedStats": {
@@ -1005,7 +1005,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Oskar Boesen",
       "ovr": 54,
       "status": "reserva",

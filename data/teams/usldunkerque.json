@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Vincent Sasso",
       "ovr": 71,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Gaëtan Courtet",
       "ovr": 68,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 14,
       "name": "Loïc Bessilé",
       "ovr": 66,
       "status": "titular",
@@ -230,7 +230,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 11,
       "name": "Rayan Ghrieb",
       "ovr": 66,
       "status": "titular",
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 1,
       "name": "Ewen Jaouen",
       "ovr": 66,
       "status": "titular",
@@ -300,12 +300,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 63,
+        "esp": 76,
+        "ref": 67,
+        "pos": 65,
+        "vel": 38,
         "sta": 28
       },
       "detailedStats": {
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "Nachon Nsingi",
       "ovr": 66,
       "status": "titular",
@@ -395,7 +395,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 2,
       "name": "Bendjaloud Youssouf",
       "ovr": 66,
       "status": "titular",
@@ -450,7 +450,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 23,
       "name": "Enzo Bardeli",
       "ovr": 65,
       "status": "titular",
@@ -505,7 +505,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Opa Sangante",
       "ovr": 65,
       "status": "titular",
@@ -561,7 +561,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Kay Tejan",
       "ovr": 65,
       "status": "titular",
@@ -673,7 +673,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 27,
       "name": "Maxence Rivera",
       "ovr": 64,
       "status": "reserva",
@@ -728,7 +728,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 8,
       "name": "Naatan Skyttä",
       "ovr": 64,
       "status": "reserva",
@@ -784,7 +784,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 13,
       "name": "Alec Georgen",
       "ovr": 63,
       "status": "reserva",
@@ -895,7 +895,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 24,
       "name": "Junior Senneville",
       "ovr": 61,
       "status": "reserva",
@@ -950,7 +950,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Ludéric Etonde",
       "ovr": 60,
       "status": "reserva",
@@ -1005,7 +1005,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Marco Essimi",
       "ovr": 59,
       "status": "reserva",
@@ -1060,7 +1060,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 18,
       "name": "Guiry Egny",
       "ovr": 58,
       "status": "reserva",
@@ -1115,7 +1115,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 26,
       "name": "Assane N'Doye",
       "ovr": 55,
       "status": "reserva",

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Bruno Xadas",
       "ovr": 73,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Mile Škorić",
       "ovr": 72,
       "status": "titular",
@@ -124,7 +124,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Andrea Compagno",
       "ovr": 70,
       "status": "titular",
@@ -179,7 +179,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 11,
       "name": "Albion Ademi",
       "ovr": 69,
       "status": "titular",
@@ -234,7 +234,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 19,
       "name": "Ba Dun",
       "ovr": 66,
       "status": "titular",
@@ -290,7 +290,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 2,
       "name": "Ming Tian",
       "ovr": 66,
       "status": "titular",
@@ -345,7 +345,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Diogo Silva",
       "ovr": 63,
       "status": "titular",
@@ -401,7 +401,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 5,
       "name": "Guo Hao",
       "ovr": 62,
       "status": "titular",
@@ -456,7 +456,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 8,
       "name": "Wang Qiuming",
       "ovr": 62,
       "status": "titular",
@@ -511,7 +511,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Yu Yang",
       "ovr": 62,
       "status": "titular",
@@ -567,7 +567,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 12,
       "name": "Han Pengfei",
       "ovr": 61,
       "status": "titular",
@@ -623,7 +623,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 1,
       "name": "Fang Jingqi",
       "ovr": 60,
       "status": "reserva",
@@ -638,12 +638,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 61,
+        "esp": 66,
+        "ref": 58,
+        "pos": 61,
+        "vel": 36,
         "sta": 43
       },
       "detailedStats": {
@@ -678,7 +678,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Xie Weijun",
       "ovr": 60,
       "status": "reserva",
@@ -733,7 +733,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 21,
       "name": "Huang Jiahui",
       "ovr": 59,
       "status": "reserva",
@@ -788,7 +788,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 27,
       "name": "Shi Yan",
       "ovr": 59,
       "status": "reserva",
@@ -898,7 +898,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 3,
       "name": "Su Yuanjie",
       "ovr": 58,
       "status": "reserva",
@@ -953,7 +953,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 26,
       "name": "Yang Zihao",
       "ovr": 57,
       "status": "reserva",
@@ -1008,7 +1008,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Wang Xianjun",
       "ovr": 56,
       "status": "reserva",
@@ -1064,7 +1064,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 13,
       "name": "Qian Yumiao",
       "ovr": 54,
       "status": "reserva",
@@ -1119,7 +1119,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 23,
       "name": "Wang Zhenghao",
       "ovr": 53,
       "status": "reserva",
@@ -1174,7 +1174,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Xiao Junlong",
       "ovr": 51,
       "status": "reserva",
@@ -1229,7 +1229,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 28,
       "name": "Li Yuefeng",
       "ovr": 50,
       "status": "reserva",
@@ -1244,12 +1244,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 51,
+        "seg": 53,
+        "esp": 56,
+        "ref": 50,
+        "pos": 48,
+        "vel": 22,
         "sta": 22
       },
       "detailedStats": {
@@ -1284,7 +1284,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 29,
       "name": "Liu Junxian",
       "ovr": 49,
       "status": "reserva",
@@ -1339,7 +1339,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 18,
       "name": "Sun Xuelong",
       "ovr": 49,
       "status": "reserva",
@@ -1394,7 +1394,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 30,
       "name": "Yan Bingliang",
       "ovr": 49,
       "status": "reserva",
@@ -1409,12 +1409,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 46,
+        "seg": 55,
+        "esp": 53,
+        "ref": 50,
+        "pos": 43,
+        "vel": 29,
         "sta": 16
       },
       "detailedStats": {
@@ -1449,7 +1449,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 31,
       "name": "Zhang Xingliang",
       "ovr": 48,
       "status": "reserva",

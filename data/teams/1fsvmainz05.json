@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Nadiem Amiri",
       "ovr": 78,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Jonathan Burkardt",
       "ovr": 76,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Andreas Hanche-Olsen",
       "ovr": 76,
       "status": "titular",
@@ -181,7 +181,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 10,
       "name": "Lee Jae Sung",
       "ovr": 76,
       "status": "titular",
@@ -238,7 +238,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 23,
       "name": "Hong Hyeon Seok",
       "ovr": 75,
       "status": "titular",
@@ -293,7 +293,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Dominik Kohr",
       "ovr": 75,
       "status": "titular",
@@ -352,7 +352,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 1,
       "name": "Robin Zentner",
       "ovr": 75,
       "status": "titular",
@@ -367,12 +367,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 76,
+        "seg": 73,
+        "esp": 87,
+        "ref": 80,
+        "pos": 72,
+        "vel": 65,
         "sta": 29
       },
       "detailedStats": {
@@ -407,7 +407,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Anthony Caci",
       "ovr": 74,
       "status": "titular",
@@ -462,7 +462,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 25,
       "name": "Moritz Jenz",
       "ovr": 74,
       "status": "titular",
@@ -520,7 +520,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 16,
       "name": "Phillipp Mwene",
       "ovr": 74,
       "status": "titular",
@@ -575,7 +575,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 2,
       "name": "Silvan Widmer",
       "ovr": 74,
       "status": "titular",
@@ -630,7 +630,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 13,
       "name": "Danny da Costa",
       "ovr": 73,
       "status": "reserva",
@@ -685,7 +685,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 19,
       "name": "Karim Onisiwo",
       "ovr": 73,
       "status": "reserva",
@@ -740,7 +740,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Stefan Bell",
       "ovr": 72,
       "status": "reserva",
@@ -796,7 +796,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 17,
       "name": "Maxim Leitsch",
       "ovr": 72,
       "status": "reserva",
@@ -852,7 +852,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 30,
       "name": "Aymen Barkok",
       "ovr": 71,
       "status": "reserva",
@@ -909,7 +909,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 12,
       "name": "Daniel Batz",
       "ovr": 71,
       "status": "reserva",
@@ -924,12 +924,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 69,
+        "esp": 81,
+        "ref": 74,
+        "pos": 71,
+        "vel": 33,
         "sta": 29
       },
       "detailedStats": {
@@ -1021,7 +1021,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 20,
       "name": "Armindo Sieb",
       "ovr": 71,
       "status": "reserva",
@@ -1076,7 +1076,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 21,
       "name": "Kaishū Sano",
       "ovr": 68,
       "status": "reserva",
@@ -1131,7 +1131,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 7,
       "name": "Gabriel Vidović",
       "ovr": 68,
       "status": "reserva",
@@ -1186,7 +1186,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Nikolas Veratschnig",
       "ovr": 67,
       "status": "reserva",
@@ -1241,7 +1241,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Nelson Weiper",
       "ovr": 66,
       "status": "reserva",
@@ -1296,7 +1296,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 22,
       "name": "Lasse Rieß",
       "ovr": 63,
       "status": "reserva",
@@ -1311,12 +1311,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 62,
+        "esp": 71,
+        "ref": 64,
+        "pos": 63,
+        "vel": 33,
         "sta": 22
       },
       "detailedStats": {

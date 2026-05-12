@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Christian Benteke",
       "ovr": 74,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Mateusz Klich",
       "ovr": 74,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 2,
       "name": "Aaron Herrera",
       "ovr": 71,
       "status": "titular",
@@ -173,7 +173,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 3,
       "name": "David Schnegg",
       "ovr": 71,
       "status": "titular",
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 16,
       "name": "Pedro Santos",
       "ovr": 70,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 4,
       "name": "Lucas Bartlett",
       "ovr": 68,
       "status": "titular",
@@ -344,7 +344,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Russell Canouse",
       "ovr": 68,
       "status": "titular",
@@ -399,7 +399,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 11,
       "name": "Martín Rodríguez",
       "ovr": 68,
       "status": "titular",
@@ -454,7 +454,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 19,
       "name": "Cristian Dájome",
       "ovr": 67,
       "status": "titular",
@@ -566,7 +566,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 28,
       "name": "Jared Stroud",
       "ovr": 67,
       "status": "titular",
@@ -621,7 +621,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 20,
       "name": "Dominique Badji",
       "ovr": 65,
       "status": "reserva",
@@ -676,7 +676,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 1,
       "name": "Alex Bono",
       "ovr": 65,
       "status": "reserva",
@@ -692,12 +692,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 63,
+        "esp": 74,
+        "ref": 69,
+        "pos": 61,
+        "vel": 35,
         "sta": 39
       },
       "detailedStats": {
@@ -732,7 +732,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 12,
       "name": "Tyler Miller",
       "ovr": 65,
       "status": "reserva",
@@ -747,12 +747,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 64,
+        "esp": 71,
+        "ref": 64,
+        "pos": 66,
+        "vel": 35,
         "sta": 30
       },
       "detailedStats": {
@@ -787,7 +787,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 27,
       "name": "Theodore Ku-DiPietro",
       "ovr": 64,
       "status": "reserva",
@@ -842,7 +842,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 14,
       "name": "Christopher McVey",
       "ovr": 64,
       "status": "reserva",
@@ -898,7 +898,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 21,
       "name": "Matti Peltola",
       "ovr": 64,
       "status": "reserva",
@@ -953,7 +953,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 25,
       "name": "Garrison Tubbs",
       "ovr": 60,
       "status": "reserva",
@@ -1009,7 +1009,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Jacob Murrell",
       "ovr": 57,
       "status": "reserva",
@@ -1064,7 +1064,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 23,
       "name": "Kristian Fletcher",
       "ovr": 56,
       "status": "reserva",
@@ -1119,7 +1119,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 30,
       "name": "Jackson Hopkins",
       "ovr": 56,
       "status": "reserva",
@@ -1174,7 +1174,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Conner Antley",
       "ovr": 54,
       "status": "reserva",
@@ -1229,7 +1229,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Hayden Sargis",
       "ovr": 54,
       "status": "reserva",
@@ -1285,7 +1285,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 29,
       "name": "Matai Akinmboni",
       "ovr": 53,
       "status": "reserva",
@@ -1341,7 +1341,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 31,
       "name": "Nate Crockford",
       "ovr": 49,
       "status": "reserva",
@@ -1356,12 +1356,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 49,
+        "seg": 49,
+        "esp": 52,
+        "ref": 45,
+        "pos": 54,
+        "vel": 16,
         "sta": 21
       },
       "detailedStats": {

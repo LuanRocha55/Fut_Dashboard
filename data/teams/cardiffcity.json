@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Calum Chambers",
       "ovr": 74,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Anwar El Ghazi",
       "ovr": 74,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 2,
       "name": "Perry Ng",
       "ovr": 74,
       "status": "titular",
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Aaron Ramsey",
       "ovr": 74,
       "status": "titular",
@@ -289,7 +289,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Jesper Daland",
       "ovr": 72,
       "status": "titular",
@@ -345,7 +345,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 25,
       "name": "Dimitrios Goutas",
       "ovr": 72,
       "status": "titular",
@@ -405,7 +405,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 1,
       "name": "Ethan Horvath",
       "ovr": 72,
       "status": "titular",
@@ -420,12 +420,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 77,
+        "seg": 68,
+        "esp": 85,
+        "ref": 76,
+        "pos": 67,
+        "vel": 49,
         "sta": 30
       },
       "detailedStats": {
@@ -515,7 +515,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 19,
       "name": "Chris Willock",
       "ovr": 72,
       "status": "titular",
@@ -570,7 +570,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 18,
       "name": "David Turnbull",
       "ovr": 71,
       "status": "titular",
@@ -625,7 +625,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 3,
       "name": "Jamilu Collins",
       "ovr": 70,
       "status": "reserva",
@@ -739,7 +739,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 27,
       "name": "Callum O'Dowda",
       "ovr": 70,
       "status": "reserva",
@@ -794,7 +794,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 20,
       "name": "Joe Ralls",
       "ovr": 70,
       "status": "reserva",
@@ -849,7 +849,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 12,
       "name": "Jak Alnwick",
       "ovr": 69,
       "status": "reserva",
@@ -864,12 +864,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 67,
+        "esp": 77,
+        "ref": 69,
+        "pos": 70,
+        "vel": 53,
         "sta": 41
       },
       "detailedStats": {
@@ -904,7 +904,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 10,
       "name": "Yakou Méïté",
       "ovr": 69,
       "status": "reserva",
@@ -960,7 +960,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Callum Robinson",
       "ovr": 69,
       "status": "reserva",
@@ -1015,7 +1015,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 23,
       "name": "Andy Rinomhota",
       "ovr": 68,
       "status": "reserva",
@@ -1070,7 +1070,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 30,
       "name": "Rubin Colwill",
       "ovr": 67,
       "status": "reserva",
@@ -1125,7 +1125,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Isaak Davies",
       "ovr": 67,
       "status": "reserva",
@@ -1181,7 +1181,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Alex Robertson",
       "ovr": 67,
       "status": "reserva",
@@ -1238,7 +1238,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Kion Etete",
       "ovr": 66,
       "status": "reserva",
@@ -1293,7 +1293,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 28,
       "name": "Ollie Tanner",
       "ovr": 65,
       "status": "reserva",
@@ -1348,7 +1348,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Ryotaro Tsunoda",
       "ovr": 65,
       "status": "reserva",
@@ -1404,7 +1404,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 16,
       "name": "Joel Bagan",
       "ovr": 63,
       "status": "reserva",
@@ -1459,7 +1459,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 31,
       "name": "Cian Ashford",
       "ovr": 58,
       "status": "reserva",
@@ -1514,7 +1514,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 32,
       "name": "Tom Davies",
       "ovr": 57,
       "status": "reserva",
@@ -1569,7 +1569,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 33,
       "name": "Luey Giles",
       "ovr": 53,
       "status": "reserva",
@@ -1624,7 +1624,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 34,
       "name": "Dylan Lawlor",
       "ovr": 52,
       "status": "reserva",
@@ -1680,7 +1680,7 @@
     },
     {
       "id": 31,
-      "number": 31,
+      "number": 35,
       "name": "Jacob Dennis",
       "ovr": 50,
       "status": "reserva",
@@ -1695,12 +1695,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 50,
+        "seg": 50,
+        "esp": 57,
+        "ref": 53,
+        "pos": 47,
+        "vel": 15,
         "sta": 33
       },
       "detailedStats": {
@@ -1735,7 +1735,7 @@
     },
     {
       "id": 32,
-      "number": 32,
+      "number": 36,
       "name": "Matthew Turner",
       "ovr": 50,
       "status": "reserva",
@@ -1750,12 +1750,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 50,
+        "seg": 51,
+        "esp": 57,
+        "ref": 52,
+        "pos": 48,
+        "vel": 27,
         "sta": 26
       },
       "detailedStats": {

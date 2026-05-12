@@ -24,12 +24,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 83,
+        "seg": 79,
+        "esp": 93,
+        "ref": 84,
+        "pos": 76,
+        "vel": 28,
         "sta": 28
       },
       "detailedStats": {
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Federico Baschirotto",
       "ovr": 76,
       "status": "titular",
@@ -123,7 +123,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 2,
       "name": "Frédéric Guilbert",
       "ovr": 75,
       "status": "titular",
@@ -179,7 +179,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Nikola Krstović",
       "ovr": 75,
       "status": "titular",
@@ -289,7 +289,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 3,
       "name": "Antonino Gallo",
       "ovr": 74,
       "status": "titular",
@@ -345,7 +345,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "Nicola Sansone",
       "ovr": 74,
       "status": "titular",
@@ -400,7 +400,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 11,
       "name": "Tete Morente",
       "ovr": 73,
       "status": "titular",
@@ -455,7 +455,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 7,
       "name": "Lameck Banda",
       "ovr": 72,
       "status": "titular",
@@ -510,7 +510,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Kialonda Gaspar",
       "ovr": 72,
       "status": "titular",
@@ -566,7 +566,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 17,
       "name": "Rémi Oudin",
       "ovr": 72,
       "status": "titular",
@@ -621,7 +621,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 8,
       "name": "Joan González",
       "ovr": 71,
       "status": "reserva",
@@ -676,7 +676,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 25,
       "name": "Andy Pelmard",
       "ovr": 71,
       "status": "reserva",
@@ -732,7 +732,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Kevin Bonifazi",
       "ovr": 70,
       "status": "reserva",
@@ -788,7 +788,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 12,
       "name": "Christian Früchtl",
       "ovr": 70,
       "status": "reserva",
@@ -804,12 +804,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 73,
+        "seg": 68,
+        "esp": 80,
+        "ref": 71,
+        "pos": 66,
+        "vel": 23,
         "sta": 19
       },
       "detailedStats": {
@@ -844,7 +844,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 21,
       "name": "Mohamed Kaba",
       "ovr": 70,
       "status": "reserva",
@@ -900,7 +900,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 23,
       "name": "Ylber Ramadani",
       "ovr": 70,
       "status": "reserva",
@@ -957,7 +957,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 30,
       "name": "Filip Marchwiński",
       "ovr": 69,
       "status": "reserva",
@@ -1013,7 +1013,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 18,
       "name": "Þórir Jóhann Helgason",
       "ovr": 68,
       "status": "reserva",
@@ -1124,7 +1124,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 31,
       "name": "Santiago Pierotti",
       "ovr": 68,
       "status": "reserva",
@@ -1234,7 +1234,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Hamza Rafia",
       "ovr": 67,
       "status": "reserva",
@@ -1289,7 +1289,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 13,
       "name": "Mats Lemmens",
       "ovr": 65,
       "status": "reserva",
@@ -1345,7 +1345,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 16,
       "name": "Patrick Dorgu",
       "ovr": 64,
       "status": "reserva",
@@ -1400,7 +1400,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 19,
       "name": "Rares Burnete",
       "ovr": 61,
       "status": "reserva",
@@ -1470,12 +1470,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 65,
+        "esp": 67,
+        "ref": 59,
+        "pos": 60,
+        "vel": 21,
         "sta": 19
       },
       "detailedStats": {
@@ -1580,12 +1580,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 57,
+        "seg": 61,
+        "esp": 61,
+        "ref": 53,
+        "pos": 60,
+        "vel": 32,
         "sta": 22
       },
       "detailedStats": {

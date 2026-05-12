@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 17,
       "name": "Liel Abada",
       "ovr": 74,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Pep Biel",
       "ovr": 74,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 5,
       "name": "Ashley Westwood",
       "ovr": 74,
       "status": "titular",
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 9,
       "name": "Karol Świderski",
       "ovr": 73,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 3,
       "name": "Jere Uronen",
       "ovr": 71,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 2,
       "name": "Nathan Byrne",
       "ovr": 69,
       "status": "titular",
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 21,
       "name": "Júnior Urso",
       "ovr": 68,
       "status": "titular",
@@ -454,7 +454,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 1,
       "name": "Kristijan Kahlina",
       "ovr": 68,
       "status": "titular",
@@ -469,12 +469,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 69,
+        "esp": 76,
+        "ref": 69,
+        "pos": 68,
+        "vel": 21,
         "sta": 24
       },
       "detailedStats": {
@@ -509,7 +509,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Adilson Malanda",
       "ovr": 68,
       "status": "titular",
@@ -565,7 +565,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 7,
       "name": "Kerwin Vargas",
       "ovr": 68,
       "status": "titular",
@@ -620,7 +620,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 8,
       "name": "Brandt Bronico",
       "ovr": 67,
       "status": "reserva",
@@ -675,7 +675,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 23,
       "name": "Djibril Diani",
       "ovr": 67,
       "status": "reserva",
@@ -730,7 +730,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 13,
       "name": "Jaylin Lindsey",
       "ovr": 66,
       "status": "reserva",
@@ -785,7 +785,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 19,
       "name": "Patrick Agyemang",
       "ovr": 65,
       "status": "reserva",
@@ -840,7 +840,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 12,
       "name": "David Bingham",
       "ovr": 65,
       "status": "reserva",
@@ -855,12 +855,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
+        "alc": 68,
+        "seg": 63,
         "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "ref": 67,
+        "pos": 64,
+        "vel": 34,
         "sta": 24
       },
       "detailedStats": {
@@ -895,7 +895,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 25,
       "name": "Andrew Privett",
       "ovr": 65,
       "status": "reserva",
@@ -1009,7 +1009,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 30,
       "name": "Ben Bender",
       "ovr": 64,
       "status": "reserva",
@@ -1119,7 +1119,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 29,
       "name": "Iuri Tavares",
       "ovr": 64,
       "status": "reserva",
@@ -1175,7 +1175,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 16,
       "name": "João Pedro",
       "ovr": 62,
       "status": "reserva",
@@ -1230,7 +1230,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 22,
       "name": "George Marks",
       "ovr": 61,
       "status": "reserva",
@@ -1245,12 +1245,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 64,
+        "esp": 68,
+        "ref": 61,
+        "pos": 63,
+        "vel": 28,
         "sta": 34
       },
       "detailedStats": {
@@ -1285,7 +1285,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 31,
       "name": "Tyger Smalls",
       "ovr": 60,
       "status": "reserva",
@@ -1340,7 +1340,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "Jahlane Forbes",
       "ovr": 59,
       "status": "reserva",
@@ -1395,7 +1395,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 27,
       "name": "Chituru Odunze",
       "ovr": 59,
       "status": "reserva",
@@ -1410,12 +1410,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 59,
+        "seg": 58,
+        "esp": 66,
+        "ref": 60,
+        "pos": 57,
+        "vel": 31,
         "sta": 21
       },
       "detailedStats": {
@@ -1450,7 +1450,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 11,
       "name": "Nicholas Scardina",
       "ovr": 58,
       "status": "reserva",
@@ -1560,7 +1560,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 32,
       "name": "Jack Neeley",
       "ovr": 56,
       "status": "reserva",
@@ -1616,7 +1616,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 33,
       "name": "Brian Romero",
       "ovr": 54,
       "status": "reserva",

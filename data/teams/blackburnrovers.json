@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Todd Cantwell",
       "ovr": 74,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 5,
       "name": "Sondre Tronstad",
       "ovr": 71,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Lewis Baker",
       "ovr": 70,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 2,
       "name": "Callum Brittain",
       "ovr": 70,
       "status": "titular",
@@ -230,7 +230,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Hayden Carter",
       "ovr": 70,
       "status": "titular",
@@ -286,7 +286,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 9,
       "name": "Makhtar Gueye",
       "ovr": 70,
       "status": "titular",
@@ -341,7 +341,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 11,
       "name": "Ryan Hedges",
       "ovr": 70,
       "status": "titular",
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Dominic Hyam",
       "ovr": 70,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 21,
       "name": "Lewis Travis",
       "ovr": 70,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 23,
       "name": "Andreas Weimann",
       "ovr": 70,
       "status": "titular",
@@ -563,7 +563,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 25,
       "name": "Danny Batth",
       "ovr": 69,
       "status": "titular",
@@ -619,7 +619,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 3,
       "name": "Owen Beck",
       "ovr": 69,
       "status": "reserva",
@@ -674,7 +674,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 18,
       "name": "John Buckley",
       "ovr": 69,
       "status": "reserva",
@@ -729,7 +729,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 19,
       "name": "Tyrhys Dolan",
       "ovr": 69,
       "status": "reserva",
@@ -898,7 +898,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 13,
       "name": "Joe Rankin-Costello",
       "ovr": 69,
       "status": "reserva",
@@ -953,7 +953,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 27,
       "name": "Arnór Sigurðsson",
       "ovr": 69,
       "status": "reserva",
@@ -1008,7 +1008,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 20,
       "name": "Scott Wharton",
       "ovr": 69,
       "status": "reserva",
@@ -1064,7 +1064,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 1,
       "name": "Aynsley Pears",
       "ovr": 68,
       "status": "reserva",
@@ -1079,12 +1079,12 @@
         "Far Reach"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 64,
+        "esp": 79,
+        "ref": 72,
+        "pos": 65,
+        "vel": 44,
         "sta": 16
       },
       "detailedStats": {
@@ -1119,7 +1119,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Yuki Ohashi",
       "ovr": 66,
       "status": "reserva",
@@ -1174,7 +1174,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Harry Leonard",
       "ovr": 65,
       "status": "reserva",
@@ -1229,7 +1229,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Zak Gilsenan",
       "ovr": 62,
       "status": "reserva",
@@ -1284,7 +1284,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 12,
       "name": "Joe Hilton",
       "ovr": 59,
       "status": "reserva",
@@ -1300,12 +1300,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 57,
+        "seg": 60,
+        "esp": 67,
+        "ref": 64,
+        "pos": 54,
+        "vel": 27,
         "sta": 26
       },
       "detailedStats": {
@@ -1340,7 +1340,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 28,
       "name": "Jordan Eastham",
       "ovr": 58,
       "status": "reserva",
@@ -1355,12 +1355,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 57,
+        "esp": 66,
+        "ref": 60,
+        "pos": 56,
+        "vel": 23,
         "sta": 25
       },
       "detailedStats": {
@@ -1395,7 +1395,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Patrick Gamble",
       "ovr": 58,
       "status": "reserva",
@@ -1451,7 +1451,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 30,
       "name": "James Edmondson",
       "ovr": 55,
       "status": "reserva",

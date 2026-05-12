@@ -23,12 +23,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 74,
+        "esp": 82,
+        "ref": 76,
+        "pos": 73,
+        "vel": 36,
         "sta": 34
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 17,
       "name": "Ainhoa Marín",
       "ovr": 73,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Millene Cabral",
       "ovr": 72,
       "status": "titular",
@@ -173,7 +173,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 7,
       "name": "Bárbara Latorre",
       "ovr": 72,
       "status": "titular",
@@ -228,7 +228,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 10,
       "name": "Ana De Teresa",
       "ovr": 69,
       "status": "titular",
@@ -283,7 +283,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Eva Dios",
       "ovr": 69,
       "status": "titular",
@@ -338,7 +338,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 4,
       "name": "Raquel García",
       "ovr": 69,
       "status": "titular",
@@ -394,7 +394,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 5,
       "name": "Lucia Martínez",
       "ovr": 69,
       "status": "titular",
@@ -449,7 +449,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "Paula Monteagudo",
       "ovr": 69,
       "status": "titular",
@@ -504,7 +504,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 21,
       "name": "Henar Muiña",
       "ovr": 69,
       "status": "titular",
@@ -629,12 +629,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 60,
+        "esp": 76,
+        "ref": 69,
+        "pos": 70,
+        "vel": 32,
         "sta": 24
       },
       "detailedStats": {
@@ -669,7 +669,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 16,
       "name": "Francisca Lara",
       "ovr": 67,
       "status": "reserva",
@@ -724,7 +724,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 26,
       "name": "Samara Ortiz",
       "ovr": 65,
       "status": "reserva",
@@ -779,7 +779,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 19,
       "name": "Oriana Altuve",
       "ovr": 63,
       "status": "reserva",
@@ -834,7 +834,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 23,
       "name": "Paula Gutiérrez",
       "ovr": 63,
       "status": "reserva",
@@ -889,7 +889,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 18,
       "name": "Carlota Sánchez",
       "ovr": 63,
       "status": "reserva",
@@ -944,7 +944,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Ayaka Noguchi",
       "ovr": 61,
       "status": "reserva",
@@ -999,7 +999,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 30,
       "name": "Olaya Rodríguez",
       "ovr": 60,
       "status": "reserva",
@@ -1054,7 +1054,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Carmen Carballada",
       "ovr": 58,
       "status": "reserva",

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Felipe Silva",
       "ovr": 73,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 7,
       "name": "Ai Kesen",
       "ovr": 72,
       "status": "titular",
@@ -126,7 +126,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Chow Tim",
       "ovr": 72,
       "status": "titular",
@@ -243,7 +243,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 17,
       "name": "Rômulo",
       "ovr": 72,
       "status": "titular",
@@ -301,7 +301,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 2,
       "name": "Tang Xin",
       "ovr": 68,
       "status": "titular",
@@ -356,7 +356,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 13,
       "name": "Tang Miao",
       "ovr": 68,
       "status": "titular",
@@ -412,7 +412,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 11,
       "name": "Wei Shihao",
       "ovr": 68,
       "status": "titular",
@@ -468,7 +468,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 29,
       "name": "Manuel Palacios",
       "ovr": 66,
       "status": "titular",
@@ -524,7 +524,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 1,
       "name": "Jian Tao",
       "ovr": 64,
       "status": "titular",
@@ -539,12 +539,12 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 67,
+        "esp": 72,
+        "ref": 69,
+        "pos": 64,
+        "vel": 26,
         "sta": 23
       },
       "detailedStats": {
@@ -579,7 +579,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 18,
       "name": "Muzepper Mirahmetjan",
       "ovr": 64,
       "status": "titular",
@@ -636,7 +636,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 20,
       "name": "Yan Dinghao",
       "ovr": 64,
       "status": "reserva",
@@ -692,7 +692,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 14,
       "name": "Yang Shuai",
       "ovr": 64,
       "status": "reserva",
@@ -749,7 +749,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 3,
       "name": "Yahav Gurfinkel",
       "ovr": 62,
       "status": "reserva",
@@ -804,7 +804,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "Liu Tao",
       "ovr": 62,
       "status": "reserva",
@@ -860,7 +860,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 12,
       "name": "Zhang Yan",
       "ovr": 62,
       "status": "reserva",
@@ -875,11 +875,11 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 63,
+        "seg": 58,
+        "esp": 72,
+        "ref": 66,
+        "pos": 59,
         "vel": 40,
         "sta": 35
       },
@@ -915,7 +915,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 19,
       "name": "Li Yang",
       "ovr": 61,
       "status": "reserva",
@@ -971,7 +971,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Yang Yiming",
       "ovr": 61,
       "status": "reserva",
@@ -1027,7 +1027,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Feng Zhuoyi",
       "ovr": 60,
       "status": "reserva",
@@ -1082,7 +1082,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 23,
       "name": "Gan Chao",
       "ovr": 59,
       "status": "reserva",
@@ -1137,7 +1137,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Dong Yanfeng",
       "ovr": 58,
       "status": "reserva",
@@ -1193,7 +1193,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Geng Xiaofeng",
       "ovr": 58,
       "status": "reserva",
@@ -1208,12 +1208,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 59,
+        "seg": 62,
+        "esp": 64,
+        "ref": 56,
+        "pos": 52,
+        "vel": 49,
         "sta": 35
       },
       "detailedStats": {
@@ -1248,7 +1248,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 27,
       "name": "Yang Fan",
       "ovr": 57,
       "status": "reserva",
@@ -1304,7 +1304,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 28,
       "name": "Mutellip Iminqari",
       "ovr": 56,
       "status": "reserva",
@@ -1359,7 +1359,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 10,
       "name": "Tang Chuang",
       "ovr": 54,
       "status": "reserva",
@@ -1414,7 +1414,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 16,
       "name": "Hu Hetao",
       "ovr": 52,
       "status": "reserva",
@@ -1469,7 +1469,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 30,
       "name": "Ran Weifeng",
       "ovr": 50,
       "status": "reserva",
@@ -1484,12 +1484,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 51,
+        "seg": 50,
+        "esp": 57,
+        "ref": 52,
+        "pos": 48,
+        "vel": 28,
         "sta": 26
       },
       "detailedStats": {
@@ -1524,7 +1524,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 31,
       "name": "Chen Guoliang",
       "ovr": 49,
       "status": "reserva",
@@ -1580,7 +1580,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 32,
       "name": "Qeyser Ezimet",
       "ovr": 48,
       "status": "reserva",
@@ -1635,7 +1635,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 5,
       "name": "Wu Lei",
       "ovr": 48,
       "status": "reserva",
@@ -1690,7 +1690,7 @@
     },
     {
       "id": 31,
-      "number": 31,
+      "number": 33,
       "name": "Liao Rongxiang",
       "ovr": 47,
       "status": "reserva",

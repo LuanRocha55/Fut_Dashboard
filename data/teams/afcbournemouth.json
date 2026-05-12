@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Evanilson",
       "ovr": 80,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Kepa",
       "ovr": 79,
       "status": "titular",
@@ -78,12 +78,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 78,
+        "seg": 77,
+        "esp": 89,
+        "ref": 82,
+        "pos": 77,
+        "vel": 42,
         "sta": 35
       },
       "detailedStats": {
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Marcos Senesi",
       "ovr": 78,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 10,
       "name": "Enes Ünal",
       "ovr": 78,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Philip Billing",
       "ovr": 77,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 21,
       "name": "Lewis Cook",
       "ovr": 77,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Milos Kerkez",
       "ovr": 77,
       "status": "titular",
@@ -455,7 +455,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 23,
       "name": "Justin Kluivert",
       "ovr": 77,
       "status": "titular",
@@ -511,7 +511,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 11,
       "name": "Luis Sinisterra",
       "ovr": 77,
       "status": "titular",
@@ -569,7 +569,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 14,
       "name": "Illia Zabarnyi",
       "ovr": 77,
       "status": "titular",
@@ -626,7 +626,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 18,
       "name": "Ryan Christie",
       "ovr": 76,
       "status": "reserva",
@@ -681,7 +681,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 19,
       "name": "Antoine Semenyo",
       "ovr": 76,
       "status": "reserva",
@@ -736,7 +736,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 27,
       "name": "Marcus Tavernier",
       "ovr": 76,
       "status": "reserva",
@@ -791,7 +791,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 2,
       "name": "Julian Araujo",
       "ovr": 74,
       "status": "reserva",
@@ -847,7 +847,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 28,
       "name": "David Brooks",
       "ovr": 74,
       "status": "reserva",
@@ -960,7 +960,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Alex Scott",
       "ovr": 74,
       "status": "reserva",
@@ -1016,7 +1016,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 13,
       "name": "Max Aarons",
       "ovr": 73,
       "status": "reserva",
@@ -1073,7 +1073,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 24,
       "name": "Adam Smith",
       "ovr": 73,
       "status": "reserva",
@@ -1128,7 +1128,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 12,
       "name": "Mark Travers",
       "ovr": 73,
       "status": "reserva",
@@ -1143,12 +1143,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 73,
+        "seg": 69,
+        "esp": 83,
+        "ref": 76,
+        "pos": 73,
+        "vel": 38,
         "sta": 30
       },
       "detailedStats": {
@@ -1198,12 +1198,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 65,
+        "esp": 78,
+        "ref": 73,
+        "pos": 64,
+        "vel": 52,
         "sta": 45
       },
       "detailedStats": {
@@ -1238,7 +1238,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 25,
       "name": "James Hill",
       "ovr": 69,
       "status": "reserva",
@@ -1294,7 +1294,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Dean Huijsen",
       "ovr": 68,
       "status": "reserva",
@@ -1350,7 +1350,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Will Dennis",
       "ovr": 67,
       "status": "reserva",
@@ -1365,11 +1365,11 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 70,
+        "seg": 65,
+        "esp": 77,
+        "ref": 69,
+        "pos": 66,
         "vel": 40,
         "sta": 28
       },
@@ -1405,7 +1405,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 30,
       "name": "Owen Bevan",
       "ovr": 62,
       "status": "reserva",
@@ -1461,7 +1461,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 31,
       "name": "Maxwell Kinsey",
       "ovr": 57,
       "status": "reserva",
@@ -1517,7 +1517,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 32,
       "name": "Callan McKenna",
       "ovr": 55,
       "status": "reserva",
@@ -1532,12 +1532,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 53,
+        "seg": 54,
+        "esp": 60,
+        "ref": 55,
+        "pos": 56,
+        "vel": 33,
         "sta": 27
       },
       "detailedStats": {

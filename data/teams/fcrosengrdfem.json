@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Olivia Schough",
       "ovr": 82,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Caroline Seger",
       "ovr": 81,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Olivia Holdt",
       "ovr": 77,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 2,
       "name": "Jessica Wik",
       "ovr": 76,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 19,
       "name": "Emilia Larsson",
       "ovr": 75,
       "status": "titular",
@@ -286,7 +286,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 4,
       "name": "Guðrún Arnardóttir",
       "ovr": 73,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 28,
       "name": "Ria Öling",
       "ovr": 73,
       "status": "titular",
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Emma Berglund",
       "ovr": 72,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 18,
       "name": "Rebecca Knaak",
       "ovr": 72,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 1,
       "name": "Angel Mukasa",
       "ovr": 72,
       "status": "titular",
@@ -523,12 +523,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 71,
+        "esp": 78,
+        "ref": 71,
+        "pos": 72,
+        "vel": 30,
         "sta": 35
       },
       "detailedStats": {
@@ -563,7 +563,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 10,
       "name": "Momoko Tanikawa",
       "ovr": 72,
       "status": "titular",
@@ -618,7 +618,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 5,
       "name": "Halimatu Ayinde",
       "ovr": 71,
       "status": "reserva",
@@ -673,7 +673,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Emma Jansson",
       "ovr": 71,
       "status": "reserva",
@@ -728,7 +728,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Mai Kadowaki",
       "ovr": 71,
       "status": "reserva",
@@ -783,7 +783,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 16,
       "name": "Hanna Andersson",
       "ovr": 70,
       "status": "reserva",
@@ -838,7 +838,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 12,
       "name": "Eartha Cumings",
       "ovr": 69,
       "status": "reserva",
@@ -853,12 +853,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 65,
+        "esp": 77,
+        "ref": 70,
+        "pos": 68,
+        "vel": 45,
         "sta": 36
       },
       "detailedStats": {
@@ -893,7 +893,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 27,
       "name": "Anni Hartikainen",
       "ovr": 68,
       "status": "reserva",
@@ -948,7 +948,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 13,
       "name": "Mikaela Stojanovska",
       "ovr": 68,
       "status": "reserva",
@@ -1003,7 +1003,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Disa Hellwig",
       "ovr": 67,
       "status": "reserva",
@@ -1018,12 +1018,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 67,
+        "esp": 73,
+        "ref": 65,
+        "pos": 64,
+        "vel": 20,
         "sta": 27
       },
       "detailedStats": {
@@ -1058,7 +1058,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 25,
       "name": "Jo-Anne Cronquist",
       "ovr": 66,
       "status": "reserva",

@@ -23,12 +23,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 77,
+        "seg": 72,
+        "esp": 88,
+        "ref": 82,
+        "pos": 77,
+        "vel": 24,
         "sta": 19
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Mohammed Abu Fani",
       "ovr": 76,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Barnabás Varga",
       "ovr": 75,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 10,
       "name": "Kristoffer Zachariassen",
       "ovr": 75,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 3,
       "name": "Cristian Ramírez",
       "ovr": 74,
       "status": "titular",
@@ -284,7 +284,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 17,
       "name": "Adama Traoré",
       "ovr": 74,
       "status": "titular",
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 19,
       "name": "Aleksandar Pešić",
       "ovr": 73,
       "status": "titular",
@@ -395,7 +395,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 23,
       "name": "Mohamed Ali Ben Romdhane",
       "ovr": 72,
       "status": "titular",
@@ -452,7 +452,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 4,
       "name": "Ibrahim Cissé",
       "ovr": 72,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 5,
       "name": "Philippe Rommens",
       "ovr": 72,
       "status": "titular",
@@ -565,7 +565,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 21,
       "name": "Habib Maïga",
       "ovr": 71,
       "status": "titular",
@@ -620,7 +620,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 2,
       "name": "Endre Botka",
       "ovr": 70,
       "status": "reserva",
@@ -730,7 +730,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 16,
       "name": "Eldar Ćivić",
       "ovr": 69,
       "status": "reserva",
@@ -785,7 +785,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 14,
       "name": "Stefan Gartenmann",
       "ovr": 69,
       "status": "reserva",
@@ -843,7 +843,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 24,
       "name": "Cebrail Makreckis",
       "ovr": 69,
       "status": "reserva",
@@ -898,7 +898,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 25,
       "name": "Raul Gustavo",
       "ovr": 69,
       "status": "reserva",
@@ -1010,7 +1010,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 30,
       "name": "Kady",
       "ovr": 68,
       "status": "reserva",
@@ -1120,7 +1120,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Anderson Esiti",
       "ovr": 67,
       "status": "reserva",
@@ -1175,7 +1175,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 11,
       "name": "Oluwatosin Kehinde",
       "ovr": 67,
       "status": "reserva",
@@ -1230,7 +1230,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Mats Knoester",
       "ovr": 67,
       "status": "reserva",
@@ -1286,7 +1286,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 27,
       "name": "Lóránd Pászka",
       "ovr": 67,
       "status": "reserva",
@@ -1341,7 +1341,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 28,
       "name": "Fortune Bassey",
       "ovr": 66,
       "status": "reserva",
@@ -1398,7 +1398,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Owusu Kwabena",
       "ovr": 66,
       "status": "reserva",
@@ -1453,7 +1453,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 12,
       "name": "Ádám Varga",
       "ovr": 66,
       "status": "reserva",
@@ -1468,12 +1468,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 64,
+        "esp": 76,
+        "ref": 66,
+        "pos": 65,
+        "vel": 22,
         "sta": 26
       },
       "detailedStats": {
@@ -1508,7 +1508,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 31,
       "name": "Zsombor Gruber",
       "ovr": 64,
       "status": "reserva",
@@ -1563,7 +1563,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 32,
       "name": "Bálint Katona",
       "ovr": 63,
       "status": "reserva",
@@ -1618,7 +1618,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 33,
       "name": "Isaac Pappoe",
       "ovr": 62,
       "status": "reserva",
@@ -1673,7 +1673,7 @@
     },
     {
       "id": 31,
-      "number": 31,
+      "number": 34,
       "name": "Gergő Szécsi",
       "ovr": 60,
       "status": "reserva",
@@ -1688,12 +1688,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 59,
+        "seg": 60,
+        "esp": 67,
+        "ref": 61,
+        "pos": 59,
+        "vel": 26,
         "sta": 17
       },
       "detailedStats": {
@@ -1728,7 +1728,7 @@
     },
     {
       "id": 32,
-      "number": 32,
+      "number": 35,
       "name": "Alex Tóth",
       "ovr": 60,
       "status": "reserva",

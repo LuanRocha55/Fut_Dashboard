@@ -23,12 +23,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
+        "alc": 77,
         "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "esp": 87,
+        "ref": 80,
+        "pos": 76,
+        "vel": 38,
         "sta": 31
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Oscar Gloukh",
       "ovr": 76,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Oumar Solet",
       "ovr": 76,
       "status": "titular",
@@ -180,7 +180,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 12,
       "name": "Alexander Schlager",
       "ovr": 74,
       "status": "titular",
@@ -195,12 +195,12 @@
         "Far Reach"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 73,
+        "seg": 72,
+        "esp": 83,
+        "ref": 76,
+        "pos": 73,
+        "vel": 47,
         "sta": 24
       },
       "detailedStats": {
@@ -235,7 +235,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 8,
       "name": "Nicolás Capaldo",
       "ovr": 73,
       "status": "titular",
@@ -290,7 +290,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 2,
       "name": "Amar Dedić",
       "ovr": 73,
       "status": "titular",
@@ -345,7 +345,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 9,
       "name": "Fernando",
       "ovr": 73,
       "status": "titular",
@@ -400,7 +400,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 5,
       "name": "Lucas Gourna-Douath",
       "ovr": 73,
       "status": "titular",
@@ -455,7 +455,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 18,
       "name": "Maurits Kjaergaard",
       "ovr": 73,
       "status": "titular",
@@ -512,7 +512,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 19,
       "name": "Karim Konaté",
       "ovr": 73,
       "status": "titular",
@@ -567,7 +567,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 14,
       "name": "Kamil Piątkowski",
       "ovr": 73,
       "status": "titular",
@@ -624,7 +624,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 21,
       "name": "Stefan Bajcetic",
       "ovr": 72,
       "status": "reserva",
@@ -679,7 +679,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Mads Bidstrup",
       "ovr": 71,
       "status": "reserva",
@@ -735,7 +735,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 3,
       "name": "Aleksa Terzić",
       "ovr": 71,
       "status": "reserva",
@@ -790,7 +790,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "Samson Baidoo",
       "ovr": 69,
       "status": "reserva",
@@ -901,7 +901,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 26,
       "name": "Daouda Guindo",
       "ovr": 67,
       "status": "reserva",
@@ -956,7 +956,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 22,
       "name": "Petar Ratkov",
       "ovr": 67,
       "status": "reserva",
@@ -1011,7 +1011,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 23,
       "name": "Mamady Diambou",
       "ovr": 65,
       "status": "reserva",
@@ -1066,7 +1066,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 24,
       "name": "Leandro Morgalla",
       "ovr": 65,
       "status": "reserva",
@@ -1123,7 +1123,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 27,
       "name": "Bryan Okoh",
       "ovr": 65,
       "status": "reserva",
@@ -1179,7 +1179,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 28,
       "name": "Samson Okikiola Tijani",
       "ovr": 65,
       "status": "reserva",
@@ -1234,7 +1234,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 29,
       "name": "Hendry Blank",
       "ovr": 64,
       "status": "reserva",
@@ -1290,7 +1290,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 30,
       "name": "Raphael Hofer",
       "ovr": 64,
       "status": "reserva",
@@ -1347,7 +1347,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 31,
       "name": "Bobby Clark",
       "ovr": 62,
       "status": "reserva",
@@ -1402,7 +1402,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 32,
       "name": "Adam Daghim",
       "ovr": 62,
       "status": "reserva",
@@ -1458,7 +1458,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 33,
       "name": "Moussa Yeo",
       "ovr": 62,
       "status": "reserva",
@@ -1513,7 +1513,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 34,
       "name": "Takumu Kawamura",
       "ovr": 61,
       "status": "reserva",

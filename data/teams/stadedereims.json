@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Junya Ito",
       "ovr": 78,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Teddy Teuma",
       "ovr": 78,
       "status": "titular",
@@ -123,7 +123,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Emmanuel Agbadou",
       "ovr": 77,
       "status": "titular",
@@ -182,7 +182,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Yehvann Diouf",
       "ovr": 77,
       "status": "titular",
@@ -198,12 +198,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
+        "alc": 77,
         "seg": 75,
-        "esp": 75,
-        "ref": 75,
+        "esp": 86,
+        "ref": 78,
         "pos": 75,
-        "vel": 40,
+        "vel": 44,
         "sta": 44
       },
       "detailedStats": {
@@ -238,7 +238,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 18,
       "name": "Marshall Munetsi",
       "ovr": 76,
       "status": "titular",
@@ -293,7 +293,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Cédric Kipré",
       "ovr": 75,
       "status": "titular",
@@ -352,7 +352,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 19,
       "name": "Aurélio Buta",
       "ovr": 75,
       "status": "titular",
@@ -407,7 +407,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Akieme",
       "ovr": 74,
       "status": "titular",
@@ -462,7 +462,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 27,
       "name": "Mohamed Daramy",
       "ovr": 74,
       "status": "titular",
@@ -576,7 +576,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 25,
       "name": "Joseph Okumu",
       "ovr": 74,
       "status": "titular",
@@ -634,7 +634,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 16,
       "name": "Thibault De Smet",
       "ovr": 73,
       "status": "reserva",
@@ -689,7 +689,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 23,
       "name": "Reda Khadra",
       "ovr": 73,
       "status": "reserva",
@@ -744,7 +744,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 5,
       "name": "Gabriel Moscardo",
       "ovr": 73,
       "status": "reserva",
@@ -799,7 +799,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 9,
       "name": "Oumar Diakité",
       "ovr": 72,
       "status": "reserva",
@@ -854,7 +854,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 2,
       "name": "Maxime Busi",
       "ovr": 70,
       "status": "reserva",
@@ -909,7 +909,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 21,
       "name": "Valentin Atangana",
       "ovr": 68,
       "status": "reserva",
@@ -964,7 +964,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 12,
       "name": "Alexandre Olliero",
       "ovr": 68,
       "status": "reserva",
@@ -979,12 +979,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 63,
+        "esp": 77,
+        "ref": 70,
+        "pos": 67,
+        "vel": 45,
         "sta": 23
       },
       "detailedStats": {
@@ -1019,7 +1019,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 20,
       "name": "Amine Salama",
       "ovr": 67,
       "status": "reserva",
@@ -1074,7 +1074,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Martin Adeline",
       "ovr": 66,
       "status": "reserva",
@@ -1129,7 +1129,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Ludovic Butelle",
       "ovr": 66,
       "status": "reserva",
@@ -1144,12 +1144,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 68,
+        "esp": 72,
+        "ref": 65,
+        "pos": 69,
+        "vel": 33,
         "sta": 28
       },
       "detailedStats": {
@@ -1184,7 +1184,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Amadou Koné",
       "ovr": 65,
       "status": "reserva",
@@ -1239,7 +1239,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 28,
       "name": "Adama Bojang",
       "ovr": 64,
       "status": "reserva",
@@ -1294,7 +1294,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 29,
       "name": "Mamadou Diakhon",
       "ovr": 64,
       "status": "reserva",

@@ -25,12 +25,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "alc": 71,
+        "seg": 69,
+        "esp": 81,
         "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "pos": 71,
+        "vel": 64,
         "sta": 30
       },
       "detailedStats": {
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Johan Hove",
       "ovr": 69,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 2,
       "name": "Leandro Bacuna",
       "ovr": 68,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Thijs Oosting",
       "ovr": 68,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Marvin Peersman",
       "ovr": 68,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 12,
       "name": "Hidde Jurjus",
       "ovr": 67,
       "status": "titular",
@@ -302,12 +302,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 62,
+        "esp": 76,
+        "ref": 69,
+        "pos": 65,
+        "vel": 39,
         "sta": 45
       },
       "detailedStats": {
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "Romano Postema",
       "ovr": 67,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Marco Rente",
       "ovr": 67,
       "status": "titular",
@@ -454,7 +454,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 19,
       "name": "Kevin van Veen",
       "ovr": 67,
       "status": "titular",
@@ -509,7 +509,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 20,
       "name": "Florian Krüger",
       "ovr": 66,
       "status": "titular",
@@ -620,7 +620,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 5,
       "name": "Joey Pelupessy",
       "ovr": 66,
       "status": "reserva",
@@ -675,7 +675,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 25,
       "name": "Thijmen Blokzijl",
       "ovr": 65,
       "status": "reserva",
@@ -731,7 +731,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 28,
       "name": "Jorg Schreuders",
       "ovr": 65,
       "status": "reserva",
@@ -786,7 +786,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 27,
       "name": "Luciano Valente",
       "ovr": 65,
       "status": "reserva",
@@ -951,7 +951,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 3,
       "name": "Wouter Prins",
       "ovr": 63,
       "status": "reserva",
@@ -1006,7 +1006,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Tika de Jonge",
       "ovr": 62,
       "status": "reserva",
@@ -1061,7 +1061,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 26,
       "name": "Nordin Musampa",
       "ovr": 62,
       "status": "reserva",
@@ -1116,7 +1116,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Noam Emeran",
       "ovr": 61,
       "status": "reserva",
@@ -1171,7 +1171,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Fofin Turay",
       "ovr": 61,
       "status": "reserva",
@@ -1226,7 +1226,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Finn Stam",
       "ovr": 60,
       "status": "reserva",
@@ -1282,7 +1282,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 29,
       "name": "Jasper Meijster",
       "ovr": 57,
       "status": "reserva",
@@ -1297,12 +1297,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 55,
+        "seg": 57,
+        "esp": 62,
+        "ref": 56,
+        "pos": 57,
+        "vel": 19,
         "sta": 17
       },
       "detailedStats": {

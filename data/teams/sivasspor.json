@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Rey Manaj",
       "ovr": 76,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 7,
       "name": "Queensy Menig",
       "ovr": 69,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Achilleas Poungouras",
       "ovr": 69,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 11,
       "name": "Emrah Başsan",
       "ovr": 68,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 8,
       "name": "Charilaos Charisis",
       "ovr": 68,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 10,
       "name": "Alex Pritchard",
       "ovr": 68,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Uroš Radaković",
       "ovr": 67,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 1,
       "name": "Ali Şaşal Vural",
       "ovr": 67,
       "status": "titular",
@@ -414,12 +414,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 66,
+        "esp": 76,
+        "ref": 70,
+        "pos": 67,
+        "vel": 44,
         "sta": 26
       },
       "detailedStats": {
@@ -454,7 +454,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "Uğur Çiftçi",
       "ovr": 66,
       "status": "titular",
@@ -509,7 +509,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 12,
       "name": "Đorđe Nikolić",
       "ovr": 65,
       "status": "titular",
@@ -524,12 +524,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 66,
+        "esp": 73,
+        "ref": 67,
+        "pos": 62,
+        "vel": 34,
         "sta": 31
       },
       "detailedStats": {
@@ -564,7 +564,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 2,
       "name": "Alaaddin Okumuş",
       "ovr": 64,
       "status": "titular",
@@ -619,7 +619,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 13,
       "name": "Murat Paluli",
       "ovr": 64,
       "status": "reserva",
@@ -674,7 +674,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 5,
       "name": "Jan Biegański",
       "ovr": 62,
       "status": "reserva",
@@ -729,7 +729,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 21,
       "name": "Özkan Yiğiter",
       "ovr": 59,
       "status": "reserva",
@@ -784,7 +784,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "Mehmet Albayrak",
       "ovr": 54,
       "status": "reserva",

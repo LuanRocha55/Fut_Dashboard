@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Cameron McJannet",
       "ovr": 63,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Danny Rose",
       "ovr": 63,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 14,
       "name": "Doug Tharme",
       "ovr": 63,
       "status": "titular",
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Curtis Thompson",
       "ovr": 63,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 3,
       "name": "Denver Hume",
       "ovr": 62,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 18,
       "name": "George McEachran",
       "ovr": 62,
       "status": "titular",
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 25,
       "name": "Harvey Rodgers",
       "ovr": 62,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 2,
       "name": "Tyrell Warren",
       "ovr": 62,
       "status": "titular",
@@ -564,7 +564,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 20,
       "name": "Jordan Davies",
       "ovr": 61,
       "status": "titular",
@@ -620,7 +620,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 11,
       "name": "Charles Vernam",
       "ovr": 61,
       "status": "reserva",
@@ -675,7 +675,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 23,
       "name": "Callum Ainley",
       "ovr": 60,
       "status": "reserva",
@@ -730,7 +730,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 1,
       "name": "Jake Eastwood",
       "ovr": 60,
       "status": "reserva",
@@ -745,12 +745,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 56,
+        "esp": 69,
+        "ref": 62,
+        "pos": 57,
+        "vel": 35,
         "sta": 33
       },
       "detailedStats": {
@@ -785,7 +785,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 19,
       "name": "Donovan Wilson",
       "ovr": 59,
       "status": "reserva",
@@ -840,7 +840,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 12,
       "name": "Jordan Wright",
       "ovr": 59,
       "status": "reserva",
@@ -855,12 +855,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 57,
+        "esp": 68,
+        "ref": 62,
+        "pos": 57,
+        "vel": 22,
         "sta": 24
       },
       "detailedStats": {
@@ -950,7 +950,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Rekeil Pyke",
       "ovr": 58,
       "status": "reserva",
@@ -1005,7 +1005,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 16,
       "name": "Matty Carson",
       "ovr": 57,
       "status": "reserva",
@@ -1060,7 +1060,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Evan Khouri",
       "ovr": 57,
       "status": "reserva",

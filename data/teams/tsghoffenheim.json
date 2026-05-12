@@ -24,12 +24,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 81,
+        "seg": 80,
+        "esp": 91,
+        "ref": 83,
+        "pos": 79,
+        "vel": 41,
         "sta": 39
       },
       "detailedStats": {
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Andrej Kramarić",
       "ovr": 81,
       "status": "titular",
@@ -125,7 +125,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "Mergim Berisha",
       "ovr": 78,
       "status": "titular",
@@ -180,7 +180,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Anton Stach",
       "ovr": 77,
       "status": "titular",
@@ -240,7 +240,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 19,
       "name": "Ihlas Bebou",
       "ovr": 76,
       "status": "titular",
@@ -296,7 +296,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 20,
       "name": "Adam Hložek",
       "ovr": 76,
       "status": "titular",
@@ -351,7 +351,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 4,
       "name": "Ozan Kabak",
       "ovr": 76,
       "status": "titular",
@@ -410,7 +410,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 2,
       "name": "Pavel Kadeřábek",
       "ovr": 76,
       "status": "titular",
@@ -465,7 +465,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 18,
       "name": "Grischa Prömel",
       "ovr": 76,
       "status": "titular",
@@ -520,7 +520,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 11,
       "name": "Marius Bülter",
       "ovr": 75,
       "status": "titular",
@@ -576,7 +576,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 14,
       "name": "Kevin Akpoguma",
       "ovr": 74,
       "status": "titular",
@@ -633,7 +633,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 5,
       "name": "Dennis Geiger",
       "ovr": 74,
       "status": "reserva",
@@ -688,7 +688,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 25,
       "name": "Florian Grillitsch",
       "ovr": 74,
       "status": "reserva",
@@ -745,7 +745,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Robin Hranáč",
       "ovr": 74,
       "status": "reserva",
@@ -802,7 +802,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 16,
       "name": "Alexander Prass",
       "ovr": 74,
       "status": "reserva",
@@ -860,7 +860,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 21,
       "name": "Diadié Samassékou",
       "ovr": 74,
       "status": "reserva",
@@ -971,7 +971,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 13,
       "name": "Valentin Gendrey",
       "ovr": 73,
       "status": "reserva",
@@ -1027,7 +1027,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 3,
       "name": "David Jurásek",
       "ovr": 73,
       "status": "reserva",
@@ -1085,7 +1085,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 27,
       "name": "Jacob Bruun Larsen",
       "ovr": 73,
       "status": "reserva",
@@ -1140,7 +1140,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Haris Tabaković",
       "ovr": 73,
       "status": "reserva",
@@ -1197,7 +1197,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Stanley Nsoki",
       "ovr": 72,
       "status": "reserva",
@@ -1253,7 +1253,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Finn Ole Becker",
       "ovr": 71,
       "status": "reserva",
@@ -1308,7 +1308,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Marco John",
       "ovr": 70,
       "status": "reserva",
@@ -1364,7 +1364,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 30,
       "name": "Umut Tohumcu",
       "ovr": 70,
       "status": "reserva",
@@ -1419,7 +1419,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 28,
       "name": "Tom Bischof",
       "ovr": 68,
       "status": "reserva",
@@ -1474,7 +1474,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 12,
       "name": "Luca Philipp",
       "ovr": 65,
       "status": "reserva",
@@ -1489,12 +1489,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 62,
+        "esp": 72,
+        "ref": 67,
+        "pos": 67,
+        "vel": 29,
         "sta": 20
       },
       "detailedStats": {
@@ -1529,7 +1529,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 29,
       "name": "Tim Drexler",
       "ovr": 63,
       "status": "reserva",
@@ -1585,7 +1585,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 31,
       "name": "Max Moerstedt",
       "ovr": 60,
       "status": "reserva",
@@ -1640,7 +1640,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 32,
       "name": "Lúkas Petersson",
       "ovr": 58,
       "status": "reserva",
@@ -1655,12 +1655,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 57,
+        "esp": 64,
+        "ref": 58,
+        "pos": 57,
+        "vel": 30,
         "sta": 27
       },
       "detailedStats": {

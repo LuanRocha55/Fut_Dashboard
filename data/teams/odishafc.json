@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Hugo Boumous",
       "ovr": 70,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 5,
       "name": "Ahmed Jahouh",
       "ovr": 69,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Roy Krishna",
       "ovr": 69,
       "status": "titular",
@@ -235,7 +235,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 14,
       "name": "Carlos Delgado",
       "ovr": 65,
       "status": "titular",
@@ -291,7 +291,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 1,
       "name": "Amrinder Singh",
       "ovr": 62,
       "status": "titular",
@@ -306,12 +306,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 56,
+        "esp": 72,
+        "ref": 65,
+        "pos": 60,
+        "vel": 42,
         "sta": 30
       },
       "detailedStats": {
@@ -346,7 +346,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 8,
       "name": "Raynier Fernandes",
       "ovr": 58,
       "status": "titular",
@@ -401,7 +401,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 17,
       "name": "Jerry Mawihmingthanga",
       "ovr": 58,
       "status": "titular",
@@ -456,7 +456,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "Jerry Lalrinzuala",
       "ovr": 57,
       "status": "titular",
@@ -511,7 +511,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 2,
       "name": "Narender Gahlot",
       "ovr": 56,
       "status": "titular",
@@ -567,7 +567,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 18,
       "name": "Lalthathanga Khawlhring",
       "ovr": 56,
       "status": "titular",
@@ -622,7 +622,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 21,
       "name": "Thoiba Singh Moirangthem",
       "ovr": 56,
       "status": "reserva",
@@ -732,7 +732,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 24,
       "name": "Amey Ranawade",
       "ovr": 55,
       "status": "reserva",
@@ -787,7 +787,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 23,
       "name": "Rohit Kumar",
       "ovr": 54,
       "status": "reserva",
@@ -842,7 +842,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 7,
       "name": "Isak Vanlalruatfela",
       "ovr": 54,
       "status": "reserva",
@@ -897,7 +897,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 19,
       "name": "Paul Ramfangzauva",
       "ovr": 52,
       "status": "reserva",
@@ -952,7 +952,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Lalliansanga Renthlei",
       "ovr": 52,
       "status": "reserva",
@@ -1007,7 +1007,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 12,
       "name": "Niraj Kumar",
       "ovr": 51,
       "status": "reserva",
@@ -1022,12 +1022,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 51,
+        "seg": 49,
+        "esp": 56,
+        "ref": 50,
+        "pos": 50,
+        "vel": 34,
         "sta": 17
       },
       "detailedStats": {
@@ -1062,7 +1062,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Anuj Kumar",
       "ovr": 51,
       "status": "reserva",
@@ -1077,12 +1077,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 51,
+        "seg": 50,
+        "esp": 57,
+        "ref": 52,
+        "pos": 50,
+        "vel": 31,
         "sta": 16
       },
       "detailedStats": {
@@ -1117,7 +1117,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 25,
       "name": "Lalhrezuala Sailung",
       "ovr": 51,
       "status": "reserva",
@@ -1172,7 +1172,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Aphaoba Singh",
       "ovr": 48,
       "status": "reserva",

@@ -23,12 +23,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 70,
+        "esp": 80,
+        "ref": 74,
+        "pos": 71,
+        "vel": 46,
         "sta": 36
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Jorge Benítez",
       "ovr": 70,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Pablo Aguilar",
       "ovr": 69,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 10,
       "name": "Alex Álvarez",
       "ovr": 68,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 12,
       "name": "Gonzalo Falcón",
       "ovr": 68,
       "status": "titular",
@@ -244,12 +244,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 68,
+        "esp": 76,
+        "ref": 69,
+        "pos": 65,
+        "vel": 22,
         "sta": 28
       },
       "detailedStats": {
@@ -284,7 +284,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 11,
       "name": "Nicolás Maná",
       "ovr": 68,
       "status": "titular",
@@ -339,7 +339,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 8,
       "name": "Rodrigo Rojas",
       "ovr": 68,
       "status": "titular",
@@ -394,7 +394,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 2,
       "name": "Rodi Ferreira",
       "ovr": 67,
       "status": "titular",
@@ -449,7 +449,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "José Leguizamón",
       "ovr": 67,
       "status": "titular",
@@ -505,7 +505,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 13,
       "name": "Sergio Otálvaro",
       "ovr": 67,
       "status": "titular",
@@ -560,7 +560,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 18,
       "name": "Rubén Darío Ríos",
       "ovr": 67,
       "status": "titular",
@@ -615,7 +615,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 5,
       "name": "Fernando Benítez",
       "ovr": 66,
       "status": "reserva",
@@ -670,7 +670,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 19,
       "name": "Lautaro Comas",
       "ovr": 66,
       "status": "reserva",
@@ -725,7 +725,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 3,
       "name": "Mathías Suárez",
       "ovr": 66,
       "status": "reserva",
@@ -780,7 +780,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 20,
       "name": "Diego Acosta",
       "ovr": 64,
       "status": "reserva",
@@ -890,7 +890,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 25,
       "name": "Alexis Villalba",
       "ovr": 64,
       "status": "reserva",
@@ -946,7 +946,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 26,
       "name": "Rodrigo Alborno",
       "ovr": 63,
       "status": "reserva",
@@ -1001,7 +1001,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Alan Ledesma",
       "ovr": 63,
       "status": "reserva",
@@ -1057,7 +1057,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 27,
       "name": "Kevin Pereira",
       "ovr": 63,
       "status": "reserva",
@@ -1112,7 +1112,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Sebastián Ruíz Díaz",
       "ovr": 63,
       "status": "reserva",
@@ -1167,7 +1167,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Diego Vera",
       "ovr": 63,
       "status": "reserva",
@@ -1222,7 +1222,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Marcelo Ferreira",
       "ovr": 62,
       "status": "reserva",
@@ -1277,7 +1277,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 28,
       "name": "Ángel González",
       "ovr": 61,
       "status": "reserva",
@@ -1332,7 +1332,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Ángel Espínola",
       "ovr": 59,
       "status": "reserva",
@@ -1347,12 +1347,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 56,
+        "seg": 57,
+        "esp": 65,
+        "ref": 61,
+        "pos": 59,
+        "vel": 21,
         "sta": 24
       },
       "detailedStats": {
@@ -1387,7 +1387,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 30,
       "name": "Roger Rojas",
       "ovr": 55,
       "status": "reserva",

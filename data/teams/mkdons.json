@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Liam Kelly",
       "ovr": 66,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Alex Gilbey",
       "ovr": 65,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Sam Sherring",
       "ovr": 65,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Callum Hendry",
       "ovr": 64,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 23,
       "name": "Tommy Leigh",
       "ovr": 64,
       "status": "titular",
@@ -289,7 +289,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 19,
       "name": "Jonathan Leko",
       "ovr": 64,
       "status": "titular",
@@ -344,7 +344,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 11,
       "name": "Aaron Nemane",
       "ovr": 64,
       "status": "titular",
@@ -400,7 +400,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 20,
       "name": "Ellis Harrison",
       "ovr": 63,
       "status": "titular",
@@ -455,7 +455,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "Dean Lewington",
       "ovr": 63,
       "status": "titular",
@@ -511,7 +511,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 1,
       "name": "Craig MacGillivray",
       "ovr": 63,
       "status": "titular",
@@ -526,12 +526,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 62,
+        "esp": 70,
+        "ref": 63,
+        "pos": 62,
+        "vel": 50,
         "sta": 30
       },
       "detailedStats": {
@@ -566,7 +566,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 25,
       "name": "Laurence Maguire",
       "ovr": 63,
       "status": "titular",
@@ -680,7 +680,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 3,
       "name": "Joe Tomlinson",
       "ovr": 63,
       "status": "reserva",
@@ -735,7 +735,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 30,
       "name": "Stephen Wearne",
       "ovr": 63,
       "status": "reserva",
@@ -790,7 +790,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 18,
       "name": "Joe White",
       "ovr": 63,
       "status": "reserva",
@@ -957,7 +957,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Joe Pritchard",
       "ovr": 62,
       "status": "reserva",
@@ -1012,7 +1012,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Jack Tucker",
       "ovr": 62,
       "status": "reserva",
@@ -1070,7 +1070,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 5,
       "name": "MJ Williams",
       "ovr": 62,
       "status": "reserva",
@@ -1125,7 +1125,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Nico Lawrence",
       "ovr": 61,
       "status": "reserva",
@@ -1181,7 +1181,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Tom McGill",
       "ovr": 60,
       "status": "reserva",
@@ -1196,12 +1196,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 60,
+        "esp": 69,
+        "ref": 62,
+        "pos": 59,
+        "vel": 17,
         "sta": 23
       },
       "detailedStats": {
@@ -1236,7 +1236,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 27,
       "name": "Matthew Dennis",
       "ovr": 59,
       "status": "reserva",
@@ -1292,7 +1292,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 28,
       "name": "Joel Anker",
       "ovr": 53,
       "status": "reserva",
@@ -1347,7 +1347,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Sonny Finch",
       "ovr": 53,
       "status": "reserva",
@@ -1402,7 +1402,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 31,
       "name": "Nathan Harness",
       "ovr": 53,
       "status": "reserva",
@@ -1417,12 +1417,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 56,
+        "seg": 52,
+        "esp": 59,
+        "ref": 50,
+        "pos": 50,
+        "vel": 17,
         "sta": 21
       },
       "detailedStats": {
@@ -1457,7 +1457,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 32,
       "name": "Brooklyn Ilunga",
       "ovr": 53,
       "status": "reserva",
@@ -1512,7 +1512,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 33,
       "name": "Ronnie Sandford",
       "ovr": 53,
       "status": "reserva",
@@ -1527,12 +1527,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 54,
+        "seg": 52,
+        "esp": 60,
+        "ref": 54,
+        "pos": 53,
+        "vel": 20,
         "sta": 23
       },
       "detailedStats": {
@@ -1567,7 +1567,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 2,
       "name": "Phoenix Scholtz",
       "ovr": 53,
       "status": "reserva",
@@ -1622,7 +1622,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 34,
       "name": "Callum Tripp",
       "ovr": 52,
       "status": "reserva",

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Ada Hegerberg",
       "ovr": 89,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 17,
       "name": "Kadidiatou Diani",
       "ovr": 88,
       "status": "titular",
@@ -124,7 +124,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Wendie Renard",
       "ovr": 88,
       "status": "titular",
@@ -184,7 +184,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Christiane Endler",
       "ovr": 88,
       "status": "titular",
@@ -200,12 +200,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 87,
+        "seg": 82,
+        "esp": 98,
+        "ref": 90,
+        "pos": 89,
+        "vel": 35,
         "sta": 35
       },
       "detailedStats": {
@@ -240,7 +240,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 3,
       "name": "Selma Bacha",
       "ovr": 86,
       "status": "titular",
@@ -301,7 +301,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Lindsey Horan",
       "ovr": 86,
       "status": "titular",
@@ -362,7 +362,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "Eugénie Le Sommer",
       "ovr": 85,
       "status": "titular",
@@ -419,7 +419,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 19,
       "name": "Tabitha Chawinga",
       "ovr": 84,
       "status": "titular",
@@ -477,7 +477,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 18,
       "name": "Sara Däbritz",
       "ovr": 84,
       "status": "titular",
@@ -534,7 +534,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 7,
       "name": "Amel Majri",
       "ovr": 84,
       "status": "titular",
@@ -595,7 +595,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 2,
       "name": "Ellie Carpenter",
       "ovr": 83,
       "status": "titular",
@@ -651,7 +651,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 20,
       "name": "Melchie Dumornay",
       "ovr": 83,
       "status": "reserva",
@@ -945,7 +945,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 21,
       "name": "Vicki Becho",
       "ovr": 79,
       "status": "reserva",
@@ -1003,7 +1003,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 12,
       "name": "Laura Benkarth",
       "ovr": 79,
       "status": "reserva",
@@ -1018,12 +1018,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 81,
+        "seg": 80,
+        "esp": 88,
+        "ref": 78,
+        "pos": 77,
+        "vel": 50,
         "sta": 37
       },
       "detailedStats": {
@@ -1058,7 +1058,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 26,
       "name": "Sofie Svava",
       "ovr": 79,
       "status": "reserva",
@@ -1113,7 +1113,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 24,
       "name": "Alice Sombath",
       "ovr": 76,
       "status": "reserva",
@@ -1168,7 +1168,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Inès Benyahia",
       "ovr": 75,
       "status": "reserva",
@@ -1223,7 +1223,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 25,
       "name": "Kysha Sylla",
       "ovr": 71,
       "status": "reserva",
@@ -1294,12 +1294,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 54,
+        "esp": 71,
+        "ref": 67,
+        "pos": 58,
+        "vel": 44,
         "sta": 30
       },
       "detailedStats": {
@@ -1334,7 +1334,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 27,
       "name": "Liana Joseph",
       "ovr": 60,
       "status": "reserva",
@@ -1389,7 +1389,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 28,
       "name": "Maeline Mendy",
       "ovr": 60,
       "status": "reserva",
@@ -1444,7 +1444,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Wassa Sangare",
       "ovr": 59,
       "status": "reserva",

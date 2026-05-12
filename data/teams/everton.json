@@ -25,12 +25,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 83,
+        "seg": 78,
+        "esp": 94,
+        "ref": 87,
+        "pos": 80,
+        "vel": 47,
         "sta": 42
       },
       "detailedStats": {
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "James Tarkowski",
       "ovr": 80,
       "status": "titular",
@@ -124,7 +124,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 14,
       "name": "Jarrad Branthwaite",
       "ovr": 79,
       "status": "titular",
@@ -181,7 +181,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Dominic Calvert-Lewin",
       "ovr": 77,
       "status": "titular",
@@ -237,7 +237,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 10,
       "name": "Beto",
       "ovr": 77,
       "status": "titular",
@@ -292,7 +292,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 11,
       "name": "Dwight McNeil",
       "ovr": 77,
       "status": "titular",
@@ -348,7 +348,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 3,
       "name": "Vitaliy Mykolenko",
       "ovr": 77,
       "status": "titular",
@@ -403,7 +403,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 5,
       "name": "Idrissa Gueye",
       "ovr": 76,
       "status": "titular",
@@ -459,7 +459,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 19,
       "name": "Jack Harrison",
       "ovr": 76,
       "status": "titular",
@@ -516,7 +516,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 8,
       "name": "Orel Mangala",
       "ovr": 76,
       "status": "titular",
@@ -571,7 +571,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 23,
       "name": "Abdoulaye Doucouré",
       "ovr": 75,
       "status": "titular",
@@ -626,7 +626,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 18,
       "name": "James Garner",
       "ovr": 75,
       "status": "reserva",
@@ -682,7 +682,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 25,
       "name": "Michael Keane",
       "ovr": 75,
       "status": "reserva",
@@ -739,7 +739,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 30,
       "name": "Jesper Lindstrøm",
       "ovr": 75,
       "status": "reserva",
@@ -797,7 +797,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 20,
       "name": "Iliman Ndiaye",
       "ovr": 75,
       "status": "reserva",
@@ -909,7 +909,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 2,
       "name": "Séamus Coleman",
       "ovr": 74,
       "status": "reserva",
@@ -964,7 +964,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Armando Broja",
       "ovr": 73,
       "status": "reserva",
@@ -1019,7 +1019,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 13,
       "name": "Ashley Young",
       "ovr": 73,
       "status": "reserva",
@@ -1075,7 +1075,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Benjamín Berríos",
       "ovr": 72,
       "status": "reserva",
@@ -1130,7 +1130,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Rodrigo Contreras",
       "ovr": 72,
       "status": "reserva",
@@ -1185,7 +1185,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Álvaro Madrid",
       "ovr": 72,
       "status": "reserva",
@@ -1240,7 +1240,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 28,
       "name": "Kevin Méndez",
       "ovr": 72,
       "status": "reserva",
@@ -1295,7 +1295,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 27,
       "name": "Youssef Chermiti",
       "ovr": 71,
       "status": "reserva",
@@ -1350,7 +1350,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Federico Martínez",
       "ovr": 71,
       "status": "reserva",
@@ -1405,7 +1405,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 12,
       "name": "João Virgínia",
       "ovr": 71,
       "status": "reserva",
@@ -1420,12 +1420,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 73,
+        "seg": 72,
+        "esp": 81,
+        "ref": 73,
+        "pos": 67,
+        "vel": 50,
         "sta": 16
       },
       "detailedStats": {
@@ -1460,7 +1460,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 31,
       "name": "Nathan Patterson",
       "ovr": 71,
       "status": "reserva",
@@ -1517,7 +1517,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 32,
       "name": "Braian Martínez",
       "ovr": 70,
       "status": "reserva",
@@ -1572,7 +1572,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 33,
       "name": "Tim Iroegbunam",
       "ovr": 69,
       "status": "reserva",
@@ -1627,7 +1627,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 34,
       "name": "Omar Fernández",
       "ovr": 68,
       "status": "reserva",
@@ -1682,7 +1682,7 @@
     },
     {
       "id": 31,
-      "number": 31,
+      "number": 35,
       "name": "Ignacio González",
       "ovr": 68,
       "status": "reserva",
@@ -1697,12 +1697,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 63,
+        "esp": 79,
+        "ref": 72,
+        "pos": 68,
+        "vel": 48,
         "sta": 41
       },
       "detailedStats": {
@@ -1737,7 +1737,7 @@
     },
     {
       "id": 32,
-      "number": 32,
+      "number": 36,
       "name": "Tomás Asta-Buruaga",
       "ovr": 67,
       "status": "reserva",
@@ -1793,7 +1793,7 @@
     },
     {
       "id": 33,
-      "number": 33,
+      "number": 37,
       "name": "Felipe Villagrán",
       "ovr": 67,
       "status": "reserva",
@@ -1849,7 +1849,7 @@
     },
     {
       "id": 34,
-      "number": 34,
+      "number": 38,
       "name": "Felipe Campos",
       "ovr": 66,
       "status": "reserva",
@@ -1904,7 +1904,7 @@
     },
     {
       "id": 35,
-      "number": 35,
+      "number": 39,
       "name": "Claudio González",
       "ovr": 66,
       "status": "reserva",
@@ -1919,12 +1919,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 65,
+        "esp": 71,
+        "ref": 65,
+        "pos": 70,
+        "vel": 33,
         "sta": 25
       },
       "detailedStats": {
@@ -1959,7 +1959,7 @@
     },
     {
       "id": 36,
-      "number": 36,
+      "number": 40,
       "name": "Diego Oyarzún",
       "ovr": 65,
       "status": "reserva",
@@ -2015,7 +2015,7 @@
     },
     {
       "id": 37,
-      "number": 37,
+      "number": 41,
       "name": "Nicolás Baeza",
       "ovr": 63,
       "status": "reserva",
@@ -2070,7 +2070,7 @@
     },
     {
       "id": 38,
-      "number": 38,
+      "number": 42,
       "name": "Matías Campos",
       "ovr": 62,
       "status": "reserva",
@@ -2125,7 +2125,7 @@
     },
     {
       "id": 39,
-      "number": 39,
+      "number": 43,
       "name": "Joan Cruz",
       "ovr": 62,
       "status": "reserva",
@@ -2180,7 +2180,7 @@
     },
     {
       "id": 40,
-      "number": 40,
+      "number": 44,
       "name": "Stanley Mills",
       "ovr": 62,
       "status": "reserva",
@@ -2235,7 +2235,7 @@
     },
     {
       "id": 41,
-      "number": 41,
+      "number": 45,
       "name": "Sebastián Pereira",
       "ovr": 62,
       "status": "reserva",
@@ -2291,7 +2291,7 @@
     },
     {
       "id": 42,
-      "number": 42,
+      "number": 46,
       "name": "Harry Tyrer",
       "ovr": 61,
       "status": "reserva",
@@ -2306,12 +2306,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 58,
+        "esp": 67,
+        "ref": 61,
+        "pos": 61,
+        "vel": 17,
         "sta": 28
       },
       "detailedStats": {
@@ -2346,7 +2346,7 @@
     },
     {
       "id": 43,
-      "number": 43,
+      "number": 47,
       "name": "Axl Ríos",
       "ovr": 60,
       "status": "reserva",
@@ -2401,7 +2401,7 @@
     },
     {
       "id": 44,
-      "number": 44,
+      "number": 48,
       "name": "Vicente Vega",
       "ovr": 60,
       "status": "reserva",
@@ -2457,7 +2457,7 @@
     },
     {
       "id": 45,
-      "number": 45,
+      "number": 49,
       "name": "Billy Crellin",
       "ovr": 58,
       "status": "reserva",
@@ -2472,12 +2472,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 57,
+        "esp": 66,
+        "ref": 61,
+        "pos": 56,
+        "vel": 31,
         "sta": 24
       },
       "detailedStats": {
@@ -2512,7 +2512,7 @@
     },
     {
       "id": 46,
-      "number": 46,
+      "number": 50,
       "name": "Emiliano Ramos",
       "ovr": 57,
       "status": "reserva",
@@ -2567,7 +2567,7 @@
     },
     {
       "id": 47,
-      "number": 47,
+      "number": 51,
       "name": "Reece Welch",
       "ovr": 57,
       "status": "reserva",
@@ -2623,7 +2623,7 @@
     },
     {
       "id": 48,
-      "number": 48,
+      "number": 52,
       "name": "Mitchell Wassenne",
       "ovr": 56,
       "status": "reserva",
@@ -2678,7 +2678,7 @@
     },
     {
       "id": 49,
-      "number": 49,
+      "number": 53,
       "name": "Charlie Whitaker",
       "ovr": 56,
       "status": "reserva",
@@ -2733,7 +2733,7 @@
     },
     {
       "id": 50,
-      "number": 50,
+      "number": 54,
       "name": "Isaac Esquenazi",
       "ovr": 54,
       "status": "reserva",
@@ -2748,12 +2748,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 50,
+        "seg": 52,
+        "esp": 58,
+        "ref": 55,
+        "pos": 54,
+        "vel": 23,
         "sta": 26
       },
       "detailedStats": {

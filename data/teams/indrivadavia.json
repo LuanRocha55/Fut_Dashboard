@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Bruno Bianchi",
       "ovr": 73,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 7,
       "name": "Sebastián Villa",
       "ovr": 73,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 1,
       "name": "Gonzalo Marinelli",
       "ovr": 71,
       "status": "titular",
@@ -137,12 +137,12 @@
         "1v1 Close Down"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 72,
+        "seg": 69,
+        "esp": 80,
+        "ref": 72,
+        "pos": 71,
+        "vel": 35,
         "sta": 33
       },
       "detailedStats": {
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 12,
       "name": "Ezequiel Centurión",
       "ovr": 70,
       "status": "titular",
@@ -192,12 +192,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 72,
+        "seg": 66,
+        "esp": 78,
+        "ref": 69,
+        "pos": 70,
+        "vel": 48,
         "sta": 36
       },
       "detailedStats": {
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 11,
       "name": "Juan Ignacio Cavallaro",
       "ovr": 69,
       "status": "titular",
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Agustín Mulet",
       "ovr": 68,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 2,
       "name": "Luciano Abecasis",
       "ovr": 67,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Esteban Burgos",
       "ovr": 67,
       "status": "titular",
@@ -454,7 +454,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 13,
       "name": "Luciano Gómez",
       "ovr": 67,
       "status": "titular",
@@ -509,7 +509,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 9,
       "name": "Jorge Sanguina",
       "ovr": 67,
       "status": "titular",
@@ -564,7 +564,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 3,
       "name": "Nahuel Gallardo",
       "ovr": 66,
       "status": "titular",
@@ -619,7 +619,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 16,
       "name": "Federico Milo",
       "ovr": 66,
       "status": "reserva",
@@ -674,7 +674,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 10,
       "name": "Fernando Romero",
       "ovr": 66,
       "status": "reserva",
@@ -729,7 +729,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 25,
       "name": "Iván Villalba",
       "ovr": 66,
       "status": "reserva",
@@ -785,7 +785,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 19,
       "name": "Victorio Ramis",
       "ovr": 65,
       "status": "reserva",
@@ -840,7 +840,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 18,
       "name": "Lautaro Ríos",
       "ovr": 65,
       "status": "reserva",
@@ -895,7 +895,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 27,
       "name": "Diego Tonetto",
       "ovr": 65,
       "status": "reserva",
@@ -950,7 +950,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Mauricio Asenjo",
       "ovr": 64,
       "status": "reserva",
@@ -1005,7 +1005,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 28,
       "name": "Gonzalo Ríos",
       "ovr": 64,
       "status": "reserva",
@@ -1060,7 +1060,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 21,
       "name": "Fredy Vera",
       "ovr": 64,
       "status": "reserva",
@@ -1115,7 +1115,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Gonzalo Álvez",
       "ovr": 63,
       "status": "reserva",
@@ -1170,7 +1170,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 17,
       "name": "Federico Castro",
       "ovr": 63,
       "status": "reserva",
@@ -1280,7 +1280,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 5,
       "name": "Franco Agustín Romero",
       "ovr": 61,
       "status": "reserva",
@@ -1335,7 +1335,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "Ezequiel Ham",
       "ovr": 60,
       "status": "reserva",
@@ -1390,7 +1390,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 24,
       "name": "Matías Ruiz Díaz",
       "ovr": 60,
       "status": "reserva",

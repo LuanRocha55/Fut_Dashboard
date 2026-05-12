@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Matteo Di Giusto",
       "ovr": 71,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Basil Stillhart",
       "ovr": 67,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 5,
       "name": "Luca Zuffi",
       "ovr": 67,
       "status": "titular",
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 14,
       "name": "Remo Arnold",
       "ovr": 66,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 9,
       "name": "Antoine Baroan",
       "ovr": 66,
       "status": "titular",
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 11,
       "name": "Nishan Burkart",
       "ovr": 66,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 25,
       "name": "Lukas Mühl",
       "ovr": 66,
       "status": "titular",
@@ -399,7 +399,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 19,
       "name": "Fabian Rohner",
       "ovr": 66,
       "status": "titular",
@@ -454,7 +454,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 23,
       "name": "Randy Schneider",
       "ovr": 66,
       "status": "titular",
@@ -509,7 +509,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 20,
       "name": "Boubacar Fofana",
       "ovr": 65,
       "status": "titular",
@@ -564,7 +564,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 3,
       "name": "Souleymane Diaby",
       "ovr": 64,
       "status": "titular",
@@ -619,7 +619,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 21,
       "name": "Alexandre Jankewitz",
       "ovr": 64,
       "status": "reserva",
@@ -674,7 +674,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 1,
       "name": "Markus Kuster",
       "ovr": 64,
       "status": "reserva",
@@ -690,12 +690,12 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 65,
+        "esp": 69,
+        "ref": 61,
+        "pos": 63,
+        "vel": 31,
         "sta": 20
       },
       "detailedStats": {
@@ -730,7 +730,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Granit Lekaj",
       "ovr": 64,
       "status": "reserva",
@@ -786,7 +786,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 2,
       "name": "Silvan Sidler",
       "ovr": 64,
       "status": "reserva",
@@ -841,7 +841,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 8,
       "name": "Musa Araz",
       "ovr": 63,
       "status": "reserva",
@@ -1006,7 +1006,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 16,
       "name": "Tobias Schättin",
       "ovr": 62,
       "status": "reserva",
@@ -1061,7 +1061,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Loïc Lüthi",
       "ovr": 61,
       "status": "reserva",
@@ -1117,7 +1117,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Adrian Durrer",
       "ovr": 60,
       "status": "reserva",
@@ -1173,7 +1173,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 31,
       "name": "Albin Krasniqi",
       "ovr": 60,
       "status": "reserva",
@@ -1228,7 +1228,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 28,
       "name": "Elias Maluvunu",
       "ovr": 60,
       "status": "reserva",
@@ -1283,7 +1283,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 12,
       "name": "Antonio Spagnoli",
       "ovr": 59,
       "status": "reserva",
@@ -1298,12 +1298,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 58,
+        "esp": 67,
+        "ref": 58,
+        "pos": 54,
+        "vel": 27,
         "sta": 19
       },
       "detailedStats": {
@@ -1338,7 +1338,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 27,
       "name": "Carmine Chiappetta",
       "ovr": 56,
       "status": "reserva",

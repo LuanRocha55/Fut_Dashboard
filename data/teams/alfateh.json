@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Lucas Zelarayán",
       "ovr": 80,
       "status": "titular",
@@ -68,7 +68,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Mourad Batna",
       "ovr": 76,
       "status": "titular",
@@ -126,7 +126,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Jason Denayer",
       "ovr": 73,
       "status": "titular",
@@ -182,7 +182,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Sofiane Bendebka",
       "ovr": 72,
       "status": "titular",
@@ -238,7 +238,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 14,
       "name": "Marwane Saadane",
       "ovr": 70,
       "status": "titular",
@@ -296,7 +296,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 9,
       "name": "Djaniny",
       "ovr": 70,
       "status": "titular",
@@ -408,7 +408,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 1,
       "name": "Péter Szappanos",
       "ovr": 68,
       "status": "titular",
@@ -423,12 +423,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 63,
+        "esp": 78,
+        "ref": 74,
+        "pos": 65,
+        "vel": 23,
         "sta": 18
       },
       "detailedStats": {
@@ -463,7 +463,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 18,
       "name": "Mohammed Al Fehaid",
       "ovr": 63,
       "status": "titular",
@@ -518,7 +518,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 5,
       "name": "Nouh Al Mousa",
       "ovr": 61,
       "status": "titular",
@@ -573,7 +573,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 25,
       "name": "Amaar Al Dohaim",
       "ovr": 60,
       "status": "titular",
@@ -644,12 +644,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 59,
+        "esp": 65,
+        "ref": 59,
+        "pos": 56,
+        "vel": 34,
         "sta": 29
       },
       "detailedStats": {
@@ -684,7 +684,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 17,
       "name": "Othman Al Othman",
       "ovr": 56,
       "status": "reserva",
@@ -739,7 +739,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 22,
       "name": "Waleed Al Enazi",
       "ovr": 54,
       "status": "reserva",
@@ -754,12 +754,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 55,
+        "seg": 53,
+        "esp": 62,
+        "ref": 56,
+        "pos": 53,
+        "vel": 44,
         "sta": 25
       },
       "detailedStats": {
@@ -850,7 +850,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 19,
       "name": "Hassan Al Slais",
       "ovr": 54,
       "status": "reserva",

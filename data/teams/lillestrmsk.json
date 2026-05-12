@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Ruben Gabrielsen",
       "ovr": 69,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Thomas Lehne Olsen",
       "ovr": 69,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 5,
       "name": "Vebjørn Hoff",
       "ovr": 68,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 11,
       "name": "Ylldren Ibrahimaj",
       "ovr": 68,
       "status": "titular",
@@ -230,7 +230,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 2,
       "name": "Eric Larsson",
       "ovr": 68,
       "status": "titular",
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Gjermund Åsen",
       "ovr": 67,
       "status": "titular",
@@ -341,7 +341,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 1,
       "name": "Mads Hedenstad",
       "ovr": 67,
       "status": "titular",
@@ -357,12 +357,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 66,
+        "esp": 76,
+        "ref": 68,
+        "pos": 66,
+        "vel": 45,
         "sta": 33
       },
       "detailedStats": {
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Espen Bjørnsen Garnås",
       "ovr": 66,
       "status": "titular",
@@ -454,7 +454,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 10,
       "name": "Eric Bugale Kitolano",
       "ovr": 66,
       "status": "titular",
@@ -509,7 +509,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 18,
       "name": "Marius Lundemo",
       "ovr": 66,
       "status": "titular",
@@ -564,7 +564,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 13,
       "name": "Erling Knudtzon",
       "ovr": 65,
       "status": "titular",
@@ -619,7 +619,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 21,
       "name": "Kevin Martin Krygård",
       "ovr": 65,
       "status": "reserva",
@@ -674,7 +674,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 3,
       "name": "Kristoffer Tønnessen",
       "ovr": 65,
       "status": "reserva",
@@ -729,7 +729,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 24,
       "name": "Lars Mogstad Ranger",
       "ovr": 64,
       "status": "reserva",
@@ -784,7 +784,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 19,
       "name": "Mathis Bolly",
       "ovr": 63,
       "status": "reserva",
@@ -840,7 +840,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 25,
       "name": "Sander Moen Foss",
       "ovr": 63,
       "status": "reserva",
@@ -896,7 +896,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 27,
       "name": "Markus Seehusen Karlsbakk",
       "ovr": 62,
       "status": "reserva",
@@ -951,7 +951,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 12,
       "name": "Oliver Petersen",
       "ovr": 62,
       "status": "reserva",
@@ -966,12 +966,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 62,
+        "esp": 71,
+        "ref": 64,
+        "pos": 61,
+        "vel": 39,
         "sta": 26
       },
       "detailedStats": {
@@ -1006,7 +1006,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 20,
       "name": "Martin Ove Roseth",
       "ovr": 62,
       "status": "reserva",
@@ -1062,7 +1062,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 17,
       "name": "Felix Vá",
       "ovr": 62,
       "status": "reserva",
@@ -1117,7 +1117,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 23,
       "name": "Uba Charles",
       "ovr": 61,
       "status": "reserva",
@@ -1172,7 +1172,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 16,
       "name": "Frederik Elkær",
       "ovr": 60,
       "status": "reserva",
@@ -1227,7 +1227,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 22,
       "name": "Stefan Hagerup",
       "ovr": 59,
       "status": "reserva",
@@ -1242,12 +1242,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 59,
+        "seg": 59,
+        "esp": 65,
+        "ref": 58,
+        "pos": 60,
+        "vel": 23,
         "sta": 19
       },
       "detailedStats": {
@@ -1282,7 +1282,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Jabir Abdihakim Ali",
       "ovr": 58,
       "status": "reserva",
@@ -1337,7 +1337,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 28,
       "name": "Elias Sebastian Solberg",
       "ovr": 58,
       "status": "reserva",
@@ -1393,7 +1393,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "August Karlin",
       "ovr": 55,
       "status": "reserva",

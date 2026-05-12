@@ -25,12 +25,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 84,
+        "seg": 83,
+        "esp": 93,
+        "ref": 83,
+        "pos": 85,
+        "vel": 44,
         "sta": 39
       },
       "detailedStats": {
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Yuki Nagasato",
       "ovr": 83,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Ramona Bachmann",
       "ovr": 82,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 18,
       "name": "Sophie Schmidt",
       "ovr": 82,
       "status": "titular",
@@ -238,7 +238,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Katie Lind",
       "ovr": 79,
       "status": "titular",
@@ -294,7 +294,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Paige Nielsen",
       "ovr": 77,
       "status": "titular",
@@ -351,7 +351,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 9,
       "name": "Diana Ordóñez",
       "ovr": 77,
       "status": "titular",
@@ -406,7 +406,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 25,
       "name": "Sarah Puntigam",
       "ovr": 77,
       "status": "titular",
@@ -464,7 +464,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "Allysha Chapman",
       "ovr": 76,
       "status": "titular",
@@ -519,7 +519,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 19,
       "name": "CeCe Kizer",
       "ovr": 76,
       "status": "titular",
@@ -575,7 +575,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 5,
       "name": "Elin Rubensson",
       "ovr": 76,
       "status": "titular",
@@ -630,7 +630,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 20,
       "name": "Belle Briede",
       "ovr": 74,
       "status": "reserva",
@@ -685,7 +685,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 27,
       "name": "Ryan Gareis",
       "ovr": 74,
       "status": "reserva",
@@ -740,7 +740,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Natalie Jacobs",
       "ovr": 74,
       "status": "reserva",
@@ -796,7 +796,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 16,
       "name": "Havana Solaun",
       "ovr": 72,
       "status": "reserva",
@@ -851,7 +851,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 10,
       "name": "Michelle Alozie",
       "ovr": 71,
       "status": "reserva",
@@ -962,7 +962,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 28,
       "name": "Bárbara Olivieri",
       "ovr": 69,
       "status": "reserva",
@@ -1017,7 +1017,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Kiki Van Zanten",
       "ovr": 69,
       "status": "reserva",
@@ -1072,7 +1072,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 12,
       "name": "Heather Hinz",
       "ovr": 67,
       "status": "reserva",
@@ -1087,12 +1087,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
+        "alc": 66,
+        "seg": 65,
         "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "ref": 69,
+        "pos": 65,
+        "vel": 41,
         "sta": 26
       },
       "detailedStats": {
@@ -1127,7 +1127,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Erin McKinney",
       "ovr": 67,
       "status": "reserva",
@@ -1142,12 +1142,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 64,
+        "esp": 74,
+        "ref": 69,
+        "pos": 67,
+        "vel": 24,
         "sta": 23
       },
       "detailedStats": {
@@ -1182,7 +1182,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Croix Soto",
       "ovr": 67,
       "status": "reserva",
@@ -1238,7 +1238,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Amanda West",
       "ovr": 67,
       "status": "reserva",
@@ -1293,7 +1293,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Jyllissa Harris",
       "ovr": 66,
       "status": "reserva",
@@ -1349,7 +1349,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Avery Patterson",
       "ovr": 64,
       "status": "reserva",
@@ -1404,7 +1404,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 30,
       "name": "Madison Ayson",
       "ovr": 62,
       "status": "reserva",

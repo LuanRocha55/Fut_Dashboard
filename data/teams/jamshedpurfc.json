@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Stephen Eze",
       "ovr": 69,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Javi Hernández",
       "ovr": 67,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Javi Siverio",
       "ovr": 64,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 19,
       "name": "Jordan Murray",
       "ovr": 61,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 14,
       "name": "Pratik Chaudhari",
       "ovr": 58,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 5,
       "name": "Pronay Halder",
       "ovr": 58,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 8,
       "name": "Rei Tachikawa",
       "ovr": 57,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 11,
       "name": "Ritwik Kumar Das",
       "ovr": 56,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 17,
       "name": "Seiminlen Doungel",
       "ovr": 55,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 1,
       "name": "Albino Giovanni Gomes",
       "ovr": 55,
       "status": "titular",
@@ -523,12 +523,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 56,
+        "seg": 56,
+        "esp": 62,
+        "ref": 55,
+        "pos": 55,
+        "vel": 35,
         "sta": 19
       },
       "detailedStats": {
@@ -563,7 +563,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 27,
       "name": "Aniket Jadhav",
       "ovr": 55,
       "status": "titular",
@@ -618,7 +618,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 2,
       "name": "Shubham Sarangi",
       "ovr": 55,
       "status": "reserva",
@@ -673,7 +673,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 23,
       "name": "Emil Benny",
       "ovr": 54,
       "status": "reserva",
@@ -728,7 +728,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 21,
       "name": "Sourav Das",
       "ovr": 54,
       "status": "reserva",
@@ -783,7 +783,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 12,
       "name": "Rakshit Dagar",
       "ovr": 53,
       "status": "reserva",
@@ -798,12 +798,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 52,
+        "seg": 54,
+        "esp": 58,
+        "ref": 53,
+        "pos": 54,
+        "vel": 30,
         "sta": 28
       },
       "detailedStats": {
@@ -838,7 +838,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 20,
       "name": "Semboi Haokip",
       "ovr": 53,
       "status": "reserva",
@@ -893,7 +893,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 18,
       "name": "Imran Khan",
       "ovr": 53,
       "status": "reserva",
@@ -948,7 +948,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 22,
       "name": "Mobashir Rahman",
       "ovr": 53,
       "status": "reserva",
@@ -1003,7 +1003,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 3,
       "name": "Muhammed Uvais Moyikkal",
       "ovr": 53,
       "status": "reserva",
@@ -1058,7 +1058,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 24,
       "name": "Vishal Yadav",
       "ovr": 53,
       "status": "reserva",
@@ -1073,12 +1073,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 54,
+        "seg": 52,
+        "esp": 61,
+        "ref": 55,
+        "pos": 54,
+        "vel": 23,
         "sta": 16
       },
       "detailedStats": {
@@ -1113,7 +1113,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 25,
       "name": "Wungngayam Muirang",
       "ovr": 52,
       "status": "reserva",
@@ -1169,7 +1169,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Naorem Nongdamba",
       "ovr": 51,
       "status": "reserva",
@@ -1224,7 +1224,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 28,
       "name": "Sheikh Sahil",
       "ovr": 51,
       "status": "reserva",
@@ -1279,7 +1279,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 30,
       "name": "Mohammed Sanan",
       "ovr": 51,
       "status": "reserva",
@@ -1334,7 +1334,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Nikhil Barla",
       "ovr": 50,
       "status": "reserva",
@@ -1389,7 +1389,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 31,
       "name": "Amrit Gope",
       "ovr": 50,
       "status": "reserva",
@@ -1404,12 +1404,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 51,
+        "seg": 48,
+        "esp": 54,
+        "ref": 46,
+        "pos": 49,
+        "vel": 18,
         "sta": 23
       },
       "detailedStats": {

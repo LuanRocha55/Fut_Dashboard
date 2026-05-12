@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 5,
       "name": "Guido Rodríguez",
       "ovr": 83,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Jarrod Bowen",
       "ovr": 82,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 19,
       "name": "Lucas Paquetá",
       "ovr": 82,
       "status": "titular",
@@ -179,7 +179,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Niclas Füllkrug",
       "ovr": 82,
       "status": "titular",
@@ -234,7 +234,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 28,
       "name": "Mohammed Kudus",
       "ovr": 82,
       "status": "titular",
@@ -291,7 +291,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 21,
       "name": "Edson Álvarez",
       "ovr": 81,
       "status": "titular",
@@ -350,7 +350,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 1,
       "name": "Alphonse Areola",
       "ovr": 81,
       "status": "titular",
@@ -365,12 +365,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 82,
+        "seg": 77,
+        "esp": 92,
+        "ref": 83,
+        "pos": 80,
+        "vel": 54,
         "sta": 38
       },
       "detailedStats": {
@@ -405,7 +405,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 4,
       "name": "Jean-Clair Todibo",
       "ovr": 80,
       "status": "titular",
@@ -463,7 +463,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 23,
       "name": "Tomáš Souček",
       "ovr": 79,
       "status": "titular",
@@ -518,7 +518,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 2,
       "name": "Aaron Wan-Bissaka",
       "ovr": 79,
       "status": "titular",
@@ -576,7 +576,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 10,
       "name": "Michail Antonio",
       "ovr": 78,
       "status": "titular",
@@ -633,7 +633,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 13,
       "name": "Vladimír Coufal",
       "ovr": 78,
       "status": "reserva",
@@ -690,7 +690,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 14,
       "name": "Konstantinos Mavropanos",
       "ovr": 78,
       "status": "reserva",
@@ -751,7 +751,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 3,
       "name": "Emerson",
       "ovr": 78,
       "status": "reserva",
@@ -806,7 +806,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 8,
       "name": "Carlos Soler",
       "ovr": 78,
       "status": "reserva",
@@ -861,7 +861,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 12,
       "name": "Łukasz Fabiański",
       "ovr": 77,
       "status": "reserva",
@@ -876,12 +876,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 77,
+        "seg": 78,
+        "esp": 85,
+        "ref": 76,
+        "pos": 77,
+        "vel": 47,
         "sta": 25
       },
       "detailedStats": {
@@ -916,7 +916,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 25,
       "name": "Maximilian Kilman",
       "ovr": 77,
       "status": "reserva",
@@ -974,7 +974,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 27,
       "name": "Crysencio Summerville",
       "ovr": 76,
       "status": "reserva",
@@ -1033,7 +1033,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 16,
       "name": "Aaron Cresswell",
       "ovr": 74,
       "status": "reserva",
@@ -1143,7 +1143,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Wes Foderingham",
       "ovr": 73,
       "status": "reserva",
@@ -1161,11 +1161,11 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "alc": 74,
+        "seg": 71,
+        "esp": 83,
         "ref": 75,
-        "pos": 75,
+        "pos": 72,
         "vel": 40,
         "sta": 34
       },
@@ -1201,7 +1201,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 18,
       "name": "Andy Irving",
       "ovr": 71,
       "status": "reserva",
@@ -1257,7 +1257,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Luis Guilherme",
       "ovr": 71,
       "status": "reserva",
@@ -1312,7 +1312,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Sean Moore",
       "ovr": 59,
       "status": "reserva",
@@ -1367,7 +1367,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 30,
       "name": "Kamarai Swyer",
       "ovr": 59,
       "status": "reserva",
@@ -1422,7 +1422,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Gideon Kodua",
       "ovr": 58,
       "status": "reserva",
@@ -1477,7 +1477,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 31,
       "name": "Lewis Orford",
       "ovr": 58,
       "status": "reserva",

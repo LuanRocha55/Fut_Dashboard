@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 5,
       "name": "Bruno Guimarães",
       "ovr": 85,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Alexander Isak",
       "ovr": 85,
       "status": "titular",
@@ -125,7 +125,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 21,
       "name": "Sandro Tonali",
       "ovr": 85,
       "status": "titular",
@@ -182,7 +182,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Nick Pope",
       "ovr": 83,
       "status": "titular",
@@ -197,12 +197,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 82,
+        "seg": 82,
+        "esp": 93,
+        "ref": 85,
+        "pos": 82,
+        "vel": 47,
         "sta": 37
       },
       "detailedStats": {
@@ -237,7 +237,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 2,
       "name": "Kieran Trippier",
       "ovr": 83,
       "status": "titular",
@@ -295,7 +295,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Joelinton",
       "ovr": 82,
       "status": "titular",
@@ -353,7 +353,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 4,
       "name": "Sven Botman",
       "ovr": 82,
       "status": "titular",
@@ -412,7 +412,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 7,
       "name": "Anthony Gordon",
       "ovr": 82,
       "status": "titular",
@@ -469,7 +469,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "Fabian Schär",
       "ovr": 82,
       "status": "titular",
@@ -581,7 +581,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 17,
       "name": "Harvey Barnes",
       "ovr": 80,
       "status": "titular",
@@ -636,7 +636,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 31,
       "name": "Miguel Almirón",
       "ovr": 78,
       "status": "reserva",
@@ -694,7 +694,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 25,
       "name": "Dan Burn",
       "ovr": 78,
       "status": "reserva",
@@ -750,7 +750,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 13,
       "name": "Tino Livramento",
       "ovr": 78,
       "status": "reserva",
@@ -806,7 +806,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 18,
       "name": "Joe Willock",
       "ovr": 77,
       "status": "reserva",
@@ -862,7 +862,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 12,
       "name": "Martin Dúbravka",
       "ovr": 76,
       "status": "reserva",
@@ -878,12 +878,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
+        "alc": 76,
+        "seg": 74,
+        "esp": 86,
+        "ref": 78,
         "pos": 75,
-        "vel": 40,
+        "vel": 42,
         "sta": 38
       },
       "detailedStats": {
@@ -918,7 +918,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 20,
       "name": "Sean Longstaff",
       "ovr": 76,
       "status": "reserva",
@@ -973,7 +973,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 32,
       "name": "Jacob Murphy",
       "ovr": 76,
       "status": "reserva",
@@ -1086,7 +1086,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Jamaal Lascelles",
       "ovr": 75,
       "status": "reserva",
@@ -1143,7 +1143,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 3,
       "name": "Matt Targett",
       "ovr": 74,
       "status": "reserva",
@@ -1198,7 +1198,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Odysseas Vlachodimos",
       "ovr": 74,
       "status": "reserva",
@@ -1214,11 +1214,11 @@
       ],
       "stats": {
         "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "seg": 73,
+        "esp": 83,
+        "ref": 74,
+        "pos": 74,
+        "vel": 44,
         "sta": 39
       },
       "detailedStats": {
@@ -1253,7 +1253,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 16,
       "name": "Lewis Hall",
       "ovr": 73,
       "status": "reserva",
@@ -1363,7 +1363,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "Lewis Miley",
       "ovr": 72,
       "status": "reserva",
@@ -1418,7 +1418,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 27,
       "name": "Isaac Hayden",
       "ovr": 71,
       "status": "reserva",
@@ -1474,7 +1474,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 28,
       "name": "John Ruddy",
       "ovr": 71,
       "status": "reserva",
@@ -1491,11 +1491,11 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 68,
+        "seg": 72,
+        "esp": 76,
+        "ref": 69,
+        "pos": 70,
         "vel": 40,
         "sta": 36
       },
@@ -1531,7 +1531,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 29,
       "name": "William Osula",
       "ovr": 67,
       "status": "reserva",
@@ -1586,7 +1586,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 30,
       "name": "Mark Gillespie",
       "ovr": 65,
       "status": "reserva",
@@ -1601,12 +1601,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 63,
+        "esp": 73,
+        "ref": 67,
+        "pos": 64,
+        "vel": 35,
         "sta": 20
       },
       "detailedStats": {
@@ -1641,7 +1641,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 33,
       "name": "Garang Kuol",
       "ovr": 64,
       "status": "reserva",
@@ -1696,7 +1696,7 @@
     },
     {
       "id": 31,
-      "number": 31,
+      "number": 34,
       "name": "Alex Murphy",
       "ovr": 64,
       "status": "reserva",
@@ -1752,7 +1752,7 @@
     },
     {
       "id": 32,
-      "number": 32,
+      "number": 35,
       "name": "Ben Parkinson",
       "ovr": 57,
       "status": "reserva",

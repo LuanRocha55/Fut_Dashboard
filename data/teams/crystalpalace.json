@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Eberechi Eze",
       "ovr": 81,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Marc Guéhi",
       "ovr": 81,
       "status": "titular",
@@ -125,7 +125,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 23,
       "name": "Daichi Kamada",
       "ovr": 81,
       "status": "titular",
@@ -182,7 +182,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 2,
       "name": "Daniel Muñoz",
       "ovr": 80,
       "status": "titular",
@@ -299,7 +299,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 1,
       "name": "Dean Henderson",
       "ovr": 79,
       "status": "titular",
@@ -314,12 +314,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
+        "alc": 80,
+        "seg": 76,
+        "esp": 89,
+        "ref": 81,
         "pos": 75,
-        "vel": 40,
+        "vel": 56,
         "sta": 32
       },
       "detailedStats": {
@@ -354,7 +354,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 21,
       "name": "Jefferson Lerma",
       "ovr": 79,
       "status": "titular",
@@ -413,7 +413,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 9,
       "name": "Jean-Philippe Mateta",
       "ovr": 79,
       "status": "titular",
@@ -468,7 +468,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "Trevoh Chalobah",
       "ovr": 78,
       "status": "titular",
@@ -525,7 +525,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 11,
       "name": "Adam Wharton",
       "ovr": 78,
       "status": "titular",
@@ -583,7 +583,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 3,
       "name": "Tyrick Mitchell",
       "ovr": 77,
       "status": "titular",
@@ -639,7 +639,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 25,
       "name": "Maxence Lacroix",
       "ovr": 76,
       "status": "reserva",
@@ -695,7 +695,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 19,
       "name": "Eddie Nketiah",
       "ovr": 76,
       "status": "reserva",
@@ -750,7 +750,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Chris Richards",
       "ovr": 76,
       "status": "reserva",
@@ -806,7 +806,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 17,
       "name": "Ismaïla Sarr",
       "ovr": 76,
       "status": "reserva",
@@ -862,7 +862,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 13,
       "name": "Nathaniel Clyne",
       "ovr": 74,
       "status": "reserva",
@@ -917,7 +917,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 18,
       "name": "Will Hughes",
       "ovr": 74,
       "status": "reserva",
@@ -972,7 +972,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 12,
       "name": "Matt Turner",
       "ovr": 74,
       "status": "reserva",
@@ -988,12 +988,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 74,
+        "seg": 72,
+        "esp": 82,
+        "ref": 74,
+        "pos": 73,
+        "vel": 42,
         "sta": 35
       },
       "detailedStats": {
@@ -1028,7 +1028,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 20,
       "name": "Rob Holding",
       "ovr": 73,
       "status": "reserva",
@@ -1084,7 +1084,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 7,
       "name": "Jeffrey Schlupp",
       "ovr": 73,
       "status": "reserva",
@@ -1139,7 +1139,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Joel Ward",
       "ovr": 73,
       "status": "reserva",
@@ -1250,7 +1250,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 30,
       "name": "Matheus França",
       "ovr": 69,
       "status": "reserva",
@@ -1305,7 +1305,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Remi Matthews",
       "ovr": 63,
       "status": "reserva",
@@ -1320,12 +1320,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 63,
+        "esp": 71,
+        "ref": 63,
+        "pos": 62,
+        "vel": 47,
         "sta": 29
       },
       "detailedStats": {
@@ -1360,7 +1360,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 31,
       "name": "Franco Umeh-Chibueze",
       "ovr": 62,
       "status": "reserva",
@@ -1415,7 +1415,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 27,
       "name": "Caleb Kporha",
       "ovr": 61,
       "status": "reserva",
@@ -1470,7 +1470,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 8,
       "name": "Justin Devenny",
       "ovr": 60,
       "status": "reserva",

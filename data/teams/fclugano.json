@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 17,
       "name": "Renato Steffen",
       "ovr": 75,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 5,
       "name": "Ousmane Doumbia",
       "ovr": 72,
       "status": "titular",
@@ -179,7 +179,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Uran Bislimi",
       "ovr": 71,
       "status": "titular",
@@ -234,7 +234,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 11,
       "name": "Ignacio Aliseda",
       "ovr": 70,
       "status": "titular",
@@ -290,7 +290,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 21,
       "name": "Anto Grgić",
       "ovr": 70,
       "status": "titular",
@@ -346,7 +346,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 19,
       "name": "Yanis Cimignani",
       "ovr": 69,
       "status": "titular",
@@ -401,7 +401,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 1,
       "name": "Amir Saipi",
       "ovr": 69,
       "status": "titular",
@@ -418,12 +418,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 67,
+        "esp": 77,
+        "ref": 70,
+        "pos": 70,
+        "vel": 29,
         "sta": 24
       },
       "detailedStats": {
@@ -458,7 +458,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 10,
       "name": "Mattia Bottani",
       "ovr": 68,
       "status": "titular",
@@ -514,7 +514,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 4,
       "name": "Lars Lukas Mai",
       "ovr": 68,
       "status": "titular",
@@ -570,7 +570,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 3,
       "name": "Milton Valenzuela",
       "ovr": 68,
       "status": "titular",
@@ -626,7 +626,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 14,
       "name": "Albian Hajdari",
       "ovr": 67,
       "status": "reserva",
@@ -682,7 +682,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 25,
       "name": "Antonios Papadopoulos",
       "ovr": 67,
       "status": "reserva",
@@ -738,7 +738,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 9,
       "name": "Shkelqim Vladi",
       "ovr": 67,
       "status": "reserva",
@@ -793,7 +793,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 20,
       "name": "Kacper Przybyłko",
       "ovr": 66,
       "status": "reserva",
@@ -848,7 +848,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 23,
       "name": "Daniel Dos Santos",
       "ovr": 65,
       "status": "reserva",
@@ -903,7 +903,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 18,
       "name": "Mohamed Belhadj Mahmoud",
       "ovr": 65,
       "status": "reserva",
@@ -958,7 +958,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 27,
       "name": "Hicham Mahou",
       "ovr": 65,
       "status": "reserva",
@@ -1013,7 +1013,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 28,
       "name": "Zachary Brault-Guillard",
       "ovr": 64,
       "status": "reserva",
@@ -1068,7 +1068,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Ayman El Wafi",
       "ovr": 63,
       "status": "reserva",
@@ -1124,7 +1124,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Roman Macek",
       "ovr": 63,
       "status": "reserva",
@@ -1179,7 +1179,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Boris Babić",
       "ovr": 62,
       "status": "reserva",
@@ -1234,7 +1234,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 12,
       "name": "Sebastian Osigwe",
       "ovr": 62,
       "status": "reserva",
@@ -1249,12 +1249,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 61,
+        "esp": 69,
+        "ref": 62,
+        "pos": 64,
+        "vel": 33,
         "sta": 28
       },
       "detailedStats": {
@@ -1289,7 +1289,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 16,
       "name": "Martim Marques",
       "ovr": 61,
       "status": "reserva",
@@ -1344,7 +1344,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Ilija Maslarov",
       "ovr": 59,
       "status": "reserva",
@@ -1399,7 +1399,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 30,
       "name": "Fotis Pseftis",
       "ovr": 58,
       "status": "reserva",
@@ -1414,12 +1414,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 59,
+        "seg": 56,
+        "esp": 66,
+        "ref": 60,
+        "pos": 58,
+        "vel": 25,
         "sta": 20
       },
       "detailedStats": {
@@ -1454,7 +1454,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 31,
       "name": "Diego Mina",
       "ovr": 56,
       "status": "reserva",
@@ -1469,12 +1469,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 53,
+        "seg": 56,
+        "esp": 61,
+        "ref": 57,
+        "pos": 54,
+        "vel": 22,
         "sta": 17
       },
       "detailedStats": {
@@ -1509,7 +1509,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 32,
       "name": "Yannis Ryter",
       "ovr": 54,
       "status": "reserva",

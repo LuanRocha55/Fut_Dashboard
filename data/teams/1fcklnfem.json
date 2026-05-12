@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Nicole Billa",
       "ovr": 80,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Laura Feiersinger",
       "ovr": 80,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 2,
       "name": "Sylwia Matysik",
       "ovr": 76,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 16,
       "name": "Janina Hechler",
       "ovr": 74,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "Vanessa Leimenstoll",
       "ovr": 74,
       "status": "titular",
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 19,
       "name": "Alena Bienz",
       "ovr": 73,
       "status": "titular",
@@ -452,7 +452,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 1,
       "name": "Jasmin Pal",
       "ovr": 73,
       "status": "titular",
@@ -468,12 +468,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 67,
+        "esp": 80,
+        "ref": 74,
+        "pos": 76,
+        "vel": 49,
         "sta": 28
       },
       "detailedStats": {
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 11,
       "name": "Martyna Wiankowska",
       "ovr": 73,
       "status": "titular",
@@ -565,7 +565,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 18,
       "name": "Adriana Achcińska",
       "ovr": 72,
       "status": "titular",
@@ -620,7 +620,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 13,
       "name": "Anna Gerhardt",
       "ovr": 72,
       "status": "reserva",
@@ -675,7 +675,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 27,
       "name": "Dóra Zeller",
       "ovr": 72,
       "status": "reserva",
@@ -731,7 +731,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 20,
       "name": "Lotta Cordes",
       "ovr": 71,
       "status": "reserva",
@@ -843,7 +843,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 24,
       "name": "Laura Donhauser",
       "ovr": 70,
       "status": "reserva",
@@ -953,7 +953,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Anna-Lena Stolze",
       "ovr": 69,
       "status": "reserva",
@@ -1008,7 +1008,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 26,
       "name": "Carlotta Imping",
       "ovr": 68,
       "status": "reserva",
@@ -1063,7 +1063,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 14,
       "name": "Amelie Bohnen",
       "ovr": 67,
       "status": "reserva",
@@ -1119,7 +1119,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 12,
       "name": "Paula Hoppe",
       "ovr": 67,
       "status": "reserva",
@@ -1134,12 +1134,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 67,
+        "esp": 74,
+        "ref": 68,
+        "pos": 65,
+        "vel": 47,
         "sta": 15
       },
       "detailedStats": {
@@ -1244,12 +1244,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 64,
+        "esp": 70,
+        "ref": 63,
+        "pos": 61,
+        "vel": 48,
         "sta": 19
       },
       "detailedStats": {
@@ -1284,7 +1284,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 25,
       "name": "Emma Lattus",
       "ovr": 60,
       "status": "reserva",

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Franck Honorat",
       "ovr": 79,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Jonas Omlin",
       "ovr": 79,
       "status": "titular",
@@ -81,12 +81,12 @@
         "Far Reach"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
+        "alc": 79,
+        "seg": 77,
+        "esp": 89,
+        "ref": 82,
         "pos": 75,
-        "vel": 40,
+        "vel": 51,
         "sta": 35
       },
       "detailedStats": {
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 5,
       "name": "Julian Weigl",
       "ovr": 79,
       "status": "titular",
@@ -181,7 +181,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Tim Kleindienst",
       "ovr": 77,
       "status": "titular",
@@ -238,7 +238,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 10,
       "name": "Alassane Plea",
       "ovr": 77,
       "status": "titular",
@@ -296,7 +296,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 23,
       "name": "Kevin Stöger",
       "ovr": 77,
       "status": "titular",
@@ -357,7 +357,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 4,
       "name": "Nico Elvedi",
       "ovr": 76,
       "status": "titular",
@@ -413,7 +413,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 19,
       "name": "Robin Hack",
       "ovr": 76,
       "status": "titular",
@@ -472,7 +472,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "Ko Itakura",
       "ovr": 76,
       "status": "titular",
@@ -528,7 +528,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 8,
       "name": "Florian Neuhaus",
       "ovr": 76,
       "status": "titular",
@@ -584,7 +584,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 20,
       "name": "Tomáš Čvančara",
       "ovr": 75,
       "status": "titular",
@@ -639,7 +639,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 3,
       "name": "Luca Netz",
       "ovr": 74,
       "status": "reserva",
@@ -694,7 +694,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 18,
       "name": "Rocco Reitz",
       "ovr": 74,
       "status": "reserva",
@@ -752,7 +752,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 2,
       "name": "Joe Scally",
       "ovr": 74,
       "status": "reserva",
@@ -807,7 +807,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "Marvin Friedrich",
       "ovr": 73,
       "status": "reserva",
@@ -865,7 +865,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 13,
       "name": "Stefan Lainer",
       "ovr": 73,
       "status": "reserva",
@@ -922,7 +922,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 12,
       "name": "Moritz Nicolas",
       "ovr": 73,
       "status": "reserva",
@@ -937,12 +937,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 76,
+        "seg": 74,
+        "esp": 85,
+        "ref": 77,
+        "pos": 70,
+        "vel": 26,
         "sta": 28
       },
       "detailedStats": {
@@ -977,7 +977,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 28,
       "name": "Nathan Ngoumou",
       "ovr": 72,
       "status": "reserva",
@@ -1032,7 +1032,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Philipp Sander",
       "ovr": 72,
       "status": "reserva",
@@ -1089,7 +1089,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Jan Olschowsky",
       "ovr": 69,
       "status": "reserva",
@@ -1104,12 +1104,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 69,
+        "esp": 78,
+        "ref": 69,
+        "pos": 70,
+        "vel": 17,
         "sta": 16
       },
       "detailedStats": {
@@ -1144,7 +1144,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Tobias Sippel",
       "ovr": 68,
       "status": "reserva",
@@ -1159,12 +1159,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 65,
+        "esp": 74,
+        "ref": 67,
+        "pos": 66,
+        "vel": 42,
         "sta": 41
       },
       "detailedStats": {
@@ -1199,7 +1199,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 27,
       "name": "Yvandro Borges Sanches",
       "ovr": 64,
       "status": "reserva",
@@ -1254,7 +1254,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Fabio Chiarodia",
       "ovr": 64,
       "status": "reserva",
@@ -1310,7 +1310,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 29,
       "name": "Grant-Leon Ranos",
       "ovr": 63,
       "status": "reserva",
@@ -1365,7 +1365,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 16,
       "name": "Lukas Ullrich",
       "ovr": 62,
       "status": "reserva",

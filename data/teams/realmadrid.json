@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Kylian Mbappé",
       "ovr": 91,
       "status": "titular",
@@ -68,7 +68,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Jude Bellingham",
       "ovr": 90,
       "status": "titular",
@@ -127,7 +127,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 7,
       "name": "Vini Jr.",
       "ovr": 90,
       "status": "titular",
@@ -188,7 +188,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Thibaut Courtois",
       "ovr": 89,
       "status": "titular",
@@ -205,12 +205,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 85,
+        "seg": 89,
+        "esp": 97,
+        "ref": 90,
+        "pos": 88,
+        "vel": 52,
         "sta": 38
       },
       "detailedStats": {
@@ -245,7 +245,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 8,
       "name": "Federico Valverde",
       "ovr": 88,
       "status": "titular",
@@ -304,7 +304,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 4,
       "name": "Antonio Rüdiger",
       "ovr": 88,
       "status": "titular",
@@ -364,7 +364,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 17,
       "name": "Rodrygo",
       "ovr": 86,
       "status": "titular",
@@ -422,7 +422,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 18,
       "name": "Luka Modrić",
       "ovr": 86,
       "status": "titular",
@@ -481,7 +481,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 2,
       "name": "Carvajal",
       "ovr": 86,
       "status": "titular",
@@ -537,7 +537,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "David Alaba",
       "ovr": 85,
       "status": "titular",
@@ -595,7 +595,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 25,
       "name": "Éder Militão",
       "ovr": 85,
       "status": "titular",
@@ -655,7 +655,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 5,
       "name": "Aurélien Tchouaméni",
       "ovr": 85,
       "status": "reserva",
@@ -716,7 +716,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 3,
       "name": "Ferland Mendy",
       "ovr": 84,
       "status": "reserva",
@@ -772,7 +772,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 20,
       "name": "Eduardo Camavinga",
       "ovr": 83,
       "status": "reserva",
@@ -831,7 +831,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 23,
       "name": "Brahim",
       "ovr": 82,
       "status": "reserva",
@@ -888,7 +888,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 12,
       "name": "Andriy Lunin",
       "ovr": 81,
       "status": "reserva",
@@ -903,12 +903,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 80,
+        "seg": 78,
+        "esp": 90,
+        "ref": 82,
+        "pos": 80,
+        "vel": 35,
         "sta": 32
       },
       "detailedStats": {
@@ -943,7 +943,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 13,
       "name": "Lucas Vázquez",
       "ovr": 81,
       "status": "reserva",
@@ -1000,7 +1000,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 19,
       "name": "Dani Ceballos",
       "ovr": 79,
       "status": "reserva",
@@ -1060,7 +1060,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 16,
       "name": "Fran García",
       "ovr": 78,
       "status": "reserva",
@@ -1117,7 +1117,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 30,
       "name": "Arda Güler",
       "ovr": 78,
       "status": "reserva",
@@ -1291,7 +1291,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 11,
       "name": "Gonzalo",
       "ovr": 65,
       "status": "reserva",
@@ -1402,7 +1402,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "Edgar Pujol",
       "ovr": 63,
       "status": "reserva",

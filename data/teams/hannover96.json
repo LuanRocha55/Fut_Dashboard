@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Marcel Halstenberg",
       "ovr": 76,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Ron-Robert Zieler",
       "ovr": 73,
       "status": "titular",
@@ -80,12 +80,12 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
+        "alc": 71,
+        "seg": 69,
+        "esp": 81,
+        "ref": 74,
         "pos": 75,
-        "vel": 40,
+        "vel": 50,
         "sta": 32
       },
       "detailedStats": {
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 14,
       "name": "Phil Neumann",
       "ovr": 72,
       "status": "titular",
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 5,
       "name": "Fabian Kunze",
       "ovr": 71,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 8,
       "name": "Enzo Leopold",
       "ovr": 71,
       "status": "titular",
@@ -290,7 +290,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 2,
       "name": "Sei Muroya",
       "ovr": 71,
       "status": "titular",
@@ -346,7 +346,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 9,
       "name": "Jessic Ngankam",
       "ovr": 71,
       "status": "titular",
@@ -401,7 +401,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 11,
       "name": "Jannik Rochelt",
       "ovr": 71,
       "status": "titular",
@@ -457,7 +457,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 10,
       "name": "Håvard Nielsen",
       "ovr": 70,
       "status": "titular",
@@ -512,7 +512,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 19,
       "name": "Andreas Voglsammer",
       "ovr": 70,
       "status": "titular",
@@ -567,7 +567,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 13,
       "name": "Jannik Dehm",
       "ovr": 69,
       "status": "titular",
@@ -622,7 +622,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 20,
       "name": "Nicolò Tresoldi",
       "ovr": 69,
       "status": "reserva",
@@ -677,7 +677,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 21,
       "name": "Max Christiansen",
       "ovr": 68,
       "status": "reserva",
@@ -732,7 +732,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 3,
       "name": "Bartłomiej Wdowik",
       "ovr": 68,
       "status": "reserva",
@@ -787,7 +787,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 16,
       "name": "Brooklyn Ezeh",
       "ovr": 66,
       "status": "reserva",
@@ -842,7 +842,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 25,
       "name": "Josh Knight",
       "ovr": 66,
       "status": "reserva",
@@ -898,7 +898,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 23,
       "name": "Lee Hyun Ju",
       "ovr": 66,
       "status": "reserva",
@@ -953,7 +953,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 12,
       "name": "Leo Weinkauf",
       "ovr": 66,
       "status": "reserva",
@@ -968,12 +968,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 67,
+        "esp": 76,
+        "ref": 71,
+        "pos": 69,
+        "vel": 34,
         "sta": 26
       },
       "detailedStats": {
@@ -1008,7 +1008,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Lars Gindorf",
       "ovr": 65,
       "status": "reserva",
@@ -1063,7 +1063,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 30,
       "name": "Kolja Oudenne",
       "ovr": 65,
       "status": "reserva",
@@ -1118,7 +1118,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 28,
       "name": "Thaddäus-Monju Momuluh",
       "ovr": 63,
       "status": "reserva",
@@ -1173,7 +1173,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Eric Uhlmann",
       "ovr": 63,
       "status": "reserva",
@@ -1229,7 +1229,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Montell Ndikom",
       "ovr": 58,
       "status": "reserva",
@@ -1284,7 +1284,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 27,
       "name": "Leon-Oumar Wechsel",
       "ovr": 56,
       "status": "reserva",
@@ -1299,12 +1299,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 55,
+        "esp": 65,
+        "ref": 59,
+        "pos": 54,
+        "vel": 21,
         "sta": 23
       },
       "detailedStats": {

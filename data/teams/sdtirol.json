@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Daniele Casiraghi",
       "ovr": 74,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Giacomo Poluzzi",
       "ovr": 71,
       "status": "titular",
@@ -80,12 +80,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 69,
+        "esp": 79,
+        "ref": 73,
+        "pos": 73,
+        "vel": 49,
         "sta": 21
       },
       "detailedStats": {
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 5,
       "name": "Jasmin Kurtić",
       "ovr": 70,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 19,
       "name": "Salvatore Molina",
       "ovr": 69,
       "status": "titular",
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 9,
       "name": "Raphael Odogwu",
       "ovr": 69,
       "status": "titular",
@@ -344,7 +344,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 8,
       "name": "Fabian Tait",
       "ovr": 69,
       "status": "titular",
@@ -401,7 +401,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 18,
       "name": "Tommaso Arrigoni",
       "ovr": 68,
       "status": "titular",
@@ -456,7 +456,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "Luca Ceppitelli",
       "ovr": 68,
       "status": "titular",
@@ -513,7 +513,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 3,
       "name": "Simone Davi",
       "ovr": 67,
       "status": "titular",
@@ -568,7 +568,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 21,
       "name": "Mateusz Praszelik",
       "ovr": 67,
       "status": "titular",
@@ -624,7 +624,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 27,
       "name": "Matteo Rover",
       "ovr": 67,
       "status": "reserva",
@@ -679,7 +679,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 16,
       "name": "Andrea Cagnano",
       "ovr": 66,
       "status": "reserva",
@@ -734,7 +734,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 10,
       "name": "Silvio Merkaj",
       "ovr": 66,
       "status": "reserva",
@@ -789,7 +789,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 20,
       "name": "Valerio Crespi",
       "ovr": 65,
       "status": "reserva",
@@ -844,7 +844,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 17,
       "name": "Alessandro Mallamo",
       "ovr": 65,
       "status": "reserva",
@@ -899,7 +899,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 2,
       "name": "Hamza El Kaouakibi",
       "ovr": 64,
       "status": "reserva",
@@ -954,7 +954,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 25,
       "name": "Andrea Giorgini",
       "ovr": 64,
       "status": "reserva",
@@ -1010,7 +1010,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Karim Zedadka",
       "ovr": 64,
       "status": "reserva",
@@ -1065,7 +1065,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 23,
       "name": "Raphael Kofler",
       "ovr": 63,
       "status": "reserva",
@@ -1120,7 +1120,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Lorenzo Lonardi",
       "ovr": 60,
       "status": "reserva",
@@ -1175,7 +1175,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 12,
       "name": "Giacomo Drago",
       "ovr": 58,
       "status": "reserva",
@@ -1190,12 +1190,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 55,
+        "esp": 67,
+        "ref": 62,
+        "pos": 53,
+        "vel": 41,
         "sta": 21
       },
       "detailedStats": {

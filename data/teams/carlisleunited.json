@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Charlie Wyke",
       "ovr": 66,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 5,
       "name": "Callum Guy",
       "ovr": 64,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Aaron Hayden",
       "ovr": 64,
       "status": "titular",
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 21,
       "name": "Harrison Neal",
       "ovr": 64,
       "status": "titular",
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 14,
       "name": "Terell Thomas",
       "ovr": 64,
       "status": "titular",
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Josh Vela",
       "ovr": 64,
       "status": "titular",
@@ -344,7 +344,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "Luke Armstrong",
       "ovr": 63,
       "status": "titular",
@@ -399,7 +399,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 25,
       "name": "Sam Lavelle",
       "ovr": 63,
       "status": "titular",
@@ -455,7 +455,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 11,
       "name": "Jon Mellish",
       "ovr": 63,
       "status": "titular",
@@ -511,7 +511,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 18,
       "name": "Harrison Biggins",
       "ovr": 62,
       "status": "titular",
@@ -566,7 +566,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 2,
       "name": "Archie Davies",
       "ovr": 62,
       "status": "titular",
@@ -621,7 +621,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 19,
       "name": "Georgie Kelly",
       "ovr": 62,
       "status": "reserva",
@@ -676,7 +676,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 1,
       "name": "Harry Lewis",
       "ovr": 62,
       "status": "reserva",
@@ -691,12 +691,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 60,
+        "esp": 68,
+        "ref": 63,
+        "pos": 62,
+        "vel": 51,
         "sta": 29
       },
       "detailedStats": {
@@ -731,7 +731,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 20,
       "name": "Dylan McGeouch",
       "ovr": 62,
       "status": "reserva",
@@ -952,7 +952,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 23,
       "name": "Jack Robinson",
       "ovr": 59,
       "status": "reserva",
@@ -1007,7 +1007,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 13,
       "name": "Jack Ellis",
       "ovr": 58,
       "status": "reserva",
@@ -1062,7 +1062,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 12,
       "name": "Gabriel Breeze",
       "ovr": 57,
       "status": "reserva",
@@ -1077,12 +1077,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 56,
+        "seg": 56,
+        "esp": 63,
+        "ref": 58,
+        "pos": 55,
+        "vel": 29,
         "sta": 22
       },
       "detailedStats": {
@@ -1117,7 +1117,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 27,
       "name": "Dominic Sadi",
       "ovr": 57,
       "status": "reserva",
@@ -1172,7 +1172,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 3,
       "name": "Taylor Charters",
       "ovr": 56,
       "status": "reserva",

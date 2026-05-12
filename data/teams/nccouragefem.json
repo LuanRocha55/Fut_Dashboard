@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Ashley Sanchez",
       "ovr": 83,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Casey Murphy",
       "ovr": 82,
       "status": "titular",
@@ -82,12 +82,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 84,
+        "seg": 80,
+        "esp": 92,
+        "ref": 82,
+        "pos": 86,
+        "vel": 41,
         "sta": 27
       },
       "detailedStats": {
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 11,
       "name": "Kerolin Nicoli",
       "ovr": 80,
       "status": "titular",
@@ -292,7 +292,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 21,
       "name": "Dani Weatherholt",
       "ovr": 77,
       "status": "titular",
@@ -348,7 +348,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 4,
       "name": "Estelle Johnson",
       "ovr": 76,
       "status": "titular",
@@ -404,7 +404,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Kaleigh Kurtz",
       "ovr": 75,
       "status": "titular",
@@ -462,7 +462,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 19,
       "name": "Tyler Lussi",
       "ovr": 75,
       "status": "titular",
@@ -517,7 +517,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 23,
       "name": "Narumi Miura",
       "ovr": 75,
       "status": "titular",
@@ -574,7 +574,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 12,
       "name": "Brianna Pinto",
       "ovr": 75,
       "status": "titular",
@@ -629,7 +629,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 28,
       "name": "Bianca St-Georges",
       "ovr": 75,
       "status": "reserva",
@@ -685,7 +685,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 2,
       "name": "Ryan Williams",
       "ovr": 75,
       "status": "reserva",
@@ -741,7 +741,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 8,
       "name": "Meredith Speck",
       "ovr": 74,
       "status": "reserva",
@@ -796,7 +796,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 27,
       "name": "Cortnee Vine",
       "ovr": 74,
       "status": "reserva",
@@ -851,7 +851,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 25,
       "name": "Malia Berkely",
       "ovr": 73,
       "status": "reserva",
@@ -907,7 +907,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 22,
       "name": "Marisa Bova",
       "ovr": 72,
       "status": "reserva",
@@ -922,12 +922,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 72,
+        "esp": 79,
+        "ref": 72,
+        "pos": 72,
+        "vel": 42,
         "sta": 20
       },
       "detailedStats": {
@@ -977,12 +977,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 68,
+        "esp": 79,
+        "ref": 72,
+        "pos": 73,
+        "vel": 39,
         "sta": 20
       },
       "detailedStats": {
@@ -1017,7 +1017,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 20,
       "name": "Victoria Pickett",
       "ovr": 72,
       "status": "reserva",
@@ -1072,7 +1072,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 9,
       "name": "Haley Hopkins",
       "ovr": 70,
       "status": "reserva",
@@ -1127,7 +1127,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Sydney Collins",
       "ovr": 69,
       "status": "reserva",
@@ -1183,7 +1183,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Olivia Wingate",
       "ovr": 69,
       "status": "reserva",
@@ -1238,7 +1238,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 29,
       "name": "Riley Jackson",
       "ovr": 68,
       "status": "reserva",
@@ -1293,7 +1293,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 30,
       "name": "Charlotte McLean",
       "ovr": 68,
       "status": "reserva",
@@ -1349,7 +1349,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 31,
       "name": "Manaka Matsukubo",
       "ovr": 67,
       "status": "reserva",
@@ -1404,7 +1404,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 32,
       "name": "Landy Mertz",
       "ovr": 65,
       "status": "reserva",

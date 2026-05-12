@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Nicolas Schiavi",
       "ovr": 69,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Matteo Di Gennaro",
       "ovr": 68,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Mattia Finotto",
       "ovr": 68,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 19,
       "name": "Giuseppe Panico",
       "ovr": 68,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 20,
       "name": "Alessandro Capello",
       "ovr": 67,
       "status": "titular",
@@ -284,7 +284,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Mauro Coppolaro",
       "ovr": 67,
       "status": "titular",
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 25,
       "name": "Hjörtur Hermannsson",
       "ovr": 67,
       "status": "titular",
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 11,
       "name": "Manuel Cicconi",
       "ovr": 66,
       "status": "titular",
@@ -452,7 +452,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 12,
       "name": "Marco Imperiale",
       "ovr": 66,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 8,
       "name": "Leonardo Capezzi",
       "ovr": 65,
       "status": "titular",
@@ -563,7 +563,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 27,
       "name": "Niccoló Belloni",
       "ovr": 64,
       "status": "titular",
@@ -618,7 +618,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 1,
       "name": "Marco Bleve",
       "ovr": 64,
       "status": "reserva",
@@ -633,12 +633,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 64,
+        "esp": 74,
+        "ref": 66,
+        "pos": 63,
+        "vel": 15,
         "sta": 28
       },
       "detailedStats": {
@@ -728,7 +728,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Leonardo Cerri",
       "ovr": 60,
       "status": "reserva",

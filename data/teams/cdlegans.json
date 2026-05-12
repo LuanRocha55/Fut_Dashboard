@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Sébastien Haller",
       "ovr": 79,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Marko Dmitrović",
       "ovr": 78,
       "status": "titular",
@@ -81,12 +81,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 76,
+        "seg": 77,
+        "esp": 86,
+        "ref": 78,
+        "pos": 79,
+        "vel": 35,
         "sta": 45
       },
       "detailedStats": {
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Óscar",
       "ovr": 74,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 2,
       "name": "Valentin Rosier",
       "ovr": 74,
       "status": "titular",
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 12,
       "name": "Juan Soriano",
       "ovr": 74,
       "status": "titular",
@@ -247,12 +247,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 74,
+        "seg": 70,
+        "esp": 83,
+        "ref": 76,
+        "pos": 73,
+        "vel": 37,
         "sta": 35
       },
       "detailedStats": {
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 18,
       "name": "Darko Brašanac",
       "ovr": 73,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "Miguel",
       "ovr": 73,
       "status": "titular",
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 11,
       "name": "Dani Raba",
       "ovr": 73,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 4,
       "name": "Sergio",
       "ovr": 72,
       "status": "titular",
@@ -509,7 +509,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 3,
       "name": "Javi Hernández",
       "ovr": 72,
       "status": "titular",
@@ -564,7 +564,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 23,
       "name": "Roberto López",
       "ovr": 72,
       "status": "titular",
@@ -621,7 +621,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 5,
       "name": "Yvan Neyou",
       "ovr": 71,
       "status": "reserva",
@@ -676,7 +676,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 14,
       "name": "Jackson Porozo",
       "ovr": 71,
       "status": "reserva",
@@ -732,7 +732,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 25,
       "name": "Jorge Sáenz",
       "ovr": 71,
       "status": "reserva",
@@ -790,7 +790,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 19,
       "name": "Juan Cruz",
       "ovr": 70,
       "status": "reserva",
@@ -845,7 +845,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 20,
       "name": "Diego García",
       "ovr": 70,
       "status": "reserva",
@@ -955,7 +955,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 16,
       "name": "Franquesa",
       "ovr": 69,
       "status": "reserva",
@@ -1010,7 +1010,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Julián Chicco",
       "ovr": 68,
       "status": "reserva",
@@ -1065,7 +1065,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 13,
       "name": "Altimira",
       "ovr": 66,
       "status": "reserva",
@@ -1120,7 +1120,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 28,
       "name": "Naim García",
       "ovr": 64,
       "status": "reserva",

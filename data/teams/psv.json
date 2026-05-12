@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Luuk de Jong",
       "ovr": 81,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 5,
       "name": "Jerdy Schouten",
       "ovr": 81,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Joey Veerman",
       "ovr": 81,
       "status": "titular",
@@ -183,7 +183,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Walter Benítez",
       "ovr": 80,
       "status": "titular",
@@ -198,12 +198,12 @@
         "1v1 Close Down"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 79,
+        "seg": 78,
+        "esp": 89,
+        "ref": 82,
+        "pos": 79,
+        "vel": 35,
         "sta": 40
       },
       "detailedStats": {
@@ -238,7 +238,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 17,
       "name": "Johan Bakayoko",
       "ovr": 79,
       "status": "titular",
@@ -297,7 +297,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 3,
       "name": "Sergiño Dest",
       "ovr": 79,
       "status": "titular",
@@ -413,7 +413,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 4,
       "name": "Olivier Boscagli",
       "ovr": 78,
       "status": "titular",
@@ -470,7 +470,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 2,
       "name": "Rick Karsdorp",
       "ovr": 78,
       "status": "titular",
@@ -526,7 +526,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 31,
       "name": "Hirving Lozano",
       "ovr": 78,
       "status": "titular",
@@ -583,7 +583,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 10,
       "name": "Malik Tillman",
       "ovr": 77,
       "status": "titular",
@@ -643,7 +643,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 16,
       "name": "Mauro Júnior",
       "ovr": 76,
       "status": "reserva",
@@ -698,7 +698,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 23,
       "name": "Ismael Saibari",
       "ovr": 76,
       "status": "reserva",
@@ -753,7 +753,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 30,
       "name": "Guus Til",
       "ovr": 75,
       "status": "reserva",
@@ -809,7 +809,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 12,
       "name": "Joël Drommel",
       "ovr": 73,
       "status": "reserva",
@@ -825,12 +825,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "alc": 74,
+        "seg": 72,
+        "esp": 83,
         "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "pos": 71,
+        "vel": 52,
         "sta": 43
       },
       "detailedStats": {
@@ -865,7 +865,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 14,
       "name": "Armando Obispo",
       "ovr": 73,
       "status": "reserva",
@@ -921,7 +921,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 19,
       "name": "Ricardo Pepi",
       "ovr": 73,
       "status": "reserva",
@@ -976,7 +976,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 25,
       "name": "Ryan Flamingo",
       "ovr": 72,
       "status": "reserva",
@@ -1035,7 +1035,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 20,
       "name": "Adamo Nagalo",
       "ovr": 71,
       "status": "reserva",
@@ -1093,7 +1093,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 29,
       "name": "Couhaib Driouech",
       "ovr": 70,
       "status": "reserva",
@@ -1262,7 +1262,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Fredrik Oppegård",
       "ovr": 66,
       "status": "reserva",
@@ -1317,7 +1317,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 18,
       "name": "Tygo Land",
       "ovr": 64,
       "status": "reserva",
@@ -1373,7 +1373,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 27,
       "name": "Niek Schiks",
       "ovr": 63,
       "status": "reserva",
@@ -1388,12 +1388,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 62,
+        "esp": 68,
+        "ref": 60,
+        "pos": 64,
+        "vel": 22,
         "sta": 25
       },
       "detailedStats": {

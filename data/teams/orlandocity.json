@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Luis Muriel",
       "ovr": 78,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Facundo Torres",
       "ovr": 74,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "Nicolás Lodeiro",
       "ovr": 73,
       "status": "titular",
@@ -180,7 +180,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Pedro Gallese",
       "ovr": 72,
       "status": "titular",
@@ -195,12 +195,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 71,
+        "esp": 80,
+        "ref": 73,
+        "pos": 70,
+        "vel": 48,
         "sta": 30
       },
       "detailedStats": {
@@ -235,7 +235,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 23,
       "name": "Martín Ojeda",
       "ovr": 72,
       "status": "titular",
@@ -291,7 +291,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 4,
       "name": "David Brekalo",
       "ovr": 70,
       "status": "titular",
@@ -347,7 +347,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 19,
       "name": "Ramiro Enrique",
       "ovr": 70,
       "status": "titular",
@@ -402,7 +402,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Robin Jansson",
       "ovr": 70,
       "status": "titular",
@@ -458,7 +458,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 27,
       "name": "Iván Angulo",
       "ovr": 69,
       "status": "titular",
@@ -514,7 +514,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 5,
       "name": "César Araújo",
       "ovr": 69,
       "status": "titular",
@@ -569,7 +569,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 21,
       "name": "Wilder Cartagena",
       "ovr": 69,
       "status": "titular",
@@ -624,7 +624,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 20,
       "name": "Duncan McGuire",
       "ovr": 67,
       "status": "reserva",
@@ -679,7 +679,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 2,
       "name": "Kyle Smith",
       "ovr": 66,
       "status": "reserva",
@@ -734,7 +734,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 3,
       "name": "Rafael Santos",
       "ovr": 65,
       "status": "reserva",
@@ -844,7 +844,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 25,
       "name": "Rodrigo Schlegel",
       "ovr": 64,
       "status": "reserva",
@@ -902,7 +902,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 13,
       "name": "Dagur Dan Þór­halls­son",
       "ovr": 64,
       "status": "reserva",
@@ -957,7 +957,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 16,
       "name": "Luca Petrasso",
       "ovr": 62,
       "status": "reserva",
@@ -1012,7 +1012,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 8,
       "name": "Heine Gikling Bruseth",
       "ovr": 60,
       "status": "reserva",
@@ -1067,7 +1067,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Shakur Mohammed",
       "ovr": 59,
       "status": "reserva",
@@ -1122,7 +1122,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Michael Halliday",
       "ovr": 58,
       "status": "reserva",
@@ -1177,7 +1177,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 12,
       "name": "Mason Stajduhar",
       "ovr": 58,
       "status": "reserva",
@@ -1192,12 +1192,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 59,
+        "seg": 56,
+        "esp": 66,
+        "ref": 60,
+        "pos": 57,
+        "vel": 31,
         "sta": 26
       },
       "detailedStats": {
@@ -1232,7 +1232,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Jack Lynn",
       "ovr": 55,
       "status": "reserva",
@@ -1287,7 +1287,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 28,
       "name": "Javier Otero",
       "ovr": 55,
       "status": "reserva",
@@ -1302,12 +1302,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 56,
+        "seg": 53,
+        "esp": 62,
+        "ref": 55,
+        "pos": 54,
+        "vel": 26,
         "sta": 23
       },
       "detailedStats": {
@@ -1342,7 +1342,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 18,
       "name": "Favian Loyola",
       "ovr": 54,
       "status": "reserva",
@@ -1397,7 +1397,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Thomas Williams",
       "ovr": 53,
       "status": "reserva",
@@ -1453,7 +1453,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 30,
       "name": "Alexander Freeman",
       "ovr": 52,
       "status": "reserva",
@@ -1508,7 +1508,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 31,
       "name": "Jeorgio Kocevski",
       "ovr": 50,
       "status": "reserva",
@@ -1563,7 +1563,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 32,
       "name": "Tahir Reid-Brown",
       "ovr": 48,
       "status": "reserva",

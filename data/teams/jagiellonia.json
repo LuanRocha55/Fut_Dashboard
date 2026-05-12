@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Jesús Imaz",
       "ovr": 72,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Nené",
       "ovr": 70,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Afimico Pululu",
       "ovr": 70,
       "status": "titular",
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 5,
       "name": "Taras Romanczuk",
       "ovr": 70,
       "status": "titular",
@@ -235,7 +235,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 2,
       "name": "Michal Sáček",
       "ovr": 70,
       "status": "titular",
@@ -290,7 +290,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 13,
       "name": "Tomás Silva",
       "ovr": 69,
       "status": "titular",
@@ -345,7 +345,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 4,
       "name": "Adrián Diéguez",
       "ovr": 69,
       "status": "titular",
@@ -401,7 +401,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 11,
       "name": "Darko Churlinov",
       "ovr": 68,
       "status": "titular",
@@ -457,7 +457,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 19,
       "name": "Kristoffer N. Hansen",
       "ovr": 68,
       "status": "titular",
@@ -512,7 +512,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 21,
       "name": "Jarosław Kubicki",
       "ovr": 67,
       "status": "titular",
@@ -567,7 +567,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 14,
       "name": "Mateusz Skrzypczak",
       "ovr": 67,
       "status": "titular",
@@ -623,7 +623,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 1,
       "name": "Max Stryjek",
       "ovr": 67,
       "status": "reserva",
@@ -638,12 +638,12 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
+        "alc": 67,
+        "seg": 67,
         "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "ref": 68,
+        "pos": 66,
+        "vel": 44,
         "sta": 42
       },
       "detailedStats": {
@@ -678,7 +678,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 3,
       "name": "João Moutinho",
       "ovr": 66,
       "status": "reserva",
@@ -733,7 +733,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 25,
       "name": "Jetmir Haliti",
       "ovr": 64,
       "status": "reserva",
@@ -789,7 +789,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 28,
       "name": "Miki Villar",
       "ovr": 64,
       "status": "reserva",
@@ -844,7 +844,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 20,
       "name": "Lamine Diaby Fadiga",
       "ovr": 63,
       "status": "reserva",
@@ -899,7 +899,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 18,
       "name": "Marcin Listkowski",
       "ovr": 63,
       "status": "reserva",
@@ -954,7 +954,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 22,
       "name": "Aurélien Nguiamba",
       "ovr": 62,
       "status": "reserva",
@@ -1009,7 +1009,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 23,
       "name": "Dušan Stojinović",
       "ovr": 59,
       "status": "reserva",
@@ -1065,7 +1065,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 12,
       "name": "Sławomir Abramowicz",
       "ovr": 58,
       "status": "reserva",
@@ -1080,12 +1080,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 55,
+        "seg": 59,
+        "esp": 63,
+        "ref": 59,
+        "pos": 58,
+        "vel": 30,
         "sta": 16
       },
       "detailedStats": {
@@ -1120,7 +1120,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 27,
       "name": "Jakub Lewicki",
       "ovr": 58,
       "status": "reserva",
@@ -1175,7 +1175,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Alan Rybak",
       "ovr": 54,
       "status": "reserva",

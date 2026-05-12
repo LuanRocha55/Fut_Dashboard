@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Shogo Taniguchi",
       "ovr": 72,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Ryotaro Ito",
       "ovr": 71,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 14,
       "name": "Bruno Godeau",
       "ovr": 69,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 25,
       "name": "Rein Van Helden",
       "ovr": 69,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 2,
       "name": "Louis Patris",
       "ovr": 68,
       "status": "titular",
@@ -344,7 +344,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 9,
       "name": "Adriano Bertaccini",
       "ovr": 67,
       "status": "titular",
@@ -399,7 +399,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 5,
       "name": "Joel Chima Fujita",
       "ovr": 67,
       "status": "titular",
@@ -454,7 +454,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "Ryoya Ogawa",
       "ovr": 67,
       "status": "titular",
@@ -564,7 +564,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 13,
       "name": "Frederic Ananou",
       "ovr": 66,
       "status": "titular",
@@ -676,7 +676,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 11,
       "name": "Robert-Jan Vanwesemael",
       "ovr": 66,
       "status": "reserva",
@@ -731,7 +731,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 21,
       "name": "Rihito Yamamoto",
       "ovr": 65,
       "status": "reserva",
@@ -786,7 +786,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 1,
       "name": "Leo Kokubo",
       "ovr": 64,
       "status": "reserva",
@@ -801,12 +801,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 62,
+        "esp": 71,
+        "ref": 65,
+        "pos": 63,
+        "vel": 35,
         "sta": 22
       },
       "detailedStats": {
@@ -841,7 +841,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 22,
       "name": "Jo Coppens",
       "ovr": 63,
       "status": "reserva",
@@ -856,12 +856,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 60,
+        "esp": 71,
+        "ref": 62,
+        "pos": 64,
+        "vel": 42,
         "sta": 33
       },
       "detailedStats": {
@@ -896,7 +896,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 19,
       "name": "Joselpho Barnes",
       "ovr": 62,
       "status": "reserva",
@@ -1006,7 +1006,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 23,
       "name": "Isaías Delpupo",
       "ovr": 61,
       "status": "reserva",
@@ -1117,7 +1117,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Alouis Diriken",
       "ovr": 57,
       "status": "reserva",
@@ -1173,7 +1173,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 27,
       "name": "Tristan Teuchy",
       "ovr": 57,
       "status": "reserva",
@@ -1228,7 +1228,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Matt Lendfers",
       "ovr": 55,
       "status": "reserva",
@@ -1243,12 +1243,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 49,
+        "esp": 69,
+        "ref": 60,
+        "pos": 50,
+        "vel": 46,
         "sta": 27
       },
       "detailedStats": {
@@ -1283,7 +1283,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 30,
       "name": "Adam Nhaili",
       "ovr": 55,
       "status": "reserva",
@@ -1338,7 +1338,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 28,
       "name": "Hugo Lambotte",
       "ovr": 54,
       "status": "reserva",

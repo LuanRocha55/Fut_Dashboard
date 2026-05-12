@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Clara Mateo",
       "ovr": 85,
       "status": "titular",
@@ -68,7 +68,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Chiamaka Nnadozie",
       "ovr": 85,
       "status": "titular",
@@ -84,12 +84,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 84,
+        "seg": 83,
+        "esp": 94,
+        "ref": 86,
+        "pos": 84,
+        "vel": 62,
         "sta": 36
       },
       "detailedStats": {
@@ -124,7 +124,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Mathilde Bourdieu",
       "ovr": 83,
       "status": "titular",
@@ -182,7 +182,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 10,
       "name": "Gaëtane Thiney",
       "ovr": 83,
       "status": "titular",
@@ -298,7 +298,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 4,
       "name": "Théa Gréboval",
       "ovr": 82,
       "status": "titular",
@@ -358,7 +358,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 19,
       "name": "Julie Dufour",
       "ovr": 81,
       "status": "titular",
@@ -417,7 +417,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 27,
       "name": "Kessya Bussy",
       "ovr": 80,
       "status": "titular",
@@ -475,7 +475,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 23,
       "name": "Maëlle Garbino",
       "ovr": 80,
       "status": "titular",
@@ -534,7 +534,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 21,
       "name": "Margaux Le Mouël",
       "ovr": 76,
       "status": "titular",
@@ -589,7 +589,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 14,
       "name": "Célina Ould Hocine",
       "ovr": 76,
       "status": "titular",
@@ -645,7 +645,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 25,
       "name": "Deja Davis",
       "ovr": 75,
       "status": "reserva",
@@ -702,7 +702,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Louna Ribadeira",
       "ovr": 74,
       "status": "reserva",
@@ -757,7 +757,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 3,
       "name": "Lou Bogaert",
       "ovr": 73,
       "status": "reserva",
@@ -812,7 +812,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 8,
       "name": "Kaja Korošec",
       "ovr": 73,
       "status": "reserva",
@@ -1033,7 +1033,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 12,
       "name": "Inès Marques",
       "ovr": 68,
       "status": "reserva",
@@ -1048,12 +1048,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 66,
+        "esp": 79,
+        "ref": 72,
+        "pos": 63,
+        "vel": 41,
         "sta": 31
       },
       "detailedStats": {
@@ -1088,7 +1088,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 2,
       "name": "Melween N'Dongala",
       "ovr": 68,
       "status": "reserva",
@@ -1143,7 +1143,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Alizée Flagellat",
       "ovr": 59,
       "status": "reserva",
@@ -1158,12 +1158,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 60,
+        "esp": 68,
+        "ref": 58,
+        "pos": 51,
+        "vel": 47,
         "sta": 34
       },
       "detailedStats": {

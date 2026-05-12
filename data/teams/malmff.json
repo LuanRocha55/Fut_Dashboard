@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 3,
       "name": "Busanello",
       "ovr": 73,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Pontus Jansson",
       "ovr": 73,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 2,
       "name": "Jens Stryger Larsen",
       "ovr": 73,
       "status": "titular",
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Anders Christiansen",
       "ovr": 72,
       "status": "titular",
@@ -289,7 +289,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 18,
       "name": "Sergio Peña",
       "ovr": 72,
       "status": "titular",
@@ -347,7 +347,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 11,
       "name": "Sead Hakšabanović",
       "ovr": 71,
       "status": "titular",
@@ -404,7 +404,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 9,
       "name": "Isaac Kiese Thelin",
       "ovr": 71,
       "status": "titular",
@@ -459,7 +459,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 10,
       "name": "Erik Botheim",
       "ovr": 70,
       "status": "titular",
@@ -514,7 +514,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 1,
       "name": "Johan Dahlin",
       "ovr": 70,
       "status": "titular",
@@ -529,12 +529,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 71,
+        "esp": 72,
+        "ref": 64,
+        "pos": 77,
+        "vel": 34,
         "sta": 39
       },
       "detailedStats": {
@@ -569,7 +569,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 13,
       "name": "Anton Tinnerholm",
       "ovr": 70,
       "status": "titular",
@@ -624,7 +624,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 19,
       "name": "Stefano Vecchia",
       "ovr": 70,
       "status": "reserva",
@@ -681,7 +681,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 23,
       "name": "Oliver Berg",
       "ovr": 69,
       "status": "reserva",
@@ -793,7 +793,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 27,
       "name": "Taha Abdi Ali",
       "ovr": 68,
       "status": "reserva",
@@ -850,7 +850,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 28,
       "name": "Sebastian Jørgensen",
       "ovr": 68,
       "status": "reserva",
@@ -905,7 +905,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 21,
       "name": "Oscar Lewicki",
       "ovr": 68,
       "status": "reserva",
@@ -962,7 +962,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 16,
       "name": "Martin Olsson",
       "ovr": 67,
       "status": "reserva",
@@ -1017,7 +1017,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 12,
       "name": "Ricardo Friedrich",
       "ovr": 67,
       "status": "reserva",
@@ -1032,12 +1032,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 64,
+        "esp": 76,
+        "ref": 69,
+        "pos": 63,
+        "vel": 20,
         "sta": 32
       },
       "detailedStats": {
@@ -1127,7 +1127,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Otto Rosengren",
       "ovr": 65,
       "status": "reserva",
@@ -1182,7 +1182,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 25,
       "name": "Colin Rösler",
       "ovr": 63,
       "status": "reserva",
@@ -1238,7 +1238,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 30,
       "name": "Hugo Bolin",
       "ovr": 61,
       "status": "reserva",
@@ -1349,7 +1349,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "Adrian Skogmar",
       "ovr": 57,
       "status": "reserva",
@@ -1404,7 +1404,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Nils Zätterström",
       "ovr": 55,
       "status": "reserva",
@@ -1460,7 +1460,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 31,
       "name": "Daníel Tristan Guðjohnsen",
       "ovr": 53,
       "status": "reserva",

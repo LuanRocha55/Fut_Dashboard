@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Manuela Giugliano",
       "ovr": 84,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 18,
       "name": "Saki Kumagai",
       "ovr": 83,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Elena Linari",
       "ovr": 83,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Valentina Giacinti",
       "ovr": 82,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 20,
       "name": "Giada Greggi",
       "ovr": 82,
       "status": "titular",
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 7,
       "name": "Emilie Haavi",
       "ovr": 82,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "Évelyne Viens",
       "ovr": 81,
       "status": "titular",
@@ -399,7 +399,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Eseosa Aigbogun",
       "ovr": 79,
       "status": "titular",
@@ -455,7 +455,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "Hawa Cissoko",
       "ovr": 79,
       "status": "titular",
@@ -512,7 +512,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Moeka Minami",
       "ovr": 79,
       "status": "titular",
@@ -568,7 +568,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 1,
       "name": "Camelia Ceasar",
       "ovr": 77,
       "status": "titular",
@@ -584,12 +584,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "alc": 76,
+        "seg": 77,
+        "esp": 84,
         "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "pos": 78,
+        "vel": 24,
         "sta": 25
       },
       "detailedStats": {
@@ -624,7 +624,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 16,
       "name": "Lucia Di Guglielmo",
       "ovr": 77,
       "status": "reserva",
@@ -679,7 +679,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 17,
       "name": "Benedetta Glionna",
       "ovr": 77,
       "status": "reserva",
@@ -735,7 +735,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 12,
       "name": "Olivie Lukášová",
       "ovr": 75,
       "status": "reserva",
@@ -751,12 +751,12 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 72,
+        "esp": 81,
+        "ref": 76,
+        "pos": 76,
+        "vel": 43,
         "sta": 31
       },
       "detailedStats": {
@@ -849,7 +849,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 19,
       "name": "Sanne Troelsgaard",
       "ovr": 74,
       "status": "reserva",
@@ -904,7 +904,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 29,
       "name": "Alayah Pilgrim",
       "ovr": 73,
       "status": "reserva",
@@ -959,7 +959,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 2,
       "name": "Frederikke Thøgersen",
       "ovr": 70,
       "status": "reserva",
@@ -1014,7 +1014,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Giulia Dragoni",
       "ovr": 68,
       "status": "reserva",

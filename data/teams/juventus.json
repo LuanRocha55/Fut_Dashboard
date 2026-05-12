@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Bremer",
       "ovr": 86,
       "status": "titular",
@@ -69,7 +69,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Dušan Vlahović",
       "ovr": 84,
       "status": "titular",
@@ -127,7 +127,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Teun Koopmeiners",
       "ovr": 83,
       "status": "titular",
@@ -183,7 +183,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 5,
       "name": "Manuel Locatelli",
       "ovr": 83,
       "status": "titular",
@@ -240,7 +240,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 18,
       "name": "Douglas Luiz",
       "ovr": 83,
       "status": "titular",
@@ -297,7 +297,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Danilo",
       "ovr": 82,
       "status": "titular",
@@ -354,7 +354,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 11,
       "name": "Filip Kostić",
       "ovr": 82,
       "status": "titular",
@@ -410,7 +410,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 10,
       "name": "Arkadiusz Milik",
       "ovr": 81,
       "status": "titular",
@@ -465,7 +465,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 1,
       "name": "Michele Di Gregorio",
       "ovr": 80,
       "status": "titular",
@@ -481,12 +481,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 82,
+        "seg": 78,
+        "esp": 91,
+        "ref": 82,
+        "pos": 82,
+        "vel": 57,
         "sta": 36
       },
       "detailedStats": {
@@ -521,7 +521,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 17,
       "name": "Nicolás González",
       "ovr": 80,
       "status": "titular",
@@ -578,7 +578,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 12,
       "name": "Mattia Perin",
       "ovr": 79,
       "status": "titular",
@@ -593,12 +593,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 79,
+        "seg": 79,
+        "esp": 89,
+        "ref": 81,
+        "pos": 79,
+        "vel": 56,
         "sta": 30
       },
       "detailedStats": {
@@ -633,7 +633,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 19,
       "name": "Francisco Conceição",
       "ovr": 78,
       "status": "reserva",
@@ -688,7 +688,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 25,
       "name": "Federico Gatti",
       "ovr": 78,
       "status": "reserva",
@@ -744,7 +744,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Pierre Kalulu",
       "ovr": 78,
       "status": "reserva",
@@ -800,7 +800,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 20,
       "name": "Weston McKennie",
       "ovr": 78,
       "status": "reserva",
@@ -912,7 +912,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 2,
       "name": "Andrea Cambiaso",
       "ovr": 77,
       "status": "reserva",
@@ -967,7 +967,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Arthur",
       "ovr": 77,
       "status": "reserva",
@@ -1023,7 +1023,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 23,
       "name": "Nicolò Fagioli",
       "ovr": 76,
       "status": "reserva",
@@ -1080,7 +1080,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 3,
       "name": "Juan David Cabal",
       "ovr": 74,
       "status": "reserva",
@@ -1135,7 +1135,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 28,
       "name": "Timothy Weah",
       "ovr": 74,
       "status": "reserva",
@@ -1207,12 +1207,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 72,
+        "seg": 71,
+        "esp": 81,
+        "ref": 74,
+        "pos": 73,
+        "vel": 41,
         "sta": 34
       },
       "detailedStats": {
@@ -1247,7 +1247,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 7,
       "name": "Kenan Yıldız",
       "ovr": 70,
       "status": "reserva",

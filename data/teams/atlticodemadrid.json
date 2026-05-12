@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Antoine Griezmann",
       "ovr": 88,
       "status": "titular",
@@ -69,7 +69,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Jan Oblak",
       "ovr": 88,
       "status": "titular",
@@ -86,12 +86,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 85,
+        "seg": 90,
+        "esp": 96,
+        "ref": 87,
+        "pos": 86,
+        "vel": 53,
         "sta": 42
       },
       "detailedStats": {
@@ -126,7 +126,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "Julián Álvarez",
       "ovr": 84,
       "status": "titular",
@@ -183,7 +183,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Rodrigo De Paul",
       "ovr": 84,
       "status": "titular",
@@ -241,7 +241,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "José María Giménez",
       "ovr": 83,
       "status": "titular",
@@ -299,7 +299,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Robin Le Normand",
       "ovr": 83,
       "status": "titular",
@@ -357,7 +357,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 11,
       "name": "Marcos Llorente",
       "ovr": 83,
       "status": "titular",
@@ -416,7 +416,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 5,
       "name": "Koke",
       "ovr": 83,
       "status": "titular",
@@ -472,7 +472,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 19,
       "name": "Ángel Correa",
       "ovr": 82,
       "status": "titular",
@@ -529,7 +529,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 2,
       "name": "Nahuel Molina",
       "ovr": 82,
       "status": "titular",
@@ -585,7 +585,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 20,
       "name": "Alexander Sørloth",
       "ovr": 82,
       "status": "titular",
@@ -641,7 +641,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 18,
       "name": "Conor Gallagher",
       "ovr": 81,
       "status": "reserva",
@@ -698,7 +698,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 3,
       "name": "Javi Galán",
       "ovr": 80,
       "status": "reserva",
@@ -754,7 +754,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Thomas Lemar",
       "ovr": 80,
       "status": "reserva",
@@ -811,7 +811,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 16,
       "name": "Reinildo",
       "ovr": 80,
       "status": "reserva",
@@ -868,7 +868,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 25,
       "name": "Axel Witsel",
       "ovr": 80,
       "status": "reserva",
@@ -981,7 +981,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 27,
       "name": "Samuel Lino",
       "ovr": 79,
       "status": "reserva",
@@ -1036,7 +1036,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 12,
       "name": "Juan Musso",
       "ovr": 79,
       "status": "reserva",
@@ -1051,12 +1051,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 79,
+        "seg": 77,
+        "esp": 89,
+        "ref": 82,
+        "pos": 81,
+        "vel": 42,
         "sta": 35
       },
       "detailedStats": {
@@ -1091,7 +1091,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 21,
       "name": "Riquelme",
       "ovr": 78,
       "status": "reserva",
@@ -1146,7 +1146,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Pablo Barrios",
       "ovr": 76,
       "status": "reserva",
@@ -1201,7 +1201,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Clément Lenglet",
       "ovr": 76,
       "status": "reserva",
@@ -1257,7 +1257,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Giuliano Simeone",
       "ovr": 72,
       "status": "reserva",
@@ -1312,7 +1312,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Marcos Paulo",
       "ovr": 69,
       "status": "reserva",
@@ -1368,7 +1368,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 28,
       "name": "Antonio Gomis",
       "ovr": 68,
       "status": "reserva",
@@ -1383,12 +1383,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 65,
+        "esp": 77,
+        "ref": 70,
+        "pos": 66,
+        "vel": 43,
         "sta": 30
       },
       "detailedStats": {
@@ -1423,7 +1423,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Ilias Kostis",
       "ovr": 67,
       "status": "reserva",
@@ -1479,7 +1479,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 30,
       "name": "Javi Serrano",
       "ovr": 63,
       "status": "reserva",

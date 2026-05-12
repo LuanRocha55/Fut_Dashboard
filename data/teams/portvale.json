@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "George Byers",
       "ovr": 66,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Ethan Chislett",
       "ovr": 65,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 18,
       "name": "Ben Garrity",
       "ovr": 65,
       "status": "titular",
@@ -173,7 +173,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Connor Ripley",
       "ovr": 65,
       "status": "titular",
@@ -190,12 +190,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 65,
+        "esp": 74,
+        "ref": 68,
+        "pos": 64,
+        "vel": 28,
         "sta": 21
       },
       "detailedStats": {
@@ -230,7 +230,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 12,
       "name": "Ben Amos",
       "ovr": 64,
       "status": "titular",
@@ -245,12 +245,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 65,
+        "esp": 69,
+        "ref": 62,
+        "pos": 62,
+        "vel": 45,
         "sta": 28
       },
       "detailedStats": {
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 11,
       "name": "Ronan Curtis",
       "ovr": 64,
       "status": "titular",
@@ -341,7 +341,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 3,
       "name": "Conor Grant",
       "ovr": 64,
       "status": "titular",
@@ -396,7 +396,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 4,
       "name": "Ben Heneghan",
       "ovr": 64,
       "status": "titular",
@@ -452,7 +452,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "Nathan Smith",
       "ovr": 64,
       "status": "titular",
@@ -509,7 +509,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 5,
       "name": "Ryan Croasdale",
       "ovr": 63,
       "status": "titular",
@@ -564,7 +564,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 25,
       "name": "Dan Jones",
       "ovr": 63,
       "status": "titular",
@@ -620,7 +620,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 2,
       "name": "Tom Sang",
       "ovr": 63,
       "status": "reserva",
@@ -675,7 +675,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 9,
       "name": "Jayden Stockley",
       "ovr": 63,
       "status": "reserva",
@@ -732,7 +732,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 13,
       "name": "Mitch Clark",
       "ovr": 62,
       "status": "reserva",
@@ -900,7 +900,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 19,
       "name": "Ruari Paton",
       "ovr": 61,
       "status": "reserva",
@@ -955,7 +955,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Lorent Tolaj",
       "ovr": 61,
       "status": "reserva",
@@ -1010,7 +1010,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Antwoine Hackford",
       "ovr": 60,
       "status": "reserva",
@@ -1065,7 +1065,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 26,
       "name": "Sam Hart",
       "ovr": 60,
       "status": "reserva",
@@ -1120,7 +1120,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "James Plant",
       "ovr": 60,
       "status": "reserva",
@@ -1175,7 +1175,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Jason Lowe",
       "ovr": 59,
       "status": "reserva",
@@ -1231,7 +1231,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 27,
       "name": "Rico Richards",
       "ovr": 58,
       "status": "reserva",
@@ -1341,7 +1341,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 28,
       "name": "Ben Lomax",
       "ovr": 56,
       "status": "reserva",
@@ -1397,7 +1397,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Jack Shorrock",
       "ovr": 55,
       "status": "reserva",
@@ -1452,7 +1452,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 30,
       "name": "Arron Davies",
       "ovr": 54,
       "status": "reserva",
@@ -1467,11 +1467,11 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 56,
+        "seg": 53,
+        "esp": 61,
+        "ref": 54,
+        "pos": 54,
         "vel": 40,
         "sta": 35
       },
@@ -1507,7 +1507,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 31,
       "name": "Andrew Buah",
       "ovr": 53,
       "status": "reserva",

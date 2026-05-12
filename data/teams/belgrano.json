@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Nicolás Fernández",
       "ovr": 74,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Francisco González Metilli",
       "ovr": 73,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Ulises Sanchez",
       "ovr": 73,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 3,
       "name": "Rafael Delgado",
       "ovr": 72,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 1,
       "name": "Juan Espínola",
       "ovr": 72,
       "status": "titular",
@@ -246,12 +246,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 76,
+        "seg": 73,
+        "esp": 81,
+        "ref": 70,
+        "pos": 71,
+        "vel": 36,
         "sta": 33
       },
       "detailedStats": {
@@ -286,7 +286,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 19,
       "name": "Lucas Passerini",
       "ovr": 72,
       "status": "titular",
@@ -341,7 +341,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Facundo Quignon",
       "ovr": 72,
       "status": "titular",
@@ -396,7 +396,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 20,
       "name": "Franco Jara",
       "ovr": 71,
       "status": "titular",
@@ -451,7 +451,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 12,
       "name": "Ignacio Chicco",
       "ovr": 70,
       "status": "titular",
@@ -466,11 +466,11 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 68,
+        "seg": 71,
+        "esp": 77,
+        "ref": 70,
+        "pos": 71,
         "vel": 40,
         "sta": 24
       },
@@ -506,7 +506,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 21,
       "name": "Santiago Longo",
       "ovr": 70,
       "status": "titular",
@@ -561,7 +561,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 23,
       "name": "Matías Marín",
       "ovr": 70,
       "status": "titular",
@@ -616,7 +616,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 27,
       "name": "Bryan Reyna",
       "ovr": 70,
       "status": "reserva",
@@ -672,7 +672,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 4,
       "name": "Nicolas Meriano",
       "ovr": 69,
       "status": "reserva",
@@ -952,7 +952,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 2,
       "name": "Gabriel Compagnucci",
       "ovr": 65,
       "status": "reserva",
@@ -1007,7 +1007,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Agustín Baldi",
       "ovr": 64,
       "status": "reserva",
@@ -1062,7 +1062,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 13,
       "name": "Gerónimo Heredia",
       "ovr": 64,
       "status": "reserva",
@@ -1117,7 +1117,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 25,
       "name": "Matías Moreno",
       "ovr": 64,
       "status": "reserva",
@@ -1173,7 +1173,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Mariano Troilo",
       "ovr": 63,
       "status": "reserva",
@@ -1229,7 +1229,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Francisco Facello",
       "ovr": 61,
       "status": "reserva",
@@ -1284,7 +1284,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 30,
       "name": "Matías Palavecino",
       "ovr": 61,
       "status": "reserva",
@@ -1339,7 +1339,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 28,
       "name": "Ignacio Tapia",
       "ovr": 60,
       "status": "reserva",
@@ -1394,7 +1394,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Jeremías Lucco",
       "ovr": 59,
       "status": "reserva",
@@ -1449,7 +1449,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 31,
       "name": "Matías Daniele",
       "ovr": 54,
       "status": "reserva",
@@ -1464,12 +1464,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 55,
+        "esp": 63,
+        "ref": 52,
+        "pos": 50,
+        "vel": 20,
         "sta": 28
       },
       "detailedStats": {

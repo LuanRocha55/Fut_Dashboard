@@ -23,12 +23,12 @@
         "Far Reach"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 78,
+        "seg": 77,
+        "esp": 86,
+        "ref": 77,
+        "pos": 76,
+        "vel": 41,
         "sta": 28
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 5,
       "name": "Laurent Abergel",
       "ovr": 75,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "Julien Ponceau",
       "ovr": 74,
       "status": "titular",
@@ -173,7 +173,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Mohamed Bamba",
       "ovr": 73,
       "status": "titular",
@@ -228,7 +228,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Julien Laporte",
       "ovr": 73,
       "status": "titular",
@@ -284,7 +284,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Montassar Talbi",
       "ovr": 73,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 2,
       "name": "Gédéon Kalulu",
       "ovr": 72,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Benjamin Mendy",
       "ovr": 72,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 8,
       "name": "Jean-Victor Makengo",
       "ovr": 71,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Formose Mendy",
       "ovr": 71,
       "status": "titular",
@@ -564,7 +564,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Aiyegun Tosin",
       "ovr": 71,
       "status": "titular",
@@ -620,7 +620,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 16,
       "name": "Darlin Yongwa",
       "ovr": 71,
       "status": "reserva",
@@ -675,7 +675,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 11,
       "name": "Stéphane Diarra",
       "ovr": 69,
       "status": "reserva",
@@ -731,7 +731,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 21,
       "name": "Bonke Innocent",
       "ovr": 69,
       "status": "reserva",
@@ -786,7 +786,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 13,
       "name": "Panos Katseris",
       "ovr": 69,
       "status": "reserva",
@@ -841,7 +841,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 27,
       "name": "Théo Le Bris",
       "ovr": 69,
       "status": "reserva",
@@ -896,7 +896,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 12,
       "name": "Benjamin Leroy",
       "ovr": 69,
       "status": "reserva",
@@ -911,12 +911,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 67,
+        "esp": 76,
+        "ref": 70,
+        "pos": 69,
+        "vel": 46,
         "sta": 28
       },
       "detailedStats": {
@@ -951,7 +951,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Eli Junior Kroupi",
       "ovr": 68,
       "status": "reserva",
@@ -1006,7 +1006,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 28,
       "name": "Joel Mvuka",
       "ovr": 68,
       "status": "reserva",
@@ -1062,7 +1062,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 24,
       "name": "Igor Silva",
       "ovr": 68,
       "status": "reserva",
@@ -1117,7 +1117,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Sambou Soumano",
       "ovr": 68,
       "status": "reserva",
@@ -1172,7 +1172,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Nathaniel Adjei",
       "ovr": 67,
       "status": "reserva",
@@ -1228,7 +1228,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Pablo Pagis",
       "ovr": 65,
       "status": "reserva",

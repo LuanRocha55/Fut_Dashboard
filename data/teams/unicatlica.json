@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Fernando Zampedri",
       "ovr": 74,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Fernando Zuqui",
       "ovr": 74,
       "status": "titular",
@@ -236,7 +236,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 14,
       "name": "Valber Huerta",
       "ovr": 70,
       "status": "titular",
@@ -292,7 +292,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 1,
       "name": "Sebastián Pérez",
       "ovr": 69,
       "status": "titular",
@@ -307,11 +307,11 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 72,
+        "seg": 67,
+        "esp": 80,
+        "ref": 72,
+        "pos": 69,
         "vel": 40,
         "sta": 39
       },
@@ -347,7 +347,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "Nicolás Castillo",
       "ovr": 68,
       "status": "titular",
@@ -403,7 +403,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 11,
       "name": "Cristian Cuevas",
       "ovr": 68,
       "status": "titular",
@@ -459,7 +459,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 18,
       "name": "Agustín Farías",
       "ovr": 68,
       "status": "titular",
@@ -514,7 +514,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 16,
       "name": "Alfonso Parot",
       "ovr": 68,
       "status": "titular",
@@ -570,7 +570,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 23,
       "name": "César Pinares",
       "ovr": 68,
       "status": "titular",
@@ -627,7 +627,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 2,
       "name": "Guillermo Soto",
       "ovr": 68,
       "status": "reserva",
@@ -682,7 +682,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 19,
       "name": "Gonzalo Tapia",
       "ovr": 68,
       "status": "reserva",
@@ -737,7 +737,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 20,
       "name": "Alfred Canales",
       "ovr": 67,
       "status": "reserva",
@@ -792,7 +792,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 27,
       "name": "Clemente Montes",
       "ovr": 67,
       "status": "reserva",
@@ -847,7 +847,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 30,
       "name": "Joaquín Torres",
       "ovr": 67,
       "status": "reserva",
@@ -904,7 +904,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 28,
       "name": "Francisco Arancibia",
       "ovr": 66,
       "status": "reserva",
@@ -959,7 +959,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Jader",
       "ovr": 66,
       "status": "reserva",
@@ -1014,7 +1014,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 12,
       "name": "Thomas Gillier",
       "ovr": 63,
       "status": "reserva",
@@ -1029,12 +1029,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 58,
+        "esp": 73,
+        "ref": 67,
+        "pos": 63,
+        "vel": 28,
         "sta": 22
       },
       "detailedStats": {
@@ -1069,7 +1069,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Vicente Bernedo",
       "ovr": 61,
       "status": "reserva",
@@ -1084,12 +1084,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 61,
+        "esp": 69,
+        "ref": 63,
+        "pos": 55,
+        "vel": 22,
         "sta": 17
       },
       "detailedStats": {

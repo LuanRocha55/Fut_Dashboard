@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Viviane Asseyi",
       "ovr": 81,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Kristie Mewis",
       "ovr": 79,
       "status": "titular",
@@ -124,7 +124,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 18,
       "name": "Dagný Brynjarsdóttir",
       "ovr": 78,
       "status": "titular",
@@ -179,7 +179,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 20,
       "name": "Katrina Gorry",
       "ovr": 78,
       "status": "titular",
@@ -234,7 +234,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Camila Sáez",
       "ovr": 78,
       "status": "titular",
@@ -292,7 +292,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 1,
       "name": "Kinga Szemik",
       "ovr": 78,
       "status": "titular",
@@ -308,12 +308,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
+        "alc": 78,
         "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "esp": 87,
+        "ref": 79,
+        "pos": 76,
+        "vel": 45,
         "sta": 32
       },
       "detailedStats": {
@@ -348,7 +348,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 12,
       "name": "Megan Walsh",
       "ovr": 78,
       "status": "titular",
@@ -364,12 +364,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 76,
+        "seg": 73,
+        "esp": 88,
+        "ref": 82,
+        "pos": 80,
+        "vel": 33,
         "sta": 37
       },
       "detailedStats": {
@@ -404,7 +404,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Shelina Zadorsky",
       "ovr": 78,
       "status": "titular",
@@ -462,7 +462,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 10,
       "name": "Riko Ueki",
       "ovr": 77,
       "status": "titular",
@@ -517,7 +517,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 3,
       "name": "Kirsty Smith",
       "ovr": 75,
       "status": "titular",
@@ -572,7 +572,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Emma Harries",
       "ovr": 72,
       "status": "titular",
@@ -627,7 +627,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 22,
       "name": "Katelin Talbert",
       "ovr": 71,
       "status": "reserva",
@@ -642,12 +642,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 74,
+        "seg": 67,
+        "esp": 82,
+        "ref": 73,
+        "pos": 68,
+        "vel": 48,
         "sta": 30
       },
       "detailedStats": {
@@ -682,7 +682,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 25,
       "name": "Amber Tysiak",
       "ovr": 70,
       "status": "reserva",
@@ -738,7 +738,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 17,
       "name": "Jessica Ziu",
       "ovr": 69,
       "status": "reserva",
@@ -904,7 +904,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 2,
       "name": "Anouk Denton",
       "ovr": 66,
       "status": "reserva",
@@ -959,7 +959,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 23,
       "name": "Halle Houssein",
       "ovr": 64,
       "status": "reserva",

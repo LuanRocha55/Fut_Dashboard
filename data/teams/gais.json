@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 17,
       "name": "Gustav Lundgren",
       "ovr": 64,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 3,
       "name": "Egzon Binaku",
       "ovr": 63,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 7,
       "name": "Mervan Çelik",
       "ovr": 63,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Axel Henriksson",
       "ovr": 62,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Axel Norén",
       "ovr": 62,
       "status": "titular",
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 9,
       "name": "Alexander Ahl Holmström",
       "ovr": 61,
       "status": "titular",
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 1,
       "name": "Mergim Krasniqi",
       "ovr": 61,
       "status": "titular",
@@ -355,12 +355,12 @@
         "Far Reach"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 62,
+        "esp": 70,
+        "ref": 61,
+        "pos": 59,
+        "vel": 39,
         "sta": 36
       },
       "detailedStats": {
@@ -395,7 +395,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 10,
       "name": "Jonas Lindberg",
       "ovr": 61,
       "status": "titular",
@@ -450,7 +450,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 2,
       "name": "August Wängberg",
       "ovr": 61,
       "status": "titular",
@@ -505,7 +505,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 11,
       "name": "Edvin Becirovic",
       "ovr": 60,
       "status": "titular",
@@ -560,7 +560,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Lucas Hedlund",
       "ovr": 60,
       "status": "titular",
@@ -615,7 +615,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 5,
       "name": "Joackim Åberg",
       "ovr": 59,
       "status": "reserva",
@@ -670,7 +670,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 29,
       "name": "Chovanie Amatkarijo",
       "ovr": 59,
       "status": "reserva",
@@ -780,7 +780,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "Anes Cardaklija",
       "ovr": 59,
       "status": "reserva",
@@ -892,7 +892,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 18,
       "name": "Harun Ibrahim",
       "ovr": 59,
       "status": "reserva",
@@ -947,7 +947,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Filip Beckman",
       "ovr": 58,
       "status": "reserva",
@@ -1003,7 +1003,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 12,
       "name": "Erik Krantz",
       "ovr": 57,
       "status": "reserva",
@@ -1018,12 +1018,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 59,
+        "seg": 57,
+        "esp": 64,
+        "ref": 57,
+        "pos": 59,
+        "vel": 20,
         "sta": 23
       },
       "detailedStats": {
@@ -1058,7 +1058,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Kees Sims",
       "ovr": 57,
       "status": "reserva",
@@ -1073,12 +1073,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 57,
+        "seg": 59,
+        "esp": 62,
+        "ref": 55,
+        "pos": 54,
+        "vel": 15,
         "sta": 30
       },
       "detailedStats": {
@@ -1168,7 +1168,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Filip Gustafsson",
       "ovr": 54,
       "status": "reserva",
@@ -1223,7 +1223,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 31,
       "name": "Mohamed Bawa",
       "ovr": 53,
       "status": "reserva",

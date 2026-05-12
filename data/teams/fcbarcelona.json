@@ -24,12 +24,12 @@
         "1v1 Close Down"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 86,
+        "seg": 85,
+        "esp": 98,
+        "ref": 91,
+        "pos": 86,
+        "vel": 50,
         "sta": 35
       },
       "detailedStats": {
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Robert Lewandowski",
       "ovr": 88,
       "status": "titular",
@@ -125,7 +125,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Frenkie de Jong",
       "ovr": 87,
       "status": "titular",
@@ -185,7 +185,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 18,
       "name": "Pedri",
       "ovr": 86,
       "status": "titular",
@@ -245,7 +245,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Ronald Araujo",
       "ovr": 85,
       "status": "titular",
@@ -306,7 +306,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 2,
       "name": "Jules Koundé",
       "ovr": 85,
       "status": "titular",
@@ -364,7 +364,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 17,
       "name": "Raphinha",
       "ovr": 84,
       "status": "titular",
@@ -425,7 +425,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 10,
       "name": "Dani Olmo",
       "ovr": 84,
       "status": "titular",
@@ -486,7 +486,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "Andreas Christensen",
       "ovr": 83,
       "status": "titular",
@@ -542,7 +542,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 20,
       "name": "Gavi",
       "ovr": 83,
       "status": "titular",
@@ -600,7 +600,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 3,
       "name": "Balde",
       "ovr": 81,
       "status": "titular",
@@ -657,7 +657,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 25,
       "name": "Iñigo Martínez",
       "ovr": 81,
       "status": "reserva",
@@ -714,7 +714,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 31,
       "name": "Lamine Yamal",
       "ovr": 81,
       "status": "reserva",
@@ -772,7 +772,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 7,
       "name": "Ferran Torres",
       "ovr": 80,
       "status": "reserva",
@@ -884,7 +884,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 23,
       "name": "Ansu Fati",
       "ovr": 77,
       "status": "reserva",
@@ -941,7 +941,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 19,
       "name": "Fermín",
       "ovr": 76,
       "status": "reserva",
@@ -996,7 +996,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 30,
       "name": "Pablo Torre",
       "ovr": 74,
       "status": "reserva",
@@ -1051,7 +1051,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 12,
       "name": "Iñaki Peña",
       "ovr": 73,
       "status": "reserva",
@@ -1066,12 +1066,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 72,
+        "seg": 68,
+        "esp": 81,
+        "ref": 73,
+        "pos": 72,
+        "vel": 38,
         "sta": 27
       },
       "detailedStats": {
@@ -1106,7 +1106,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 21,
       "name": "Pau Cubarsí",
       "ovr": 72,
       "status": "reserva",
@@ -1162,7 +1162,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 16,
       "name": "Álex Valle",
       "ovr": 68,
       "status": "reserva",
@@ -1217,7 +1217,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 5,
       "name": "Marc Casadó",
       "ovr": 65,
       "status": "reserva",
@@ -1272,7 +1272,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 13,
       "name": "Héctor Fort",
       "ovr": 65,
       "status": "reserva",
@@ -1327,7 +1327,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 22,
       "name": "Astralaga",
       "ovr": 62,
       "status": "reserva",
@@ -1342,12 +1342,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 61,
+        "esp": 66,
+        "ref": 61,
+        "pos": 64,
+        "vel": 27,
         "sta": 17
       },
       "detailedStats": {
@@ -1382,7 +1382,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "Pau Víctor",
       "ovr": 62,
       "status": "reserva",

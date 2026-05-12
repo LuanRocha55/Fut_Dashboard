@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Alan Pulido",
       "ovr": 72,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Nemanja Radoja",
       "ovr": 72,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 17,
       "name": "Johnny Russell",
       "ovr": 72,
       "status": "titular",
@@ -180,7 +180,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 7,
       "name": "Dániel Sallói",
       "ovr": 72,
       "status": "titular",
@@ -237,7 +237,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 3,
       "name": "Tim Leibold",
       "ovr": 71,
       "status": "titular",
@@ -292,7 +292,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 18,
       "name": "Erik Thommy",
       "ovr": 71,
       "status": "titular",
@@ -347,7 +347,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 20,
       "name": "Rémi Walter",
       "ovr": 71,
       "status": "titular",
@@ -402,7 +402,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 4,
       "name": "Fontàs",
       "ovr": 69,
       "status": "titular",
@@ -458,7 +458,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "Dany Rosero",
       "ovr": 69,
       "status": "titular",
@@ -514,7 +514,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 2,
       "name": "Jake Davis",
       "ovr": 66,
       "status": "titular",
@@ -569,7 +569,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 1,
       "name": "Tim Melia",
       "ovr": 66,
       "status": "titular",
@@ -584,12 +584,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 66,
+        "esp": 73,
+        "ref": 65,
+        "pos": 67,
+        "vel": 33,
         "sta": 42
       },
       "detailedStats": {
@@ -624,7 +624,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 11,
       "name": "Memo Rodriguez",
       "ovr": 66,
       "status": "reserva",
@@ -679,7 +679,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 16,
       "name": "Logan Ndenbe",
       "ovr": 65,
       "status": "reserva",
@@ -734,7 +734,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 12,
       "name": "John Pulskamp",
       "ovr": 64,
       "status": "reserva",
@@ -749,12 +749,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 60,
+        "esp": 74,
+        "ref": 67,
+        "pos": 62,
+        "vel": 21,
         "sta": 20
       },
       "detailedStats": {
@@ -789,7 +789,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 10,
       "name": "William Agada",
       "ovr": 63,
       "status": "reserva",
@@ -844,7 +844,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 19,
       "name": "Felipe Hernandez",
       "ovr": 63,
       "status": "reserva",
@@ -899,7 +899,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 26,
       "name": "Zorhan Bassong",
       "ovr": 62,
       "status": "reserva",
@@ -954,7 +954,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Khiry Shelton",
       "ovr": 62,
       "status": "reserva",
@@ -1009,7 +1009,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 31,
       "name": "Alenis Vargas",
       "ovr": 62,
       "status": "reserva",
@@ -1064,7 +1064,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 25,
       "name": "Robert Voloder",
       "ovr": 61,
       "status": "reserva",
@@ -1120,7 +1120,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Robert Castellanos",
       "ovr": 58,
       "status": "reserva",
@@ -1176,7 +1176,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Stephen Afrifa",
       "ovr": 57,
       "status": "reserva",
@@ -1231,7 +1231,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 13,
       "name": "Kayden Pierre",
       "ovr": 53,
       "status": "reserva",
@@ -1342,7 +1342,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 27,
       "name": "Ryan Schewe",
       "ovr": 52,
       "status": "reserva",
@@ -1357,12 +1357,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 54,
+        "seg": 50,
+        "esp": 61,
+        "ref": 55,
+        "pos": 48,
+        "vel": 33,
         "sta": 26
       },
       "detailedStats": {
@@ -1397,7 +1397,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 28,
       "name": "Danny Flores",
       "ovr": 51,
       "status": "reserva",

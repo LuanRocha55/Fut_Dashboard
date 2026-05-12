@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 5,
       "name": "Filip Ottosson",
       "ovr": 65,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Alexander Ruud Tveter",
       "ovr": 65,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 17,
       "name": "Jakob Maslø Dunsby",
       "ovr": 64,
       "status": "titular",
@@ -173,7 +173,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Hugo Keto",
       "ovr": 64,
       "status": "titular",
@@ -189,12 +189,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 62,
+        "esp": 72,
+        "ref": 64,
+        "pos": 63,
+        "vel": 41,
         "sta": 25
       },
       "detailedStats": {
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 11,
       "name": "Eman Marković",
       "ovr": 64,
       "status": "titular",
@@ -284,7 +284,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 4,
       "name": "Fredrik Berglie",
       "ovr": 63,
       "status": "titular",
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Maudo Lamine Jarjué",
       "ovr": 63,
       "status": "titular",
@@ -451,7 +451,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "Christopher Cheng",
       "ovr": 61,
       "status": "titular",
@@ -506,7 +506,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 16,
       "name": "Vetle Walle Egeli",
       "ovr": 61,
       "status": "titular",
@@ -562,7 +562,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 25,
       "name": "Stian Kristiansen",
       "ovr": 61,
       "status": "titular",
@@ -618,7 +618,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 18,
       "name": "Aleksander D. Nilsson",
       "ovr": 61,
       "status": "reserva",
@@ -673,7 +673,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 2,
       "name": "Fredrik Carson Pedersen",
       "ovr": 61,
       "status": "reserva",
@@ -728,7 +728,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 20,
       "name": "Loris Mettler",
       "ovr": 60,
       "status": "reserva",
@@ -838,7 +838,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 13,
       "name": "Filip Loftesnes-Bjune",
       "ovr": 58,
       "status": "reserva",
@@ -893,7 +893,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 7,
       "name": "Beltran Mvuka",
       "ovr": 58,
       "status": "reserva",
@@ -948,7 +948,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 10,
       "name": "Darrell Kamdem Tibell",
       "ovr": 58,
       "status": "reserva",
@@ -1059,7 +1059,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 21,
       "name": "Marcus Melchior",
       "ovr": 55,
       "status": "reserva",
@@ -1114,7 +1114,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Wally Njie",
       "ovr": 55,
       "status": "reserva",
@@ -1169,7 +1169,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 29,
       "name": "Sebastian Holm Mathisen",
       "ovr": 54,
       "status": "reserva",
@@ -1224,7 +1224,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 12,
       "name": "Alf Lukas Noel Grønneberg",
       "ovr": 53,
       "status": "reserva",
@@ -1239,12 +1239,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 54,
+        "seg": 52,
+        "esp": 61,
+        "ref": 56,
+        "pos": 53,
+        "vel": 28,
         "sta": 16
       },
       "detailedStats": {

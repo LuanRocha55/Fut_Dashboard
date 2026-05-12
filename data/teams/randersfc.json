@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 5,
       "name": "André Rømer",
       "ovr": 71,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Mathias Greve",
       "ovr": 69,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Daniel Høegh",
       "ovr": 69,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Paul Izzo",
       "ovr": 69,
       "status": "titular",
@@ -192,12 +192,12 @@
         "Far Reach"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 67,
+        "esp": 78,
+        "ref": 71,
+        "pos": 68,
+        "vel": 56,
         "sta": 33
       },
       "detailedStats": {
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 18,
       "name": "John Björkengren",
       "ovr": 68,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 3,
       "name": "Nikolas Dyhr",
       "ovr": 68,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Wessel Dammers",
       "ovr": 67,
       "status": "titular",
@@ -399,7 +399,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 11,
       "name": "Simen Bolkan Nordli",
       "ovr": 67,
       "status": "titular",
@@ -511,7 +511,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Hugo Andersson",
       "ovr": 66,
       "status": "titular",
@@ -567,7 +567,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Edgar Babayan",
       "ovr": 65,
       "status": "titular",
@@ -623,7 +623,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 16,
       "name": "Björn Kopplin",
       "ovr": 65,
       "status": "reserva",
@@ -679,7 +679,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Frederik Lauenborg",
       "ovr": 65,
       "status": "reserva",
@@ -734,7 +734,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 10,
       "name": "Florian Thomas Danho",
       "ovr": 64,
       "status": "reserva",
@@ -789,7 +789,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 27,
       "name": "Noah Shamoun",
       "ovr": 64,
       "status": "reserva",
@@ -844,7 +844,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 12,
       "name": "Oskar Snorre",
       "ovr": 64,
       "status": "reserva",
@@ -859,12 +859,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 63,
+        "esp": 71,
+        "ref": 64,
+        "pos": 62,
+        "vel": 33,
         "sta": 20
       },
       "detailedStats": {
@@ -955,7 +955,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 26,
       "name": "Oliver Zandén",
       "ovr": 64,
       "status": "reserva",
@@ -1010,7 +1010,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 2,
       "name": "Oliver Olsen",
       "ovr": 63,
       "status": "reserva",
@@ -1065,7 +1065,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 21,
       "name": "Tammer Bany",
       "ovr": 61,
       "status": "reserva",
@@ -1120,7 +1120,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Sabil Hansen",
       "ovr": 59,
       "status": "reserva",
@@ -1176,7 +1176,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Emmanuel Ogura",
       "ovr": 58,
       "status": "reserva",
@@ -1191,12 +1191,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 57,
+        "esp": 66,
+        "ref": 59,
+        "pos": 58,
+        "vel": 63,
         "sta": 20
       },
       "detailedStats": {
@@ -1231,7 +1231,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Mike Themsen",
       "ovr": 58,
       "status": "reserva",
@@ -1286,7 +1286,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 28,
       "name": "Laurits Raun Pedersen",
       "ovr": 56,
       "status": "reserva",
@@ -1341,7 +1341,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Benjamin Clemmensen",
       "ovr": 53,
       "status": "reserva",
@@ -1397,7 +1397,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 30,
       "name": "Christian Østergaard",
       "ovr": 52,
       "status": "reserva",

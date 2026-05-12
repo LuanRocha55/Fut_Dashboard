@@ -23,12 +23,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 66,
+        "esp": 76,
+        "ref": 67,
+        "pos": 69,
+        "vel": 41,
         "sta": 34
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Gheorghe Grozav",
       "ovr": 67,
       "status": "titular",
@@ -286,7 +286,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 19,
       "name": "Sergiu Hanca",
       "ovr": 65,
       "status": "titular",
@@ -341,7 +341,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Paul Papp",
       "ovr": 65,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 18,
       "name": "Tidiane Keita",
       "ovr": 64,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 2,
       "name": "Ricardinho",
       "ovr": 64,
       "status": "titular",
@@ -565,7 +565,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 9,
       "name": "Alexandru Tudorie",
       "ovr": 62,
       "status": "titular",
@@ -620,7 +620,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 17,
       "name": "Mario Bratu",
       "ovr": 61,
       "status": "reserva",
@@ -675,7 +675,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 12,
       "name": "Mihai Eșanu",
       "ovr": 59,
       "status": "reserva",
@@ -690,12 +690,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 53,
+        "esp": 70,
+        "ref": 65,
+        "pos": 55,
+        "vel": 20,
         "sta": 28
       },
       "detailedStats": {
@@ -730,7 +730,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 31,
       "name": "Mihnea Rădulescu",
       "ovr": 58,
       "status": "reserva",
@@ -785,7 +785,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 10,
       "name": "Iustin Răducan",
       "ovr": 54,
       "status": "reserva",
@@ -840,7 +840,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 20,
       "name": "Ioan Tolea",
       "ovr": 52,
       "status": "reserva",

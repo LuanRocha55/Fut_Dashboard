@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Manuela Vanegas",
       "ovr": 82,
       "status": "titular",
@@ -69,7 +69,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 7,
       "name": "Nerea Eizagirre",
       "ovr": 81,
       "status": "titular",
@@ -130,7 +130,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 17,
       "name": "Amaiur Sarriegi",
       "ovr": 81,
       "status": "titular",
@@ -189,7 +189,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Sanni Franssi",
       "ovr": 80,
       "status": "titular",
@@ -246,7 +246,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 8,
       "name": "Andreia Jacinto",
       "ovr": 79,
       "status": "titular",
@@ -303,7 +303,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 1,
       "name": "Elene Lete",
       "ovr": 79,
       "status": "titular",
@@ -318,12 +318,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
+        "alc": 80,
         "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "esp": 89,
+        "ref": 80,
+        "pos": 78,
+        "vel": 57,
         "sta": 20
       },
       "detailedStats": {
@@ -358,7 +358,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 2,
       "name": "Lucía Rodríguez",
       "ovr": 78,
       "status": "titular",
@@ -413,7 +413,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 10,
       "name": "Claire Lavogez",
       "ovr": 77,
       "status": "titular",
@@ -468,7 +468,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 5,
       "name": "Klára Cahynová",
       "ovr": 75,
       "status": "titular",
@@ -524,7 +524,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 29,
       "name": "Cecilia Marcos",
       "ovr": 75,
       "status": "titular",
@@ -635,7 +635,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 18,
       "name": "Jacqueline Owusu",
       "ovr": 74,
       "status": "reserva",
@@ -745,7 +745,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 19,
       "name": "Lucía Pardo",
       "ovr": 73,
       "status": "reserva",
@@ -800,7 +800,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 12,
       "name": "Olatz Santana",
       "ovr": 73,
       "status": "reserva",
@@ -815,12 +815,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 72,
+        "esp": 80,
+        "ref": 74,
+        "pos": 74,
+        "vel": 48,
         "sta": 19
       },
       "detailedStats": {
@@ -855,7 +855,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 3,
       "name": "Izarne Sarasola",
       "ovr": 73,
       "status": "reserva",
@@ -910,7 +910,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 31,
       "name": "Mirari Uria",
       "ovr": 71,
       "status": "reserva",
@@ -965,7 +965,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 14,
       "name": "Ane Etxezarreta",
       "ovr": 70,
       "status": "reserva",
@@ -1021,7 +1021,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 25,
       "name": "Nahia Aparicio",
       "ovr": 69,
       "status": "reserva",
@@ -1188,7 +1188,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Elene Viles",
       "ovr": 63,
       "status": "reserva",
@@ -1298,7 +1298,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Nora Sarriegi",
       "ovr": 56,
       "status": "reserva",

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Rachel Corboz",
       "ovr": 80,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Mélissa Gomes",
       "ovr": 76,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 5,
       "name": "Monique Ngock",
       "ovr": 74,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 18,
       "name": "Anaële Le Moguédec",
       "ovr": 72,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Mathilde Kack",
       "ovr": 71,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 3,
       "name": "Colette Ndzana",
       "ovr": 71,
       "status": "titular",
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 16,
       "name": "Léa Notel",
       "ovr": 69,
       "status": "titular",
@@ -452,7 +452,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 1,
       "name": "Clara Wibaut",
       "ovr": 65,
       "status": "titular",
@@ -467,12 +467,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 66,
+        "esp": 74,
+        "ref": 67,
+        "pos": 60,
+        "vel": 35,
         "sta": 27
       },
       "detailedStats": {
@@ -507,7 +507,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 20,
       "name": "Léa Bourgain",
       "ovr": 61,
       "status": "titular",

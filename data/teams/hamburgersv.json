@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Robert Glatzel",
       "ovr": 74,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Lucas Perrin",
       "ovr": 74,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Ludovit Reis",
       "ovr": 73,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 11,
       "name": "Marco Richter",
       "ovr": 73,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 10,
       "name": "Davie Selke",
       "ovr": 73,
       "status": "titular",
@@ -289,7 +289,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 7,
       "name": "Jean-Luc Dompé",
       "ovr": 72,
       "status": "titular",
@@ -348,7 +348,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 2,
       "name": "Silvan Hefti",
       "ovr": 72,
       "status": "titular",
@@ -403,7 +403,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 1,
       "name": "Daniel Heuer Fernandes",
       "ovr": 72,
       "status": "titular",
@@ -419,11 +419,11 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "alc": 71,
+        "seg": 68,
+        "esp": 81,
         "ref": 75,
-        "pos": 75,
+        "pos": 71,
         "vel": 40,
         "sta": 40
       },
@@ -459,7 +459,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 5,
       "name": "Jonas Meffert",
       "ovr": 72,
       "status": "titular",
@@ -514,7 +514,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 3,
       "name": "Miro Muheim",
       "ovr": 72,
       "status": "titular",
@@ -569,7 +569,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 14,
       "name": "Sebastian Schonlau",
       "ovr": 72,
       "status": "titular",
@@ -627,7 +627,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 17,
       "name": "Bakery Jatta",
       "ovr": 71,
       "status": "reserva",
@@ -683,7 +683,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 31,
       "name": "Adam Karabec",
       "ovr": 71,
       "status": "reserva",
@@ -738,7 +738,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 23,
       "name": "Immanuel Pherai",
       "ovr": 71,
       "status": "reserva",
@@ -796,7 +796,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 19,
       "name": "Emir Sahiti",
       "ovr": 71,
       "status": "reserva",
@@ -854,7 +854,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 25,
       "name": "Dennis Hadžikadunić",
       "ovr": 70,
       "status": "reserva",
@@ -910,7 +910,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 12,
       "name": "Matheo Raab",
       "ovr": 70,
       "status": "reserva",
@@ -925,12 +925,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 69,
+        "esp": 78,
+        "ref": 70,
+        "pos": 70,
+        "vel": 18,
         "sta": 30
       },
       "detailedStats": {
@@ -1021,7 +1021,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 16,
       "name": "Noah Katterbach",
       "ovr": 69,
       "status": "reserva",
@@ -1131,7 +1131,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 13,
       "name": "Moritz Heyer",
       "ovr": 68,
       "status": "reserva",
@@ -1186,7 +1186,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 32,
       "name": "Ransford-Yeboah Königsdörffer",
       "ovr": 68,
       "status": "reserva",
@@ -1243,7 +1243,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Levin Öztunalı",
       "ovr": 68,
       "status": "reserva",
@@ -1298,7 +1298,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Guilherme Ramos",
       "ovr": 68,
       "status": "reserva",
@@ -1357,7 +1357,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 30,
       "name": "Anssi Suhonen",
       "ovr": 66,
       "status": "reserva",
@@ -1412,7 +1412,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 27,
       "name": "William Mikelbrencis",
       "ovr": 64,
       "status": "reserva",
@@ -1467,7 +1467,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 22,
       "name": "Tom Mickel",
       "ovr": 63,
       "status": "reserva",
@@ -1482,12 +1482,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 61,
+        "esp": 71,
+        "ref": 64,
+        "pos": 60,
+        "vel": 49,
         "sta": 33
       },
       "detailedStats": {
@@ -1632,7 +1632,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 33,
       "name": "Hannes Hermann",
       "ovr": 53,
       "status": "reserva",
@@ -1647,12 +1647,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 51,
+        "seg": 57,
+        "esp": 61,
+        "ref": 58,
+        "pos": 51,
+        "vel": 18,
         "sta": 19
       },
       "detailedStats": {

@@ -24,12 +24,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 74,
+        "seg": 71,
+        "esp": 83,
+        "ref": 76,
+        "pos": 72,
+        "vel": 50,
         "sta": 40
       },
       "detailedStats": {
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 5,
       "name": "Fabian Holland",
       "ovr": 72,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 8,
       "name": "Tobias Kempe",
       "ovr": 71,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Matej Maglica",
       "ovr": 71,
       "status": "titular",
@@ -345,7 +345,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 11,
       "name": "Fabian Nürnberger",
       "ovr": 71,
       "status": "titular",
@@ -400,7 +400,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 25,
       "name": "Klaus Gjasula",
       "ovr": 70,
       "status": "titular",
@@ -459,7 +459,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 21,
       "name": "Kai Klefisch",
       "ovr": 70,
       "status": "titular",
@@ -572,7 +572,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 9,
       "name": "Killian Corredor",
       "ovr": 69,
       "status": "titular",
@@ -627,7 +627,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 23,
       "name": "Andreas Müller",
       "ovr": 69,
       "status": "reserva",
@@ -684,7 +684,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 19,
       "name": "Oscar Vilhelmsson",
       "ovr": 69,
       "status": "reserva",
@@ -739,7 +739,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 20,
       "name": "Fraser Hornby",
       "ovr": 68,
       "status": "reserva",
@@ -1019,7 +1019,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 12,
       "name": "Alexander Brunst",
       "ovr": 66,
       "status": "reserva",
@@ -1034,12 +1034,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
+        "alc": 67,
+        "seg": 65,
         "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "ref": 68,
+        "pos": 65,
+        "vel": 39,
         "sta": 30
       },
       "detailedStats": {
@@ -1074,7 +1074,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 13,
       "name": "Sergio López",
       "ovr": 66,
       "status": "reserva",
@@ -1129,7 +1129,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Merveille Papela",
       "ovr": 66,
       "status": "reserva",
@@ -1185,7 +1185,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 3,
       "name": "Guille Bueno",
       "ovr": 65,
       "status": "reserva",
@@ -1242,7 +1242,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Isac Lidberg",
       "ovr": 65,
       "status": "reserva",
@@ -1299,7 +1299,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Fynn Lakenmacher",
       "ovr": 64,
       "status": "reserva",
@@ -1354,7 +1354,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 27,
       "name": "Karol Niemczycki",
       "ovr": 64,
       "status": "reserva",
@@ -1369,12 +1369,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 65,
+        "esp": 73,
+        "ref": 66,
+        "pos": 65,
+        "vel": 28,
         "sta": 17
       },
       "detailedStats": {
@@ -1409,7 +1409,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 28,
       "name": "Fabio Torsiello",
       "ovr": 60,
       "status": "reserva",

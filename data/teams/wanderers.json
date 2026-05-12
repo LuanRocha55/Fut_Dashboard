@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Fabricio Formiliano",
       "ovr": 71,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 3,
       "name": "Kevin Rolón",
       "ovr": 69,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "José Alberti",
       "ovr": 68,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 5,
       "name": "Francisco Cerro",
       "ovr": 68,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 7,
       "name": "Leandro Otormín",
       "ovr": 68,
       "status": "titular",
@@ -284,7 +284,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 11,
       "name": "Tabaré Viudez",
       "ovr": 68,
       "status": "titular",
@@ -339,7 +339,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 16,
       "name": "Leonel Bontempo",
       "ovr": 67,
       "status": "titular",
@@ -394,7 +394,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 2,
       "name": "Lucas Morales",
       "ovr": 67,
       "status": "titular",
@@ -449,7 +449,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 1,
       "name": "Mauro Silveira",
       "ovr": 67,
       "status": "titular",
@@ -464,12 +464,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 57,
+        "seg": 63,
+        "esp": 68,
+        "ref": 65,
+        "pos": 71,
+        "vel": 62,
         "sta": 22
       },
       "detailedStats": {
@@ -504,7 +504,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 12,
       "name": "Jhonny Da Silva",
       "ovr": 66,
       "status": "titular",
@@ -519,12 +519,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 73,
+        "seg": 63,
+        "esp": 76,
+        "ref": 63,
+        "pos": 62,
+        "vel": 47,
         "sta": 40
       },
       "detailedStats": {
@@ -559,7 +559,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 17,
       "name": "Nicolás Ferreira",
       "ovr": 66,
       "status": "titular",
@@ -614,7 +614,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 9,
       "name": "Matias Fonseca",
       "ovr": 66,
       "status": "reserva",
@@ -669,7 +669,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 19,
       "name": "Gonzalo Vega",
       "ovr": 66,
       "status": "reserva",
@@ -724,7 +724,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 18,
       "name": "Bruno Veglio",
       "ovr": 66,
       "status": "reserva",
@@ -779,7 +779,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 29,
       "name": "Agustín Albarracín",
       "ovr": 64,
       "status": "reserva",
@@ -834,7 +834,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 13,
       "name": "Sebastián Figueredo",
       "ovr": 64,
       "status": "reserva",
@@ -889,7 +889,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 10,
       "name": "Facundo Milán",
       "ovr": 63,
       "status": "reserva",
@@ -944,7 +944,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 14,
       "name": "Ismael García",
       "ovr": 62,
       "status": "reserva",
@@ -1000,7 +1000,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 27,
       "name": "Santiago Guzmán",
       "ovr": 62,
       "status": "reserva",
@@ -1055,7 +1055,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Enzo López",
       "ovr": 62,
       "status": "reserva",
@@ -1070,12 +1070,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 57,
+        "seg": 61,
+        "esp": 69,
+        "ref": 67,
+        "pos": 63,
+        "vel": 31,
         "sta": 25
       },
       "detailedStats": {
@@ -1110,7 +1110,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 20,
       "name": "Martín Suárez",
       "ovr": 62,
       "status": "reserva",
@@ -1165,7 +1165,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Esteban Crucci",
       "ovr": 60,
       "status": "reserva",
@@ -1220,7 +1220,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 21,
       "name": "Emiliano Vidart",
       "ovr": 60,
       "status": "reserva",

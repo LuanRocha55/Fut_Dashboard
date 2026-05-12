@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 7,
       "name": "Barış Atik",
       "ovr": 71,
       "status": "titular",
@@ -124,7 +124,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Mo El Hankouri",
       "ovr": 69,
       "status": "titular",
@@ -180,7 +180,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 5,
       "name": "Silas Gnaka",
       "ovr": 69,
       "status": "titular",
@@ -236,7 +236,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Marcus Mathisen",
       "ovr": 69,
       "status": "titular",
@@ -294,7 +294,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 17,
       "name": "Jason Ceka",
       "ovr": 68,
       "status": "titular",
@@ -350,7 +350,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Daniel Heber",
       "ovr": 68,
       "status": "titular",
@@ -411,7 +411,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 25,
       "name": "Jean Hugonet",
       "ovr": 68,
       "status": "titular",
@@ -579,7 +579,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 1,
       "name": "Dominik Reimann",
       "ovr": 68,
       "status": "titular",
@@ -594,12 +594,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 66,
+        "esp": 76,
+        "ref": 68,
+        "pos": 70,
+        "vel": 46,
         "sta": 31
       },
       "detailedStats": {
@@ -634,7 +634,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 19,
       "name": "Bryan Teixeira",
       "ovr": 68,
       "status": "reserva",
@@ -747,7 +747,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 29,
       "name": "Tatsuya Itō",
       "ovr": 67,
       "status": "reserva",
@@ -805,7 +805,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 31,
       "name": "Xavier Amaechi",
       "ovr": 66,
       "status": "reserva",
@@ -860,7 +860,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 27,
       "name": "Livan Burcu",
       "ovr": 66,
       "status": "reserva",
@@ -915,7 +915,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 28,
       "name": "Philipp Hercher",
       "ovr": 66,
       "status": "reserva",
@@ -970,7 +970,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Martijn Kaars",
       "ovr": 66,
       "status": "reserva",
@@ -1026,7 +1026,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 8,
       "name": "Connor Krempicki",
       "ovr": 66,
       "status": "reserva",
@@ -1081,7 +1081,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 21,
       "name": "Alexander Nollenberger",
       "ovr": 66,
       "status": "reserva",
@@ -1136,7 +1136,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Falko Michel",
       "ovr": 65,
       "status": "reserva",
@@ -1191,7 +1191,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 3,
       "name": "Lubambo Musonda",
       "ovr": 65,
       "status": "reserva",
@@ -1246,7 +1246,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Tarek Chahed",
       "ovr": 63,
       "status": "reserva",
@@ -1301,7 +1301,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 18,
       "name": "Abu Bekir Ömer El Zein",
       "ovr": 63,
       "status": "reserva",
@@ -1357,7 +1357,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 12,
       "name": "Noah Kruth",
       "ovr": 62,
       "status": "reserva",
@@ -1372,12 +1372,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 64,
+        "esp": 71,
+        "ref": 63,
+        "pos": 63,
+        "vel": 30,
         "sta": 26
       },
       "detailedStats": {
@@ -1467,7 +1467,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 30,
       "name": "Emir Kuhinja",
       "ovr": 61,
       "status": "reserva",
@@ -1522,7 +1522,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 32,
       "name": "Eldin Dzogovic",
       "ovr": 60,
       "status": "reserva",
@@ -1577,7 +1577,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 16,
       "name": "Marc-André Jürgen",
       "ovr": 58,
       "status": "reserva",
@@ -1632,7 +1632,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 33,
       "name": "Robert Kampa",
       "ovr": 57,
       "status": "reserva",
@@ -1647,12 +1647,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 57,
+        "seg": 57,
+        "esp": 63,
+        "ref": 57,
+        "pos": 56,
+        "vel": 23,
         "sta": 27
       },
       "detailedStats": {

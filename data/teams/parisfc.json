@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Maxime Lopez",
       "ovr": 76,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Ilan Kebbal",
       "ovr": 73,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Jean-Philippe Krasso",
       "ovr": 71,
       "status": "titular",
@@ -173,7 +173,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 3,
       "name": "Jules Gaudin",
       "ovr": 69,
       "status": "titular",
@@ -228,7 +228,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 18,
       "name": "Vincent Marchetti",
       "ovr": 69,
       "status": "titular",
@@ -283,7 +283,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 1,
       "name": "Obed Nkambadio",
       "ovr": 69,
       "status": "titular",
@@ -298,12 +298,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 65,
+        "esp": 79,
+        "ref": 72,
+        "pos": 66,
+        "vel": 28,
         "sta": 20
       },
       "detailedStats": {
@@ -338,7 +338,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 20,
       "name": "Adama Camara",
       "ovr": 68,
       "status": "titular",
@@ -393,7 +393,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 19,
       "name": "Nouha Dicko",
       "ovr": 68,
       "status": "titular",
@@ -448,7 +448,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 5,
       "name": "Lohann Doucet",
       "ovr": 68,
       "status": "titular",
@@ -503,7 +503,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 11,
       "name": "Alimami Gory",
       "ovr": 68,
       "status": "titular",
@@ -558,7 +558,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 4,
       "name": "Timothée Kolodziejczak",
       "ovr": 68,
       "status": "titular",
@@ -614,7 +614,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 2,
       "name": "Mathys Tourraine",
       "ovr": 68,
       "status": "reserva",
@@ -669,7 +669,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 14,
       "name": "Samir Chergui",
       "ovr": 67,
       "status": "reserva",
@@ -725,7 +725,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 28,
       "name": "Lamine Gueye",
       "ovr": 67,
       "status": "reserva",
@@ -836,7 +836,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 25,
       "name": "Moustapha Mbow",
       "ovr": 67,
       "status": "reserva",
@@ -892,7 +892,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 12,
       "name": "Rémy Riou",
       "ovr": 67,
       "status": "reserva",
@@ -907,12 +907,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 66,
+        "esp": 74,
+        "ref": 67,
+        "pos": 68,
+        "vel": 53,
         "sta": 32
       },
       "detailedStats": {
@@ -947,7 +947,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 13,
       "name": "Sofiane Alakouch",
       "ovr": 66,
       "status": "reserva",
@@ -1002,7 +1002,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 27,
       "name": "Julien Lopez",
       "ovr": 66,
       "status": "reserva",
@@ -1057,7 +1057,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 21,
       "name": "Josias Lukembila",
       "ovr": 66,
       "status": "reserva",
@@ -1112,7 +1112,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Ayoub Jabbari",
       "ovr": 65,
       "status": "reserva",
@@ -1167,7 +1167,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Yoan Koré",
       "ovr": 65,
       "status": "reserva",
@@ -1223,7 +1223,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 16,
       "name": "Tuomas Ollila",
       "ovr": 65,
       "status": "reserva",
@@ -1333,7 +1333,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "Gabriel Oualengbe",
       "ovr": 59,
       "status": "reserva",

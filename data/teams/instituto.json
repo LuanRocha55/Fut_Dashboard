@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Gastón Lódico",
       "ovr": 74,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Manuel Roffo",
       "ovr": 74,
       "status": "titular",
@@ -80,11 +80,11 @@
       ],
       "stats": {
         "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "seg": 72,
+        "esp": 83,
         "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "pos": 72,
+        "vel": 35,
         "sta": 17
       },
       "detailedStats": {
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Silvio Romero",
       "ovr": 73,
       "status": "titular",
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 19,
       "name": "Damian Batallini",
       "ovr": 71,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Miguel Brizuela",
       "ovr": 71,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 27,
       "name": "Jonás Acevedo",
       "ovr": 69,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 25,
       "name": "Víctor Cabrera",
       "ovr": 69,
       "status": "titular",
@@ -454,7 +454,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 5,
       "name": "Franco Díaz",
       "ovr": 69,
       "status": "titular",
@@ -509,7 +509,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 3,
       "name": "Jonathan Bay",
       "ovr": 68,
       "status": "titular",
@@ -564,7 +564,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 12,
       "name": "Joaquín Papaleo",
       "ovr": 68,
       "status": "titular",
@@ -579,12 +579,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 66,
+        "esp": 74,
+        "ref": 67,
+        "pos": 68,
+        "vel": 39,
         "sta": 24
       },
       "detailedStats": {
@@ -619,7 +619,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 16,
       "name": "Lucas Rodríguez",
       "ovr": 68,
       "status": "reserva",
@@ -674,7 +674,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 21,
       "name": "Roberto Bochi",
       "ovr": 67,
       "status": "reserva",
@@ -729,7 +729,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 2,
       "name": "Juan José Franco",
       "ovr": 67,
       "status": "reserva",
@@ -784,7 +784,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 23,
       "name": "Stefano Moreyra",
       "ovr": 67,
       "status": "reserva",
@@ -839,7 +839,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 10,
       "name": "Facundo Suárez",
       "ovr": 67,
       "status": "reserva",
@@ -894,7 +894,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 13,
       "name": "Giuliano Cerato",
       "ovr": 66,
       "status": "reserva",
@@ -1004,7 +1004,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 30,
       "name": "Damián Puebla",
       "ovr": 65,
       "status": "reserva",
@@ -1059,7 +1059,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 28,
       "name": "Gregorio Rodríguez",
       "ovr": 65,
       "status": "reserva",
@@ -1114,7 +1114,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 8,
       "name": "Matías Romero",
       "ovr": 65,
       "status": "reserva",
@@ -1169,7 +1169,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 20,
       "name": "Ignacio Russo",
       "ovr": 61,
       "status": "reserva",
@@ -1224,7 +1224,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 22,
       "name": "Emanuel Sittaro",
       "ovr": 60,
       "status": "reserva",
@@ -1239,12 +1239,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 60,
+        "esp": 69,
+        "ref": 60,
+        "pos": 55,
+        "vel": 29,
         "sta": 24
       },
       "detailedStats": {

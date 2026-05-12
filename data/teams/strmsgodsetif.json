@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Herman Stengel",
       "ovr": 69,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Gustav Valsvik",
       "ovr": 69,
       "status": "titular",
@@ -123,7 +123,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 1,
       "name": "Per Kristian Bråtveit",
       "ovr": 67,
       "status": "titular",
@@ -138,12 +138,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 64,
+        "esp": 74,
+        "ref": 68,
+        "pos": 66,
+        "vel": 48,
         "sta": 38
       },
       "detailedStats": {
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 2,
       "name": "Lars Vilsvik",
       "ovr": 66,
       "status": "titular",
@@ -234,7 +234,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 14,
       "name": "Fredrik K. Dahl",
       "ovr": 65,
       "status": "titular",
@@ -291,7 +291,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 25,
       "name": "Jesper Taaje",
       "ovr": 65,
       "status": "titular",
@@ -350,7 +350,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 3,
       "name": "Logi Tómasson",
       "ovr": 65,
       "status": "titular",
@@ -405,7 +405,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 7,
       "name": "Eirik Ulland Andersen",
       "ovr": 64,
       "status": "titular",
@@ -460,7 +460,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 18,
       "name": "Kreshnik Krasniqi",
       "ovr": 64,
       "status": "titular",
@@ -571,7 +571,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 17,
       "name": "Marcus Johansen Mehnert",
       "ovr": 63,
       "status": "titular",
@@ -626,7 +626,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 9,
       "name": "Elias Hoff Melkersen",
       "ovr": 63,
       "status": "reserva",
@@ -681,7 +681,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 5,
       "name": "Emmanuel Danso",
       "ovr": 62,
       "status": "reserva",
@@ -736,7 +736,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 29,
       "name": "Ole Enersen",
       "ovr": 62,
       "status": "reserva",
@@ -791,7 +791,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 13,
       "name": "Ernest Boahene",
       "ovr": 61,
       "status": "reserva",
@@ -901,7 +901,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 19,
       "name": "Sondre Fosnæss Hanssen",
       "ovr": 61,
       "status": "reserva",
@@ -957,7 +957,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Nikolaj Moller",
       "ovr": 61,
       "status": "reserva",
@@ -1012,7 +1012,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Jonas Therkelsen",
       "ovr": 61,
       "status": "reserva",
@@ -1067,7 +1067,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 12,
       "name": "Frank Stople",
       "ovr": 58,
       "status": "reserva",
@@ -1082,12 +1082,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 59,
+        "seg": 60,
+        "esp": 67,
+        "ref": 61,
+        "pos": 57,
+        "vel": 33,
         "sta": 25
       },
       "detailedStats": {

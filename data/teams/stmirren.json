@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Mark O'Hara",
       "ovr": 68,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 18,
       "name": "Killian Phillips",
       "ovr": 66,
       "status": "titular",
@@ -173,7 +173,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Jonah Ayunga",
       "ovr": 65,
       "status": "titular",
@@ -228,7 +228,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Marcus Fraser",
       "ovr": 65,
       "status": "titular",
@@ -284,7 +284,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 20,
       "name": "Caolán Boyd-Munce",
       "ovr": 64,
       "status": "titular",
@@ -339,7 +339,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 2,
       "name": "Elvis Bwomono",
       "ovr": 64,
       "status": "titular",
@@ -394,7 +394,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Alex Gogić",
       "ovr": 64,
       "status": "titular",
@@ -450,7 +450,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 7,
       "name": "Greg Kiltie",
       "ovr": 64,
       "status": "titular",
@@ -560,7 +560,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 13,
       "name": "Shaun Rooney",
       "ovr": 64,
       "status": "titular",
@@ -615,7 +615,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 25,
       "name": "Alex Iacovitti",
       "ovr": 63,
       "status": "reserva",
@@ -671,7 +671,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 17,
       "name": "Conor McMenamin",
       "ovr": 63,
       "status": "reserva",
@@ -726,7 +726,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Richard Taylor",
       "ovr": 63,
       "status": "reserva",
@@ -782,7 +782,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 16,
       "name": "Dennis Adeniran",
       "ovr": 62,
       "status": "reserva",
@@ -837,7 +837,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 19,
       "name": "Toyosi Olusanya",
       "ovr": 62,
       "status": "reserva",
@@ -892,7 +892,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 1,
       "name": "Ellery Balcombe",
       "ovr": 61,
       "status": "reserva",
@@ -907,12 +907,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 59,
+        "esp": 69,
+        "ref": 64,
+        "pos": 59,
+        "vel": 39,
         "sta": 28
       },
       "detailedStats": {
@@ -947,7 +947,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 26,
       "name": "Jaden Brown",
       "ovr": 61,
       "status": "reserva",
@@ -1002,7 +1002,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "James Scott",
       "ovr": 61,
       "status": "reserva",
@@ -1057,7 +1057,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 23,
       "name": "Oisin Smyth",
       "ovr": 60,
       "status": "reserva",
@@ -1112,7 +1112,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 12,
       "name": "Peter Urminsky",
       "ovr": 59,
       "status": "reserva",
@@ -1127,12 +1127,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 59,
+        "esp": 67,
+        "ref": 60,
+        "pos": 58,
+        "vel": 27,
         "sta": 18
       },
       "detailedStats": {

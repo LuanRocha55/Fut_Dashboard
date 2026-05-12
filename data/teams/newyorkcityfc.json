@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Maxi Moralez",
       "ovr": 73,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 23,
       "name": "Santiago Rodríguez",
       "ovr": 73,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 5,
       "name": "Keaton Parks",
       "ovr": 72,
       "status": "titular",
@@ -234,7 +234,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 21,
       "name": "James Sands",
       "ovr": 71,
       "status": "titular",
@@ -292,7 +292,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 11,
       "name": "Hannes Wolf",
       "ovr": 71,
       "status": "titular",
@@ -347,7 +347,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 17,
       "name": "Agustín Ojeda",
       "ovr": 69,
       "status": "titular",
@@ -402,7 +402,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 31,
       "name": "Julián Fernández",
       "ovr": 68,
       "status": "titular",
@@ -457,7 +457,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "Birk Risa",
       "ovr": 68,
       "status": "titular",
@@ -515,7 +515,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 1,
       "name": "Matt Freese",
       "ovr": 67,
       "status": "titular",
@@ -531,12 +531,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 67,
+        "esp": 76,
+        "ref": 68,
+        "pos": 67,
+        "vel": 31,
         "sta": 18
       },
       "detailedStats": {
@@ -571,7 +571,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Alonso Martínez",
       "ovr": 67,
       "status": "titular",
@@ -626,7 +626,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 2,
       "name": "Tayvon Gray",
       "ovr": 65,
       "status": "reserva",
@@ -736,7 +736,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 9,
       "name": "Monsef Bakrar",
       "ovr": 63,
       "status": "reserva",
@@ -791,7 +791,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 12,
       "name": "Luis Barraza",
       "ovr": 63,
       "status": "reserva",
@@ -806,12 +806,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 61,
+        "esp": 67,
+        "ref": 58,
+        "pos": 66,
+        "vel": 15,
         "sta": 26
       },
       "detailedStats": {
@@ -846,7 +846,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 24,
       "name": "Mitja Ilenič",
       "ovr": 63,
       "status": "reserva",
@@ -901,7 +901,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 3,
       "name": "Kevin O'Toole",
       "ovr": 62,
       "status": "reserva",
@@ -956,7 +956,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 25,
       "name": "Justin Haak",
       "ovr": 60,
       "status": "reserva",
@@ -1012,7 +1012,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Tomás Romero",
       "ovr": 60,
       "status": "reserva",
@@ -1027,12 +1027,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 59,
+        "esp": 68,
+        "ref": 60,
+        "pos": 59,
+        "vel": 28,
         "sta": 23
       },
       "detailedStats": {
@@ -1123,7 +1123,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 26,
       "name": "Strahinja Tanasijević",
       "ovr": 58,
       "status": "reserva",
@@ -1179,7 +1179,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 7,
       "name": "Malachi Jones",
       "ovr": 53,
       "status": "reserva",
@@ -1234,7 +1234,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 16,
       "name": "Christian McFarlane",
       "ovr": 52,
       "status": "reserva",
@@ -1289,7 +1289,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 27,
       "name": "Drew Baiera",
       "ovr": 51,
       "status": "reserva",
@@ -1344,7 +1344,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 28,
       "name": "Jovan Mijatovic",
       "ovr": 50,
       "status": "reserva",
@@ -1399,7 +1399,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 8,
       "name": "Jonathan Shore",
       "ovr": 50,
       "status": "reserva",
@@ -1454,7 +1454,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 29,
       "name": "Alex Rando",
       "ovr": 48,
       "status": "reserva",
@@ -1469,12 +1469,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 47,
+        "seg": 47,
+        "esp": 52,
+        "ref": 46,
+        "pos": 52,
+        "vel": 22,
         "sta": 16
       },
       "detailedStats": {

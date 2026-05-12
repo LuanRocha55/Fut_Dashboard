@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Jay O'Shea",
       "ovr": 71,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Florin Berenguer",
       "ovr": 67,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 1,
       "name": "Macklin Freke",
       "ovr": 65,
       "status": "titular",
@@ -137,12 +137,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 61,
+        "esp": 74,
+        "ref": 67,
+        "pos": 60,
+        "vel": 42,
         "sta": 19
       },
       "detailedStats": {
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 11,
       "name": "Keegan Jelacic",
       "ovr": 64,
       "status": "titular",
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 19,
       "name": "Ben Halloran",
       "ovr": 63,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 4,
       "name": "Scott Neville",
       "ovr": 63,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Walid Shour",
       "ovr": 63,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Antonee Burke-Gilroy",
       "ovr": 62,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 21,
       "name": "Joe Caletti",
       "ovr": 62,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 2,
       "name": "Jack Hingert",
       "ovr": 62,
       "status": "titular",
@@ -563,7 +563,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 14,
       "name": "Ben Warland",
       "ovr": 61,
       "status": "titular",
@@ -634,11 +634,11 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 60,
+        "seg": 58,
+        "esp": 67,
+        "ref": 61,
+        "pos": 57,
         "vel": 40,
         "sta": 25
       },
@@ -729,7 +729,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 24,
       "name": "Louis Zabala",
       "ovr": 58,
       "status": "reserva",
@@ -784,7 +784,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "Hosine Bility",
       "ovr": 57,
       "status": "reserva",
@@ -896,7 +896,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 9,
       "name": "Adam Zimarino",
       "ovr": 56,
       "status": "reserva",

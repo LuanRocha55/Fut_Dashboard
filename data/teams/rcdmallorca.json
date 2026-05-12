@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Sergi Darder",
       "ovr": 82,
       "status": "titular",
@@ -68,7 +68,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Vedat Muriqi",
       "ovr": 80,
       "status": "titular",
@@ -126,7 +126,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 2,
       "name": "Pablo Maffeo",
       "ovr": 79,
       "status": "titular",
@@ -181,7 +181,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 3,
       "name": "Johan Mojica",
       "ovr": 77,
       "status": "titular",
@@ -237,7 +237,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Martin Valjent",
       "ovr": 77,
       "status": "titular",
@@ -293,7 +293,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 11,
       "name": "Valery",
       "ovr": 76,
       "status": "titular",
@@ -348,7 +348,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Raíllo",
       "ovr": 76,
       "status": "titular",
@@ -405,7 +405,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 19,
       "name": "Dani Rodríguez",
       "ovr": 76,
       "status": "titular",
@@ -460,7 +460,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 25,
       "name": "Copete",
       "ovr": 75,
       "status": "titular",
@@ -572,7 +572,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 18,
       "name": "Omar Mascarell",
       "ovr": 75,
       "status": "titular",
@@ -628,7 +628,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 5,
       "name": "Samú Costa",
       "ovr": 74,
       "status": "reserva",
@@ -685,7 +685,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 28,
       "name": "Takuma Asano",
       "ovr": 74,
       "status": "reserva",
@@ -741,7 +741,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 16,
       "name": "Toni Lato",
       "ovr": 74,
       "status": "reserva",
@@ -796,7 +796,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 20,
       "name": "Manu Morlanes",
       "ovr": 74,
       "status": "reserva",
@@ -851,7 +851,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 17,
       "name": "Abdón Prats",
       "ovr": 73,
       "status": "reserva",
@@ -906,7 +906,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 1,
       "name": "Leo Román",
       "ovr": 73,
       "status": "reserva",
@@ -921,12 +921,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "alc": 71,
+        "seg": 72,
+        "esp": 81,
         "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "pos": 70,
+        "vel": 48,
         "sta": 44
       },
       "detailedStats": {
@@ -961,7 +961,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Antonio Sánchez",
       "ovr": 73,
       "status": "reserva",
@@ -1016,7 +1016,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Siebe Van der Heyden",
       "ovr": 73,
       "status": "reserva",
@@ -1072,7 +1072,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 27,
       "name": "Robert Navarro",
       "ovr": 72,
       "status": "reserva",
@@ -1128,7 +1128,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 7,
       "name": "Chiquinho",
       "ovr": 72,
       "status": "reserva",
@@ -1183,7 +1183,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 13,
       "name": "Mateu Morey",
       "ovr": 71,
       "status": "reserva",
@@ -1238,7 +1238,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 12,
       "name": "Dominik Greif",
       "ovr": 70,
       "status": "reserva",
@@ -1253,12 +1253,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 70,
+        "esp": 76,
+        "ref": 68,
+        "pos": 69,
+        "vel": 22,
         "sta": 17
       },
       "detailedStats": {
@@ -1348,7 +1348,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "Iván Cuéllar",
       "ovr": 67,
       "status": "reserva",
@@ -1363,11 +1363,11 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 65,
+        "seg": 67,
+        "esp": 73,
+        "ref": 67,
+        "pos": 66,
         "vel": 40,
         "sta": 38
       },
@@ -1403,7 +1403,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Pau Mascaró",
       "ovr": 61,
       "status": "reserva",

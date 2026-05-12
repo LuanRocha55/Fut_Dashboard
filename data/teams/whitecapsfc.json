@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 7,
       "name": "Ryan Gauld",
       "ovr": 78,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 5,
       "name": "Andrés Cubas",
       "ovr": 74,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Stuart Armstrong",
       "ovr": 73,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Yohei Takaoka",
       "ovr": 73,
       "status": "titular",
@@ -192,12 +192,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 76,
+        "seg": 72,
+        "esp": 83,
+        "ref": 74,
+        "pos": 70,
+        "vel": 26,
         "sta": 18
       },
       "detailedStats": {
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 11,
       "name": "Déiber Caicedo",
       "ovr": 72,
       "status": "titular",
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 9,
       "name": "Damir Kreilach",
       "ovr": 72,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "Brian White",
       "ovr": 71,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 4,
       "name": "Ranko Veselinović",
       "ovr": 70,
       "status": "titular",
@@ -454,7 +454,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "Sam Adekugbe",
       "ovr": 69,
       "status": "titular",
@@ -509,7 +509,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Mathías Laborda",
       "ovr": 69,
       "status": "titular",
@@ -565,7 +565,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Fafà Picault",
       "ovr": 69,
       "status": "titular",
@@ -620,7 +620,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 25,
       "name": "Tristan Blackmon",
       "ovr": 68,
       "status": "reserva",
@@ -676,7 +676,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 18,
       "name": "Alessandro Schöpf",
       "ovr": 68,
       "status": "reserva",
@@ -731,7 +731,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 20,
       "name": "Pedro Vite",
       "ovr": 67,
       "status": "reserva",
@@ -843,7 +843,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 2,
       "name": "Edier Ocampo",
       "ovr": 65,
       "status": "reserva",
@@ -898,7 +898,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 27,
       "name": "Ryan Raposo",
       "ovr": 65,
       "status": "reserva",
@@ -955,7 +955,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Ali Ahmed",
       "ovr": 64,
       "status": "reserva",
@@ -1010,7 +1010,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Sebastian Berhalter",
       "ovr": 63,
       "status": "reserva",
@@ -1065,7 +1065,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 23,
       "name": "Belal Halbouni",
       "ovr": 63,
       "status": "reserva",
@@ -1121,7 +1121,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 12,
       "name": "Joe Bendik",
       "ovr": 62,
       "status": "reserva",
@@ -1136,12 +1136,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 60,
+        "esp": 68,
+        "ref": 62,
+        "pos": 60,
+        "vel": 32,
         "sta": 20
       },
       "detailedStats": {
@@ -1176,7 +1176,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Levonte Johnson",
       "ovr": 62,
       "status": "reserva",
@@ -1231,7 +1231,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 13,
       "name": "Giuseppe Bovalina",
       "ovr": 60,
       "status": "reserva",
@@ -1286,7 +1286,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Ralph Priso",
       "ovr": 60,
       "status": "reserva",
@@ -1341,7 +1341,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 28,
       "name": "Isaac Boehmer",
       "ovr": 56,
       "status": "reserva",
@@ -1356,12 +1356,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 54,
+        "esp": 62,
+        "ref": 53,
+        "pos": 57,
+        "vel": 19,
         "sta": 28
       },
       "detailedStats": {
@@ -1396,7 +1396,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Max Anchor",
       "ovr": 50,
       "status": "reserva",
@@ -1411,12 +1411,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 50,
+        "seg": 51,
+        "esp": 56,
+        "ref": 50,
+        "pos": 51,
+        "vel": 33,
         "sta": 17
       },
       "detailedStats": {

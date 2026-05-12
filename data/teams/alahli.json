@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Riyad Mahrez",
       "ovr": 85,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 5,
       "name": "Franck Yannick Kessié",
       "ovr": 82,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "Roberto Firmino",
       "ovr": 80,
       "status": "titular",
@@ -238,7 +238,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 1,
       "name": "Édouard Mendy",
       "ovr": 80,
       "status": "titular",
@@ -253,12 +253,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 78,
+        "seg": 77,
+        "esp": 88,
+        "ref": 81,
+        "pos": 79,
+        "vel": 36,
         "sta": 36
       },
       "detailedStats": {
@@ -293,7 +293,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 23,
       "name": "Gabri Veiga",
       "ovr": 78,
       "status": "titular",
@@ -348,7 +348,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Merih Demiral",
       "ovr": 76,
       "status": "titular",
@@ -407,7 +407,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 9,
       "name": "Firas Al Birekan",
       "ovr": 75,
       "status": "titular",
@@ -462,7 +462,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "Ezgjan Alioski",
       "ovr": 70,
       "status": "titular",
@@ -517,7 +517,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 19,
       "name": "Modou Barrow",
       "ovr": 69,
       "status": "titular",
@@ -573,7 +573,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 16,
       "name": "Abdullah Al Ammar",
       "ovr": 67,
       "status": "titular",
@@ -628,7 +628,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 21,
       "name": "Mohammed Al Majhad",
       "ovr": 65,
       "status": "reserva",
@@ -683,7 +683,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 27,
       "name": "Sumayhan Al Nabit",
       "ovr": 65,
       "status": "reserva",
@@ -738,7 +738,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 2,
       "name": "Ali Majrashi",
       "ovr": 65,
       "status": "reserva",
@@ -849,7 +849,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 26,
       "name": "Saad Balobaid",
       "ovr": 63,
       "status": "reserva",
@@ -959,7 +959,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 13,
       "name": "Bassam Al Hurayji",
       "ovr": 62,
       "status": "reserva",
@@ -1014,7 +1014,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 28,
       "name": "Fahad Al Rashidi",
       "ovr": 62,
       "status": "reserva",
@@ -1069,7 +1069,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 8,
       "name": "Ziyad Al Johani",
       "ovr": 61,
       "status": "reserva",
@@ -1124,7 +1124,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 25,
       "name": "Rayan Hamed",
       "ovr": 59,
       "status": "reserva",
@@ -1236,7 +1236,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 12,
       "name": "Abdulrahman Al Sanbi",
       "ovr": 55,
       "status": "reserva",
@@ -1251,11 +1251,11 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 56,
+        "seg": 54,
+        "esp": 63,
+        "ref": 57,
+        "pos": 56,
         "vel": 40,
         "sta": 28
       },
@@ -1346,7 +1346,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Abdulkarim Darisi",
       "ovr": 54,
       "status": "reserva",
@@ -1401,7 +1401,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 30,
       "name": "Emad Fadda",
       "ovr": 52,
       "status": "reserva",
@@ -1416,12 +1416,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 53,
+        "seg": 51,
+        "esp": 59,
+        "ref": 54,
+        "pos": 50,
+        "vel": 33,
         "sta": 30
       },
       "detailedStats": {
@@ -1456,7 +1456,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 31,
       "name": "Abdullah Abdo",
       "ovr": 51,
       "status": "reserva",
@@ -1471,11 +1471,11 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 52,
+        "seg": 51,
+        "esp": 57,
+        "ref": 51,
+        "pos": 52,
         "vel": 40,
         "sta": 21
       },
@@ -1511,7 +1511,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 32,
       "name": "Abdulrahman Al Hamyani",
       "ovr": 51,
       "status": "reserva",
@@ -1566,7 +1566,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 33,
       "name": "Ayman Fallatah",
       "ovr": 51,
       "status": "reserva",
@@ -1621,7 +1621,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 34,
       "name": "Bandar Al Shamrani",
       "ovr": 50,
       "status": "reserva",
@@ -1677,7 +1677,7 @@
     },
     {
       "id": 31,
-      "number": 31,
+      "number": 35,
       "name": "Faisal Al Sibyani",
       "ovr": 50,
       "status": "reserva",

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Barry Bannan",
       "ovr": 72,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 3,
       "name": "Max Lowe",
       "ovr": 72,
       "status": "titular",
@@ -123,7 +123,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 2,
       "name": "Yan Valery",
       "ovr": 71,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 5,
       "name": "Nathaniel Chalobah",
       "ovr": 70,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 9,
       "name": "Jamal Lowe",
       "ovr": 70,
       "status": "titular",
@@ -291,7 +291,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 10,
       "name": "Iké Ugbo",
       "ovr": 70,
       "status": "titular",
@@ -346,7 +346,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 23,
       "name": "Josh Windass",
       "ovr": 70,
       "status": "titular",
@@ -401,7 +401,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 1,
       "name": "James Beadle",
       "ovr": 69,
       "status": "titular",
@@ -416,12 +416,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 67,
+        "esp": 76,
+        "ref": 69,
+        "pos": 70,
+        "vel": 45,
         "sta": 40
       },
       "detailedStats": {
@@ -456,7 +456,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 4,
       "name": "Di'Shon Bernard",
       "ovr": 69,
       "status": "titular",
@@ -512,7 +512,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 12,
       "name": "Ben Hamer",
       "ovr": 69,
       "status": "titular",
@@ -527,12 +527,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 64,
+        "esp": 79,
+        "ref": 72,
+        "pos": 67,
+        "vel": 45,
         "sta": 30
       },
       "detailedStats": {
@@ -567,7 +567,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 16,
       "name": "Marvin Johnson",
       "ovr": 68,
       "status": "titular",
@@ -622,7 +622,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 21,
       "name": "Shea Charles",
       "ovr": 67,
       "status": "reserva",
@@ -677,7 +677,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 14,
       "name": "Akin Famewo",
       "ovr": 67,
       "status": "reserva",
@@ -733,7 +733,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 25,
       "name": "Michael Ihiekwe",
       "ovr": 67,
       "status": "reserva",
@@ -789,7 +789,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 30,
       "name": "Svante Ingelsson",
       "ovr": 67,
       "status": "reserva",
@@ -844,7 +844,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 17,
       "name": "Dominic Iorfa",
       "ovr": 67,
       "status": "reserva",
@@ -901,7 +901,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 11,
       "name": "Anthony Musaba",
       "ovr": 67,
       "status": "reserva",
@@ -1068,7 +1068,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 13,
       "name": "Pol Valentín",
       "ovr": 66,
       "status": "reserva",
@@ -1124,7 +1124,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 20,
       "name": "Bailey Cadamarteri",
       "ovr": 65,
       "status": "reserva",
@@ -1179,7 +1179,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 27,
       "name": "Djeidi Gassama",
       "ovr": 65,
       "status": "reserva",
@@ -1234,7 +1234,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Callum Paterson",
       "ovr": 65,
       "status": "reserva",
@@ -1289,7 +1289,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Olaf Kobacki",
       "ovr": 63,
       "status": "reserva",
@@ -1344,7 +1344,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 28,
       "name": "Charlie McNeill",
       "ovr": 62,
       "status": "reserva",
@@ -1399,7 +1399,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 22,
       "name": "Pierce Charles",
       "ovr": 60,
       "status": "reserva",
@@ -1414,12 +1414,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 60,
+        "esp": 66,
+        "ref": 60,
+        "pos": 62,
+        "vel": 25,
         "sta": 25
       },
       "detailedStats": {
@@ -1454,7 +1454,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 29,
       "name": "Rio Shipston",
       "ovr": 53,
       "status": "reserva",

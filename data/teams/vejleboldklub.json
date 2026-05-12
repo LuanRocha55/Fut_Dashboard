@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 3,
       "name": "David Čolina",
       "ovr": 68,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Dimitrios Emmanouilidis",
       "ovr": 67,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Richard Jensen",
       "ovr": 67,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 14,
       "name": "Oliver Provstgaard",
       "ovr": 67,
       "status": "titular",
@@ -230,7 +230,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 19,
       "name": "Yeni Ngbakoto",
       "ovr": 66,
       "status": "titular",
@@ -286,7 +286,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 25,
       "name": "Damian van Bruggen",
       "ovr": 66,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 16,
       "name": "Miiko Albornoz",
       "ovr": 65,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 9,
       "name": "Anders K. Jacobsen",
       "ovr": 65,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 28,
       "name": "Musa Juwara",
       "ovr": 65,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 8,
       "name": "Hamza Barry",
       "ovr": 64,
       "status": "titular",
@@ -563,7 +563,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 2,
       "name": "Thomas Gundelund",
       "ovr": 64,
       "status": "titular",
@@ -618,7 +618,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 27,
       "name": "Kristian Kirkegaard",
       "ovr": 64,
       "status": "reserva",
@@ -673,7 +673,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 18,
       "name": "Ebenezer Ofori",
       "ovr": 64,
       "status": "reserva",
@@ -728,7 +728,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 1,
       "name": "Igor Vekič",
       "ovr": 64,
       "status": "reserva",
@@ -743,12 +743,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 64,
+        "esp": 72,
+        "ref": 67,
+        "pos": 62,
+        "vel": 37,
         "sta": 35
       },
       "detailedStats": {
@@ -839,7 +839,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 10,
       "name": "Emmanuel Yeboah",
       "ovr": 64,
       "status": "reserva",
@@ -895,7 +895,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 13,
       "name": "Marius Elvius",
       "ovr": 62,
       "status": "reserva",
@@ -950,7 +950,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Tobias Lauritsen",
       "ovr": 62,
       "status": "reserva",
@@ -1005,7 +1005,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Lundrim Hetemi",
       "ovr": 59,
       "status": "reserva",
@@ -1060,7 +1060,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 5,
       "name": "Oliver Amby",
       "ovr": 57,
       "status": "reserva",
@@ -1115,7 +1115,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Luka Hujber",
       "ovr": 57,
       "status": "reserva",
@@ -1281,7 +1281,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 12,
       "name": "Tobias Haahr Jakobsen",
       "ovr": 56,
       "status": "reserva",
@@ -1296,12 +1296,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 56,
+        "esp": 63,
+        "ref": 56,
+        "pos": 54,
+        "vel": 37,
         "sta": 26
       },
       "detailedStats": {
@@ -1336,7 +1336,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "Christian Gammelgaard",
       "ovr": 55,
       "status": "reserva",
@@ -1391,7 +1391,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Andreas Tomaselli",
       "ovr": 54,
       "status": "reserva",

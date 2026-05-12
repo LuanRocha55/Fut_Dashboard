@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Aitana Bonmatí",
       "ovr": 91,
       "status": "titular",
@@ -69,7 +69,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 18,
       "name": "Alexia Putellas",
       "ovr": 90,
       "status": "titular",
@@ -130,7 +130,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 17,
       "name": "Caroline Graham Hansen",
       "ovr": 90,
       "status": "titular",
@@ -313,7 +313,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Irene Paredes",
       "ovr": 88,
       "status": "titular",
@@ -373,7 +373,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 9,
       "name": "Ewa Pajor",
       "ovr": 87,
       "status": "titular",
@@ -428,7 +428,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Fridolina Rolfö",
       "ovr": 86,
       "status": "titular",
@@ -488,7 +488,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 16,
       "name": "Ona Batlle",
       "ovr": 85,
       "status": "titular",
@@ -548,7 +548,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 21,
       "name": "Keira Walsh",
       "ovr": 85,
       "status": "titular",
@@ -606,7 +606,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 25,
       "name": "Ingrid Syrstad Engen",
       "ovr": 84,
       "status": "titular",
@@ -663,7 +663,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 1,
       "name": "Cata Coll",
       "ovr": 83,
       "status": "reserva",
@@ -678,12 +678,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 81,
+        "seg": 80,
+        "esp": 94,
+        "ref": 89,
+        "pos": 82,
+        "vel": 54,
         "sta": 30
       },
       "detailedStats": {
@@ -718,7 +718,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 7,
       "name": "Claudia Pina",
       "ovr": 83,
       "status": "reserva",
@@ -777,7 +777,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 2,
       "name": "Marta Torrejón",
       "ovr": 80,
       "status": "reserva",
@@ -833,7 +833,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 10,
       "name": "Kika Nazareth",
       "ovr": 79,
       "status": "reserva",
@@ -892,7 +892,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 29,
       "name": "Salma Paralluelo",
       "ovr": 79,
       "status": "reserva",
@@ -949,7 +949,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 12,
       "name": "Ellie Roebuck",
       "ovr": 78,
       "status": "reserva",
@@ -964,12 +964,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 83,
+        "seg": 77,
+        "esp": 89,
+        "ref": 78,
+        "pos": 76,
+        "vel": 61,
         "sta": 31
       },
       "detailedStats": {
@@ -1004,7 +1004,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 19,
       "name": "Esmee Brugts",
       "ovr": 77,
       "status": "reserva",
@@ -1059,7 +1059,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 20,
       "name": "Jana",
       "ovr": 73,
       "status": "reserva",
@@ -1115,7 +1115,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 23,
       "name": "Vicky López",
       "ovr": 73,
       "status": "reserva",
@@ -1170,7 +1170,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Gemma Font",
       "ovr": 71,
       "status": "reserva",
@@ -1185,12 +1185,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 72,
+        "seg": 69,
+        "esp": 79,
+        "ref": 70,
+        "pos": 70,
+        "vel": 42,
         "sta": 20
       },
       "detailedStats": {
@@ -1225,7 +1225,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "María Pérez",
       "ovr": 71,
       "status": "reserva",
@@ -1280,7 +1280,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Ona Baradad",
       "ovr": 68,
       "status": "reserva",
@@ -1335,7 +1335,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 27,
       "name": "Martina Fernández",
       "ovr": 66,
       "status": "reserva",

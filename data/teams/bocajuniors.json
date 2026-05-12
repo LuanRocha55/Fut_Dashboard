@@ -25,12 +25,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
+        "alc": 79,
         "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "esp": 89,
+        "ref": 81,
+        "pos": 77,
+        "vel": 44,
         "sta": 31
       },
       "detailedStats": {
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Edinson Cavani",
       "ovr": 77,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 2,
       "name": "Luis Advíncula",
       "ovr": 76,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 10,
       "name": "Miguel Ángel Merentiel",
       "ovr": 76,
       "status": "titular",
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Marcos Rojo",
       "ovr": 76,
       "status": "titular",
@@ -347,7 +347,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Tomás Belmonte",
       "ovr": 75,
       "status": "titular",
@@ -403,7 +403,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Frank Fabra",
       "ovr": 75,
       "status": "titular",
@@ -461,7 +461,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 8,
       "name": "Guillermo Fernández",
       "ovr": 75,
       "status": "titular",
@@ -518,7 +518,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Cristian Lema",
       "ovr": 75,
       "status": "titular",
@@ -577,7 +577,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 18,
       "name": "Cristian Medina",
       "ovr": 75,
       "status": "titular",
@@ -633,7 +633,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 11,
       "name": "Lucas Janson",
       "ovr": 74,
       "status": "reserva",
@@ -692,7 +692,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 12,
       "name": "Javier García",
       "ovr": 73,
       "status": "reserva",
@@ -708,11 +708,11 @@
       ],
       "stats": {
         "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "seg": 68,
+        "esp": 83,
+        "ref": 74,
+        "pos": 72,
+        "vel": 37,
         "sta": 32
       },
       "detailedStats": {
@@ -747,7 +747,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Gary Medel",
       "ovr": 73,
       "status": "reserva",
@@ -803,7 +803,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 19,
       "name": "Exequiel Zeballos",
       "ovr": 73,
       "status": "reserva",
@@ -859,7 +859,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 13,
       "name": "Lucas Blondel",
       "ovr": 72,
       "status": "reserva",
@@ -972,7 +972,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 27,
       "name": "Kevin Zenón",
       "ovr": 72,
       "status": "reserva",
@@ -1028,7 +1028,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 24,
       "name": "Juan Barinaga",
       "ovr": 71,
       "status": "reserva",
@@ -1083,7 +1083,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 16,
       "name": "Lautaro Blanco",
       "ovr": 71,
       "status": "reserva",
@@ -1138,7 +1138,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 20,
       "name": "Juan Ramírez",
       "ovr": 71,
       "status": "reserva",
@@ -1193,7 +1193,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Marcelo Saracchi",
       "ovr": 71,
       "status": "reserva",
@@ -1304,7 +1304,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 21,
       "name": "Ignacio Miramón",
       "ovr": 70,
       "status": "reserva",
@@ -1359,7 +1359,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 28,
       "name": "Milton Giménez",
       "ovr": 69,
       "status": "reserva",
@@ -1414,7 +1414,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 30,
       "name": "Vicente Taborda",
       "ovr": 69,
       "status": "reserva",
@@ -1469,7 +1469,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 7,
       "name": "Brian Aguirre",
       "ovr": 68,
       "status": "reserva",
@@ -1524,7 +1524,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 22,
       "name": "Leandro Brey",
       "ovr": 64,
       "status": "reserva",
@@ -1539,12 +1539,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 60,
+        "esp": 72,
+        "ref": 65,
+        "pos": 65,
+        "vel": 30,
         "sta": 21
       },
       "detailedStats": {
@@ -1634,7 +1634,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 31,
       "name": "Lautaro Di Lollo",
       "ovr": 62,
       "status": "reserva",
@@ -1690,7 +1690,7 @@
     },
     {
       "id": 31,
-      "number": 31,
+      "number": 32,
       "name": "Milton Delgado",
       "ovr": 61,
       "status": "reserva",
@@ -1745,7 +1745,7 @@
     },
     {
       "id": 32,
-      "number": 32,
+      "number": 33,
       "name": "Julián Ceballos",
       "ovr": 59,
       "status": "reserva",
@@ -1800,7 +1800,7 @@
     },
     {
       "id": 33,
-      "number": 33,
+      "number": 34,
       "name": "Dylan Gorosito",
       "ovr": 59,
       "status": "reserva",

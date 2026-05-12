@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Matteo Pessina",
       "ovr": 79,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Gianluca Caprari",
       "ovr": 77,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Patrick Ciurria",
       "ovr": 77,
       "status": "titular",
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Dany Mota",
       "ovr": 76,
       "status": "titular",
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Danilo D'Ambrosio",
       "ovr": 75,
       "status": "titular",
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Pablo Marí",
       "ovr": 75,
       "status": "titular",
@@ -346,7 +346,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 2,
       "name": "Samuele Birindelli",
       "ovr": 74,
       "status": "titular",
@@ -401,7 +401,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 1,
       "name": "Alessio Cragno",
       "ovr": 74,
       "status": "titular",
@@ -416,12 +416,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "alc": 74,
+        "seg": 72,
+        "esp": 83,
         "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "pos": 74,
+        "vel": 37,
         "sta": 43
       },
       "detailedStats": {
@@ -456,7 +456,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 5,
       "name": "Roberto Gagliardini",
       "ovr": 74,
       "status": "titular",
@@ -511,7 +511,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Armando Izzo",
       "ovr": 74,
       "status": "titular",
@@ -568,7 +568,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 12,
       "name": "Stefano Turati",
       "ovr": 74,
       "status": "titular",
@@ -584,11 +584,11 @@
       ],
       "stats": {
         "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "seg": 71,
+        "esp": 85,
+        "ref": 78,
+        "pos": 74,
+        "vel": 31,
         "sta": 30
       },
       "detailedStats": {
@@ -623,7 +623,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 13,
       "name": "Luca Caldirola",
       "ovr": 73,
       "status": "reserva",
@@ -679,7 +679,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 19,
       "name": "Andrea Petagna",
       "ovr": 73,
       "status": "reserva",
@@ -734,7 +734,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 18,
       "name": "Mattia Valoti",
       "ovr": 72,
       "status": "reserva",
@@ -792,7 +792,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 3,
       "name": "Giorgos Kyriakopoulos",
       "ovr": 71,
       "status": "reserva",
@@ -847,7 +847,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 23,
       "name": "Daniel Maldini",
       "ovr": 71,
       "status": "reserva",
@@ -902,7 +902,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 20,
       "name": "Davide Diaw",
       "ovr": 70,
       "status": "reserva",
@@ -957,7 +957,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Milan Đurić",
       "ovr": 70,
       "status": "reserva",
@@ -1013,7 +1013,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 28,
       "name": "Pedro Pereira",
       "ovr": 70,
       "status": "reserva",
@@ -1068,7 +1068,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Andrea Carboni",
       "ovr": 69,
       "status": "reserva",
@@ -1125,7 +1125,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Mirko Marić",
       "ovr": 69,
       "status": "reserva",
@@ -1180,7 +1180,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Alessandro Bianco",
       "ovr": 66,
       "status": "reserva",
@@ -1235,7 +1235,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 27,
       "name": "Warren Bondo",
       "ovr": 66,
       "status": "reserva",
@@ -1290,7 +1290,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 29,
       "name": "Omari Forson",
       "ovr": 65,
       "status": "reserva",
@@ -1345,7 +1345,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 30,
       "name": "Samuele Vignato",
       "ovr": 59,
       "status": "reserva",

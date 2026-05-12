@@ -23,12 +23,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 72,
+        "seg": 71,
+        "esp": 82,
+        "ref": 76,
+        "pos": 73,
+        "vel": 42,
         "sta": 20
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Youssef El Arabi",
       "ovr": 73,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "Max Meyer",
       "ovr": 73,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 7,
       "name": "Marquinhos",
       "ovr": 73,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Lasha Dvali",
       "ovr": 71,
       "status": "titular",
@@ -289,7 +289,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 11,
       "name": "Dieumerci Ndongala",
       "ovr": 70,
       "status": "titular",
@@ -345,7 +345,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Sergio Tejera",
       "ovr": 70,
       "status": "titular",
@@ -400,7 +400,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 17,
       "name": "El Fardou Ben",
       "ovr": 69,
       "status": "titular",
@@ -455,7 +455,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 21,
       "name": "Georgi Kostadinov",
       "ovr": 69,
       "status": "titular",
@@ -510,7 +510,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 23,
       "name": "Kingsley Sarfo",
       "ovr": 69,
       "status": "titular",
@@ -566,7 +566,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 2,
       "name": "Mateo Sušić",
       "ovr": 69,
       "status": "titular",
@@ -622,7 +622,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 13,
       "name": "Issam Chebake",
       "ovr": 68,
       "status": "reserva",
@@ -677,7 +677,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 19,
       "name": "Anastasios Donis",
       "ovr": 68,
       "status": "reserva",
@@ -788,7 +788,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 30,
       "name": "Marius Corbu",
       "ovr": 67,
       "status": "reserva",
@@ -843,7 +843,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 20,
       "name": "Stefan Dražić",
       "ovr": 67,
       "status": "reserva",
@@ -898,7 +898,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 3,
       "name": "Quintillà",
       "ovr": 67,
       "status": "reserva",
@@ -953,7 +953,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 12,
       "name": "Andreas Christodoulou",
       "ovr": 66,
       "status": "reserva",
@@ -968,12 +968,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 65,
+        "esp": 77,
+        "ref": 68,
+        "pos": 67,
+        "vel": 41,
         "sta": 24
       },
       "detailedStats": {
@@ -1008,7 +1008,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 8,
       "name": "Giannis Satsias",
       "ovr": 66,
       "status": "reserva",
@@ -1063,7 +1063,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 18,
       "name": "Saeid Mehri",
       "ovr": 65,
       "status": "reserva",
@@ -1118,7 +1118,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Gabriel Pereira",
       "ovr": 65,
       "status": "reserva",
@@ -1133,12 +1133,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 66,
+        "esp": 73,
+        "ref": 67,
+        "pos": 66,
+        "vel": 22,
         "sta": 26
       },
       "detailedStats": {
@@ -1173,7 +1173,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 31,
       "name": "Gabriel Maioli",
       "ovr": 63,
       "status": "reserva",
@@ -1228,7 +1228,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Paris Polykarpou",
       "ovr": 63,
       "status": "reserva",
@@ -1283,7 +1283,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 16,
       "name": "Vitor Meer",
       "ovr": 62,
       "status": "reserva",
@@ -1449,7 +1449,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 32,
       "name": "Charles Yaw Appiah",
       "ovr": 57,
       "status": "reserva",

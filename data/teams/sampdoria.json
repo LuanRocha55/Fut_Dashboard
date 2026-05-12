@@ -23,12 +23,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 76,
+        "seg": 76,
+        "esp": 86,
+        "ref": 78,
+        "pos": 78,
+        "vel": 61,
         "sta": 34
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 7,
       "name": "Fabio Borini",
       "ovr": 75,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Massimo Coda",
       "ovr": 75,
       "status": "titular",
@@ -173,7 +173,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 10,
       "name": "Gennaro Tutino",
       "ovr": 74,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 2,
       "name": "Fabio Depaoli",
       "ovr": 73,
       "status": "titular",
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 5,
       "name": "Alessandro Bellemo",
       "ovr": 72,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 13,
       "name": "Bartosz Bereszyński",
       "ovr": 72,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Nikolas Ioannou",
       "ovr": 71,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 17,
       "name": "Estanis",
       "ovr": 71,
       "status": "titular",
@@ -509,7 +509,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 4,
       "name": "Simone Romagnoli",
       "ovr": 71,
       "status": "titular",
@@ -565,7 +565,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 24,
       "name": "Lorenzo Venuti",
       "ovr": 71,
       "status": "titular",
@@ -620,7 +620,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 8,
       "name": "Pajtim Kasami",
       "ovr": 70,
       "status": "reserva",
@@ -677,7 +677,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 21,
       "name": "Gerard Yepes",
       "ovr": 70,
       "status": "reserva",
@@ -789,7 +789,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 16,
       "name": "Simone Giordano",
       "ovr": 69,
       "status": "reserva",
@@ -844,7 +844,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 23,
       "name": "Ronaldo Vieira",
       "ovr": 69,
       "status": "reserva",
@@ -899,7 +899,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 26,
       "name": "Antonio Barreca",
       "ovr": 68,
       "status": "reserva",
@@ -1009,7 +1009,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 20,
       "name": "Ebenezer Akinsanmiro",
       "ovr": 67,
       "status": "reserva",
@@ -1064,7 +1064,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Leonardo Benedetti",
       "ovr": 67,
       "status": "reserva",
@@ -1119,7 +1119,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 19,
       "name": "Antonino La Gumina",
       "ovr": 67,
       "status": "reserva",
@@ -1174,7 +1174,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 12,
       "name": "Nicola Ravaglia",
       "ovr": 67,
       "status": "reserva",
@@ -1189,12 +1189,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 65,
+        "esp": 74,
+        "ref": 69,
+        "pos": 65,
+        "vel": 31,
         "sta": 18
       },
       "detailedStats": {
@@ -1229,7 +1229,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 25,
       "name": "Matteo Ricci",
       "ovr": 67,
       "status": "reserva",
@@ -1284,7 +1284,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 27,
       "name": "Davide Veroli",
       "ovr": 67,
       "status": "reserva",
@@ -1339,7 +1339,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 28,
       "name": "Stipe Vulikić",
       "ovr": 66,
       "status": "reserva",
@@ -1395,7 +1395,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Giovanni Leoni",
       "ovr": 65,
       "status": "reserva",
@@ -1451,7 +1451,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 30,
       "name": "Simone Ghidotti",
       "ovr": 64,
       "status": "reserva",
@@ -1466,12 +1466,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 64,
+        "esp": 72,
+        "ref": 64,
+        "pos": 63,
+        "vel": 36,
         "sta": 25
       },
       "detailedStats": {
@@ -1506,7 +1506,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 31,
       "name": "Nikola Sekulov",
       "ovr": 64,
       "status": "reserva",
@@ -1561,7 +1561,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 32,
       "name": "Stefano Girelli",
       "ovr": 62,
       "status": "reserva",

@@ -23,12 +23,12 @@
         "1v1 Close Down"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 72,
+        "seg": 69,
+        "esp": 80,
+        "ref": 72,
+        "pos": 74,
+        "vel": 15,
         "sta": 27
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Augusto Lotti",
       "ovr": 71,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Gastón Suso",
       "ovr": 71,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 11,
       "name": "Ignacio Schor",
       "ovr": 70,
       "status": "titular",
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Iván Gómez",
       "ovr": 69,
       "status": "titular",
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 2,
       "name": "Raúl Alberto Lozano",
       "ovr": 69,
       "status": "titular",
@@ -395,7 +395,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Sasha Marcich",
       "ovr": 69,
       "status": "titular",
@@ -451,7 +451,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 19,
       "name": "Agustín Ocampo",
       "ovr": 69,
       "status": "titular",
@@ -506,7 +506,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 27,
       "name": "Franco Zapiola",
       "ovr": 69,
       "status": "titular",
@@ -561,7 +561,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 28,
       "name": "Guido Mainero",
       "ovr": 68,
       "status": "titular",
@@ -616,7 +616,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 21,
       "name": "Leonel Picco",
       "ovr": 68,
       "status": "reserva",
@@ -782,7 +782,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 23,
       "name": "Braian Rivero",
       "ovr": 67,
       "status": "reserva",
@@ -837,7 +837,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 24,
       "name": "Bautista Barros Schelotto",
       "ovr": 66,
       "status": "reserva",
@@ -892,7 +892,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 12,
       "name": "Juan Pablo Cozzani",
       "ovr": 66,
       "status": "reserva",
@@ -907,12 +907,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 68,
+        "esp": 73,
+        "ref": 66,
+        "pos": 61,
+        "vel": 47,
         "sta": 38
       },
       "detailedStats": {
@@ -947,7 +947,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 10,
       "name": "Ronaldo Martínez",
       "ovr": 66,
       "status": "reserva",
@@ -1002,7 +1002,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 18,
       "name": "Franco Baldassarra",
       "ovr": 65,
       "status": "reserva",
@@ -1113,7 +1113,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 25,
       "name": "Juan Pablo Pignani",
       "ovr": 65,
       "status": "reserva",
@@ -1225,7 +1225,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Fernando Juárez",
       "ovr": 63,
       "status": "reserva",
@@ -1281,7 +1281,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 29,
       "name": "Lisandro Montenegro",
       "ovr": 63,
       "status": "reserva",
@@ -1336,7 +1336,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 30,
       "name": "Juan Saborido",
       "ovr": 63,
       "status": "reserva",
@@ -1391,7 +1391,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 31,
       "name": "Mateo Pellegrino",
       "ovr": 62,
       "status": "reserva",
@@ -1446,7 +1446,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 16,
       "name": "Gonzalo Valdivia",
       "ovr": 62,
       "status": "reserva",
@@ -1501,7 +1501,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 32,
       "name": "Juan Pablo Goicochea",
       "ovr": 61,
       "status": "reserva",
@@ -1556,7 +1556,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 33,
       "name": "Facundo Russo",
       "ovr": 61,
       "status": "reserva",
@@ -1611,7 +1611,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 34,
       "name": "Nicolás Sumavil",
       "ovr": 52,
       "status": "reserva",
@@ -1626,12 +1626,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 47,
+        "seg": 53,
+        "esp": 58,
+        "ref": 57,
+        "pos": 52,
+        "vel": 19,
         "sta": 21
       },
       "detailedStats": {

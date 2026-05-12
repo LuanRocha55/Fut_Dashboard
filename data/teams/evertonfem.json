@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Toni Payne",
       "ovr": 79,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Katja Snoeijs",
       "ovr": 79,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 19,
       "name": "Inma Gabarro",
       "ovr": 78,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Aurora Galli",
       "ovr": 77,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 18,
       "name": "Justine Vanhaevermaet",
       "ovr": 75,
       "status": "titular",
@@ -286,7 +286,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 1,
       "name": "Courtney Brosnan",
       "ovr": 74,
       "status": "titular",
@@ -302,10 +302,10 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
+        "alc": 70,
+        "seg": 71,
+        "esp": 82,
+        "ref": 77,
         "pos": 75,
         "vel": 40,
         "sta": 25
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 4,
       "name": "Megan Finnigan",
       "ovr": 74,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 5,
       "name": "Karen Holmgaard",
       "ovr": 74,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 10,
       "name": "Rikke Madsen",
       "ovr": 72,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 2,
       "name": "Lucy Hope",
       "ovr": 71,
       "status": "titular",
@@ -564,7 +564,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 20,
       "name": "Heather Payne",
       "ovr": 71,
       "status": "titular",
@@ -674,7 +674,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 3,
       "name": "Elise Isolde Stenevik",
       "ovr": 70,
       "status": "reserva",
@@ -729,7 +729,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 22,
       "name": "Emily Ramsey",
       "ovr": 69,
       "status": "reserva",
@@ -744,12 +744,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 68,
+        "esp": 76,
+        "ref": 68,
+        "pos": 67,
+        "vel": 33,
         "sta": 27
       },
       "detailedStats": {
@@ -784,7 +784,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 27,
       "name": "Sara Holmgaard",
       "ovr": 67,
       "status": "reserva",
@@ -949,7 +949,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 14,
       "name": "Kenzie Weir",
       "ovr": 60,
       "status": "reserva",

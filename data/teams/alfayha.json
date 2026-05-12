@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Chris Smalling",
       "ovr": 82,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Fashion Sakala",
       "ovr": 76,
       "status": "titular",
@@ -124,7 +124,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Henry Onyekuru",
       "ovr": 75,
       "status": "titular",
@@ -180,7 +180,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 10,
       "name": "Renzo López",
       "ovr": 71,
       "status": "titular",
@@ -235,7 +235,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 14,
       "name": "Sami Al Khaibari",
       "ovr": 70,
       "status": "titular",
@@ -292,7 +292,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 5,
       "name": "Gojko Cimirot",
       "ovr": 70,
       "status": "titular",
@@ -347,7 +347,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 8,
       "name": "Otabek Shukurov",
       "ovr": 69,
       "status": "titular",
@@ -402,7 +402,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 25,
       "name": "Mukhair Al Rashidi",
       "ovr": 63,
       "status": "titular",
@@ -458,7 +458,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 12,
       "name": "Mohammed Al Baqawi",
       "ovr": 61,
       "status": "titular",
@@ -514,7 +514,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 18,
       "name": "Mansour Al Bishi",
       "ovr": 60,
       "status": "titular",
@@ -569,7 +569,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 20,
       "name": "Saud Zaidan",
       "ovr": 60,
       "status": "titular",
@@ -624,7 +624,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 1,
       "name": "Abdelraouf Al Duqail",
       "ovr": 59,
       "status": "reserva",
@@ -639,12 +639,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 54,
+        "seg": 54,
+        "esp": 63,
+        "ref": 60,
+        "pos": 63,
+        "vel": 29,
         "sta": 27
       },
       "detailedStats": {
@@ -679,7 +679,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 19,
       "name": "Abdulhadi Al Harajin",
       "ovr": 59,
       "status": "reserva",
@@ -734,7 +734,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Nawaf Al Harthi",
       "ovr": 59,
       "status": "reserva",
@@ -789,7 +789,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 28,
       "name": "Khaled Al Kaabi",
       "ovr": 58,
       "status": "reserva",
@@ -955,7 +955,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Sultan Al Harbi",
       "ovr": 51,
       "status": "reserva",

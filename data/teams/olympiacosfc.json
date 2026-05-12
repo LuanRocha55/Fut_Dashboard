@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Ayoub El Kaabi",
       "ovr": 78,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 5,
       "name": "Santiago Hezze",
       "ovr": 77,
       "status": "titular",
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Chiquinho",
       "ovr": 77,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 18,
       "name": "Dani García",
       "ovr": 76,
       "status": "titular",
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 4,
       "name": "David Carmo",
       "ovr": 76,
       "status": "titular",
@@ -346,7 +346,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 11,
       "name": "Costinha",
       "ovr": 75,
       "status": "titular",
@@ -402,7 +402,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 19,
       "name": "Georgios Masouras",
       "ovr": 75,
       "status": "titular",
@@ -457,7 +457,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "Francisco Ortega",
       "ovr": 75,
       "status": "titular",
@@ -513,7 +513,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 1,
       "name": "Alexandros Paschalakis",
       "ovr": 75,
       "status": "titular",
@@ -528,12 +528,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
+        "alc": 76,
+        "seg": 72,
+        "esp": 85,
+        "ref": 77,
         "pos": 75,
-        "vel": 40,
+        "vel": 47,
         "sta": 38
       },
       "detailedStats": {
@@ -568,7 +568,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 14,
       "name": "Panagiotis Retsos",
       "ovr": 75,
       "status": "titular",
@@ -625,7 +625,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 28,
       "name": "Gelson Martins",
       "ovr": 74,
       "status": "reserva",
@@ -681,7 +681,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 10,
       "name": "Roman Yaremchuk",
       "ovr": 74,
       "status": "reserva",
@@ -737,7 +737,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 12,
       "name": "Konstantinos Tzolakis",
       "ovr": 73,
       "status": "reserva",
@@ -752,12 +752,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "alc": 73,
+        "seg": 71,
+        "esp": 82,
         "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "pos": 70,
+        "vel": 53,
         "sta": 40
       },
       "detailedStats": {
@@ -792,7 +792,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 21,
       "name": "Marko Stamenić",
       "ovr": 72,
       "status": "reserva",
@@ -847,7 +847,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 25,
       "name": "Lorenzo Pirola",
       "ovr": 71,
       "status": "reserva",
@@ -903,7 +903,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 27,
       "name": "Kristoffer Velde",
       "ovr": 71,
       "status": "reserva",
@@ -958,7 +958,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Giulian Biancone",
       "ovr": 70,
       "status": "reserva",
@@ -1014,7 +1014,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Andreas Ndoj",
       "ovr": 70,
       "status": "reserva",
@@ -1070,7 +1070,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 23,
       "name": "Rúben Vezo",
       "ovr": 70,
       "status": "reserva",
@@ -1126,7 +1126,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Alexandros Anagnostopoulos",
       "ovr": 68,
       "status": "reserva",
@@ -1141,11 +1141,11 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 67,
+        "seg": 66,
+        "esp": 77,
+        "ref": 71,
+        "pos": 66,
         "vel": 40,
         "sta": 25
       },
@@ -1181,7 +1181,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 16,
       "name": "Apostolos Apostolopoulos",
       "ovr": 65,
       "status": "reserva",
@@ -1236,7 +1236,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Charalampos Kostoulas",
       "ovr": 64,
       "status": "reserva",
@@ -1291,7 +1291,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 29,
       "name": "Christos Mouzakitis",
       "ovr": 63,
       "status": "reserva",
@@ -1346,7 +1346,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 30,
       "name": "Nikolaos Botis",
       "ovr": 61,
       "status": "reserva",
@@ -1361,12 +1361,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 60,
+        "esp": 71,
+        "ref": 63,
+        "pos": 60,
+        "vel": 30,
         "sta": 19
       },
       "detailedStats": {

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Cucho Hernández",
       "ovr": 78,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Darlington Nagbe",
       "ovr": 75,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "Diego Rossi",
       "ovr": 75,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 2,
       "name": "Andrés Herrera",
       "ovr": 72,
       "status": "titular",
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 3,
       "name": "DeJuan Jones",
       "ovr": 72,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 18,
       "name": "Dylan Chambost",
       "ovr": 70,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 1,
       "name": "Patrick Schulte",
       "ovr": 70,
       "status": "titular",
@@ -358,12 +358,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 65,
+        "esp": 78,
+        "ref": 71,
+        "pos": 68,
+        "vel": 23,
         "sta": 19
       },
       "detailedStats": {
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 4,
       "name": "Steven Moreira",
       "ovr": 69,
       "status": "titular",
@@ -454,7 +454,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "Malte Amundsen",
       "ovr": 68,
       "status": "titular",
@@ -510,7 +510,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Rudy Camacho",
       "ovr": 68,
       "status": "titular",
@@ -568,7 +568,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 23,
       "name": "Alexandru Mățan",
       "ovr": 68,
       "status": "titular",
@@ -625,7 +625,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 19,
       "name": "Christian Ramirez",
       "ovr": 68,
       "status": "reserva",
@@ -680,7 +680,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 11,
       "name": "Yaw Yeboah",
       "ovr": 68,
       "status": "reserva",
@@ -735,7 +735,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Yevgen Cheberko",
       "ovr": 67,
       "status": "reserva",
@@ -791,7 +791,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 28,
       "name": "Mohamed Farsi",
       "ovr": 67,
       "status": "reserva",
@@ -902,7 +902,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 5,
       "name": "Derrick Jones",
       "ovr": 66,
       "status": "reserva",
@@ -957,7 +957,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 12,
       "name": "Nicholas Hagen",
       "ovr": 64,
       "status": "reserva",
@@ -972,12 +972,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 61,
+        "esp": 71,
+        "ref": 64,
+        "pos": 63,
+        "vel": 25,
         "sta": 25
       },
       "detailedStats": {
@@ -1012,7 +1012,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 30,
       "name": "Aziel Jackson",
       "ovr": 64,
       "status": "reserva",
@@ -1122,7 +1122,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Evan Bush",
       "ovr": 63,
       "status": "reserva",
@@ -1137,12 +1137,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 63,
+        "esp": 70,
+        "ref": 60,
+        "pos": 63,
+        "vel": 17,
         "sta": 15
       },
       "detailedStats": {
@@ -1177,7 +1177,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Abraham Romero",
       "ovr": 62,
       "status": "reserva",
@@ -1192,12 +1192,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 60,
+        "esp": 71,
+        "ref": 63,
+        "pos": 64,
+        "vel": 52,
         "sta": 45
       },
       "detailedStats": {
@@ -1232,7 +1232,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Jacen Russell-Rowe",
       "ovr": 62,
       "status": "reserva",
@@ -1287,7 +1287,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 27,
       "name": "Taha Habroune",
       "ovr": 54,
       "status": "reserva",

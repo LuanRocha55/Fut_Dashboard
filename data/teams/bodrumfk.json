@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Christophe Hérelle",
       "ovr": 72,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 14,
       "name": "Ondřej Čelůstka",
       "ovr": 71,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Fredy",
       "ovr": 70,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 11,
       "name": "Gökdeniz Bayrakdar",
       "ovr": 68,
       "status": "titular",
@@ -230,7 +230,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 19,
       "name": "Pedro Brazão",
       "ovr": 67,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 9,
       "name": "George Pușcaș",
       "ovr": 67,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 1,
       "name": "Diogo Sousa",
       "ovr": 66,
       "status": "titular",
@@ -357,11 +357,11 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 67,
+        "seg": 64,
+        "esp": 74,
+        "ref": 66,
+        "pos": 65,
         "vel": 40,
         "sta": 26
       },
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 27,
       "name": "Haqi Osman",
       "ovr": 58,
       "status": "titular",
@@ -452,7 +452,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "Cenk Şen",
       "ovr": 51,
       "status": "titular",

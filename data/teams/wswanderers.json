@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Brandon Borrello",
       "ovr": 69,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Lawrence Thomas",
       "ovr": 69,
       "status": "titular",
@@ -78,11 +78,11 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 70,
+        "seg": 67,
+        "esp": 77,
+        "ref": 69,
+        "pos": 68,
         "vel": 40,
         "sta": 32
       },
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 17,
       "name": "Bozhidar Kraev",
       "ovr": 68,
       "status": "titular",
@@ -236,7 +236,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 11,
       "name": "Nicolas Milanović",
       "ovr": 67,
       "status": "titular",
@@ -292,7 +292,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 10,
       "name": "Marcus Antonsson",
       "ovr": 65,
       "status": "titular",
@@ -347,7 +347,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Joshua Brillante",
       "ovr": 64,
       "status": "titular",
@@ -403,7 +403,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Jack Clisby",
       "ovr": 64,
       "status": "titular",
@@ -459,7 +459,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "Tom Beadling",
       "ovr": 62,
       "status": "titular",
@@ -515,7 +515,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 2,
       "name": "Gabriel Cléùr",
       "ovr": 62,
       "status": "titular",
@@ -570,7 +570,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 13,
       "name": "Aidan Simmons",
       "ovr": 62,
       "status": "titular",
@@ -625,7 +625,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 25,
       "name": "Alex Bonetig",
       "ovr": 59,
       "status": "reserva",
@@ -681,7 +681,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 8,
       "name": "Oscar Priestman",
       "ovr": 59,
       "status": "reserva",
@@ -736,7 +736,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 19,
       "name": "Alex Badolato",
       "ovr": 58,
       "status": "reserva",
@@ -791,7 +791,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 20,
       "name": "Zac Sapsford",
       "ovr": 57,
       "status": "reserva",
@@ -846,7 +846,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 28,
       "name": "Marcus Younis",
       "ovr": 55,
       "status": "reserva",
@@ -901,7 +901,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 12,
       "name": "Taiga Harper",
       "ovr": 52,
       "status": "reserva",
@@ -916,12 +916,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 53,
+        "seg": 54,
+        "esp": 59,
+        "ref": 54,
+        "pos": 53,
+        "vel": 15,
         "sta": 19
       },
       "detailedStats": {

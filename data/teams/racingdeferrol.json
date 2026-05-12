@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Bebé",
       "ovr": 73,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Josep Señé",
       "ovr": 71,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Erick Cabaco",
       "ovr": 70,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 5,
       "name": "Luis Perea",
       "ovr": 70,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 1,
       "name": "Yoel",
       "ovr": 70,
       "status": "titular",
@@ -248,12 +248,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 69,
+        "esp": 76,
+        "ref": 67,
+        "pos": 69,
+        "vel": 43,
         "sta": 34
       },
       "detailedStats": {
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 9,
       "name": "Manu Vallejo",
       "ovr": 70,
       "status": "titular",
@@ -344,7 +344,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "Álvaro Giménez",
       "ovr": 69,
       "status": "titular",
@@ -399,7 +399,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 2,
       "name": "Aitor Buñuel",
       "ovr": 68,
       "status": "titular",
@@ -458,7 +458,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "David Castro",
       "ovr": 67,
       "status": "titular",
@@ -514,7 +514,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 21,
       "name": "Álex López",
       "ovr": 67,
       "status": "titular",
@@ -569,7 +569,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Nacho",
       "ovr": 67,
       "status": "titular",
@@ -624,7 +624,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 20,
       "name": "Chiki",
       "ovr": 66,
       "status": "reserva",
@@ -679,7 +679,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 3,
       "name": "Moi Delgado",
       "ovr": 66,
       "status": "reserva",
@@ -734,7 +734,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 13,
       "name": "Delmás",
       "ovr": 66,
       "status": "reserva",
@@ -789,7 +789,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 28,
       "name": "Josué Dorrio",
       "ovr": 66,
       "status": "reserva",
@@ -899,7 +899,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 12,
       "name": "Jesús Ruiz",
       "ovr": 66,
       "status": "reserva",
@@ -914,12 +914,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 58,
+        "esp": 79,
+        "ref": 72,
+        "pos": 60,
+        "vel": 50,
         "sta": 35
       },
       "detailedStats": {
@@ -954,7 +954,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 22,
       "name": "Emilio Bernad",
       "ovr": 65,
       "status": "reserva",
@@ -969,12 +969,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
+        "alc": 68,
+        "seg": 65,
         "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "ref": 67,
+        "pos": 63,
+        "vel": 41,
         "sta": 28
       },
       "detailedStats": {
@@ -1009,7 +1009,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 23,
       "name": "Jauregi",
       "ovr": 65,
       "status": "reserva",
@@ -1064,7 +1064,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 18,
       "name": "Álvaro Sanz",
       "ovr": 65,
       "status": "reserva",
@@ -1119,7 +1119,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Gelardo",
       "ovr": 64,
       "status": "reserva",
@@ -1174,7 +1174,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 25,
       "name": "Fran Manzanara",
       "ovr": 64,
       "status": "reserva",

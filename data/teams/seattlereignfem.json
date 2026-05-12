@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Jess Fishlock",
       "ovr": 83,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "Ji So Yun",
       "ovr": 82,
       "status": "titular",
@@ -234,7 +234,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 13,
       "name": "Hanna Glas",
       "ovr": 80,
       "status": "titular",
@@ -289,7 +289,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 5,
       "name": "Quinn",
       "ovr": 78,
       "status": "titular",
@@ -344,7 +344,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 9,
       "name": "Jordyn Huitema",
       "ovr": 76,
       "status": "titular",
@@ -401,7 +401,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 11,
       "name": "Veronica Latsko",
       "ovr": 75,
       "status": "titular",
@@ -456,7 +456,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 19,
       "name": "Tziarra King",
       "ovr": 74,
       "status": "titular",
@@ -511,7 +511,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 21,
       "name": "Nikki Stanton",
       "ovr": 74,
       "status": "titular",
@@ -566,7 +566,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 23,
       "name": "Olivia Van der Jagt",
       "ovr": 74,
       "status": "titular",
@@ -621,7 +621,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 3,
       "name": "Lily Woodham",
       "ovr": 74,
       "status": "reserva",
@@ -676,7 +676,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 1,
       "name": "Claudia Dickey",
       "ovr": 72,
       "status": "reserva",
@@ -691,12 +691,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 72,
+        "esp": 79,
+        "ref": 74,
+        "pos": 73,
+        "vel": 41,
         "sta": 34
       },
       "detailedStats": {
@@ -731,7 +731,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 12,
       "name": "Laurel Ivory",
       "ovr": 72,
       "status": "reserva",
@@ -746,12 +746,12 @@
         "1v1 Close Down"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 73,
+        "esp": 79,
+        "ref": 74,
+        "pos": 72,
+        "vel": 41,
         "sta": 32
       },
       "detailedStats": {
@@ -786,7 +786,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 14,
       "name": "Julia Lester",
       "ovr": 72,
       "status": "reserva",
@@ -842,7 +842,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 24,
       "name": "Angharad James-Turner",
       "ovr": 71,
       "status": "reserva",
@@ -898,7 +898,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 25,
       "name": "Phoebe McClernon",
       "ovr": 71,
       "status": "reserva",
@@ -954,7 +954,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 28,
       "name": "Olivia Athens",
       "ovr": 69,
       "status": "reserva",
@@ -1009,7 +1009,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 20,
       "name": "Ryanne Brown",
       "ovr": 69,
       "status": "reserva",
@@ -1064,7 +1064,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 18,
       "name": "Maddie Mercado",
       "ovr": 67,
       "status": "reserva",
@@ -1119,7 +1119,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Maia Perez",
       "ovr": 67,
       "status": "reserva",
@@ -1134,12 +1134,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 67,
+        "esp": 74,
+        "ref": 68,
+        "pos": 66,
+        "vel": 42,
         "sta": 32
       },
       "detailedStats": {
@@ -1174,7 +1174,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 17,
       "name": "Emeri Adames",
       "ovr": 66,
       "status": "reserva",
@@ -1229,7 +1229,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Shae Holmes",
       "ovr": 66,
       "status": "reserva",

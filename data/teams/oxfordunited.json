@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 5,
       "name": "Cameron Brannagan",
       "ovr": 70,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Elliott Moore",
       "ovr": 70,
       "status": "titular",
@@ -123,7 +123,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Matt Phillips",
       "ovr": 70,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 21,
       "name": "Will Vaulks",
       "ovr": 70,
       "status": "titular",
@@ -237,7 +237,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 19,
       "name": "Siriki Dembélé",
       "ovr": 69,
       "status": "titular",
@@ -295,7 +295,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 23,
       "name": "Idris El Mizouni",
       "ovr": 68,
       "status": "titular",
@@ -351,7 +351,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 27,
       "name": "Przemysław Płacheta",
       "ovr": 68,
       "status": "titular",
@@ -407,7 +407,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Ciaron Brown",
       "ovr": 67,
       "status": "titular",
@@ -465,7 +465,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 1,
       "name": "Jamie Cumming",
       "ovr": 67,
       "status": "titular",
@@ -481,11 +481,11 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 66,
+        "seg": 65,
+        "esp": 74,
+        "ref": 67,
+        "pos": 65,
         "vel": 40,
         "sta": 32
       },
@@ -521,7 +521,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 9,
       "name": "Mark Harris",
       "ovr": 67,
       "status": "titular",
@@ -576,7 +576,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 12,
       "name": "Matt Ingram",
       "ovr": 67,
       "status": "titular",
@@ -591,12 +591,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 65,
+        "esp": 78,
+        "ref": 71,
+        "pos": 64,
+        "vel": 39,
         "sta": 21
       },
       "detailedStats": {
@@ -631,7 +631,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 10,
       "name": "Rúben Rodrigues",
       "ovr": 67,
       "status": "reserva",
@@ -741,7 +741,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 28,
       "name": "Owen Dale",
       "ovr": 66,
       "status": "reserva",
@@ -909,7 +909,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 2,
       "name": "Peter Kioso",
       "ovr": 66,
       "status": "reserva",
@@ -964,7 +964,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 3,
       "name": "Greg Leigh",
       "ovr": 66,
       "status": "reserva",
@@ -1019,7 +1019,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 24,
       "name": "Sam Long",
       "ovr": 66,
       "status": "reserva",
@@ -1075,7 +1075,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 26,
       "name": "Joe Bennett",
       "ovr": 65,
       "status": "reserva",
@@ -1130,7 +1130,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Josh McEachran",
       "ovr": 65,
       "status": "reserva",
@@ -1185,7 +1185,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 25,
       "name": "Jordan Thorniley",
       "ovr": 65,
       "status": "reserva",
@@ -1242,7 +1242,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 29,
       "name": "Simon Eastwood",
       "ovr": 64,
       "status": "reserva",
@@ -1257,12 +1257,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 64,
+        "esp": 71,
+        "ref": 64,
+        "pos": 64,
+        "vel": 52,
         "sta": 40
       },
       "detailedStats": {
@@ -1297,7 +1297,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 20,
       "name": "Will Goodwin",
       "ovr": 64,
       "status": "reserva",
@@ -1352,7 +1352,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 30,
       "name": "Dane Scarlett",
       "ovr": 64,
       "status": "reserva",
@@ -1407,7 +1407,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 31,
       "name": "James Golding",
       "ovr": 59,
       "status": "reserva",
@@ -1463,7 +1463,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 32,
       "name": "Max Woltman",
       "ovr": 58,
       "status": "reserva",

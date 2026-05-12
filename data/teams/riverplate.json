@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 3,
       "name": "Marcos Acuña",
       "ovr": 83,
       "status": "titular",
@@ -69,7 +69,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Jeremías Conan Ledesma",
       "ovr": 82,
       "status": "titular",
@@ -86,12 +86,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 82,
+        "seg": 79,
+        "esp": 92,
+        "ref": 83,
+        "pos": 81,
+        "vel": 42,
         "sta": 40
       },
       "detailedStats": {
@@ -126,7 +126,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 12,
       "name": "Franco Armani",
       "ovr": 77,
       "status": "titular",
@@ -143,12 +143,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 74,
+        "seg": 76,
+        "esp": 86,
+        "ref": 80,
+        "pos": 79,
+        "vel": 50,
         "sta": 35
       },
       "detailedStats": {
@@ -241,7 +241,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 10,
       "name": "Ignacio Fernández",
       "ovr": 77,
       "status": "titular",
@@ -301,7 +301,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Germán Pezzella",
       "ovr": 77,
       "status": "titular",
@@ -359,7 +359,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Rodrigo Aliendro",
       "ovr": 76,
       "status": "titular",
@@ -419,7 +419,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 9,
       "name": "Miguel Borja",
       "ovr": 76,
       "status": "titular",
@@ -474,7 +474,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 16,
       "name": "Enzo Díaz",
       "ovr": 76,
       "status": "titular",
@@ -531,7 +531,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 19,
       "name": "Adam Bareiro",
       "ovr": 75,
       "status": "titular",
@@ -587,7 +587,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 25,
       "name": "Leandro González Pirez",
       "ovr": 75,
       "status": "titular",
@@ -647,7 +647,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 23,
       "name": "Manuel Lanzini",
       "ovr": 75,
       "status": "reserva",
@@ -702,7 +702,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 11,
       "name": "Gonzalo Martínez",
       "ovr": 75,
       "status": "reserva",
@@ -762,7 +762,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 21,
       "name": "Rodrigo Villagra",
       "ovr": 75,
       "status": "reserva",
@@ -817,7 +817,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 26,
       "name": "Milton Casco",
       "ovr": 74,
       "status": "reserva",
@@ -874,7 +874,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 20,
       "name": "Facundo Colidio",
       "ovr": 74,
       "status": "reserva",
@@ -1041,7 +1041,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 2,
       "name": "Agustín Sant'Anna",
       "ovr": 73,
       "status": "reserva",
@@ -1099,7 +1099,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 28,
       "name": "Santiago Simón",
       "ovr": 73,
       "status": "reserva",
@@ -1154,7 +1154,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Nicolás Fonseca",
       "ovr": 72,
       "status": "reserva",
@@ -1209,7 +1209,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Ramiro Funes Mori",
       "ovr": 72,
       "status": "reserva",
@@ -1266,7 +1266,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 30,
       "name": "Claudio Echeverri",
       "ovr": 71,
       "status": "reserva",
@@ -1321,7 +1321,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 27,
       "name": "Matías Kranevitter",
       "ovr": 71,
       "status": "reserva",
@@ -1376,7 +1376,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 8,
       "name": "Cristian Ferreira",
       "ovr": 69,
       "status": "reserva",
@@ -1432,7 +1432,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Franco Mastantuono",
       "ovr": 69,
       "status": "reserva",
@@ -1487,7 +1487,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 31,
       "name": "Agustín Ruberto",
       "ovr": 67,
       "status": "reserva",
@@ -1542,7 +1542,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 7,
       "name": "Ian Subiabre",
       "ovr": 64,
       "status": "reserva",
@@ -1597,7 +1597,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 32,
       "name": "Lucas Lavagnino",
       "ovr": 62,
       "status": "reserva",
@@ -1612,12 +1612,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 59,
+        "esp": 71,
+        "ref": 67,
+        "pos": 59,
+        "vel": 50,
         "sta": 25
       },
       "detailedStats": {

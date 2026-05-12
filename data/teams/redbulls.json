@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Emil Forsberg",
       "ovr": 79,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Lewis Morgan",
       "ovr": 73,
       "status": "titular",
@@ -124,7 +124,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 1,
       "name": "Carlos Coronel",
       "ovr": 72,
       "status": "titular",
@@ -140,12 +140,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 70,
+        "esp": 80,
+        "ref": 73,
+        "pos": 71,
+        "vel": 39,
         "sta": 41
       },
       "detailedStats": {
@@ -180,7 +180,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 19,
       "name": "Dante Vanzeir",
       "ovr": 72,
       "status": "titular",
@@ -235,7 +235,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Sean Nealis",
       "ovr": 70,
       "status": "titular",
@@ -291,7 +291,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 3,
       "name": "John Tolkin",
       "ovr": 70,
       "status": "titular",
@@ -347,7 +347,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Andrés Reyes",
       "ovr": 68,
       "status": "titular",
@@ -404,7 +404,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 2,
       "name": "Kyle Duncan",
       "ovr": 67,
       "status": "titular",
@@ -459,7 +459,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 20,
       "name": "Cory Burke",
       "ovr": 66,
       "status": "titular",
@@ -514,7 +514,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 11,
       "name": "Cameron Harper",
       "ovr": 66,
       "status": "titular",
@@ -570,7 +570,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 5,
       "name": "Daniel Edelman",
       "ovr": 65,
       "status": "titular",
@@ -625,7 +625,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 25,
       "name": "Noah Eile",
       "ovr": 65,
       "status": "reserva",
@@ -681,7 +681,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 28,
       "name": "Wikelman Carmona",
       "ovr": 64,
       "status": "reserva",
@@ -737,7 +737,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 12,
       "name": "Ryan Meara",
       "ovr": 64,
       "status": "reserva",
@@ -753,12 +753,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 62,
+        "esp": 72,
+        "ref": 66,
+        "pos": 65,
+        "vel": 45,
         "sta": 41
       },
       "detailedStats": {
@@ -793,7 +793,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 13,
       "name": "Dylan Nealis",
       "ovr": 64,
       "status": "reserva",
@@ -849,7 +849,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 21,
       "name": "Peter Stroud",
       "ovr": 64,
       "status": "reserva",
@@ -1016,7 +1016,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 8,
       "name": "Ronald Donkor",
       "ovr": 58,
       "status": "reserva",
@@ -1071,7 +1071,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Serge Ngoma",
       "ovr": 58,
       "status": "reserva",
@@ -1127,7 +1127,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 16,
       "name": "Curtis Ofori",
       "ovr": 56,
       "status": "reserva",
@@ -1183,7 +1183,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Aidan O'Connor",
       "ovr": 51,
       "status": "reserva",
@@ -1239,7 +1239,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Roald Mitchell",
       "ovr": 50,
       "status": "reserva",

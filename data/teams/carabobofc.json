@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 2,
       "name": "Marcel Guaramato",
       "ovr": 68,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Francisco Apaolaza",
       "ovr": 67,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Leonardo Aponte",
       "ovr": 67,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 5,
       "name": "Francisco Flores",
       "ovr": 66,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 11,
       "name": "Edson Tortolero",
       "ovr": 66,
       "status": "titular",
@@ -284,7 +284,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 19,
       "name": "Robert Hernández",
       "ovr": 65,
       "status": "titular",
@@ -339,7 +339,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 1,
       "name": "Diego Gil",
       "ovr": 62,
       "status": "titular",
@@ -354,12 +354,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 60,
+        "esp": 69,
+        "ref": 62,
+        "pos": 60,
+        "vel": 35,
         "sta": 29
       },
       "detailedStats": {

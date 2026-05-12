@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Hans Vanaken",
       "ovr": 80,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Simon Mignolet",
       "ovr": 78,
       "status": "titular",
@@ -83,12 +83,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
+        "alc": 77,
         "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "esp": 87,
+        "ref": 80,
+        "pos": 81,
+        "vel": 52,
         "sta": 31
       },
       "detailedStats": {
@@ -123,7 +123,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Andreas Skov Olsen",
       "ovr": 78,
       "status": "titular",
@@ -179,7 +179,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 3,
       "name": "Maxim De Cuyper",
       "ovr": 76,
       "status": "titular",
@@ -236,7 +236,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Brandon Mechele",
       "ovr": 75,
       "status": "titular",
@@ -294,7 +294,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 5,
       "name": "Raphael Onyedika",
       "ovr": 75,
       "status": "titular",
@@ -349,7 +349,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Zaid Romero",
       "ovr": 75,
       "status": "titular",
@@ -407,7 +407,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 19,
       "name": "Christos Tzolis",
       "ovr": 75,
       "status": "titular",
@@ -520,7 +520,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 21,
       "name": "Ardon Jashari",
       "ovr": 73,
       "status": "titular",
@@ -576,7 +576,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 16,
       "name": "Faitout Maouassa",
       "ovr": 73,
       "status": "titular",
@@ -631,7 +631,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 26,
       "name": "Björn Meijer",
       "ovr": 73,
       "status": "reserva",
@@ -686,7 +686,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 8,
       "name": "Casper Nielsen",
       "ovr": 73,
       "status": "reserva",
@@ -741,7 +741,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 20,
       "name": "Gustaf Nilsson",
       "ovr": 73,
       "status": "reserva",
@@ -796,7 +796,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 23,
       "name": "Hugo Vetlesen",
       "ovr": 73,
       "status": "reserva",
@@ -851,7 +851,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 28,
       "name": "Hugo Siquet",
       "ovr": 72,
       "status": "reserva",
@@ -963,7 +963,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 2,
       "name": "Kyriani Sabbe",
       "ovr": 70,
       "status": "reserva",
@@ -1018,7 +1018,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 25,
       "name": "Jorne Spileers",
       "ovr": 70,
       "status": "reserva",
@@ -1074,7 +1074,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Dedryck Boyata",
       "ovr": 69,
       "status": "reserva",
@@ -1130,7 +1130,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 12,
       "name": "Nordin Jackers",
       "ovr": 69,
       "status": "reserva",
@@ -1145,12 +1145,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 68,
+        "esp": 77,
+        "ref": 71,
+        "pos": 67,
+        "vel": 46,
         "sta": 28
       },
       "detailedStats": {
@@ -1185,7 +1185,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Joel Ordoñez",
       "ovr": 69,
       "status": "reserva",
@@ -1241,7 +1241,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 27,
       "name": "Kamal Sowah",
       "ovr": 69,
       "status": "reserva",
@@ -1296,7 +1296,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 29,
       "name": "Romeo Vermant",
       "ovr": 66,
       "status": "reserva",
@@ -1351,7 +1351,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 30,
       "name": "Víctor Barberá",
       "ovr": 64,
       "status": "reserva",
@@ -1406,7 +1406,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 31,
       "name": "Chemsdine Talbi",
       "ovr": 63,
       "status": "reserva",
@@ -1461,7 +1461,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 32,
       "name": "Joaquin Seys",
       "ovr": 62,
       "status": "reserva",

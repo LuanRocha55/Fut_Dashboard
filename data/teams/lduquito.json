@@ -23,12 +23,12 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
+        "alc": 76,
+        "seg": 72,
+        "esp": 85,
+        "ref": 77,
         "pos": 75,
-        "vel": 40,
+        "vel": 35,
         "sta": 30
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Alex Arce",
       "ovr": 73,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Jhojan Julio",
       "ovr": 72,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 2,
       "name": "José Quintero",
       "ovr": 72,
       "status": "titular",
@@ -230,7 +230,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 19,
       "name": "Lisandro Alzugaray",
       "ovr": 70,
       "status": "titular",
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 10,
       "name": "Michael Estrada",
       "ovr": 70,
       "status": "titular",
@@ -341,7 +341,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Ezequiel Piovi",
       "ovr": 70,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Leonel Quiñonez",
       "ovr": 70,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 4,
       "name": "Richard Mina",
       "ovr": 69,
       "status": "titular",
@@ -509,7 +509,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 21,
       "name": "Marco Antonio Angulo",
       "ovr": 66,
       "status": "titular",
@@ -564,7 +564,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 8,
       "name": "Fernando Cornejo",
       "ovr": 66,
       "status": "titular",
@@ -634,12 +634,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 65,
+        "esp": 76,
+        "ref": 70,
+        "pos": 60,
+        "vel": 36,
         "sta": 22
       },
       "detailedStats": {
@@ -674,7 +674,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 18,
       "name": "Gabriel Villamíl",
       "ovr": 65,
       "status": "reserva",

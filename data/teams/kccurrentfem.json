@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Debinha",
       "ovr": 88,
       "status": "titular",
@@ -69,7 +69,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Almuth Schult",
       "ovr": 83,
       "status": "titular",
@@ -86,12 +86,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 82,
+        "seg": 81,
+        "esp": 92,
+        "ref": 84,
+        "pos": 85,
+        "vel": 42,
         "sta": 30
       },
       "detailedStats": {
@@ -126,7 +126,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Vanessa DiBernardo",
       "ovr": 82,
       "status": "titular",
@@ -181,7 +181,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 12,
       "name": "Adrianna Franch",
       "ovr": 82,
       "status": "titular",
@@ -196,12 +196,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 81,
+        "seg": 80,
+        "esp": 91,
+        "ref": 82,
+        "pos": 84,
+        "vel": 41,
         "sta": 40
       },
       "detailedStats": {
@@ -236,7 +236,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 2,
       "name": "Hailie Mace",
       "ovr": 82,
       "status": "titular",
@@ -294,7 +294,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 5,
       "name": "Desiree Scott",
       "ovr": 82,
       "status": "titular",
@@ -349,7 +349,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 18,
       "name": "Lo'eau LaBonta",
       "ovr": 81,
       "status": "titular",
@@ -407,7 +407,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 9,
       "name": "Bia Zaneratto",
       "ovr": 81,
       "status": "titular",
@@ -462,7 +462,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 4,
       "name": "Elizabeth Ball",
       "ovr": 79,
       "status": "titular",
@@ -518,7 +518,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 11,
       "name": "Nichelle Prince",
       "ovr": 79,
       "status": "titular",
@@ -573,7 +573,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Temwa Chawinga",
       "ovr": 77,
       "status": "titular",
@@ -628,7 +628,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 14,
       "name": "Kayla Sharples",
       "ovr": 75,
       "status": "reserva",
@@ -684,7 +684,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 21,
       "name": "Bayley Feist",
       "ovr": 74,
       "status": "reserva",
@@ -739,7 +739,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 3,
       "name": "Mallory Weber",
       "ovr": 72,
       "status": "reserva",
@@ -794,7 +794,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "Stine Ballisager",
       "ovr": 71,
       "status": "reserva",
@@ -906,7 +906,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 23,
       "name": "Claire Hutton",
       "ovr": 70,
       "status": "reserva",
@@ -961,7 +961,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 13,
       "name": "Ellie Wheeler",
       "ovr": 70,
       "status": "reserva",
@@ -1016,7 +1016,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 28,
       "name": "Michelle Cooper",
       "ovr": 69,
       "status": "reserva",
@@ -1127,7 +1127,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 26,
       "name": "Regan Steigleder",
       "ovr": 68,
       "status": "reserva",

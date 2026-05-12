@@ -24,12 +24,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 77,
+        "seg": 74,
+        "esp": 88,
+        "ref": 81,
+        "pos": 74,
+        "vel": 43,
         "sta": 36
       },
       "detailedStats": {
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Florian Kainz",
       "ovr": 76,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Timo Hübers",
       "ovr": 75,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 5,
       "name": "Eric Martel",
       "ovr": 75,
       "status": "titular",
@@ -236,7 +236,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 8,
       "name": "Dejan Ljubičić",
       "ovr": 74,
       "status": "titular",
@@ -291,7 +291,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 12,
       "name": "Jonas Urbig",
       "ovr": 73,
       "status": "titular",
@@ -307,11 +307,11 @@
       ],
       "stats": {
         "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
+        "seg": 71,
+        "esp": 84,
+        "ref": 76,
         "pos": 75,
-        "vel": 40,
+        "vel": 33,
         "sta": 24
       },
       "detailedStats": {
@@ -346,7 +346,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 23,
       "name": "Mark Uth",
       "ovr": 73,
       "status": "titular",
@@ -402,7 +402,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 11,
       "name": "Linton Maina",
       "ovr": 72,
       "status": "titular",
@@ -458,7 +458,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 19,
       "name": "Jan Thielmann",
       "ovr": 72,
       "status": "titular",
@@ -513,7 +513,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 9,
       "name": "Luca Waldschmidt",
       "ovr": 72,
       "status": "titular",
@@ -568,7 +568,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 21,
       "name": "Jacob Christensen",
       "ovr": 71,
       "status": "titular",
@@ -623,7 +623,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 14,
       "name": "Dominique Heintz",
       "ovr": 71,
       "status": "reserva",
@@ -679,7 +679,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 25,
       "name": "Luca Kilian",
       "ovr": 71,
       "status": "reserva",
@@ -735,7 +735,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 3,
       "name": "Leart Paqarada",
       "ovr": 71,
       "status": "reserva",
@@ -791,7 +791,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 18,
       "name": "Denis Huseinbašić",
       "ovr": 70,
       "status": "reserva",
@@ -846,7 +846,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 2,
       "name": "Rasmus Carstensen",
       "ovr": 69,
       "status": "reserva",
@@ -901,7 +901,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 16,
       "name": "Max Finkgräfe",
       "ovr": 69,
       "status": "reserva",
@@ -956,7 +956,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Tim Lemperle",
       "ovr": 69,
       "status": "reserva",
@@ -1011,7 +1011,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 28,
       "name": "Marvin Obuz",
       "ovr": 68,
       "status": "reserva",
@@ -1066,7 +1066,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Sargis Adamyan",
       "ovr": 67,
       "status": "reserva",
@@ -1122,7 +1122,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Nikola Soldo",
       "ovr": 67,
       "status": "reserva",
@@ -1179,7 +1179,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Steffen Tigges",
       "ovr": 67,
       "status": "reserva",
@@ -1234,7 +1234,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 27,
       "name": "Mathias Olesen",
       "ovr": 66,
       "status": "reserva",
@@ -1289,7 +1289,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 29,
       "name": "Philipp Pentke",
       "ovr": 66,
       "status": "reserva",
@@ -1304,12 +1304,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 66,
+        "esp": 73,
+        "ref": 67,
+        "pos": 66,
+        "vel": 36,
         "sta": 40
       },
       "detailedStats": {
@@ -1344,7 +1344,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 30,
       "name": "Damion Downs",
       "ovr": 65,
       "status": "reserva",
@@ -1399,7 +1399,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 31,
       "name": "Florian Dietz",
       "ovr": 64,
       "status": "reserva",
@@ -1454,7 +1454,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 32,
       "name": "Elias Bakatukanda",
       "ovr": 61,
       "status": "reserva",
@@ -1510,7 +1510,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 33,
       "name": "Jaka Čuber Potočnik",
       "ovr": 60,
       "status": "reserva",
@@ -1565,7 +1565,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 34,
       "name": "Jonas Nickisch",
       "ovr": 60,
       "status": "reserva",
@@ -1580,12 +1580,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 57,
+        "esp": 71,
+        "ref": 65,
+        "pos": 57,
+        "vel": 33,
         "sta": 25
       },
       "detailedStats": {
@@ -1620,7 +1620,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 35,
       "name": "Maximilian Schmid",
       "ovr": 60,
       "status": "reserva",
@@ -1675,7 +1675,7 @@
     },
     {
       "id": 31,
-      "number": 31,
+      "number": 36,
       "name": "Julian Pauli",
       "ovr": 59,
       "status": "reserva",
@@ -1731,7 +1731,7 @@
     },
     {
       "id": 32,
-      "number": 32,
+      "number": 37,
       "name": "Matthias Köbbing",
       "ovr": 56,
       "status": "reserva",
@@ -1746,12 +1746,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 57,
+        "esp": 65,
+        "ref": 56,
+        "pos": 51,
+        "vel": 38,
         "sta": 25
       },
       "detailedStats": {

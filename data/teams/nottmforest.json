@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Morgan Gibbs-White",
       "ovr": 79,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Nikola Milenković",
       "ovr": 79,
       "status": "titular",
@@ -179,7 +179,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "James Ward-Prowse",
       "ovr": 79,
       "status": "titular",
@@ -237,7 +237,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 14,
       "name": "Murillo",
       "ovr": 78,
       "status": "titular",
@@ -294,7 +294,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 25,
       "name": "Willy Boly",
       "ovr": 77,
       "status": "titular",
@@ -351,7 +351,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Nicolás Domínguez",
       "ovr": 77,
       "status": "titular",
@@ -408,7 +408,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 11,
       "name": "Jota Silva",
       "ovr": 77,
       "status": "titular",
@@ -463,7 +463,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 19,
       "name": "Callum Hudson-Odoi",
       "ovr": 77,
       "status": "titular",
@@ -518,7 +518,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 21,
       "name": "Ibrahim Sangaré",
       "ovr": 77,
       "status": "titular",
@@ -574,7 +574,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 1,
       "name": "Matz Sels",
       "ovr": 77,
       "status": "titular",
@@ -589,12 +589,12 @@
         "Far Reach"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 76,
+        "seg": 76,
+        "esp": 85,
+        "ref": 77,
+        "pos": 77,
+        "vel": 35,
         "sta": 26
       },
       "detailedStats": {
@@ -629,7 +629,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 9,
       "name": "Taiwo Awoniyi",
       "ovr": 76,
       "status": "reserva",
@@ -684,7 +684,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 28,
       "name": "Anthony Elanga",
       "ovr": 76,
       "status": "reserva",
@@ -741,7 +741,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Morato",
       "ovr": 76,
       "status": "reserva",
@@ -798,7 +798,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 23,
       "name": "Danilo",
       "ovr": 76,
       "status": "reserva",
@@ -854,7 +854,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 2,
       "name": "Neco Williams",
       "ovr": 76,
       "status": "reserva",
@@ -909,7 +909,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 20,
       "name": "Chris Wood",
       "ovr": 76,
       "status": "reserva",
@@ -964,7 +964,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 16,
       "name": "Ola Aina",
       "ovr": 75,
       "status": "reserva",
@@ -1020,7 +1020,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 18,
       "name": "Elliot Anderson",
       "ovr": 75,
       "status": "reserva",
@@ -1075,7 +1075,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 27,
       "name": "Ramón Sosa",
       "ovr": 75,
       "status": "reserva",
@@ -1130,7 +1130,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Ryan Yates",
       "ovr": 75,
       "status": "reserva",
@@ -1185,7 +1185,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 12,
       "name": "Carlos Miguel",
       "ovr": 73,
       "status": "reserva",
@@ -1200,12 +1200,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 74,
+        "esp": 79,
+        "ref": 71,
+        "pos": 73,
+        "vel": 16,
         "sta": 19
       },
       "detailedStats": {
@@ -1240,7 +1240,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Emmanuel Dennis",
       "ovr": 72,
       "status": "reserva",
@@ -1295,7 +1295,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Hwang Ui Jo",
       "ovr": 72,
       "status": "reserva",
@@ -1352,7 +1352,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Harry Toffolo",
       "ovr": 72,
       "status": "reserva",
@@ -1407,7 +1407,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 30,
       "name": "Andrew Omobamidele",
       "ovr": 71,
       "status": "reserva",
@@ -1463,7 +1463,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 31,
       "name": "Aaron Donnelly",
       "ovr": 63,
       "status": "reserva",
@@ -1519,7 +1519,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 13,
       "name": "Fin Back",
       "ovr": 62,
       "status": "reserva",
@@ -1574,7 +1574,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 32,
       "name": "Eric da Silva Moreira",
       "ovr": 61,
       "status": "reserva",

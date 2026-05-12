@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Justin Hoogma",
       "ovr": 68,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Jizz Hornkamp",
       "ovr": 68,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "Shiloh 't Zand",
       "ovr": 67,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 5,
       "name": "Brian De Keersmaecker",
       "ovr": 67,
       "status": "titular",
@@ -230,7 +230,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 1,
       "name": "Fabian de Keijzer",
       "ovr": 67,
       "status": "titular",
@@ -245,12 +245,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 63,
+        "esp": 76,
+        "ref": 69,
+        "pos": 66,
+        "vel": 28,
         "sta": 31
       },
       "detailedStats": {
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 11,
       "name": "Nikolai Laursen",
       "ovr": 67,
       "status": "titular",
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 23,
       "name": "Jordy Bruijn",
       "ovr": 66,
       "status": "titular",
@@ -395,7 +395,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 30,
       "name": "Thomas Bruns",
       "ovr": 66,
       "status": "titular",
@@ -450,7 +450,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "Kelvin Leerdam",
       "ovr": 66,
       "status": "titular",
@@ -506,7 +506,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 19,
       "name": "Bryan Limbombe",
       "ovr": 66,
       "status": "titular",
@@ -562,7 +562,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 25,
       "name": "Damon Mirani",
       "ovr": 66,
       "status": "titular",
@@ -621,7 +621,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 21,
       "name": "Daniël van Kaam",
       "ovr": 66,
       "status": "reserva",
@@ -676,7 +676,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 8,
       "name": "Jan Žambůrek",
       "ovr": 66,
       "status": "reserva",
@@ -731,7 +731,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Sava-Arangel Čestić",
       "ovr": 65,
       "status": "reserva",
@@ -787,7 +787,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 20,
       "name": "Mario Engels",
       "ovr": 65,
       "status": "reserva",
@@ -842,7 +842,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 3,
       "name": "Ruben Roosken",
       "ovr": 65,
       "status": "reserva",
@@ -897,7 +897,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 2,
       "name": "Mimeirhel Benita",
       "ovr": 63,
       "status": "reserva",
@@ -1008,7 +1008,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Sem Scheperman",
       "ovr": 63,
       "status": "reserva",
@@ -1063,7 +1063,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 13,
       "name": "Jannes Wieckhoff",
       "ovr": 63,
       "status": "reserva",
@@ -1118,7 +1118,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Stijn Bultman",
       "ovr": 60,
       "status": "reserva",
@@ -1174,7 +1174,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Diego van Oorschot",
       "ovr": 58,
       "status": "reserva",
@@ -1229,7 +1229,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 12,
       "name": "Robin Mantel",
       "ovr": 57,
       "status": "reserva",
@@ -1244,12 +1244,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 56,
+        "seg": 58,
+        "esp": 66,
+        "ref": 63,
+        "pos": 56,
+        "vel": 24,
         "sta": 17
       },
       "detailedStats": {
@@ -1284,7 +1284,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 27,
       "name": "Timo Jansink",
       "ovr": 56,
       "status": "reserva",
@@ -1299,12 +1299,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 56,
+        "seg": 59,
+        "esp": 61,
+        "ref": 54,
+        "pos": 56,
+        "vel": 31,
         "sta": 17
       },
       "detailedStats": {

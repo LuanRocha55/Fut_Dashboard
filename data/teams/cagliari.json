@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Sebastiano Luperto",
       "ovr": 77,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 14,
       "name": "Yerry Mina",
       "ovr": 76,
       "status": "titular",
@@ -124,7 +124,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Răzvan Marin",
       "ovr": 75,
       "status": "titular",
@@ -182,7 +182,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 10,
       "name": "Gianluca Gaetano",
       "ovr": 73,
       "status": "titular",
@@ -238,7 +238,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 9,
       "name": "Gianluca Lapadula",
       "ovr": 73,
       "status": "titular",
@@ -293,7 +293,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 5,
       "name": "Antoine Makoumbou",
       "ovr": 73,
       "status": "titular",
@@ -349,7 +349,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 1,
       "name": "Simone Scuffet",
       "ovr": 73,
       "status": "titular",
@@ -364,12 +364,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 73,
+        "seg": 71,
+        "esp": 83,
+        "ref": 76,
+        "pos": 72,
+        "vel": 50,
         "sta": 40
       },
       "detailedStats": {
@@ -404,7 +404,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 19,
       "name": "Zito Luvumbo",
       "ovr": 73,
       "status": "titular",
@@ -460,7 +460,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 23,
       "name": "Nicolas Viola",
       "ovr": 73,
       "status": "titular",
@@ -516,7 +516,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 3,
       "name": "Tommaso Augello",
       "ovr": 72,
       "status": "titular",
@@ -571,7 +571,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 21,
       "name": "Matteo Prati",
       "ovr": 72,
       "status": "titular",
@@ -626,7 +626,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 25,
       "name": "Mateusz Wieteska",
       "ovr": 72,
       "status": "reserva",
@@ -682,7 +682,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 18,
       "name": "Jakub Jankto",
       "ovr": 71,
       "status": "reserva",
@@ -737,7 +737,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 20,
       "name": "Roberto Piccoli",
       "ovr": 71,
       "status": "reserva",
@@ -848,7 +848,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 2,
       "name": "Gabriele Zappa",
       "ovr": 70,
       "status": "reserva",
@@ -903,7 +903,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 13,
       "name": "Nadir Zortea",
       "ovr": 70,
       "status": "reserva",
@@ -958,7 +958,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 16,
       "name": "Paulo Azzi",
       "ovr": 69,
       "status": "reserva",
@@ -1014,7 +1014,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Alessandro Deiola",
       "ovr": 69,
       "status": "reserva",
@@ -1069,7 +1069,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 11,
       "name": "Mattia Felici",
       "ovr": 69,
       "status": "reserva",
@@ -1124,7 +1124,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Adam Obert",
       "ovr": 69,
       "status": "reserva",
@@ -1180,7 +1180,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Michel Ndary Adopo",
       "ovr": 65,
       "status": "reserva",
@@ -1235,7 +1235,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 12,
       "name": "Alen Sherri",
       "ovr": 65,
       "status": "reserva",
@@ -1250,12 +1250,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 61,
+        "esp": 74,
+        "ref": 68,
+        "pos": 63,
+        "vel": 35,
         "sta": 28
       },
       "detailedStats": {
@@ -1290,7 +1290,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 27,
       "name": "Giuseppe Ciocci",
       "ovr": 60,
       "status": "reserva",
@@ -1305,12 +1305,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 56,
+        "esp": 71,
+        "ref": 65,
+        "pos": 58,
+        "vel": 28,
         "sta": 34
       },
       "detailedStats": {

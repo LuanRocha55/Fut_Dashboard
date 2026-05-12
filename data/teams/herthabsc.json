@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Fabian Reese",
       "ovr": 75,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 5,
       "name": "Diego Demme",
       "ovr": 73,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 2,
       "name": "Jonjoe Kenny",
       "ovr": 72,
       "status": "titular",
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 19,
       "name": "Jón Dagur Þorsteinsson",
       "ovr": 72,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 21,
       "name": "Andreas Bouchalakis",
       "ovr": 71,
       "status": "titular",
@@ -289,7 +289,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 4,
       "name": "Márton Dárdai",
       "ovr": 71,
       "status": "titular",
@@ -346,7 +346,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 3,
       "name": "Michał Karbownik",
       "ovr": 71,
       "status": "titular",
@@ -402,7 +402,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Toni Leistner",
       "ovr": 71,
       "status": "titular",
@@ -461,7 +461,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 28,
       "name": "Kevin Sessa",
       "ovr": 71,
       "status": "titular",
@@ -516,7 +516,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 8,
       "name": "Michaël Cuisance",
       "ovr": 70,
       "status": "titular",
@@ -574,7 +574,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 10,
       "name": "Pál Dárdai",
       "ovr": 70,
       "status": "titular",
@@ -629,7 +629,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 16,
       "name": "Jeremy Dudziak",
       "ovr": 70,
       "status": "reserva",
@@ -685,7 +685,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 9,
       "name": "Florian Niederlechner",
       "ovr": 70,
       "status": "reserva",
@@ -740,7 +740,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 13,
       "name": "Deyovaisio Zeefuik",
       "ovr": 70,
       "status": "reserva",
@@ -795,7 +795,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "Linus Gechter",
       "ovr": 69,
       "status": "reserva",
@@ -851,7 +851,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 1,
       "name": "Marius Gersbeck",
       "ovr": 69,
       "status": "reserva",
@@ -867,12 +867,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
+        "alc": 65,
+        "seg": 71,
         "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "ref": 70,
+        "pos": 70,
+        "vel": 43,
         "sta": 36
       },
       "detailedStats": {
@@ -907,7 +907,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 20,
       "name": "Smail Prevljak",
       "ovr": 69,
       "status": "reserva",
@@ -962,7 +962,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 12,
       "name": "Tjark Ernst",
       "ovr": 68,
       "status": "reserva",
@@ -977,12 +977,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 72,
+        "seg": 68,
+        "esp": 79,
+        "ref": 71,
+        "pos": 67,
+        "vel": 27,
         "sta": 25
       },
       "detailedStats": {
@@ -1017,7 +1017,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Marten Winkler",
       "ovr": 68,
       "status": "reserva",
@@ -1072,7 +1072,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 18,
       "name": "Bilal Hussein",
       "ovr": 67,
       "status": "reserva",
@@ -1127,7 +1127,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 23,
       "name": "Pascal Klemens",
       "ovr": 67,
       "status": "reserva",
@@ -1182,7 +1182,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 30,
       "name": "Ibrahim Maza",
       "ovr": 67,
       "status": "reserva",
@@ -1238,7 +1238,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Luca Schuler",
       "ovr": 66,
       "status": "reserva",
@@ -1293,7 +1293,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 27,
       "name": "Derry Scherhant",
       "ovr": 65,
       "status": "reserva",
@@ -1348,7 +1348,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "Gustav Christensen",
       "ovr": 61,
       "status": "reserva",
@@ -1403,7 +1403,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Bradley Ibrahim",
       "ovr": 61,
       "status": "reserva",
@@ -1458,7 +1458,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 31,
       "name": "Tim Goller",
       "ovr": 57,
       "status": "reserva",
@@ -1473,12 +1473,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 59,
+        "esp": 64,
+        "ref": 57,
+        "pos": 57,
+        "vel": 28,
         "sta": 28
       },
       "detailedStats": {

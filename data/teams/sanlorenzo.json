@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Malcom Braida",
       "ovr": 76,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Gastón Hernández",
       "ovr": 75,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 7,
       "name": "Nahuel Barrios",
       "ovr": 74,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Nahuel Bustos",
       "ovr": 73,
       "status": "titular",
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 1,
       "name": "Facundo Altamirano",
       "ovr": 72,
       "status": "titular",
@@ -248,12 +248,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 68,
+        "esp": 81,
+        "ref": 74,
+        "pos": 70,
+        "vel": 45,
         "sta": 39
       },
       "detailedStats": {
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 10,
       "name": "Sebastián Blanco",
       "ovr": 72,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 2,
       "name": "Nicolás Tripichio",
       "ovr": 72,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 19,
       "name": "Andrés Vombergar",
       "ovr": 71,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 12,
       "name": "Gastón Gómez",
       "ovr": 70,
       "status": "titular",
@@ -468,12 +468,12 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 65,
+        "esp": 79,
+        "ref": 72,
+        "pos": 71,
+        "vel": 32,
         "sta": 35
       },
       "detailedStats": {
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Gastón Campi",
       "ovr": 69,
       "status": "titular",
@@ -564,7 +564,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 17,
       "name": "Ezequiel Cerutti",
       "ovr": 69,
       "status": "titular",
@@ -620,7 +620,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 25,
       "name": "Gonzalo Luján",
       "ovr": 69,
       "status": "reserva",
@@ -732,7 +732,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 28,
       "name": "Iván Leguizamón",
       "ovr": 68,
       "status": "reserva",
@@ -787,7 +787,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 5,
       "name": "Eric Remedi",
       "ovr": 68,
       "status": "reserva",
@@ -842,7 +842,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 21,
       "name": "Elián Irala",
       "ovr": 67,
       "status": "reserva",
@@ -897,7 +897,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 23,
       "name": "Carlos Sánchez",
       "ovr": 67,
       "status": "reserva",
@@ -952,7 +952,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 8,
       "name": "Manuel Insaurralde",
       "ovr": 66,
       "status": "reserva",
@@ -1007,7 +1007,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 30,
       "name": "Tomás Porra",
       "ovr": 65,
       "status": "reserva",
@@ -1062,7 +1062,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 27,
       "name": "Alexis Cuello",
       "ovr": 63,
       "status": "reserva",
@@ -1117,7 +1117,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Nahuel Arias",
       "ovr": 61,
       "status": "reserva",
@@ -1172,7 +1172,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 20,
       "name": "Agustin Hausch",
       "ovr": 61,
       "status": "reserva",
@@ -1227,7 +1227,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Matías Hernandez",
       "ovr": 60,
       "status": "reserva",
@@ -1282,7 +1282,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 29,
       "name": "Daniel Herrera",
       "ovr": 60,
       "status": "reserva",
@@ -1338,7 +1338,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 31,
       "name": "Thiago Perugini",
       "ovr": 60,
       "status": "reserva",
@@ -1393,7 +1393,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 22,
       "name": "Mateo Clemente",
       "ovr": 59,
       "status": "reserva",
@@ -1408,12 +1408,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 59,
+        "esp": 66,
+        "ref": 60,
+        "pos": 58,
+        "vel": 28,
         "sta": 21
       },
       "detailedStats": {
@@ -1448,7 +1448,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 32,
       "name": "Lautaro López Kaleniuk",
       "ovr": 59,
       "status": "reserva",
@@ -1463,12 +1463,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 59,
+        "seg": 59,
+        "esp": 66,
+        "ref": 60,
+        "pos": 57,
+        "vel": 37,
         "sta": 22
       },
       "detailedStats": {

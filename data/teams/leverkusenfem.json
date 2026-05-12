@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Karólína Lea Vilhjálmsdóttir",
       "ovr": 78,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Charlotte Voll",
       "ovr": 78,
       "status": "titular",
@@ -78,12 +78,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 77,
+        "seg": 76,
+        "esp": 87,
+        "ref": 79,
+        "pos": 76,
+        "vel": 51,
         "sta": 33
       },
       "detailedStats": {
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Kristin Kögel",
       "ovr": 77,
       "status": "titular",
@@ -173,7 +173,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 12,
       "name": "Friederike Repohl",
       "ovr": 77,
       "status": "titular",
@@ -190,12 +190,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
+        "alc": 78,
         "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "esp": 84,
+        "ref": 74,
+        "pos": 78,
+        "vel": 41,
         "sta": 40
       },
       "detailedStats": {
@@ -230,7 +230,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Lilla Turányi",
       "ovr": 77,
       "status": "titular",
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Selina Ostermeier",
       "ovr": 76,
       "status": "titular",
@@ -345,7 +345,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 25,
       "name": "Melissa Friedrich",
       "ovr": 74,
       "status": "titular",
@@ -457,7 +457,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 5,
       "name": "Katharina Piljić",
       "ovr": 73,
       "status": "titular",
@@ -513,7 +513,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 19,
       "name": "Synne Skinnes Hansen",
       "ovr": 72,
       "status": "titular",
@@ -568,7 +568,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 18,
       "name": "Julie Jorde",
       "ovr": 72,
       "status": "titular",
@@ -623,7 +623,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 10,
       "name": "Cornelia Kramer",
       "ovr": 72,
       "status": "reserva",
@@ -678,7 +678,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 27,
       "name": "Shen Menglu",
       "ovr": 72,
       "status": "reserva",
@@ -733,7 +733,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 3,
       "name": "Janou Levels",
       "ovr": 70,
       "status": "reserva",
@@ -788,7 +788,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 21,
       "name": "Sofie Zdebel",
       "ovr": 70,
       "status": "reserva",
@@ -843,7 +843,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 28,
       "name": "Paulina Bartz",
       "ovr": 68,
       "status": "reserva",
@@ -898,7 +898,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 20,
       "name": "Vanessa Haim",
       "ovr": 68,
       "status": "reserva",
@@ -953,7 +953,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 22,
       "name": "Sofia Cava Marin",
       "ovr": 66,
       "status": "reserva",
@@ -1009,7 +1009,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 23,
       "name": "Julia Mickenhagen",
       "ovr": 65,
       "status": "reserva",
@@ -1064,7 +1064,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 24,
       "name": "Delice Boboy",
       "ovr": 63,
       "status": "reserva",
@@ -1119,7 +1119,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 26,
       "name": "Estrella Merino Gonzalez",
       "ovr": 63,
       "status": "reserva",
@@ -1174,7 +1174,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 29,
       "name": "Loreen Bender",
       "ovr": 62,
       "status": "reserva",
@@ -1229,7 +1229,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 30,
       "name": "Anne Moll",
       "ovr": 59,
       "status": "reserva",
@@ -1244,12 +1244,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 60,
+        "esp": 69,
+        "ref": 62,
+        "pos": 55,
+        "vel": 50,
         "sta": 21
       },
       "detailedStats": {

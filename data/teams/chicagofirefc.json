@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Hugo Cuypers",
       "ovr": 76,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Rafael Czichos",
       "ovr": 72,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Kellyn Acosta",
       "ovr": 71,
       "status": "titular",
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 5,
       "name": "Gastón Giménez",
       "ovr": 70,
       "status": "titular",
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 14,
       "name": "Tobias Salquist",
       "ovr": 70,
       "status": "titular",
@@ -289,7 +289,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 2,
       "name": "Arnaud Souquet",
       "ovr": 70,
       "status": "titular",
@@ -345,7 +345,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 1,
       "name": "Chris Brady",
       "ovr": 68,
       "status": "titular",
@@ -360,12 +360,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 72,
+        "seg": 64,
+        "esp": 81,
+        "ref": 73,
+        "pos": 66,
+        "vel": 26,
         "sta": 21
       },
       "detailedStats": {
@@ -400,7 +400,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 21,
       "name": "Federico Navarro",
       "ovr": 68,
       "status": "titular",
@@ -456,7 +456,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 11,
       "name": "Brian Gutiérrez",
       "ovr": 67,
       "status": "titular",
@@ -511,7 +511,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 3,
       "name": "Andrew Gutman",
       "ovr": 67,
       "status": "titular",
@@ -566,7 +566,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Chris Mueller",
       "ovr": 67,
       "status": "titular",
@@ -622,7 +622,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 28,
       "name": "Maren Haile-Selassie",
       "ovr": 66,
       "status": "reserva",
@@ -732,7 +732,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 24,
       "name": "Allan Arigoni",
       "ovr": 65,
       "status": "reserva",
@@ -787,7 +787,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 10,
       "name": "Giorgos Koutsias",
       "ovr": 65,
       "status": "reserva",
@@ -842,7 +842,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 27,
       "name": "Ariel Lassiter",
       "ovr": 65,
       "status": "reserva",
@@ -897,7 +897,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 25,
       "name": "Mauricio Pineda",
       "ovr": 65,
       "status": "reserva",
@@ -1009,7 +1009,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 12,
       "name": "Spencer Richey",
       "ovr": 64,
       "status": "reserva",
@@ -1024,12 +1024,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 61,
+        "esp": 71,
+        "ref": 65,
+        "pos": 61,
+        "vel": 32,
         "sta": 41
       },
       "detailedStats": {
@@ -1064,7 +1064,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Jeff Gal",
       "ovr": 63,
       "status": "reserva",
@@ -1079,12 +1079,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 59,
+        "esp": 71,
+        "ref": 64,
+        "pos": 65,
+        "vel": 20,
         "sta": 26
       },
       "detailedStats": {
@@ -1119,7 +1119,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 16,
       "name": "Chase Gasper",
       "ovr": 63,
       "status": "reserva",
@@ -1174,7 +1174,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Wyatt Omsberg",
       "ovr": 62,
       "status": "reserva",
@@ -1230,7 +1230,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 20,
       "name": "Tom Barlow",
       "ovr": 61,
       "status": "reserva",
@@ -1285,7 +1285,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Jonathan Dean",
       "ovr": 61,
       "status": "reserva",
@@ -1340,7 +1340,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Justin Reynolds",
       "ovr": 54,
       "status": "reserva",
@@ -1395,7 +1395,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 30,
       "name": "Sergio Oregel",
       "ovr": 50,
       "status": "reserva",
@@ -1450,7 +1450,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 31,
       "name": "Javier Casas Jr.",
       "ovr": 49,
       "status": "reserva",

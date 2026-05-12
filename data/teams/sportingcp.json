@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Viktor Gyökeres",
       "ovr": 84,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 7,
       "name": "Pedro Gonçalves",
       "ovr": 83,
       "status": "titular",
@@ -124,7 +124,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Gonçalo Inácio",
       "ovr": 80,
       "status": "titular",
@@ -183,7 +183,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 11,
       "name": "Nuno Santos",
       "ovr": 80,
       "status": "titular",
@@ -297,7 +297,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 17,
       "name": "Marcus Edwards",
       "ovr": 79,
       "status": "titular",
@@ -355,7 +355,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 8,
       "name": "Hidemasa Morita",
       "ovr": 79,
       "status": "titular",
@@ -414,7 +414,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Ousmane Diomande",
       "ovr": 78,
       "status": "titular",
@@ -473,7 +473,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 25,
       "name": "Matheus Reis",
       "ovr": 78,
       "status": "titular",
@@ -531,7 +531,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 31,
       "name": "Trincão",
       "ovr": 78,
       "status": "titular",
@@ -589,7 +589,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 18,
       "name": "Daniel Bragança",
       "ovr": 77,
       "status": "titular",
@@ -705,7 +705,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 19,
       "name": "Geny Catamo",
       "ovr": 76,
       "status": "reserva",
@@ -760,7 +760,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Zeno Debast",
       "ovr": 76,
       "status": "reserva",
@@ -816,7 +816,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 16,
       "name": "Eduardo Quaresma",
       "ovr": 76,
       "status": "reserva",
@@ -872,7 +872,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 1,
       "name": "Franco Israel",
       "ovr": 75,
       "status": "reserva",
@@ -887,12 +887,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 79,
+        "seg": 72,
+        "esp": 89,
+        "ref": 81,
+        "pos": 76,
+        "vel": 32,
         "sta": 23
       },
       "detailedStats": {
@@ -927,7 +927,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 2,
       "name": "Ricardo Esgaio",
       "ovr": 74,
       "status": "reserva",
@@ -982,7 +982,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 13,
       "name": "Fresneda",
       "ovr": 73,
       "status": "reserva",
@@ -1039,7 +1039,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Vladan Kovacević",
       "ovr": 73,
       "status": "reserva",
@@ -1054,12 +1054,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 74,
+        "seg": 70,
+        "esp": 83,
+        "ref": 76,
+        "pos": 77,
+        "vel": 42,
         "sta": 18
       },
       "detailedStats": {
@@ -1109,12 +1109,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 65,
+        "esp": 77,
+        "ref": 71,
+        "pos": 71,
+        "vel": 22,
         "sta": 21
       },
       "detailedStats": {
@@ -1204,7 +1204,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 10,
       "name": "Rodrigo Ribeiro",
       "ovr": 69,
       "status": "reserva",
@@ -1259,7 +1259,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 28,
       "name": "Afonso Moreira",
       "ovr": 68,
       "status": "reserva",
@@ -1329,12 +1329,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 72,
+        "seg": 66,
+        "esp": 79,
+        "ref": 71,
+        "pos": 70,
+        "vel": 22,
         "sta": 23
       },
       "detailedStats": {
@@ -1369,7 +1369,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "João Muniz",
       "ovr": 68,
       "status": "reserva",
@@ -1425,7 +1425,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 27,
       "name": "Rafael Nel",
       "ovr": 67,
       "status": "reserva",
@@ -1480,7 +1480,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 29,
       "name": "Diogo Travassos",
       "ovr": 67,
       "status": "reserva",
@@ -1535,7 +1535,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 32,
       "name": "Geovany Quenda",
       "ovr": 67,
       "status": "reserva",

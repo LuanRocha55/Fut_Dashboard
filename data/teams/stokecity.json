@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 5,
       "name": "Wouter Burger",
       "ovr": 74,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Viktor Johansson",
       "ovr": 74,
       "status": "titular",
@@ -81,11 +81,11 @@
       ],
       "stats": {
         "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "seg": 71,
+        "esp": 84,
+        "ref": 77,
+        "pos": 73,
+        "vel": 38,
         "sta": 27
       },
       "detailedStats": {
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Million Manhoef",
       "ovr": 72,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 19,
       "name": "Bae Jun Ho",
       "ovr": 71,
       "status": "titular",
@@ -230,7 +230,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 3,
       "name": "Éric Bocat",
       "ovr": 70,
       "status": "titular",
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 21,
       "name": "Ben Pearson",
       "ovr": 70,
       "status": "titular",
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 9,
       "name": "Tom Cannon",
       "ovr": 69,
       "status": "titular",
@@ -395,7 +395,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 27,
       "name": "André Vidigal",
       "ovr": 69,
       "status": "titular",
@@ -451,7 +451,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 10,
       "name": "Sam Gallagher",
       "ovr": 69,
       "status": "titular",
@@ -506,7 +506,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 4,
       "name": "Ben Gibson",
       "ovr": 69,
       "status": "titular",
@@ -562,7 +562,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 2,
       "name": "Lynden Gooch",
       "ovr": 69,
       "status": "titular",
@@ -617,7 +617,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 20,
       "name": "Ryan Mmaee",
       "ovr": 69,
       "status": "reserva",
@@ -672,7 +672,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 8,
       "name": "Jordan Thompson",
       "ovr": 69,
       "status": "reserva",
@@ -783,7 +783,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "Michael Rose",
       "ovr": 68,
       "status": "reserva",
@@ -894,7 +894,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 23,
       "name": "Andrew Moran",
       "ovr": 67,
       "status": "reserva",
@@ -1004,7 +1004,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Ashley Phillips",
       "ovr": 66,
       "status": "reserva",
@@ -1060,7 +1060,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 13,
       "name": "Junior Tchamadeu",
       "ovr": 66,
       "status": "reserva",
@@ -1115,7 +1115,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 12,
       "name": "Jack Bonham",
       "ovr": 65,
       "status": "reserva",
@@ -1130,12 +1130,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 62,
+        "esp": 73,
+        "ref": 65,
+        "pos": 64,
+        "vel": 44,
         "sta": 41
       },
       "detailedStats": {
@@ -1170,7 +1170,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Bosun Lawal",
       "ovr": 65,
       "status": "reserva",
@@ -1226,7 +1226,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Frank Fielding",
       "ovr": 63,
       "status": "reserva",
@@ -1241,12 +1241,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 62,
+        "esp": 70,
+        "ref": 65,
+        "pos": 63,
+        "vel": 32,
         "sta": 31
       },
       "detailedStats": {
@@ -1281,7 +1281,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 28,
       "name": "Emre Tezgel",
       "ovr": 62,
       "status": "reserva",
@@ -1336,7 +1336,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 7,
       "name": "Lewis Koumas",
       "ovr": 61,
       "status": "reserva",
@@ -1391,7 +1391,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Sol Sidibé",
       "ovr": 55,
       "status": "reserva",
@@ -1446,7 +1446,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 30,
       "name": "Jaden Dixon",
       "ovr": 53,
       "status": "reserva",

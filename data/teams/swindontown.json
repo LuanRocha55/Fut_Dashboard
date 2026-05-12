@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Grant Hall",
       "ovr": 65,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Gavin Kilkenny",
       "ovr": 65,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 5,
       "name": "Nnamdi Ofoborh",
       "ovr": 65,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Kabongo Tshimanga",
       "ovr": 63,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 14,
       "name": "Will Wright",
       "ovr": 63,
       "status": "titular",
@@ -286,7 +286,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 18,
       "name": "Jake Cain",
       "ovr": 62,
       "status": "titular",
@@ -341,7 +341,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 20,
       "name": "Ollie Clarke",
       "ovr": 62,
       "status": "titular",
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 25,
       "name": "Ryan Delaney",
       "ovr": 62,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 10,
       "name": "Harry Smith",
       "ovr": 62,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 23,
       "name": "Daniel Butterworth",
       "ovr": 61,
       "status": "titular",
@@ -563,7 +563,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Aaron Drinan",
       "ovr": 61,
       "status": "titular",
@@ -673,7 +673,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 3,
       "name": "Rosaire Longelo",
       "ovr": 61,
       "status": "reserva",
@@ -728,7 +728,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 16,
       "name": "Tariq Uwakwe",
       "ovr": 61,
       "status": "reserva",
@@ -783,7 +783,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 1,
       "name": "Dan Barden",
       "ovr": 60,
       "status": "reserva",
@@ -798,12 +798,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 62,
+        "esp": 69,
+        "ref": 64,
+        "pos": 61,
+        "vel": 25,
         "sta": 27
       },
       "detailedStats": {
@@ -838,7 +838,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 22,
       "name": "Jack Bycroft",
       "ovr": 60,
       "status": "reserva",
@@ -853,12 +853,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 56,
+        "esp": 69,
+        "ref": 62,
+        "pos": 59,
+        "vel": 35,
         "sta": 29
       },
       "detailedStats": {
@@ -893,7 +893,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 30,
       "name": "Sean McGurk",
       "ovr": 60,
       "status": "reserva",
@@ -948,7 +948,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Harrison Minturn",
       "ovr": 59,
       "status": "reserva",
@@ -1004,7 +1004,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 2,
       "name": "Tunmise Sobowale",
       "ovr": 58,
       "status": "reserva",
@@ -1059,7 +1059,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 24,
       "name": "Miguel Freckleton",
       "ovr": 57,
       "status": "reserva",
@@ -1115,7 +1115,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 26,
       "name": "Pharrell Johnson",
       "ovr": 56,
       "status": "reserva",
@@ -1171,7 +1171,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 13,
       "name": "Joel McGregor",
       "ovr": 55,
       "status": "reserva",
@@ -1226,7 +1226,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 27,
       "name": "Joel Cotterill",
       "ovr": 54,
       "status": "reserva",
@@ -1281,7 +1281,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 28,
       "name": "Jaxon Brown",
       "ovr": 52,
       "status": "reserva",
@@ -1336,7 +1336,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Redman Evans",
       "ovr": 51,
       "status": "reserva",
@@ -1351,12 +1351,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 52,
+        "seg": 52,
+        "esp": 59,
+        "ref": 54,
+        "pos": 46,
+        "vel": 33,
         "sta": 28
       },
       "detailedStats": {
@@ -1391,7 +1391,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 31,
       "name": "Anton Dworzak",
       "ovr": 50,
       "status": "reserva",
@@ -1446,7 +1446,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 32,
       "name": "Sonny Hart",
       "ovr": 50,
       "status": "reserva",

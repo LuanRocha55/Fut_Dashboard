@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Gauthier Hein",
       "ovr": 74,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Alexandre Oukidja",
       "ovr": 73,
       "status": "titular",
@@ -79,12 +79,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 72,
+        "seg": 70,
+        "esp": 81,
+        "ref": 73,
+        "pos": 74,
+        "vel": 45,
         "sta": 31
       },
       "detailedStats": {
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 14,
       "name": "Fali Candé",
       "ovr": 71,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Jessy Deminguet",
       "ovr": 71,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 11,
       "name": "Ablie Jallow",
       "ovr": 71,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 2,
       "name": "Koffi Kouao",
       "ovr": 71,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 13,
       "name": "Maxime Colin",
       "ovr": 70,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 19,
       "name": "Cheikh Sabaly",
       "ovr": 70,
       "status": "titular",
@@ -563,7 +563,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 28,
       "name": "Kévin Van Den Kerkhof",
       "ovr": 70,
       "status": "titular",
@@ -673,7 +673,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 9,
       "name": "Benjamin Tetteh",
       "ovr": 69,
       "status": "reserva",
@@ -728,7 +728,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 20,
       "name": "Simon Elisor",
       "ovr": 68,
       "status": "reserva",
@@ -783,7 +783,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 27,
       "name": "Papa Amadou Diallo",
       "ovr": 66,
       "status": "reserva",
@@ -838,7 +838,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 25,
       "name": "Sadibou Sané",
       "ovr": 65,
       "status": "reserva",
@@ -949,7 +949,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 5,
       "name": "Joseph N'Duquidi",
       "ovr": 63,
       "status": "reserva",
@@ -1004,7 +1004,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Ibou Sané",
       "ovr": 63,
       "status": "reserva",
@@ -1059,7 +1059,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Aboubacar Lô",
       "ovr": 60,
       "status": "reserva",
@@ -1115,7 +1115,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 23,
       "name": "Morgan Bokele",
       "ovr": 59,
       "status": "reserva",
@@ -1170,7 +1170,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Lilian Raillot",
       "ovr": 58,
       "status": "reserva",
@@ -1225,7 +1225,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Charles Divialle",
       "ovr": 56,
       "status": "reserva",

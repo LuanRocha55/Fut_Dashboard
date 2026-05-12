@@ -23,12 +23,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 73,
+        "seg": 66,
+        "esp": 79,
+        "ref": 69,
+        "pos": 64,
+        "vel": 46,
         "sta": 27
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Maurice Cova",
       "ovr": 69,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 2,
       "name": "Nelson Hernández",
       "ovr": 68,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 5,
       "name": "Carlos Robles",
       "ovr": 68,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Haibrany Ruíz Díaz",
       "ovr": 68,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 9,
       "name": "Anthony Uribe",
       "ovr": 67,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 13,
       "name": "Jefre Vargas",
       "ovr": 67,
       "status": "titular",
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Carlos Vivas",
       "ovr": 67,
       "status": "titular",
@@ -454,7 +454,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 25,
       "name": "Óliver Benítez",
       "ovr": 66,
       "status": "titular",
@@ -510,7 +510,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 18,
       "name": "Diomar Díaz",
       "ovr": 66,
       "status": "titular",
@@ -565,7 +565,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 24,
       "name": "Pablo Camacho",
       "ovr": 65,
       "status": "titular",
@@ -620,7 +620,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 10,
       "name": "Daniel Saggiomo",
       "ovr": 65,
       "status": "reserva",
@@ -675,7 +675,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 15,
       "name": "Jean Gutiérrez",
       "ovr": 64,
       "status": "reserva",
@@ -731,7 +731,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 19,
       "name": "Andrés Ríos",
       "ovr": 64,
       "status": "reserva",
@@ -786,7 +786,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 17,
       "name": "Carlos Calzadilla",
       "ovr": 62,
       "status": "reserva",

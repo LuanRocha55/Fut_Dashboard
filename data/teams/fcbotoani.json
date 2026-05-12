@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Eduard Florescu",
       "ovr": 67,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Enzo Adrián López",
       "ovr": 66,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 7,
       "name": "Ștefan Bodișteanu",
       "ovr": 65,
       "status": "titular",
@@ -173,7 +173,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Eduard Pap",
       "ovr": 65,
       "status": "titular",
@@ -188,12 +188,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 65,
+        "esp": 76,
+        "ref": 68,
+        "pos": 62,
+        "vel": 28,
         "sta": 26
       },
       "detailedStats": {
@@ -228,7 +228,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Daniel Celea",
       "ovr": 64,
       "status": "titular",
@@ -284,7 +284,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 10,
       "name": "Juan Cruz Kaprof",
       "ovr": 64,
       "status": "titular",
@@ -339,7 +339,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Andrei Miron",
       "ovr": 64,
       "status": "titular",
@@ -395,7 +395,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 2,
       "name": "Romario Benzar",
       "ovr": 63,
       "status": "titular",
@@ -450,7 +450,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 17,
       "name": "Loránd Fülöp",
       "ovr": 63,
       "status": "titular",
@@ -505,7 +505,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Rijad Sadiku",
       "ovr": 63,
       "status": "titular",
@@ -561,7 +561,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 12,
       "name": "Alin Șeroni",
       "ovr": 63,
       "status": "titular",
@@ -617,7 +617,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 8,
       "name": "Gabriel David",
       "ovr": 62,
       "status": "reserva",
@@ -672,7 +672,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 23,
       "name": "Ștefan Pănoiu",
       "ovr": 62,
       "status": "reserva",
@@ -727,7 +727,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 13,
       "name": "Charles Petro",
       "ovr": 62,
       "status": "reserva",
@@ -782,7 +782,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 3,
       "name": "Alexandru Țigănașu",
       "ovr": 62,
       "status": "reserva",
@@ -837,7 +837,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 19,
       "name": "Adams Friday",
       "ovr": 61,
       "status": "reserva",
@@ -892,7 +892,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 16,
       "name": "Michael Pavlović",
       "ovr": 60,
       "status": "reserva",
@@ -1002,7 +1002,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 30,
       "name": "Aldaír Ferreira",
       "ovr": 59,
       "status": "reserva",
@@ -1112,7 +1112,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 31,
       "name": "Jaly Mouaddib",
       "ovr": 58,
       "status": "reserva",
@@ -1222,7 +1222,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Luka Kukić",
       "ovr": 56,
       "status": "reserva",
@@ -1237,12 +1237,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 53,
+        "seg": 57,
+        "esp": 60,
+        "ref": 55,
+        "pos": 56,
+        "vel": 20,
         "sta": 23
       },
       "detailedStats": {
@@ -1277,7 +1277,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Denis Ștefan",
       "ovr": 50,
       "status": "reserva",

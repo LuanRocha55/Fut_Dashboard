@@ -23,11 +23,11 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 69,
+        "seg": 69,
+        "esp": 78,
+        "ref": 71,
+        "pos": 69,
         "vel": 40,
         "sta": 23
       },
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Nils Fröling",
       "ovr": 67,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Ahmet Gürleyen",
       "ovr": 67,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 14,
       "name": "Damian Roßbach",
       "ovr": 67,
       "status": "titular",
@@ -234,7 +234,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 3,
       "name": "Alexander Rossipal",
       "ovr": 67,
       "status": "titular",
@@ -289,7 +289,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 10,
       "name": "Cedric Harenbrock",
       "ovr": 66,
       "status": "titular",
@@ -344,7 +344,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 19,
       "name": "Christian Kinsombi",
       "ovr": 66,
       "status": "titular",
@@ -399,7 +399,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 23,
       "name": "Adrien Lebeau",
       "ovr": 66,
       "status": "titular",
@@ -455,7 +455,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 2,
       "name": "Nico Neidhart",
       "ovr": 66,
       "status": "titular",
@@ -510,7 +510,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Franz Pfanne",
       "ovr": 66,
       "status": "titular",
@@ -568,7 +568,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 27,
       "name": "Kevin Schumacher",
       "ovr": 66,
       "status": "titular",
@@ -623,7 +623,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 5,
       "name": "Marco Schuster",
       "ovr": 66,
       "status": "reserva",
@@ -679,7 +679,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 9,
       "name": "Antonio Jonjić",
       "ovr": 64,
       "status": "reserva",
@@ -734,7 +734,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 12,
       "name": "Philipp Klewin",
       "ovr": 64,
       "status": "reserva",
@@ -749,11 +749,11 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 63,
+        "seg": 61,
+        "esp": 71,
+        "ref": 64,
+        "pos": 65,
         "vel": 40,
         "sta": 30
       },
@@ -789,7 +789,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 13,
       "name": "Jannis Lang",
       "ovr": 64,
       "status": "reserva",
@@ -900,7 +900,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 26,
       "name": "Felix Ruschke",
       "ovr": 61,
       "status": "reserva",
@@ -955,7 +955,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Albin Berisha",
       "ovr": 60,
       "status": "reserva",
@@ -1010,7 +1010,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Benno Dietze",
       "ovr": 59,
       "status": "reserva",
@@ -1066,7 +1066,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Jonas Dirkner",
       "ovr": 59,
       "status": "reserva",
@@ -1121,7 +1121,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Dario Ndubuisi Gebuhr",
       "ovr": 59,
       "status": "reserva",
@@ -1177,7 +1177,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 7,
       "name": "Louis Köster",
       "ovr": 59,
       "status": "reserva",
@@ -1232,7 +1232,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 28,
       "name": "Max Hagemoser",
       "ovr": 58,
       "status": "reserva",
@@ -1247,12 +1247,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 59,
+        "seg": 56,
+        "esp": 66,
+        "ref": 60,
+        "pos": 57,
+        "vel": 17,
         "sta": 28
       },
       "detailedStats": {
@@ -1287,7 +1287,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 29,
       "name": "Joshua Krüger",
       "ovr": 58,
       "status": "reserva",
@@ -1342,7 +1342,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 30,
       "name": "Elias Höftmann",
       "ovr": 57,
       "status": "reserva",
@@ -1357,12 +1357,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 59,
+        "seg": 57,
+        "esp": 66,
+        "ref": 59,
+        "pos": 55,
+        "vel": 28,
         "sta": 25
       },
       "detailedStats": {

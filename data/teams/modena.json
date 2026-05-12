@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Eric Botteghin",
       "ovr": 72,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Antonio Palumbo",
       "ovr": 72,
       "status": "titular",
@@ -123,7 +123,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 14,
       "name": "Giovanni Zaro",
       "ovr": 72,
       "status": "titular",
@@ -181,7 +181,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 7,
       "name": "Giuseppe Caso",
       "ovr": 71,
       "status": "titular",
@@ -238,7 +238,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 9,
       "name": "Pedro Mendes",
       "ovr": 71,
       "status": "titular",
@@ -293,7 +293,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 25,
       "name": "Mattia Caldara",
       "ovr": 70,
       "status": "titular",
@@ -349,7 +349,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 3,
       "name": "Matteo Cotali",
       "ovr": 70,
       "status": "titular",
@@ -404,7 +404,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 10,
       "name": "Antonio Pergreffi",
       "ovr": 70,
       "status": "titular",
@@ -461,7 +461,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 2,
       "name": "Alessandro Di Pardo",
       "ovr": 68,
       "status": "titular",
@@ -516,7 +516,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 1,
       "name": "Riccardo Gagno",
       "ovr": 68,
       "status": "titular",
@@ -531,12 +531,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 68,
+        "esp": 77,
+        "ref": 71,
+        "pos": 69,
+        "vel": 42,
         "sta": 35
       },
       "detailedStats": {
@@ -571,7 +571,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 5,
       "name": "Luca Magnino",
       "ovr": 68,
       "status": "titular",
@@ -626,7 +626,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 18,
       "name": "Simone Santoro",
       "ovr": 68,
       "status": "reserva",
@@ -681,7 +681,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 19,
       "name": "Fabio Abiuso",
       "ovr": 67,
       "status": "reserva",
@@ -736,7 +736,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Cristian Cauz",
       "ovr": 67,
       "status": "reserva",
@@ -792,7 +792,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 20,
       "name": "Fabio Gerli",
       "ovr": 67,
       "status": "reserva",
@@ -906,7 +906,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 13,
       "name": "Fabio Ponsi",
       "ovr": 67,
       "status": "reserva",
@@ -961,7 +961,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 23,
       "name": "Edoardo Duca",
       "ovr": 65,
       "status": "reserva",
@@ -1016,7 +1016,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 30,
       "name": "Romeo Giovannini",
       "ovr": 62,
       "status": "reserva",
@@ -1071,7 +1071,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 21,
       "name": "Roko Vukušić",
       "ovr": 54,
       "status": "reserva",

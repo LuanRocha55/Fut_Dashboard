@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 17,
       "name": "Lionel Messi",
       "ovr": 88,
       "status": "titular",
@@ -69,7 +69,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Luis Suárez",
       "ovr": 82,
       "status": "titular",
@@ -124,7 +124,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 5,
       "name": "Sergio Busquets",
       "ovr": 81,
       "status": "titular",
@@ -182,7 +182,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 3,
       "name": "Jordi Alba",
       "ovr": 80,
       "status": "titular",
@@ -239,7 +239,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 31,
       "name": "Matías Rojas",
       "ovr": 75,
       "status": "titular",
@@ -297,7 +297,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 10,
       "name": "Facundo Farías",
       "ovr": 74,
       "status": "titular",
@@ -356,7 +356,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 8,
       "name": "Federico Redondo",
       "ovr": 74,
       "status": "titular",
@@ -412,7 +412,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 4,
       "name": "Nicolás Freire",
       "ovr": 73,
       "status": "titular",
@@ -468,7 +468,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 11,
       "name": "Julian Gressel",
       "ovr": 72,
       "status": "titular",
@@ -524,7 +524,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "David Martínez",
       "ovr": 72,
       "status": "titular",
@@ -580,7 +580,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 2,
       "name": "Marcelo Weigandt",
       "ovr": 72,
       "status": "titular",
@@ -635,7 +635,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 7,
       "name": "Robert Taylor",
       "ovr": 71,
       "status": "reserva",
@@ -690,7 +690,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 25,
       "name": "Tomás Avilés",
       "ovr": 70,
       "status": "reserva",
@@ -746,7 +746,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 1,
       "name": "Drake Callender",
       "ovr": 70,
       "status": "reserva",
@@ -762,12 +762,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 68,
+        "esp": 82,
+        "ref": 76,
+        "pos": 66,
+        "vel": 25,
         "sta": 30
       },
       "detailedStats": {
@@ -802,7 +802,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 19,
       "name": "Leonardo Campana",
       "ovr": 70,
       "status": "reserva",
@@ -912,7 +912,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 18,
       "name": "Sergiy Kryvtsov",
       "ovr": 69,
       "status": "reserva",
@@ -968,7 +968,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Diego Gómez",
       "ovr": 68,
       "status": "reserva",
@@ -1023,7 +1023,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Benjamin Cremaschi",
       "ovr": 67,
       "status": "reserva",
@@ -1078,7 +1078,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 26,
       "name": "Noah Allen",
       "ovr": 64,
       "status": "reserva",
@@ -1133,7 +1133,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "David Ruiz",
       "ovr": 64,
       "status": "reserva",
@@ -1188,7 +1188,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Ryan Sailor",
       "ovr": 63,
       "status": "reserva",
@@ -1244,7 +1244,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Yannick Bright",
       "ovr": 61,
       "status": "reserva",
@@ -1299,7 +1299,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 12,
       "name": "CJ dos Santos",
       "ovr": 61,
       "status": "reserva",
@@ -1314,12 +1314,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 61,
+        "esp": 69,
+        "ref": 64,
+        "pos": 59,
+        "vel": 29,
         "sta": 25
       },
       "detailedStats": {
@@ -1354,7 +1354,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 27,
       "name": "Ian Fray",
       "ovr": 59,
       "status": "reserva",
@@ -1410,7 +1410,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 28,
       "name": "Lawson Sunderland",
       "ovr": 59,
       "status": "reserva",
@@ -1465,7 +1465,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 13,
       "name": "Israel Boatwright",
       "ovr": 57,
       "status": "reserva",
@@ -1520,7 +1520,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 29,
       "name": "Tyler Hall",
       "ovr": 57,
       "status": "reserva",
@@ -1576,7 +1576,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 30,
       "name": "Cole Jensen",
       "ovr": 57,
       "status": "reserva",
@@ -1591,12 +1591,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 60,
+        "esp": 66,
+        "ref": 58,
+        "pos": 59,
+        "vel": 19,
         "sta": 21
       },
       "detailedStats": {
@@ -1631,7 +1631,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 32,
       "name": "Santiago Morales",
       "ovr": 57,
       "status": "reserva",
@@ -1686,7 +1686,7 @@
     },
     {
       "id": 31,
-      "number": 31,
+      "number": 33,
       "name": "Felipe Valencia",
       "ovr": 54,
       "status": "reserva",

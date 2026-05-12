@@ -24,12 +24,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 67,
+        "esp": 76,
+        "ref": 67,
+        "pos": 66,
+        "vel": 46,
         "sta": 21
       },
       "detailedStats": {
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Waniss Taïbi",
       "ovr": 68,
       "status": "titular",
@@ -230,7 +230,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 18,
       "name": "Wilitty Younoussa",
       "ovr": 66,
       "status": "titular",
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 12,
       "name": "Sébastien Cibois",
       "ovr": 65,
       "status": "titular",
@@ -300,12 +300,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 63,
+        "esp": 73,
+        "ref": 66,
+        "pos": 62,
+        "vel": 30,
         "sta": 30
       },
       "detailedStats": {
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Stone Mambo",
       "ovr": 65,
       "status": "titular",
@@ -396,7 +396,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 2,
       "name": "Ahmad Ngouyamsa",
       "ovr": 64,
       "status": "titular",
@@ -451,7 +451,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 25,
       "name": "Éric Vandenabeele",
       "ovr": 64,
       "status": "titular",
@@ -507,7 +507,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 17,
       "name": "Ibrahima Baldé",
       "ovr": 63,
       "status": "titular",
@@ -617,7 +617,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 16,
       "name": "Raphaël Lipinski",
       "ovr": 62,
       "status": "reserva",
@@ -672,7 +672,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 7,
       "name": "Yannis Verdier",
       "ovr": 62,
       "status": "reserva",
@@ -727,7 +727,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 20,
       "name": "Mohamed Achi",
       "ovr": 61,
       "status": "reserva",
@@ -782,7 +782,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 13,
       "name": "Grégory Coelho",
       "ovr": 61,
       "status": "reserva",
@@ -837,7 +837,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 26,
       "name": "Cheick Doumbia",
       "ovr": 61,
       "status": "reserva",
@@ -892,7 +892,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 19,
       "name": "Derek Mazou-Sacko",
       "ovr": 61,
       "status": "reserva",
@@ -947,7 +947,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 22,
       "name": "Enzo Crombez",
       "ovr": 59,
       "status": "reserva",
@@ -962,12 +962,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 62,
+        "esp": 67,
+        "ref": 61,
+        "pos": 60,
+        "vel": 16,
         "sta": 24
       },
       "detailedStats": {

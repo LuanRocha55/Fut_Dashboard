@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 7,
       "name": "Neymar Jr",
       "ovr": 87,
       "status": "titular",
@@ -68,7 +68,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 3,
       "name": "João Cancelo",
       "ovr": 86,
       "status": "titular",
@@ -128,7 +128,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Sergej Milinković-Savić",
       "ovr": 85,
       "status": "titular",
@@ -188,7 +188,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Yassine Bounou",
       "ovr": 84,
       "status": "titular",
@@ -205,12 +205,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 81,
+        "seg": 82,
+        "esp": 93,
+        "ref": 86,
+        "pos": 83,
+        "vel": 37,
         "sta": 43
       },
       "detailedStats": {
@@ -303,7 +303,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 4,
       "name": "Kalidou Koulibaly",
       "ovr": 84,
       "status": "titular",
@@ -362,7 +362,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 9,
       "name": "Aleksandar Mitrović",
       "ovr": 82,
       "status": "titular",
@@ -418,7 +418,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 10,
       "name": "Malcom",
       "ovr": 82,
       "status": "titular",
@@ -476,7 +476,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 11,
       "name": "Salem Al Dawsari",
       "ovr": 80,
       "status": "titular",
@@ -535,7 +535,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 16,
       "name": "Renan Lodi",
       "ovr": 77,
       "status": "titular",
@@ -590,7 +590,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 14,
       "name": "Ali Al Bulayhi",
       "ovr": 74,
       "status": "titular",
@@ -648,7 +648,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 25,
       "name": "Hassan Tombakti",
       "ovr": 73,
       "status": "reserva",
@@ -706,7 +706,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 18,
       "name": "Mohammed Kanno",
       "ovr": 71,
       "status": "reserva",
@@ -762,7 +762,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 12,
       "name": "Mohammed Al Owais",
       "ovr": 69,
       "status": "reserva",
@@ -777,12 +777,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 77,
+        "seg": 62,
+        "esp": 82,
+        "ref": 71,
+        "pos": 64,
+        "vel": 55,
         "sta": 35
       },
       "detailedStats": {
@@ -817,7 +817,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 26,
       "name": "Yasser Al Shahrani",
       "ovr": 69,
       "status": "reserva",
@@ -872,7 +872,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 17,
       "name": "Muteb Al Harbi",
       "ovr": 68,
       "status": "reserva",
@@ -928,7 +928,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 19,
       "name": "Nasser Al Dawsari",
       "ovr": 66,
       "status": "reserva",
@@ -983,7 +983,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 28,
       "name": "Hamad Al Yami",
       "ovr": 66,
       "status": "reserva",
@@ -1038,7 +1038,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 27,
       "name": "Khalid Al Ghannam",
       "ovr": 62,
       "status": "reserva",
@@ -1095,7 +1095,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Mohammed Al Rubaie",
       "ovr": 62,
       "status": "reserva",
@@ -1110,11 +1110,11 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 67,
+        "seg": 55,
+        "esp": 72,
+        "ref": 63,
+        "pos": 63,
         "vel": 40,
         "sta": 34
       },
@@ -1150,7 +1150,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 20,
       "name": "Abdullah Al Hamdan",
       "ovr": 61,
       "status": "reserva",
@@ -1205,7 +1205,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Mohammed Al Qahtani",
       "ovr": 61,
       "status": "reserva",
@@ -1260,7 +1260,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Khalifa Al Dawsari",
       "ovr": 60,
       "status": "reserva",

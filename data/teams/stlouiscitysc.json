@@ -24,12 +24,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
+        "alc": 82,
         "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "esp": 91,
+        "ref": 82,
+        "pos": 73,
+        "vel": 50,
         "sta": 40
       },
       "detailedStats": {
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Marcel Hartel",
       "ovr": 75,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 18,
       "name": "Eduard Löwen",
       "ovr": 75,
       "status": "titular",
@@ -179,7 +179,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Klauss",
       "ovr": 74,
       "status": "titular",
@@ -235,7 +235,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Joakim Nilsson",
       "ovr": 72,
       "status": "titular",
@@ -291,7 +291,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 10,
       "name": "Cedric Teuchert",
       "ovr": 71,
       "status": "titular",
@@ -346,7 +346,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 11,
       "name": "Rasmus Alm",
       "ovr": 69,
       "status": "titular",
@@ -401,7 +401,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Henry Kessler",
       "ovr": 69,
       "status": "titular",
@@ -457,7 +457,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 25,
       "name": "Jannes Horn",
       "ovr": 68,
       "status": "titular",
@@ -514,7 +514,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 12,
       "name": "Kyle Hiebert",
       "ovr": 67,
       "status": "titular",
@@ -570,7 +570,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 20,
       "name": "Indiana Vassilev",
       "ovr": 67,
       "status": "titular",
@@ -625,7 +625,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 13,
       "name": "Chris Durkin",
       "ovr": 66,
       "status": "reserva",
@@ -680,7 +680,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 2,
       "name": "Jakob Nerwinski",
       "ovr": 66,
       "status": "reserva",
@@ -735,7 +735,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 19,
       "name": "Tomáš Ostrák",
       "ovr": 66,
       "status": "reserva",
@@ -790,7 +790,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 27,
       "name": "Célio Pompeu",
       "ovr": 65,
       "status": "reserva",
@@ -846,7 +846,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 3,
       "name": "Selmir Pidro",
       "ovr": 64,
       "status": "reserva",
@@ -901,7 +901,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 24,
       "name": "Tomas Totland",
       "ovr": 64,
       "status": "reserva",
@@ -956,7 +956,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Joshua Yaro",
       "ovr": 64,
       "status": "reserva",
@@ -1012,7 +1012,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Jake Girdwood-Reich",
       "ovr": 63,
       "status": "reserva",
@@ -1069,7 +1069,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 23,
       "name": "Nökkvi Þórisson",
       "ovr": 62,
       "status": "reserva",
@@ -1124,7 +1124,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 26,
       "name": "Akil Watts",
       "ovr": 62,
       "status": "reserva",
@@ -1179,7 +1179,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 28,
       "name": "Simon Becher",
       "ovr": 60,
       "status": "reserva",
@@ -1234,7 +1234,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 16,
       "name": "Jayden Reid",
       "ovr": 58,
       "status": "reserva",
@@ -1290,7 +1290,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 29,
       "name": "Ben Lundt",
       "ovr": 56,
       "status": "reserva",
@@ -1305,12 +1305,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 56,
+        "seg": 55,
+        "esp": 64,
+        "ref": 59,
+        "pos": 60,
+        "vel": 44,
         "sta": 40
       },
       "detailedStats": {
@@ -1345,7 +1345,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 30,
       "name": "John Klein",
       "ovr": 55,
       "status": "reserva",
@@ -1400,7 +1400,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 31,
       "name": "Caden Glover",
       "ovr": 51,
       "status": "reserva",

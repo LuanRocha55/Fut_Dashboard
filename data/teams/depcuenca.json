@@ -23,12 +23,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 73,
+        "seg": 70,
+        "esp": 79,
+        "ref": 70,
+        "pos": 72,
+        "vel": 41,
         "sta": 42
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Lucas Mancinelli",
       "ovr": 71,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Pablo Magnín",
       "ovr": 68,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 10,
       "name": "Raúl Becerra",
       "ovr": 67,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 8,
       "name": "Francisco Mera",
       "ovr": 67,
       "status": "titular",
@@ -284,7 +284,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 19,
       "name": "Wálter Chalá",
       "ovr": 65,
       "status": "titular",
@@ -339,7 +339,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "David Noboa",
       "ovr": 65,
       "status": "titular",
@@ -394,7 +394,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Nazareno Romero",
       "ovr": 65,
       "status": "titular",
@@ -449,7 +449,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 18,
       "name": "Nicolás Dávila",
       "ovr": 64,
       "status": "titular",
@@ -504,7 +504,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 4,
       "name": "Sixto Mina",
       "ovr": 64,
       "status": "titular",

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Jonas Bager",
       "ovr": 69,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 14,
       "name": "Gustav Svensson",
       "ovr": 69,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 1,
       "name": "Jacob Karlstrøm",
       "ovr": 68,
       "status": "titular",
@@ -136,12 +136,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 66,
+        "esp": 76,
+        "ref": 69,
+        "pos": 66,
+        "vel": 37,
         "sta": 28
       },
       "detailedStats": {
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 7,
       "name": "Arbnor Mucolli",
       "ovr": 68,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 10,
       "name": "Ramon Pascal Lundqvist",
       "ovr": 67,
       "status": "titular",
@@ -344,7 +344,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 2,
       "name": "Emil Salomonsson",
       "ovr": 67,
       "status": "titular",
@@ -399,7 +399,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Anders Trondsen",
       "ovr": 67,
       "status": "titular",
@@ -454,7 +454,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 16,
       "name": "Oscar Wendt",
       "ovr": 66,
       "status": "titular",
@@ -510,7 +510,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 11,
       "name": "Paulos Abraham",
       "ovr": 65,
       "status": "titular",
@@ -565,7 +565,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 9,
       "name": "Nikolai Baden Frederiksen",
       "ovr": 65,
       "status": "titular",
@@ -620,7 +620,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 21,
       "name": "Adam Carlén",
       "ovr": 65,
       "status": "reserva",
@@ -677,7 +677,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 12,
       "name": "Pontus Dahlberg",
       "ovr": 65,
       "status": "reserva",
@@ -692,12 +692,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
+        "alc": 67,
+        "seg": 62,
         "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "ref": 68,
+        "pos": 66,
+        "vel": 39,
         "sta": 35
       },
       "detailedStats": {
@@ -732,7 +732,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 13,
       "name": "Sebastian Ohlsson",
       "ovr": 65,
       "status": "reserva",
@@ -787,7 +787,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 17,
       "name": "Thomas Santos",
       "ovr": 65,
       "status": "reserva",
@@ -842,7 +842,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 19,
       "name": "Suleiman Abdullahi",
       "ovr": 64,
       "status": "reserva",
@@ -897,7 +897,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 29,
       "name": "Hussein Carneil",
       "ovr": 64,
       "status": "reserva",
@@ -952,7 +952,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 27,
       "name": "Gustaf Norlin",
       "ovr": 64,
       "status": "reserva",
@@ -1007,7 +1007,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 31,
       "name": "Oscar Pettersson",
       "ovr": 64,
       "status": "reserva",
@@ -1062,7 +1062,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Anders Kristiansen",
       "ovr": 63,
       "status": "reserva",
@@ -1077,12 +1077,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 61,
+        "esp": 72,
+        "ref": 65,
+        "pos": 63,
+        "vel": 28,
         "sta": 25
       },
       "detailedStats": {
@@ -1117,7 +1117,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 8,
       "name": "David Kruse",
       "ovr": 63,
       "status": "reserva",
@@ -1172,7 +1172,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Elis Bishesari",
       "ovr": 62,
       "status": "reserva",
@@ -1187,12 +1187,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 61,
+        "esp": 71,
+        "ref": 63,
+        "pos": 61,
+        "vel": 28,
         "sta": 23
       },
       "detailedStats": {
@@ -1227,7 +1227,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 18,
       "name": "Kolbeinn Thórdarson",
       "ovr": 62,
       "status": "reserva",
@@ -1282,7 +1282,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 20,
       "name": "Laurs Skjellerup",
       "ovr": 61,
       "status": "reserva",
@@ -1447,7 +1447,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 28,
       "name": "Linus Carlstrand",
       "ovr": 55,
       "status": "reserva",

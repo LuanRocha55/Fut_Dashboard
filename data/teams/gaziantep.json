@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Alexandru Maxim",
       "ovr": 75,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Kenan Kodro",
       "ovr": 72,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 1,
       "name": "Sokratis Dioudis",
       "ovr": 70,
       "status": "titular",
@@ -136,12 +136,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 69,
+        "esp": 79,
+        "ref": 71,
+        "pos": 69,
+        "vel": 45,
         "sta": 33
       },
       "detailedStats": {
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 3,
       "name": "Saborit",
       "ovr": 70,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 11,
       "name": "Deian Sorescu",
       "ovr": 69,
       "status": "titular",
@@ -286,7 +286,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 19,
       "name": "Kacper Kozłowski",
       "ovr": 68,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Cyril Mandouki",
       "ovr": 68,
       "status": "titular",
@@ -452,7 +452,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 28,
       "name": "Mustafa Eskihellaç",
       "ovr": 67,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 4,
       "name": "Arda Kızıldağ",
       "ovr": 67,
       "status": "titular",
@@ -565,7 +565,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 2,
       "name": "Salem M'Bakata",
       "ovr": 67,
       "status": "titular",
@@ -620,7 +620,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 14,
       "name": "Ertuğrul Ersoy",
       "ovr": 65,
       "status": "reserva",
@@ -732,7 +732,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 18,
       "name": "Quentin Daubin",
       "ovr": 63,
       "status": "reserva",
@@ -787,7 +787,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 12,
       "name": "Mustafa Burak Bozan",
       "ovr": 61,
       "status": "reserva",
@@ -802,12 +802,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 60,
+        "esp": 69,
+        "ref": 62,
+        "pos": 58,
+        "vel": 21,
         "sta": 28
       },
       "detailedStats": {
@@ -842,7 +842,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 20,
       "name": "Luka Stankovski",
       "ovr": 61,
       "status": "reserva",
@@ -897,7 +897,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 27,
       "name": "Mirza Cihan",
       "ovr": 59,
       "status": "reserva",
@@ -952,7 +952,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 16,
       "name": "Godfrey Stephen",
       "ovr": 59,
       "status": "reserva",
@@ -1007,7 +1007,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Berke Gürbüz",
       "ovr": 58,
       "status": "reserva",
@@ -1062,7 +1062,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "İlker Karakaş",
       "ovr": 57,
       "status": "reserva",

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Bård Finne",
       "ovr": 70,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Mathias Dyngeland",
       "ovr": 68,
       "status": "titular",
@@ -78,12 +78,12 @@
         "Far Reach"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 66,
+        "esp": 76,
+        "ref": 68,
+        "pos": 67,
+        "vel": 42,
         "sta": 35
       },
       "detailedStats": {
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Fredrik P. Knudsen",
       "ovr": 66,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 3,
       "name": "Ruben Kristiansen",
       "ovr": 66,
       "status": "titular",
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 14,
       "name": "Japhet Sery Larsen",
       "ovr": 66,
       "status": "titular",
@@ -290,7 +290,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Felix Horn Myhre",
       "ovr": 66,
       "status": "titular",
@@ -346,7 +346,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 17,
       "name": "Ole Didrik Blomberg",
       "ovr": 65,
       "status": "titular",
@@ -402,7 +402,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 7,
       "name": "Niklas Castro",
       "ovr": 65,
       "status": "titular",
@@ -458,7 +458,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 2,
       "name": "Svenn Crone",
       "ovr": 65,
       "status": "titular",
@@ -513,7 +513,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 18,
       "name": "Sakarias Opsahl",
       "ovr": 65,
       "status": "titular",
@@ -568,7 +568,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 16,
       "name": "Joachim Soltvedt",
       "ovr": 65,
       "status": "titular",
@@ -623,7 +623,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 20,
       "name": "Sander Erik Kartum",
       "ovr": 64,
       "status": "reserva",
@@ -733,7 +733,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 24,
       "name": "Thore Pedersen",
       "ovr": 64,
       "status": "reserva",
@@ -788,7 +788,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 31,
       "name": "Mads Sande",
       "ovr": 64,
       "status": "reserva",
@@ -843,7 +843,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 10,
       "name": "Aune Selland Heggebø",
       "ovr": 63,
       "status": "reserva",
@@ -898,7 +898,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 29,
       "name": "Niklas Jensen Wassberg",
       "ovr": 62,
       "status": "reserva",
@@ -953,7 +953,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 32,
       "name": "Ulrik Mathisen",
       "ovr": 61,
       "status": "reserva",
@@ -1063,7 +1063,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 21,
       "name": "Martin Hellan",
       "ovr": 58,
       "status": "reserva",
@@ -1118,7 +1118,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 26,
       "name": "Jonas Torsvik",
       "ovr": 54,
       "status": "reserva",

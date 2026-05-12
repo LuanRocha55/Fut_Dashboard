@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Colby Bishop",
       "ovr": 69,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 5,
       "name": "Marlon Pack",
       "ovr": 69,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Regan Poole",
       "ovr": 69,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 14,
       "name": "Conor Shaughnessy",
       "ovr": 69,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 8,
       "name": "Andre Dozzell",
       "ovr": 68,
       "status": "titular",
@@ -289,7 +289,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 11,
       "name": "Josh Murphy",
       "ovr": 68,
       "status": "titular",
@@ -344,7 +344,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 1,
       "name": "Will Norris",
       "ovr": 68,
       "status": "titular",
@@ -360,12 +360,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 67,
+        "esp": 77,
+        "ref": 69,
+        "pos": 65,
+        "vel": 49,
         "sta": 36
       },
       "detailedStats": {
@@ -400,7 +400,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Jacob Farrell",
       "ovr": 67,
       "status": "titular",
@@ -457,7 +457,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 19,
       "name": "Paddy Lane",
       "ovr": 67,
       "status": "titular",
@@ -567,7 +567,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 18,
       "name": "Owen Moxon",
       "ovr": 67,
       "status": "titular",
@@ -626,7 +626,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 16,
       "name": "Connor Ogilvie",
       "ovr": 67,
       "status": "reserva",
@@ -681,7 +681,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 21,
       "name": "Freddie Potts",
       "ovr": 67,
       "status": "reserva",
@@ -736,7 +736,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 2,
       "name": "Jordan Williams",
       "ovr": 67,
       "status": "reserva",
@@ -793,7 +793,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "Tom McIntyre",
       "ovr": 66,
       "status": "reserva",
@@ -849,7 +849,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 12,
       "name": "Nicolas Schmid",
       "ovr": 66,
       "status": "reserva",
@@ -864,12 +864,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 65,
+        "esp": 74,
+        "ref": 70,
+        "pos": 65,
+        "vel": 30,
         "sta": 22
       },
       "detailedStats": {
@@ -904,7 +904,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 20,
       "name": "Kusini Yengi",
       "ovr": 66,
       "status": "reserva",
@@ -959,7 +959,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 22,
       "name": "Tom Lowery",
       "ovr": 65,
       "status": "reserva",
@@ -1014,7 +1014,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 23,
       "name": "Christian Saydee",
       "ovr": 65,
       "status": "reserva",
@@ -1069,7 +1069,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 27,
       "name": "Samuel Silvera",
       "ovr": 65,
       "status": "reserva",
@@ -1124,7 +1124,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 13,
       "name": "Zak Swanson",
       "ovr": 65,
       "status": "reserva",
@@ -1179,7 +1179,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Jordan Archer",
       "ovr": 64,
       "status": "reserva",
@@ -1194,12 +1194,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 63,
+        "esp": 71,
+        "ref": 64,
+        "pos": 65,
+        "vel": 42,
         "sta": 27
       },
       "detailedStats": {
@@ -1234,7 +1234,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Elias Sørensen",
       "ovr": 64,
       "status": "reserva",
@@ -1289,7 +1289,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 28,
       "name": "Ryley Towler",
       "ovr": 64,
       "status": "reserva",
@@ -1345,7 +1345,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Terry Devlin",
       "ovr": 63,
       "status": "reserva",
@@ -1400,7 +1400,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 30,
       "name": "Ben Stevenson",
       "ovr": 63,
       "status": "reserva",
@@ -1455,7 +1455,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 31,
       "name": "Abdoulaye Kamara",
       "ovr": 62,
       "status": "reserva",

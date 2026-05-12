@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Pierre-Emerick Aubameyang",
       "ovr": 82,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Koen Casteels",
       "ovr": 82,
       "status": "titular",
@@ -82,12 +82,12 @@
         "1v1 Close Down"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 82,
+        "seg": 79,
+        "esp": 93,
+        "ref": 85,
+        "pos": 83,
+        "vel": 46,
         "sta": 44
       },
       "detailedStats": {
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Nacho Fernández",
       "ovr": 82,
       "status": "titular",
@@ -180,7 +180,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Cameron Puertas",
       "ovr": 78,
       "status": "titular",
@@ -236,7 +236,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 10,
       "name": "Julian Quiñones",
       "ovr": 78,
       "status": "titular",
@@ -293,7 +293,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 23,
       "name": "André Carrillo",
       "ovr": 77,
       "status": "titular",
@@ -351,7 +351,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Gastón Álvarez",
       "ovr": 75,
       "status": "titular",
@@ -408,7 +408,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 11,
       "name": "Nahitan Nández",
       "ovr": 75,
       "status": "titular",
@@ -466,7 +466,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 5,
       "name": "Ezequiel Fernández",
       "ovr": 73,
       "status": "titular",
@@ -524,7 +524,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 18,
       "name": "Hussain Al Qahtani",
       "ovr": 68,
       "status": "titular",
@@ -579,7 +579,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 21,
       "name": "Ali Hazazi",
       "ovr": 67,
       "status": "titular",
@@ -634,7 +634,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 7,
       "name": "Turki Al Ammar",
       "ovr": 63,
       "status": "reserva",
@@ -689,7 +689,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 12,
       "name": "Ahmed Al Kassar",
       "ovr": 63,
       "status": "reserva",
@@ -704,12 +704,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 63,
+        "esp": 71,
+        "ref": 65,
+        "pos": 63,
+        "vel": 41,
         "sta": 35
       },
       "detailedStats": {
@@ -744,7 +744,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 25,
       "name": "Qasem Lajami",
       "ovr": 63,
       "status": "reserva",
@@ -856,7 +856,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 17,
       "name": "Ayman Al Khulaif",
       "ovr": 62,
       "status": "reserva",
@@ -911,7 +911,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 2,
       "name": "Abdullah Hassoun",
       "ovr": 62,
       "status": "reserva",
@@ -966,7 +966,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 3,
       "name": "Abdullah Al Shamekh",
       "ovr": 61,
       "status": "reserva",
@@ -1021,7 +1021,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 16,
       "name": "Mohammed Qasem",
       "ovr": 61,
       "status": "reserva",
@@ -1131,7 +1131,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 26,
       "name": "Mohammed Al Shanqeeti",
       "ovr": 59,
       "status": "reserva",
@@ -1186,7 +1186,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 19,
       "name": "Haitham Asiri",
       "ovr": 59,
       "status": "reserva",
@@ -1241,7 +1241,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Naif Masoud",
       "ovr": 58,
       "status": "reserva",

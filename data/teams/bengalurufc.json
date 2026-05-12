@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Edgar Méndez",
       "ovr": 72,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Jorge Pereyra Díaz",
       "ovr": 71,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "Noguera",
       "ovr": 69,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 19,
       "name": "Sunil Chhetri",
       "ovr": 66,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Aleksandar Jovanović",
       "ovr": 65,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 2,
       "name": "Rahul Bheke",
       "ovr": 64,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Pedro Capó",
       "ovr": 64,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 1,
       "name": "Gurpreet Singh Sandhu",
       "ovr": 64,
       "status": "titular",
@@ -414,11 +414,11 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 63,
+        "seg": 62,
+        "esp": 70,
+        "ref": 63,
+        "pos": 65,
         "vel": 40,
         "sta": 36
       },
@@ -454,7 +454,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 20,
       "name": "Ryan Williams",
       "ovr": 63,
       "status": "titular",
@@ -510,7 +510,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Chinglensana Singh",
       "ovr": 61,
       "status": "titular",
@@ -566,7 +566,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 27,
       "name": "Halicharan Narzary",
       "ovr": 59,
       "status": "titular",
@@ -621,7 +621,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 3,
       "name": "Roshan Singh",
       "ovr": 59,
       "status": "reserva",
@@ -676,7 +676,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 8,
       "name": "Suresh Singh Wangjam",
       "ovr": 58,
       "status": "reserva",
@@ -731,7 +731,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 16,
       "name": "Jessel Carneiro",
       "ovr": 57,
       "status": "reserva",
@@ -786,7 +786,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 13,
       "name": "Nikhil Poojary",
       "ovr": 57,
       "status": "reserva",
@@ -841,7 +841,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 17,
       "name": "Sivasakthi Narayanan",
       "ovr": 56,
       "status": "reserva",
@@ -896,7 +896,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 7,
       "name": "Rohit Danu",
       "ovr": 54,
       "status": "reserva",
@@ -1007,7 +1007,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 24,
       "name": "Namgyal Bhutia",
       "ovr": 52,
       "status": "reserva",
@@ -1062,7 +1062,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 12,
       "name": "Lalthuammawia Ralte",
       "ovr": 51,
       "status": "reserva",
@@ -1077,12 +1077,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 50,
+        "seg": 50,
+        "esp": 57,
+        "ref": 53,
+        "pos": 51,
+        "vel": 26,
         "sta": 21
       },
       "detailedStats": {
@@ -1117,7 +1117,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 5,
       "name": "Lalremtluanga Fanai",
       "ovr": 50,
       "status": "reserva",
@@ -1172,7 +1172,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 29,
       "name": "Ashish Jha",
       "ovr": 50,
       "status": "reserva",
@@ -1282,7 +1282,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 21,
       "name": "Harsh Patre",
       "ovr": 49,
       "status": "reserva",

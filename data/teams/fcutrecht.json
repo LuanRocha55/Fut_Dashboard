@@ -23,11 +23,11 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "alc": 74,
+        "seg": 72,
+        "esp": 83,
         "ref": 75,
-        "pos": 75,
+        "pos": 72,
         "vel": 40,
         "sta": 39
       },
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Mike van der Hoorn",
       "ovr": 73,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 14,
       "name": "Nick Viergever",
       "ovr": 72,
       "status": "titular",
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 3,
       "name": "Souffian El Karouani",
       "ovr": 71,
       "status": "titular",
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 10,
       "name": "Jens Toornstra",
       "ovr": 71,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 11,
       "name": "Taylor Booth",
       "ovr": 70,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 23,
       "name": "Paxten Aaronson",
       "ovr": 69,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 12,
       "name": "Michael Brouwer",
       "ovr": 69,
       "status": "titular",
@@ -468,12 +468,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 72,
+        "seg": 68,
+        "esp": 77,
+        "ref": 67,
+        "pos": 64,
+        "vel": 27,
         "sta": 25
       },
       "detailedStats": {
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 30,
       "name": "Victor Jensen",
       "ovr": 69,
       "status": "titular",
@@ -563,7 +563,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 5,
       "name": "Oscar Luigi Fraulo",
       "ovr": 68,
       "status": "titular",
@@ -618,7 +618,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 2,
       "name": "Siebe Horemans",
       "ovr": 68,
       "status": "reserva",
@@ -677,7 +677,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 19,
       "name": "Miguel Rodríguez",
       "ovr": 68,
       "status": "reserva",
@@ -732,7 +732,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 27,
       "name": "Yoann Cathline",
       "ovr": 67,
       "status": "reserva",
@@ -787,7 +787,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "Matisse Didden",
       "ovr": 67,
       "status": "reserva",
@@ -898,7 +898,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 9,
       "name": "David Min",
       "ovr": 67,
       "status": "reserva",
@@ -953,7 +953,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 28,
       "name": "Ole Romeny",
       "ovr": 66,
       "status": "reserva",
@@ -1008,7 +1008,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 20,
       "name": "Noah Ohio",
       "ovr": 65,
       "status": "reserva",
@@ -1063,7 +1063,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 13,
       "name": "Niklas Vesterlund",
       "ovr": 65,
       "status": "reserva",
@@ -1173,7 +1173,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 18,
       "name": "Zidane Iqbal",
       "ovr": 63,
       "status": "reserva",
@@ -1229,7 +1229,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Adrian Blake",
       "ovr": 62,
       "status": "reserva",
@@ -1284,7 +1284,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 22,
       "name": "Tom de Graaff",
       "ovr": 60,
       "status": "reserva",
@@ -1299,12 +1299,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 57,
+        "esp": 67,
+        "ref": 60,
+        "pos": 56,
+        "vel": 29,
         "sta": 25
       },
       "detailedStats": {
@@ -1339,7 +1339,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "Joshua Mukeh",
       "ovr": 60,
       "status": "reserva",
@@ -1395,7 +1395,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Kevin Gadellaa",
       "ovr": 59,
       "status": "reserva",
@@ -1410,12 +1410,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 58,
+        "esp": 67,
+        "ref": 61,
+        "pos": 55,
+        "vel": 32,
         "sta": 24
       },
       "detailedStats": {

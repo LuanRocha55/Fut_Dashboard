@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Kennedy Boateng",
       "ovr": 68,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 7,
       "name": "Dennis Politic",
       "ovr": 68,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 2,
       "name": "Maxime Sivis",
       "ovr": 68,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 10,
       "name": "Cătălin Cîrjan",
       "ovr": 66,
       "status": "titular",
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 1,
       "name": "Adnan Golubović",
       "ovr": 66,
       "status": "titular",
@@ -300,11 +300,11 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 67,
+        "seg": 65,
+        "esp": 76,
+        "ref": 70,
+        "pos": 62,
         "vel": 40,
         "sta": 32
       },
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 17,
       "name": "Georgi Milanov",
       "ovr": 66,
       "status": "titular",
@@ -395,7 +395,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Raul Opruț",
       "ovr": 66,
       "status": "titular",
@@ -451,7 +451,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 13,
       "name": "Cristian Costin",
       "ovr": 65,
       "status": "titular",
@@ -506,7 +506,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 9,
       "name": "Hakim Abdallah",
       "ovr": 64,
       "status": "titular",
@@ -561,7 +561,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 16,
       "name": "Costin Amzăr",
       "ovr": 64,
       "status": "titular",
@@ -618,7 +618,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 23,
       "name": "Ahmed Bani",
       "ovr": 63,
       "status": "reserva",
@@ -673,7 +673,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 19,
       "name": "Astrit Selmani",
       "ovr": 63,
       "status": "reserva",
@@ -728,7 +728,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 31,
       "name": "Antonio Bordușanu",
       "ovr": 62,
       "status": "reserva",
@@ -783,7 +783,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 14,
       "name": "Josué Homawoo",
       "ovr": 62,
       "status": "reserva",
@@ -839,7 +839,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 25,
       "name": "Răzvan Pașcalău",
       "ovr": 62,
       "status": "reserva",
@@ -895,7 +895,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 18,
       "name": "Răzvan Patriche",
       "ovr": 62,
       "status": "reserva",
@@ -951,7 +951,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 29,
       "name": "Adrian Caragea",
       "ovr": 61,
       "status": "reserva",
@@ -1006,7 +1006,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 8,
       "name": "Andrei Mărginean",
       "ovr": 61,
       "status": "reserva",
@@ -1116,7 +1116,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 12,
       "name": "Alexandru Roșca",
       "ovr": 59,
       "status": "reserva",
@@ -1131,12 +1131,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 57,
+        "esp": 66,
+        "ref": 58,
+        "pos": 57,
+        "vel": 33,
         "sta": 28
       },
       "detailedStats": {
@@ -1226,7 +1226,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Alexandru Irimia",
       "ovr": 57,
       "status": "reserva",
@@ -1281,7 +1281,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Răzvan Began",
       "ovr": 56,
       "status": "reserva",
@@ -1296,12 +1296,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 54,
+        "esp": 63,
+        "ref": 55,
+        "pos": 54,
+        "vel": 33,
         "sta": 45
       },
       "detailedStats": {
@@ -1336,7 +1336,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 27,
       "name": "Raul Rotund",
       "ovr": 54,
       "status": "reserva",
@@ -1391,7 +1391,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 28,
       "name": "Cristian Licsandru",
       "ovr": 50,
       "status": "reserva",

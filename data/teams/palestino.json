@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Cristián Suárez",
       "ovr": 71,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Joe Abrigo",
       "ovr": 70,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 1,
       "name": "César Rigamonti",
       "ovr": 70,
       "status": "titular",
@@ -134,12 +134,12 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 69,
+        "esp": 78,
+        "ref": 71,
+        "pos": 71,
+        "vel": 41,
         "sta": 29
       },
       "detailedStats": {
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 11,
       "name": "Jonathan Benítez",
       "ovr": 69,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 19,
       "name": "Bryan Carrasco",
       "ovr": 69,
       "status": "titular",
@@ -284,7 +284,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Misael Dávila",
       "ovr": 68,
       "status": "titular",
@@ -339,7 +339,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Nicolás Linares",
       "ovr": 68,
       "status": "titular",
@@ -394,7 +394,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 9,
       "name": "Gonzalo Sosa",
       "ovr": 68,
       "status": "titular",
@@ -449,7 +449,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "Dilan Zúñiga",
       "ovr": 68,
       "status": "titular",
@@ -504,7 +504,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 27,
       "name": "Michael Fuentes Vadulli",
       "ovr": 67,
       "status": "titular",
@@ -559,7 +559,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 16,
       "name": "Brayan Véjar",
       "ovr": 67,
       "status": "titular",
@@ -615,7 +615,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 2,
       "name": "José Bizama",
       "ovr": 66,
       "status": "reserva",
@@ -670,7 +670,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Junior Marabel",
       "ovr": 66,
       "status": "reserva",
@@ -725,7 +725,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 23,
       "name": "Felipe Chamorro",
       "ovr": 64,
       "status": "reserva",
@@ -780,7 +780,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 18,
       "name": "Ariel Martínez",
       "ovr": 64,
       "status": "reserva",
@@ -835,7 +835,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 13,
       "name": "Benjamín Rojas",
       "ovr": 63,
       "status": "reserva",
@@ -890,7 +890,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 28,
       "name": "Pablo Palacio",
       "ovr": 61,
       "status": "reserva",
@@ -945,7 +945,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Nicolás Meza",
       "ovr": 60,
       "status": "reserva",
@@ -1000,7 +1000,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 14,
       "name": "Iván Román",
       "ovr": 60,
       "status": "reserva",
@@ -1056,7 +1056,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 25,
       "name": "Antonio Ceza",
       "ovr": 58,
       "status": "reserva",
@@ -1112,7 +1112,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 12,
       "name": "Dixon Contreras",
       "ovr": 57,
       "status": "reserva",
@@ -1127,12 +1127,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 54,
+        "esp": 64,
+        "ref": 55,
+        "pos": 53,
+        "vel": 22,
         "sta": 21
       },
       "detailedStats": {
@@ -1182,12 +1182,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 54,
+        "esp": 64,
+        "ref": 57,
+        "pos": 51,
+        "vel": 18,
         "sta": 23
       },
       "detailedStats": {

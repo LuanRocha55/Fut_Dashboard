@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Evander",
       "ovr": 77,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Jonathan Rodríguez",
       "ovr": 77,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 5,
       "name": "Diego Chará",
       "ovr": 73,
       "status": "titular",
@@ -179,7 +179,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Maxime Crépeau",
       "ovr": 73,
       "status": "titular",
@@ -195,12 +195,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "alc": 74,
+        "seg": 71,
+        "esp": 83,
         "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "pos": 71,
+        "vel": 48,
         "sta": 33
       },
       "detailedStats": {
@@ -235,7 +235,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Kamal Miller",
       "ovr": 71,
       "status": "titular",
@@ -291,7 +291,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 19,
       "name": "Felipe Mora",
       "ovr": 71,
       "status": "titular",
@@ -346,7 +346,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 11,
       "name": "Santiago Moreno",
       "ovr": 71,
       "status": "titular",
@@ -402,7 +402,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Claudio Bravo",
       "ovr": 70,
       "status": "titular",
@@ -457,7 +457,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 27,
       "name": "Antony",
       "ovr": 69,
       "status": "titular",
@@ -513,7 +513,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 21,
       "name": "Cristhian Paredes",
       "ovr": 69,
       "status": "titular",
@@ -568,7 +568,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 23,
       "name": "Eryk Williamson",
       "ovr": 69,
       "status": "titular",
@@ -678,7 +678,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 14,
       "name": "Zac McGraw",
       "ovr": 66,
       "status": "reserva",
@@ -734,7 +734,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 2,
       "name": "Juan David Mosquera",
       "ovr": 66,
       "status": "reserva",
@@ -789,7 +789,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "Finn Surman",
       "ovr": 66,
       "status": "reserva",
@@ -845,7 +845,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 20,
       "name": "Mason Toye",
       "ovr": 66,
       "status": "reserva",
@@ -1013,7 +1013,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Marvin Loría",
       "ovr": 65,
       "status": "reserva",
@@ -1068,7 +1068,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 24,
       "name": "James Pantemis",
       "ovr": 65,
       "status": "reserva",
@@ -1083,12 +1083,12 @@
         "1v1 Close Down"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 63,
+        "esp": 73,
+        "ref": 66,
+        "pos": 65,
+        "vel": 32,
         "sta": 30
       },
       "detailedStats": {
@@ -1123,7 +1123,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 13,
       "name": "Eric Miller",
       "ovr": 64,
       "status": "reserva",
@@ -1178,7 +1178,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Trey Muse",
       "ovr": 56,
       "status": "reserva",
@@ -1193,12 +1193,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 59,
+        "seg": 56,
+        "esp": 64,
+        "ref": 57,
+        "pos": 59,
+        "vel": 44,
         "sta": 38
       },
       "detailedStats": {

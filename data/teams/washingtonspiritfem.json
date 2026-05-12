@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Trinity Rodman",
       "ovr": 84,
       "status": "titular",
@@ -69,7 +69,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Aubrey Kingsbury",
       "ovr": 83,
       "status": "titular",
@@ -84,12 +84,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 84,
+        "seg": 82,
+        "esp": 93,
+        "ref": 84,
+        "pos": 83,
+        "vel": 47,
         "sta": 23
       },
       "detailedStats": {
@@ -124,7 +124,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Ouleymata Sarr",
       "ovr": 83,
       "status": "titular",
@@ -240,7 +240,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 10,
       "name": "Ashley Hatch",
       "ovr": 82,
       "status": "titular",
@@ -298,7 +298,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 5,
       "name": "Andi Sullivan",
       "ovr": 81,
       "status": "titular",
@@ -354,7 +354,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 19,
       "name": "Rosemonde Kouassi",
       "ovr": 80,
       "status": "titular",
@@ -410,7 +410,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Casey Krueger",
       "ovr": 77,
       "status": "titular",
@@ -467,7 +467,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 2,
       "name": "Gabrielle Carle",
       "ovr": 76,
       "status": "titular",
@@ -525,7 +525,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 12,
       "name": "Nicole Barnhart",
       "ovr": 75,
       "status": "titular",
@@ -540,12 +540,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 80,
+        "esp": 76,
+        "ref": 65,
+        "pos": 81,
+        "vel": 31,
         "sta": 28
       },
       "detailedStats": {
@@ -580,7 +580,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 14,
       "name": "Tara McKeown",
       "ovr": 75,
       "status": "titular",
@@ -637,7 +637,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 23,
       "name": "Croix Bethune",
       "ovr": 74,
       "status": "reserva",
@@ -749,7 +749,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 27,
       "name": "Brittany Ratcliffe",
       "ovr": 74,
       "status": "reserva",
@@ -804,7 +804,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 16,
       "name": "Anna Heilferty",
       "ovr": 72,
       "status": "reserva",
@@ -859,7 +859,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 8,
       "name": "Paige Metayer",
       "ovr": 72,
       "status": "reserva",
@@ -914,7 +914,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 21,
       "name": "Hal Hershfelt",
       "ovr": 71,
       "status": "reserva",
@@ -969,7 +969,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 26,
       "name": "Kate Wiesner",
       "ovr": 71,
       "status": "reserva",
@@ -1024,7 +1024,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 18,
       "name": "Courtney Brown",
       "ovr": 69,
       "status": "reserva",
@@ -1134,7 +1134,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Lena Silano",
       "ovr": 69,
       "status": "reserva",
@@ -1189,7 +1189,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Lyza Bosselmann",
       "ovr": 67,
       "status": "reserva",
@@ -1204,12 +1204,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 68,
+        "esp": 74,
+        "ref": 67,
+        "pos": 68,
+        "vel": 33,
         "sta": 21
       },
       "detailedStats": {
@@ -1244,7 +1244,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 25,
       "name": "Heather Stainbrook",
       "ovr": 67,
       "status": "reserva",
@@ -1299,7 +1299,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 28,
       "name": "Makenna Morris",
       "ovr": 65,
       "status": "reserva",
@@ -1354,7 +1354,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Chloe Ricketts",
       "ovr": 62,
       "status": "reserva",

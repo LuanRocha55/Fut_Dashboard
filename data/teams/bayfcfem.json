@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Asisat Oshoala",
       "ovr": 85,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 7,
       "name": "Racheal Kundananji",
       "ovr": 83,
       "status": "titular",
@@ -127,7 +127,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Rachel Hill",
       "ovr": 81,
       "status": "titular",
@@ -182,7 +182,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Deyna Castellanos",
       "ovr": 80,
       "status": "titular",
@@ -238,7 +238,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Abby Dahlkemper",
       "ovr": 80,
       "status": "titular",
@@ -294,7 +294,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 2,
       "name": "Caprice Dydasco",
       "ovr": 78,
       "status": "titular",
@@ -352,7 +352,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Jen Beattie",
       "ovr": 76,
       "status": "titular",
@@ -408,7 +408,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 25,
       "name": "Emily Menges",
       "ovr": 76,
       "status": "titular",
@@ -464,7 +464,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 1,
       "name": "Katelyn Rowland",
       "ovr": 76,
       "status": "titular",
@@ -480,12 +480,12 @@
         "Far Reach"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 76,
+        "seg": 76,
+        "esp": 84,
+        "ref": 76,
+        "pos": 77,
+        "vel": 30,
         "sta": 38
       },
       "detailedStats": {
@@ -520,7 +520,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 18,
       "name": "Dorian Bailey",
       "ovr": 74,
       "status": "titular",
@@ -576,7 +576,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 12,
       "name": "Alexis Loera",
       "ovr": 73,
       "status": "titular",
@@ -632,7 +632,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 20,
       "name": "Joelle Anderson",
       "ovr": 71,
       "status": "reserva",
@@ -687,7 +687,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 17,
       "name": "Tess Boade",
       "ovr": 70,
       "status": "reserva",
@@ -742,7 +742,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 19,
       "name": "Penelope Hocking",
       "ovr": 70,
       "status": "reserva",
@@ -797,7 +797,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 3,
       "name": "Alyssa Malonson",
       "ovr": 70,
       "status": "reserva",
@@ -852,7 +852,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 22,
       "name": "Lysianne Proulx",
       "ovr": 70,
       "status": "reserva",
@@ -867,12 +867,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 72,
+        "seg": 67,
+        "esp": 78,
+        "ref": 68,
+        "pos": 69,
+        "vel": 32,
         "sta": 31
       },
       "detailedStats": {
@@ -907,7 +907,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 5,
       "name": "Kiki Pickett",
       "ovr": 69,
       "status": "reserva",
@@ -962,7 +962,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Jordan Silkowitz",
       "ovr": 69,
       "status": "reserva",
@@ -977,12 +977,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 67,
+        "esp": 77,
+        "ref": 70,
+        "pos": 66,
+        "vel": 53,
         "sta": 29
       },
       "detailedStats": {
@@ -1017,7 +1017,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 10,
       "name": "Princess Marfo",
       "ovr": 68,
       "status": "reserva",
@@ -1072,7 +1072,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 16,
       "name": "Savy King",
       "ovr": 67,
       "status": "reserva",
@@ -1127,7 +1127,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 23,
       "name": "Melissa Lowder",
       "ovr": 62,
       "status": "reserva",
@@ -1142,12 +1142,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 58,
+        "esp": 73,
+        "ref": 68,
+        "pos": 58,
+        "vel": 51,
         "sta": 38
       },
       "detailedStats": {
@@ -1182,7 +1182,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 13,
       "name": "Maddie Moreau",
       "ovr": 61,
       "status": "reserva",
@@ -1237,7 +1237,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Emmie Allen",
       "ovr": 59,
       "status": "reserva",
@@ -1252,12 +1252,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 58,
+        "esp": 68,
+        "ref": 62,
+        "pos": 56,
+        "vel": 20,
         "sta": 20
       },
       "detailedStats": {
@@ -1292,7 +1292,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Maya Doms",
       "ovr": 59,
       "status": "reserva",
@@ -1347,7 +1347,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 27,
       "name": "Jamie Shepherd",
       "ovr": 59,
       "status": "reserva",
@@ -1402,7 +1402,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 28,
       "name": "Jordan Brewster",
       "ovr": 58,
       "status": "reserva",
@@ -1458,7 +1458,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 29,
       "name": "Caroline Conti",
       "ovr": 58,
       "status": "reserva",

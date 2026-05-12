@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Héctor Herrera",
       "ovr": 78,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Ezequiel Ponce",
       "ovr": 75,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Erik Sviatchenko",
       "ovr": 73,
       "status": "titular",
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 5,
       "name": "Artur",
       "ovr": 72,
       "status": "titular",
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 18,
       "name": "Adalberto Carrasquilla",
       "ovr": 71,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 1,
       "name": "Steve Clark",
       "ovr": 70,
       "status": "titular",
@@ -302,12 +302,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 67,
+        "esp": 78,
+        "ref": 71,
+        "pos": 72,
+        "vel": 36,
         "sta": 27
       },
       "detailedStats": {
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "Sebastián Ferreira",
       "ovr": 70,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 23,
       "name": "Amine Bassi",
       "ovr": 69,
       "status": "titular",
@@ -454,7 +454,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 20,
       "name": "Latif Blessing",
       "ovr": 68,
       "status": "titular",
@@ -510,7 +510,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 2,
       "name": "Franco Escobar",
       "ovr": 68,
       "status": "titular",
@@ -565,7 +565,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 30,
       "name": "Sebastian Kowalczyk",
       "ovr": 68,
       "status": "titular",
@@ -621,7 +621,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 21,
       "name": "Ján Greguš",
       "ovr": 67,
       "status": "reserva",
@@ -731,7 +731,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 11,
       "name": "Lawrence Ennali",
       "ovr": 66,
       "status": "reserva",
@@ -786,7 +786,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 14,
       "name": "Micael",
       "ovr": 65,
       "status": "reserva",
@@ -842,7 +842,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 25,
       "name": "Ethan Bartlow",
       "ovr": 64,
       "status": "reserva",
@@ -898,7 +898,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 24,
       "name": "Griffin Dorsey",
       "ovr": 64,
       "status": "reserva",
@@ -953,7 +953,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 19,
       "name": "Brad Smith",
       "ovr": 64,
       "status": "reserva",
@@ -1008,7 +1008,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 3,
       "name": "Daniel Steres",
       "ovr": 64,
       "status": "reserva",
@@ -1064,7 +1064,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Ibrahim Aliyu",
       "ovr": 63,
       "status": "reserva",
@@ -1119,7 +1119,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 27,
       "name": "Nelson Quiñónes",
       "ovr": 63,
       "status": "reserva",
@@ -1175,7 +1175,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 12,
       "name": "Andrew Tarbell",
       "ovr": 63,
       "status": "reserva",
@@ -1190,12 +1190,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 62,
+        "esp": 73,
+        "ref": 68,
+        "pos": 62,
+        "vel": 31,
         "sta": 26
       },
       "detailedStats": {
@@ -1230,7 +1230,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 28,
       "name": "Orrin McKinze Gaines",
       "ovr": 62,
       "status": "reserva",
@@ -1285,7 +1285,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Stephen Annor Gyamfi",
       "ovr": 62,
       "status": "reserva",
@@ -1340,7 +1340,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 16,
       "name": "Tate Schmitt",
       "ovr": 61,
       "status": "reserva",
@@ -1395,7 +1395,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Brooklyn Raines",
       "ovr": 54,
       "status": "reserva",
@@ -1450,7 +1450,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 31,
       "name": "Xavier Valdez",
       "ovr": 54,
       "status": "reserva",
@@ -1465,12 +1465,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 53,
+        "esp": 63,
+        "ref": 55,
+        "pos": 52,
+        "vel": 25,
         "sta": 23
       },
       "detailedStats": {
@@ -1505,7 +1505,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 32,
       "name": "Gabriel Segal",
       "ovr": 52,
       "status": "reserva",
@@ -1560,7 +1560,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 33,
       "name": "Kieran Sargeant",
       "ovr": 50,
       "status": "reserva",
@@ -1615,7 +1615,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 34,
       "name": "Ousmane Sylla",
       "ovr": 47,
       "status": "reserva",

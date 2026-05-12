@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 7,
       "name": "Constantin Budescu",
       "ovr": 67,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Alexandru Greab",
       "ovr": 65,
       "status": "titular",
@@ -80,12 +80,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 66,
+        "esp": 73,
+        "ref": 70,
+        "pos": 62,
+        "vel": 34,
         "sta": 42
       },
       "detailedStats": {
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Ion Gheorghe",
       "ovr": 64,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "David Tavares",
       "ovr": 64,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Grigore Turda",
       "ovr": 64,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 17,
       "name": "Daniel Benzar",
       "ovr": 63,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 18,
       "name": "Dario Čanađija",
       "ovr": 63,
       "status": "titular",
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Alin Dobrosavlevici",
       "ovr": 63,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 19,
       "name": "Alexandru Ișfan",
       "ovr": 63,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 9,
       "name": "Ricardo Matos",
       "ovr": 63,
       "status": "titular",
@@ -563,7 +563,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 5,
       "name": "Rassambek Akhmatov",
       "ovr": 62,
       "status": "titular",
@@ -618,7 +618,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 3,
       "name": "Diego Ferraresso",
       "ovr": 62,
       "status": "reserva",
@@ -673,7 +673,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 25,
       "name": "Dragoș Grigore",
       "ovr": 62,
       "status": "reserva",
@@ -729,7 +729,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 28,
       "name": "Andreas Mihaiu",
       "ovr": 62,
       "status": "reserva",
@@ -784,7 +784,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 29,
       "name": "Cristian Dumitru",
       "ovr": 61,
       "status": "reserva",
@@ -839,7 +839,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 12,
       "name": "Dorian Răilean",
       "ovr": 60,
       "status": "reserva",
@@ -854,12 +854,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 58,
+        "esp": 70,
+        "ref": 64,
+        "pos": 58,
+        "vel": 30,
         "sta": 19
       },
       "detailedStats": {
@@ -894,7 +894,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 20,
       "name": "Dragoș Tescan",
       "ovr": 60,
       "status": "reserva",
@@ -949,7 +949,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Tudor Călin",
       "ovr": 59,
       "status": "reserva",
@@ -1004,7 +1004,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 2,
       "name": "Sergiu Pîrvulescu",
       "ovr": 58,
       "status": "reserva",
@@ -1059,7 +1059,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Vlad Prejmerean",
       "ovr": 58,
       "status": "reserva",
@@ -1114,7 +1114,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 10,
       "name": "Alexandru Stan",
       "ovr": 56,
       "status": "reserva",

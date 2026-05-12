@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Xavier Chavalerin",
       "ovr": 69,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Adrien Monfray",
       "ovr": 68,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 11,
       "name": "Renaud Ripart",
       "ovr": 68,
       "status": "titular",
@@ -230,7 +230,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 19,
       "name": "Rafiki Saïd",
       "ovr": 68,
       "status": "titular",
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 13,
       "name": "Thierno Baldé",
       "ovr": 67,
       "status": "titular",
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 9,
       "name": "Nicolas De Préville",
       "ovr": 67,
       "status": "titular",
@@ -395,7 +395,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 18,
       "name": "Youssouf M'Changama",
       "ovr": 67,
       "status": "titular",
@@ -452,7 +452,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "Ismaël Boura",
       "ovr": 66,
       "status": "titular",
@@ -507,7 +507,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Mehdi Tahrat",
       "ovr": 66,
       "status": "titular",
@@ -563,7 +563,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 1,
       "name": "Zacharie Boucher",
       "ovr": 65,
       "status": "titular",
@@ -578,12 +578,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
+        "alc": 67,
+        "seg": 61,
         "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "ref": 68,
+        "pos": 63,
+        "vel": 58,
         "sta": 42
       },
       "detailedStats": {
@@ -633,12 +633,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 64,
+        "esp": 74,
+        "ref": 65,
+        "pos": 66,
+        "vel": 32,
         "sta": 28
       },
       "detailedStats": {
@@ -673,7 +673,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 25,
       "name": "Junior Diaz",
       "ovr": 64,
       "status": "reserva",
@@ -729,7 +729,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 20,
       "name": "Mouhamed Diop",
       "ovr": 64,
       "status": "reserva",
@@ -784,7 +784,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 28,
       "name": "Kyliane Dong",
       "ovr": 64,
       "status": "reserva",
@@ -839,7 +839,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 5,
       "name": "Abdoulaye Kanté",
       "ovr": 64,
       "status": "reserva",
@@ -894,7 +894,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 10,
       "name": "Junior Olaitan",
       "ovr": 64,
       "status": "reserva",
@@ -949,7 +949,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Jaurès Assoumou",
       "ovr": 62,
       "status": "reserva",
@@ -1004,7 +1004,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Noa Cervantes",
       "ovr": 62,
       "status": "reserva",
@@ -1059,7 +1059,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 27,
       "name": "Amar Ahmed Fatah",
       "ovr": 60,
       "status": "reserva",
@@ -1114,7 +1114,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 23,
       "name": "Rudy Kohon",
       "ovr": 59,
       "status": "reserva",
@@ -1170,7 +1170,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Eric N'Jo",
       "ovr": 59,
       "status": "reserva",
@@ -1226,7 +1226,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 16,
       "name": "Mathis Hamdi",
       "ovr": 58,
       "status": "reserva",
@@ -1281,7 +1281,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Corentin Michel",
       "ovr": 58,
       "status": "reserva",
@@ -1296,12 +1296,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 59,
+        "seg": 57,
+        "esp": 66,
+        "ref": 59,
+        "pos": 56,
+        "vel": 35,
         "sta": 26
       },
       "detailedStats": {

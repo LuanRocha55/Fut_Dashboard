@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Miroslav Stevanović",
       "ovr": 75,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Timothé Cognat",
       "ovr": 74,
       "status": "titular",
@@ -123,7 +123,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Enzo Crivelli",
       "ovr": 71,
       "status": "titular",
@@ -238,7 +238,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 10,
       "name": "Jérémy Guillemenot",
       "ovr": 70,
       "status": "titular",
@@ -293,7 +293,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 19,
       "name": "Dereck Kutesa",
       "ovr": 70,
       "status": "titular",
@@ -351,7 +351,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 2,
       "name": "Keigo Tsunemoto",
       "ovr": 70,
       "status": "titular",
@@ -406,7 +406,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 18,
       "name": "Alexis Antunes",
       "ovr": 69,
       "status": "titular",
@@ -463,7 +463,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 1,
       "name": "Joël Mall",
       "ovr": 69,
       "status": "titular",
@@ -478,12 +478,12 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 65,
+        "esp": 78,
+        "ref": 71,
+        "pos": 67,
+        "vel": 46,
         "sta": 33
       },
       "detailedStats": {
@@ -518,7 +518,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Yoan Severin",
       "ovr": 69,
       "status": "titular",
@@ -574,7 +574,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 12,
       "name": "Jérémy Frick",
       "ovr": 68,
       "status": "titular",
@@ -591,12 +591,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 67,
+        "esp": 77,
+        "ref": 69,
+        "pos": 64,
+        "vel": 48,
         "sta": 28
       },
       "detailedStats": {
@@ -631,7 +631,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 3,
       "name": "Bradley Mazikou",
       "ovr": 68,
       "status": "reserva",
@@ -686,7 +686,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 5,
       "name": "David Douline",
       "ovr": 67,
       "status": "reserva",
@@ -741,7 +741,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 21,
       "name": "Gaël Ondoua",
       "ovr": 67,
       "status": "reserva",
@@ -796,7 +796,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 16,
       "name": "Anthony Baron",
       "ovr": 66,
       "status": "reserva",
@@ -851,7 +851,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 17,
       "name": "Julian von Moos",
       "ovr": 66,
       "status": "reserva",
@@ -906,7 +906,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 25,
       "name": "Sofyane Bouzamoucha",
       "ovr": 65,
       "status": "reserva",
@@ -962,7 +962,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Victory Beniangba",
       "ovr": 61,
       "status": "reserva",
@@ -1017,7 +1017,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 13,
       "name": "Moussa Diallo",
       "ovr": 61,
       "status": "reserva",
@@ -1072,7 +1072,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 24,
       "name": "Théo Magnin",
       "ovr": 61,
       "status": "reserva",
@@ -1127,7 +1127,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 7,
       "name": "Tiemoko Ouattara",
       "ovr": 58,
       "status": "reserva",
@@ -1182,7 +1182,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Malik Sawadogo",
       "ovr": 57,
       "status": "reserva",
@@ -1292,7 +1292,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 22,
       "name": "Léo Besson",
       "ovr": 55,
       "status": "reserva",
@@ -1307,12 +1307,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 54,
+        "esp": 66,
+        "ref": 58,
+        "pos": 54,
+        "vel": 29,
         "sta": 19
       },
       "detailedStats": {

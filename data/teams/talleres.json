@@ -24,12 +24,12 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
+        "alc": 76,
+        "seg": 74,
+        "esp": 84,
+        "ref": 76,
         "pos": 75,
-        "vel": 40,
+        "vel": 55,
         "sta": 45
       },
       "detailedStats": {
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 17,
       "name": "Sebastián Palacios",
       "ovr": 75,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "Rubén Botta",
       "ovr": 74,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 2,
       "name": "Gastón Benavídez",
       "ovr": 73,
       "status": "titular",
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Juan Gabriel Rodríguez",
       "ovr": 73,
       "status": "titular",
@@ -345,7 +345,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Franco Moyano",
       "ovr": 72,
       "status": "titular",
@@ -400,7 +400,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 21,
       "name": "Juan Camilo Portilla",
       "ovr": 72,
       "status": "titular",
@@ -455,7 +455,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "Juan Portillo",
       "ovr": 72,
       "status": "titular",
@@ -512,7 +512,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 23,
       "name": "Matías Galarza",
       "ovr": 71,
       "status": "titular",
@@ -567,7 +567,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 12,
       "name": "Lautaro Morales",
       "ovr": 71,
       "status": "titular",
@@ -582,12 +582,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 68,
+        "esp": 79,
+        "ref": 72,
+        "pos": 72,
+        "vel": 53,
         "sta": 44
       },
       "detailedStats": {
@@ -622,7 +622,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 9,
       "name": "Cristian Tarragona",
       "ovr": 71,
       "status": "reserva",
@@ -677,7 +677,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 19,
       "name": "Federico Girotti",
       "ovr": 70,
       "status": "reserva",
@@ -732,7 +732,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 7,
       "name": "Alejandro Martínez",
       "ovr": 70,
       "status": "reserva",
@@ -788,7 +788,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 20,
       "name": "Ramiro Ruiz Rodríguez",
       "ovr": 70,
       "status": "reserva",
@@ -843,7 +843,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 13,
       "name": "Alex Vigo",
       "ovr": 70,
       "status": "reserva",
@@ -898,7 +898,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 18,
       "name": "Bruno Barticciotto",
       "ovr": 69,
       "status": "reserva",
@@ -953,7 +953,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 8,
       "name": "Ulises Ortegoza",
       "ovr": 69,
       "status": "reserva",
@@ -1008,7 +1008,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 25,
       "name": "Lucas Suárez",
       "ovr": 69,
       "status": "reserva",
@@ -1065,7 +1065,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Kevin Mantilla",
       "ovr": 68,
       "status": "reserva",
@@ -1121,7 +1121,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 16,
       "name": "Blás Riveros",
       "ovr": 67,
       "status": "reserva",
@@ -1176,7 +1176,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Joaquín Blázquez",
       "ovr": 66,
       "status": "reserva",
@@ -1191,12 +1191,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
+        "alc": 65,
+        "seg": 61,
         "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "ref": 70,
+        "pos": 68,
+        "vel": 25,
         "sta": 26
       },
       "detailedStats": {
@@ -1231,7 +1231,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 11,
       "name": "Valentín Depietri",
       "ovr": 66,
       "status": "reserva",
@@ -1286,7 +1286,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Miguel Navarro",
       "ovr": 64,
       "status": "reserva",
@@ -1341,7 +1341,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 27,
       "name": "Francisco Pozzo",
       "ovr": 64,
       "status": "reserva",
@@ -1396,7 +1396,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 28,
       "name": "Matías Galarza",
       "ovr": 63,
       "status": "reserva",
@@ -1451,7 +1451,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 29,
       "name": "Marcos Portillo",
       "ovr": 63,
       "status": "reserva",
@@ -1506,7 +1506,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 30,
       "name": "Laureano Martínez",
       "ovr": 61,
       "status": "reserva",
@@ -1521,12 +1521,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 62,
+        "esp": 71,
+        "ref": 64,
+        "pos": 61,
+        "vel": 24,
         "sta": 23
       },
       "detailedStats": {
@@ -1561,7 +1561,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 31,
       "name": "Franco Saavedra",
       "ovr": 60,
       "status": "reserva",

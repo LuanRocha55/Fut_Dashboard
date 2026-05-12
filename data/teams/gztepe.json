@@ -24,11 +24,11 @@
       ],
       "stats": {
         "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
+        "seg": 73,
+        "esp": 83,
+        "ref": 74,
         "pos": 75,
-        "vel": 40,
+        "vel": 27,
         "sta": 26
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Koray Günter",
       "ovr": 71,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Yalçın Kayan",
       "ovr": 69,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 18,
       "name": "Ahmed Ildız",
       "ovr": 68,
       "status": "titular",
@@ -230,7 +230,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 14,
       "name": "Lasse Nielsen",
       "ovr": 68,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 2,
       "name": "Nazim Sangaré",
       "ovr": 68,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "David Tijanić",
       "ovr": 68,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 5,
       "name": "Doğan Erdoğan",
       "ovr": 67,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "İsmail Köybaşı",
       "ovr": 67,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 16,
       "name": "Novatus Miroshi",
       "ovr": 67,
       "status": "titular",
@@ -563,7 +563,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 9,
       "name": "Kubilay Kanatsızkuş",
       "ovr": 65,
       "status": "titular",
@@ -618,7 +618,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 20,
       "name": "Kuryu Matsuki",
       "ovr": 62,
       "status": "reserva",
@@ -673,7 +673,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 12,
       "name": "Arda Özçimen",
       "ovr": 62,
       "status": "reserva",
@@ -688,12 +688,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 61,
+        "esp": 73,
+        "ref": 68,
+        "pos": 59,
+        "vel": 20,
         "sta": 39
       },
       "detailedStats": {
@@ -728,7 +728,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 22,
       "name": "Ekrem Kılıçarslan",
       "ovr": 59,
       "status": "reserva",
@@ -743,12 +743,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 55,
+        "esp": 69,
+        "ref": 62,
+        "pos": 53,
+        "vel": 49,
         "sta": 25
       },
       "detailedStats": {

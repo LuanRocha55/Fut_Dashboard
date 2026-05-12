@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Jed Wallace",
       "ovr": 74,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 5,
       "name": "Alex Mowatt",
       "ovr": 73,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Kyle Bartley",
       "ovr": 72,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 19,
       "name": "Grady Diangana",
       "ovr": 72,
       "status": "titular",
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 2,
       "name": "Darnell Furlong",
       "ovr": 72,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Paddy McNair",
       "ovr": 72,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 1,
       "name": "Alex Palmer",
       "ovr": 72,
       "status": "titular",
@@ -358,12 +358,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 73,
+        "seg": 72,
+        "esp": 81,
+        "ref": 72,
+        "pos": 71,
+        "vel": 37,
         "sta": 27
       },
       "detailedStats": {
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 10,
       "name": "John Swift",
       "ovr": 72,
       "status": "titular",
@@ -512,7 +512,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 27,
       "name": "Karlan Grant",
       "ovr": 71,
       "status": "titular",
@@ -567,7 +567,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 25,
       "name": "Mason Holgate",
       "ovr": 71,
       "status": "titular",
@@ -624,7 +624,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 9,
       "name": "Josh Maja",
       "ovr": 71,
       "status": "reserva",
@@ -735,7 +735,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 20,
       "name": "Daryl Dike",
       "ovr": 70,
       "status": "reserva",
@@ -790,7 +790,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 21,
       "name": "Jayson Molumby",
       "ovr": 70,
       "status": "reserva",
@@ -845,7 +845,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 28,
       "name": "Tom Fellows",
       "ovr": 69,
       "status": "reserva",
@@ -900,7 +900,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 3,
       "name": "Callum Styles",
       "ovr": 69,
       "status": "reserva",
@@ -955,7 +955,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 12,
       "name": "Joe Wildsmith",
       "ovr": 69,
       "status": "reserva",
@@ -971,12 +971,12 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 69,
+        "esp": 76,
+        "ref": 68,
+        "pos": 69,
+        "vel": 44,
         "sta": 36
       },
       "detailedStats": {
@@ -1011,7 +1011,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Devante Cole",
       "ovr": 68,
       "status": "reserva",
@@ -1067,7 +1067,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 23,
       "name": "Ousmane Diakité",
       "ovr": 68,
       "status": "reserva",
@@ -1122,7 +1122,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 16,
       "name": "Gianluca Frabotta",
       "ovr": 68,
       "status": "reserva",
@@ -1177,7 +1177,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Lewis Dobbin",
       "ovr": 65,
       "status": "reserva",
@@ -1232,7 +1232,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Torbjørn L. Heggem",
       "ovr": 65,
       "status": "reserva",
@@ -1288,7 +1288,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 29,
       "name": "Mo Faal",
       "ovr": 62,
       "status": "reserva",
@@ -1343,7 +1343,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 30,
       "name": "Fenton Heard",
       "ovr": 57,
       "status": "reserva",
@@ -1398,7 +1398,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 31,
       "name": "Akeel Higgins",
       "ovr": 54,
       "status": "reserva",
@@ -1453,7 +1453,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 32,
       "name": "Layton Love",
       "ovr": 54,
       "status": "reserva",
@@ -1508,7 +1508,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 18,
       "name": "Harry Whitwell",
       "ovr": 53,
       "status": "reserva",
@@ -1563,7 +1563,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 33,
       "name": "Ted Cann",
       "ovr": 52,
       "status": "reserva",
@@ -1578,12 +1578,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 52,
+        "seg": 53,
+        "esp": 58,
+        "ref": 53,
+        "pos": 50,
+        "vel": 36,
         "sta": 20
       },
       "detailedStats": {

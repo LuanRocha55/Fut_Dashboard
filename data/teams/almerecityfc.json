@@ -23,12 +23,12 @@
         "1v1 Close Down"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 66,
+        "esp": 74,
+        "ref": 67,
+        "pos": 72,
+        "vel": 32,
         "sta": 37
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Baptiste Guillaume",
       "ovr": 68,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Ruben Providence",
       "ovr": 68,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 10,
       "name": "Thomas Robinet",
       "ovr": 68,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Théo Barbet",
       "ovr": 66,
       "status": "titular",
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 19,
       "name": "Junior Kadile",
       "ovr": 66,
       "status": "titular",
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 23,
       "name": "Adi Nalić",
       "ovr": 66,
       "status": "titular",
@@ -451,7 +451,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 28,
       "name": "Jochem van de Kamp",
       "ovr": 66,
       "status": "titular",
@@ -506,7 +506,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 3,
       "name": "Vasilis Zagaritis",
       "ovr": 66,
       "status": "titular",
@@ -561,7 +561,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 2,
       "name": "Hamdi Akujobi",
       "ovr": 65,
       "status": "titular",
@@ -616,7 +616,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 18,
       "name": "Àlex Carbonell",
       "ovr": 65,
       "status": "reserva",
@@ -671,7 +671,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Kornelius N. Hansen",
       "ovr": 65,
       "status": "reserva",
@@ -837,7 +837,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 27,
       "name": "Faïz Mattoir",
       "ovr": 63,
       "status": "reserva",
@@ -892,7 +892,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 25,
       "name": "Christopher Mamengi",
       "ovr": 62,
       "status": "reserva",
@@ -948,7 +948,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 12,
       "name": "Jonas Wendlinger",
       "ovr": 62,
       "status": "reserva",
@@ -963,12 +963,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 60,
+        "esp": 73,
+        "ref": 65,
+        "pos": 55,
+        "vel": 21,
         "sta": 25
       },
       "detailedStats": {
@@ -1003,7 +1003,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Jeffry Puriël",
       "ovr": 60,
       "status": "reserva",
@@ -1058,7 +1058,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Stijn Keller",
       "ovr": 58,
       "status": "reserva",
@@ -1073,11 +1073,11 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 60,
+        "seg": 59,
+        "esp": 66,
+        "ref": 58,
+        "pos": 56,
         "vel": 40,
         "sta": 38
       },
@@ -1113,7 +1113,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Jaden Pinas",
       "ovr": 56,
       "status": "reserva",
@@ -1169,7 +1169,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Joël van der Wilt",
       "ovr": 56,
       "status": "reserva",
@@ -1184,12 +1184,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 57,
+        "seg": 58,
+        "esp": 63,
+        "ref": 56,
+        "pos": 56,
+        "vel": 33,
         "sta": 22
       },
       "detailedStats": {

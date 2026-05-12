@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Ruslan Malinovskyi",
       "ovr": 77,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 18,
       "name": "Morten Frendrup",
       "ovr": 76,
       "status": "titular",
@@ -123,7 +123,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 1,
       "name": "Pierluigi Gollini",
       "ovr": 76,
       "status": "titular",
@@ -138,12 +138,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 76,
+        "seg": 74,
+        "esp": 86,
+        "ref": 78,
+        "pos": 76,
+        "vel": 48,
         "sta": 40
       },
       "detailedStats": {
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Vitinha",
       "ovr": 75,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 11,
       "name": "Junior Messias",
       "ovr": 75,
       "status": "titular",
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 20,
       "name": "Fabio Miretti",
       "ovr": 74,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 4,
       "name": "Johan Vásquez",
       "ovr": 74,
       "status": "titular",
@@ -401,7 +401,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 5,
       "name": "Milan Badelj",
       "ovr": 73,
       "status": "titular",
@@ -458,7 +458,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 10,
       "name": "Andrea Pinamonti",
       "ovr": 73,
       "status": "titular",
@@ -513,7 +513,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Koni De Winter",
       "ovr": 72,
       "status": "titular",
@@ -569,7 +569,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 3,
       "name": "Aarón",
       "ovr": 72,
       "status": "titular",
@@ -682,7 +682,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 2,
       "name": "Alessandro Zanoli",
       "ovr": 72,
       "status": "reserva",
@@ -737,7 +737,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 25,
       "name": "Mattia Bani",
       "ovr": 71,
       "status": "reserva",
@@ -851,7 +851,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 19,
       "name": "Caleb Ekuban",
       "ovr": 70,
       "status": "reserva",
@@ -906,7 +906,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 13,
       "name": "Stefano Sabelli",
       "ovr": 70,
       "status": "reserva",
@@ -961,7 +961,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 22,
       "name": "Nicola Leali",
       "ovr": 69,
       "status": "reserva",
@@ -976,12 +976,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 72,
+        "seg": 70,
+        "esp": 79,
+        "ref": 71,
+        "pos": 64,
+        "vel": 32,
         "sta": 27
       },
       "detailedStats": {
@@ -1016,7 +1016,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Alessandro Vogliacco",
       "ovr": 69,
       "status": "reserva",
@@ -1072,7 +1072,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 16,
       "name": "Marko Pajač",
       "ovr": 68,
       "status": "reserva",
@@ -1127,7 +1127,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Brooke Norton-Cuffy",
       "ovr": 67,
       "status": "reserva",
@@ -1182,7 +1182,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Alan Matturro",
       "ovr": 66,
       "status": "reserva",
@@ -1238,7 +1238,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 30,
       "name": "Filippo Melegoni",
       "ovr": 63,
       "status": "reserva",
@@ -1293,7 +1293,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Daniele Sommariva",
       "ovr": 62,
       "status": "reserva",
@@ -1308,12 +1308,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 56,
+        "esp": 73,
+        "ref": 68,
+        "pos": 59,
+        "vel": 44,
         "sta": 31
       },
       "detailedStats": {
@@ -1348,7 +1348,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 27,
       "name": "David Ankeye",
       "ovr": 60,
       "status": "reserva",

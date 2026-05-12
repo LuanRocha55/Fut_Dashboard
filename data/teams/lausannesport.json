@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Noë Dussenne",
       "ovr": 73,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Antoine Bernede",
       "ovr": 71,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Kaly Sène",
       "ovr": 70,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 18,
       "name": "Olivier Custodio",
       "ovr": 69,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 11,
       "name": "Konrad de la Fuente",
       "ovr": 69,
       "status": "titular",
@@ -286,7 +286,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 1,
       "name": "Karlo Letica",
       "ovr": 69,
       "status": "titular",
@@ -302,12 +302,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 65,
+        "esp": 77,
+        "ref": 70,
+        "pos": 70,
+        "vel": 34,
         "sta": 18
       },
       "detailedStats": {
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "Teddy Okou",
       "ovr": 69,
       "status": "titular",
@@ -399,7 +399,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 23,
       "name": "Simone Pafundi",
       "ovr": 69,
       "status": "titular",
@@ -456,7 +456,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 2,
       "name": "Raoul Giger",
       "ovr": 68,
       "status": "titular",
@@ -511,7 +511,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Gábor Szalai",
       "ovr": 68,
       "status": "titular",
@@ -567,7 +567,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Alban Ajdini",
       "ovr": 67,
       "status": "titular",
@@ -623,7 +623,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 17,
       "name": "Fousseni Diabaté",
       "ovr": 67,
       "status": "reserva",
@@ -679,7 +679,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 3,
       "name": "Morgan Poaty",
       "ovr": 67,
       "status": "reserva",
@@ -734,7 +734,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 5,
       "name": "Jamie Roche",
       "ovr": 67,
       "status": "reserva",
@@ -789,7 +789,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 20,
       "name": "Alvyn Sanches",
       "ovr": 67,
       "status": "reserva",
@@ -846,7 +846,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 25,
       "name": "Kevin Mouanga",
       "ovr": 65,
       "status": "reserva",
@@ -903,7 +903,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 27,
       "name": "Manuel Polster",
       "ovr": 64,
       "status": "reserva",
@@ -958,7 +958,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 12,
       "name": "Thomas Castella",
       "ovr": 63,
       "status": "reserva",
@@ -973,12 +973,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 62,
+        "esp": 71,
+        "ref": 62,
+        "pos": 64,
+        "vel": 41,
         "sta": 23
       },
       "detailedStats": {
@@ -1013,7 +1013,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Fabricio Oviedo",
       "ovr": 63,
       "status": "reserva",
@@ -1068,7 +1068,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Trae Coyle",
       "ovr": 58,
       "status": "reserva",
@@ -1123,7 +1123,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 13,
       "name": "Hamza Abdallah",
       "ovr": 57,
       "status": "reserva",
@@ -1178,7 +1178,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Karim Sow",
       "ovr": 56,
       "status": "reserva",
@@ -1234,7 +1234,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Seydou Traoré",
       "ovr": 54,
       "status": "reserva",

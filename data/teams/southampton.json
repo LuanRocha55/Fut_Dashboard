@@ -24,12 +24,12 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 81,
+        "seg": 79,
+        "esp": 91,
+        "ref": 83,
+        "pos": 78,
+        "vel": 50,
         "sta": 35
       },
       "detailedStats": {
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Paul Ebere Onuachu",
       "ovr": 76,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 13,
       "name": "Kyle Walker-Peters",
       "ovr": 76,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 10,
       "name": "Cameron Archer",
       "ovr": 75,
       "status": "titular",
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 19,
       "name": "Adam Armstrong",
       "ovr": 75,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 11,
       "name": "Maxwel Cornet",
       "ovr": 75,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 5,
       "name": "Flynn Downes",
       "ovr": 75,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 4,
       "name": "Taylor Harwood-Bellis",
       "ovr": 75,
       "status": "titular",
@@ -509,7 +509,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Jan Bednarek",
       "ovr": 74,
       "status": "titular",
@@ -565,7 +565,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 25,
       "name": "Armel Bella Kotchap",
       "ovr": 74,
       "status": "titular",
@@ -621,7 +621,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 8,
       "name": "Mateus Fernandes",
       "ovr": 74,
       "status": "reserva",
@@ -677,7 +677,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 23,
       "name": "Adam Lallana",
       "ovr": 74,
       "status": "reserva",
@@ -733,7 +733,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 3,
       "name": "Ryan Manning",
       "ovr": 74,
       "status": "reserva",
@@ -789,7 +789,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 18,
       "name": "Joe Aribo",
       "ovr": 73,
       "status": "reserva",
@@ -845,7 +845,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 12,
       "name": "Gavin Bazunu",
       "ovr": 73,
       "status": "reserva",
@@ -861,12 +861,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 74,
+        "seg": 72,
+        "esp": 83,
+        "ref": 76,
+        "pos": 69,
+        "vel": 45,
         "sta": 16
       },
       "detailedStats": {
@@ -901,7 +901,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 7,
       "name": "Ben Brereton Díaz",
       "ovr": 73,
       "status": "reserva",
@@ -956,7 +956,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Will Smallbone",
       "ovr": 73,
       "status": "reserva",
@@ -1011,7 +1011,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Jack Stephens",
       "ovr": 73,
       "status": "reserva",
@@ -1067,7 +1067,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Lesley Ugochukwu",
       "ovr": 73,
       "status": "reserva",
@@ -1122,7 +1122,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 17,
       "name": "Ryan Fraser",
       "ovr": 72,
       "status": "reserva",
@@ -1177,7 +1177,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 16,
       "name": "Charlie Taylor",
       "ovr": 72,
       "status": "reserva",
@@ -1232,7 +1232,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Alex McCarthy",
       "ovr": 71,
       "status": "reserva",
@@ -1247,12 +1247,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 71,
+        "esp": 81,
+        "ref": 74,
+        "pos": 68,
+        "vel": 52,
         "sta": 34
       },
       "detailedStats": {
@@ -1287,7 +1287,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Ross Stewart",
       "ovr": 71,
       "status": "reserva",
@@ -1342,7 +1342,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Kamaldeen Sulemana",
       "ovr": 71,
       "status": "reserva",
@@ -1399,7 +1399,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 27,
       "name": "James Bree",
       "ovr": 70,
       "status": "reserva",
@@ -1454,7 +1454,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 28,
       "name": "Samuel Edozie",
       "ovr": 70,
       "status": "reserva",
@@ -1509,7 +1509,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 30,
       "name": "Joe Lumley",
       "ovr": 70,
       "status": "reserva",
@@ -1524,12 +1524,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 66,
+        "esp": 79,
+        "ref": 72,
+        "pos": 68,
+        "vel": 46,
         "sta": 38
       },
       "detailedStats": {
@@ -1564,7 +1564,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 31,
       "name": "Nathan Wood",
       "ovr": 69,
       "status": "reserva",
@@ -1620,7 +1620,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 32,
       "name": "Ronnie Edwards",
       "ovr": 68,
       "status": "reserva",
@@ -1679,7 +1679,7 @@
     },
     {
       "id": 31,
-      "number": 31,
+      "number": 33,
       "name": "Samuel Amo-Ameyaw",
       "ovr": 61,
       "status": "reserva",
@@ -1734,7 +1734,7 @@
     },
     {
       "id": 32,
-      "number": 32,
+      "number": 34,
       "name": "Juan Larios",
       "ovr": 60,
       "status": "reserva",
@@ -1789,7 +1789,7 @@
     },
     {
       "id": 33,
-      "number": 33,
+      "number": 35,
       "name": "Tyler Dibling",
       "ovr": 59,
       "status": "reserva",
@@ -1844,7 +1844,7 @@
     },
     {
       "id": 34,
-      "number": 34,
+      "number": 36,
       "name": "Jayden Meghoma",
       "ovr": 57,
       "status": "reserva",

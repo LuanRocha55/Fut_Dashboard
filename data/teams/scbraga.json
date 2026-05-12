@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Ricardo Horta",
       "ovr": 81,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Simon Banza",
       "ovr": 80,
       "status": "titular",
@@ -124,7 +124,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 1,
       "name": "Matheus",
       "ovr": 79,
       "status": "titular",
@@ -141,12 +141,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
+        "alc": 82,
         "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "esp": 90,
+        "ref": 80,
+        "pos": 77,
+        "vel": 47,
         "sta": 32
       },
       "detailedStats": {
@@ -181,7 +181,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "André Horta",
       "ovr": 77,
       "status": "titular",
@@ -239,7 +239,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 18,
       "name": "João Moutinho",
       "ovr": 77,
       "status": "titular",
@@ -295,7 +295,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 11,
       "name": "Bruma",
       "ovr": 77,
       "status": "titular",
@@ -352,7 +352,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 4,
       "name": "Sikou Niakaté",
       "ovr": 76,
       "status": "titular",
@@ -410,7 +410,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 20,
       "name": "Rodrigo Zalazar",
       "ovr": 76,
       "status": "titular",
@@ -470,7 +470,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 2,
       "name": "Víctor Gómez",
       "ovr": 75,
       "status": "titular",
@@ -525,7 +525,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Paulo Oliveira",
       "ovr": 75,
       "status": "titular",
@@ -582,7 +582,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 5,
       "name": "Vitor Carvalho",
       "ovr": 74,
       "status": "titular",
@@ -637,7 +637,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 17,
       "name": "Rafik Guitane",
       "ovr": 74,
       "status": "reserva",
@@ -692,7 +692,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 19,
       "name": "Roger Fernandes",
       "ovr": 73,
       "status": "reserva",
@@ -749,7 +749,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 25,
       "name": "Serdar Saatçı",
       "ovr": 73,
       "status": "reserva",
@@ -861,7 +861,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 3,
       "name": "Adrián Marín",
       "ovr": 71,
       "status": "reserva",
@@ -918,7 +918,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 7,
       "name": "João Marques",
       "ovr": 71,
       "status": "reserva",
@@ -973,7 +973,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Bright Akwo Arrey-Mbi",
       "ovr": 69,
       "status": "reserva",
@@ -1029,7 +1029,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 12,
       "name": "Tiago Sá",
       "ovr": 69,
       "status": "reserva",
@@ -1044,12 +1044,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 66,
+        "esp": 76,
+        "ref": 67,
+        "pos": 69,
+        "vel": 43,
         "sta": 26
       },
       "detailedStats": {
@@ -1084,7 +1084,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 13,
       "name": "João Ferreira",
       "ovr": 68,
       "status": "reserva",
@@ -1139,7 +1139,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 29,
       "name": "Ismaël Gharbi",
       "ovr": 68,
       "status": "reserva",
@@ -1250,7 +1250,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 28,
       "name": "Gabri Martínez",
       "ovr": 67,
       "status": "reserva",
@@ -1360,7 +1360,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 23,
       "name": "Jean Baptiste Gorby",
       "ovr": 66,
       "status": "reserva",
@@ -1430,12 +1430,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 63,
+        "esp": 76,
+        "ref": 67,
+        "pos": 66,
+        "vel": 28,
         "sta": 21
       },
       "detailedStats": {
@@ -1525,7 +1525,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 30,
       "name": "Nuno Matos",
       "ovr": 62,
       "status": "reserva",
@@ -1581,7 +1581,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 31,
       "name": "Rodrigo Macedo",
       "ovr": 62,
       "status": "reserva",

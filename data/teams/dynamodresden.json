@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Niklas Hauptmann",
       "ovr": 69,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 5,
       "name": "Vinko Šapina",
       "ovr": 69,
       "status": "titular",
@@ -182,7 +182,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 2,
       "name": "Claudio Kammerknecht",
       "ovr": 67,
       "status": "titular",
@@ -240,7 +240,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 9,
       "name": "Stefan Kutschke",
       "ovr": 67,
       "status": "titular",
@@ -298,7 +298,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 4,
       "name": "Lukas Boeder",
       "ovr": 66,
       "status": "titular",
@@ -354,7 +354,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "Christoph Daferner",
       "ovr": 66,
       "status": "titular",
@@ -410,7 +410,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 19,
       "name": "Robin Meißner",
       "ovr": 66,
       "status": "titular",
@@ -465,7 +465,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 1,
       "name": "Tim Schreiber",
       "ovr": 66,
       "status": "titular",
@@ -480,12 +480,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 64,
+        "esp": 77,
+        "ref": 70,
+        "pos": 63,
+        "vel": 28,
         "sta": 36
       },
       "detailedStats": {
@@ -520,7 +520,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 23,
       "name": "Oliver Batista Meier",
       "ovr": 65,
       "status": "titular",
@@ -575,7 +575,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 14,
       "name": "Lars Bünning",
       "ovr": 65,
       "status": "titular",
@@ -632,7 +632,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 18,
       "name": "Aljaž Casar",
       "ovr": 65,
       "status": "reserva",
@@ -690,7 +690,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 17,
       "name": "Jakob Lemmer",
       "ovr": 65,
       "status": "reserva",
@@ -745,7 +745,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 13,
       "name": "Jan Hendrik Marx",
       "ovr": 65,
       "status": "reserva",
@@ -802,7 +802,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 24,
       "name": "Jonas Sterner",
       "ovr": 65,
       "status": "reserva",
@@ -912,7 +912,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 12,
       "name": "Daniel Mesenhöler",
       "ovr": 63,
       "status": "reserva",
@@ -927,12 +927,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 65,
+        "esp": 69,
+        "ref": 62,
+        "pos": 61,
+        "vel": 48,
         "sta": 33
       },
       "detailedStats": {
@@ -967,7 +967,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Tom Berger",
       "ovr": 60,
       "status": "reserva",
@@ -1022,7 +1022,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 25,
       "name": "Dennis Duah",
       "ovr": 60,
       "status": "reserva",
@@ -1078,7 +1078,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 30,
       "name": "Jonas Oehmichen",
       "ovr": 60,
       "status": "reserva",
@@ -1133,7 +1133,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 11,
       "name": "Sascha Risch",
       "ovr": 60,
       "status": "reserva",
@@ -1188,7 +1188,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 31,
       "name": "Tony Menzel",
       "ovr": 59,
       "status": "reserva",
@@ -1243,7 +1243,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Paul Lehmann",
       "ovr": 57,
       "status": "reserva",
@@ -1299,7 +1299,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 27,
       "name": "David Kubatta",
       "ovr": 56,
       "status": "reserva",

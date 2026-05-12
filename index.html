@@ -123,10 +123,13 @@
                     </div>
                 </div>
 
-                <button id="goToTeamSelectBtn" class="btn-primary"
-                    style="width: 100%; padding: 20px; font-size: 1.1rem; border-radius: 12px; margin-top: 10px;">
-                    PRÓXIMO: ESCOLHER TIME ➔
-                </button>
+                <div style="display: flex; gap: 15px; margin-top: 10px;">
+                    <button id="backToMenuBtn"
+                        style="flex: 1; padding: 18px; background: transparent; border: 1px solid #333; color: #666; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 1rem;">VOLTAR</button>
+                    <button id="goToTeamSelectBtn"
+                        style="flex: 2; padding: 18px; background: var(--accent); border: none; color: #000; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 1.1rem; box-shadow: 0 10px 20px var(--accent)33;">PRÓXIMO
+                        PASSO ➔</button>
+                </div>
             </div>
         </div>
     </div>
@@ -161,10 +164,9 @@
             <div id="teamView" style="display: flex; flex-direction: column;">
                 <section class="control-group">
                     <!-- Botão Retornar -->
-                    <button id="navDashboardBtn" class="btn-danger"
-                        style="margin-bottom: 25px; padding: 15px; font-size: 0.8rem; border-color: var(--danger); display: flex; align-items: center; justify-content: center; gap: 8px;">
-                        <i data-lucide="arrow-left" style="width: 1.2em; height: 1.2em;"></i> VOLTAR AO MENU
-                        PRINCIPAL</button>
+                    <button id="navDashboardBtn" class="btn-secondary"
+                        style="margin-bottom: 25px; padding: 15px; font-size: 0.85rem; background: #222; border: 1px solid #444; color: #fff; display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; font-weight: bold; cursor: pointer;">
+                        <i data-lucide="arrow-left-circle" style="width: 1.2em; height: 1.2em; color: var(--accent);"></i> VOLTAR À GESTÃO</button>
                     <div style="display: flex; gap: 10px; margin-bottom: 10px;">
                         <button id="navPitchBtn" class="btn-primary" style="margin-top: 0;">Prancheta</button>
                         <button id="navTableBtn" class="btn-secondary" style="margin-top: 0;">Lista de Elenco</button>
@@ -199,8 +201,7 @@
                         <button id="autoFillBtn" class="btn-primary">Auto-Escalar</button>
                         <button id="saveTacticBtn" class="btn-secondary"
                             title="Salva a prancheta atual como uma nova opção">Salvar Tática</button>
-                        <button id="resetSystemBtn" class="btn-danger"
-                            title="Apaga todo o progresso deste time e recarrega do zero">Resetar Elenco</button>
+
                         <button id="exportImageBtn" class="btn-secondary">Exportar PNG</button>
                         <button id="exportJsonBtn" class="btn-secondary">Salvar JSON</button>
                     </div>
@@ -431,19 +432,15 @@
                                 </div>
                             </div>
                             <div style="display: flex; gap: 15px; align-items: center;">
+                                <button id="headerHomeBtn" class="btn-danger" style="width: auto; padding: 10px 15px; margin-top: 0; align-self: flex-end; display: flex; align-items: center; gap: 8px; background: #ff444415; border: 1px solid #ff444444; color: #ff4444; font-weight: bold; border-radius: 8px;" title="Sair da Carreira">
+                                    <i data-lucide="log-out" style="width: 1.2em; height: 1.2em;"></i> MENU DE SAVES
+                                </button>
                                 <div style="text-align: right;">
                                     <label
-                                        style="color: #888; font-size: 0.65rem; font-weight: bold; display: block; margin-bottom: 5px; text-transform: uppercase;">TIME
-                                        CARREGADO</label>
-                                    <select id="teamSelect" title="Carregar os dados de outro time"
-                                        style="padding: 10px 15px; font-size: 0.9rem; background: #222; border-color: #444; width: 220px;">
-                                        <!-- Injetado via JS -->
-                                    </select>
+                                        style="color: #888; font-size: 0.65rem; font-weight: bold; display: block; margin-bottom: 5px; text-transform: uppercase;">CLUBE ATUAL</label>
+                                    <div id="dashTeamName" style="color: var(--accent); font-size: 1.1rem; font-weight: 900; letter-spacing: 0.5px;">--</div>
                                 </div>
-                                <button id="resetBtn" class="btn-danger"
-                                    style="width: auto; padding: 10px 15px; margin-top: 0; align-self: flex-end; display: flex; align-items: center; gap: 6px;"
-                                    title="Resetar Banco de Dados"><i data-lucide="refresh-cw"
-                                        style="width: 1.2em; height: 1.2em;"></i> Reset</button>
+
                             </div>
                         </div>
 
@@ -677,9 +674,9 @@
 
                 <!-- Modo Simulação (Nova Tela Principal) -->
                 <div id="simulationView" class="table-view"
-                    style="display: none; background: transparent; border: none; padding: 0;">
+                    style="display: none; background: transparent; border: none; padding: 0; height: 100vh; overflow: hidden;">
                     <div
-                        style="max-width: 1400px; height: 100%; display: flex; flex-direction: column; margin: 0 auto; background: #111; border: 1px solid var(--border); border-radius: 12px; padding: 15px 25px; box-shadow: 0 10px 40px rgba(0,0,0,0.5);">
+                        style="max-width: 1500px; height: 95vh; display: flex; flex-direction: column; margin: 10px auto; background: #111; border: 1px solid var(--border); border-radius: 12px; padding: 15px 25px; box-shadow: 0 10px 40px rgba(0,0,0,0.5); overflow: hidden;">
                         <div
                             style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; flex-shrink: 0;">
                             <h3 style="color: var(--warning); margin: 0; font-size: 1.4rem;" id="simMatchTitle">
@@ -724,116 +721,112 @@
 
                         <div
                             style="display: flex; justify-content: space-between; align-items: center; font-size: 1.6rem; font-weight: 900; margin-bottom: 10px; background: #000; padding: 10px 20px; border-radius: 8px; border: 1px solid #222; flex-shrink: 0;">
-                            <span id="simHomeTeam" style="flex: 1; text-align: right;">Seu Time</span>
+                            <div id="simHomeTeamContainer" style="flex: 1; display: flex; align-items: center; justify-content: flex-end; gap: 12px;">
+                                <span id="simHomeTeam">Seu Time</span>
+                                <div id="simHomeLogo"></div>
+                            </div>
                             <span id="simScore"
-                                style="color: var(--accent); font-size: 2.2rem; margin: 0 20px; background: #111; padding: 5px 20px; border-radius: 8px; border: 1px solid #333;">0
-                                x 0</span>
-                            <span id="simAwayTeam" style="flex: 1; text-align: left;">Adversário</span>
+                                style="color: var(--accent); font-size: 2.2rem; margin: 0 30px; background: #111; padding: 5px 25px; border-radius: 8px; border: 1px solid #333; min-width: 120px; text-align: center;">0 x 0</span>
+                            <div id="simAwayTeamContainer" style="flex: 1; display: flex; align-items: center; justify-content: flex-start; gap: 12px;">
+                                <div id="simAwayLogo"></div>
+                                <span id="simAwayTeam">Adversário</span>
+                            </div>
                         </div>
 
                         <div id="simScorers"
-                            style="display: flex; justify-content: space-between; font-size: 0.85rem; color: #aaa; margin-bottom: 10px; padding: 0 10px; min-height: 20px; flex-shrink: 0;">
+                            style="display: flex; justify-content: space-between; font-size: 0.8rem; color: #aaa; margin-bottom: 10px; padding: 0 15px; min-height: 10px; flex-shrink: 0; max-height: 60px; overflow-y: auto;">
                             <div id="simHomeScorers"
-                                style="flex: 1; text-align: right; padding-right: 20px; line-height: 1.5;"></div>
+                                style="flex: 1; text-align: right; padding-right: 20px; line-height: 1.3;"></div>
                             <div id="simAwayScorers"
-                                style="flex: 1; text-align: left; padding-left: 20px; line-height: 1.5;"></div>
+                                style="flex: 1; text-align: left; padding-left: 20px; line-height: 1.3;"></div>
                         </div>
 
                         <div
-                            style="display: grid; grid-template-columns: 200px 1fr 480px; gap: 20px; align-items: stretch; flex: 1; min-height: 0;">
-                            <!-- Esquerda: Estatísticas -->
+                            style="display: grid; grid-template-columns: 280px 1fr 600px; gap: 20px; align-items: stretch; flex: 1; min-height: 0; overflow: hidden;">
+                            <!-- Esquerda: Estatísticas Reorganizadas -->
                             <div id="simMatchStats"
-                                style="display: flex; flex-direction: column; background: #1a1a1a; padding: 15px; border-radius: 8px; border: 1px solid #333; font-size: 0.85rem; color: #ccc; gap: 10px; overflow-y: auto; min-height: 0;">
-                                <div style="text-align: center; padding-bottom: 8px; border-bottom: 1px solid #333;">
-                                    <div style="font-size: 0.6rem; color: #888; margin-bottom: 3px; font-weight: bold;">
-                                        ÁRBITRO</div>
-                                    <div id="simRefereeName"
-                                        style="color: var(--accent); font-weight: bold; font-size: 0.8rem;">--</div>
+                                style="display: flex; flex-direction: column; background: #1a1a1a; padding: 15px; border-radius: 8px; border: 1px solid #333; font-size: 0.8rem; color: #ccc; gap: 12px; overflow-y: auto; min-height: 0;">
+                                <div style="text-align: center; padding-bottom: 8px; border-bottom: 1px solid #333; margin-bottom: 5px;">
+                                    <div style="font-size: 0.6rem; color: #888; margin-bottom: 3px; font-weight: bold; text-transform: uppercase;">Árbitro da Partida</div>
+                                    <div id="simRefereeName" style="color: var(--accent); font-weight: bold; font-size: 0.85rem;">--</div>
                                 </div>
-                                <div style="text-align: center; padding-bottom: 8px; border-bottom: 1px solid #333;">
-                                    <div style="font-size: 0.6rem; color: #888; margin-bottom: 3px; font-weight: bold;">
-                                        POSSE</div>
-                                    <div style="font-weight: bold; font-size: 1rem;"><span
-                                            id="simHomePossession">50</span>%
-                                        - <span id="simAwayPossession">50</span>%</div>
-                                </div>
-                                <div style="text-align: center; padding-bottom: 8px; border-bottom: 1px solid #333;">
-                                    <div style="font-size: 0.6rem; color: #888; margin-bottom: 3px; font-weight: bold;">
-                                        CHUTES (ALVO)</div>
-                                    <div style="font-weight: bold; font-size: 0.95rem;"><span id="simHomeShots">0</span>
-                                        (<span id="simHomeShotsOnTarget">0</span>) - <span id="simAwayShots">0</span>
-                                        (<span id="simAwayShotsOnTarget">0</span>)</div>
-                                </div>
-                                <div style="text-align: center; padding-bottom: 8px; border-bottom: 1px solid #333;">
-                                    <div style="font-size: 0.6rem; color: #888; margin-bottom: 3px; font-weight: bold;">
-                                        PASSES</div>
-                                    <div style="font-weight: bold; font-size: 0.95rem;"><span
-                                            id="simHomePasses">0</span> -
-                                        <span id="simAwayPasses">0</span>
+                                
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                                    <div style="background: #111; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #222;">
+                                        <div style="font-size: 0.6rem; color: #666; font-weight: bold;">POSSE</div>
+                                        <div style="font-weight: bold; font-size: 1rem; color: var(--accent);"><span id="simHomePossession">50</span>%</div>
+                                    </div>
+                                    <div style="background: #111; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #222;">
+                                        <div style="font-size: 0.6rem; color: #666; font-weight: bold;">POSSE ADV.</div>
+                                        <div style="font-weight: bold; font-size: 1rem; color: #aaa;"><span id="simAwayPossession">50</span>%</div>
                                     </div>
                                 </div>
-                                <div style="text-align: center; padding-bottom: 8px; border-bottom: 1px solid #333;">
-                                    <div style="font-size: 0.6rem; color: #888; margin-bottom: 3px; font-weight: bold;">
-                                        DESARMES</div>
-                                    <div style="font-weight: bold; font-size: 0.95rem;"><span
-                                            id="simHomeTackles">0</span> -
-                                        <span id="simAwayTackles">0</span>
+
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                                    <div class="stat-mini-box">
+                                        <label>CHUTES</label>
+                                        <div class="val"><span id="simHomeShots">0</span> (<span id="simHomeShotsOnTarget">0</span>)</div>
                                     </div>
-                                </div>
-                                <div style="text-align: center; padding-bottom: 8px; border-bottom: 1px solid #333;">
-                                    <div style="font-size: 0.6rem; color: #888; margin-bottom: 3px; font-weight: bold;">
-                                        DEFESAS</div>
-                                    <div style="font-weight: bold; font-size: 0.95rem;"><span id="simHomeSaves">0</span>
-                                        -
-                                        <span id="simAwaySaves">0</span>
+                                    <div class="stat-mini-box">
+                                        <label>ADV. CHUTES</label>
+                                        <div class="val"><span id="simAwayShots">0</span> (<span id="simAwayShotsOnTarget">0</span>)</div>
                                     </div>
-                                </div>
-                                <div style="text-align: center; padding-bottom: 8px; border-bottom: 1px solid #333;">
-                                    <div style="font-size: 0.6rem; color: #888; margin-bottom: 3px; font-weight: bold;">
-                                        FALTAS</div>
-                                    <div style="font-weight: bold; font-size: 0.95rem;"><span id="simHomeFouls">0</span>
-                                        -
-                                        <span id="simAwayFouls">0</span>
+                                    <div class="stat-mini-box">
+                                        <label>PASSES</label>
+                                        <div class="val"><span id="simHomePasses">0</span></div>
                                     </div>
-                                </div>
-                                <div style="text-align: center; padding-bottom: 8px; border-bottom: 1px solid #333;">
-                                    <div style="font-size: 0.6rem; color: #888; margin-bottom: 3px; font-weight: bold;">
-                                        CARTÕES</div>
-                                    <div style="font-weight: bold; font-size: 0.95rem;"><span id="simHomeCards"
-                                            style="color: var(--warning);">0</span> - <span id="simAwayCards"
-                                            style="color: var(--warning);">0</span></div>
-                                </div>
-                                <div style="text-align: center; padding-bottom: 8px; border-bottom: 1px solid #333;">
-                                    <div style="font-size: 0.6rem; color: #888; margin-bottom: 3px; font-weight: bold;">
-                                        IMPEDIMENTOS</div>
-                                    <div style="font-weight: bold; font-size: 0.95rem;"><span
-                                            id="simHomeOffsides">0</span>
-                                        -
-                                        <span id="simAwayOffsides">0</span>
+                                    <div class="stat-mini-box">
+                                        <label>ADV. PASSES</label>
+                                        <div class="val"><span id="simAwayPasses">0</span></div>
                                     </div>
-                                </div>
-                                <div style="text-align: center; padding-bottom: 8px; border-bottom: 1px solid #333;">
-                                    <div style="font-size: 0.6rem; color: #888; margin-bottom: 3px; font-weight: bold;">
-                                        ESCANTEIOS</div>
-                                    <div style="font-weight: bold; font-size: 0.95rem;"><span
-                                            id="simHomeCorners">0</span> -
-                                        <span id="simAwayCorners">0</span>
+                                    <div class="stat-mini-box">
+                                        <label>DESARMES</label>
+                                        <div class="val"><span id="simHomeTackles">0</span></div>
                                     </div>
-                                </div>
-                                <div style="text-align: center; padding-bottom: 8px; border-bottom: 1px solid #333;">
-                                    <div style="font-size: 0.6rem; color: #888; margin-bottom: 3px; font-weight: bold;">
-                                        CRUZAMENTOS</div>
-                                    <div style="font-weight: bold; font-size: 0.95rem;"><span
-                                            id="simHomeCrosses">0</span> -
-                                        <span id="simAwayCrosses">0</span>
+                                    <div class="stat-mini-box">
+                                        <label>ADV. DESARMES</label>
+                                        <div class="val"><span id="simAwayTackles">0</span></div>
                                     </div>
-                                </div>
-                                <div style="text-align: center;">
-                                    <div style="font-size: 0.6rem; color: #888; margin-bottom: 3px; font-weight: bold;">
-                                        BOLAS LONGAS</div>
-                                    <div style="font-weight: bold; font-size: 0.95rem;"><span
-                                            id="simHomeLongBalls">0</span>
-                                        - <span id="simAwayLongBalls">0</span></div>
+                                    <div class="stat-mini-box">
+                                        <label>DEFESAS</label>
+                                        <div class="val"><span id="simHomeSaves">0</span></div>
+                                    </div>
+                                    <div class="stat-mini-box">
+                                        <label>ADV. DEFESAS</label>
+                                        <div class="val"><span id="simAwaySaves">0</span></div>
+                                    </div>
+                                    <div class="stat-mini-box">
+                                        <label>FALTAS</label>
+                                        <div class="val"><span id="simHomeFouls">0</span></div>
+                                    </div>
+                                    <div class="stat-mini-box">
+                                        <label>ADV. FALTAS</label>
+                                        <div class="val"><span id="simAwayFouls">0</span></div>
+                                    </div>
+                                    <div class="stat-mini-box">
+                                        <label>IMPED.</label>
+                                        <div class="val"><span id="simHomeOffsides">0</span></div>
+                                    </div>
+                                    <div class="stat-mini-box">
+                                        <label>ADV. IMPED.</label>
+                                        <div class="val"><span id="simAwayOffsides">0</span></div>
+                                    </div>
+                                    <div class="stat-mini-box">
+                                        <label>ESCANTEIOS</label>
+                                        <div class="val"><span id="simHomeCorners">0</span></div>
+                                    </div>
+                                    <div class="stat-mini-box">
+                                        <label>ADV. ESCANTEIOS</label>
+                                        <div class="val"><span id="simAwayCorners">0</span></div>
+                                    </div>
+                                    <div class="stat-mini-box">
+                                        <label>CARTÕES</label>
+                                        <div class="val" style="color: var(--warning);"><span id="simHomeCards">0</span></div>
+                                    </div>
+                                    <div class="stat-mini-box">
+                                        <label>ADV. CARTÕES</label>
+                                        <div class="val" style="color: var(--warning);"><span id="simAwayCards">0</span></div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -867,29 +860,49 @@
                             <!-- Direita: Painel de Substituições -->
                             <div id="simSubPanel"
                                 style="background: #111; padding: 15px; border-radius: 8px; border: 1px solid #333; display: flex; flex-direction: column; min-height: 0;">
-                                <h4
-                                    style="margin: 0 0 10px 0; color: #fff; font-size: 0.9rem; text-align: center; flex-shrink: 0;">
-                                    Substituições (<span id="simSubsLeft">5</span>/5)</h4>
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-shrink: 0;">
+                                    <h4 style="margin: 0; color: #fff; font-size: 0.9rem;">Gestão de Campo</h4>
+                                    <div style="font-size: 0.75rem; color: var(--accent); font-weight: bold;">Subs: <span id="simSubsLeft">5</span>/5</div>
+                                </div>
 
-                                <div style="display: flex; gap: 10px; flex: 1; min-height: 0; margin-bottom: 15px;">
-                                    <!-- Titulares -->
-                                    <div style="flex: 1; display: flex; flex-direction: column; min-width: 0;">
-                                        <label
-                                            style="font-size: 0.65rem; color: #888; display: block; margin-bottom: 5px; text-align: center;">SAI
-                                            (TITULAR)</label>
-                                        <div id="subOutList"
-                                            style="flex: 1; min-height: 0; overflow-y: auto; background: #1a1a1a; border: 1px solid #333; border-radius: 4px; padding: 5px; display: flex; flex-direction: column; gap: 4px;">
-                                        </div>
+                                <!-- Estilo de Jogo Compacto -->
+                                <div style="margin-bottom: 15px; flex-shrink: 0;">
+                                    <label style="font-size: 0.6rem; color: #888; display: block; margin-bottom: 6px; text-transform: uppercase; font-weight: bold;">Estilo de Jogo</label>
+                                    <div style="display: flex; gap: 4px;">
+                                        <button class="tactic-btn" data-style="possession" title="Posse de Bola" style="flex: 1; padding: 6px 2px; background: #222; border: 1px solid #444; color: #aaa; border-radius: 4px; font-size: 0.65rem; cursor: pointer; transition: all 0.2s;">Posse</button>
+                                        <button class="tactic-btn" data-style="counter" title="Contra-ataque" style="flex: 1; padding: 6px 2px; background: #222; border: 1px solid #444; color: #aaa; border-radius: 4px; font-size: 0.65rem; cursor: pointer; transition: all 0.2s;">Contra</button>
+                                        <button class="tactic-btn" data-style="attack" title="Ataque Total" style="flex: 1; padding: 6px 2px; background: #222; border: 1px solid #444; color: #aaa; border-radius: 4px; font-size: 0.65rem; cursor: pointer; transition: all 0.2s;">Ataque</button>
+                                        <button class="tactic-btn" data-style="bus" title="Retranca" style="flex: 1; padding: 6px 2px; background: #222; border: 1px solid #444; color: #aaa; border-radius: 4px; font-size: 0.65rem; cursor: pointer; transition: all 0.2s;">Bus</button>
                                     </div>
+                                </div>
 
-                                    <!-- Reservas -->
-                                    <div style="flex: 2; display: flex; flex-direction: column; min-width: 0;">
-                                        <label
-                                            style="font-size: 0.65rem; color: #888; display: block; margin-bottom: 5px; text-align: center;">ENTRA
-                                            (RESERVA)</label>
-                                        <div id="subInList"
-                                            style="flex: 1; min-height: 0; overflow-y: auto; background: #1a1a1a; border: 1px solid #333; border-radius: 4px; padding: 5px; display: grid; grid-template-columns: 1fr 1fr; align-content: start; gap: 4px;">
-                                        </div>
+                                <!-- Seletor de Formação Em Jogo -->
+                                <div style="margin-bottom: 15px; flex-shrink: 0;">
+                                    <label style="font-size: 0.6rem; color: #888; display: block; margin-bottom: 4px; text-transform: uppercase; font-weight: bold;">Formação</label>
+                                    <select id="simFormationSelect" style="width: 100%; padding: 6px; background: #222; border: 1px solid #444; color: #fff; border-radius: 4px; font-size: 0.75rem; outline: none;">
+                                        <option value="4-3-3">4-3-3 Ofensivo</option>
+                                        <option value="4-4-2">4-4-2 Clássico</option>
+                                        <option value="4-2-3-1">4-2-3-1 Moderno</option>
+                                        <option value="3-5-2">3-5-2 Alas</option>
+                                        <option value="5-4-1">5-4-1 Retranca</option>
+                                        <option value="4-1-4-1">4-1-4-1 Equilibrado</option>
+                                        <option value="3-4-3">3-4-3 Ofensivo</option>
+                                        <option value="5-3-2">5-3-2 Defensivo</option>
+                                    </select>
+                                </div>
+
+                                <!-- Prancheta Miniatura (Titulares) -->
+                                <div id="simMiniPitch" style="position: relative; width: 100%; height: 260px; background: #013220; border: 2px solid rgba(255,255,255,0.15); border-radius: 8px; margin-bottom: 15px; overflow: hidden; flex-shrink: 0; background-image: radial-gradient(circle at center, rgba(255,255,255,0.1) 0%, transparent 100%);">
+                                    <!-- Linhas do mini-campo -->
+                                    <div style="position: absolute; top: 0; left: 50%; width: 1px; height: 100%; background: rgba(255,255,255,0.2);"></div>
+                                    <div style="position: absolute; top: 50%; left: 50%; width: 60px; height: 60px; border: 1px solid rgba(255,255,255,0.2); border-radius: 50%; transform: translate(-50%, -50%);"></div>
+                                    <div id="miniPitchPlayers"></div>
+                                </div>
+
+                                <div style="flex: 1; display: flex; flex-direction: column; min-height: 0;">
+                                    <label style="font-size: 0.65rem; color: #888; display: block; margin-bottom: 5px; text-align: center; text-transform: uppercase; font-weight: bold;">Banco de Reservas</label>
+                                    <div id="subInList"
+                                        style="flex: 1; min-height: 0; overflow-y: auto; background: #1a1a1a; border: 1px solid #333; border-radius: 4px; padding: 5px; display: grid; grid-template-columns: 1fr 1fr; align-content: start; gap: 4px;">
                                     </div>
                                 </div>
 
@@ -914,50 +927,50 @@
                                         style="vertical-align: text-bottom; margin-right: 4px;">
                                         <path
                                             d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0012 15a5.01 5.01 0 004.61-3.06C19.08 11.63 21 9.55 21 8V7c0-1.1-.9-2-2-2zM7 5h10v1c0 2.76-2.24 5-5 5s-5-2.24-5-5V5zm-2 4V7h2v2c0 .88.22 1.7.6 2.44C6.18 10.87 5 9.58 5 9zm14 0c0 .58-1.18 1.87-2.6 2.44.38-.74.6-1.56.6-2.44V7h2v2zM11 16h2v3h-2zM8 20h8v2H8z" />
-                                    </svg> <span style="color: var(--warning);">Liga Nacional</span></h1>
+                                    </svg> <span id="leagueTitleDisplay" style="color: var(--warning);">Liga Nacional</span></h1>
                                 <p style="color: #888; font-size: 0.85rem; margin-top: 5px;">Rodada <span
                                         id="leagueCurrentRound">1</span> de <span id="leagueTotalRounds">38</span></p>
                             </div>
                             <div style="display: flex; gap: 10px;">
                                 <select id="leagueDivisionSelect"
                                     style="display: none; width: auto; padding: 10px; background: #1a1a1a; border: 1px solid #333; color: white; border-radius: 4px; font-size: 0.9rem; outline: none; margin-top: 0;"></select>
-                                <select id="leagueTypeSelect"
-                                    style="width: auto; padding: 10px; background: #1a1a1a; border: 1px solid #333; color: white; border-radius: 4px; font-size: 0.9rem; outline: none; margin-top: 0;">
-                                    <option value="br">Brasileirão</option>
-                                    <option value="en">Premier League (ING)</option>
-                                    <option value="es">La Liga (ESP)</option>
-                                    <option value="it">Serie A (ITA)</option>
-                                    <option value="de">Bundesliga (ALE)</option>
-                                </select>
+                                
                                 <button id="navLeagueDashboardBtn" class="btn-secondary"
                                     style="margin-top: 0; padding: 10px 15px; width: auto;"><svg viewBox="0 0 24 24"
                                         width="1em" height="1em" fill="currentColor"
                                         style="vertical-align: text-bottom; margin-right: 4px;">
                                         <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
                                     </svg> Voltar ao Menu</button>
-                                <button id="newLeagueBtn" class="btn-danger"
-                                    style="margin-top: 0; padding: 10px 15px; width: auto;">Reiniciar / Nova
-                                    Liga</button>
+                                <button id="newLeagueBtn" class="btn-primary"
+                                    style="display: none; margin-top: 0; padding: 10px 15px; width: auto; background: var(--accent); color: #000; border: none; font-weight: bold;">GERAR
+                                    CAMPEONATO</button>
                                 <button id="nextSeasonBtn" class="btn-primary"
                                     style="display: none; margin-top: 0; padding: 10px 15px; width: auto; background: var(--accent); color: #000;">Avançar
                                     Temporada 🔄</button>
                             </div>
                         </div>
 
-                        <!-- Tabs -->
+                        <!-- Main Navigation Tabs -->
                         <div style="display: flex; gap: 10px; margin-bottom: 20px;">
-                            <button id="tabStandings" class="btn-primary" style="margin-top: 0; flex: 1;">Tabela de
-                                Classificação</button>
-                            <button id="tabCup" class="btn-secondary" style="margin-top: 0; flex: 1;">Copa
-                                Nacional</button>
-                            <button id="tabContinental" class="btn-secondary"
-                                style="margin-top: 0; flex: 1;">Continental</button>
-                            <button id="tabFixtures" class="btn-secondary" style="margin-top: 0; flex: 1;">Calendário e
-                                Jogos</button>
-                            <button id="tabStats" class="btn-secondary" style="margin-top: 0; flex: 1;">Estatísticas da
-                                Equipe</button>
-                            <button id="tabHistory" class="btn-secondary"
-                                style="margin-top: 0; flex: 1;">Histórico</button>
+                            <button id="tabTournament" class="btn-primary" style="margin-top: 0; flex: 1;">
+                                <i data-lucide="trophy" style="width: 1.1em; height: 1.1em; vertical-align: middle; margin-right: 5px;"></i> Torneios
+                            </button>
+                            <button id="tabFixtures" class="btn-secondary" style="margin-top: 0; flex: 1;">
+                                <i data-lucide="calendar" style="width: 1.1em; height: 1.1em; vertical-align: middle; margin-right: 5px;"></i> Calendário
+                            </button>
+                            <button id="tabStats" class="btn-secondary" style="margin-top: 0; flex: 1;">
+                                <i data-lucide="bar-chart-2" style="width: 1.1em; height: 1.1em; vertical-align: middle; margin-right: 5px;"></i> Estatísticas
+                            </button>
+                            <button id="tabHistory" class="btn-secondary" style="margin-top: 0; flex: 1;">
+                                <i data-lucide="history" style="width: 1.1em; height: 1.1em; vertical-align: middle; margin-right: 5px;"></i> Histórico
+                            </button>
+                        </div>
+
+                        <!-- Tournament Sub-Tabs (Pills) -->
+                        <div id="tournamentSubNav" style="display: flex; gap: 10px; margin-bottom: 20px; background: rgba(255,255,255,0.03); padding: 10px; border-radius: 10px; border: 1px solid #222;">
+                            <button id="subTabLeague" class="sub-tab-btn active" style="flex: 1; padding: 10px; border: none; background: transparent; color: var(--accent); font-weight: 800; cursor: pointer; font-size: 0.85rem; border-radius: 6px;">LIGA NACIONAL</button>
+                            <button id="subTabCup" class="sub-tab-btn" style="flex: 1; padding: 10px; border: none; background: transparent; color: #666; font-weight: 800; cursor: pointer; font-size: 0.85rem; border-radius: 6px;">COPA NACIONAL</button>
+                            <button id="subTabContinental" class="sub-tab-btn" style="flex: 1; padding: 10px; border: none; background: transparent; color: #666; font-weight: 800; cursor: pointer; font-size: 0.85rem; border-radius: 6px;">CONTINENTAL</button>
                         </div>
 
                         <!-- Conteúdo Copa Nacional -->
@@ -1023,21 +1036,15 @@
                                         <option value="month">Meus Jogos (Mês)</option>
                                         <option value="round">Todos os Jogos (Rodada)</option>
                                     </select>
-                                    <select id="fixtureMonthSelect"
-                                        style="width: auto; padding: 8px; background: #1a1a1a; border: 1px solid #333; color: white; border-radius: 4px; font-size: 0.9rem; outline: none; margin: 0;">
-                                        <option value="0">Janeiro</option>
-                                        <option value="1">Fevereiro</option>
-                                        <option value="2">Março</option>
-                                        <option value="3">Abril</option>
-                                        <option value="4">Maio</option>
-                                        <option value="5">Junho</option>
-                                        <option value="6">Julho</option>
-                                        <option value="7">Agosto</option>
-                                        <option value="8">Setembro</option>
-                                        <option value="9">Outubro</option>
-                                        <option value="10">Novembro</option>
-                                        <option value="11">Dezembro</option>
-                                    </select>
+                                    <div id="monthNavigation" style="display: flex; align-items: center; gap: 10px; background: #1a1a1a; padding: 5px 15px; border-radius: 6px; border: 1px solid #333; margin: 0;">
+                                        <button id="prevMonthBtn" class="btn-icon" style="background:none; border:none; color:#fff; cursor:pointer; padding: 5px; display: flex; align-items: center;" title="Mês Anterior">
+                                            <i data-lucide="chevron-left" style="width: 1.2em; height: 1.2em;"></i>
+                                        </button>
+                                        <span id="currentMonthDisplay" style="color: var(--accent); font-weight: bold; min-width: 90px; text-align: center; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Janeiro</span>
+                                        <button id="nextMonthBtn" class="btn-icon" style="background:none; border:none; color:#fff; cursor:pointer; padding: 5px; display: flex; align-items: center;" title="Próximo Mês">
+                                            <i data-lucide="chevron-right" style="width: 1.2em; height: 1.2em;"></i>
+                                        </button>
+                                    </div>
                                     <div id="fixtureRoundControl"
                                         style="display: none; align-items: center; gap: 10px;">
                                         <button id="prevRoundBtn" class="btn-secondary"
@@ -1072,6 +1079,20 @@
                         <!-- Conteúdo Estatísticas -->
                         <div id="leagueStatsContent"
                             style="display: none; background: #111; padding: 20px; border-radius: 12px; border: 1px solid var(--border);">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1px solid #222; padding-bottom: 15px;">
+                                <h3 style="color: #fff; margin: 0; display: flex; align-items: center; gap: 10px;">
+                                    <i data-lucide="bar-chart-2" style="color: var(--accent);"></i> ESTATÍSTICAS DO ELENCO
+                                </h3>
+                                <div style="display: flex; align-items: center; gap: 10px;">
+                                    <span style="color: #666; font-size: 0.75rem; font-weight: bold;">FILTRAR POR:</span>
+                                    <select id="statsCompFilter" style="padding: 8px 15px; background: #1a1a1a; border: 1px solid #333; color: white; border-radius: 6px; font-size: 0.85rem; outline: none; cursor: pointer;">
+                                        <option value="total">Números Totais</option>
+                                        <option value="league">Liga Nacional</option>
+                                        <option value="cup">Copa Nacional</option>
+                                        <option value="continental">Continental</option>
+                                    </select>
+                                </div>
+                            </div>
                             <div
                                 style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
 
@@ -1383,19 +1404,19 @@
             </section>
         </div>
 
-        <!-- Modais Customizados -->
-        <div id="customModal" class="modal-overlay">
-            <div class="modal-content">
-                <p id="customModalMessage"></p>
-                <input type="text" id="customModalInput" style="display: none; margin-bottom: 20px;">
-                <div class="modal-buttons">
-                    <button id="customModalCancel" class="btn-secondary">Cancelar</button>
-                    <button id="customModalOk" class="btn-primary">Confirmar</button>
-                </div>
+    </div><!-- Fim do mainApp -->
+    
+    <!-- Modais Customizados -->
+    <div id="customModal" class="modal-overlay">
+        <div class="modal-content">
+            <p id="customModalMessage"></p>
+            <input type="text" id="customModalInput" style="display: none; margin-bottom: 20px;">
+            <div class="modal-buttons">
+                <button id="customModalCancel" class="btn-secondary">Cancelar</button>
+                <button id="customModalOk" class="btn-primary">Confirmar</button>
             </div>
         </div>
-
-    </div><!-- Fim do mainApp -->
+    </div>
 
     <!-- DEPENDÊNCIAS EXTERNAS -->
     <script src="https://unpkg.com/lucide@0.344.0/dist/umd/lucide.min.js" onload="lucide.createIcons()"></script>

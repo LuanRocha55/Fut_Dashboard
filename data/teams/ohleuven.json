@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Youssef Maziz",
       "ovr": 72,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Siebe Schrijvers",
       "ovr": 72,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 23,
       "name": "Mathieu Maertens",
       "ovr": 71,
       "status": "titular",
@@ -230,7 +230,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 18,
       "name": "Birger Verstraete",
       "ovr": 71,
       "status": "titular",
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 2,
       "name": "Óscar Gil",
       "ovr": 69,
       "status": "titular",
@@ -341,7 +341,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 9,
       "name": "Chukwubuikem Ikwuemesi",
       "ovr": 69,
       "status": "titular",
@@ -396,7 +396,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 1,
       "name": "Tobe Leysen",
       "ovr": 69,
       "status": "titular",
@@ -411,12 +411,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 65,
+        "esp": 80,
+        "ref": 74,
+        "pos": 70,
+        "vel": 34,
         "sta": 28
       },
       "detailedStats": {
@@ -451,7 +451,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "Ewoud Pletinckx",
       "ovr": 69,
       "status": "titular",
@@ -507,7 +507,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 30,
       "name": "William Balikwisha",
       "ovr": 68,
       "status": "titular",
@@ -632,12 +632,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
+        "alc": 68,
+        "seg": 69,
         "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "ref": 67,
+        "pos": 68,
+        "vel": 26,
         "sta": 27
       },
       "detailedStats": {
@@ -672,7 +672,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Ezechiel Banzuzi",
       "ovr": 67,
       "status": "reserva",
@@ -727,7 +727,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 3,
       "name": "Takahiro Akimoto",
       "ovr": 66,
       "status": "reserva",
@@ -782,7 +782,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 19,
       "name": "Konan N'Dri",
       "ovr": 66,
       "status": "reserva",
@@ -837,7 +837,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 25,
       "name": "Antef Tsoungui",
       "ovr": 65,
       "status": "reserva",
@@ -893,7 +893,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 28,
       "name": "Thibault Vlietinck",
       "ovr": 65,
       "status": "reserva",
@@ -948,7 +948,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 17,
       "name": "Suphanat Mueanta",
       "ovr": 64,
       "status": "reserva",
@@ -1003,7 +1003,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 5,
       "name": "Manuel Osifo",
       "ovr": 58,
       "status": "reserva",
@@ -1058,7 +1058,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Owen Jochmans",
       "ovr": 55,
       "status": "reserva",
@@ -1073,12 +1073,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 58,
+        "esp": 68,
+        "ref": 60,
+        "pos": 49,
+        "vel": 24,
         "sta": 15
       },
       "detailedStats": {
@@ -1113,7 +1113,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 16,
       "name": "Christ Souanga",
       "ovr": 54,
       "status": "reserva",

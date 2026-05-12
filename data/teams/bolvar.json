@@ -23,12 +23,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
+        "alc": 72,
+        "seg": 71,
+        "esp": 81,
+        "ref": 74,
         "pos": 75,
-        "vel": 40,
+        "vel": 37,
         "sta": 35
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 7,
       "name": "Patricio Rodríguez",
       "ovr": 73,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 17,
       "name": "Bruno Sávio",
       "ovr": 70,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 29,
       "name": "Henry Vaca",
       "ovr": 69,
       "status": "titular",
@@ -230,7 +230,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "José Sagredo",
       "ovr": 68,
       "status": "titular",
@@ -286,7 +286,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Fernando Saucedo",
       "ovr": 68,
       "status": "titular",
@@ -341,7 +341,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "Ramiro Vaca",
       "ovr": 68,
       "status": "titular",
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 5,
       "name": "Leonel Justiniano",
       "ovr": 66,
       "status": "titular",
@@ -452,7 +452,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "Jairo Quinteros",
       "ovr": 65,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Renzo Orihuela",
       "ovr": 64,
       "status": "titular",
@@ -620,7 +620,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 2,
       "name": "Yomar Rocha",
       "ovr": 62,
       "status": "reserva",
@@ -675,7 +675,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 23,
       "name": "Javier Uzeda",
       "ovr": 61,
       "status": "reserva",

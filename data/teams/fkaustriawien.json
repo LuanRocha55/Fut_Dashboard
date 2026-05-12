@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Aleksandar Dragović",
       "ovr": 75,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Dominik Fitz",
       "ovr": 71,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Andreas Gruber",
       "ovr": 71,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 14,
       "name": "Johannes Handl",
       "ovr": 71,
       "status": "titular",
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 25,
       "name": "Lucas Galvão",
       "ovr": 69,
       "status": "titular",
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 19,
       "name": "Reinhold Ranftl",
       "ovr": 69,
       "status": "titular",
@@ -346,7 +346,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 1,
       "name": "Samuel Şahin-Radlinger",
       "ovr": 69,
       "status": "titular",
@@ -362,12 +362,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
+        "alc": 67,
+        "seg": 71,
         "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "ref": 68,
+        "pos": 70,
+        "vel": 50,
         "sta": 28
       },
       "detailedStats": {
@@ -457,7 +457,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 27,
       "name": "Hakim Guenouche",
       "ovr": 68,
       "status": "titular",
@@ -512,7 +512,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 12,
       "name": "Marvin Martins",
       "ovr": 68,
       "status": "titular",
@@ -569,7 +569,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 13,
       "name": "Tin Plavotić",
       "ovr": 68,
       "status": "titular",
@@ -627,7 +627,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 9,
       "name": "Maurice Malone",
       "ovr": 67,
       "status": "reserva",
@@ -682,7 +682,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 15,
       "name": "Matteo Meisl",
       "ovr": 67,
       "status": "reserva",
@@ -739,7 +739,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 2,
       "name": "Marvin Potzmann",
       "ovr": 67,
       "status": "reserva",
@@ -794,7 +794,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 20,
       "name": "Nik Prelec",
       "ovr": 67,
       "status": "reserva",
@@ -904,7 +904,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 22,
       "name": "Mirko Kos",
       "ovr": 64,
       "status": "reserva",
@@ -919,11 +919,11 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 64,
+        "seg": 62,
+        "esp": 73,
+        "ref": 67,
+        "pos": 62,
         "vel": 40,
         "sta": 25
       },
@@ -1014,7 +1014,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 17,
       "name": "Cristiano",
       "ovr": 62,
       "status": "reserva",
@@ -1069,7 +1069,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 23,
       "name": "Moritz Wels",
       "ovr": 62,
       "status": "reserva",
@@ -1179,7 +1179,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Luca Pazourek",
       "ovr": 60,
       "status": "reserva",
@@ -1234,7 +1234,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Lukas Wedl",
       "ovr": 60,
       "status": "reserva",
@@ -1249,12 +1249,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 57,
+        "esp": 67,
+        "ref": 60,
+        "pos": 58,
+        "vel": 44,
         "sta": 20
       },
       "detailedStats": {
@@ -1289,7 +1289,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 30,
       "name": "Sanel Saljic",
       "ovr": 59,
       "status": "reserva",
@@ -1344,7 +1344,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 5,
       "name": "Florian Wustinger",
       "ovr": 57,
       "status": "reserva",
@@ -1399,7 +1399,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 3,
       "name": "Ziad El Sheiwi",
       "ovr": 56,
       "status": "reserva",
@@ -1454,7 +1454,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 28,
       "name": "Dejan Radonjic",
       "ovr": 56,
       "status": "reserva",

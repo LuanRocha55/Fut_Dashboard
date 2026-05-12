@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Sebastián Driussi",
       "ovr": 77,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 17,
       "name": "Osman Bukari",
       "ovr": 72,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Diego Rubio",
       "ovr": 72,
       "status": "titular",
@@ -291,7 +291,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 4,
       "name": "Oleksandr Svatok",
       "ovr": 70,
       "status": "titular",
@@ -347,7 +347,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Matt Hedges",
       "ovr": 69,
       "status": "titular",
@@ -403,7 +403,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 25,
       "name": "Leo Väisänen",
       "ovr": 69,
       "status": "titular",
@@ -459,7 +459,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 11,
       "name": "Jáder Obrian",
       "ovr": 68,
       "status": "titular",
@@ -514,7 +514,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 1,
       "name": "Brad Stuver",
       "ovr": 68,
       "status": "titular",
@@ -530,12 +530,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 68,
+        "esp": 76,
+        "ref": 69,
+        "pos": 68,
+        "vel": 44,
         "sta": 42
       },
       "detailedStats": {
@@ -570,7 +570,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Gyasi Zardes",
       "ovr": 68,
       "status": "titular",
@@ -681,7 +681,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 8,
       "name": "Dani Pereira",
       "ovr": 66,
       "status": "reserva",
@@ -736,7 +736,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 28,
       "name": "Ethan Finlay",
       "ovr": 65,
       "status": "reserva",
@@ -791,7 +791,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 21,
       "name": "Jhojan Valencia",
       "ovr": 65,
       "status": "reserva",
@@ -846,7 +846,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 22,
       "name": "Stefan Cleveland",
       "ovr": 64,
       "status": "reserva",
@@ -861,12 +861,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 62,
+        "esp": 72,
+        "ref": 66,
+        "pos": 64,
+        "vel": 54,
         "sta": 40
       },
       "detailedStats": {
@@ -901,7 +901,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 13,
       "name": "Jon Gallagher",
       "ovr": 64,
       "status": "reserva",
@@ -1012,7 +1012,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 3,
       "name": "Žan Kolmanič",
       "ovr": 64,
       "status": "reserva",
@@ -1067,7 +1067,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 23,
       "name": "Owen Wolff",
       "ovr": 64,
       "status": "reserva",
@@ -1122,7 +1122,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Hector Jimenez",
       "ovr": 62,
       "status": "reserva",
@@ -1177,7 +1177,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Matt Bersano",
       "ovr": 57,
       "status": "reserva",
@@ -1192,12 +1192,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 51,
+        "esp": 66,
+        "ref": 58,
+        "pos": 54,
+        "vel": 22,
         "sta": 25
       },
       "detailedStats": {
@@ -1232,7 +1232,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 20,
       "name": "CJ Fodrey",
       "ovr": 52,
       "status": "reserva",

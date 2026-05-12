@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 3,
       "name": "Jennifer Cramer",
       "ovr": 72,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Vanessa Fischer",
       "ovr": 72,
       "status": "titular",
@@ -78,12 +78,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 70,
+        "esp": 77,
+        "ref": 70,
+        "pos": 72,
+        "vel": 29,
         "sta": 41
       },
       "detailedStats": {
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Sara Ito",
       "ovr": 72,
       "status": "titular",
@@ -173,7 +173,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Laura Lindner",
       "ovr": 71,
       "status": "titular",
@@ -228,7 +228,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 10,
       "name": "Viktoria Schwalm",
       "ovr": 71,
       "status": "titular",
@@ -283,7 +283,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 18,
       "name": "Alisa Grincenco",
       "ovr": 70,
       "status": "titular",
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 4,
       "name": "Irena Kuznezov",
       "ovr": 70,
       "status": "titular",
@@ -399,7 +399,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 23,
       "name": "Valentina Limani",
       "ovr": 70,
       "status": "titular",
@@ -454,7 +454,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 20,
       "name": "Noa Selimhodzic",
       "ovr": 70,
       "status": "titular",
@@ -509,7 +509,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 19,
       "name": "Maria Almasri",
       "ovr": 69,
       "status": "titular",
@@ -674,7 +674,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 14,
       "name": "Lina Vianden",
       "ovr": 69,
       "status": "reserva",
@@ -730,7 +730,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 5,
       "name": "Maya Hahn",
       "ovr": 68,
       "status": "reserva",
@@ -840,7 +840,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 22,
       "name": "Anna Terestyényi",
       "ovr": 68,
       "status": "reserva",
@@ -855,12 +855,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 66,
+        "esp": 73,
+        "ref": 65,
+        "pos": 68,
+        "vel": 23,
         "sta": 20
       },
       "detailedStats": {
@@ -895,7 +895,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 25,
       "name": "Flavia Lüscher",
       "ovr": 67,
       "status": "reserva",
@@ -951,7 +951,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Adrijana Mori",
       "ovr": 67,
       "status": "reserva",
@@ -1006,7 +1006,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 24,
       "name": "Mia Schmid",
       "ovr": 66,
       "status": "reserva",
@@ -1062,7 +1062,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 26,
       "name": "Emilie Bernhardt",
       "ovr": 63,
       "status": "reserva",

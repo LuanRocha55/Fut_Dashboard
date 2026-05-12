@@ -23,12 +23,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 70,
+        "esp": 77,
+        "ref": 70,
+        "pos": 67,
+        "vel": 47,
         "sta": 34
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Danilo Santacruz",
       "ovr": 69,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Walter González",
       "ovr": 68,
       "status": "titular",
@@ -230,7 +230,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 11,
       "name": "Richard Prieto",
       "ovr": 67,
       "status": "titular",
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 3,
       "name": "Wilson Ibarrola",
       "ovr": 66,
       "status": "titular",
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Paul Riveros",
       "ovr": 66,
       "status": "titular",
@@ -396,7 +396,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 19,
       "name": "Adrián Alcaraz",
       "ovr": 65,
       "status": "titular",
@@ -451,7 +451,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 27,
       "name": "Mathías Martínez",
       "ovr": 65,
       "status": "titular",
@@ -506,7 +506,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 2,
       "name": "Juan Daniel Pérez",
       "ovr": 65,
       "status": "titular",
@@ -561,7 +561,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 12,
       "name": "Martín Rodríguez",
       "ovr": 65,
       "status": "titular",
@@ -576,12 +576,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 60,
+        "esp": 74,
+        "ref": 65,
+        "pos": 69,
+        "vel": 26,
         "sta": 18
       },
       "detailedStats": {
@@ -616,7 +616,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 16,
       "name": "Alexis Cantero",
       "ovr": 64,
       "status": "reserva",
@@ -671,7 +671,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 26,
       "name": "Felipe Salomoni",
       "ovr": 64,
       "status": "reserva",
@@ -726,7 +726,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 25,
       "name": "Fernando Román",
       "ovr": 63,
       "status": "reserva",
@@ -782,7 +782,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 8,
       "name": "Agustín Manzur",
       "ovr": 62,
       "status": "reserva",
@@ -837,7 +837,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 18,
       "name": "Estivel Moreira",
       "ovr": 62,
       "status": "reserva",
@@ -892,7 +892,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 23,
       "name": "Álvaro Cuello",
       "ovr": 61,
       "status": "reserva",
@@ -947,7 +947,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 30,
       "name": "Bruno Diaz",
       "ovr": 60,
       "status": "reserva",
@@ -1002,7 +1002,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 20,
       "name": "César Miño",
       "ovr": 60,
       "status": "reserva",
@@ -1057,7 +1057,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 13,
       "name": "Alcides Benítez",
       "ovr": 58,
       "status": "reserva",
@@ -1222,7 +1222,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Victor Cespedes",
       "ovr": 53,
       "status": "reserva",

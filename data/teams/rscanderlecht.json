@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Jan Vertonghen",
       "ovr": 78,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 17,
       "name": "Anders Dreyer",
       "ovr": 77,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 7,
       "name": "Thorgan Hazard",
       "ovr": 77,
       "status": "titular",
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Kasper Dolberg",
       "ovr": 76,
       "status": "titular",
@@ -235,7 +235,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 8,
       "name": "Leander Dendoncker",
       "ovr": 75,
       "status": "titular",
@@ -290,7 +290,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 3,
       "name": "Ludwig Augustinsson",
       "ovr": 74,
       "status": "titular",
@@ -345,7 +345,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Mats Rits",
       "ovr": 74,
       "status": "titular",
@@ -400,7 +400,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 2,
       "name": "Thomas Foket",
       "ovr": 73,
       "status": "titular",
@@ -455,7 +455,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 18,
       "name": "Théo Leoni",
       "ovr": 73,
       "status": "titular",
@@ -565,7 +565,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 29,
       "name": "Francis Amuzu",
       "ovr": 72,
       "status": "titular",
@@ -622,7 +622,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 11,
       "name": "Alexis Flips",
       "ovr": 72,
       "status": "reserva",
@@ -677,7 +677,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 14,
       "name": "Zanka",
       "ovr": 72,
       "status": "reserva",
@@ -733,7 +733,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 13,
       "name": "Killian Sardella",
       "ovr": 72,
       "status": "reserva",
@@ -788,7 +788,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 23,
       "name": "Mario Stroeykens",
       "ovr": 72,
       "status": "reserva",
@@ -843,7 +843,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 20,
       "name": "Majeed Ashimeru",
       "ovr": 70,
       "status": "reserva",
@@ -898,7 +898,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 19,
       "name": "Luis Vázquez",
       "ovr": 70,
       "status": "reserva",
@@ -953,7 +953,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Amadou Diawara",
       "ovr": 69,
       "status": "reserva",
@@ -1008,7 +1008,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Marco Kana",
       "ovr": 68,
       "status": "reserva",
@@ -1063,7 +1063,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 16,
       "name": "Moussa N'Diaye",
       "ovr": 68,
       "status": "reserva",
@@ -1118,7 +1118,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Nilson Angulo",
       "ovr": 67,
       "status": "reserva",
@@ -1173,7 +1173,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 1,
       "name": "Mads Kikkenborg",
       "ovr": 67,
       "status": "reserva",
@@ -1188,12 +1188,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 66,
+        "esp": 76,
+        "ref": 69,
+        "pos": 66,
+        "vel": 28,
         "sta": 26
       },
       "detailedStats": {
@@ -1228,7 +1228,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 12,
       "name": "Colin Coosemans",
       "ovr": 66,
       "status": "reserva",
@@ -1243,12 +1243,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 63,
+        "esp": 74,
+        "ref": 66,
+        "pos": 68,
+        "vel": 46,
         "sta": 30
       },
       "detailedStats": {
@@ -1283,7 +1283,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 25,
       "name": "Jan-Carlo Simić",
       "ovr": 63,
       "status": "reserva",
@@ -1339,7 +1339,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "Timon Vanhoutte",
       "ovr": 58,
       "status": "reserva",
@@ -1354,12 +1354,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 56,
+        "esp": 67,
+        "ref": 60,
+        "pos": 56,
+        "vel": 33,
         "sta": 25
       },
       "detailedStats": {

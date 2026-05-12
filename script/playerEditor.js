@@ -24,7 +24,7 @@ import { highlightZones, clearZones, renderApp } from "./ui.js";
 export let isEditMode = false;
 
 export const PLAYSTYLES = {
-  GL: ["Goleiro Defensivo", "Goleiro Ofensivo"],
+  GOL: ["Goleiro Defensivo", "Goleiro Ofensivo"],
   ZE: [
     "Defensor Criativo",
     "Zagueiro Destruidor",
@@ -163,7 +163,7 @@ export async function openMenu(id) {
   document.getElementById("editFormInput").value =
     p.form !== undefined ? p.form : "0";
 
-  const isGK = p.aptitude && p.aptitude[0] === "GL";
+  const isGK = p.aptitude && p.aptitude[0] === "GOL";
   const pStats = p.stats || {
     vel: 50,
     fin: 50,
@@ -179,9 +179,9 @@ export async function openMenu(id) {
     sliderContainer.innerHTML = "";
     const statKeys = isGK
       ? [
-          { key: "alc", label: "alc" },
-          { key: "seg", label: "seg" },
-          { key: "esp", label: "esp" },
+          { key: "alc", label: "SAL" },
+          { key: "seg", label: "SEG" },
+          { key: "esp", label: "ESP" },
           { key: "ref", label: "REF" },
           { key: "vel", label: "VEL" },
           { key: "pos", label: "POS" },
@@ -375,7 +375,7 @@ export function initEditorEvents() {
   document.getElementById("saveBtn").onclick = () => {
     const p = squad.find((x) => x.id === activePlayerId);
     if (p) {
-      const isGK = p.aptitude && p.aptitude[0] === "GL";
+      const isGK = p.aptitude && p.aptitude[0] === "GOL";
       const statKeys = isGK
         ? ["alc", "seg", "esp", "ref", "vel", "pos", "sta"]
         : ["vel", "fin", "pas", "dri", "def", "fis", "sta"];

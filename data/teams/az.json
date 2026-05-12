@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 5,
       "name": "Jordy Clasie",
       "ovr": 79,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Riechedly Bazoer",
       "ovr": 75,
       "status": "titular",
@@ -124,7 +124,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Sven Mijnans",
       "ovr": 74,
       "status": "titular",
@@ -181,7 +181,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 21,
       "name": "Kristijan Belić",
       "ovr": 72,
       "status": "titular",
@@ -236,7 +236,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 14,
       "name": "Alexandre Penetra",
       "ovr": 72,
       "status": "titular",
@@ -292,7 +292,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 25,
       "name": "Bruno Martins Indi",
       "ovr": 71,
       "status": "titular",
@@ -348,7 +348,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 1,
       "name": "Jeroen Zoet",
       "ovr": 71,
       "status": "titular",
@@ -363,12 +363,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 73,
+        "esp": 78,
+        "ref": 70,
+        "pos": 71,
+        "vel": 45,
         "sta": 40
       },
       "detailedStats": {
@@ -403,7 +403,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 2,
       "name": "Seiya Maikuma",
       "ovr": 70,
       "status": "titular",
@@ -458,7 +458,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "David Møller Wolfe",
       "ovr": 70,
       "status": "titular",
@@ -570,7 +570,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 23,
       "name": "Peer Koopmeiners",
       "ovr": 69,
       "status": "titular",
@@ -628,7 +628,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 17,
       "name": "Mayckel Lahdo",
       "ovr": 69,
       "status": "reserva",
@@ -683,7 +683,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 12,
       "name": "Rome-Jayden Owusu-Oduro",
       "ovr": 69,
       "status": "reserva",
@@ -698,12 +698,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 65,
+        "esp": 78,
+        "ref": 72,
+        "pos": 69,
+        "vel": 27,
         "sta": 30
       },
       "detailedStats": {
@@ -738,7 +738,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 31,
       "name": "Ibrahim Sadiq",
       "ovr": 69,
       "status": "reserva",
@@ -793,7 +793,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 7,
       "name": "Ruben van Bommel",
       "ovr": 69,
       "status": "reserva",
@@ -905,7 +905,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 9,
       "name": "Troy Parrott",
       "ovr": 68,
       "status": "reserva",
@@ -1015,7 +1015,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 32,
       "name": "Ernest Poku",
       "ovr": 67,
       "status": "reserva",
@@ -1071,7 +1071,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Hobie Verhulst",
       "ovr": 67,
       "status": "reserva",
@@ -1086,12 +1086,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
+        "alc": 66,
+        "seg": 65,
         "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "ref": 69,
+        "pos": 65,
+        "vel": 48,
         "sta": 45
       },
       "detailedStats": {
@@ -1126,7 +1126,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Maxim Dekker",
       "ovr": 66,
       "status": "reserva",
@@ -1182,7 +1182,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 13,
       "name": "Denso Kasius",
       "ovr": 66,
       "status": "reserva",
@@ -1237,7 +1237,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 19,
       "name": "Mexx Meerdink",
       "ovr": 66,
       "status": "reserva",
@@ -1292,7 +1292,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Jayden Addai",
       "ovr": 65,
       "status": "reserva",
@@ -1348,7 +1348,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 20,
       "name": "Kees Smit",
       "ovr": 64,
       "status": "reserva",
@@ -1403,7 +1403,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 27,
       "name": "Sem Westerveld",
       "ovr": 64,
       "status": "reserva",
@@ -1418,12 +1418,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 63,
+        "esp": 73,
+        "ref": 66,
+        "pos": 64,
+        "vel": 32,
         "sta": 21
       },
       "detailedStats": {
@@ -1458,7 +1458,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 28,
       "name": "Lequincio Zeefuik",
       "ovr": 64,
       "status": "reserva",
@@ -1513,7 +1513,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 29,
       "name": "Lewis Schouten",
       "ovr": 63,
       "status": "reserva",
@@ -1568,7 +1568,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 30,
       "name": "Dave Kwakman",
       "ovr": 60,
       "status": "reserva",
@@ -1623,7 +1623,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 33,
       "name": "Daniël Virginio Deen",
       "ovr": 59,
       "status": "reserva",
@@ -1638,12 +1638,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 59,
+        "seg": 61,
+        "esp": 64,
+        "ref": 57,
+        "pos": 55,
+        "vel": 28,
         "sta": 20
       },
       "detailedStats": {

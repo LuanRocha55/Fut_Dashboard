@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 5,
       "name": "Pedro Chirivella",
       "ovr": 76,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Alban Lafont",
       "ovr": 76,
       "status": "titular",
@@ -81,11 +81,11 @@
       ],
       "stats": {
         "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "seg": 71,
+        "esp": 87,
+        "ref": 81,
+        "pos": 76,
+        "vel": 45,
         "sta": 40
       },
       "detailedStats": {
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Moses Simon",
       "ovr": 76,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 9,
       "name": "Mostafa Mohamed",
       "ovr": 75,
       "status": "titular",
@@ -289,7 +289,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Douglas Augusto",
       "ovr": 75,
       "status": "titular",
@@ -345,7 +345,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 3,
       "name": "Nicolas Cozza",
       "ovr": 73,
       "status": "titular",
@@ -400,7 +400,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 21,
       "name": "Johann Lepenant",
       "ovr": 73,
       "status": "titular",
@@ -455,7 +455,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 10,
       "name": "Florent Mollet",
       "ovr": 73,
       "status": "titular",
@@ -512,7 +512,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Nicolas Pallois",
       "ovr": 73,
       "status": "titular",
@@ -571,7 +571,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 2,
       "name": "Kelvin Amian",
       "ovr": 72,
       "status": "titular",
@@ -626,7 +626,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 19,
       "name": "Ignatius Ganago",
       "ovr": 72,
       "status": "reserva",
@@ -681,7 +681,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Tino Kadewere",
       "ovr": 72,
       "status": "reserva",
@@ -736,7 +736,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Matthis Abline",
       "ovr": 71,
       "status": "reserva",
@@ -791,7 +791,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 13,
       "name": "Fabien Centonze",
       "ovr": 71,
       "status": "reserva",
@@ -846,7 +846,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 28,
       "name": "Marcus Coco",
       "ovr": 71,
       "status": "reserva",
@@ -901,7 +901,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 16,
       "name": "Jean-Kévin Duverne",
       "ovr": 71,
       "status": "reserva",
@@ -1014,7 +1014,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 25,
       "name": "Nathan Zézé",
       "ovr": 68,
       "status": "reserva",
@@ -1070,7 +1070,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 12,
       "name": "Hugo Barbet",
       "ovr": 61,
       "status": "reserva",
@@ -1085,12 +1085,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 58,
+        "esp": 70,
+        "ref": 64,
+        "pos": 57,
+        "vel": 37,
         "sta": 28
       },
       "detailedStats": {
@@ -1125,7 +1125,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Bastien Meupiyou",
       "ovr": 61,
       "status": "reserva",

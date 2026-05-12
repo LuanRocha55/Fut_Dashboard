@@ -23,12 +23,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 74,
+        "seg": 71,
+        "esp": 82,
+        "ref": 73,
+        "pos": 72,
+        "vel": 34,
         "sta": 42
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 3,
       "name": "Mats Köhlert",
       "ovr": 72,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Paweł Bochniewicz",
       "ovr": 71,
       "status": "titular",
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Amara Condé",
       "ovr": 68,
       "status": "titular",
@@ -234,7 +234,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 14,
       "name": "Sam Kersten",
       "ovr": 68,
       "status": "titular",
@@ -290,7 +290,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 18,
       "name": "Simon Olsson",
       "ovr": 68,
       "status": "titular",
@@ -345,7 +345,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "Luuk Brouwers",
       "ovr": 67,
       "status": "titular",
@@ -400,7 +400,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 11,
       "name": "Ché Nunnely",
       "ovr": 67,
       "status": "titular",
@@ -456,7 +456,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 19,
       "name": "Ilias Sebaoui",
       "ovr": 67,
       "status": "titular",
@@ -511,7 +511,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 12,
       "name": "Mickey van der Hart",
       "ovr": 67,
       "status": "titular",
@@ -526,12 +526,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 65,
+        "esp": 76,
+        "ref": 69,
+        "pos": 64,
+        "vel": 43,
         "sta": 33
       },
       "detailedStats": {
@@ -566,7 +566,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 27,
       "name": "Danilo Al Saed",
       "ovr": 66,
       "status": "titular",
@@ -621,7 +621,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 23,
       "name": "Levi Smans",
       "ovr": 65,
       "status": "reserva",
@@ -676,7 +676,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 17,
       "name": "Jacob Trenskow",
       "ovr": 65,
       "status": "reserva",
@@ -731,7 +731,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 2,
       "name": "Oliver Braude",
       "ovr": 64,
       "status": "reserva",
@@ -786,7 +786,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 13,
       "name": "Hussein Ali",
       "ovr": 62,
       "status": "reserva",
@@ -841,7 +841,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 24,
       "name": "Denzel Hall",
       "ovr": 62,
       "status": "reserva",
@@ -896,7 +896,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 9,
       "name": "Daniel Karlsbakk",
       "ovr": 62,
       "status": "reserva",
@@ -951,7 +951,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 22,
       "name": "Jan Bekkema",
       "ovr": 61,
       "status": "reserva",
@@ -966,12 +966,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 57,
+        "esp": 69,
+        "ref": 63,
+        "pos": 62,
+        "vel": 22,
         "sta": 25
       },
       "detailedStats": {
@@ -1006,7 +1006,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 25,
       "name": "Mateja Milovanović",
       "ovr": 61,
       "status": "reserva",
@@ -1062,7 +1062,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 30,
       "name": "Melle Joop Witteveen",
       "ovr": 61,
       "status": "reserva",
@@ -1132,12 +1132,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 53,
+        "esp": 65,
+        "ref": 57,
+        "pos": 53,
+        "vel": 30,
         "sta": 22
       },
       "detailedStats": {

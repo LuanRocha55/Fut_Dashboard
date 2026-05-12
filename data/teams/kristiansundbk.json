@@ -23,11 +23,11 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 64,
+        "seg": 65,
+        "esp": 70,
+        "ref": 62,
+        "pos": 64,
         "vel": 40,
         "sta": 28
       },
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Dan Peter Ulvestad",
       "ovr": 64,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 14,
       "name": "Andreas Eines Hopmark",
       "ovr": 63,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 5,
       "name": "Erlend Segberg",
       "ovr": 63,
       "status": "titular",
@@ -230,7 +230,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 8,
       "name": "Jesper Isaksen",
       "ovr": 62,
       "status": "titular",
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 3,
       "name": "Mikkel Rakneberg",
       "ovr": 62,
       "status": "titular",
@@ -395,7 +395,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 16,
       "name": "Christoffer Aasbak",
       "ovr": 61,
       "status": "titular",
@@ -450,7 +450,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 25,
       "name": "Max Williamsen",
       "ovr": 61,
       "status": "titular",
@@ -506,7 +506,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 18,
       "name": "Ruben Alte",
       "ovr": 60,
       "status": "titular",
@@ -561,7 +561,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 9,
       "name": "Kristian Lien",
       "ovr": 60,
       "status": "titular",
@@ -616,7 +616,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 10,
       "name": "Hilmir Rafn Mikaelsson",
       "ovr": 60,
       "status": "reserva",
@@ -671,7 +671,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 17,
       "name": "Franklin Nyenetue",
       "ovr": 60,
       "status": "reserva",
@@ -726,7 +726,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 2,
       "name": "Håkon Sjåtil",
       "ovr": 60,
       "status": "reserva",
@@ -837,7 +837,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 31,
       "name": "Awet Ermias Alemseged",
       "ovr": 56,
       "status": "reserva",
@@ -892,7 +892,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 20,
       "name": "Wilfred George Igor",
       "ovr": 56,
       "status": "reserva",
@@ -947,7 +947,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 12,
       "name": "Adrian Sæther",
       "ovr": 55,
       "status": "reserva",
@@ -962,12 +962,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 57,
+        "seg": 54,
+        "esp": 63,
+        "ref": 56,
+        "pos": 55,
+        "vel": 22,
         "sta": 18
       },
       "detailedStats": {
@@ -1002,7 +1002,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 29,
       "name": "Haakon Haugen",
       "ovr": 54,
       "status": "reserva",
@@ -1057,7 +1057,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 32,
       "name": "David Tufekcic",
       "ovr": 54,
       "status": "reserva",
@@ -1168,7 +1168,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 19,
       "name": "Leander Næss Alvheim",
       "ovr": 53,
       "status": "reserva",

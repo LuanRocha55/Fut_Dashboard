@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Lautaro Martínez",
       "ovr": 89,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Alessandro Bastoni",
       "ovr": 87,
       "status": "titular",
@@ -126,7 +126,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Nicolò Barella",
       "ovr": 87,
       "status": "titular",
@@ -186,7 +186,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Yann Sommer",
       "ovr": 87,
       "status": "titular",
@@ -201,12 +201,12 @@
         "Far Reach+"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 83,
+        "seg": 84,
+        "esp": 96,
+        "ref": 89,
+        "pos": 86,
+        "vel": 54,
         "sta": 45
       },
       "detailedStats": {
@@ -299,7 +299,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Francesco Acerbi",
       "ovr": 84,
       "status": "titular",
@@ -357,7 +357,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 3,
       "name": "Federico Dimarco",
       "ovr": 84,
       "status": "titular",
@@ -417,7 +417,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 25,
       "name": "Benjamin Pavard",
       "ovr": 84,
       "status": "titular",
@@ -474,7 +474,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 10,
       "name": "Stefan de Vrij",
       "ovr": 83,
       "status": "titular",
@@ -531,7 +531,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 18,
       "name": "Henrikh Mkhitaryan",
       "ovr": 83,
       "status": "titular",
@@ -590,7 +590,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Marcus Thuram",
       "ovr": 83,
       "status": "titular",
@@ -647,7 +647,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 2,
       "name": "Denzel Dumfries",
       "ovr": 82,
       "status": "reserva",
@@ -758,7 +758,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 20,
       "name": "Davide Frattesi",
       "ovr": 81,
       "status": "reserva",
@@ -982,7 +982,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 11,
       "name": "Carlos Augusto",
       "ovr": 79,
       "status": "reserva",
@@ -1037,7 +1037,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Yann Aurel Bisseck",
       "ovr": 77,
       "status": "reserva",
@@ -1094,7 +1094,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 23,
       "name": "Kristjan Asllani",
       "ovr": 75,
       "status": "reserva",
@@ -1150,7 +1150,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 12,
       "name": "Josep Martínez",
       "ovr": 75,
       "status": "reserva",
@@ -1166,11 +1166,11 @@
       ],
       "stats": {
         "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "seg": 71,
+        "esp": 83,
+        "ref": 74,
+        "pos": 76,
+        "vel": 30,
         "sta": 42
       },
       "detailedStats": {
@@ -1205,7 +1205,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 28,
       "name": "Tajon Buchanan",
       "ovr": 74,
       "status": "reserva",
@@ -1262,7 +1262,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Joaquín Correa",
       "ovr": 74,
       "status": "reserva",
@@ -1320,7 +1320,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 22,
       "name": "Ionuț Andrei Radu",
       "ovr": 72,
       "status": "reserva",
@@ -1335,12 +1335,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 76,
+        "seg": 68,
+        "esp": 84,
+        "ref": 76,
+        "pos": 70,
+        "vel": 38,
         "sta": 32
       },
       "detailedStats": {
@@ -1375,7 +1375,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "Raffaele Di Gennaro",
       "ovr": 70,
       "status": "reserva",
@@ -1390,12 +1390,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 72,
+        "seg": 68,
+        "esp": 80,
+        "ref": 72,
+        "pos": 66,
+        "vel": 45,
         "sta": 40
       },
       "detailedStats": {
@@ -1430,7 +1430,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 27,
       "name": "Eddie Salcedo",
       "ovr": 68,
       "status": "reserva",
@@ -1485,7 +1485,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 29,
       "name": "Tomás Palacios",
       "ovr": 64,
       "status": "reserva",

@@ -25,12 +25,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 82,
+        "seg": 74,
+        "esp": 89,
+        "ref": 78,
+        "pos": 73,
+        "vel": 50,
         "sta": 26
       },
       "detailedStats": {
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Joshua Kitolano",
       "ovr": 72,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Tobias Lauritsen",
       "ovr": 72,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 10,
       "name": "Arno Verschueren",
       "ovr": 71,
       "status": "titular",
@@ -234,7 +234,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 18,
       "name": "Jonathan de Guzmán",
       "ovr": 69,
       "status": "titular",
@@ -289,7 +289,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 4,
       "name": "Mike Eerdhuijzen",
       "ovr": 69,
       "status": "titular",
@@ -346,7 +346,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 20,
       "name": "Pelle Clement",
       "ovr": 68,
       "status": "titular",
@@ -401,7 +401,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 5,
       "name": "Metinho",
       "ovr": 68,
       "status": "titular",
@@ -456,7 +456,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "Djevencio van der Kust",
       "ovr": 68,
       "status": "titular",
@@ -512,7 +512,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 11,
       "name": "Julian Baas",
       "ovr": 67,
       "status": "titular",
@@ -568,7 +568,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 2,
       "name": "Saïd Bakari",
       "ovr": 67,
       "status": "titular",
@@ -623,7 +623,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 19,
       "name": "Shunsuke Mito",
       "ovr": 67,
       "status": "reserva",
@@ -733,7 +733,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 28,
       "name": "Camiel Neghli",
       "ovr": 66,
       "status": "reserva",
@@ -788,7 +788,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 23,
       "name": "Mohamed Nassoh",
       "ovr": 65,
       "status": "reserva",
@@ -843,7 +843,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 14,
       "name": "Teo Quintero",
       "ovr": 65,
       "status": "reserva",
@@ -899,7 +899,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 24,
       "name": "Boyd Reith",
       "ovr": 65,
       "status": "reserva",
@@ -954,7 +954,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 25,
       "name": "Rick Meissen",
       "ovr": 64,
       "status": "reserva",
@@ -1010,7 +1010,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 12,
       "name": "Youri Schoonderwaldt",
       "ovr": 62,
       "status": "reserva",
@@ -1025,12 +1025,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 60,
+        "esp": 68,
+        "ref": 61,
+        "pos": 60,
+        "vel": 27,
         "sta": 25
       },
       "detailedStats": {
@@ -1065,7 +1065,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 21,
       "name": "Sergi Rosanas",
       "ovr": 60,
       "status": "reserva",
@@ -1120,7 +1120,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Mike Kleijn",
       "ovr": 59,
       "status": "reserva",
@@ -1175,7 +1175,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 30,
       "name": "Hamza El Dahri",
       "ovr": 56,
       "status": "reserva",
@@ -1230,7 +1230,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Kaylen Reitmaier",
       "ovr": 55,
       "status": "reserva",
@@ -1245,12 +1245,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 56,
+        "esp": 62,
+        "ref": 53,
+        "pos": 57,
+        "vel": 35,
         "sta": 35
       },
       "detailedStats": {

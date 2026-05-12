@@ -25,12 +25,12 @@
         "Pinged Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 76,
+        "seg": 73,
+        "esp": 85,
+        "ref": 77,
+        "pos": 72,
+        "vel": 41,
         "sta": 39
       },
       "detailedStats": {
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Kanya Fujimoto",
       "ovr": 73,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Félix Correia",
       "ovr": 72,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Maxime Dominguez",
       "ovr": 71,
       "status": "titular",
@@ -234,7 +234,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Josué Sá",
       "ovr": 70,
       "status": "titular",
@@ -290,7 +290,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Rúben Fernandes",
       "ovr": 70,
       "status": "titular",
@@ -347,7 +347,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 2,
       "name": "Zé Carlos",
       "ovr": 69,
       "status": "titular",
@@ -402,7 +402,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 5,
       "name": "Facundo Agustín Cáseres",
       "ovr": 68,
       "status": "titular",
@@ -457,7 +457,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "Sandro Cruz",
       "ovr": 68,
       "status": "titular",
@@ -512,7 +512,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 19,
       "name": "Tidjany Touré",
       "ovr": 68,
       "status": "titular",
@@ -567,7 +567,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 25,
       "name": "Buatu",
       "ovr": 67,
       "status": "titular",
@@ -624,7 +624,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 21,
       "name": "Jesús Castillo",
       "ovr": 67,
       "status": "reserva",
@@ -679,7 +679,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 23,
       "name": "Sphephelo Sithole",
       "ovr": 66,
       "status": "reserva",
@@ -734,7 +734,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 9,
       "name": "Collado",
       "ovr": 65,
       "status": "reserva",
@@ -789,7 +789,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 12,
       "name": "Vinícius Dias",
       "ovr": 64,
       "status": "reserva",
@@ -804,12 +804,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 59,
+        "esp": 73,
+        "ref": 67,
+        "pos": 64,
+        "vel": 34,
         "sta": 22
       },
       "detailedStats": {
@@ -844,7 +844,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 22,
       "name": "Brian Araújo",
       "ovr": 64,
       "status": "reserva",
@@ -859,12 +859,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 59,
+        "seg": 63,
+        "esp": 71,
+        "ref": 69,
+        "pos": 64,
+        "vel": 21,
         "sta": 20
       },
       "detailedStats": {
@@ -899,7 +899,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 30,
       "name": "Santi García",
       "ovr": 61,
       "status": "reserva",

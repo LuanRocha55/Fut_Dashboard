@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Mauro Icardi",
       "ovr": 83,
       "status": "titular",
@@ -68,7 +68,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 5,
       "name": "Lucas Torreira",
       "ovr": 83,
       "status": "titular",
@@ -128,7 +128,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 1,
       "name": "Fernando Muslera",
       "ovr": 81,
       "status": "titular",
@@ -146,12 +146,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 81,
+        "seg": 81,
+        "esp": 89,
+        "ref": 80,
+        "pos": 82,
+        "vel": 42,
         "sta": 40
       },
       "detailedStats": {
@@ -186,7 +186,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 10,
       "name": "Dries Mertens",
       "ovr": 80,
       "status": "titular",
@@ -246,7 +246,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Davinson Sánchez",
       "ovr": 80,
       "status": "titular",
@@ -304,7 +304,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 11,
       "name": "Barış Alper Yılmaz",
       "ovr": 80,
       "status": "titular",
@@ -362,7 +362,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 19,
       "name": "Hakim Ziyech",
       "ovr": 80,
       "status": "titular",
@@ -422,7 +422,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Abdülkerim Bardakcı",
       "ovr": 79,
       "status": "titular",
@@ -483,7 +483,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 8,
       "name": "Kerem Demirbay",
       "ovr": 78,
       "status": "titular",
@@ -541,7 +541,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Victor Nelsson",
       "ovr": 78,
       "status": "titular",
@@ -600,7 +600,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 20,
       "name": "Michy Batshuayi",
       "ovr": 77,
       "status": "titular",
@@ -655,7 +655,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 18,
       "name": "Gabriel Sara",
       "ovr": 76,
       "status": "reserva",
@@ -713,7 +713,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 2,
       "name": "Kaan Ayhan",
       "ovr": 75,
       "status": "reserva",
@@ -771,7 +771,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Sérgio Oliveira",
       "ovr": 75,
       "status": "reserva",
@@ -829,7 +829,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 3,
       "name": "Ismail Jakobs",
       "ovr": 74,
       "status": "reserva",
@@ -885,7 +885,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 12,
       "name": "Günay Güvenç",
       "ovr": 73,
       "status": "reserva",
@@ -900,12 +900,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "alc": 72,
+        "seg": 71,
+        "esp": 82,
         "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "pos": 70,
+        "vel": 58,
         "sta": 37
       },
       "detailedStats": {
@@ -940,7 +940,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 13,
       "name": "Elias Jelert",
       "ovr": 73,
       "status": "reserva",
@@ -996,7 +996,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 28,
       "name": "Yunus Akgün",
       "ovr": 72,
       "status": "reserva",
@@ -1051,7 +1051,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Berkan Kutlu",
       "ovr": 71,
       "status": "reserva",
@@ -1107,7 +1107,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Yusuf Demir",
       "ovr": 67,
       "status": "reserva",
@@ -1162,7 +1162,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 23,
       "name": "Halil İbrahim Dervişoğlu",
       "ovr": 67,
       "status": "reserva",
@@ -1217,7 +1217,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Batuhan Şen",
       "ovr": 66,
       "status": "reserva",
@@ -1232,12 +1232,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 65,
+        "esp": 76,
+        "ref": 69,
+        "pos": 66,
+        "vel": 31,
         "sta": 24
       },
       "detailedStats": {

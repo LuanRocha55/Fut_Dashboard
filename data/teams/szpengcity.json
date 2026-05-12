@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Rade Dugalić",
       "ovr": 71,
       "status": "titular",
@@ -68,7 +68,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 5,
       "name": "Eden Karzev",
       "ovr": 69,
       "status": "titular",
@@ -124,7 +124,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Thiago Andrade",
       "ovr": 68,
       "status": "titular",
@@ -179,7 +179,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 10,
       "name": "Edu García",
       "ovr": 66,
       "status": "titular",
@@ -235,7 +235,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 14,
       "name": "Hu Ruibao",
       "ovr": 62,
       "status": "titular",
@@ -291,7 +291,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Dai Weijun",
       "ovr": 61,
       "status": "titular",
@@ -346,7 +346,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 2,
       "name": "Nizamdin Ependi",
       "ovr": 61,
       "status": "titular",
@@ -401,7 +401,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 9,
       "name": "Leonço",
       "ovr": 61,
       "status": "titular",
@@ -456,7 +456,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 25,
       "name": "Yu Rui",
       "ovr": 61,
       "status": "titular",
@@ -513,7 +513,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 21,
       "name": "Zhang Yudong",
       "ovr": 61,
       "status": "titular",
@@ -568,7 +568,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 18,
       "name": "Zhu Baojie",
       "ovr": 61,
       "status": "titular",
@@ -623,7 +623,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 19,
       "name": "Nan Song",
       "ovr": 60,
       "status": "reserva",
@@ -678,7 +678,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 23,
       "name": "Tian Yinong",
       "ovr": 60,
       "status": "reserva",
@@ -733,7 +733,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 3,
       "name": "Zhang Wei",
       "ovr": 60,
       "status": "reserva",
@@ -788,7 +788,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 20,
       "name": "Lin Chuangyi",
       "ovr": 59,
       "status": "reserva",
@@ -843,7 +843,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 1,
       "name": "Peng Peng",
       "ovr": 58,
       "status": "reserva",
@@ -858,12 +858,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 56,
+        "esp": 68,
+        "ref": 65,
+        "pos": 57,
+        "vel": 16,
         "sta": 26
       },
       "detailedStats": {
@@ -898,7 +898,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 27,
       "name": "Zhou Dadi",
       "ovr": 57,
       "status": "reserva",
@@ -953,7 +953,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 22,
       "name": "Behram Abduweli",
       "ovr": 56,
       "status": "reserva",
@@ -1008,7 +1008,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 24,
       "name": "Matt Orr",
       "ovr": 56,
       "status": "reserva",
@@ -1063,7 +1063,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 28,
       "name": "Ruan Yang",
       "ovr": 56,
       "status": "reserva",
@@ -1118,7 +1118,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 13,
       "name": "Wang Qiao",
       "ovr": 56,
       "status": "reserva",
@@ -1173,7 +1173,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 12,
       "name": "Wei Minzhe",
       "ovr": 56,
       "status": "reserva",
@@ -1188,12 +1188,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 56,
+        "seg": 56,
+        "esp": 62,
+        "ref": 56,
+        "pos": 55,
+        "vel": 29,
         "sta": 26
       },
       "detailedStats": {
@@ -1228,7 +1228,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 7,
       "name": "Shahzat Ghojaehmet",
       "ovr": 55,
       "status": "reserva",
@@ -1283,7 +1283,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 16,
       "name": "Li Zhi",
       "ovr": 55,
       "status": "reserva",
@@ -1338,7 +1338,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "Song Yue",
       "ovr": 52,
       "status": "reserva",
@@ -1394,7 +1394,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Zhao Shi",
       "ovr": 52,
       "status": "reserva",
@@ -1409,12 +1409,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 59,
+        "seg": 51,
+        "esp": 63,
+        "ref": 54,
+        "pos": 44,
+        "vel": 32,
         "sta": 27
       },
       "detailedStats": {
@@ -1449,7 +1449,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 30,
       "name": "Li Zhizhao",
       "ovr": 50,
       "status": "reserva",
@@ -1464,12 +1464,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 53,
+        "seg": 49,
+        "esp": 59,
+        "ref": 53,
+        "pos": 44,
+        "vel": 23,
         "sta": 23
       },
       "detailedStats": {

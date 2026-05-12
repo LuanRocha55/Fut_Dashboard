@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 2,
       "name": "Mattia De Sciglio",
       "ovr": 76,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 13,
       "name": "Tyronne Ebuehi",
       "ovr": 74,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Emmanuel Gyasi",
       "ovr": 74,
       "status": "titular",
@@ -173,7 +173,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Lorenzo Colombo",
       "ovr": 73,
       "status": "titular",
@@ -228,7 +228,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 19,
       "name": "Ola Solbakken",
       "ovr": 73,
       "status": "titular",
@@ -283,7 +283,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 3,
       "name": "Liberato Cacace",
       "ovr": 72,
       "status": "titular",
@@ -339,7 +339,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "Sebastiano Esposito",
       "ovr": 72,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 18,
       "name": "Szymon Żurkowski",
       "ovr": 72,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 20,
       "name": "Alberto Grassi",
       "ovr": 71,
       "status": "titular",
@@ -563,7 +563,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 4,
       "name": "Ardian Ismajli",
       "ovr": 71,
       "status": "titular",
@@ -619,7 +619,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 16,
       "name": "Giuseppe Pezzella",
       "ovr": 71,
       "status": "reserva",
@@ -674,7 +674,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 14,
       "name": "Mattia Viti",
       "ovr": 71,
       "status": "reserva",
@@ -730,7 +730,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Liam Henderson",
       "ovr": 70,
       "status": "reserva",
@@ -786,7 +786,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 17,
       "name": "Nicolas Haas",
       "ovr": 69,
       "status": "reserva",
@@ -841,7 +841,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 1,
       "name": "Samuele Perisan",
       "ovr": 69,
       "status": "reserva",
@@ -856,12 +856,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 64,
+        "esp": 79,
+        "ref": 74,
+        "pos": 67,
+        "vel": 45,
         "sta": 40
       },
       "detailedStats": {
@@ -896,7 +896,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 24,
       "name": "Junior Sambia",
       "ovr": 69,
       "status": "reserva",
@@ -951,7 +951,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Jacopo Fazzini",
       "ovr": 68,
       "status": "reserva",
@@ -1006,7 +1006,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Pietro Pellegri",
       "ovr": 68,
       "status": "reserva",
@@ -1061,7 +1061,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 12,
       "name": "Devis Vásquez",
       "ovr": 68,
       "status": "reserva",
@@ -1076,11 +1076,11 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 67,
+        "seg": 66,
+        "esp": 77,
+        "ref": 71,
+        "pos": 64,
         "vel": 40,
         "sta": 19
       },
@@ -1116,7 +1116,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 5,
       "name": "Luca Belardinelli",
       "ovr": 67,
       "status": "reserva",
@@ -1171,7 +1171,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Francesco Donati",
       "ovr": 64,
       "status": "reserva",
@@ -1226,7 +1226,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 25,
       "name": "Emmanuel Ekong",
       "ovr": 63,
       "status": "reserva",
@@ -1281,7 +1281,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Stiven Shpendi",
       "ovr": 62,
       "status": "reserva",
@@ -1336,7 +1336,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 27,
       "name": "Niccolò Chiorra",
       "ovr": 59,
       "status": "reserva",
@@ -1351,12 +1351,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 56,
+        "seg": 57,
+        "esp": 67,
+        "ref": 64,
+        "pos": 59,
+        "vel": 30,
         "sta": 22
       },
       "detailedStats": {
@@ -1391,7 +1391,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 28,
       "name": "Gabriele Guarino",
       "ovr": 58,
       "status": "reserva",
@@ -1447,7 +1447,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 29,
       "name": "Federico Brancolini",
       "ovr": 57,
       "status": "reserva",
@@ -1462,12 +1462,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 53,
+        "seg": 59,
+        "esp": 61,
+        "ref": 56,
+        "pos": 60,
+        "vel": 32,
         "sta": 22
       },
       "detailedStats": {

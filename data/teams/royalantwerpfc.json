@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Toby Alderweireld",
       "ovr": 80,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Jean Butez",
       "ovr": 77,
       "status": "titular",
@@ -82,12 +82,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 76,
+        "seg": 76,
+        "esp": 86,
+        "ref": 78,
+        "pos": 77,
+        "vel": 44,
         "sta": 42
       },
       "detailedStats": {
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Vincent Janssen",
       "ovr": 77,
       "status": "titular",
@@ -179,7 +179,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 11,
       "name": "Michel Ange Balikwisha",
       "ovr": 75,
       "status": "titular",
@@ -235,7 +235,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 2,
       "name": "Jelle Bataille",
       "ovr": 73,
       "status": "titular",
@@ -290,7 +290,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 10,
       "name": "Tjaronn Chery",
       "ovr": 73,
       "status": "titular",
@@ -346,7 +346,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 3,
       "name": "Ayrton Costa",
       "ovr": 72,
       "status": "titular",
@@ -403,7 +403,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 19,
       "name": "Gyrano Kerk",
       "ovr": 71,
       "status": "titular",
@@ -460,7 +460,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 13,
       "name": "Denis Odoi",
       "ovr": 71,
       "status": "titular",
@@ -516,7 +516,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 27,
       "name": "Jacob Ondrejka",
       "ovr": 71,
       "status": "titular",
@@ -573,7 +573,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 14,
       "name": "Zeno Van Den Bosch",
       "ovr": 71,
       "status": "titular",
@@ -629,7 +629,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 25,
       "name": "Björn Engels",
       "ovr": 69,
       "status": "reserva",
@@ -686,7 +686,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 12,
       "name": "Senne Lammens",
       "ovr": 67,
       "status": "reserva",
@@ -701,12 +701,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 65,
+        "esp": 78,
+        "ref": 69,
+        "pos": 63,
+        "vel": 25,
         "sta": 29
       },
       "detailedStats": {
@@ -741,7 +741,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 28,
       "name": "Anthony Valencia",
       "ovr": 66,
       "status": "reserva",
@@ -796,7 +796,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 24,
       "name": "Kobe Corbanie",
       "ovr": 65,
       "status": "reserva",
@@ -851,7 +851,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 23,
       "name": "Christopher Scott",
       "ovr": 65,
       "status": "reserva",
@@ -962,7 +962,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 16,
       "name": "Laurit Krasniqi",
       "ovr": 61,
       "status": "reserva",

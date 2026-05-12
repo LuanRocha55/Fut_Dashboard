@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Florian Wirtz",
       "ovr": 88,
       "status": "titular",
@@ -69,7 +69,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 5,
       "name": "Granit Xhaka",
       "ovr": 86,
       "status": "titular",
@@ -129,7 +129,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Grimaldo",
       "ovr": 86,
       "status": "titular",
@@ -242,7 +242,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 19,
       "name": "Jeremie Frimpong",
       "ovr": 84,
       "status": "titular",
@@ -299,7 +299,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Aleix García",
       "ovr": 84,
       "status": "titular",
@@ -356,7 +356,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 1,
       "name": "Lukáš Hrádecký",
       "ovr": 84,
       "status": "titular",
@@ -371,12 +371,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 85,
+        "seg": 80,
+        "esp": 96,
+        "ref": 87,
+        "pos": 82,
+        "vel": 44,
         "sta": 34
       },
       "detailedStats": {
@@ -411,7 +411,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 18,
       "name": "Exequiel Palacios",
       "ovr": 84,
       "status": "titular",
@@ -467,7 +467,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 21,
       "name": "Robert Andrich",
       "ovr": 83,
       "status": "titular",
@@ -524,7 +524,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Edmond Tapsoba",
       "ovr": 83,
       "status": "titular",
@@ -582,7 +582,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 9,
       "name": "Victor Boniface",
       "ovr": 82,
       "status": "titular",
@@ -638,7 +638,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 23,
       "name": "Jonas Hofmann",
       "ovr": 82,
       "status": "reserva",
@@ -695,7 +695,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Patrik Schick",
       "ovr": 82,
       "status": "reserva",
@@ -752,7 +752,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 25,
       "name": "Piero Hincapié",
       "ovr": 81,
       "status": "reserva",
@@ -809,7 +809,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 2,
       "name": "Nordi Mukiele",
       "ovr": 79,
       "status": "reserva",
@@ -977,7 +977,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 12,
       "name": "Matěj Kovář",
       "ovr": 76,
       "status": "reserva",
@@ -992,12 +992,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 74,
+        "seg": 77,
+        "esp": 83,
+        "ref": 76,
+        "pos": 78,
+        "vel": 37,
         "sta": 28
       },
       "detailedStats": {
@@ -1032,7 +1032,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 28,
       "name": "Nathan Tella",
       "ovr": 76,
       "status": "reserva",
@@ -1088,7 +1088,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Jeanuël Belocian",
       "ovr": 70,
       "status": "reserva",
@@ -1144,7 +1144,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 13,
       "name": "Arthur",
       "ovr": 69,
       "status": "reserva",
@@ -1199,7 +1199,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Niklas Lomb",
       "ovr": 66,
       "status": "reserva",
@@ -1214,12 +1214,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 58,
+        "esp": 77,
+        "ref": 70,
+        "pos": 63,
+        "vel": 39,
         "sta": 40
       },
       "detailedStats": {
@@ -1254,7 +1254,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Sadik Fofana",
       "ovr": 65,
       "status": "reserva",
@@ -1310,7 +1310,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 30,
       "name": "Ayman Aourir",
       "ovr": 61,
       "status": "reserva",

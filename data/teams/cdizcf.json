@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Álex Fernández",
       "ovr": 76,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 18,
       "name": "Melendo",
       "ovr": 76,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Luís Hernández",
       "ovr": 75,
       "status": "titular",
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Chris Ramos",
       "ovr": 75,
       "status": "titular",
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 20,
       "name": "Rubén Alcaraz",
       "ovr": 74,
       "status": "titular",
@@ -289,7 +289,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 1,
       "name": "Caro",
       "ovr": 74,
       "status": "titular",
@@ -306,12 +306,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "alc": 74,
+        "seg": 70,
+        "esp": 83,
         "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "pos": 76,
+        "vel": 39,
         "sta": 41
       },
       "detailedStats": {
@@ -401,7 +401,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 11,
       "name": "Rubén Sobrino",
       "ovr": 74,
       "status": "titular",
@@ -456,7 +456,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 2,
       "name": "Zaldúa",
       "ovr": 74,
       "status": "titular",
@@ -566,7 +566,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 14,
       "name": "Fali",
       "ovr": 73,
       "status": "titular",
@@ -680,7 +680,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 19,
       "name": "Roger Martí",
       "ovr": 73,
       "status": "reserva",
@@ -735,7 +735,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "San Emeterio",
       "ovr": 73,
       "status": "reserva",
@@ -791,7 +791,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 27,
       "name": "Brian Ocampo",
       "ovr": 72,
       "status": "reserva",
@@ -848,7 +848,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 25,
       "name": "Víctor Chust",
       "ovr": 71,
       "status": "reserva",
@@ -904,7 +904,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 22,
       "name": "David Gil",
       "ovr": 71,
       "status": "reserva",
@@ -919,12 +919,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 72,
+        "seg": 72,
+        "esp": 79,
+        "ref": 71,
+        "pos": 69,
+        "vel": 46,
         "sta": 41
       },
       "detailedStats": {
@@ -959,7 +959,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 28,
       "name": "Iván Alejo",
       "ovr": 70,
       "status": "reserva",
@@ -1015,7 +1015,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 13,
       "name": "Iza Carcelén",
       "ovr": 70,
       "status": "reserva",
@@ -1072,7 +1072,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 3,
       "name": "José Matos",
       "ovr": 69,
       "status": "reserva",
@@ -1186,7 +1186,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Glauder",
       "ovr": 68,
       "status": "reserva",
@@ -1243,7 +1243,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 5,
       "name": "Bastida",
       "ovr": 67,
       "status": "reserva",
@@ -1353,7 +1353,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "Víctor Aznar",
       "ovr": 63,
       "status": "reserva",
@@ -1368,12 +1368,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 61,
+        "esp": 72,
+        "ref": 66,
+        "pos": 64,
+        "vel": 28,
         "sta": 27
       },
       "detailedStats": {
@@ -1408,7 +1408,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 16,
       "name": "Julio Cabrera",
       "ovr": 63,
       "status": "reserva",
@@ -1463,7 +1463,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 29,
       "name": "Álex Morata",
       "ovr": 63,
       "status": "reserva",
@@ -1519,7 +1519,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 30,
       "name": "Moussa Diakité",
       "ovr": 61,
       "status": "reserva",
@@ -1574,7 +1574,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 31,
       "name": "Francisco Mwepu",
       "ovr": 61,
       "status": "reserva",

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "César Falletti",
       "ovr": 72,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Kevin Lasagna",
       "ovr": 70,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 1,
       "name": "Boris Radunović",
       "ovr": 70,
       "status": "titular",
@@ -136,12 +136,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "alc": 73,
+        "seg": 65,
+        "esp": 82,
         "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "pos": 68,
+        "vel": 42,
         "sta": 32
       },
       "detailedStats": {
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 23,
       "name": "Giuseppe Sibilli",
       "ovr": 70,
       "status": "titular",
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Francesco Vicari",
       "ovr": 70,
       "status": "titular",
@@ -291,7 +291,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Ahmad Benali",
       "ovr": 69,
       "status": "titular",
@@ -347,7 +347,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 18,
       "name": "Nicola Bellomo",
       "ovr": 68,
       "status": "titular",
@@ -402,7 +402,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 19,
       "name": "Andrea Favilli",
       "ovr": 68,
       "status": "titular",
@@ -457,7 +457,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 2,
       "name": "Mehdi Dorval",
       "ovr": 67,
       "status": "titular",
@@ -512,7 +512,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 20,
       "name": "Karlo Lulić",
       "ovr": 67,
       "status": "titular",
@@ -957,7 +957,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Giacomo Manzari",
       "ovr": 64,
       "status": "reserva",
@@ -1012,7 +1012,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Lorenzo Sgarbi",
       "ovr": 64,
       "status": "reserva",
@@ -1067,7 +1067,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 28,
       "name": "Andrea Oliveri",
       "ovr": 63,
       "status": "reserva",
@@ -1122,7 +1122,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 25,
       "name": "Emmanuele Matino",
       "ovr": 60,
       "status": "reserva",
@@ -1178,7 +1178,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Marco Pissardo",
       "ovr": 60,
       "status": "reserva",
@@ -1193,12 +1193,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 61,
+        "esp": 68,
+        "ref": 64,
+        "pos": 60,
+        "vel": 36,
         "sta": 21
       },
       "detailedStats": {

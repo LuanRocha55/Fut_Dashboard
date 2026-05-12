@@ -26,11 +26,11 @@
       ],
       "stats": {
         "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
+        "seg": 73,
+        "esp": 88,
+        "ref": 83,
         "pos": 75,
-        "vel": 40,
+        "vel": 45,
         "sta": 35
       },
       "detailedStats": {
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Suat Serdar",
       "ovr": 77,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Marco Davide Faraoni",
       "ovr": 75,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 14,
       "name": "Flavius Daniliuc",
       "ovr": 74,
       "status": "titular",
@@ -291,7 +291,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 18,
       "name": "Ondrej Duda",
       "ovr": 74,
       "status": "titular",
@@ -346,7 +346,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 19,
       "name": "Darko Lazović",
       "ovr": 74,
       "status": "titular",
@@ -402,7 +402,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 28,
       "name": "Tomáš Suslov",
       "ovr": 74,
       "status": "titular",
@@ -459,7 +459,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 25,
       "name": "Paweł Dawidowicz",
       "ovr": 73,
       "status": "titular",
@@ -516,7 +516,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 20,
       "name": "Abdou Harroui",
       "ovr": 73,
       "status": "titular",
@@ -572,7 +572,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 10,
       "name": "Grigoris Kastanos",
       "ovr": 73,
       "status": "titular",
@@ -627,7 +627,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 2,
       "name": "Jackson Tchatchoua",
       "ovr": 73,
       "status": "reserva",
@@ -682,7 +682,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 9,
       "name": "Casper Tengstedt",
       "ovr": 72,
       "status": "reserva",
@@ -737,7 +737,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Diego Coppola",
       "ovr": 71,
       "status": "reserva",
@@ -793,7 +793,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 3,
       "name": "Martin Frese",
       "ovr": 71,
       "status": "reserva",
@@ -959,7 +959,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Dani Silva",
       "ovr": 69,
       "status": "reserva",
@@ -1014,7 +1014,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 27,
       "name": "Domagoj Bradarić",
       "ovr": 69,
       "status": "reserva",
@@ -1069,7 +1069,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Daniele Ghilardi",
       "ovr": 69,
       "status": "reserva",
@@ -1125,7 +1125,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 23,
       "name": "Dailon Rocha Livramento",
       "ovr": 69,
       "status": "reserva",
@@ -1180,7 +1180,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Stefan Mitrović",
       "ovr": 68,
       "status": "reserva",
@@ -1235,7 +1235,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Amin Sarr",
       "ovr": 68,
       "status": "reserva",
@@ -1292,7 +1292,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 29,
       "name": "Yllan Okou",
       "ovr": 67,
       "status": "reserva",
@@ -1348,7 +1348,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 12,
       "name": "Simone Perilli",
       "ovr": 67,
       "status": "reserva",
@@ -1363,12 +1363,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 67,
+        "esp": 73,
+        "ref": 64,
+        "pos": 66,
+        "vel": 45,
         "sta": 30
       },
       "detailedStats": {
@@ -1403,7 +1403,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 30,
       "name": "Juan Manuel Cruz",
       "ovr": 66,
       "status": "reserva",
@@ -1458,7 +1458,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 5,
       "name": "Reda Belahyane",
       "ovr": 65,
       "status": "reserva",
@@ -1513,7 +1513,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 31,
       "name": "Mattia Chiesa",
       "ovr": 65,
       "status": "reserva",
@@ -1528,11 +1528,11 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 67,
+        "seg": 62,
+        "esp": 73,
+        "ref": 65,
+        "pos": 61,
         "vel": 40,
         "sta": 28
       },
@@ -1568,7 +1568,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 32,
       "name": "Ayanda Sishuba",
       "ovr": 65,
       "status": "reserva",
@@ -1623,7 +1623,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 33,
       "name": "Alphadjo Cissè",
       "ovr": 64,
       "status": "reserva",
@@ -1678,7 +1678,7 @@
     },
     {
       "id": 31,
-      "number": 31,
+      "number": 34,
       "name": "Alessandro Berardi",
       "ovr": 62,
       "status": "reserva",
@@ -1693,12 +1693,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 58,
+        "esp": 69,
+        "ref": 64,
+        "pos": 63,
+        "vel": 51,
         "sta": 45
       },
       "detailedStats": {

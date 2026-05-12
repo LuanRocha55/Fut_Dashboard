@@ -23,12 +23,12 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 77,
+        "seg": 76,
+        "esp": 86,
+        "ref": 78,
+        "pos": 80,
+        "vel": 47,
         "sta": 31
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 5,
       "name": "Callum McGregor",
       "ovr": 79,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Cameron Carter-Vickers",
       "ovr": 77,
       "status": "titular",
@@ -180,7 +180,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Kyogo Furuhashi",
       "ovr": 77,
       "status": "titular",
@@ -238,7 +238,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 8,
       "name": "Reo Hatate",
       "ovr": 76,
       "status": "titular",
@@ -299,7 +299,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 2,
       "name": "Alistair Johnston",
       "ovr": 75,
       "status": "titular",
@@ -355,7 +355,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 17,
       "name": "James Forrest",
       "ovr": 74,
       "status": "titular",
@@ -411,7 +411,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 7,
       "name": "Daizen Maeda",
       "ovr": 74,
       "status": "titular",
@@ -469,7 +469,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 29,
       "name": "Luis Palma",
       "ovr": 74,
       "status": "titular",
@@ -529,7 +529,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 3,
       "name": "Greg Taylor",
       "ovr": 74,
       "status": "titular",
@@ -586,7 +586,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 10,
       "name": "Adam Idah",
       "ovr": 73,
       "status": "titular",
@@ -642,7 +642,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 31,
       "name": "Nicolas Kühn",
       "ovr": 73,
       "status": "reserva",
@@ -699,7 +699,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 14,
       "name": "Liam Scales",
       "ovr": 73,
       "status": "reserva",
@@ -756,7 +756,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 18,
       "name": "Arne Engels",
       "ovr": 72,
       "status": "reserva",
@@ -811,7 +811,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 20,
       "name": "Paulo Bernardo",
       "ovr": 72,
       "status": "reserva",
@@ -922,7 +922,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 25,
       "name": "Auston Trusty",
       "ovr": 72,
       "status": "reserva",
@@ -978,7 +978,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 13,
       "name": "Anthony Ralston",
       "ovr": 71,
       "status": "reserva",
@@ -1090,7 +1090,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 21,
       "name": "Luke McCowan",
       "ovr": 69,
       "status": "reserva",
@@ -1145,7 +1145,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 32,
       "name": "Yang Hyun Jun",
       "ovr": 69,
       "status": "reserva",
@@ -1256,7 +1256,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 12,
       "name": "Scott Bain",
       "ovr": 66,
       "status": "reserva",
@@ -1271,12 +1271,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
+        "alc": 65,
+        "seg": 66,
         "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "ref": 70,
+        "pos": 61,
+        "vel": 57,
         "sta": 30
       },
       "detailedStats": {
@@ -1326,12 +1326,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 65,
+        "esp": 76,
+        "ref": 68,
+        "pos": 64,
+        "vel": 23,
         "sta": 27
       },
       "detailedStats": {
@@ -1366,7 +1366,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "Liam Shaw",
       "ovr": 65,
       "status": "reserva",
@@ -1421,7 +1421,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 27,
       "name": "Odin Thiago Holm",
       "ovr": 64,
       "status": "reserva",
@@ -1476,7 +1476,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 28,
       "name": "Adam Montgomery",
       "ovr": 63,
       "status": "reserva",
@@ -1531,7 +1531,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 30,
       "name": "Dane Murray",
       "ovr": 59,
       "status": "reserva",
@@ -1587,7 +1587,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 33,
       "name": "Joe Morrison",
       "ovr": 56,
       "status": "reserva",
@@ -1602,12 +1602,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 56,
+        "seg": 54,
+        "esp": 63,
+        "ref": 57,
+        "pos": 55,
+        "vel": 48,
         "sta": 33
       },
       "detailedStats": {

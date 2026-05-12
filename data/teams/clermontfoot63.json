@@ -25,12 +25,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 77,
+        "seg": 74,
+        "esp": 86,
+        "ref": 78,
+        "pos": 72,
+        "vel": 42,
         "sta": 31
       },
       "detailedStats": {
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 5,
       "name": "Johan Gastien",
       "ovr": 74,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Damien Da Silva",
       "ovr": 71,
       "status": "titular",
@@ -179,7 +179,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 21,
       "name": "Yohann Magnin",
       "ovr": 70,
       "status": "titular",
@@ -234,7 +234,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 8,
       "name": "Henri Saivet",
       "ovr": 69,
       "status": "titular",
@@ -289,7 +289,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 18,
       "name": "Habib Keïta",
       "ovr": 68,
       "status": "titular",
@@ -344,7 +344,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 3,
       "name": "Yoël Armougom",
       "ovr": 67,
       "status": "titular",
@@ -399,7 +399,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 11,
       "name": "Mons Bassouamina",
       "ovr": 67,
       "status": "titular",
@@ -454,7 +454,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 12,
       "name": "Ouparine Djoco",
       "ovr": 67,
       "status": "titular",
@@ -469,12 +469,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 66,
+        "esp": 77,
+        "ref": 69,
+        "pos": 64,
+        "vel": 28,
         "sta": 31
       },
       "detailedStats": {
@@ -509,7 +509,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 2,
       "name": "Cheick Oumar Konaté",
       "ovr": 67,
       "status": "titular",
@@ -564,7 +564,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 22,
       "name": "Massamba Ndiaye",
       "ovr": 67,
       "status": "titular",
@@ -579,12 +579,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 65,
+        "esp": 78,
+        "ref": 71,
+        "pos": 63,
+        "vel": 33,
         "sta": 23
       },
       "detailedStats": {
@@ -619,7 +619,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 19,
       "name": "Yadaly Diaby",
       "ovr": 65,
       "status": "reserva",
@@ -674,7 +674,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 27,
       "name": "Aïman Maurer",
       "ovr": 64,
       "status": "reserva",
@@ -799,12 +799,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 59,
+        "esp": 70,
+        "ref": 65,
+        "pos": 61,
+        "vel": 42,
         "sta": 36
       },
       "detailedStats": {
@@ -839,7 +839,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 25,
       "name": "Jérémy Jacquet",
       "ovr": 62,
       "status": "reserva",
@@ -895,7 +895,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 16,
       "name": "Baïla Diallo",
       "ovr": 60,
       "status": "reserva",
@@ -950,7 +950,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Théo Borne",
       "ovr": 59,
       "status": "reserva",
@@ -965,12 +965,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 55,
+        "seg": 62,
+        "esp": 66,
+        "ref": 63,
+        "pos": 56,
+        "vel": 32,
         "sta": 20
       },
       "detailedStats": {
@@ -1005,7 +1005,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 10,
       "name": "Mohamed-Amine Bouchenna",
       "ovr": 58,
       "status": "reserva",
@@ -1060,7 +1060,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 23,
       "name": "Fred Gnalega",
       "ovr": 58,
       "status": "reserva",
@@ -1115,7 +1115,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 9,
       "name": "Musa Toure",
       "ovr": 58,
       "status": "reserva",

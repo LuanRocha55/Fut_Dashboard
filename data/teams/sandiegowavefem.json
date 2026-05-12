@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Alex Morgan",
       "ovr": 87,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Kailen Sheridan",
       "ovr": 85,
       "status": "titular",
@@ -84,12 +84,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 85,
+        "seg": 82,
+        "esp": 94,
+        "ref": 85,
+        "pos": 84,
+        "vel": 45,
         "sta": 40
       },
       "detailedStats": {
@@ -124,7 +124,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 5,
       "name": "Emily van Egmond",
       "ovr": 82,
       "status": "titular",
@@ -180,7 +180,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 21,
       "name": "Danielle Colaprico",
       "ovr": 81,
       "status": "titular",
@@ -235,7 +235,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Naomi Girma",
       "ovr": 81,
       "status": "titular",
@@ -294,7 +294,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 11,
       "name": "Sofia Jakobsson",
       "ovr": 81,
       "status": "titular",
@@ -351,7 +351,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 3,
       "name": "Kristen McNabb",
       "ovr": 79,
       "status": "titular",
@@ -406,7 +406,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 19,
       "name": "María Sánchez",
       "ovr": 79,
       "status": "titular",
@@ -465,7 +465,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 10,
       "name": "Makenzy Doniak",
       "ovr": 78,
       "status": "titular",
@@ -520,7 +520,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 23,
       "name": "Savannah McCaskill",
       "ovr": 78,
       "status": "titular",
@@ -576,7 +576,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 2,
       "name": "Christen Westphal",
       "ovr": 78,
       "status": "titular",
@@ -632,7 +632,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 13,
       "name": "Hanna Lundkvist",
       "ovr": 77,
       "status": "reserva",
@@ -687,7 +687,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 28,
       "name": "Jaedyn Shaw",
       "ovr": 73,
       "status": "reserva",
@@ -798,7 +798,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 20,
       "name": "Elyse Bennett",
       "ovr": 71,
       "status": "reserva",
@@ -908,7 +908,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 12,
       "name": "Hillary Beall",
       "ovr": 70,
       "status": "reserva",
@@ -923,12 +923,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 70,
+        "esp": 77,
+        "ref": 71,
+        "pos": 69,
+        "vel": 44,
         "sta": 39
       },
       "detailedStats": {
@@ -963,7 +963,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 24,
       "name": "Kaitlyn Torpey",
       "ovr": 69,
       "status": "reserva",
@@ -1018,7 +1018,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Mya Jones",
       "ovr": 68,
       "status": "reserva",
@@ -1073,7 +1073,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 25,
       "name": "Morgan Messner",
       "ovr": 68,
       "status": "reserva",
@@ -1088,12 +1088,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 69,
+        "esp": 74,
+        "ref": 69,
+        "pos": 67,
+        "vel": 43,
         "sta": 36
       },
       "detailedStats": {
@@ -1128,7 +1128,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 26,
       "name": "Kennedy Wesley",
       "ovr": 67,
       "status": "reserva",

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Jodi Jones",
       "ovr": 68,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Daniel Crowley",
       "ovr": 67,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 23,
       "name": "David McGoldrick",
       "ovr": 65,
       "status": "titular",
@@ -181,7 +181,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Jevani Brown",
       "ovr": 64,
       "status": "titular",
@@ -237,7 +237,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 8,
       "name": "Curtis Edwards",
       "ovr": 64,
       "status": "titular",
@@ -293,7 +293,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 18,
       "name": "Matt Palmer",
       "ovr": 64,
       "status": "titular",
@@ -349,7 +349,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 3,
       "name": "Nick Tsaroulla",
       "ovr": 64,
       "status": "titular",
@@ -404,7 +404,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 1,
       "name": "Alex Bass",
       "ovr": 63,
       "status": "titular",
@@ -420,12 +420,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 61,
+        "esp": 72,
+        "ref": 65,
+        "pos": 60,
+        "vel": 54,
         "sta": 30
       },
       "detailedStats": {
@@ -460,7 +460,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 4,
       "name": "Jacob Bedeau",
       "ovr": 63,
       "status": "titular",
@@ -517,7 +517,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Robbie Cundy",
       "ovr": 63,
       "status": "titular",
@@ -573,7 +573,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 25,
       "name": "Lucas Ness",
       "ovr": 63,
       "status": "titular",
@@ -686,7 +686,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 2,
       "name": "Kellan Gordon",
       "ovr": 62,
       "status": "reserva",
@@ -741,7 +741,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 19,
       "name": "Alassana Jatta",
       "ovr": 62,
       "status": "reserva",
@@ -853,7 +853,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 7,
       "name": "Conor Grant",
       "ovr": 61,
       "status": "reserva",
@@ -908,7 +908,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 20,
       "name": "Scott Robertson",
       "ovr": 61,
       "status": "reserva",
@@ -963,7 +963,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Lewis Macari",
       "ovr": 60,
       "status": "reserva",
@@ -1019,7 +1019,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Sam Austin",
       "ovr": 59,
       "status": "reserva",
@@ -1074,7 +1074,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 16,
       "name": "Adam Chicksen",
       "ovr": 59,
       "status": "reserva",
@@ -1129,7 +1129,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Aidan Stone",
       "ovr": 59,
       "status": "reserva",
@@ -1144,12 +1144,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 58,
+        "esp": 66,
+        "ref": 58,
+        "pos": 59,
+        "vel": 58,
         "sta": 25
       },
       "detailedStats": {
@@ -1184,7 +1184,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Cedwyn Scott",
       "ovr": 58,
       "status": "reserva",
@@ -1239,7 +1239,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 27,
       "name": "Sam Slocombe",
       "ovr": 58,
       "status": "reserva",
@@ -1254,12 +1254,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 59,
+        "seg": 57,
+        "esp": 65,
+        "ref": 58,
+        "pos": 57,
+        "vel": 32,
         "sta": 40
       },
       "detailedStats": {

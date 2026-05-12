@@ -24,11 +24,11 @@
       ],
       "stats": {
         "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "seg": 74,
+        "esp": 83,
         "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "pos": 77,
+        "vel": 37,
         "sta": 24
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "José Fonte",
       "ovr": 75,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Leonardo Lelo",
       "ovr": 73,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 14,
       "name": "Nermin Zolotić",
       "ovr": 72,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 17,
       "name": "Rúben Lameiras",
       "ovr": 71,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 19,
       "name": "Larrazabal",
       "ovr": 70,
       "status": "titular",
@@ -344,7 +344,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 28,
       "name": "Nuno Moreira",
       "ovr": 70,
       "status": "titular",
@@ -400,7 +400,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 2,
       "name": "André Geraldes",
       "ovr": 69,
       "status": "titular",
@@ -455,7 +455,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 8,
       "name": "Pablo Roberto",
       "ovr": 69,
       "status": "titular",
@@ -510,7 +510,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 18,
       "name": "Beni",
       "ovr": 68,
       "status": "titular",
@@ -565,7 +565,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 9,
       "name": "Samuel Obeng",
       "ovr": 68,
       "status": "titular",
@@ -623,7 +623,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 25,
       "name": "Duplexe Tchamba",
       "ovr": 68,
       "status": "reserva",
@@ -679,7 +679,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 10,
       "name": "Miguel Sousa",
       "ovr": 67,
       "status": "reserva",
@@ -734,7 +734,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 7,
       "name": "Henrique Pereira",
       "ovr": 67,
       "status": "reserva",
@@ -789,7 +789,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 12,
       "name": "Patrick Gilmar Sequeira",
       "ovr": 67,
       "status": "reserva",
@@ -804,12 +804,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 74,
+        "seg": 65,
+        "esp": 78,
+        "ref": 66,
+        "pos": 61,
+        "vel": 30,
         "sta": 25
       },
       "detailedStats": {
@@ -899,7 +899,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 20,
       "name": "Telasco Segovia",
       "ovr": 66,
       "status": "reserva",
@@ -954,7 +954,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Svensson",
       "ovr": 66,
       "status": "reserva",
@@ -1009,7 +1009,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Ruben Kluivert",
       "ovr": 64,
       "status": "reserva",
@@ -1065,7 +1065,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 23,
       "name": "Clau Mendes",
       "ovr": 64,
       "status": "reserva",
@@ -1120,7 +1120,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Rafael Brito",
       "ovr": 64,
       "status": "reserva",
@@ -1175,7 +1175,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 31,
       "name": "Kiki Silva",
       "ovr": 63,
       "status": "reserva",
@@ -1230,7 +1230,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Daniel Azevedo",
       "ovr": 60,
       "status": "reserva",
@@ -1245,12 +1245,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 56,
+        "esp": 68,
+        "ref": 62,
+        "pos": 63,
+        "vel": 21,
         "sta": 20
       },
       "detailedStats": {

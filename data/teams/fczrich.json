@@ -25,12 +25,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 71,
+        "esp": 80,
+        "ref": 73,
+        "pos": 73,
+        "vel": 42,
         "sta": 24
       },
       "detailedStats": {
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 5,
       "name": "Cheick Conde",
       "ovr": 71,
       "status": "titular",
@@ -124,7 +124,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Antonio Marchesano",
       "ovr": 71,
       "status": "titular",
@@ -180,7 +180,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 7,
       "name": "Jonathan Okita",
       "ovr": 71,
       "status": "titular",
@@ -237,7 +237,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 3,
       "name": "Nemanja Tošić",
       "ovr": 71,
       "status": "titular",
@@ -292,7 +292,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 4,
       "name": "Lindrit Kamberi",
       "ovr": 70,
       "status": "titular",
@@ -350,7 +350,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 8,
       "name": "Ifeanyi Mathew",
       "ovr": 70,
       "status": "titular",
@@ -405,7 +405,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 11,
       "name": "Mounir Chouiar",
       "ovr": 69,
       "status": "titular",
@@ -462,7 +462,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 2,
       "name": "Rodrigo Conceição",
       "ovr": 69,
       "status": "titular",
@@ -517,7 +517,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Nikola Katić",
       "ovr": 69,
       "status": "titular",
@@ -576,7 +576,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 18,
       "name": "Bledian Krasniqi",
       "ovr": 68,
       "status": "titular",
@@ -631,7 +631,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 10,
       "name": "Daniel Afriyie",
       "ovr": 67,
       "status": "reserva",
@@ -686,7 +686,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 25,
       "name": "Fabio Daprelà",
       "ovr": 67,
       "status": "reserva",
@@ -743,7 +743,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Mirlind Kryeziu",
       "ovr": 67,
       "status": "reserva",
@@ -799,7 +799,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 19,
       "name": "Juan José Perea",
       "ovr": 67,
       "status": "reserva",
@@ -910,7 +910,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 28,
       "name": "Samuel Ballet",
       "ovr": 64,
       "status": "reserva",
@@ -965,7 +965,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 17,
       "name": "Umeh Emmanuel",
       "ovr": 63,
       "status": "reserva",
@@ -1020,7 +1020,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 20,
       "name": "Fernand Goure",
       "ovr": 63,
       "status": "reserva",
@@ -1075,7 +1075,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 21,
       "name": "Silvan Wallner",
       "ovr": 63,
       "status": "reserva",
@@ -1131,7 +1131,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 27,
       "name": "Armstrong Oko-Flex",
       "ovr": 62,
       "status": "reserva",
@@ -1242,7 +1242,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 12,
       "name": "Živko Kostadinović",
       "ovr": 61,
       "status": "reserva",
@@ -1257,12 +1257,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 58,
+        "esp": 69,
+        "ref": 63,
+        "pos": 61,
+        "vel": 17,
         "sta": 19
       },
       "detailedStats": {
@@ -1352,7 +1352,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "Calixte Paul Ligue",
       "ovr": 59,
       "status": "reserva",
@@ -1407,7 +1407,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Selmin Hodza",
       "ovr": 57,
       "status": "reserva",
@@ -1462,7 +1462,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 30,
       "name": "Joseph Sabobo Banda",
       "ovr": 57,
       "status": "reserva",
@@ -1517,7 +1517,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 23,
       "name": "Nevio Di Giusto",
       "ovr": 56,
       "status": "reserva",
@@ -1572,7 +1572,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 31,
       "name": "Cheveyo Tsawa",
       "ovr": 55,
       "status": "reserva",
@@ -1627,7 +1627,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 32,
       "name": "Silas Huber",
       "ovr": 54,
       "status": "reserva",
@@ -1642,12 +1642,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 55,
+        "seg": 52,
+        "esp": 62,
+        "ref": 56,
+        "pos": 52,
+        "vel": 25,
         "sta": 20
       },
       "detailedStats": {

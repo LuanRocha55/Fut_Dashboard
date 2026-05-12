@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Juan Fernando Quintero",
       "ovr": 77,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Gabriel Arias",
       "ovr": 76,
       "status": "titular",
@@ -81,12 +81,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
+        "alc": 76,
+        "seg": 72,
+        "esp": 84,
+        "ref": 76,
         "pos": 75,
-        "vel": 40,
+        "vel": 44,
         "sta": 35
       },
       "detailedStats": {
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Adrián Martínez",
       "ovr": 76,
       "status": "titular",
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 14,
       "name": "Leonardo Sigali",
       "ovr": 74,
       "status": "titular",
@@ -289,7 +289,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Agustín Almendra",
       "ovr": 73,
       "status": "titular",
@@ -344,7 +344,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 25,
       "name": "Nazareno Colombo",
       "ovr": 73,
       "status": "titular",
@@ -400,7 +400,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 19,
       "name": "Roger Martínez",
       "ovr": 73,
       "status": "titular",
@@ -455,7 +455,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "Gabriel Rojas",
       "ovr": 73,
       "status": "titular",
@@ -511,7 +511,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 11,
       "name": "Santiago Sosa",
       "ovr": 73,
       "status": "titular",
@@ -567,7 +567,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 7,
       "name": "Johan Carbonero",
       "ovr": 72,
       "status": "titular",
@@ -679,7 +679,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 18,
       "name": "Juan Ignacio Nardoni",
       "ovr": 72,
       "status": "reserva",
@@ -734,7 +734,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 20,
       "name": "Maximiliano Salas",
       "ovr": 72,
       "status": "reserva",
@@ -790,7 +790,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 27,
       "name": "Agustín Urzi",
       "ovr": 72,
       "status": "reserva",
@@ -845,7 +845,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 22,
       "name": "Facundo Cambeses",
       "ovr": 71,
       "status": "reserva",
@@ -861,12 +861,12 @@
         "Far Reach"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "alc": 73,
+        "seg": 67,
+        "esp": 82,
         "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "pos": 69,
+        "vel": 49,
         "sta": 39
       },
       "detailedStats": {
@@ -957,7 +957,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 2,
       "name": "Gastón Martirena",
       "ovr": 71,
       "status": "reserva",
@@ -1012,7 +1012,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 13,
       "name": "Facundo Mura",
       "ovr": 71,
       "status": "reserva",
@@ -1067,7 +1067,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 21,
       "name": "Santiago Solari",
       "ovr": 71,
       "status": "reserva",
@@ -1122,7 +1122,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 5,
       "name": "Bruno Zuculini",
       "ovr": 71,
       "status": "reserva",
@@ -1177,7 +1177,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 16,
       "name": "Juan Elordi",
       "ovr": 70,
       "status": "reserva",
@@ -1342,7 +1342,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 30,
       "name": "Jonathan Urretaviscaya",
       "ovr": 69,
       "status": "reserva",
@@ -1397,7 +1397,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 31,
       "name": "Tomás Verón",
       "ovr": 69,
       "status": "reserva",
@@ -1452,7 +1452,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 26,
       "name": "Martín Ferreira",
       "ovr": 68,
       "status": "reserva",
@@ -1618,7 +1618,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 32,
       "name": "Renzo Bacchia",
       "ovr": 67,
       "status": "reserva",
@@ -1633,12 +1633,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 66,
+        "esp": 74,
+        "ref": 66,
+        "pos": 66,
+        "vel": 34,
         "sta": 28
       },
       "detailedStats": {
@@ -1673,7 +1673,7 @@
     },
     {
       "id": 31,
-      "number": 31,
+      "number": 33,
       "name": "Guillermo Cotugno",
       "ovr": 67,
       "status": "reserva",
@@ -1729,7 +1729,7 @@
     },
     {
       "id": 32,
-      "number": 32,
+      "number": 34,
       "name": "Erik De Los Santos",
       "ovr": 67,
       "status": "reserva",
@@ -1784,7 +1784,7 @@
     },
     {
       "id": 33,
-      "number": 33,
+      "number": 35,
       "name": "Nicolás Sosa Sánchez",
       "ovr": 67,
       "status": "reserva",
@@ -1839,7 +1839,7 @@
     },
     {
       "id": 34,
-      "number": 34,
+      "number": 36,
       "name": "Martín Barrios",
       "ovr": 66,
       "status": "reserva",
@@ -1894,7 +1894,7 @@
     },
     {
       "id": 35,
-      "number": 35,
+      "number": 37,
       "name": "Gastón Bueno",
       "ovr": 66,
       "status": "reserva",
@@ -1950,7 +1950,7 @@
     },
     {
       "id": 36,
-      "number": 36,
+      "number": 38,
       "name": "Hugo Magallanes",
       "ovr": 66,
       "status": "reserva",
@@ -2006,7 +2006,7 @@
     },
     {
       "id": 37,
-      "number": 37,
+      "number": 39,
       "name": "Lucas Monzón",
       "ovr": 66,
       "status": "reserva",
@@ -2062,7 +2062,7 @@
     },
     {
       "id": 38,
-      "number": 38,
+      "number": 40,
       "name": "Juan Rivero",
       "ovr": 66,
       "status": "reserva",
@@ -2117,7 +2117,7 @@
     },
     {
       "id": 39,
-      "number": 39,
+      "number": 41,
       "name": "Lucas Rodríguez",
       "ovr": 66,
       "status": "reserva",
@@ -2172,7 +2172,7 @@
     },
     {
       "id": 40,
-      "number": 40,
+      "number": 42,
       "name": "Agustín Alaniz",
       "ovr": 65,
       "status": "reserva",
@@ -2227,7 +2227,7 @@
     },
     {
       "id": 41,
-      "number": 41,
+      "number": 43,
       "name": "Dylan Nandín",
       "ovr": 65,
       "status": "reserva",
@@ -2282,7 +2282,7 @@
     },
     {
       "id": 42,
-      "number": 42,
+      "number": 44,
       "name": "Rodrigo Odriozola",
       "ovr": 65,
       "status": "reserva",
@@ -2297,12 +2297,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 64,
+        "esp": 72,
+        "ref": 65,
+        "pos": 67,
+        "vel": 49,
         "sta": 22
       },
       "detailedStats": {
@@ -2337,7 +2337,7 @@
     },
     {
       "id": 43,
-      "number": 43,
+      "number": 45,
       "name": "David González",
       "ovr": 64,
       "status": "reserva",
@@ -2392,7 +2392,7 @@
     },
     {
       "id": 44,
-      "number": 44,
+      "number": 46,
       "name": "Luis Antonio Gorocito",
       "ovr": 64,
       "status": "reserva",
@@ -2447,7 +2447,7 @@
     },
     {
       "id": 45,
-      "number": 45,
+      "number": 47,
       "name": "Roberto León",
       "ovr": 64,
       "status": "reserva",
@@ -2462,12 +2462,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 63,
+        "esp": 72,
+        "ref": 64,
+        "pos": 63,
+        "vel": 29,
         "sta": 23
       },
       "detailedStats": {
@@ -2502,7 +2502,7 @@
     },
     {
       "id": 46,
-      "number": 46,
+      "number": 48,
       "name": "Santiago Mederos",
       "ovr": 64,
       "status": "reserva",
@@ -2557,7 +2557,7 @@
     },
     {
       "id": 47,
-      "number": 47,
+      "number": 49,
       "name": "Agustín Pereira",
       "ovr": 64,
       "status": "reserva",
@@ -2612,7 +2612,7 @@
     },
     {
       "id": 48,
-      "number": 48,
+      "number": 50,
       "name": "Santiago Quirós",
       "ovr": 64,
       "status": "reserva",
@@ -2668,7 +2668,7 @@
     },
     {
       "id": 49,
-      "number": 49,
+      "number": 51,
       "name": "Milton Cantero",
       "ovr": 60,
       "status": "reserva",
@@ -2723,7 +2723,7 @@
     },
     {
       "id": 50,
-      "number": 50,
+      "number": 52,
       "name": "Ramiro Degregorio",
       "ovr": 60,
       "status": "reserva",
@@ -2778,7 +2778,7 @@
     },
     {
       "id": 51,
-      "number": 51,
+      "number": 53,
       "name": "Alexander Hernández",
       "ovr": 60,
       "status": "reserva",
@@ -2833,7 +2833,7 @@
     },
     {
       "id": 52,
-      "number": 52,
+      "number": 54,
       "name": "Alejandro Severo",
       "ovr": 59,
       "status": "reserva",
@@ -2888,7 +2888,7 @@
     },
     {
       "id": 53,
-      "number": 53,
+      "number": 55,
       "name": "Santino Vera",
       "ovr": 59,
       "status": "reserva",
@@ -2943,7 +2943,7 @@
     },
     {
       "id": 54,
-      "number": 54,
+      "number": 56,
       "name": "Alexandre Castro",
       "ovr": 58,
       "status": "reserva",
@@ -2958,12 +2958,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 59,
+        "esp": 66,
+        "ref": 60,
+        "pos": 60,
+        "vel": 35,
         "sta": 25
       },
       "detailedStats": {
@@ -2998,7 +2998,7 @@
     },
     {
       "id": 55,
-      "number": 55,
+      "number": 57,
       "name": "Rodrigo Teliz",
       "ovr": 58,
       "status": "reserva",

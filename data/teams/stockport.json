@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Fraser Horsfall",
       "ovr": 66,
       "status": "titular",
@@ -69,7 +69,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 14,
       "name": "Sam Hughes",
       "ovr": 66,
       "status": "titular",
@@ -128,7 +128,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "Nick Powell",
       "ovr": 66,
       "status": "titular",
@@ -183,7 +183,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Corey Addai",
       "ovr": 65,
       "status": "titular",
@@ -198,12 +198,12 @@
         "1v1 Close Down"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 63,
+        "esp": 72,
+        "ref": 65,
+        "pos": 64,
+        "vel": 22,
         "sta": 19
       },
       "detailedStats": {
@@ -238,7 +238,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 23,
       "name": "Odin Bailey",
       "ovr": 65,
       "status": "titular",
@@ -293,7 +293,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 7,
       "name": "Louie Barry",
       "ovr": 65,
       "status": "titular",
@@ -351,7 +351,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 8,
       "name": "Lewis Bate",
       "ovr": 65,
       "status": "titular",
@@ -406,7 +406,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 18,
       "name": "Will Collar",
       "ovr": 65,
       "status": "titular",
@@ -461,7 +461,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 25,
       "name": "Callum Connolly",
       "ovr": 65,
       "status": "titular",
@@ -517,7 +517,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 9,
       "name": "Isaac Olaofe",
       "ovr": 65,
       "status": "titular",
@@ -574,7 +574,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 3,
       "name": "Ibou Touray",
       "ovr": 65,
       "status": "titular",
@@ -632,7 +632,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 19,
       "name": "Kyle Wootton",
       "ovr": 65,
       "status": "reserva",
@@ -687,7 +687,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 16,
       "name": "Tayo Adaramola",
       "ovr": 64,
       "status": "reserva",
@@ -742,7 +742,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 17,
       "name": "Jack Diamond",
       "ovr": 64,
       "status": "reserva",
@@ -798,7 +798,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 31,
       "name": "Jayden Fevrier",
       "ovr": 64,
       "status": "reserva",
@@ -853,7 +853,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 20,
       "name": "Lewis Fiorini",
       "ovr": 64,
       "status": "reserva",
@@ -908,7 +908,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 12,
       "name": "Ben Hinchliffe",
       "ovr": 64,
       "status": "reserva",
@@ -924,12 +924,12 @@
         "Far Reach"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 60,
+        "esp": 73,
+        "ref": 66,
+        "pos": 65,
+        "vel": 44,
         "sta": 37
       },
       "detailedStats": {
@@ -964,7 +964,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Callum Camps",
       "ovr": 63,
       "status": "reserva",
@@ -1019,7 +1019,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 2,
       "name": "Kyle Knoyle",
       "ovr": 63,
       "status": "reserva",
@@ -1075,7 +1075,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Ethan Pye",
       "ovr": 63,
       "status": "reserva",
@@ -1131,7 +1131,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 13,
       "name": "Macauley Southam-Hales",
       "ovr": 63,
       "status": "reserva",
@@ -1186,7 +1186,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Ryan Rydel",
       "ovr": 62,
       "status": "reserva",
@@ -1241,7 +1241,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Michael Mellon",
       "ovr": 61,
       "status": "reserva",
@@ -1296,7 +1296,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 27,
       "name": "Jay Mingi",
       "ovr": 61,
       "status": "reserva",
@@ -1351,7 +1351,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 28,
       "name": "Tyler Onyango",
       "ovr": 59,
       "status": "reserva",
@@ -1406,7 +1406,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Jack Stretton",
       "ovr": 58,
       "status": "reserva",
@@ -1461,7 +1461,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 30,
       "name": "Max Metcalfe",
       "ovr": 56,
       "status": "reserva",
@@ -1476,12 +1476,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 59,
+        "seg": 55,
+        "esp": 65,
+        "ref": 58,
+        "pos": 56,
+        "vel": 38,
         "sta": 23
       },
       "detailedStats": {

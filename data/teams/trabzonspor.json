@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Stefan Savić",
       "ovr": 81,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Edin Višća",
       "ovr": 79,
       "status": "titular",
@@ -124,7 +124,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 1,
       "name": "Uğurcan Çakır",
       "ovr": 77,
       "status": "titular",
@@ -140,12 +140,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 78,
+        "seg": 76,
+        "esp": 84,
+        "ref": 73,
+        "pos": 80,
+        "vel": 56,
         "sta": 40
       },
       "detailedStats": {
@@ -180,7 +180,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 10,
       "name": "Enis Bardhi",
       "ovr": 76,
       "status": "titular",
@@ -237,7 +237,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 9,
       "name": "Anthony Nwakaeme",
       "ovr": 76,
       "status": "titular",
@@ -295,7 +295,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 23,
       "name": "Muhammed Cham",
       "ovr": 74,
       "status": "titular",
@@ -350,7 +350,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Stefano Denswil",
       "ovr": 74,
       "status": "titular",
@@ -408,7 +408,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 5,
       "name": "John Lundstram",
       "ovr": 74,
       "status": "titular",
@@ -464,7 +464,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 19,
       "name": "Mislav Oršić",
       "ovr": 74,
       "status": "titular",
@@ -521,7 +521,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 21,
       "name": "Okay Yokuşlu",
       "ovr": 74,
       "status": "titular",
@@ -577,7 +577,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 2,
       "name": "Pedro Malheiro",
       "ovr": 73,
       "status": "titular",
@@ -690,7 +690,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 30,
       "name": "Ozan Tufan",
       "ovr": 73,
       "status": "reserva",
@@ -745,7 +745,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 3,
       "name": "Borna Barišić",
       "ovr": 72,
       "status": "reserva",
@@ -801,7 +801,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 20,
       "name": "Umut Bozok",
       "ovr": 71,
       "status": "reserva",
@@ -912,7 +912,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 26,
       "name": "Eren Elmalı",
       "ovr": 71,
       "status": "reserva",
@@ -969,7 +969,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 8,
       "name": "Umut Güneş",
       "ovr": 68,
       "status": "reserva",
@@ -1024,7 +1024,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Enis Destan",
       "ovr": 67,
       "status": "reserva",
@@ -1079,7 +1079,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 13,
       "name": "Serkan Asan",
       "ovr": 66,
       "status": "reserva",
@@ -1134,7 +1134,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Cihan Çanak",
       "ovr": 66,
       "status": "reserva",
@@ -1189,7 +1189,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 25,
       "name": "Tonio Teklić",
       "ovr": 65,
       "status": "reserva",
@@ -1244,7 +1244,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 27,
       "name": "Arda Akbulut",
       "ovr": 64,
       "status": "reserva",
@@ -1259,12 +1259,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 61,
+        "esp": 74,
+        "ref": 68,
+        "pos": 65,
+        "vel": 34,
         "sta": 27
       },
       "detailedStats": {
@@ -1299,7 +1299,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 28,
       "name": "Muhammet Taha Tepe",
       "ovr": 62,
       "status": "reserva",
@@ -1314,12 +1314,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 65,
+        "esp": 71,
+        "ref": 63,
+        "pos": 56,
+        "vel": 32,
         "sta": 25
       },
       "detailedStats": {
@@ -1354,7 +1354,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Arif Boşluk",
       "ovr": 56,
       "status": "reserva",

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Victor Osimhen",
       "ovr": 87,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 7,
       "name": "Khvicha Kvaratskhelia",
       "ovr": 85,
       "status": "titular",
@@ -126,7 +126,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 2,
       "name": "Giovanni Di Lorenzo",
       "ovr": 82,
       "status": "titular",
@@ -184,7 +184,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Stanislav Lobotka",
       "ovr": 82,
       "status": "titular",
@@ -241,7 +241,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 10,
       "name": "Romelu Lukaku",
       "ovr": 82,
       "status": "titular",
@@ -298,7 +298,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 1,
       "name": "Alex Meret",
       "ovr": 81,
       "status": "titular",
@@ -313,12 +313,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 80,
+        "seg": 78,
+        "esp": 91,
+        "ref": 84,
+        "pos": 83,
+        "vel": 48,
         "sta": 29
       },
       "detailedStats": {
@@ -353,7 +353,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 4,
       "name": "Alessandro Buongiorno",
       "ovr": 80,
       "status": "titular",
@@ -410,7 +410,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 11,
       "name": "David Neres",
       "ovr": 80,
       "status": "titular",
@@ -469,7 +469,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 17,
       "name": "Matteo Politano",
       "ovr": 80,
       "status": "titular",
@@ -526,7 +526,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Amir Rrahmani",
       "ovr": 80,
       "status": "titular",
@@ -584,7 +584,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 5,
       "name": "André-Franck Zambo Anguissa",
       "ovr": 80,
       "status": "titular",
@@ -642,7 +642,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 3,
       "name": "Mário Rui",
       "ovr": 79,
       "status": "reserva",
@@ -697,7 +697,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 19,
       "name": "Leonardo Spinazzola",
       "ovr": 79,
       "status": "reserva",
@@ -754,7 +754,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 21,
       "name": "Scott McTominay",
       "ovr": 78,
       "status": "reserva",
@@ -809,7 +809,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 23,
       "name": "Giacomo Raspadori",
       "ovr": 78,
       "status": "reserva",
@@ -920,7 +920,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 20,
       "name": "Giovanni Simeone",
       "ovr": 77,
       "status": "reserva",
@@ -975,7 +975,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 30,
       "name": "Michael Folorunsho",
       "ovr": 76,
       "status": "reserva",
@@ -1031,7 +1031,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Billy Gilmour",
       "ovr": 75,
       "status": "reserva",
@@ -1086,7 +1086,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 12,
       "name": "Elia Caprile",
       "ovr": 74,
       "status": "reserva",
@@ -1102,12 +1102,12 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 72,
+        "seg": 72,
+        "esp": 83,
+        "ref": 77,
+        "pos": 74,
+        "vel": 52,
         "sta": 28
       },
       "detailedStats": {
@@ -1142,7 +1142,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 25,
       "name": "Juan Jesus",
       "ovr": 74,
       "status": "reserva",
@@ -1198,7 +1198,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 28,
       "name": "Cyril Ngonge",
       "ovr": 73,
       "status": "reserva",
@@ -1254,7 +1254,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Pasquale Mazzocchi",
       "ovr": 72,
       "status": "reserva",
@@ -1309,7 +1309,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Rafa Marín",
       "ovr": 71,
       "status": "reserva",
@@ -1365,7 +1365,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Alessio Zerbin",
       "ovr": 71,
       "status": "reserva",
@@ -1420,7 +1420,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 27,
       "name": "Nikita Contini",
       "ovr": 67,
       "status": "reserva",
@@ -1435,12 +1435,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 66,
+        "esp": 76,
+        "ref": 69,
+        "pos": 64,
+        "vel": 49,
         "sta": 21
       },
       "detailedStats": {

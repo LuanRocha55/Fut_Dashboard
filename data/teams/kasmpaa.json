@@ -23,12 +23,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 77,
+        "seg": 71,
+        "esp": 86,
+        "ref": 77,
+        "pos": 71,
+        "vel": 44,
         "sta": 29
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Haris Hajradinović",
       "ovr": 74,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Nuno da Costa",
       "ovr": 72,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 2,
       "name": "Cláudio Winck",
       "ovr": 72,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 10,
       "name": "Mamadou Fall",
       "ovr": 71,
       "status": "titular",
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 18,
       "name": "Aytaç Kara",
       "ovr": 71,
       "status": "titular",
@@ -344,7 +344,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 3,
       "name": "Mortadha Ben Ouanes",
       "ovr": 69,
       "status": "titular",
@@ -399,7 +399,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 4,
       "name": "Kenneth Omeruo",
       "ovr": 69,
       "status": "titular",
@@ -455,7 +455,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 5,
       "name": "Loret Sadiku",
       "ovr": 67,
       "status": "titular",
@@ -510,7 +510,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Sadık Çiftpınar",
       "ovr": 66,
       "status": "titular",
@@ -567,7 +567,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 25,
       "name": "Nicholas Opoku",
       "ovr": 66,
       "status": "titular",
@@ -623,7 +623,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 21,
       "name": "Gökhan Gül",
       "ovr": 65,
       "status": "reserva",
@@ -678,7 +678,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 23,
       "name": "Driess Saddiki",
       "ovr": 65,
       "status": "reserva",
@@ -733,7 +733,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 16,
       "name": "Yasin Özcan",
       "ovr": 63,
       "status": "reserva",
@@ -789,7 +789,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 17,
       "name": "Erdem Çetinkaya",
       "ovr": 62,
       "status": "reserva",
@@ -844,7 +844,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 30,
       "name": "Ali Demirel",
       "ovr": 60,
       "status": "reserva",
@@ -899,7 +899,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 11,
       "name": "Berat Kalkan",
       "ovr": 60,
       "status": "reserva",
@@ -954,7 +954,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 12,
       "name": "Ali Emre Yanar",
       "ovr": 60,
       "status": "reserva",
@@ -969,12 +969,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 58,
+        "esp": 68,
+        "ref": 58,
+        "pos": 59,
+        "vel": 20,
         "sta": 21
       },
       "detailedStats": {
@@ -1120,7 +1120,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 31,
       "name": "Emirhan Yiğit",
       "ovr": 54,
       "status": "reserva",
@@ -1175,7 +1175,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Adnan Aktaş",
       "ovr": 53,
       "status": "reserva",

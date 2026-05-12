@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 7,
       "name": "Davidson",
       "ovr": 76,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Léo Duarte",
       "ovr": 75,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 14,
       "name": "Ousseynou Ba",
       "ovr": 74,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Krzysztof Piątek",
       "ovr": 74,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 8,
       "name": "Miguel Crespo",
       "ovr": 73,
       "status": "titular",
@@ -289,7 +289,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 11,
       "name": "Deniz Türüç",
       "ovr": 73,
       "status": "titular",
@@ -346,7 +346,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 19,
       "name": "Serdar Gürler",
       "ovr": 72,
       "status": "titular",
@@ -401,7 +401,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 18,
       "name": "Olivier Kemen",
       "ovr": 72,
       "status": "titular",
@@ -458,7 +458,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 20,
       "name": "Berkay Özcan",
       "ovr": 72,
       "status": "titular",
@@ -570,7 +570,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 23,
       "name": "Dimitrios Pelkas",
       "ovr": 72,
       "status": "titular",
@@ -626,7 +626,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 3,
       "name": "Lucas Lima",
       "ovr": 71,
       "status": "reserva",
@@ -681,7 +681,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 25,
       "name": "Jerome Opoku",
       "ovr": 71,
       "status": "reserva",
@@ -737,7 +737,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 1,
       "name": "Volkan Babacan",
       "ovr": 70,
       "status": "reserva",
@@ -752,12 +752,12 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 68,
+        "esp": 76,
+        "ref": 67,
+        "pos": 76,
+        "vel": 51,
         "sta": 31
       },
       "detailedStats": {
@@ -848,7 +848,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 17,
       "name": "Matchoi Djaló",
       "ovr": 69,
       "status": "reserva",
@@ -903,7 +903,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 21,
       "name": "João Figueiredo",
       "ovr": 69,
       "status": "reserva",
@@ -958,7 +958,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 2,
       "name": "Ömer Ali Şahiner",
       "ovr": 68,
       "status": "reserva",
@@ -1013,7 +1013,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 28,
       "name": "Patryk Szysz",
       "ovr": 68,
       "status": "reserva",
@@ -1068,7 +1068,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 5,
       "name": "Onur Ergün",
       "ovr": 67,
       "status": "reserva",
@@ -1123,7 +1123,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 12,
       "name": "Muhammed Şengezer",
       "ovr": 67,
       "status": "reserva",
@@ -1138,12 +1138,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 64,
+        "esp": 76,
+        "ref": 70,
+        "pos": 66,
+        "vel": 36,
         "sta": 22
       },
       "detailedStats": {
@@ -1233,7 +1233,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 30,
       "name": "Ömer Beyaz",
       "ovr": 65,
       "status": "reserva",
@@ -1303,12 +1303,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 64,
+        "esp": 73,
+        "ref": 67,
+        "pos": 59,
+        "vel": 23,
         "sta": 25
       },
       "detailedStats": {
@@ -1343,7 +1343,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 16,
       "name": "Eren Karaağaç",
       "ovr": 57,
       "status": "reserva",

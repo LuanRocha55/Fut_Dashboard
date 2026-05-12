@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Isi Palazón",
       "ovr": 81,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 19,
       "name": "Álvaro García",
       "ovr": 79,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 2,
       "name": "Iván Balliu",
       "ovr": 77,
       "status": "titular",
@@ -230,7 +230,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 28,
       "name": "De Frutos",
       "ovr": 77,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 9,
       "name": "Raúl De Tomás",
       "ovr": 77,
       "status": "titular",
@@ -344,7 +344,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 4,
       "name": "Florian Lejeune",
       "ovr": 77,
       "status": "titular",
@@ -403,7 +403,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 10,
       "name": "Óscar Trejo",
       "ovr": 77,
       "status": "titular",
@@ -460,7 +460,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 1,
       "name": "Augusto Batalla",
       "ovr": 76,
       "status": "titular",
@@ -477,12 +477,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 77,
+        "seg": 73,
+        "esp": 86,
+        "ref": 78,
+        "pos": 74,
+        "vel": 42,
         "sta": 31
       },
       "detailedStats": {
@@ -517,7 +517,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Aridane",
       "ovr": 76,
       "status": "titular",
@@ -573,7 +573,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 5,
       "name": "Óscar Valentín",
       "ovr": 76,
       "status": "titular",
@@ -628,7 +628,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 27,
       "name": "Embarba",
       "ovr": 75,
       "status": "reserva",
@@ -685,7 +685,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 12,
       "name": "Dani Cárdenas",
       "ovr": 74,
       "status": "reserva",
@@ -700,12 +700,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 74,
+        "seg": 71,
+        "esp": 84,
+        "ref": 77,
+        "pos": 68,
+        "vel": 43,
         "sta": 26
       },
       "detailedStats": {
@@ -740,7 +740,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 21,
       "name": "Pathé Ciss",
       "ovr": 74,
       "status": "reserva",
@@ -796,7 +796,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 23,
       "name": "Unai López",
       "ovr": 74,
       "status": "reserva",
@@ -852,7 +852,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 30,
       "name": "Joni Montiel",
       "ovr": 74,
       "status": "reserva",
@@ -911,7 +911,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 20,
       "name": "Sergio Camello",
       "ovr": 73,
       "status": "reserva",
@@ -966,7 +966,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 8,
       "name": "Gumbau",
       "ovr": 73,
       "status": "reserva",
@@ -1022,7 +1022,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 13,
       "name": "Andrei Rațiu",
       "ovr": 73,
       "status": "reserva",
@@ -1078,7 +1078,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 18,
       "name": "Pedro Díaz",
       "ovr": 71,
       "status": "reserva",
@@ -1137,7 +1137,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Randy Nteka",
       "ovr": 71,
       "status": "reserva",
@@ -1192,7 +1192,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 16,
       "name": "Pep Chavarría",
       "ovr": 70,
       "status": "reserva",
@@ -1249,7 +1249,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 25,
       "name": "Abdul Mumin",
       "ovr": 70,
       "status": "reserva",

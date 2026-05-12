@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Fidel",
       "ovr": 71,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 19,
       "name": "Lazo",
       "ovr": 70,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 1,
       "name": "Raúl Lizoain",
       "ovr": 69,
       "status": "titular",
@@ -134,12 +134,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 68,
+        "esp": 74,
+        "ref": 67,
+        "pos": 70,
+        "vel": 55,
         "sta": 42
       },
       "detailedStats": {
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 27,
       "name": "Quiles",
       "ovr": 69,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 12,
       "name": "Cristian Rivero",
       "ovr": 69,
       "status": "titular",
@@ -244,12 +244,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 64,
+        "esp": 79,
+        "ref": 72,
+        "pos": 66,
+        "vel": 29,
         "sta": 23
       },
       "detailedStats": {
@@ -284,7 +284,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 28,
       "name": "Juanma García",
       "ovr": 68,
       "status": "titular",
@@ -341,7 +341,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 4,
       "name": "Diego González",
       "ovr": 68,
       "status": "titular",
@@ -452,7 +452,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 18,
       "name": "Riki",
       "ovr": 68,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Jon García",
       "ovr": 67,
       "status": "titular",
@@ -564,7 +564,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 9,
       "name": "Higinio",
       "ovr": 67,
       "status": "titular",
@@ -619,7 +619,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 20,
       "name": "Agus Medina",
       "ovr": 67,
       "status": "reserva",
@@ -674,7 +674,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 2,
       "name": "Alvaro Rodríguez",
       "ovr": 67,
       "status": "reserva",
@@ -729,7 +729,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 25,
       "name": "Ros",
       "ovr": 67,
       "status": "reserva",
@@ -786,7 +786,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 3,
       "name": "Alcedo",
       "ovr": 63,
       "status": "reserva",
@@ -844,7 +844,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 5,
       "name": "Rai Marchán",
       "ovr": 63,
       "status": "reserva",
@@ -899,7 +899,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 10,
       "name": "Pacheco",
       "ovr": 63,
       "status": "reserva",
@@ -954,7 +954,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Lalo Aguilar",
       "ovr": 59,
       "status": "reserva",

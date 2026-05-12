@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Cole Palmer",
       "ovr": 85,
       "status": "titular",
@@ -68,7 +68,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Christopher Nkunku",
       "ovr": 84,
       "status": "titular",
@@ -128,7 +128,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 5,
       "name": "Moisés Caicedo",
       "ovr": 82,
       "status": "titular",
@@ -189,7 +189,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 3,
       "name": "Marc Cucurella",
       "ovr": 82,
       "status": "titular",
@@ -249,7 +249,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 8,
       "name": "Enzo Fernández",
       "ovr": 82,
       "status": "titular",
@@ -309,7 +309,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 2,
       "name": "Reece James",
       "ovr": 82,
       "status": "titular",
@@ -366,7 +366,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 19,
       "name": "Jadon Sancho",
       "ovr": 82,
       "status": "titular",
@@ -425,7 +425,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 7,
       "name": "João Félix",
       "ovr": 80,
       "status": "titular",
@@ -482,7 +482,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 13,
       "name": "Malo Gusto",
       "ovr": 80,
       "status": "titular",
@@ -540,7 +540,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 16,
       "name": "Ben Chilwell",
       "ovr": 79,
       "status": "titular",
@@ -595,7 +595,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 4,
       "name": "Axel Disasi",
       "ovr": 79,
       "status": "titular",
@@ -654,7 +654,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 9,
       "name": "Nicolas Jackson",
       "ovr": 79,
       "status": "reserva",
@@ -710,7 +710,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 17,
       "name": "Pedro Neto",
       "ovr": 79,
       "status": "reserva",
@@ -766,7 +766,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 1,
       "name": "Robert Sánchez",
       "ovr": 79,
       "status": "reserva",
@@ -781,12 +781,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 79,
+        "seg": 77,
+        "esp": 88,
+        "ref": 80,
+        "pos": 79,
+        "vel": 65,
         "sta": 37
       },
       "detailedStats": {
@@ -821,7 +821,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 14,
       "name": "Tosin Adarabioyo",
       "ovr": 78,
       "status": "reserva",
@@ -878,7 +878,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 25,
       "name": "Benoît Badiashile",
       "ovr": 78,
       "status": "reserva",
@@ -935,7 +935,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 18,
       "name": "Kiernan Dewsbury-Hall",
       "ovr": 78,
       "status": "reserva",
@@ -990,7 +990,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Wesley Fofana",
       "ovr": 78,
       "status": "reserva",
@@ -1047,7 +1047,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 28,
       "name": "Noni Madueke",
       "ovr": 78,
       "status": "reserva",
@@ -1104,7 +1104,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 21,
       "name": "Levi Colwill",
       "ovr": 77,
       "status": "reserva",
@@ -1162,7 +1162,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 12,
       "name": "Filip Jörgensen",
       "ovr": 77,
       "status": "reserva",
@@ -1178,11 +1178,11 @@
       ],
       "stats": {
         "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "seg": 76,
+        "esp": 84,
+        "ref": 77,
+        "pos": 78,
+        "vel": 41,
         "sta": 35
       },
       "detailedStats": {
@@ -1217,7 +1217,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 27,
       "name": "Mykhailo Mudryk",
       "ovr": 77,
       "status": "reserva",
@@ -1386,7 +1386,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 30,
       "name": "Carney Chukwuemeka",
       "ovr": 72,
       "status": "reserva",
@@ -1499,7 +1499,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 29,
       "name": "Renato Veiga",
       "ovr": 72,
       "status": "reserva",
@@ -1554,7 +1554,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 31,
       "name": "Cesare Casadei",
       "ovr": 71,
       "status": "reserva",
@@ -1609,7 +1609,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 22,
       "name": "Marcus Bettinelli",
       "ovr": 70,
       "status": "reserva",
@@ -1624,12 +1624,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 70,
+        "esp": 78,
+        "ref": 71,
+        "pos": 70,
+        "vel": 30,
         "sta": 25
       },
       "detailedStats": {
@@ -1664,7 +1664,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 32,
       "name": "Deivid Washington",
       "ovr": 69,
       "status": "reserva",
@@ -1719,7 +1719,7 @@
     },
     {
       "id": 31,
-      "number": 31,
+      "number": 33,
       "name": "Marc Guiu",
       "ovr": 67,
       "status": "reserva",
@@ -1774,7 +1774,7 @@
     },
     {
       "id": 32,
-      "number": 32,
+      "number": 34,
       "name": "Tyrique George",
       "ovr": 64,
       "status": "reserva",
@@ -1831,7 +1831,7 @@
     },
     {
       "id": 33,
-      "number": 33,
+      "number": 35,
       "name": "Omari Kellyman",
       "ovr": 62,
       "status": "reserva",

@@ -24,11 +24,11 @@
       ],
       "stats": {
         "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "seg": 72,
+        "esp": 84,
+        "ref": 76,
+        "pos": 73,
+        "vel": 35,
         "sta": 24
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Daler Kuzyaev",
       "ovr": 74,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Gautier Lloris",
       "ovr": 74,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 3,
       "name": "Christopher Operi",
       "ovr": 74,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 14,
       "name": "Arouna Sangante",
       "ovr": 73,
       "status": "titular",
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 18,
       "name": "Oussama Targhalline",
       "ovr": 73,
       "status": "titular",
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 20,
       "name": "Yassine Kechta",
       "ovr": 72,
       "status": "titular",
@@ -395,7 +395,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 11,
       "name": "Loïc Négo",
       "ovr": 72,
       "status": "titular",
@@ -450,7 +450,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 5,
       "name": "Abdoulaye Touré",
       "ovr": 72,
       "status": "titular",
@@ -505,7 +505,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Étienne Youté Kinkoué",
       "ovr": 72,
       "status": "titular",
@@ -561,7 +561,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Josué Casimir",
       "ovr": 71,
       "status": "titular",
@@ -616,7 +616,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 27,
       "name": "Emmanuel Sabbi",
       "ovr": 71,
       "status": "reserva",
@@ -730,7 +730,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 2,
       "name": "Oualid El Hajjam",
       "ovr": 70,
       "status": "reserva",
@@ -842,7 +842,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 21,
       "name": "Rassoul Ndiaye",
       "ovr": 69,
       "status": "reserva",
@@ -897,7 +897,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 24,
       "name": "Timothée Pembélé",
       "ovr": 69,
       "status": "reserva",
@@ -952,7 +952,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 12,
       "name": "Mathieu Gorgelin",
       "ovr": 68,
       "status": "reserva",
@@ -967,12 +967,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 65,
+        "esp": 74,
+        "ref": 67,
+        "pos": 67,
+        "vel": 48,
         "sta": 30
       },
       "detailedStats": {
@@ -1007,7 +1007,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Issa Soumaré",
       "ovr": 68,
       "status": "reserva",
@@ -1063,7 +1063,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 23,
       "name": "Aloïs Confais",
       "ovr": 66,
       "status": "reserva",
@@ -1118,7 +1118,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 28,
       "name": "Antoine Joujou",
       "ovr": 66,
       "status": "reserva",
@@ -1173,7 +1173,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 9,
       "name": "Yann Kitala",
       "ovr": 65,
       "status": "reserva",
@@ -1228,7 +1228,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 10,
       "name": "Élysée Logbo",
       "ovr": 65,
       "status": "reserva",
@@ -1283,7 +1283,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Steve Ngoura",
       "ovr": 65,
       "status": "reserva",
@@ -1338,7 +1338,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 30,
       "name": "Ismaïl Bouneb",
       "ovr": 62,
       "status": "reserva",
@@ -1393,7 +1393,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Mathéo Bodmer",
       "ovr": 59,
       "status": "reserva",
@@ -1448,7 +1448,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 31,
       "name": "Paul Argney",
       "ovr": 58,
       "status": "reserva",
@@ -1463,12 +1463,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 59,
+        "seg": 59,
+        "esp": 68,
+        "ref": 64,
+        "pos": 49,
+        "vel": 43,
         "sta": 27
       },
       "detailedStats": {

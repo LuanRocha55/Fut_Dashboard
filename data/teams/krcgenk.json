@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Bryan Heynen",
       "ovr": 77,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 5,
       "name": "Patrik Hrošovský",
       "ovr": 74,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Toluwalase Arokodare",
       "ovr": 72,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Carlos Cuesta",
       "ovr": 72,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Mujaid",
       "ovr": 72,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "Jarne Steuckers",
       "ovr": 72,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 1,
       "name": "Hendrik Van Crombrugge",
       "ovr": 72,
       "status": "titular",
@@ -413,12 +413,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 72,
+        "esp": 78,
+        "ref": 69,
+        "pos": 76,
+        "vel": 37,
         "sta": 37
       },
       "detailedStats": {
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 2,
       "name": "Zakaria El Ouahdi",
       "ovr": 71,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Matte Smets",
       "ovr": 71,
       "status": "titular",
@@ -565,7 +565,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Yira Sor",
       "ovr": 71,
       "status": "titular",
@@ -620,7 +620,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 20,
       "name": "Andi Zeqiri",
       "ovr": 70,
       "status": "reserva",
@@ -676,7 +676,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 11,
       "name": "Christopher Bonsu Baah",
       "ovr": 69,
       "status": "reserva",
@@ -731,7 +731,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Oh Hyeon Gyu",
       "ovr": 69,
       "status": "reserva",
@@ -786,7 +786,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 27,
       "name": "Luca Oyen",
       "ovr": 68,
       "status": "reserva",
@@ -841,7 +841,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 21,
       "name": "Nikolas Sattlberger",
       "ovr": 68,
       "status": "reserva",
@@ -896,7 +896,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 28,
       "name": "Ken Nkuba",
       "ovr": 67,
       "status": "reserva",
@@ -951,7 +951,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 12,
       "name": "Mike Penders",
       "ovr": 65,
       "status": "reserva",
@@ -966,12 +966,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
+        "alc": 67,
+        "seg": 64,
         "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "ref": 68,
+        "pos": 64,
+        "vel": 25,
         "sta": 26
       },
       "detailedStats": {
@@ -1006,7 +1006,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 7,
       "name": "Noah Adedeji-Sternberg",
       "ovr": 63,
       "status": "reserva",
@@ -1061,7 +1061,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 18,
       "name": "Thomas Claes",
       "ovr": 62,
       "status": "reserva",
@@ -1116,7 +1116,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Josue Kongolo",
       "ovr": 62,
       "status": "reserva",
@@ -1172,7 +1172,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Ibrahima Sory Bangoura",
       "ovr": 59,
       "status": "reserva",
@@ -1227,7 +1227,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Adrián Palacios",
       "ovr": 55,
       "status": "reserva",

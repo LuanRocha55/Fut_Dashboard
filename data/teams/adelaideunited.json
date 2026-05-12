@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Bart Vriends",
       "ovr": 71,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Zach Clough",
       "ovr": 67,
       "status": "titular",
@@ -123,7 +123,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "Stefan Mauk",
       "ovr": 65,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 2,
       "name": "Javi López",
       "ovr": 64,
       "status": "titular",
@@ -236,7 +236,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 1,
       "name": "James Delianov",
       "ovr": 63,
       "status": "titular",
@@ -251,12 +251,12 @@
         "Far Reach"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 59,
+        "esp": 73,
+        "ref": 66,
+        "pos": 59,
+        "vel": 34,
         "sta": 30
       },
       "detailedStats": {
@@ -291,7 +291,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 3,
       "name": "Ryan Kitto",
       "ovr": 63,
       "status": "titular",
@@ -346,7 +346,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Isaías",
       "ovr": 63,
       "status": "titular",
@@ -403,7 +403,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 21,
       "name": "Ryan Tunnicliffe",
       "ovr": 63,
       "status": "titular",
@@ -458,7 +458,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 19,
       "name": "Dylan Pierias",
       "ovr": 62,
       "status": "titular",
@@ -514,7 +514,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 23,
       "name": "Ethan Alagich",
       "ovr": 60,
       "status": "titular",
@@ -569,7 +569,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 12,
       "name": "Jay Barnett",
       "ovr": 59,
       "status": "titular",
@@ -624,7 +624,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 9,
       "name": "Archie Goodwin",
       "ovr": 59,
       "status": "reserva",
@@ -679,7 +679,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Luka Jovanović",
       "ovr": 59,
       "status": "reserva",
@@ -734,7 +734,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 27,
       "name": "Joshua Cavallo",
       "ovr": 58,
       "status": "reserva",
@@ -789,7 +789,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 8,
       "name": "Jonny Yull",
       "ovr": 58,
       "status": "reserva",
@@ -844,7 +844,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 22,
       "name": "Ethan Cox",
       "ovr": 57,
       "status": "reserva",
@@ -859,12 +859,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 59,
+        "seg": 57,
+        "esp": 64,
+        "ref": 57,
+        "pos": 54,
+        "vel": 36,
         "sta": 23
       },
       "detailedStats": {
@@ -1009,7 +1009,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 13,
       "name": "Panashe Madanha",
       "ovr": 57,
       "status": "reserva",
@@ -1064,7 +1064,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 24,
       "name": "Fabian Talladira",
       "ovr": 51,
       "status": "reserva",

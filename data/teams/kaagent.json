@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Sven Kums",
       "ovr": 74,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Stefan Mitrović",
       "ovr": 74,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 14,
       "name": "Jordan Torunarigha",
       "ovr": 74,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 25,
       "name": "Tsuyoshi Watanabe",
       "ovr": 74,
       "status": "titular",
@@ -235,7 +235,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 1,
       "name": "Davy Roef",
       "ovr": 72,
       "status": "titular",
@@ -250,12 +250,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 73,
+        "seg": 71,
+        "esp": 81,
+        "ref": 72,
+        "pos": 71,
+        "vel": 48,
         "sta": 33
       },
       "detailedStats": {
@@ -290,7 +290,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 11,
       "name": "Matisse Samoise",
       "ovr": 72,
       "status": "titular",
@@ -345,7 +345,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 19,
       "name": "Tiago Araújo",
       "ovr": 71,
       "status": "titular",
@@ -400,7 +400,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 18,
       "name": "Mathias Delorge",
       "ovr": 71,
       "status": "titular",
@@ -455,7 +455,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 5,
       "name": "Omri Gandelman",
       "ovr": 71,
       "status": "titular",
@@ -510,7 +510,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 27,
       "name": "Archie Brown",
       "ovr": 70,
       "status": "titular",
@@ -565,7 +565,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 20,
       "name": "Pieter Gerkens",
       "ovr": 70,
       "status": "titular",
@@ -620,7 +620,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 10,
       "name": "Andrew Hjulsager",
       "ovr": 70,
       "status": "reserva",
@@ -675,7 +675,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 12,
       "name": "Daniel Schmidt",
       "ovr": 70,
       "status": "reserva",
@@ -691,12 +691,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 69,
+        "esp": 79,
+        "ref": 72,
+        "pos": 66,
+        "vel": 15,
         "sta": 37
       },
       "detailedStats": {
@@ -731,7 +731,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 9,
       "name": "Andri Lucas Guðjohnsen",
       "ovr": 68,
       "status": "reserva",
@@ -842,7 +842,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 2,
       "name": "Noah Fadiga",
       "ovr": 67,
       "status": "reserva",
@@ -952,7 +952,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Max Dean",
       "ovr": 64,
       "status": "reserva",
@@ -1007,7 +1007,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Hugo Gambor",
       "ovr": 63,
       "status": "reserva",
@@ -1063,7 +1063,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 7,
       "name": "Momodou Lamin Sonko",
       "ovr": 63,
       "status": "reserva",
@@ -1118,7 +1118,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 23,
       "name": "Tibe De Vlieger",
       "ovr": 62,
       "status": "reserva",
@@ -1173,7 +1173,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Louis Fortin",
       "ovr": 61,
       "status": "reserva",
@@ -1188,12 +1188,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 58,
+        "esp": 71,
+        "ref": 63,
+        "pos": 53,
+        "vel": 47,
         "sta": 27
       },
       "detailedStats": {
@@ -1228,7 +1228,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Celestin De Schrevel",
       "ovr": 60,
       "status": "reserva",
@@ -1243,12 +1243,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 50,
+        "esp": 74,
+        "ref": 65,
+        "pos": 55,
+        "vel": 38,
         "sta": 19
       },
       "detailedStats": {

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 5,
       "name": "João Paulo",
       "ovr": 76,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 17,
       "name": "Pedro De la Vega",
       "ovr": 74,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Yeimar Gómez Andrade",
       "ovr": 74,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Raúl Ruidíaz",
       "ovr": 74,
       "status": "titular",
@@ -235,7 +235,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 11,
       "name": "Cristian Roldan",
       "ovr": 73,
       "status": "titular",
@@ -292,7 +292,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 10,
       "name": "Albert Rusnák",
       "ovr": 73,
       "status": "titular",
@@ -348,7 +348,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 1,
       "name": "Stefan Frei",
       "ovr": 72,
       "status": "titular",
@@ -364,12 +364,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 72,
+        "seg": 68,
+        "esp": 81,
+        "ref": 74,
+        "pos": 74,
+        "vel": 33,
         "sta": 25
       },
       "detailedStats": {
@@ -404,7 +404,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 19,
       "name": "Jordan Morris",
       "ovr": 71,
       "status": "titular",
@@ -462,7 +462,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "Nouhou",
       "ovr": 71,
       "status": "titular",
@@ -521,7 +521,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Nathan",
       "ovr": 69,
       "status": "titular",
@@ -578,7 +578,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 2,
       "name": "Alex Roldan",
       "ovr": 69,
       "status": "titular",
@@ -634,7 +634,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 27,
       "name": "Léo Chú",
       "ovr": 67,
       "status": "reserva",
@@ -689,7 +689,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 25,
       "name": "Jackson Ragen",
       "ovr": 67,
       "status": "reserva",
@@ -745,7 +745,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 8,
       "name": "Danny Leyva",
       "ovr": 65,
       "status": "reserva",
@@ -800,7 +800,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 21,
       "name": "Josh Atencio",
       "ovr": 64,
       "status": "reserva",
@@ -855,7 +855,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 20,
       "name": "Danny Musovski",
       "ovr": 64,
       "status": "reserva",
@@ -910,7 +910,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 18,
       "name": "Obed Vargas",
       "ovr": 64,
       "status": "reserva",
@@ -965,7 +965,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 22,
       "name": "Jonathan Bell",
       "ovr": 63,
       "status": "reserva",
@@ -1021,7 +1021,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 13,
       "name": "Reed Baker-Whiting",
       "ovr": 59,
       "status": "reserva",
@@ -1076,7 +1076,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 7,
       "name": "Braudilio Rodrigues",
       "ovr": 59,
       "status": "reserva",
@@ -1131,7 +1131,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Cody Baker",
       "ovr": 58,
       "status": "reserva",
@@ -1186,7 +1186,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 12,
       "name": "Andrew Thomas",
       "ovr": 58,
       "status": "reserva",
@@ -1201,12 +1201,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 58,
+        "esp": 68,
+        "ref": 61,
+        "pos": 57,
+        "vel": 24,
         "sta": 17
       },
       "detailedStats": {
@@ -1241,7 +1241,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 28,
       "name": "Paul Rothrock",
       "ovr": 57,
       "status": "reserva",
@@ -1296,7 +1296,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Jacob Castro",
       "ovr": 55,
       "status": "reserva",
@@ -1311,12 +1311,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 56,
+        "seg": 60,
+        "esp": 62,
+        "ref": 56,
+        "pos": 51,
+        "vel": 45,
         "sta": 19
       },
       "detailedStats": {
@@ -1351,7 +1351,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Dylan Teves",
       "ovr": 55,
       "status": "reserva",
@@ -1406,7 +1406,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 30,
       "name": "Stuart Hawkins",
       "ovr": 53,
       "status": "reserva",
@@ -1462,7 +1462,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 31,
       "name": "Sota Kitahara",
       "ovr": 52,
       "status": "reserva",

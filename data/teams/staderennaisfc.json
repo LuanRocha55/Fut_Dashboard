@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Amine Gouiri",
       "ovr": 78,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Steve Mandanda",
       "ovr": 78,
       "status": "titular",
@@ -83,11 +83,11 @@
       ],
       "stats": {
         "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "seg": 77,
+        "esp": 86,
+        "ref": 79,
+        "pos": 77,
+        "vel": 43,
         "sta": 31
       },
       "detailedStats": {
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 19,
       "name": "Ludovic Blas",
       "ovr": 77,
       "status": "titular",
@@ -182,7 +182,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 2,
       "name": "Hans Hateboer",
       "ovr": 77,
       "status": "titular",
@@ -238,7 +238,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 9,
       "name": "Arnaud Kalimuendo",
       "ovr": 77,
       "status": "titular",
@@ -293,7 +293,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 5,
       "name": "Baptiste Santamaria",
       "ovr": 77,
       "status": "titular",
@@ -349,7 +349,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 3,
       "name": "Adrien Truffert",
       "ovr": 77,
       "status": "titular",
@@ -404,7 +404,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 21,
       "name": "Azor Matusiwa",
       "ovr": 76,
       "status": "titular",
@@ -461,7 +461,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 10,
       "name": "Albert Grønbæk",
       "ovr": 75,
       "status": "titular",
@@ -518,7 +518,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 27,
       "name": "Jota",
       "ovr": 75,
       "status": "titular",
@@ -578,7 +578,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 13,
       "name": "Lorenz Assignon",
       "ovr": 74,
       "status": "titular",
@@ -633,7 +633,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 23,
       "name": "Glen Kamara",
       "ovr": 74,
       "status": "reserva",
@@ -688,7 +688,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 4,
       "name": "Alidu Seidu",
       "ovr": 74,
       "status": "reserva",
@@ -802,7 +802,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 12,
       "name": "Gauthier Gallon",
       "ovr": 73,
       "status": "reserva",
@@ -817,11 +817,11 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "alc": 74,
+        "seg": 71,
+        "esp": 83,
         "ref": 75,
-        "pos": 75,
+        "pos": 73,
         "vel": 40,
         "sta": 29
       },
@@ -857,7 +857,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 25,
       "name": "Leo Østigård",
       "ovr": 72,
       "status": "reserva",
@@ -913,7 +913,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 22,
       "name": "Doğan Alemdar",
       "ovr": 70,
       "status": "reserva",
@@ -928,12 +928,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 69,
+        "esp": 77,
+        "ref": 69,
+        "pos": 71,
+        "vel": 39,
         "sta": 33
       },
       "detailedStats": {
@@ -968,7 +968,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 28,
       "name": "Andrés Gómez",
       "ovr": 70,
       "status": "reserva",
@@ -1023,7 +1023,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 8,
       "name": "Naouirou Ahamada",
       "ovr": 69,
       "status": "reserva",
@@ -1078,7 +1078,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 18,
       "name": "Jordan James",
       "ovr": 68,
       "status": "reserva",
@@ -1133,7 +1133,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Geoffrey Lembet",
       "ovr": 65,
       "status": "reserva",
@@ -1148,12 +1148,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 59,
+        "esp": 76,
+        "ref": 71,
+        "pos": 65,
+        "vel": 39,
         "sta": 24
       },
       "detailedStats": {
@@ -1188,7 +1188,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Mohamed Jaouab",
       "ovr": 64,
       "status": "reserva",
@@ -1244,7 +1244,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 29,
       "name": "Mikayil Faye",
       "ovr": 63,
       "status": "reserva",
@@ -1300,7 +1300,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 30,
       "name": "Mathis Lambourde",
       "ovr": 63,
       "status": "reserva",
@@ -1355,7 +1355,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 31,
       "name": "Abdelhamid Ait Boudlal",
       "ovr": 61,
       "status": "reserva",
@@ -1411,7 +1411,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 20,
       "name": "Henrik Meister",
       "ovr": 60,
       "status": "reserva",
@@ -1466,7 +1466,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 32,
       "name": "Alan Do Marcolino",
       "ovr": 59,
       "status": "reserva",

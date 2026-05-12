@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 5,
       "name": "Remo Freuler",
       "ovr": 81,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Riccardo Orsolini",
       "ovr": 81,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Lewis Ferguson",
       "ovr": 79,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Łukasz Skorupski",
       "ovr": 79,
       "status": "titular",
@@ -192,12 +192,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 79,
+        "seg": 76,
+        "esp": 90,
+        "ref": 83,
+        "pos": 78,
+        "vel": 51,
         "sta": 31
       },
       "detailedStats": {
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 2,
       "name": "Stefan Posch",
       "ovr": 78,
       "status": "titular",
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 4,
       "name": "Sam Beukema",
       "ovr": 77,
       "status": "titular",
@@ -345,7 +345,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Nicolò Casale",
       "ovr": 77,
       "status": "titular",
@@ -402,7 +402,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 9,
       "name": "Thijs Dallinga",
       "ovr": 77,
       "status": "titular",
@@ -457,7 +457,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 25,
       "name": "Jhon Lucumí",
       "ovr": 77,
       "status": "titular",
@@ -514,7 +514,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 18,
       "name": "Michel Aebischer",
       "ovr": 76,
       "status": "titular",
@@ -569,7 +569,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 7,
       "name": "Jesper Karlsson",
       "ovr": 76,
       "status": "titular",
@@ -629,7 +629,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 3,
       "name": "Miranda",
       "ovr": 76,
       "status": "reserva",
@@ -685,7 +685,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Giovanni Fabbian",
       "ovr": 75,
       "status": "reserva",
@@ -740,7 +740,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 21,
       "name": "Nikola Moro",
       "ovr": 75,
       "status": "reserva",
@@ -795,7 +795,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 19,
       "name": "Dan Ndoye",
       "ovr": 75,
       "status": "reserva",
@@ -850,7 +850,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 17,
       "name": "Nicolò Cambiaghi",
       "ovr": 74,
       "status": "reserva",
@@ -905,7 +905,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 28,
       "name": "Emil Holm",
       "ovr": 74,
       "status": "reserva",
@@ -963,7 +963,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 22,
       "name": "Tommaso Pobega",
       "ovr": 74,
       "status": "reserva",
@@ -1018,7 +1018,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 10,
       "name": "Santiago Castro",
       "ovr": 73,
       "status": "reserva",
@@ -1073,7 +1073,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 27,
       "name": "Samuel Iling-Junior",
       "ovr": 73,
       "status": "reserva",
@@ -1128,7 +1128,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 16,
       "name": "Charalampos Lykogiannis",
       "ovr": 73,
       "status": "reserva",
@@ -1183,7 +1183,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Jens Odgaard",
       "ovr": 73,
       "status": "reserva",
@@ -1238,7 +1238,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 13,
       "name": "Lorenzo De Silvestri",
       "ovr": 72,
       "status": "reserva",
@@ -1349,7 +1349,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "Benjamín Domínguez",
       "ovr": 71,
       "status": "reserva",
@@ -1404,7 +1404,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Oussama El Azzouzi",
       "ovr": 70,
       "status": "reserva",
@@ -1459,7 +1459,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 12,
       "name": "Federico Ravaglia",
       "ovr": 70,
       "status": "reserva",
@@ -1474,12 +1474,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "alc": 72,
+        "seg": 67,
+        "esp": 82,
         "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "pos": 69,
+        "vel": 39,
         "sta": 43
       },
       "detailedStats": {
@@ -1514,7 +1514,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 30,
       "name": "Kacper Urbański",
       "ovr": 69,
       "status": "reserva",
@@ -1569,7 +1569,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 31,
       "name": "Mihajlo Ilić",
       "ovr": 68,
       "status": "reserva",
@@ -1625,7 +1625,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 32,
       "name": "Tommaso Corazza",
       "ovr": 65,
       "status": "reserva",
@@ -1680,7 +1680,7 @@
     },
     {
       "id": 31,
-      "number": 31,
+      "number": 33,
       "name": "Niklas Pyyhtiä",
       "ovr": 63,
       "status": "reserva",
@@ -1735,7 +1735,7 @@
     },
     {
       "id": 32,
-      "number": 32,
+      "number": 34,
       "name": "Nicola Bagnolini",
       "ovr": 60,
       "status": "reserva",
@@ -1750,12 +1750,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 57,
+        "esp": 71,
+        "ref": 65,
+        "pos": 53,
+        "vel": 38,
         "sta": 30
       },
       "detailedStats": {

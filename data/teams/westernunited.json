@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 3,
       "name": "Ben Garuccio",
       "ovr": 68,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Hiroshi Ibusuki",
       "ovr": 67,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 5,
       "name": "Angus Thurgate",
       "ovr": 66,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 10,
       "name": "Noah Botić",
       "ovr": 63,
       "status": "titular",
@@ -286,7 +286,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 1,
       "name": "Thomas Heward-Belle",
       "ovr": 63,
       "status": "titular",
@@ -301,12 +301,12 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 65,
+        "esp": 71,
+        "ref": 63,
+        "pos": 60,
+        "vel": 33,
         "sta": 25
       },
       "detailedStats": {
@@ -341,7 +341,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 11,
       "name": "Riku Danzaki",
       "ovr": 62,
       "status": "titular",
@@ -396,7 +396,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "James Donachie",
       "ovr": 62,
       "status": "titular",
@@ -452,7 +452,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 19,
       "name": "Ramy Najjarine",
       "ovr": 61,
       "status": "titular",
@@ -507,7 +507,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 20,
       "name": "Michael Ruhs",
       "ovr": 61,
       "status": "titular",
@@ -562,7 +562,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 2,
       "name": "Tate Russell",
       "ovr": 61,
       "status": "titular",
@@ -617,7 +617,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 8,
       "name": "Sebastian Pasquali",
       "ovr": 60,
       "status": "reserva",
@@ -672,7 +672,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 27,
       "name": "Matthew Grimaldi",
       "ovr": 58,
       "status": "reserva",
@@ -727,7 +727,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 25,
       "name": "Kane Vidmar",
       "ovr": 57,
       "status": "reserva",
@@ -783,7 +783,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 21,
       "name": "Rhys Bozinovski",
       "ovr": 56,
       "status": "reserva",

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Lewis Wing",
       "ovr": 70,
       "status": "titular",
@@ -68,7 +68,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Sam Smith",
       "ovr": 68,
       "status": "titular",
@@ -123,7 +123,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Tyler Bindon",
       "ovr": 67,
       "status": "titular",
@@ -179,7 +179,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 10,
       "name": "Harvey Knibbs",
       "ovr": 67,
       "status": "titular",
@@ -234,7 +234,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 14,
       "name": "Amadou Mbengue",
       "ovr": 67,
       "status": "titular",
@@ -293,7 +293,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 2,
       "name": "Andy Yiadom",
       "ovr": 67,
       "status": "titular",
@@ -348,7 +348,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 1,
       "name": "Joel Pereira",
       "ovr": 66,
       "status": "titular",
@@ -363,12 +363,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 63,
+        "esp": 74,
+        "ref": 66,
+        "pos": 63,
+        "vel": 43,
         "sta": 34
       },
       "detailedStats": {
@@ -403,7 +403,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 5,
       "name": "Michael Craig",
       "ovr": 64,
       "status": "titular",
@@ -458,7 +458,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 25,
       "name": "Harlee Dean",
       "ovr": 64,
       "status": "titular",
@@ -515,7 +515,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 11,
       "name": "Jeriel Dorsett",
       "ovr": 64,
       "status": "titular",
@@ -572,7 +572,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Kelvin Ehibhatiomhan",
       "ovr": 64,
       "status": "titular",
@@ -627,7 +627,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 21,
       "name": "Charlie Savage",
       "ovr": 64,
       "status": "reserva",
@@ -682,7 +682,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 12,
       "name": "David Button",
       "ovr": 63,
       "status": "reserva",
@@ -697,12 +697,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 62,
+        "esp": 69,
+        "ref": 60,
+        "pos": 61,
+        "vel": 52,
         "sta": 35
       },
       "detailedStats": {
@@ -737,7 +737,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 23,
       "name": "Chem Campbell",
       "ovr": 63,
       "status": "reserva",
@@ -792,7 +792,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 13,
       "name": "Kelvin Abrefa",
       "ovr": 62,
       "status": "reserva",
@@ -847,7 +847,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 30,
       "name": "Mamadi Camará",
       "ovr": 62,
       "status": "reserva",
@@ -902,7 +902,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 22,
       "name": "Coniah Boyce-Clarke",
       "ovr": 61,
       "status": "reserva",
@@ -917,12 +917,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 56,
+        "esp": 68,
+        "ref": 64,
+        "pos": 61,
+        "vel": 26,
         "sta": 20
       },
       "detailedStats": {
@@ -1012,7 +1012,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 20,
       "name": "Michael Stickland",
       "ovr": 60,
       "status": "reserva",
@@ -1068,7 +1068,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 24,
       "name": "Charlie Wellens",
       "ovr": 58,
       "status": "reserva",
@@ -1123,7 +1123,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 3,
       "name": "John Clarke",
       "ovr": 57,
       "status": "reserva",
@@ -1178,7 +1178,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 16,
       "name": "John Ryan",
       "ovr": 57,
       "status": "reserva",
@@ -1233,7 +1233,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Jack Senga",
       "ovr": 56,
       "status": "reserva",
@@ -1288,7 +1288,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 27,
       "name": "Basil Tuma",
       "ovr": 56,
       "status": "reserva",
@@ -1343,7 +1343,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 28,
       "name": "Louie Holzman",
       "ovr": 55,
       "status": "reserva",

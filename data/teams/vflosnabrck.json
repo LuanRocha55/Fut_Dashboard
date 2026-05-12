@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Erik Engelhardt",
       "ovr": 69,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 5,
       "name": "Dave Gnaase",
       "ovr": 68,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Robert Tesche",
       "ovr": 68,
       "status": "titular",
@@ -173,7 +173,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 2,
       "name": "Bashkim Ajdini",
       "ovr": 67,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Timo Beermann",
       "ovr": 67,
       "status": "titular",
@@ -286,7 +286,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Maxwell Gyamfi",
       "ovr": 67,
       "status": "titular",
@@ -401,7 +401,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 25,
       "name": "Niklas Wiemann",
       "ovr": 66,
       "status": "titular",
@@ -459,7 +459,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 10,
       "name": "Brian Beyer",
       "ovr": 65,
       "status": "titular",
@@ -514,7 +514,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 1,
       "name": "Lukas Jonsson",
       "ovr": 65,
       "status": "titular",
@@ -529,12 +529,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 63,
+        "esp": 72,
+        "ref": 64,
+        "pos": 66,
+        "vel": 39,
         "sta": 33
       },
       "detailedStats": {
@@ -569,7 +569,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 12,
       "name": "David Richter",
       "ovr": 65,
       "status": "titular",
@@ -584,12 +584,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
+        "alc": 67,
+        "seg": 62,
         "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "ref": 68,
+        "pos": 69,
+        "vel": 22,
         "sta": 18
       },
       "detailedStats": {
@@ -624,7 +624,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 23,
       "name": "Jannes Wulff",
       "ovr": 65,
       "status": "reserva",
@@ -679,7 +679,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 19,
       "name": "Joël Zwarts",
       "ovr": 65,
       "status": "reserva",
@@ -734,7 +734,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 17,
       "name": "Lars Kehl",
       "ovr": 64,
       "status": "reserva",
@@ -789,7 +789,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 18,
       "name": "Bryang Kayo",
       "ovr": 63,
       "status": "reserva",
@@ -844,7 +844,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 11,
       "name": "Liridon Mulaj",
       "ovr": 63,
       "status": "reserva",
@@ -899,7 +899,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 13,
       "name": "Lion Semić",
       "ovr": 63,
       "status": "reserva",
@@ -954,7 +954,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 31,
       "name": "Emeka Oduah",
       "ovr": 61,
       "status": "reserva",
@@ -1009,7 +1009,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Kofi Jeremy Amoako",
       "ovr": 60,
       "status": "reserva",
@@ -1119,7 +1119,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Aday Ercan",
       "ovr": 59,
       "status": "reserva",
@@ -1174,7 +1174,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 30,
       "name": "Kevin Wiethaup",
       "ovr": 59,
       "status": "reserva",
@@ -1229,7 +1229,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Yiğit Karademir",
       "ovr": 58,
       "status": "reserva",
@@ -1285,7 +1285,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Luca Böggemann",
       "ovr": 56,
       "status": "reserva",
@@ -1300,12 +1300,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 60,
+        "esp": 67,
+        "ref": 63,
+        "pos": 50,
+        "vel": 29,
         "sta": 26
       },
       "detailedStats": {

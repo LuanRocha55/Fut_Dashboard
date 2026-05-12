@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Christian Burgess",
       "ovr": 76,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Alessio Castro-Montes",
       "ovr": 75,
       "status": "titular",
@@ -123,7 +123,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 19,
       "name": "Loïc Lapoussin",
       "ovr": 74,
       "status": "titular",
@@ -180,7 +180,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 14,
       "name": "Kevin Mac Allister",
       "ovr": 74,
       "status": "titular",
@@ -237,7 +237,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 25,
       "name": "Koki Machida",
       "ovr": 74,
       "status": "titular",
@@ -293,7 +293,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Lazare Amani",
       "ovr": 73,
       "status": "titular",
@@ -348,7 +348,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 1,
       "name": "Anthony Moris",
       "ovr": 73,
       "status": "titular",
@@ -365,12 +365,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "alc": 74,
+        "seg": 70,
+        "esp": 83,
         "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "pos": 71,
+        "vel": 48,
         "sta": 31
       },
       "detailedStats": {
@@ -405,7 +405,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 18,
       "name": "Charles Vanhoutte",
       "ovr": 72,
       "status": "titular",
@@ -460,7 +460,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 20,
       "name": "Mathias Rasmussen",
       "ovr": 71,
       "status": "titular",
@@ -570,7 +570,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 9,
       "name": "Dennis Eckert Ayensa",
       "ovr": 70,
       "status": "titular",
@@ -737,7 +737,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 5,
       "name": "Noah Sadiki",
       "ovr": 67,
       "status": "reserva",
@@ -847,7 +847,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 28,
       "name": "Henok Teklab",
       "ovr": 66,
       "status": "reserva",
@@ -957,7 +957,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Fedde Leysen",
       "ovr": 65,
       "status": "reserva",
@@ -1013,7 +1013,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 2,
       "name": "Guillaume François",
       "ovr": 64,
       "status": "reserva",
@@ -1068,7 +1068,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Elton Kabangu",
       "ovr": 64,
       "status": "reserva",
@@ -1123,7 +1123,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 31,
       "name": "Anan Khalaili",
       "ovr": 64,
       "status": "reserva",
@@ -1179,7 +1179,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Promise David",
       "ovr": 63,
       "status": "reserva",
@@ -1234,7 +1234,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Vic Chambaere",
       "ovr": 61,
       "status": "reserva",
@@ -1249,12 +1249,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 60,
+        "esp": 72,
+        "ref": 63,
+        "pos": 60,
+        "vel": 22,
         "sta": 26
       },
       "detailedStats": {
@@ -1289,7 +1289,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Joachim Imbrechts",
       "ovr": 60,
       "status": "reserva",
@@ -1304,11 +1304,11 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 64,
+        "seg": 57,
+        "esp": 70,
+        "ref": 62,
+        "pos": 53,
         "vel": 40,
         "sta": 17
       },
@@ -1344,7 +1344,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 3,
       "name": "Arnaud Dony",
       "ovr": 59,
       "status": "reserva",
@@ -1399,7 +1399,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 27,
       "name": "Kamiel Van de Perre",
       "ovr": 53,
       "status": "reserva",

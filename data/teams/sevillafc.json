@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Suso",
       "ovr": 80,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Nemanja Gudelj",
       "ovr": 80,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 2,
       "name": "Jesús Navas",
       "ovr": 80,
       "status": "titular",
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 17,
       "name": "Dodi Lukébakio",
       "ovr": 79,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 14,
       "name": "Marcão",
       "ovr": 78,
       "status": "titular",
@@ -292,7 +292,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Saúl",
       "ovr": 78,
       "status": "titular",
@@ -347,7 +347,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 18,
       "name": "Djibril Sow",
       "ovr": 78,
       "status": "titular",
@@ -402,7 +402,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 25,
       "name": "Loïc Badé",
       "ovr": 77,
       "status": "titular",
@@ -460,7 +460,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 19,
       "name": "Chidera Ejuke",
       "ovr": 76,
       "status": "titular",
@@ -520,7 +520,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 3,
       "name": "Adrià Pedrosa",
       "ovr": 76,
       "status": "titular",
@@ -577,7 +577,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 13,
       "name": "Gonzalo Montiel",
       "ovr": 76,
       "status": "titular",
@@ -632,7 +632,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 1,
       "name": "Ørjan Nyland",
       "ovr": 76,
       "status": "reserva",
@@ -647,12 +647,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
+        "alc": 76,
         "seg": 75,
-        "esp": 75,
+        "esp": 84,
         "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "pos": 74,
+        "vel": 48,
         "sta": 33
       },
       "detailedStats": {
@@ -687,7 +687,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Albert Sambi Lokonga",
       "ovr": 75,
       "status": "reserva",
@@ -742,7 +742,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 10,
       "name": "Peque",
       "ovr": 74,
       "status": "reserva",
@@ -797,7 +797,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 9,
       "name": "Kelechi Iheanacho",
       "ovr": 74,
       "status": "reserva",
@@ -910,7 +910,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 21,
       "name": "Tanguy Nianzou",
       "ovr": 73,
       "status": "reserva",
@@ -967,7 +967,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 22,
       "name": "Isaac",
       "ovr": 73,
       "status": "reserva",
@@ -1022,7 +1022,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 23,
       "name": "Kike Salas",
       "ovr": 73,
       "status": "reserva",
@@ -1078,7 +1078,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 24,
       "name": "Lucien Agoumé",
       "ovr": 72,
       "status": "reserva",
@@ -1133,7 +1133,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 28,
       "name": "Carmona",
       "ovr": 72,
       "status": "reserva",
@@ -1188,7 +1188,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Juanlu Sánchez",
       "ovr": 72,
       "status": "reserva",
@@ -1243,7 +1243,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 27,
       "name": "Pedro Ortiz",
       "ovr": 68,
       "status": "reserva",
@@ -1298,7 +1298,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 29,
       "name": "Darío",
       "ovr": 65,
       "status": "reserva",
@@ -1353,7 +1353,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 30,
       "name": "Manu Bueno",
       "ovr": 65,
       "status": "reserva",
@@ -1408,7 +1408,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 12,
       "name": "Alberto Flores",
       "ovr": 65,
       "status": "reserva",
@@ -1423,12 +1423,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 66,
+        "esp": 72,
+        "ref": 64,
+        "pos": 63,
+        "vel": 25,
         "sta": 26
       },
       "detailedStats": {
@@ -1463,7 +1463,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 31,
       "name": "Hormigo",
       "ovr": 64,
       "status": "reserva",
@@ -1518,7 +1518,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 32,
       "name": "Stanis Idumbo",
       "ovr": 60,
       "status": "reserva",
@@ -1573,7 +1573,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 33,
       "name": "Ibrahima Sow",
       "ovr": 60,
       "status": "reserva",

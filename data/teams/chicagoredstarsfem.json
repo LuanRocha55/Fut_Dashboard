@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Mallory Swanson",
       "ovr": 87,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Alyssa Naeher",
       "ovr": 83,
       "status": "titular",
@@ -83,12 +83,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 85,
+        "seg": 81,
+        "esp": 93,
+        "ref": 82,
+        "pos": 87,
+        "vel": 48,
         "sta": 39
       },
       "detailedStats": {
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Shea Groom",
       "ovr": 79,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Natalia Kuikka",
       "ovr": 78,
       "status": "titular",
@@ -292,7 +292,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 2,
       "name": "Maximiliane Rall",
       "ovr": 78,
       "status": "titular",
@@ -348,7 +348,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Sam Staab",
       "ovr": 78,
       "status": "titular",
@@ -406,7 +406,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 5,
       "name": "Cari Roccaro",
       "ovr": 77,
       "status": "titular",
@@ -461,7 +461,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 13,
       "name": "Camryn Biegalski",
       "ovr": 76,
       "status": "titular",
@@ -516,7 +516,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 21,
       "name": "Julia Bianchi",
       "ovr": 73,
       "status": "titular",
@@ -572,7 +572,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Ava Cook",
       "ovr": 73,
       "status": "titular",
@@ -627,7 +627,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 27,
       "name": "Sarah Griffith",
       "ovr": 72,
       "status": "reserva",
@@ -682,7 +682,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 12,
       "name": "Sydney Schneider",
       "ovr": 72,
       "status": "reserva",
@@ -697,12 +697,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "alc": 71,
+        "seg": 69,
+        "esp": 81,
         "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "pos": 73,
+        "vel": 17,
         "sta": 38
       },
       "detailedStats": {
@@ -737,7 +737,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 28,
       "name": "Jenna Bike",
       "ovr": 71,
       "status": "reserva",
@@ -792,7 +792,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 24,
       "name": "Chardonnay Curran",
       "ovr": 71,
       "status": "reserva",
@@ -902,7 +902,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 26,
       "name": "Taylor Malham",
       "ovr": 69,
       "status": "reserva",
@@ -1012,7 +1012,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Mackenzie Wood",
       "ovr": 69,
       "status": "reserva",
@@ -1027,12 +1027,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 69,
+        "esp": 77,
+        "ref": 71,
+        "pos": 67,
+        "vel": 52,
         "sta": 26
       },
       "detailedStats": {
@@ -1067,7 +1067,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 9,
       "name": "Ally Cook",
       "ovr": 68,
       "status": "reserva",
@@ -1122,7 +1122,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 23,
       "name": "Bea Franklin",
       "ovr": 68,
       "status": "reserva",
@@ -1177,7 +1177,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 10,
       "name": "Jameese Joseph",
       "ovr": 68,
       "status": "reserva",
@@ -1232,7 +1232,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 20,
       "name": "Ally Schlegel",
       "ovr": 68,
       "status": "reserva",
@@ -1287,7 +1287,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 25,
       "name": "Hannah Anderson",
       "ovr": 67,
       "status": "reserva",
@@ -1343,7 +1343,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Sami Feller",
       "ovr": 67,
       "status": "reserva",
@@ -1399,7 +1399,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 30,
       "name": "Sophie Jones",
       "ovr": 63,
       "status": "reserva",

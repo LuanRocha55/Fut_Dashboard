@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Albert Guðmundsson",
       "ovr": 80,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 3,
       "name": "Cristiano Biraghi",
       "ovr": 79,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 16,
       "name": "Robin Gosens",
       "ovr": 79,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Pietro Terracciano",
       "ovr": 79,
       "status": "titular",
@@ -194,12 +194,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 80,
+        "seg": 77,
+        "esp": 91,
+        "ref": 83,
+        "pos": 79,
+        "vel": 42,
         "sta": 33
       },
       "detailedStats": {
@@ -234,7 +234,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 8,
       "name": "Antonín Barák",
       "ovr": 78,
       "status": "titular",
@@ -290,7 +290,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 10,
       "name": "Andrea Colpani",
       "ovr": 78,
       "status": "titular",
@@ -345,7 +345,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 19,
       "name": "Moise Kean",
       "ovr": 78,
       "status": "titular",
@@ -401,7 +401,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 5,
       "name": "Yacine Adli",
       "ovr": 77,
       "status": "titular",
@@ -456,7 +456,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 21,
       "name": "Danilo Cataldi",
       "ovr": 77,
       "status": "titular",
@@ -511,7 +511,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 2,
       "name": "Dodô",
       "ovr": 77,
       "status": "titular",
@@ -566,7 +566,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 17,
       "name": "Jonathan Ikoné",
       "ovr": 77,
       "status": "titular",
@@ -625,7 +625,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 23,
       "name": "Rolando Mandragora",
       "ovr": 77,
       "status": "reserva",
@@ -680,7 +680,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 4,
       "name": "Lucas Martínez Quarta",
       "ovr": 77,
       "status": "reserva",
@@ -739,7 +739,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 30,
       "name": "Josip Brekalo",
       "ovr": 76,
       "status": "reserva",
@@ -796,7 +796,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 20,
       "name": "Christian Kouamé",
       "ovr": 76,
       "status": "reserva",
@@ -851,7 +851,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 26,
       "name": "Fabiano Parisi",
       "ovr": 76,
       "status": "reserva",
@@ -907,7 +907,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 7,
       "name": "Riccardo Sottil",
       "ovr": 76,
       "status": "reserva",
@@ -1018,7 +1018,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 14,
       "name": "Marin Pongračić",
       "ovr": 75,
       "status": "reserva",
@@ -1074,7 +1074,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Edoardo Bove",
       "ovr": 74,
       "status": "reserva",
@@ -1130,7 +1130,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 25,
       "name": "Luca Ranieri",
       "ovr": 74,
       "status": "reserva",
@@ -1186,7 +1186,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 12,
       "name": "Oliver Christensen",
       "ovr": 73,
       "status": "reserva",
@@ -1202,11 +1202,11 @@
       ],
       "stats": {
         "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "seg": 70,
+        "esp": 86,
+        "ref": 79,
+        "pos": 69,
+        "vel": 43,
         "sta": 42
       },
       "detailedStats": {
@@ -1241,7 +1241,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Amir Richardson",
       "ovr": 73,
       "status": "reserva",
@@ -1296,7 +1296,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 27,
       "name": "Abdelhamid Sabiri",
       "ovr": 73,
       "status": "reserva",
@@ -1352,7 +1352,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 13,
       "name": "Michael Kayode",
       "ovr": 71,
       "status": "reserva",
@@ -1407,7 +1407,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 31,
       "name": "Gino Infantino",
       "ovr": 66,
       "status": "reserva",
@@ -1462,7 +1462,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 28,
       "name": "Pietro Comuzzo",
       "ovr": 60,
       "status": "reserva",
@@ -1518,7 +1518,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 29,
       "name": "Tommaso Martinelli",
       "ovr": 59,
       "status": "reserva",
@@ -1533,12 +1533,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 59,
+        "esp": 68,
+        "ref": 62,
+        "pos": 58,
+        "vel": 19,
         "sta": 18
       },
       "detailedStats": {

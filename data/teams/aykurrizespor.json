@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 5,
       "name": "Amir Hadžiahmetović",
       "ovr": 74,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 3,
       "name": "Casper Højer",
       "ovr": 73,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Ali Sowe",
       "ovr": 72,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 10,
       "name": "Martin Minchev",
       "ovr": 71,
       "status": "titular",
@@ -230,7 +230,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 1,
       "name": "Gökhan Akkan",
       "ovr": 70,
       "status": "titular",
@@ -245,12 +245,12 @@
         "1v1 Close Down"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 66,
+        "esp": 80,
+        "ref": 74,
+        "pos": 70,
+        "vel": 48,
         "sta": 35
       },
       "detailedStats": {
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 11,
       "name": "Babajide David Akintola",
       "ovr": 69,
       "status": "titular",
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 19,
       "name": "Benhur Keser",
       "ovr": 68,
       "status": "titular",
@@ -395,7 +395,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 23,
       "name": "Dal Varešanović",
       "ovr": 68,
       "status": "titular",
@@ -450,7 +450,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 7,
       "name": "Altin Zeqiri",
       "ovr": 68,
       "status": "titular",
@@ -505,7 +505,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 30,
       "name": "Ibrahim Olawoyin",
       "ovr": 67,
       "status": "titular",
@@ -562,7 +562,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 8,
       "name": "Giannis Papanikolaou",
       "ovr": 67,
       "status": "titular",
@@ -632,12 +632,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 66,
+        "esp": 76,
+        "ref": 72,
+        "pos": 64,
+        "vel": 18,
         "sta": 28
       },
       "detailedStats": {
@@ -672,7 +672,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 16,
       "name": "Halil İbrahim Pehlivan",
       "ovr": 65,
       "status": "reserva",
@@ -727,7 +727,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 4,
       "name": "Khusniddin Alikulov",
       "ovr": 63,
       "status": "reserva",
@@ -783,7 +783,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 14,
       "name": "Anıl Yaşar",
       "ovr": 63,
       "status": "reserva",
@@ -839,7 +839,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 20,
       "name": "Oumar Diouf",
       "ovr": 62,
       "status": "reserva",
@@ -894,7 +894,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 21,
       "name": "Mithat Pala",
       "ovr": 61,
       "status": "reserva",
@@ -949,7 +949,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 2,
       "name": "Taha Şahin",
       "ovr": 61,
       "status": "reserva",
@@ -1005,7 +1005,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 13,
       "name": "Eray Korkmaz",
       "ovr": 60,
       "status": "reserva",

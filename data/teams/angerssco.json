@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Himad Abdelli",
       "ovr": 73,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Bamba Dieng",
       "ovr": 72,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 19,
       "name": "Loïs Diony",
       "ovr": 72,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 11,
       "name": "Zinedine Ferhat",
       "ovr": 72,
       "status": "titular",
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 1,
       "name": "Yahia Fofana",
       "ovr": 72,
       "status": "titular",
@@ -247,12 +247,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 74,
+        "seg": 69,
+        "esp": 82,
+        "ref": 74,
+        "pos": 71,
+        "vel": 43,
         "sta": 26
       },
       "detailedStats": {
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Jean-Eudes Aholou",
       "ovr": 71,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 28,
       "name": "Jim Allevinah",
       "ovr": 71,
       "status": "titular",
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 5,
       "name": "Pierrick Capelle",
       "ovr": 71,
       "status": "titular",
@@ -452,7 +452,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 4,
       "name": "Cédric Hountondji",
       "ovr": 71,
       "status": "titular",
@@ -509,7 +509,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 3,
       "name": "Jordan Lefort",
       "ovr": 71,
       "status": "titular",
@@ -564,7 +564,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 14,
       "name": "Abdoulaye Bamba",
       "ovr": 70,
       "status": "titular",
@@ -620,7 +620,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 27,
       "name": "Farid El Melali",
       "ovr": 70,
       "status": "reserva",
@@ -676,7 +676,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 21,
       "name": "Joseph Lopy",
       "ovr": 69,
       "status": "reserva",
@@ -731,7 +731,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 2,
       "name": "Carlens Arcus",
       "ovr": 68,
       "status": "reserva",
@@ -786,7 +786,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 16,
       "name": "Florent Hanin",
       "ovr": 68,
       "status": "reserva",
@@ -841,7 +841,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 20,
       "name": "Ibrahima Niane",
       "ovr": 68,
       "status": "reserva",
@@ -897,7 +897,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 25,
       "name": "Ousmane Camara",
       "ovr": 67,
       "status": "reserva",
@@ -953,7 +953,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 23,
       "name": "Zinédine Ould Khaled",
       "ovr": 67,
       "status": "reserva",
@@ -1008,7 +1008,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 26,
       "name": "Jacques Ekomié",
       "ovr": 66,
       "status": "reserva",
@@ -1063,7 +1063,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Adrien Hunou",
       "ovr": 66,
       "status": "reserva",
@@ -1118,7 +1118,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 13,
       "name": "Lilian Raolisoa",
       "ovr": 66,
       "status": "reserva",
@@ -1173,7 +1173,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Halid Šabanović",
       "ovr": 64,
       "status": "reserva",
@@ -1228,7 +1228,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 29,
       "name": "Emmanuel Biumla",
       "ovr": 63,
       "status": "reserva",
@@ -1284,7 +1284,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 12,
       "name": "Melvin Zinga",
       "ovr": 62,
       "status": "reserva",
@@ -1299,12 +1299,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 65,
+        "esp": 72,
+        "ref": 66,
+        "pos": 60,
+        "vel": 24,
         "sta": 28
       },
       "detailedStats": {
@@ -1339,7 +1339,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 30,
       "name": "Justin-Noël Kalumba",
       "ovr": 61,
       "status": "reserva",
@@ -1394,7 +1394,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 18,
       "name": "Yassin Belkhdim",
       "ovr": 60,
       "status": "reserva",
@@ -1449,7 +1449,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 31,
       "name": "Noah Nadje",
       "ovr": 59,
       "status": "reserva",
@@ -1504,7 +1504,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 32,
       "name": "Sidiki Chérif",
       "ovr": 58,
       "status": "reserva",
@@ -1559,7 +1559,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 33,
       "name": "Marius Courcoul",
       "ovr": 58,
       "status": "reserva",

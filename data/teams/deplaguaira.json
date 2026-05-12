@@ -23,12 +23,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 68,
+        "esp": 74,
+        "ref": 70,
+        "pos": 65,
+        "vel": 38,
         "sta": 20
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Rafael Arace",
       "ovr": 66,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 19,
       "name": "Joiser Arias",
       "ovr": 66,
       "status": "titular",
@@ -173,7 +173,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Ronaldo Chacón",
       "ovr": 66,
       "status": "titular",
@@ -228,7 +228,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 10,
       "name": "Edder Farías",
       "ovr": 66,
       "status": "titular",
@@ -283,7 +283,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 5,
       "name": "Andrés Hernández",
       "ovr": 66,
       "status": "titular",
@@ -338,7 +338,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 21,
       "name": "Rommell Ibarra",
       "ovr": 65,
       "status": "titular",
@@ -448,7 +448,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 23,
       "name": "Pedro Álvarez",
       "ovr": 63,
       "status": "titular",
@@ -503,7 +503,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 27,
       "name": "Maiken González",
       "ovr": 59,
       "status": "titular",

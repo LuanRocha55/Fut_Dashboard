@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Knowledge Musona",
       "ovr": 73,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Paulo Vítor",
       "ovr": 72,
       "status": "titular",
@@ -80,12 +80,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 74,
+        "seg": 71,
+        "esp": 82,
+        "ref": 73,
+        "pos": 70,
+        "vel": 25,
         "sta": 26
       },
       "detailedStats": {
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Saviour Godwin",
       "ovr": 71,
       "status": "titular",
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Ibrahima Koné",
       "ovr": 69,
       "status": "titular",
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Damion Lowe",
       "ovr": 68,
       "status": "titular",
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Saeed Al Rubaie",
       "ovr": 65,
       "status": "titular",
@@ -344,7 +344,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 3,
       "name": "Awadh Khamis",
       "ovr": 63,
       "status": "titular",
@@ -399,7 +399,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 19,
       "name": "Saleh Al Abbas",
       "ovr": 62,
       "status": "titular",
@@ -454,7 +454,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 5,
       "name": "Eid Al Muwallad",
       "ovr": 61,
       "status": "titular",
@@ -509,7 +509,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 2,
       "name": "Hussain Al Zabdani",
       "ovr": 61,
       "status": "titular",
@@ -564,7 +564,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 28,
       "name": "Saleh Al Harthi",
       "ovr": 58,
       "status": "titular",
@@ -619,7 +619,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 16,
       "name": "Mohammed Al Saeed",
       "ovr": 57,
       "status": "reserva",
@@ -674,7 +674,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 12,
       "name": "Hussain Shaian",
       "ovr": 57,
       "status": "reserva",
@@ -689,12 +689,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 55,
+        "seg": 57,
+        "esp": 62,
+        "ref": 57,
+        "pos": 56,
+        "vel": 48,
         "sta": 36
       },
       "detailedStats": {
@@ -729,7 +729,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 27,
       "name": "Mohammed Naif",
       "ovr": 56,
       "status": "reserva",
@@ -784,7 +784,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 23,
       "name": "Abdulaziz Al Hotailah",
       "ovr": 55,
       "status": "reserva",
@@ -839,7 +839,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 26,
       "name": "Abdulrahman Al Riou",
       "ovr": 55,
       "status": "reserva",
@@ -894,7 +894,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 21,
       "name": "Sharafi Al Saleem",
       "ovr": 54,
       "status": "reserva",
@@ -949,7 +949,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 22,
       "name": "Rakan Al Najjar",
       "ovr": 52,
       "status": "reserva",
@@ -964,12 +964,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 55,
+        "seg": 53,
+        "esp": 60,
+        "ref": 53,
+        "pos": 47,
+        "vel": 38,
         "sta": 30
       },
       "detailedStats": {

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Simone Branca",
       "ovr": 70,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Elhan Kastrati",
       "ovr": 70,
       "status": "titular",
@@ -81,12 +81,12 @@
         "1v1 Close Down"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 69,
+        "esp": 79,
+        "ref": 73,
+        "pos": 72,
+        "vel": 38,
         "sta": 25
       },
       "detailedStats": {
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 2,
       "name": "Alessandro Salvi",
       "ovr": 69,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 18,
       "name": "Alessio Vita",
       "ovr": 69,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 3,
       "name": "Lorenzo Carissoni",
       "ovr": 68,
       "status": "titular",
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 10,
       "name": "Claudio Cassano",
       "ovr": 68,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 9,
       "name": "Luca Pandolfi",
       "ovr": 67,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 4,
       "name": "Nicola Pavan",
       "ovr": 67,
       "status": "titular",
@@ -456,7 +456,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 20,
       "name": "Francesco Amatucci",
       "ovr": 66,
       "status": "titular",
@@ -511,7 +511,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 19,
       "name": "Andrea Magrassi",
       "ovr": 66,
       "status": "titular",
@@ -566,7 +566,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 14,
       "name": "Stefano Negro",
       "ovr": 66,
       "status": "titular",
@@ -622,7 +622,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 25,
       "name": "Matteo Angeli",
       "ovr": 65,
       "status": "reserva",
@@ -733,7 +733,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Tommy Maistrello",
       "ovr": 65,
       "status": "reserva",
@@ -790,7 +790,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 23,
       "name": "Andrea Tessiore",
       "ovr": 65,
       "status": "reserva",
@@ -845,7 +845,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 12,
       "name": "Luca Maniero",
       "ovr": 64,
       "status": "reserva",
@@ -860,12 +860,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 63,
+        "esp": 73,
+        "ref": 67,
+        "pos": 66,
+        "vel": 39,
         "sta": 30
       },
       "detailedStats": {
@@ -900,7 +900,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 11,
       "name": "Edoardo Masciangelo",
       "ovr": 64,
       "status": "reserva",
@@ -955,7 +955,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Francesco D'Alessio",
       "ovr": 62,
       "status": "reserva",
@@ -1010,7 +1010,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 30,
       "name": "Jacopo Desogus",
       "ovr": 62,
       "status": "reserva",
@@ -1065,7 +1065,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Simone Rabbi",
       "ovr": 62,
       "status": "reserva",
@@ -1120,7 +1120,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 16,
       "name": "Alessio Rizza",
       "ovr": 61,
       "status": "reserva",

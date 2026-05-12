@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Luis Abram",
       "ovr": 72,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 14,
       "name": "Stian Gregersen",
       "ovr": 72,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 17,
       "name": "Saba Lobjanidze",
       "ovr": 71,
       "status": "titular",
@@ -179,7 +179,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Bartosz Slisz",
       "ovr": 70,
       "status": "titular",
@@ -235,7 +235,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 7,
       "name": "Xande Silva",
       "ovr": 68,
       "status": "titular",
@@ -291,7 +291,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 2,
       "name": "Brooks Lennon",
       "ovr": 68,
       "status": "titular",
@@ -346,7 +346,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Dax McCarty",
       "ovr": 68,
       "status": "titular",
@@ -401,7 +401,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Pedro Amador",
       "ovr": 68,
       "status": "titular",
@@ -511,7 +511,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 1,
       "name": "Josh Cohen",
       "ovr": 67,
       "status": "titular",
@@ -526,12 +526,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 66,
+        "esp": 72,
+        "ref": 63,
+        "pos": 68,
+        "vel": 23,
         "sta": 22
       },
       "detailedStats": {
@@ -637,12 +637,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 67,
+        "esp": 71,
+        "ref": 63,
+        "pos": 67,
+        "vel": 37,
         "sta": 30
       },
       "detailedStats": {
@@ -677,7 +677,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 21,
       "name": "Tristan Muyumba",
       "ovr": 66,
       "status": "reserva",
@@ -732,7 +732,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 25,
       "name": "Derrick Williams",
       "ovr": 66,
       "status": "reserva",
@@ -788,7 +788,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 10,
       "name": "Daniel Ríos",
       "ovr": 65,
       "status": "reserva",
@@ -843,7 +843,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 19,
       "name": "Tyler Wolff",
       "ovr": 65,
       "status": "reserva",
@@ -898,7 +898,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 13,
       "name": "Ronald Hernández",
       "ovr": 64,
       "status": "reserva",
@@ -953,7 +953,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 22,
       "name": "Quentin Westberg",
       "ovr": 63,
       "status": "reserva",
@@ -968,12 +968,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 63,
+        "esp": 69,
+        "ref": 63,
+        "pos": 64,
+        "vel": 32,
         "sta": 34
       },
       "detailedStats": {
@@ -1008,7 +1008,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 20,
       "name": "Efraín Morales",
       "ovr": 59,
       "status": "reserva",
@@ -1064,7 +1064,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 29,
       "name": "Luke Brennan",
       "ovr": 58,
       "status": "reserva",
@@ -1119,7 +1119,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 23,
       "name": "Noah Cobb",
       "ovr": 58,
       "status": "reserva",
@@ -1175,7 +1175,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 30,
       "name": "Nick Firmino",
       "ovr": 57,
       "status": "reserva",
@@ -1230,7 +1230,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 18,
       "name": "Ajani Fortune",
       "ovr": 57,
       "status": "reserva",

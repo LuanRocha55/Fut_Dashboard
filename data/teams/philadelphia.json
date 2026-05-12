@@ -24,12 +24,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 74,
+        "seg": 70,
+        "esp": 84,
+        "ref": 77,
+        "pos": 78,
+        "vel": 49,
         "sta": 41
       },
       "detailedStats": {
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Dániel Gazdag",
       "ovr": 75,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Mikael Uhre",
       "ovr": 73,
       "status": "titular",
@@ -234,7 +234,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Jack Elliott",
       "ovr": 72,
       "status": "titular",
@@ -290,7 +290,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Jakob Glesnes",
       "ovr": 72,
       "status": "titular",
@@ -350,7 +350,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 19,
       "name": "Tai Baribo",
       "ovr": 70,
       "status": "titular",
@@ -460,7 +460,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 5,
       "name": "Danley Jean Jacques",
       "ovr": 70,
       "status": "titular",
@@ -515,7 +515,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 18,
       "name": "Leon Flach",
       "ovr": 68,
       "status": "titular",
@@ -570,7 +570,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 2,
       "name": "Olivier Mbaizo",
       "ovr": 68,
       "status": "titular",
@@ -625,7 +625,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 20,
       "name": "Jack McGlynn",
       "ovr": 68,
       "status": "reserva",
@@ -735,7 +735,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 21,
       "name": "Jesús Bueno",
       "ovr": 65,
       "status": "reserva",
@@ -900,7 +900,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 24,
       "name": "Jamir Berdecio",
       "ovr": 60,
       "status": "reserva",
@@ -955,7 +955,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 22,
       "name": "Chris Donovan",
       "ovr": 60,
       "status": "reserva",
@@ -1010,7 +1010,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 26,
       "name": "Isaiah LeFlore",
       "ovr": 56,
       "status": "reserva",
@@ -1065,7 +1065,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 23,
       "name": "Nick Pariano",
       "ovr": 55,
       "status": "reserva",
@@ -1120,7 +1120,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 12,
       "name": "Oliver Semmle",
       "ovr": 55,
       "status": "reserva",
@@ -1135,12 +1135,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 55,
+        "seg": 57,
+        "esp": 61,
+        "ref": 54,
+        "pos": 54,
+        "vel": 26,
         "sta": 20
       },
       "detailedStats": {
@@ -1175,7 +1175,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 25,
       "name": "Jeremy Rafanello",
       "ovr": 54,
       "status": "reserva",
@@ -1230,7 +1230,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 27,
       "name": "Holden Trent",
       "ovr": 54,
       "status": "reserva",
@@ -1245,12 +1245,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 53,
+        "seg": 58,
+        "esp": 62,
+        "ref": 58,
+        "pos": 51,
+        "vel": 30,
         "sta": 20
       },
       "detailedStats": {
@@ -1285,7 +1285,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 28,
       "name": "Olwethu Makhanya",
       "ovr": 50,
       "status": "reserva",
@@ -1341,7 +1341,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 7,
       "name": "David Vazquez",
       "ovr": 49,
       "status": "reserva",
@@ -1396,7 +1396,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 17,
       "name": "Markus Anderson",
       "ovr": 48,
       "status": "reserva",

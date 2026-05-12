@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Jon Guthrie",
       "ovr": 68,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Sam Hoskins",
       "ovr": 68,
       "status": "titular",
@@ -123,7 +123,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "Tyler Roberts",
       "ovr": 68,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 23,
       "name": "Mitch Pinnock",
       "ovr": 67,
       "status": "titular",
@@ -291,7 +291,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 3,
       "name": "Patrick Brough",
       "ovr": 65,
       "status": "titular",
@@ -346,7 +346,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 2,
       "name": "Aaron McGowan",
       "ovr": 65,
       "status": "titular",
@@ -401,7 +401,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 13,
       "name": "Akin Odimayo",
       "ovr": 65,
       "status": "titular",
@@ -456,7 +456,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "Jack Baldwin",
       "ovr": 64,
       "status": "titular",
@@ -512,7 +512,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 9,
       "name": "Tom Eaves",
       "ovr": 64,
       "status": "titular",
@@ -567,7 +567,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 1,
       "name": "Lee Burge",
       "ovr": 63,
       "status": "titular",
@@ -582,12 +582,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 61,
+        "esp": 70,
+        "ref": 64,
+        "pos": 63,
+        "vel": 41,
         "sta": 35
       },
       "detailedStats": {
@@ -622,7 +622,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 8,
       "name": "Ben Fox",
       "ovr": 63,
       "status": "reserva",
@@ -677,7 +677,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 16,
       "name": "Ali Koiki",
       "ovr": 63,
       "status": "reserva",
@@ -732,7 +732,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 18,
       "name": "Cameron McGeehan",
       "ovr": 63,
       "status": "reserva",
@@ -787,7 +787,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "Jordan Willis",
       "ovr": 63,
       "status": "reserva",
@@ -843,7 +843,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 19,
       "name": "James Wilson",
       "ovr": 63,
       "status": "reserva",
@@ -898,7 +898,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 20,
       "name": "Will Hondermarck",
       "ovr": 62,
       "status": "reserva",
@@ -953,7 +953,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 24,
       "name": "Harvey Lintott",
       "ovr": 62,
       "status": "reserva",
@@ -1008,7 +1008,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Tyler Magloire",
       "ovr": 62,
       "status": "reserva",
@@ -1064,7 +1064,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Luke Mbete",
       "ovr": 62,
       "status": "reserva",
@@ -1120,7 +1120,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 26,
       "name": "Callum Morton",
       "ovr": 60,
       "status": "reserva",
@@ -1175,7 +1175,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 12,
       "name": "Nik Tzanev",
       "ovr": 60,
       "status": "reserva",
@@ -1190,12 +1190,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 59,
+        "esp": 68,
+        "ref": 61,
+        "pos": 59,
+        "vel": 45,
         "sta": 25
       },
       "detailedStats": {
@@ -1230,7 +1230,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 27,
       "name": "Matt Dibley-Dias",
       "ovr": 58,
       "status": "reserva",
@@ -1285,7 +1285,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 28,
       "name": "Liam McCarron",
       "ovr": 58,
       "status": "reserva",
@@ -1340,7 +1340,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Samy Chouchane",
       "ovr": 57,
       "status": "reserva",
@@ -1395,7 +1395,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 30,
       "name": "Neo Dobson",
       "ovr": 54,
       "status": "reserva",
@@ -1450,7 +1450,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 31,
       "name": "James Dadge",
       "ovr": 53,
       "status": "reserva",
@@ -1465,12 +1465,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 51,
+        "seg": 50,
+        "esp": 59,
+        "ref": 55,
+        "pos": 53,
+        "vel": 22,
         "sta": 20
       },
       "detailedStats": {

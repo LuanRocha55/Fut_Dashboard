@@ -23,12 +23,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 78,
+        "seg": 74,
+        "esp": 88,
+        "ref": 80,
+        "pos": 77,
+        "vel": 44,
         "sta": 39
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Rasmus Nicolaisen",
       "ovr": 76,
       "status": "titular",
@@ -123,7 +123,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Zakaria Aboukhlal",
       "ovr": 75,
       "status": "titular",
@@ -181,7 +181,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 10,
       "name": "Yann Gboho",
       "ovr": 75,
       "status": "titular",
@@ -238,7 +238,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 8,
       "name": "Vincent Sierro",
       "ovr": 75,
       "status": "titular",
@@ -293,7 +293,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Mark McKenzie",
       "ovr": 74,
       "status": "titular",
@@ -349,7 +349,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Cristian Cásseres Jr",
       "ovr": 73,
       "status": "titular",
@@ -404,7 +404,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Gabriel Suazo",
       "ovr": 73,
       "status": "titular",
@@ -459,7 +459,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 18,
       "name": "Miha Zajc",
       "ovr": 73,
       "status": "titular",
@@ -515,7 +515,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Charlie Cresswell",
       "ovr": 72,
       "status": "titular",
@@ -572,7 +572,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Aron Dønnum",
       "ovr": 72,
       "status": "titular",
@@ -628,7 +628,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 9,
       "name": "Frank Magri",
       "ovr": 72,
       "status": "reserva",
@@ -683,7 +683,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Niklas Schmidt",
       "ovr": 72,
       "status": "reserva",
@@ -739,7 +739,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 2,
       "name": "Djibril Sidibé",
       "ovr": 72,
       "status": "reserva",
@@ -794,7 +794,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 13,
       "name": "Warren Kamanzi",
       "ovr": 71,
       "status": "reserva",
@@ -849,7 +849,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 12,
       "name": "Álex Domínguez",
       "ovr": 70,
       "status": "reserva",
@@ -864,12 +864,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 69,
+        "esp": 79,
+        "ref": 72,
+        "pos": 69,
+        "vel": 47,
         "sta": 36
       },
       "detailedStats": {
@@ -959,7 +959,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 22,
       "name": "Justin Lacombe",
       "ovr": 63,
       "status": "reserva",
@@ -974,12 +974,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 62,
+        "esp": 72,
+        "ref": 67,
+        "pos": 63,
+        "vel": 16,
         "sta": 23
       },
       "detailedStats": {
@@ -1014,7 +1014,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 16,
       "name": "Ylies Aradj",
       "ovr": 62,
       "status": "reserva",
@@ -1069,7 +1069,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 21,
       "name": "Mathys Niflore",
       "ovr": 62,
       "status": "reserva",
@@ -1084,12 +1084,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 63,
+        "esp": 71,
+        "ref": 64,
+        "pos": 61,
+        "vel": 42,
         "sta": 32
       },
       "detailedStats": {

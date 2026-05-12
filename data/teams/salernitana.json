@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Giulio Maggiore",
       "ovr": 74,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Luigi Sepe",
       "ovr": 73,
       "status": "titular",
@@ -78,12 +78,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 72,
+        "seg": 71,
+        "esp": 82,
+        "ref": 76,
+        "pos": 70,
+        "vel": 46,
         "sta": 23
       },
       "detailedStats": {
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 2,
       "name": "Petar Stojanović",
       "ovr": 72,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 17,
       "name": "Daniele Verde",
       "ovr": 70,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 13,
       "name": "Paolo Ghiglione",
       "ovr": 69,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 18,
       "name": "Ajdin Hrustić",
       "ovr": 69,
       "status": "titular",
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 9,
       "name": "Ernesto Torregrossa",
       "ovr": 69,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 10,
       "name": "Diego Valencia",
       "ovr": 69,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 19,
       "name": "Szymon Włodarczyk",
       "ovr": 68,
       "status": "titular",
@@ -563,7 +563,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 12,
       "name": "Vincenzo Fiorillo",
       "ovr": 67,
       "status": "titular",
@@ -578,12 +578,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 63,
+        "esp": 76,
+        "ref": 68,
+        "pos": 65,
+        "vel": 42,
         "sta": 31
       },
       "detailedStats": {
@@ -618,7 +618,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 31,
       "name": "Yayah Kallon",
       "ovr": 67,
       "status": "reserva",
@@ -673,7 +673,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 5,
       "name": "Mateusz Łęgowski",
       "ovr": 67,
       "status": "reserva",
@@ -728,7 +728,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 11,
       "name": "Jayden Braaf",
       "ovr": 66,
       "status": "reserva",
@@ -783,7 +783,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 27,
       "name": "Nicola Dalmonte",
       "ovr": 66,
       "status": "reserva",
@@ -838,7 +838,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 20,
       "name": "Simy",
       "ovr": 66,
       "status": "reserva",
@@ -893,7 +893,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 14,
       "name": "Tijs Velthuis",
       "ovr": 66,
       "status": "reserva",
@@ -949,7 +949,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Paweł Jaroszyński",
       "ovr": 64,
       "status": "reserva",
@@ -1004,7 +1004,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 32,
       "name": "Franco Tongya",
       "ovr": 62,
       "status": "reserva",
@@ -1059,7 +1059,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 23,
       "name": "Lorenzo Amatucci",
       "ovr": 60,
       "status": "reserva",

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Janio Pósito",
       "ovr": 68,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Joao Rojas",
       "ovr": 68,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Luis Pérez",
       "ovr": 67,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Jhon Narváez",
       "ovr": 66,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 19,
       "name": "Hernán Rengifo",
       "ovr": 66,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Fernando Bersano",
       "ovr": 65,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 23,
       "name": "Víctor Cedrón",
       "ovr": 65,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Gu Choi",
       "ovr": 64,
       "status": "titular",
@@ -564,7 +564,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 20,
       "name": "Beto da Silva",
       "ovr": 64,
       "status": "titular",
@@ -674,7 +674,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 21,
       "name": "Yimy Gamero",
       "ovr": 63,
       "status": "reserva",
@@ -729,7 +729,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 1,
       "name": "Éder Hermoza",
       "ovr": 63,
       "status": "reserva",
@@ -744,12 +744,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 61,
+        "esp": 69,
+        "ref": 63,
+        "pos": 64,
+        "vel": 49,
         "sta": 37
       },
       "detailedStats": {
@@ -784,7 +784,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 22,
       "name": "Pedro Díaz",
       "ovr": 62,
       "status": "reserva",
@@ -799,12 +799,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 63,
+        "esp": 67,
+        "ref": 60,
+        "pos": 62,
+        "vel": 29,
         "sta": 39
       },
       "detailedStats": {
@@ -839,7 +839,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 2,
       "name": "Jean Falconí",
       "ovr": 62,
       "status": "reserva",
@@ -894,7 +894,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 16,
       "name": "César Inga",
       "ovr": 62,
       "status": "reserva",
@@ -1004,7 +1004,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 17,
       "name": "Cristhian Vargas",
       "ovr": 62,
       "status": "reserva",
@@ -1059,7 +1059,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 24,
       "name": "Ronald Vega",
       "ovr": 61,
       "status": "reserva",
@@ -1115,7 +1115,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 7,
       "name": "Jhojan Domínguez",
       "ovr": 60,
       "status": "reserva",
@@ -1170,7 +1170,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 13,
       "name": "Jhair Soto",
       "ovr": 59,
       "status": "reserva",
@@ -1225,7 +1225,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 29,
       "name": "Juan Carlos Gonzáles",
       "ovr": 58,
       "status": "reserva",
@@ -1280,7 +1280,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Ernesto Pinillos",
       "ovr": 56,
       "status": "reserva",
@@ -1295,12 +1295,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 54,
+        "seg": 55,
+        "esp": 64,
+        "ref": 62,
+        "pos": 50,
+        "vel": 21,
         "sta": 27
       },
       "detailedStats": {
@@ -1335,7 +1335,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 27,
       "name": "D'Alessandro Montenegro",
       "ovr": 55,
       "status": "reserva",
@@ -1391,7 +1391,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 28,
       "name": "César Álvarez",
       "ovr": 54,
       "status": "reserva",
@@ -1446,7 +1446,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 30,
       "name": "Saulo Cancho",
       "ovr": 54,
       "status": "reserva",
@@ -1502,7 +1502,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 31,
       "name": "Alexander Hidalgo",
       "ovr": 54,
       "status": "reserva",

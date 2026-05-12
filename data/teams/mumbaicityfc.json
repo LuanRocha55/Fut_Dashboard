@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Nikos Karelis",
       "ovr": 68,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Jon Toral",
       "ovr": 68,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 17,
       "name": "Lallianzuala Chhangte",
       "ovr": 67,
       "status": "titular",
@@ -289,7 +289,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Tiri",
       "ovr": 65,
       "status": "titular",
@@ -345,7 +345,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 23,
       "name": "Jérémy Manzorro",
       "ovr": 63,
       "status": "titular",
@@ -400,7 +400,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 11,
       "name": "Bipin Singh",
       "ovr": 63,
       "status": "titular",
@@ -455,7 +455,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "Akash Mishra",
       "ovr": 62,
       "status": "titular",
@@ -511,7 +511,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 19,
       "name": "Brandon Fernandes",
       "ovr": 61,
       "status": "titular",
@@ -567,7 +567,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 1,
       "name": "Phurba Lachenpa",
       "ovr": 59,
       "status": "titular",
@@ -582,12 +582,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 58,
+        "esp": 68,
+        "ref": 61,
+        "pos": 57,
+        "vel": 33,
         "sta": 28
       },
       "detailedStats": {
@@ -638,12 +638,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 59,
+        "seg": 58,
+        "esp": 66,
+        "ref": 60,
+        "pos": 58,
+        "vel": 51,
         "sta": 19
       },
       "detailedStats": {
@@ -678,7 +678,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 25,
       "name": "Mehtab Singh",
       "ovr": 59,
       "status": "reserva",
@@ -734,7 +734,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 28,
       "name": "Vikram Singh",
       "ovr": 57,
       "status": "reserva",
@@ -789,7 +789,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 8,
       "name": "Hitesh Sharma",
       "ovr": 56,
       "status": "reserva",
@@ -899,7 +899,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 18,
       "name": "Hmingthanmawia Ralte",
       "ovr": 54,
       "status": "reserva",
@@ -955,7 +955,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Jayesh Rane",
       "ovr": 54,
       "status": "reserva",
@@ -1010,7 +1010,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 26,
       "name": "Sanjeev Stalin",
       "ovr": 54,
       "status": "reserva",
@@ -1120,7 +1120,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Ayush Chhikara",
       "ovr": 51,
       "status": "reserva",
@@ -1175,7 +1175,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Halen Nongtdu",
       "ovr": 50,
       "status": "reserva",
@@ -1231,7 +1231,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 27,
       "name": "Nathan Asher Rodrigues",
       "ovr": 49,
       "status": "reserva",
@@ -1286,7 +1286,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 29,
       "name": "Franklin Nazareth",
       "ovr": 49,
       "status": "reserva",
@@ -1341,7 +1341,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 30,
       "name": "Ahan Prakash",
       "ovr": 49,
       "status": "reserva",
@@ -1356,12 +1356,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 46,
+        "seg": 45,
+        "esp": 55,
+        "ref": 53,
+        "pos": 51,
+        "vel": 19,
         "sta": 19
       },
       "detailedStats": {

@@ -25,12 +25,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 86,
+        "seg": 85,
+        "esp": 97,
+        "ref": 89,
+        "pos": 90,
+        "vel": 49,
         "sta": 32
       },
       "detailedStats": {
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Virgil van Dijk",
       "ovr": 89,
       "status": "titular",
@@ -127,7 +127,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 17,
       "name": "Mohamed Salah",
       "ovr": 89,
       "status": "titular",
@@ -185,7 +185,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Alexis Mac Allister",
       "ovr": 86,
       "status": "titular",
@@ -244,7 +244,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 2,
       "name": "Trent Alexander-Arnold",
       "ovr": 86,
       "status": "titular",
@@ -303,7 +303,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 3,
       "name": "Andrew Robertson",
       "ovr": 85,
       "status": "titular",
@@ -360,7 +360,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 9,
       "name": "Diogo Jota",
       "ovr": 85,
       "status": "titular",
@@ -416,7 +416,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 31,
       "name": "Federico Chiesa",
       "ovr": 84,
       "status": "titular",
@@ -475,7 +475,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 7,
       "name": "Luis Díaz",
       "ovr": 84,
       "status": "titular",
@@ -588,7 +588,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 14,
       "name": "Ibrahima Konaté",
       "ovr": 83,
       "status": "titular",
@@ -646,7 +646,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 19,
       "name": "Darwin Núñez",
       "ovr": 82,
       "status": "reserva",
@@ -703,7 +703,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 23,
       "name": "Dominik Szoboszlai",
       "ovr": 81,
       "status": "reserva",
@@ -763,7 +763,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 5,
       "name": "Wataru Endo",
       "ovr": 80,
       "status": "reserva",
@@ -819,7 +819,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "Joe Gomez",
       "ovr": 80,
       "status": "reserva",
@@ -876,7 +876,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 18,
       "name": "Curtis Jones",
       "ovr": 79,
       "status": "reserva",
@@ -933,7 +933,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 30,
       "name": "Harvey Elliott",
       "ovr": 78,
       "status": "reserva",
@@ -990,7 +990,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Ryan Gravenberch",
       "ovr": 78,
       "status": "reserva",
@@ -1046,7 +1046,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 12,
       "name": "Caoimhin Kelleher",
       "ovr": 77,
       "status": "reserva",
@@ -1061,12 +1061,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 76,
+        "seg": 74,
+        "esp": 86,
+        "ref": 78,
+        "pos": 76,
+        "vel": 39,
         "sta": 19
       },
       "detailedStats": {
@@ -1101,7 +1101,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 16,
       "name": "Konstantinos Tsimikas",
       "ovr": 77,
       "status": "reserva",
@@ -1156,7 +1156,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 13,
       "name": "Conor Bradley",
       "ovr": 75,
       "status": "reserva",
@@ -1268,7 +1268,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 21,
       "name": "Tyler Morton",
       "ovr": 72,
       "status": "reserva",
@@ -1378,7 +1378,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 11,
       "name": "Diego García",
       "ovr": 69,
       "status": "reserva",
@@ -1503,12 +1503,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 68,
+        "esp": 77,
+        "ref": 68,
+        "pos": 66,
+        "vel": 38,
         "sta": 40
       },
       "detailedStats": {
@@ -1613,12 +1613,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "alc": 63,
+        "seg": 71,
+        "esp": 77,
         "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "pos": 63,
+        "vel": 41,
         "sta": 24
       },
       "detailedStats": {
@@ -1653,7 +1653,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 32,
       "name": "Agustín González",
       "ovr": 66,
       "status": "reserva",
@@ -1708,7 +1708,7 @@
     },
     {
       "id": 31,
-      "number": 31,
+      "number": 33,
       "name": "Kevin Amaro",
       "ovr": 65,
       "status": "reserva",
@@ -1763,7 +1763,7 @@
     },
     {
       "id": 32,
-      "number": 32,
+      "number": 34,
       "name": "Jean Pierre Rosso",
       "ovr": 65,
       "status": "reserva",
@@ -1818,7 +1818,7 @@
     },
     {
       "id": 33,
-      "number": 33,
+      "number": 35,
       "name": "Jayden Danns",
       "ovr": 63,
       "status": "reserva",
@@ -1873,7 +1873,7 @@
     },
     {
       "id": 34,
-      "number": 34,
+      "number": 36,
       "name": "James McConnell",
       "ovr": 63,
       "status": "reserva",
@@ -1928,7 +1928,7 @@
     },
     {
       "id": 35,
-      "number": 35,
+      "number": 37,
       "name": "Yordi López",
       "ovr": 62,
       "status": "reserva",
@@ -1983,7 +1983,7 @@
     },
     {
       "id": 36,
-      "number": 36,
+      "number": 38,
       "name": "Renzo Machado",
       "ovr": 62,
       "status": "reserva",
@@ -2038,7 +2038,7 @@
     },
     {
       "id": 37,
-      "number": 37,
+      "number": 39,
       "name": "Matías Silva",
       "ovr": 62,
       "status": "reserva",
@@ -2093,7 +2093,7 @@
     },
     {
       "id": 38,
-      "number": 38,
+      "number": 40,
       "name": "James Balagizi",
       "ovr": 61,
       "status": "reserva",
@@ -2148,7 +2148,7 @@
     },
     {
       "id": 39,
-      "number": 39,
+      "number": 41,
       "name": "Harvey Davies",
       "ovr": 61,
       "status": "reserva",
@@ -2163,12 +2163,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 63,
+        "esp": 67,
+        "ref": 60,
+        "pos": 59,
+        "vel": 28,
         "sta": 20
       },
       "detailedStats": {
@@ -2203,7 +2203,7 @@
     },
     {
       "id": 40,
-      "number": 40,
+      "number": 42,
       "name": "Trey Nyoni",
       "ovr": 61,
       "status": "reserva",
@@ -2258,7 +2258,7 @@
     },
     {
       "id": 41,
-      "number": 41,
+      "number": 43,
       "name": "Amara Nallo",
       "ovr": 59,
       "status": "reserva",
@@ -2314,7 +2314,7 @@
     },
     {
       "id": 42,
-      "number": 42,
+      "number": 44,
       "name": "James Norris",
       "ovr": 59,
       "status": "reserva",
@@ -2369,7 +2369,7 @@
     },
     {
       "id": 43,
-      "number": 43,
+      "number": 45,
       "name": "Calum Scanlon",
       "ovr": 59,
       "status": "reserva",
@@ -2424,7 +2424,7 @@
     },
     {
       "id": 44,
-      "number": 44,
+      "number": 46,
       "name": "Francisco Bregante",
       "ovr": 58,
       "status": "reserva",
@@ -2479,7 +2479,7 @@
     },
     {
       "id": 45,
-      "number": 45,
+      "number": 47,
       "name": "Jakub Ojrzyński",
       "ovr": 56,
       "status": "reserva",
@@ -2494,12 +2494,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 56,
+        "seg": 56,
+        "esp": 64,
+        "ref": 60,
+        "pos": 58,
+        "vel": 18,
         "sta": 29
       },
       "detailedStats": {

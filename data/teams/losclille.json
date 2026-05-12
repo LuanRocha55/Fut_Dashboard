@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Jonathan David",
       "ovr": 81,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 5,
       "name": "Benjamin André",
       "ovr": 80,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 1,
       "name": "Lucas Chevalier",
       "ovr": 80,
       "status": "titular",
@@ -137,12 +137,12 @@
         "1v1 Close Down"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 80,
+        "seg": 79,
+        "esp": 91,
+        "ref": 83,
+        "pos": 78,
+        "vel": 43,
         "sta": 39
       },
       "detailedStats": {
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 11,
       "name": "Edon Zhegrova",
       "ovr": 79,
       "status": "titular",
@@ -237,7 +237,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 21,
       "name": "Nabil Bentaleb",
       "ovr": 78,
       "status": "titular",
@@ -298,7 +298,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 3,
       "name": "Ismaily",
       "ovr": 78,
       "status": "titular",
@@ -354,7 +354,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 2,
       "name": "Tiago Santos",
       "ovr": 77,
       "status": "titular",
@@ -409,7 +409,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 4,
       "name": "Bafodé Diakité",
       "ovr": 77,
       "status": "titular",
@@ -465,7 +465,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 10,
       "name": "Angel Gomes",
       "ovr": 77,
       "status": "titular",
@@ -524,7 +524,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 23,
       "name": "Rémy Cabella",
       "ovr": 76,
       "status": "titular",
@@ -584,7 +584,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 14,
       "name": "Alexsandro",
       "ovr": 76,
       "status": "titular",
@@ -641,7 +641,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 25,
       "name": "Aïssa Mandi",
       "ovr": 76,
       "status": "reserva",
@@ -753,7 +753,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Samuel Umtiti",
       "ovr": 75,
       "status": "reserva",
@@ -810,7 +810,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 16,
       "name": "Gabriel Gudmundsson",
       "ovr": 74,
       "status": "reserva",
@@ -866,7 +866,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 19,
       "name": "Hákon Arnar Haraldsson",
       "ovr": 74,
       "status": "reserva",
@@ -923,7 +923,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 27,
       "name": "Osame Sahraoui",
       "ovr": 74,
       "status": "reserva",
@@ -981,7 +981,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Mohamed Bayo",
       "ovr": 73,
       "status": "reserva",
@@ -1036,7 +1036,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 24,
       "name": "Akim Zedadka",
       "ovr": 73,
       "status": "reserva",
@@ -1091,7 +1091,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Mitchel Bakker",
       "ovr": 72,
       "status": "reserva",
@@ -1146,7 +1146,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 12,
       "name": "Vito Mannone",
       "ovr": 72,
       "status": "reserva",
@@ -1161,12 +1161,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 69,
+        "esp": 78,
+        "ref": 71,
+        "pos": 74,
+        "vel": 56,
         "sta": 31
       },
       "detailedStats": {
@@ -1201,7 +1201,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Ngal'ayel Mukau",
       "ovr": 68,
       "status": "reserva",
@@ -1256,7 +1256,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 30,
       "name": "Matias Fernandez-Pardo",
       "ovr": 67,
       "status": "reserva",
@@ -1311,7 +1311,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 28,
       "name": "Rafael Fernandes",
       "ovr": 63,
       "status": "reserva",
@@ -1367,7 +1367,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 8,
       "name": "Ethan Mbappé",
       "ovr": 63,
       "status": "reserva",
@@ -1422,7 +1422,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Aaron Malouda",
       "ovr": 62,
       "status": "reserva",

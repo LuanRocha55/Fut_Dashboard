@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Brecht Dejaegere",
       "ovr": 74,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Abdelkahar Kadri",
       "ovr": 72,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Thierry Ambrose",
       "ovr": 70,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 17,
       "name": "Takuro Kaneko",
       "ovr": 70,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 1,
       "name": "Patrik Gunnarsson",
       "ovr": 69,
       "status": "titular",
@@ -246,11 +246,11 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 68,
+        "seg": 72,
+        "esp": 77,
+        "ref": 70,
+        "pos": 68,
         "vel": 40,
         "sta": 32
       },
@@ -286,7 +286,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 4,
       "name": "João Silva",
       "ovr": 68,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 23,
       "name": "Massimo Bruno",
       "ovr": 68,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 19,
       "name": "Mounaïm El Idrissy",
       "ovr": 68,
       "status": "titular",
@@ -454,7 +454,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "Haruya Fujii",
       "ovr": 68,
       "status": "titular",
@@ -510,7 +510,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 20,
       "name": "Billal Messaoudi",
       "ovr": 68,
       "status": "titular",
@@ -620,7 +620,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 18,
       "name": "Abdoulaye Sissako",
       "ovr": 68,
       "status": "reserva",
@@ -675,7 +675,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 12,
       "name": "Tom Vandenberghe",
       "ovr": 68,
       "status": "reserva",
@@ -690,12 +690,12 @@
         "1v1 Close Down"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 65,
+        "esp": 76,
+        "ref": 69,
+        "pos": 70,
+        "vel": 25,
         "sta": 26
       },
       "detailedStats": {
@@ -730,7 +730,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 27,
       "name": "Dion De Neve",
       "ovr": 67,
       "status": "reserva",
@@ -842,7 +842,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 5,
       "name": "Kristiyan Malinov",
       "ovr": 67,
       "status": "reserva",
@@ -897,7 +897,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 25,
       "name": "Mark Mampassi",
       "ovr": 67,
       "status": "reserva",
@@ -953,7 +953,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 2,
       "name": "Nayel Mehssatou",
       "ovr": 67,
       "status": "reserva",
@@ -1008,7 +1008,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Lucas Pirard",
       "ovr": 67,
       "status": "reserva",
@@ -1023,12 +1023,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
+        "alc": 67,
+        "seg": 65,
         "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "ref": 68,
+        "pos": 66,
+        "vel": 36,
         "sta": 23
       },
       "detailedStats": {
@@ -1063,7 +1063,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 13,
       "name": "Gilles Dewaele",
       "ovr": 66,
       "status": "reserva",
@@ -1173,7 +1173,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Bram Lagae",
       "ovr": 64,
       "status": "reserva",
@@ -1229,7 +1229,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Tomoki Takamine",
       "ovr": 64,
       "status": "reserva",
@@ -1284,7 +1284,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 28,
       "name": "Ryan Alebiosu",
       "ovr": 63,
       "status": "reserva",
@@ -1339,7 +1339,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Nathan Huygevelde",
       "ovr": 60,
       "status": "reserva",
@@ -1394,7 +1394,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 30,
       "name": "Djiby Seck",
       "ovr": 60,
       "status": "reserva",
@@ -1449,7 +1449,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 31,
       "name": "Ebbe De Vlaeminck",
       "ovr": 56,
       "status": "reserva",
@@ -1464,12 +1464,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 57,
+        "esp": 65,
+        "ref": 59,
+        "pos": 55,
+        "vel": 23,
         "sta": 17
       },
       "detailedStats": {

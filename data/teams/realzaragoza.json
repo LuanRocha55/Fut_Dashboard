@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 5,
       "name": "Keidi Bare",
       "ovr": 74,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Cristian Álvarez",
       "ovr": 73,
       "status": "titular",
@@ -79,11 +79,11 @@
       ],
       "stats": {
         "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "seg": 70,
+        "esp": 82,
+        "ref": 72,
+        "pos": 73,
+        "vel": 50,
         "sta": 38
       },
       "detailedStats": {
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Bernardo Vital",
       "ovr": 72,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Toni Moya",
       "ovr": 71,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 14,
       "name": "Jair Amador",
       "ovr": 70,
       "status": "titular",
@@ -286,7 +286,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 11,
       "name": "Adu Ares",
       "ovr": 70,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 12,
       "name": "Joan Femenías",
       "ovr": 70,
       "status": "titular",
@@ -357,12 +357,12 @@
         "1v1 Close Down"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 66,
+        "esp": 80,
+        "ref": 74,
+        "pos": 67,
+        "vel": 26,
         "sta": 25
       },
       "detailedStats": {
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 18,
       "name": "Francho Serrano",
       "ovr": 70,
       "status": "titular",
@@ -452,7 +452,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 21,
       "name": "Marc Aguado",
       "ovr": 69,
       "status": "titular",
@@ -507,7 +507,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 19,
       "name": "Bermejo",
       "ovr": 69,
       "status": "titular",
@@ -565,7 +565,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 25,
       "name": "Lluís López",
       "ovr": 69,
       "status": "titular",
@@ -621,7 +621,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 9,
       "name": "Iván Azón",
       "ovr": 68,
       "status": "reserva",
@@ -677,7 +677,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 2,
       "name": "Iván Calero",
       "ovr": 68,
       "status": "reserva",
@@ -732,7 +732,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 3,
       "name": "Carlos Nieto",
       "ovr": 68,
       "status": "reserva",
@@ -789,7 +789,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 10,
       "name": "Soberón",
       "ovr": 68,
       "status": "reserva",
@@ -900,7 +900,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 26,
       "name": "Dani Tasende",
       "ovr": 67,
       "status": "reserva",
@@ -955,7 +955,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 22,
       "name": "Gaëtan Poussin",
       "ovr": 67,
       "status": "reserva",
@@ -970,12 +970,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
+        "alc": 68,
+        "seg": 67,
         "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "ref": 67,
+        "pos": 66,
+        "vel": 25,
         "sta": 22
       },
       "detailedStats": {
@@ -1010,7 +1010,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 13,
       "name": "Andrés Borge",
       "ovr": 65,
       "status": "reserva",
@@ -1065,7 +1065,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 24,
       "name": "Marcos Luna",
       "ovr": 64,
       "status": "reserva",
@@ -1120,7 +1120,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 20,
       "name": "Gori",
       "ovr": 62,
       "status": "reserva",
@@ -1175,7 +1175,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Baselga",
       "ovr": 61,
       "status": "reserva",
@@ -1230,7 +1230,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 27,
       "name": "Marcos Cuenca",
       "ovr": 59,
       "status": "reserva",

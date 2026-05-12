@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Nani",
       "ovr": 73,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Alan Ruiz",
       "ovr": 73,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Miguel Lopes",
       "ovr": 70,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Kikas",
       "ovr": 70,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 1,
       "name": "Bruno Brígido",
       "ovr": 70,
       "status": "titular",
@@ -248,12 +248,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 73,
+        "seg": 69,
+        "esp": 80,
+        "ref": 71,
+        "pos": 68,
+        "vel": 44,
         "sta": 26
       },
       "detailedStats": {
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Leo Cordeiro",
       "ovr": 70,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 19,
       "name": "Rodrigo Pinho",
       "ovr": 70,
       "status": "titular",
@@ -399,7 +399,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 2,
       "name": "Danilo Veiga",
       "ovr": 68,
       "status": "titular",
@@ -454,7 +454,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "Ferro",
       "ovr": 68,
       "status": "titular",
@@ -510,7 +510,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 17,
       "name": "Gustavo Henrique",
       "ovr": 67,
       "status": "titular",
@@ -565,7 +565,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 20,
       "name": "André Luiz",
       "ovr": 67,
       "status": "titular",
@@ -620,7 +620,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 25,
       "name": "Rúben Lima",
       "ovr": 67,
       "status": "reserva",
@@ -677,7 +677,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 3,
       "name": "Nilton Varela",
       "ovr": 67,
       "status": "reserva",
@@ -732,7 +732,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 13,
       "name": "Juan José Mina",
       "ovr": 66,
       "status": "reserva",
@@ -843,7 +843,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 5,
       "name": "Manuel Keliano",
       "ovr": 65,
       "status": "reserva",
@@ -898,7 +898,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 12,
       "name": "Francisco Meixedo",
       "ovr": 63,
       "status": "reserva",
@@ -913,12 +913,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 63,
+        "esp": 69,
+        "ref": 64,
+        "pos": 64,
+        "vel": 30,
         "sta": 20
       },
       "detailedStats": {

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 7,
       "name": "Lorenzo Insigne",
       "ovr": 78,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 17,
       "name": "Federico Bernardeschi",
       "ovr": 77,
       "status": "titular",
@@ -125,7 +125,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Jonathan Osorio",
       "ovr": 72,
       "status": "titular",
@@ -181,7 +181,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 2,
       "name": "Richie Laryea",
       "ovr": 71,
       "status": "titular",
@@ -238,7 +238,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 1,
       "name": "Sean Johnson",
       "ovr": 70,
       "status": "titular",
@@ -253,12 +253,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 65,
+        "esp": 80,
+        "ref": 74,
+        "pos": 69,
+        "vel": 43,
         "sta": 35
       },
       "detailedStats": {
@@ -293,7 +293,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 4,
       "name": "Kevin Long",
       "ovr": 70,
       "status": "titular",
@@ -349,7 +349,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 3,
       "name": "Raoul Petretta",
       "ovr": 68,
       "status": "titular",
@@ -404,7 +404,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 11,
       "name": "Derrick Etienne Jr.",
       "ovr": 67,
       "status": "titular",
@@ -459,7 +459,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 18,
       "name": "Matthew Longstaff",
       "ovr": 67,
       "status": "titular",
@@ -514,7 +514,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Henry Wingo",
       "ovr": 67,
       "status": "titular",
@@ -570,7 +570,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 5,
       "name": "Deybi Flores",
       "ovr": 66,
       "status": "titular",
@@ -625,7 +625,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 9,
       "name": "Prince Owusu",
       "ovr": 65,
       "status": "reserva",
@@ -680,7 +680,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 12,
       "name": "Luka Gavran",
       "ovr": 64,
       "status": "reserva",
@@ -695,12 +695,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 66,
+        "esp": 71,
+        "ref": 63,
+        "pos": 62,
+        "vel": 32,
         "sta": 18
       },
       "detailedStats": {
@@ -735,7 +735,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 25,
       "name": "Shane O'Neill",
       "ovr": 64,
       "status": "reserva",
@@ -847,7 +847,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 21,
       "name": "Brandon Servania",
       "ovr": 64,
       "status": "reserva",
@@ -902,7 +902,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 13,
       "name": "Kobe Franklin",
       "ovr": 63,
       "status": "reserva",
@@ -957,7 +957,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 19,
       "name": "Aimé Mabika",
       "ovr": 63,
       "status": "reserva",
@@ -1013,7 +1013,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 29,
       "name": "Tyrese Spicer",
       "ovr": 62,
       "status": "reserva",
@@ -1123,7 +1123,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Nicksoen Gomis",
       "ovr": 61,
       "status": "reserva",
@@ -1179,7 +1179,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 10,
       "name": "Deandre Kerr",
       "ovr": 61,
       "status": "reserva",
@@ -1234,7 +1234,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Kosi Thompson",
       "ovr": 61,
       "status": "reserva",
@@ -1289,7 +1289,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Adam Pearlman",
       "ovr": 49,
       "status": "reserva",

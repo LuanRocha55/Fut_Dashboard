@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 5,
       "name": "Hans Nunoo Sarpei",
       "ovr": 67,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Alessandro Albanese",
       "ovr": 66,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Hassane Bandé",
       "ovr": 66,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Lucas Lingman",
       "ovr": 66,
       "status": "titular",
@@ -230,7 +230,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Aapo Halme",
       "ovr": 65,
       "status": "titular",
@@ -286,7 +286,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 1,
       "name": "Niki Mäenpää",
       "ovr": 65,
       "status": "titular",
@@ -301,11 +301,11 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 65,
+        "seg": 65,
+        "esp": 70,
+        "ref": 61,
+        "pos": 64,
         "vel": 40,
         "sta": 38
       },
@@ -396,7 +396,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 10,
       "name": "Ozan Can Kökçü",
       "ovr": 64,
       "status": "titular",
@@ -451,7 +451,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "Daniel O'Shaughnessy",
       "ovr": 64,
       "status": "titular",
@@ -507,7 +507,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 23,
       "name": "Atomu Tanaka",
       "ovr": 64,
       "status": "titular",
@@ -562,7 +562,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 25,
       "name": "Diogo Tomas",
       "ovr": 64,
       "status": "titular",
@@ -636,12 +636,12 @@
         "1v1 Close Down"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 57,
+        "esp": 72,
+        "ref": 64,
+        "pos": 63,
+        "vel": 18,
         "sta": 20
       },
       "detailedStats": {
@@ -676,7 +676,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 22,
       "name": "Jesse Öst",
       "ovr": 63,
       "status": "reserva",
@@ -691,12 +691,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 63,
+        "esp": 69,
+        "ref": 63,
+        "pos": 61,
+        "vel": 31,
         "sta": 30
       },
       "detailedStats": {
@@ -731,7 +731,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Joona Toivio",
       "ovr": 63,
       "status": "reserva",
@@ -787,7 +787,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 19,
       "name": "Lee Erwin",
       "ovr": 62,
       "status": "reserva",
@@ -842,7 +842,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 18,
       "name": "Georgios Kanellopoulos",
       "ovr": 62,
       "status": "reserva",
@@ -897,7 +897,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 20,
       "name": "Kai Meriluoto",
       "ovr": 62,
       "status": "reserva",
@@ -952,7 +952,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Luke Plange",
       "ovr": 62,
       "status": "reserva",
@@ -1007,7 +1007,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 3,
       "name": "Noah Pallas",
       "ovr": 61,
       "status": "reserva",
@@ -1062,7 +1062,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 24,
       "name": "Georgios Antzoulas",
       "ovr": 60,
       "status": "reserva",
@@ -1118,7 +1118,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 2,
       "name": "Kevin Kouassivi-Benissan",
       "ovr": 60,
       "status": "reserva",
@@ -1173,7 +1173,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Kevor Palumets",
       "ovr": 60,
       "status": "reserva",
@@ -1228,7 +1228,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 27,
       "name": "Brooklyn Lyons-Foster",
       "ovr": 58,
       "status": "reserva",
@@ -1284,7 +1284,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 17,
       "name": "Samuel Anini Jr",
       "ovr": 57,
       "status": "reserva",
@@ -1339,7 +1339,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 28,
       "name": "Michael Boamah",
       "ovr": 56,
       "status": "reserva",
@@ -1395,7 +1395,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 13,
       "name": "Miska Ylitolva",
       "ovr": 56,
       "status": "reserva",
@@ -1450,7 +1450,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 30,
       "name": "Liam Möller",
       "ovr": 54,
       "status": "reserva",
@@ -1505,7 +1505,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 29,
       "name": "Niilo Kujasalo",
       "ovr": 53,
       "status": "reserva",

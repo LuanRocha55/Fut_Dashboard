@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Bradley Danger",
       "ovr": 70,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 5,
       "name": "Hianga'a Mbock",
       "ovr": 67,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "Merwan Ifnaoui",
       "ovr": 65,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Quentin Beunardeau",
       "ovr": 64,
       "status": "titular",
@@ -189,12 +189,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 61,
+        "esp": 72,
+        "ref": 66,
+        "pos": 62,
+        "vel": 48,
         "sta": 27
       },
       "detailedStats": {
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 2,
       "name": "Dylan Durivaux",
       "ovr": 64,
       "status": "titular",
@@ -284,7 +284,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Loïc Kouagba",
       "ovr": 64,
       "status": "titular",
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 8,
       "name": "Samuel Renel",
       "ovr": 64,
       "status": "titular",
@@ -395,7 +395,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 9,
       "name": "Achille Anani",
       "ovr": 63,
       "status": "titular",
@@ -450,7 +450,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 13,
       "name": "Fodé Doucouré",
       "ovr": 63,
       "status": "titular",
@@ -505,7 +505,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 21,
       "name": "Joachim Eickmayer",
       "ovr": 63,
       "status": "titular",
@@ -560,7 +560,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 25,
       "name": "Blondon Meyapya",
       "ovr": 63,
       "status": "titular",
@@ -672,7 +672,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 23,
       "name": "Ivann Botella",
       "ovr": 61,
       "status": "reserva",
@@ -727,7 +727,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 3,
       "name": "Aniss El Hriti",
       "ovr": 61,
       "status": "reserva",
@@ -838,7 +838,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 22,
       "name": "Pépé Bonet",
       "ovr": 58,
       "status": "reserva",
@@ -853,12 +853,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 55,
+        "esp": 66,
+        "ref": 59,
+        "pos": 56,
+        "vel": 19,
         "sta": 22
       },
       "detailedStats": {

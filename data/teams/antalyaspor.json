@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Sam Larsson",
       "ovr": 72,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 19,
       "name": "Moussa Djenepo",
       "ovr": 71,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "Ramzi Safuri",
       "ovr": 71,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 27,
       "name": "Braian Samudio",
       "ovr": 70,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 3,
       "name": "Güray Vural",
       "ovr": 70,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 2,
       "name": "Bünyamin Balcı",
       "ovr": 69,
       "status": "titular",
@@ -344,7 +344,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Erdal Rakip",
       "ovr": 69,
       "status": "titular",
@@ -399,7 +399,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 23,
       "name": "Sander van de Streek",
       "ovr": 69,
       "status": "titular",
@@ -454,7 +454,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 8,
       "name": "Soner Dikmen",
       "ovr": 68,
       "status": "titular",
@@ -509,7 +509,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 4,
       "name": "Veysel Sarı",
       "ovr": 67,
       "status": "titular",
@@ -568,7 +568,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 1,
       "name": "Ataberk Dadakdeniz",
       "ovr": 66,
       "status": "titular",
@@ -583,12 +583,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 65,
+        "esp": 73,
+        "ref": 66,
+        "pos": 68,
+        "vel": 28,
         "sta": 25
       },
       "detailedStats": {
@@ -623,7 +623,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 28,
       "name": "Erdoğan Yeşilyurt",
       "ovr": 66,
       "status": "reserva",
@@ -678,7 +678,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 21,
       "name": "Jakub Kałuziński",
       "ovr": 65,
       "status": "reserva",
@@ -789,7 +789,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 12,
       "name": "Kenan Pirić",
       "ovr": 65,
       "status": "reserva",
@@ -804,12 +804,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 64,
+        "esp": 74,
+        "ref": 68,
+        "pos": 60,
+        "vel": 30,
         "sta": 38
       },
       "detailedStats": {
@@ -844,7 +844,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 22,
       "name": "Abdullah Yiğiter",
       "ovr": 65,
       "status": "reserva",
@@ -859,12 +859,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 64,
+        "esp": 74,
+        "ref": 67,
+        "pos": 63,
+        "vel": 24,
         "sta": 16
       },
       "detailedStats": {
@@ -899,7 +899,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 13,
       "name": "Mert Yılmaz",
       "ovr": 63,
       "status": "reserva",
@@ -969,12 +969,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 64,
+        "esp": 68,
+        "ref": 60,
+        "pos": 62,
+        "vel": 54,
         "sta": 19
       },
       "detailedStats": {
@@ -1009,7 +1009,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 25,
       "name": "Emrecan Uzunhan",
       "ovr": 62,
       "status": "reserva",

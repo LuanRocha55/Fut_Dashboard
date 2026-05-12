@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Hasret Kayikci",
       "ovr": 81,
       "status": "titular",
@@ -125,7 +125,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 18,
       "name": "Meret Felde",
       "ovr": 79,
       "status": "titular",
@@ -180,7 +180,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Svenja Fölmli",
       "ovr": 78,
       "status": "titular",
@@ -236,7 +236,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 17,
       "name": "Lisa Kolb",
       "ovr": 78,
       "status": "titular",
@@ -291,7 +291,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 1,
       "name": "Rafaela Borggräfe",
       "ovr": 77,
       "status": "titular",
@@ -309,12 +309,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 79,
+        "seg": 72,
+        "esp": 88,
+        "ref": 80,
+        "pos": 77,
+        "vel": 43,
         "sta": 36
       },
       "detailedStats": {
@@ -349,7 +349,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "Shekiera Martinez",
       "ovr": 77,
       "status": "titular",
@@ -406,7 +406,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 4,
       "name": "Greta Stegemann",
       "ovr": 76,
       "status": "titular",
@@ -463,7 +463,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "Samantha Steuerwald",
       "ovr": 76,
       "status": "titular",
@@ -522,7 +522,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 13,
       "name": "Alicia-Sophie Gudorf",
       "ovr": 74,
       "status": "titular",
@@ -577,7 +577,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 25,
       "name": "Julia Stierli",
       "ovr": 73,
       "status": "titular",
@@ -633,7 +633,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 19,
       "name": "Eileen Campbell",
       "ovr": 72,
       "status": "reserva",
@@ -688,7 +688,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 11,
       "name": "Leela Egli",
       "ovr": 72,
       "status": "reserva",
@@ -743,7 +743,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 5,
       "name": "Noreen Günnewig",
       "ovr": 72,
       "status": "reserva",
@@ -798,7 +798,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 21,
       "name": "Annie Karich",
       "ovr": 72,
       "status": "reserva",
@@ -853,7 +853,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 12,
       "name": "Julia Kassen",
       "ovr": 72,
       "status": "reserva",
@@ -868,12 +868,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 70,
+        "esp": 79,
+        "ref": 72,
+        "pos": 73,
+        "vel": 51,
         "sta": 19
       },
       "detailedStats": {
@@ -908,7 +908,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 22,
       "name": "Lena Nuding",
       "ovr": 72,
       "status": "reserva",
@@ -923,11 +923,11 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 71,
+        "seg": 74,
+        "esp": 78,
+        "ref": 69,
+        "pos": 70,
         "vel": 40,
         "sta": 33
       },
@@ -963,7 +963,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 23,
       "name": "Selina Vobian",
       "ovr": 72,
       "status": "reserva",
@@ -1018,7 +1018,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 7,
       "name": "Cora Zicai",
       "ovr": 72,
       "status": "reserva",
@@ -1073,7 +1073,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 30,
       "name": "Annabel Schasching",
       "ovr": 71,
       "status": "reserva",
@@ -1128,7 +1128,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Nia Szenk",
       "ovr": 70,
       "status": "reserva",
@@ -1183,7 +1183,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Rebecca Adamczyk",
       "ovr": 69,
       "status": "reserva",
@@ -1198,12 +1198,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 64,
+        "esp": 78,
+        "ref": 73,
+        "pos": 70,
+        "vel": 43,
         "sta": 21
       },
       "detailedStats": {
@@ -1238,7 +1238,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 27,
       "name": "Alina Axtmann",
       "ovr": 66,
       "status": "reserva",
@@ -1293,7 +1293,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 28,
       "name": "Nicole Ojukwu",
       "ovr": 66,
       "status": "reserva",
@@ -1348,7 +1348,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Maj Schneider",
       "ovr": 62,
       "status": "reserva",

@@ -26,11 +26,11 @@
       ],
       "stats": {
         "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "seg": 71,
+        "esp": 87,
+        "ref": 81,
+        "pos": 76,
+        "vel": 45,
         "sta": 43
       },
       "detailedStats": {
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 3,
       "name": "Bernardo",
       "ovr": 75,
       "status": "titular",
@@ -123,7 +123,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "Dani de Wit",
       "ovr": 74,
       "status": "titular",
@@ -181,7 +181,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 5,
       "name": "Anthony Losilla",
       "ovr": 74,
       "status": "titular",
@@ -236,7 +236,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Ivan Ordets",
       "ovr": 74,
       "status": "titular",
@@ -294,7 +294,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Ibrahima Sissoko",
       "ovr": 74,
       "status": "titular",
@@ -349,7 +349,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 12,
       "name": "Patrick Drewes",
       "ovr": 73,
       "status": "titular",
@@ -364,12 +364,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "alc": 74,
+        "seg": 71,
+        "esp": 83,
         "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "pos": 71,
+        "vel": 29,
         "sta": 41
       },
       "detailedStats": {
@@ -404,7 +404,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 9,
       "name": "Philipp Hofmann",
       "ovr": 73,
       "status": "titular",
@@ -461,7 +461,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "Erhan Mašović",
       "ovr": 73,
       "status": "titular",
@@ -517,7 +517,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 16,
       "name": "Maximilian Wittek",
       "ovr": 73,
       "status": "titular",
@@ -573,7 +573,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 18,
       "name": "Matúš Bero",
       "ovr": 72,
       "status": "titular",
@@ -628,7 +628,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 19,
       "name": "Myron Boadu",
       "ovr": 72,
       "status": "reserva",
@@ -684,7 +684,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 22,
       "name": "Timo Horn",
       "ovr": 72,
       "status": "reserva",
@@ -699,12 +699,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 73,
+        "seg": 74,
+        "esp": 81,
+        "ref": 72,
+        "pos": 67,
+        "vel": 51,
         "sta": 31
       },
       "detailedStats": {
@@ -739,7 +739,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 20,
       "name": "Lukas Daschner",
       "ovr": 70,
       "status": "reserva",
@@ -794,7 +794,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 2,
       "name": "Cristian Gamboa",
       "ovr": 70,
       "status": "reserva",
@@ -850,7 +850,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 25,
       "name": "Jakov Medić",
       "ovr": 70,
       "status": "reserva",
@@ -907,7 +907,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 11,
       "name": "Koji Miyoshi",
       "ovr": 70,
       "status": "reserva",
@@ -963,7 +963,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Moritz Broschinski",
       "ovr": 69,
       "status": "reserva",
@@ -1018,7 +1018,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 27,
       "name": "Gerrit Holtmann",
       "ovr": 69,
       "status": "reserva",
@@ -1074,7 +1074,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 17,
       "name": "Moritz-Broni Kwarteng",
       "ovr": 69,
       "status": "reserva",
@@ -1132,7 +1132,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 23,
       "name": "Tim Oermann",
       "ovr": 69,
       "status": "reserva",
@@ -1188,7 +1188,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 13,
       "name": "Felix Passlack",
       "ovr": 69,
       "status": "reserva",
@@ -1243,7 +1243,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 31,
       "name": "Aliou Baldé",
       "ovr": 68,
       "status": "reserva",
@@ -1354,7 +1354,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "Agon Elezi",
       "ovr": 65,
       "status": "reserva",
@@ -1409,7 +1409,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 28,
       "name": "Samuel Bamba",
       "ovr": 64,
       "status": "reserva",
@@ -1465,7 +1465,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 30,
       "name": "Lennart Koerdt",
       "ovr": 62,
       "status": "reserva",
@@ -1520,7 +1520,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 29,
       "name": "Mohammed Tolba",
       "ovr": 61,
       "status": "reserva",
@@ -1575,7 +1575,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 32,
       "name": "Mats Pannewig",
       "ovr": 60,
       "status": "reserva",
@@ -1630,7 +1630,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 33,
       "name": "Paul Grave",
       "ovr": 55,
       "status": "reserva",
@@ -1645,12 +1645,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 55,
+        "seg": 56,
+        "esp": 64,
+        "ref": 61,
+        "pos": 55,
+        "vel": 28,
         "sta": 19
       },
       "detailedStats": {

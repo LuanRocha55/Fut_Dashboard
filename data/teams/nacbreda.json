@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Dominik Janošek",
       "ovr": 69,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Jan Van den Bergh",
       "ovr": 68,
       "status": "titular",
@@ -125,7 +125,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Max Balard",
       "ovr": 67,
       "status": "titular",
@@ -181,7 +181,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 14,
       "name": "Leo Greiml",
       "ovr": 67,
       "status": "titular",
@@ -237,7 +237,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 18,
       "name": "Clint Leemans",
       "ovr": 67,
       "status": "titular",
@@ -292,7 +292,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 23,
       "name": "Aimé Omgba",
       "ovr": 67,
       "status": "titular",
@@ -347,7 +347,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 1,
       "name": "Daniel Bielica",
       "ovr": 66,
       "status": "titular",
@@ -362,12 +362,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 65,
+        "esp": 76,
+        "ref": 67,
+        "pos": 65,
+        "vel": 33,
         "sta": 26
       },
       "detailedStats": {
@@ -402,7 +402,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 7,
       "name": "Leo Sauer",
       "ovr": 66,
       "status": "titular",
@@ -457,7 +457,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "Boy Kemper",
       "ovr": 65,
       "status": "titular",
@@ -512,7 +512,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 9,
       "name": "Kacper Kostorz",
       "ovr": 65,
       "status": "titular",
@@ -567,7 +567,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 30,
       "name": "Raul Paula",
       "ovr": 65,
       "status": "titular",
@@ -677,7 +677,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 5,
       "name": "Fredrik Oldrup Jensen",
       "ovr": 64,
       "status": "reserva",
@@ -732,7 +732,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 22,
       "name": "Roy Kortsmit",
       "ovr": 64,
       "status": "reserva",
@@ -747,12 +747,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 61,
+        "esp": 71,
+        "ref": 63,
+        "pos": 64,
+        "vel": 33,
         "sta": 18
       },
       "detailedStats": {
@@ -787,7 +787,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 2,
       "name": "Martin Koscelnik",
       "ovr": 64,
       "status": "reserva",
@@ -842,7 +842,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 13,
       "name": "Boyd Lucassen",
       "ovr": 64,
       "status": "reserva",
@@ -897,7 +897,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 25,
       "name": "Enes Mahmutovic",
       "ovr": 64,
       "status": "reserva",
@@ -953,7 +953,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 19,
       "name": "Elías Már Ómarsson",
       "ovr": 64,
       "status": "reserva",
@@ -1008,7 +1008,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 16,
       "name": "Manel Royo",
       "ovr": 64,
       "status": "reserva",
@@ -1173,7 +1173,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 11,
       "name": "Roy Kuijpers",
       "ovr": 62,
       "status": "reserva",
@@ -1228,7 +1228,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 28,
       "name": "Adam Kaied",
       "ovr": 61,
       "status": "reserva",
@@ -1298,12 +1298,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 61,
+        "esp": 69,
+        "ref": 62,
+        "pos": 56,
+        "vel": 29,
         "sta": 33
       },
       "detailedStats": {
@@ -1338,7 +1338,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "Aron van Lare",
       "ovr": 58,
       "status": "reserva",
@@ -1353,12 +1353,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 59,
+        "esp": 67,
+        "ref": 60,
+        "pos": 59,
+        "vel": 36,
         "sta": 17
       },
       "detailedStats": {

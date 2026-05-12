@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Martin Remacle",
       "ovr": 67,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Pedro Nuno",
       "ovr": 66,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Evgeniy Shikavka",
       "ovr": 66,
       "status": "titular",
@@ -173,7 +173,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 19,
       "name": "Dalmau",
       "ovr": 65,
       "status": "titular",
@@ -228,7 +228,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Miłosz Trojak",
       "ovr": 65,
       "status": "titular",
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 1,
       "name": "Xavier Dziekoński",
       "ovr": 64,
       "status": "titular",
@@ -300,12 +300,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 64,
+        "esp": 73,
+        "ref": 67,
+        "pos": 62,
+        "vel": 33,
         "sta": 28
       },
       "detailedStats": {
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 11,
       "name": "Mariusz Fornalczyk",
       "ovr": 64,
       "status": "titular",
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Marcus Godinho",
       "ovr": 64,
       "status": "titular",
@@ -452,7 +452,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 18,
       "name": "Nono",
       "ovr": 64,
       "status": "titular",
@@ -507,7 +507,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 2,
       "name": "Dominick Zator",
       "ovr": 64,
       "status": "titular",
@@ -563,7 +563,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 27,
       "name": "Dawid Błanik",
       "ovr": 63,
       "status": "titular",
@@ -673,7 +673,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 14,
       "name": "Piotr Malarczyk",
       "ovr": 63,
       "status": "reserva",
@@ -729,7 +729,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Konrad Matuszewski",
       "ovr": 63,
       "status": "reserva",
@@ -784,7 +784,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 5,
       "name": "Yoav Hofmeister",
       "ovr": 62,
       "status": "reserva",
@@ -839,7 +839,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 23,
       "name": "Shuma Nagamatsu",
       "ovr": 62,
       "status": "reserva",
@@ -894,7 +894,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 28,
       "name": "Wiktor Długosz",
       "ovr": 61,
       "status": "reserva",
@@ -949,7 +949,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 25,
       "name": "Wojciech Kamiński",
       "ovr": 61,
       "status": "reserva",
@@ -1005,7 +1005,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 20,
       "name": "Marcel Pięczek",
       "ovr": 61,
       "status": "reserva",
@@ -1060,7 +1060,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 21,
       "name": "Pau Resta",
       "ovr": 61,
       "status": "reserva",
@@ -1116,7 +1116,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Daniel Trejo",
       "ovr": 61,
       "status": "reserva",
@@ -1171,7 +1171,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Marcel Zapytowski",
       "ovr": 61,
       "status": "reserva",
@@ -1186,12 +1186,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 64,
+        "esp": 68,
+        "ref": 62,
+        "pos": 64,
+        "vel": 26,
         "sta": 21
       },
       "detailedStats": {
@@ -1226,7 +1226,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 13,
       "name": "Hubert Zwoźny",
       "ovr": 58,
       "status": "reserva",
@@ -1281,7 +1281,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Jakub Konstantyn",
       "ovr": 56,
       "status": "reserva",
@@ -1336,7 +1336,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Igor Kośmicki",
       "ovr": 56,
       "status": "reserva",
@@ -1392,7 +1392,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 30,
       "name": "Miłosz Strzeboński",
       "ovr": 56,
       "status": "reserva",
@@ -1447,7 +1447,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 31,
       "name": "Daniel Bąk",
       "ovr": 55,
       "status": "reserva",
@@ -1502,7 +1502,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 32,
       "name": "Adam Chojecki",
       "ovr": 55,
       "status": "reserva",
@@ -1557,7 +1557,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 33,
       "name": "Rafał Mamla",
       "ovr": 53,
       "status": "reserva",
@@ -1572,12 +1572,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 55,
+        "seg": 51,
+        "esp": 61,
+        "ref": 55,
+        "pos": 50,
+        "vel": 25,
         "sta": 22
       },
       "detailedStats": {

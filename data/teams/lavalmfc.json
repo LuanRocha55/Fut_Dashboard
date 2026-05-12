@@ -23,12 +23,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 69,
+        "esp": 76,
+        "ref": 69,
+        "pos": 69,
+        "vel": 59,
         "sta": 34
       },
       "detailedStats": {
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Yohan Tavares",
       "ovr": 68,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Malik Tchokounté",
       "ovr": 68,
       "status": "titular",
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Sam Sanna",
       "ovr": 67,
       "status": "titular",
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 18,
       "name": "Jordan Adéoti",
       "ovr": 66,
       "status": "titular",
@@ -395,7 +395,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Amin Cherni",
       "ovr": 66,
       "status": "titular",
@@ -450,7 +450,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 10,
       "name": "Siriné Doucouré",
       "ovr": 66,
       "status": "titular",
@@ -505,7 +505,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 13,
       "name": "Anthony Gonçalves",
       "ovr": 66,
       "status": "titular",
@@ -561,7 +561,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 14,
       "name": "Peter Ouaneh",
       "ovr": 66,
       "status": "titular",
@@ -617,7 +617,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 19,
       "name": "Jordan Tell",
       "ovr": 65,
       "status": "reserva",
@@ -672,7 +672,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Kévin Zohi",
       "ovr": 65,
       "status": "reserva",
@@ -727,7 +727,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 16,
       "name": "Edson Seidou",
       "ovr": 64,
       "status": "reserva",
@@ -782,7 +782,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 11,
       "name": "Malik Sellouki",
       "ovr": 64,
       "status": "reserva",
@@ -837,7 +837,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 17,
       "name": "Titouan Thomas",
       "ovr": 64,
       "status": "reserva",
@@ -892,7 +892,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 25,
       "name": "Moïse Adilèhou",
       "ovr": 63,
       "status": "reserva",
@@ -948,7 +948,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 12,
       "name": "Maxime Hautbois",
       "ovr": 63,
       "status": "reserva",
@@ -963,12 +963,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 65,
+        "esp": 69,
+        "ref": 64,
+        "pos": 62,
+        "vel": 49,
         "sta": 29
       },
       "detailedStats": {
@@ -1003,7 +1003,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "William Bianda",
       "ovr": 62,
       "status": "reserva",
@@ -1059,7 +1059,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Amjhad Nazih",
       "ovr": 62,
       "status": "reserva",
@@ -1074,12 +1074,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 61,
+        "esp": 73,
+        "ref": 65,
+        "pos": 58,
+        "vel": 45,
         "sta": 34
       },
       "detailedStats": {
@@ -1114,7 +1114,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 23,
       "name": "William Benard",
       "ovr": 59,
       "status": "reserva",
@@ -1169,7 +1169,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Williams Kokolo",
       "ovr": 59,
       "status": "reserva",
@@ -1224,7 +1224,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Loïs Martins",
       "ovr": 58,
       "status": "reserva",

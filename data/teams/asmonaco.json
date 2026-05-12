@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Alexandr Golovin",
       "ovr": 81,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Takumi Minamino",
       "ovr": 79,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Wilfried Singo",
       "ovr": 79,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 5,
       "name": "Denis Zakaria",
       "ovr": 79,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 3,
       "name": "Caio Henrique",
       "ovr": 78,
       "status": "titular",
@@ -291,7 +291,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 2,
       "name": "Jordan Teze",
       "ovr": 78,
       "status": "titular",
@@ -347,7 +347,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 9,
       "name": "Folarin Balogun",
       "ovr": 77,
       "status": "titular",
@@ -402,7 +402,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 13,
       "name": "Vanderson",
       "ovr": 77,
       "status": "titular",
@@ -457,7 +457,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 19,
       "name": "Breel Embolo",
       "ovr": 77,
       "status": "titular",
@@ -513,7 +513,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 1,
       "name": "Radosław Majecki",
       "ovr": 77,
       "status": "titular",
@@ -528,12 +528,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
+        "alc": 77,
+        "seg": 74,
+        "esp": 86,
+        "ref": 78,
         "pos": 75,
-        "vel": 40,
+        "vel": 34,
         "sta": 23
       },
       "detailedStats": {
@@ -568,7 +568,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 28,
       "name": "Maghnes Akliouche",
       "ovr": 76,
       "status": "titular",
@@ -623,7 +623,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 14,
       "name": "Thilo Kehrer",
       "ovr": 76,
       "status": "reserva",
@@ -679,7 +679,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 25,
       "name": "Mohammed Salisu",
       "ovr": 76,
       "status": "reserva",
@@ -735,7 +735,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Krépin Diatta",
       "ovr": 75,
       "status": "reserva",
@@ -791,7 +791,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 12,
       "name": "Philipp Köhn",
       "ovr": 75,
       "status": "reserva",
@@ -806,12 +806,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 76,
+        "seg": 73,
+        "esp": 84,
+        "ref": 76,
+        "pos": 74,
+        "vel": 43,
         "sta": 28
       },
       "detailedStats": {
@@ -846,7 +846,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 23,
       "name": "Eliesse Ben Seghir",
       "ovr": 73,
       "status": "reserva",
@@ -901,7 +901,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 8,
       "name": "Lamine Camara",
       "ovr": 73,
       "status": "reserva",
@@ -1012,7 +1012,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Eliot Matazo",
       "ovr": 72,
       "status": "reserva",
@@ -1123,7 +1123,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "George Ilenikhena",
       "ovr": 70,
       "status": "reserva",
@@ -1178,7 +1178,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 16,
       "name": "Kassoum Ouattara",
       "ovr": 69,
       "status": "reserva",
@@ -1233,7 +1233,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Edan Diop",
       "ovr": 66,
       "status": "reserva",
@@ -1288,7 +1288,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Yann Lienard",
       "ovr": 62,
       "status": "reserva",
@@ -1303,12 +1303,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 61,
+        "esp": 68,
+        "ref": 62,
+        "pos": 63,
+        "vel": 22,
         "sta": 27
       },
       "detailedStats": {

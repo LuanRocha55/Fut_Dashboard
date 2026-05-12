@@ -23,12 +23,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 81,
+        "seg": 79,
+        "esp": 91,
+        "ref": 82,
+        "pos": 80,
+        "vel": 34,
         "sta": 43
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Borja Mayoral",
       "ovr": 79,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 5,
       "name": "Mauro Arambarri",
       "ovr": 78,
       "status": "titular",
@@ -173,7 +173,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 3,
       "name": "Diego Rico",
       "ovr": 78,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Omar Alderete",
       "ovr": 77,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Dakonam Djené",
       "ovr": 77,
       "status": "titular",
@@ -345,7 +345,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 8,
       "name": "Luis Milla",
       "ovr": 77,
       "status": "titular",
@@ -401,7 +401,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 11,
       "name": "Carles Pérez",
       "ovr": 76,
       "status": "titular",
@@ -456,7 +456,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 2,
       "name": "Juan Iglesias",
       "ovr": 74,
       "status": "titular",
@@ -513,7 +513,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Domingos Duarte",
       "ovr": 74,
       "status": "titular",
@@ -570,7 +570,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 18,
       "name": "Aleñá",
       "ovr": 73,
       "status": "titular",
@@ -626,7 +626,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 19,
       "name": "Álex Sola",
       "ovr": 71,
       "status": "reserva",
@@ -682,7 +682,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 16,
       "name": "Fabrizio Angileri",
       "ovr": 70,
       "status": "reserva",
@@ -737,7 +737,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Berrocal",
       "ovr": 70,
       "status": "reserva",
@@ -793,7 +793,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 28,
       "name": "Peter",
       "ovr": 69,
       "status": "reserva",
@@ -848,7 +848,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 10,
       "name": "Bertuğ Yıldırım",
       "ovr": 66,
       "status": "reserva",
@@ -903,7 +903,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 20,
       "name": "Álvaro",
       "ovr": 65,
       "status": "reserva",
@@ -958,7 +958,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Chrisantus Uche",
       "ovr": 65,
       "status": "reserva",
@@ -1013,7 +1013,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 23,
       "name": "Yellu Santiago",
       "ovr": 64,
       "status": "reserva",
@@ -1068,7 +1068,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 30,
       "name": "John Patrick",
       "ovr": 63,
       "status": "reserva",
@@ -1123,7 +1123,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 26,
       "name": "Gorka",
       "ovr": 62,
       "status": "reserva",
@@ -1234,7 +1234,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Alberto Risco",
       "ovr": 55,
       "status": "reserva",

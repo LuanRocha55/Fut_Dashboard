@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Lee Sang Heon",
       "ovr": 69,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Kim Dong Hyun",
       "ovr": 68,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Lee Gwang Yeon",
       "ovr": 68,
       "status": "titular",
@@ -191,12 +191,12 @@
         "Far Reach"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 62,
+        "esp": 80,
+        "ref": 74,
+        "pos": 66,
+        "vel": 28,
         "sta": 26
       },
       "detailedStats": {
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 11,
       "name": "Henry Hore",
       "ovr": 66,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 18,
       "name": "Kim Kang Guk",
       "ovr": 66,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 4,
       "name": "Kim Young Bin",
       "ovr": 66,
       "status": "titular",
@@ -400,7 +400,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Lee Gi Hyeok",
       "ovr": 66,
       "status": "titular",
@@ -456,7 +456,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "Yun Suk Young",
       "ovr": 66,
       "status": "titular",
@@ -568,7 +568,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Franko Kovačević",
       "ovr": 64,
       "status": "titular",
@@ -623,7 +623,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 13,
       "name": "Yu In Soo",
       "ovr": 64,
       "status": "reserva",
@@ -678,7 +678,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Irfan Hadžić",
       "ovr": 63,
       "status": "reserva",
@@ -733,7 +733,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 24,
       "name": "Lee You Hyeon",
       "ovr": 63,
       "status": "reserva",
@@ -788,7 +788,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 12,
       "name": "Park Chung Hyo",
       "ovr": 62,
       "status": "reserva",
@@ -803,12 +803,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 61,
+        "esp": 69,
+        "ref": 63,
+        "pos": 65,
+        "vel": 48,
         "sta": 24
       },
       "detailedStats": {
@@ -898,7 +898,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 25,
       "name": "Kim Woo Suk",
       "ovr": 61,
       "status": "reserva",
@@ -954,7 +954,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Lee Ji Sol",
       "ovr": 61,
       "status": "reserva",
@@ -1010,7 +1010,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Kim Gyeong Min",
       "ovr": 60,
       "status": "reserva",
@@ -1065,7 +1065,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 27,
       "name": "Jung Han Min",
       "ovr": 57,
       "status": "reserva",
@@ -1120,7 +1120,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 23,
       "name": "Kim Dae Woo",
       "ovr": 56,
       "status": "reserva",
@@ -1175,7 +1175,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Song Jun Seok",
       "ovr": 56,
       "status": "reserva",
@@ -1230,7 +1230,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 28,
       "name": "Park Kyung Bae",
       "ovr": 54,
       "status": "reserva",
@@ -1285,7 +1285,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 29,
       "name": "Shin Min Ha",
       "ovr": 53,
       "status": "reserva",
@@ -1341,7 +1341,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 30,
       "name": "Cho Min Kyu",
       "ovr": 51,
       "status": "reserva",
@@ -1356,12 +1356,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 56,
+        "seg": 50,
+        "esp": 61,
+        "ref": 53,
+        "pos": 48,
+        "vel": 25,
         "sta": 26
       },
       "detailedStats": {
@@ -1396,7 +1396,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 31,
       "name": "Park Sang Hyeon",
       "ovr": 51,
       "status": "reserva",
@@ -1452,7 +1452,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 17,
       "name": "Cho Jin Hyuk",
       "ovr": 50,
       "status": "reserva",
@@ -1507,7 +1507,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 32,
       "name": "Hong Sung Moo",
       "ovr": 50,
       "status": "reserva",
@@ -1562,7 +1562,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 33,
       "name": "Kim Hae Seung",
       "ovr": 50,
       "status": "reserva",
@@ -1617,7 +1617,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 34,
       "name": "Jo Hyun Tae",
       "ovr": 49,
       "status": "reserva",
@@ -1673,7 +1673,7 @@
     },
     {
       "id": 31,
-      "number": 31,
+      "number": 35,
       "name": "Kim Yu Seong",
       "ovr": 49,
       "status": "reserva",
@@ -1688,12 +1688,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 49,
+        "seg": 46,
+        "esp": 56,
+        "ref": 51,
+        "pos": 52,
+        "vel": 27,
         "sta": 21
       },
       "detailedStats": {

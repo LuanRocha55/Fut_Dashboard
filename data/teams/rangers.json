@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 2,
       "name": "James Tavernier",
       "ovr": 78,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Jack Butland",
       "ovr": 77,
       "status": "titular",
@@ -83,12 +83,12 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
+        "alc": 78,
         "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "esp": 86,
+        "ref": 77,
+        "pos": 76,
+        "vel": 50,
         "sta": 29
       },
       "detailedStats": {
@@ -123,7 +123,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Robin Pröpper",
       "ovr": 76,
       "status": "titular",
@@ -184,7 +184,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Nicolas Raskin",
       "ovr": 75,
       "status": "titular",
@@ -242,7 +242,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 10,
       "name": "Nedim Bajrami",
       "ovr": 74,
       "status": "titular",
@@ -297,7 +297,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 11,
       "name": "Václav Černý",
       "ovr": 74,
       "status": "titular",
@@ -354,7 +354,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Mohammed Diomande",
       "ovr": 74,
       "status": "titular",
@@ -411,7 +411,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 23,
       "name": "Ianis Hagi",
       "ovr": 74,
       "status": "titular",
@@ -524,7 +524,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "John Souttar",
       "ovr": 74,
       "status": "titular",
@@ -580,7 +580,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 3,
       "name": "Rıdvan Yılmaz",
       "ovr": 74,
       "status": "titular",
@@ -636,7 +636,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 25,
       "name": "Leon Balogun",
       "ovr": 73,
       "status": "reserva",
@@ -692,7 +692,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 19,
       "name": "Cyriel Dessers",
       "ovr": 73,
       "status": "reserva",
@@ -747,7 +747,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 16,
       "name": "Dujon Sterling",
       "ovr": 73,
       "status": "reserva",
@@ -803,7 +803,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 30,
       "name": "Tom Lawrence",
       "ovr": 72,
       "status": "reserva",
@@ -858,7 +858,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 18,
       "name": "Connor Barron",
       "ovr": 71,
       "status": "reserva",
@@ -969,7 +969,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 27,
       "name": "Rabbi Matondo",
       "ovr": 71,
       "status": "reserva",
@@ -1025,7 +1025,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 20,
       "name": "Óscar Cortés",
       "ovr": 70,
       "status": "reserva",
@@ -1080,7 +1080,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 26,
       "name": "Jefté",
       "ovr": 69,
       "status": "reserva",
@@ -1191,7 +1191,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 28,
       "name": "Ross McCausland",
       "ovr": 67,
       "status": "reserva",
@@ -1246,7 +1246,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 12,
       "name": "Liam Kelly",
       "ovr": 66,
       "status": "reserva",
@@ -1264,11 +1264,11 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
+        "alc": 67,
+        "seg": 64,
         "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "ref": 68,
+        "pos": 66,
         "vel": 40,
         "sta": 32
       },
@@ -1360,7 +1360,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Alex Lowry",
       "ovr": 65,
       "status": "reserva",
@@ -1416,7 +1416,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 13,
       "name": "Adam Devine",
       "ovr": 62,
       "status": "reserva",
@@ -1471,7 +1471,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 31,
       "name": "Clinton Nsiala",
       "ovr": 61,
       "status": "reserva",
@@ -1527,7 +1527,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 32,
       "name": "Bailey Rice",
       "ovr": 59,
       "status": "reserva",
@@ -1582,7 +1582,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 33,
       "name": "Zak Lovelace",
       "ovr": 58,
       "status": "reserva",
@@ -1638,7 +1638,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 34,
       "name": "Robbie Fraser",
       "ovr": 57,
       "status": "reserva",
@@ -1693,7 +1693,7 @@
     },
     {
       "id": 31,
-      "number": 31,
+      "number": 35,
       "name": "Cole McKinnon",
       "ovr": 57,
       "status": "reserva",

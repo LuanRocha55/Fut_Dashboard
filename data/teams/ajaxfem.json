@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 5,
       "name": "Sherida Spitse",
       "ovr": 83,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Tiny Hoekstra",
       "ovr": 77,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Kay-Lee de Sanders",
       "ovr": 76,
       "status": "titular",
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Nadine Noordam",
       "ovr": 76,
       "status": "titular",
@@ -234,7 +234,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 18,
       "name": "Quinty Sabajo",
       "ovr": 75,
       "status": "titular",
@@ -289,7 +289,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Isa Kardinaal",
       "ovr": 73,
       "status": "titular",
@@ -345,7 +345,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 17,
       "name": "Bente Jansen",
       "ovr": 71,
       "status": "titular",
@@ -400,7 +400,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 2,
       "name": "Roos van der Veen",
       "ovr": 71,
       "status": "titular",
@@ -455,7 +455,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 1,
       "name": "Dionne van der Wal",
       "ovr": 71,
       "status": "titular",
@@ -470,12 +470,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 69,
+        "esp": 79,
+        "ref": 71,
+        "pos": 69,
+        "vel": 17,
         "sta": 24
       },
       "detailedStats": {
@@ -510,7 +510,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 20,
       "name": "Rosa van Gool",
       "ovr": 71,
       "status": "titular",
@@ -565,7 +565,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 10,
       "name": "Soraya Verhoeve",
       "ovr": 71,
       "status": "titular",
@@ -620,7 +620,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 25,
       "name": "Milicia Keijzer",
       "ovr": 69,
       "status": "reserva",
@@ -676,7 +676,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 11,
       "name": "Danique Noordman",
       "ovr": 69,
       "status": "reserva",
@@ -731,7 +731,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 3,
       "name": "Daliyah De Klonia",
       "ovr": 67,
       "status": "reserva",
@@ -786,7 +786,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 12,
       "name": "Lois Niënhuis",
       "ovr": 67,
       "status": "reserva",
@@ -801,12 +801,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 65,
+        "esp": 76,
+        "ref": 70,
+        "pos": 68,
+        "vel": 16,
         "sta": 16
       },
       "detailedStats": {
@@ -841,7 +841,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 19,
       "name": "Danique Tolhoek",
       "ovr": 67,
       "status": "reserva",
@@ -896,7 +896,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 23,
       "name": "Jonna van de Velde",
       "ovr": 67,
       "status": "reserva",
@@ -951,7 +951,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Iris Stiekema",
       "ovr": 66,
       "status": "reserva",
@@ -1006,7 +1006,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Regina van Eijk",
       "ovr": 66,
       "status": "reserva",
@@ -1021,12 +1021,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 63,
+        "esp": 74,
+        "ref": 66,
+        "pos": 70,
+        "vel": 21,
         "sta": 26
       },
       "detailedStats": {
@@ -1061,7 +1061,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 24,
       "name": "Lily Yohannes",
       "ovr": 66,
       "status": "reserva",
@@ -1116,7 +1116,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 26,
       "name": "Lotte Keukelaar",
       "ovr": 62,
       "status": "reserva",

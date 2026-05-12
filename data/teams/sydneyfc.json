@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Joe Lolley",
       "ovr": 74,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Anas Ouahim",
       "ovr": 66,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 23,
       "name": "Max Burgess",
       "ovr": 65,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 3,
       "name": "Jordan Courtney-Perkins",
       "ovr": 64,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 2,
       "name": "Rhyan Grant",
       "ovr": 64,
       "status": "titular",
@@ -289,7 +289,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 1,
       "name": "Andrew Redmayne",
       "ovr": 64,
       "status": "titular",
@@ -305,12 +305,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 62,
+        "esp": 71,
+        "ref": 64,
+        "pos": 65,
+        "vel": 43,
         "sta": 34
       },
       "detailedStats": {
@@ -345,7 +345,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 16,
       "name": "Joel King",
       "ovr": 63,
       "status": "titular",
@@ -400,7 +400,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 5,
       "name": "Corey Hollman",
       "ovr": 60,
       "status": "titular",
@@ -510,7 +510,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 19,
       "name": "Jaiden Kucharski",
       "ovr": 59,
       "status": "titular",
@@ -565,7 +565,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 17,
       "name": "Adrian Segecic",
       "ovr": 59,
       "status": "titular",
@@ -620,7 +620,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 4,
       "name": "Aaron Gurd",
       "ovr": 57,
       "status": "reserva",
@@ -676,7 +676,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 27,
       "name": "Nathan Amanatidis",
       "ovr": 54,
       "status": "reserva",
@@ -731,7 +731,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 13,
       "name": "Zac De Jesus",
       "ovr": 54,
       "status": "reserva",
@@ -786,7 +786,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 20,
       "name": "Mitch Glasson",
       "ovr": 54,
       "status": "reserva",
@@ -841,7 +841,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 21,
       "name": "Wataru Kamijo",
       "ovr": 51,
       "status": "reserva",

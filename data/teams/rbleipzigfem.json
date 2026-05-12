@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Giovanna Hoffmann",
       "ovr": 78,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Sandra Starke",
       "ovr": 77,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 5,
       "name": "Lou-Ann Joly",
       "ovr": 76,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 19,
       "name": "Vanessa Fudalla",
       "ovr": 75,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 3,
       "name": "Lara Marti",
       "ovr": 75,
       "status": "titular",
@@ -284,7 +284,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Luca Graf",
       "ovr": 74,
       "status": "titular",
@@ -339,7 +339,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 11,
       "name": "Lydia Andrade",
       "ovr": 73,
       "status": "titular",
@@ -395,7 +395,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 16,
       "name": "Julia Pollak",
       "ovr": 73,
       "status": "titular",
@@ -450,7 +450,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 4,
       "name": "Nina Räcke",
       "ovr": 73,
       "status": "titular",
@@ -506,7 +506,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 1,
       "name": "Elvira Herzog",
       "ovr": 72,
       "status": "titular",
@@ -523,12 +523,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 69,
+        "esp": 79,
+        "ref": 74,
+        "pos": 72,
+        "vel": 44,
         "sta": 21
       },
       "detailedStats": {
@@ -563,7 +563,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 18,
       "name": "Jenny Hipp",
       "ovr": 72,
       "status": "titular",
@@ -618,7 +618,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 28,
       "name": "Marlene Müller",
       "ovr": 72,
       "status": "reserva",
@@ -673,7 +673,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 27,
       "name": "Barbara Brecht",
       "ovr": 70,
       "status": "reserva",
@@ -728,7 +728,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 26,
       "name": "Michaela Croatto",
       "ovr": 70,
       "status": "reserva",
@@ -783,7 +783,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 14,
       "name": "Frederike Kempe",
       "ovr": 70,
       "status": "reserva",
@@ -839,7 +839,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 25,
       "name": "Victoria Krug",
       "ovr": 70,
       "status": "reserva",
@@ -895,7 +895,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 2,
       "name": "Josefine Schaller",
       "ovr": 70,
       "status": "reserva",
@@ -950,7 +950,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Katja Wienerroither",
       "ovr": 70,
       "status": "reserva",
@@ -1005,7 +1005,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 12,
       "name": "Eve Boettcher",
       "ovr": 69,
       "status": "reserva",
@@ -1020,12 +1020,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 66,
+        "esp": 77,
+        "ref": 69,
+        "pos": 67,
+        "vel": 17,
         "sta": 15
       },
       "detailedStats": {
@@ -1060,7 +1060,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 21,
       "name": "Julia Landenberger",
       "ovr": 69,
       "status": "reserva",
@@ -1115,7 +1115,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Julia Magerl",
       "ovr": 69,
       "status": "reserva",
@@ -1171,7 +1171,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Marleen Schimmer",
       "ovr": 68,
       "status": "reserva",
@@ -1226,7 +1226,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Lina von Schrader",
       "ovr": 68,
       "status": "reserva",
@@ -1241,11 +1241,11 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 69,
+        "seg": 64,
+        "esp": 78,
+        "ref": 71,
+        "pos": 70,
         "vel": 40,
         "sta": 24
       },
@@ -1281,7 +1281,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 29,
       "name": "Kyra Spitzner",
       "ovr": 60,
       "status": "reserva",
@@ -1336,7 +1336,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 30,
       "name": "Zoe Werner",
       "ovr": 59,
       "status": "reserva",
@@ -1391,7 +1391,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 31,
       "name": "Mia Werner",
       "ovr": 59,
       "status": "reserva",

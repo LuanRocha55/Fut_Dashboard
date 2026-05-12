@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Tom Pettersson",
       "ovr": 67,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 3,
       "name": "Elliot Stroud",
       "ovr": 65,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Nicklas Røjkjær",
       "ovr": 64,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Noel Törnqvist",
       "ovr": 64,
       "status": "titular",
@@ -191,12 +191,12 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 65,
+        "esp": 71,
+        "ref": 63,
+        "pos": 64,
+        "vel": 42,
         "sta": 34
       },
       "detailedStats": {
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 9,
       "name": "Jacob Bergström",
       "ovr": 63,
       "status": "titular",
@@ -286,7 +286,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 18,
       "name": "Arvid Brorsson",
       "ovr": 63,
       "status": "titular",
@@ -341,7 +341,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Viktor Gustafson",
       "ovr": 63,
       "status": "titular",
@@ -396,7 +396,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 21,
       "name": "Jesper Gustavsson",
       "ovr": 63,
       "status": "titular",
@@ -451,7 +451,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 2,
       "name": "Herman Johansson",
       "ovr": 63,
       "status": "titular",
@@ -506,7 +506,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Rasmus Wikström",
       "ovr": 63,
       "status": "titular",
@@ -562,7 +562,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 10,
       "name": "Alexander Johansson",
       "ovr": 62,
       "status": "titular",
@@ -617,7 +617,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 19,
       "name": "Silas Nwankwo",
       "ovr": 62,
       "status": "reserva",
@@ -672,7 +672,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Imam Jagne",
       "ovr": 60,
       "status": "reserva",
@@ -727,7 +727,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 12,
       "name": "Alexander Lundin",
       "ovr": 60,
       "status": "reserva",
@@ -742,12 +742,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 57,
+        "seg": 60,
+        "esp": 64,
+        "ref": 59,
+        "pos": 59,
+        "vel": 19,
         "sta": 40
       },
       "detailedStats": {
@@ -782,7 +782,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "Jakob Kiilerich",
       "ovr": 59,
       "status": "reserva",
@@ -948,7 +948,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 26,
       "name": "Johan Persson Åhstedt",
       "ovr": 53,
       "status": "reserva",
@@ -1003,7 +1003,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 13,
       "name": "Filip Åkesson Linderoth",
       "ovr": 52,
       "status": "reserva",
@@ -1058,7 +1058,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Hugo Fagerberg",
       "ovr": 52,
       "status": "reserva",
@@ -1073,12 +1073,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 53,
+        "seg": 51,
+        "esp": 58,
+        "ref": 52,
+        "pos": 50,
+        "vel": 45,
         "sta": 30
       },
       "detailedStats": {
@@ -1113,7 +1113,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 23,
       "name": "Liam Svensson",
       "ovr": 52,
       "status": "reserva",

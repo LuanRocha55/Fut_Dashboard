@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 3,
       "name": "Ayoub Amraoui",
       "ovr": 68,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Simon Falette",
       "ovr": 66,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 5,
       "name": "Mahamé Siby",
       "ovr": 66,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 7,
       "name": "Alain Ipiélé",
       "ovr": 63,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 14,
       "name": "Leandro Morante",
       "ovr": 63,
       "status": "titular",
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 1,
       "name": "Jérémy Aymes",
       "ovr": 62,
       "status": "titular",
@@ -300,12 +300,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 62,
+        "esp": 68,
+        "ref": 62,
+        "pos": 62,
+        "vel": 45,
         "sta": 34
       },
       "detailedStats": {
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 9,
       "name": "Romain Montiel",
       "ovr": 60,
       "status": "titular",
@@ -395,7 +395,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 25,
       "name": "Nathanaël Saintini",
       "ovr": 59,
       "status": "titular",

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Tiago Silva",
       "ovr": 76,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 18,
       "name": "Samu",
       "ovr": 75,
       "status": "titular",
@@ -124,7 +124,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 1,
       "name": "Bruno Varela",
       "ovr": 75,
       "status": "titular",
@@ -141,11 +141,11 @@
       ],
       "stats": {
         "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "seg": 73,
+        "esp": 84,
+        "ref": 76,
+        "pos": 73,
+        "vel": 43,
         "sta": 44
       },
       "detailedStats": {
@@ -180,7 +180,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 5,
       "name": "Tomás Händel",
       "ovr": 73,
       "status": "titular",
@@ -235,7 +235,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 7,
       "name": "João Mendes",
       "ovr": 73,
       "status": "titular",
@@ -290,7 +290,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 4,
       "name": "Jorge Fernandes",
       "ovr": 73,
       "status": "titular",
@@ -346,7 +346,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 11,
       "name": "Bruno Gaspar",
       "ovr": 72,
       "status": "titular",
@@ -401,7 +401,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Toni Borevković",
       "ovr": 72,
       "status": "titular",
@@ -457,7 +457,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 25,
       "name": "Tomás Ribeiro",
       "ovr": 72,
       "status": "titular",
@@ -513,7 +513,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 9,
       "name": "Nélson Oliveira",
       "ovr": 71,
       "status": "titular",
@@ -568,7 +568,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Ricardo Mangas",
       "ovr": 71,
       "status": "titular",
@@ -623,7 +623,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 2,
       "name": "Miguel Maga",
       "ovr": 71,
       "status": "reserva",
@@ -679,7 +679,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Nuno Santos",
       "ovr": 71,
       "status": "reserva",
@@ -734,7 +734,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Mikel Villanueva",
       "ovr": 71,
       "status": "reserva",
@@ -790,7 +790,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 10,
       "name": "Jesús Ramírez",
       "ovr": 70,
       "status": "reserva",
@@ -901,7 +901,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 12,
       "name": "Charles",
       "ovr": 69,
       "status": "reserva",
@@ -916,12 +916,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 64,
+        "esp": 79,
+        "ref": 73,
+        "pos": 67,
+        "vel": 32,
         "sta": 30
       },
       "detailedStats": {
@@ -956,7 +956,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 17,
       "name": "Kaio César",
       "ovr": 68,
       "status": "reserva",
@@ -1011,7 +1011,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 13,
       "name": "Zé Carlos",
       "ovr": 66,
       "status": "reserva",
@@ -1066,7 +1066,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 21,
       "name": "Óscar Rivas",
       "ovr": 63,
       "status": "reserva",
@@ -1122,7 +1122,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "João Oliveira",
       "ovr": 62,
       "status": "reserva",
@@ -1137,12 +1137,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 57,
+        "esp": 70,
+        "ref": 64,
+        "pos": 61,
+        "vel": 21,
         "sta": 19
       },
       "detailedStats": {
@@ -1177,7 +1177,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Alberto Costa",
       "ovr": 62,
       "status": "reserva",
@@ -1287,7 +1287,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 31,
       "name": "Rodrigo Duarte",
       "ovr": 61,
       "status": "reserva",

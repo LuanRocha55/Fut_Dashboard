@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Mohamed Fouzair",
       "ovr": 74,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 19,
       "name": "Amir Sâyoud",
       "ovr": 74,
       "status": "titular",
@@ -124,7 +124,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 5,
       "name": "Mehdi Abeid",
       "ovr": 72,
       "status": "titular",
@@ -235,7 +235,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 21,
       "name": "Mathias Normann",
       "ovr": 70,
       "status": "titular",
@@ -291,7 +291,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 1,
       "name": "André Moreira",
       "ovr": 69,
       "status": "titular",
@@ -307,12 +307,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 69,
+        "esp": 76,
+        "ref": 70,
+        "pos": 71,
+        "vel": 39,
         "sta": 42
       },
       "detailedStats": {
@@ -347,7 +347,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 27,
       "name": "Saleh Al Amri",
       "ovr": 67,
       "status": "titular",
@@ -403,7 +403,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 2,
       "name": "Mohammed Al Dawsari",
       "ovr": 65,
       "status": "titular",
@@ -458,7 +458,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "Zakaria Hawsawi",
       "ovr": 64,
       "status": "titular",
@@ -516,7 +516,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 13,
       "name": "Hamad Al Jayzani",
       "ovr": 62,
       "status": "titular",
@@ -571,7 +571,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 8,
       "name": "Khaled Al Subaie",
       "ovr": 60,
       "status": "titular",
@@ -626,7 +626,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 9,
       "name": "Raid Al Ghamdi",
       "ovr": 59,
       "status": "reserva",
@@ -681,7 +681,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 16,
       "name": "Abdullah Al Yousif",
       "ovr": 58,
       "status": "reserva",
@@ -736,7 +736,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 23,
       "name": "Naif Hazazi",
       "ovr": 58,
       "status": "reserva",
@@ -846,7 +846,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 14,
       "name": "Mubarak Al Rajih",
       "ovr": 57,
       "status": "reserva",
@@ -902,7 +902,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 25,
       "name": "Bandar Wahishi",
       "ovr": 57,
       "status": "reserva",
@@ -958,7 +958,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 28,
       "name": "Firas Al Ghamdi",
       "ovr": 56,
       "status": "reserva",
@@ -1013,7 +1013,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 12,
       "name": "Saleh Al Wehimid",
       "ovr": 54,
       "status": "reserva",
@@ -1028,12 +1028,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 56,
+        "seg": 53,
+        "esp": 61,
+        "ref": 54,
+        "pos": 53,
+        "vel": 37,
         "sta": 23
       },
       "detailedStats": {
@@ -1068,7 +1068,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 10,
       "name": "Rakan Al Dawsari",
       "ovr": 52,
       "status": "reserva",
@@ -1123,7 +1123,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Abdullah Al Qahtani",
       "ovr": 52,
       "status": "reserva",
@@ -1193,12 +1193,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 51,
+        "seg": 50,
+        "esp": 58,
+        "ref": 53,
+        "pos": 51,
+        "vel": 32,
         "sta": 25
       },
       "detailedStats": {
@@ -1233,7 +1233,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 30,
       "name": "Anas Al Zahrani",
       "ovr": 50,
       "status": "reserva",

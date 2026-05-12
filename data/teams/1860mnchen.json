@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Jesper Verlaat",
       "ovr": 68,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Marco Hiller",
       "ovr": 67,
       "status": "titular",
@@ -80,12 +80,12 @@
         "Far Reach"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 66,
+        "esp": 78,
+        "ref": 72,
+        "pos": 68,
+        "vel": 29,
         "sta": 19
       },
       "detailedStats": {
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 5,
       "name": "Thore Jacobsen",
       "ovr": 67,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 14,
       "name": "Raphael Schifferl",
       "ovr": 67,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 11,
       "name": "Morris Schröter",
       "ovr": 67,
       "status": "titular",
@@ -286,7 +286,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 12,
       "name": "René Vollath",
       "ovr": 67,
       "status": "titular",
@@ -301,12 +301,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
+        "alc": 64,
+        "seg": 66,
         "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "ref": 71,
+        "pos": 64,
+        "vel": 41,
         "sta": 36
       },
       "detailedStats": {
@@ -341,7 +341,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 2,
       "name": "Tim Danhof",
       "ovr": 66,
       "status": "titular",
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 10,
       "name": "Tunay Deniz",
       "ovr": 66,
       "status": "titular",
@@ -455,7 +455,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 23,
       "name": "Julian Guttau",
       "ovr": 66,
       "status": "titular",
@@ -511,7 +511,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 9,
       "name": "Patrick Hobsch",
       "ovr": 66,
       "status": "titular",
@@ -566,7 +566,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Soichiro Kozuki",
       "ovr": 65,
       "status": "titular",
@@ -621,7 +621,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 25,
       "name": "Leroy Kwadwo",
       "ovr": 65,
       "status": "reserva",
@@ -678,7 +678,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Maximilian Wolfram",
       "ovr": 65,
       "status": "reserva",
@@ -733,7 +733,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Max Reinthaler",
       "ovr": 64,
       "status": "reserva",
@@ -789,7 +789,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 16,
       "name": "Fabian Schubert",
       "ovr": 64,
       "status": "reserva",
@@ -844,7 +844,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 3,
       "name": "Florian Bähr",
       "ovr": 63,
       "status": "reserva",
@@ -899,7 +899,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 8,
       "name": "Marlon Frey",
       "ovr": 63,
       "status": "reserva",
@@ -1010,7 +1010,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Tim Kloss",
       "ovr": 59,
       "status": "reserva",
@@ -1065,7 +1065,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 13,
       "name": "Lukas Reich",
       "ovr": 58,
       "status": "reserva",
@@ -1120,7 +1120,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Moritz Bangerter",
       "ovr": 55,
       "status": "reserva",
@@ -1175,7 +1175,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Erion Avdija",
       "ovr": 54,
       "status": "reserva",
@@ -1190,12 +1190,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 59,
+        "seg": 53,
+        "esp": 62,
+        "ref": 53,
+        "pos": 54,
+        "vel": 41,
         "sta": 31
       },
       "detailedStats": {
@@ -1230,7 +1230,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Sean Dulic",
       "ovr": 53,
       "status": "reserva",

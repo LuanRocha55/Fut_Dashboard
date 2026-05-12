@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 7,
       "name": "Ismael Díaz",
       "ovr": 74,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Rafael Romo",
       "ovr": 72,
       "status": "titular",
@@ -80,10 +80,10 @@
       ],
       "stats": {
         "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "seg": 68,
+        "esp": 83,
+        "ref": 74,
+        "pos": 70,
         "vel": 40,
         "sta": 28
       },
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "Mauro Díaz",
       "ovr": 71,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Facundo Martínez",
       "ovr": 71,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 9,
       "name": "José Fajardo",
       "ovr": 70,
       "status": "titular",
@@ -284,7 +284,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 4,
       "name": "Fausto Grillo",
       "ovr": 69,
       "status": "titular",
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 19,
       "name": "Jhon Cifuente",
       "ovr": 68,
       "status": "titular",
@@ -395,7 +395,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 5,
       "name": "Kevin Minda",
       "ovr": 68,
       "status": "titular",
@@ -450,7 +450,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 18,
       "name": "Luciano Nieto",
       "ovr": 68,
       "status": "titular",
@@ -505,7 +505,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 2,
       "name": "Gregori Anangonó",
       "ovr": 67,
       "status": "titular",
@@ -560,7 +560,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 14,
       "name": "Joshué Quiñonez",
       "ovr": 66,
       "status": "titular",
@@ -616,7 +616,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 20,
       "name": "Byron Palacios",
       "ovr": 65,
       "status": "reserva",
@@ -671,7 +671,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 25,
       "name": "Gustavo Vallecilla",
       "ovr": 65,
       "status": "reserva",
@@ -727,7 +727,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 17,
       "name": "Janus Vivar",
       "ovr": 65,
       "status": "reserva",
@@ -782,7 +782,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 21,
       "name": "Rooney Troya",
       "ovr": 61,
       "status": "reserva",
@@ -837,7 +837,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 12,
       "name": "Johan Lara",
       "ovr": 60,
       "status": "reserva",
@@ -852,12 +852,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 58,
+        "esp": 68,
+        "ref": 61,
+        "pos": 60,
+        "vel": 33,
         "sta": 30
       },
       "detailedStats": {

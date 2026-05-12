@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Nicolás Ferreyra",
       "ovr": 69,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 14,
       "name": "Ezequiel Parnisari",
       "ovr": 68,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 2,
       "name": "Raimundo Rebolledo",
       "ovr": 67,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Matías Ibáñez",
       "ovr": 66,
       "status": "titular",
@@ -190,12 +190,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 64,
+        "esp": 73,
+        "ref": 65,
+        "pos": 67,
+        "vel": 41,
         "sta": 33
       },
       "detailedStats": {
@@ -230,7 +230,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 9,
       "name": "Franco Soldano",
       "ovr": 66,
       "status": "titular",
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 17,
       "name": "Matias Cavalleri",
       "ovr": 65,
       "status": "titular",
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 25,
       "name": "Bruno Romo",
       "ovr": 65,
       "status": "titular",
@@ -451,7 +451,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 10,
       "name": "Walter Ponce",
       "ovr": 63,
       "status": "titular",
@@ -506,7 +506,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 18,
       "name": "Mauricio Morales",
       "ovr": 59,
       "status": "titular",

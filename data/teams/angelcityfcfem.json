@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Sydney Leroux",
       "ovr": 81,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Christen Press",
       "ovr": 81,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 7,
       "name": "Jun Endo",
       "ovr": 80,
       "status": "titular",
@@ -179,7 +179,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Didi Haračić",
       "ovr": 80,
       "status": "titular",
@@ -194,12 +194,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 80,
+        "seg": 78,
+        "esp": 89,
+        "ref": 80,
+        "pos": 78,
+        "vel": 41,
         "sta": 39
       },
       "detailedStats": {
@@ -289,7 +289,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 2,
       "name": "Ali Riley",
       "ovr": 78,
       "status": "titular",
@@ -344,7 +344,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 13,
       "name": "Merritt Mathias",
       "ovr": 77,
       "status": "titular",
@@ -399,7 +399,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 17,
       "name": "Claire Emslie",
       "ovr": 76,
       "status": "titular",
@@ -457,7 +457,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 4,
       "name": "Sarah Gorden",
       "ovr": 76,
       "status": "titular",
@@ -513,7 +513,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 24,
       "name": "Jasmyne Spencer",
       "ovr": 76,
       "status": "titular",
@@ -568,7 +568,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 8,
       "name": "Meggie Dougherty Howard",
       "ovr": 75,
       "status": "titular",
@@ -623,7 +623,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 14,
       "name": "Megan Reid",
       "ovr": 75,
       "status": "reserva",
@@ -679,7 +679,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 29,
       "name": "Alyssa Thompson",
       "ovr": 74,
       "status": "reserva",
@@ -735,7 +735,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 19,
       "name": "Katie Johnson",
       "ovr": 71,
       "status": "reserva",
@@ -791,7 +791,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 21,
       "name": "Lily Nabet",
       "ovr": 71,
       "status": "reserva",
@@ -846,7 +846,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 12,
       "name": "Angelina Anderson",
       "ovr": 70,
       "status": "reserva",
@@ -861,12 +861,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 68,
+        "esp": 77,
+        "ref": 69,
+        "pos": 68,
+        "vel": 34,
         "sta": 23
       },
       "detailedStats": {
@@ -901,7 +901,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 3,
       "name": "Elizabeth Eddy",
       "ovr": 70,
       "status": "reserva",
@@ -956,7 +956,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 16,
       "name": "Mary Alice Vignola",
       "ovr": 70,
       "status": "reserva",
@@ -1013,7 +1013,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 26,
       "name": "Madison Curry",
       "ovr": 69,
       "status": "reserva",
@@ -1123,7 +1123,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Messiah Bright",
       "ovr": 68,
       "status": "reserva",
@@ -1178,7 +1178,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Hannah Stambaugh",
       "ovr": 67,
       "status": "reserva",
@@ -1193,12 +1193,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 66,
+        "esp": 74,
+        "ref": 67,
+        "pos": 67,
+        "vel": 29,
         "sta": 24
       },
       "detailedStats": {
@@ -1233,7 +1233,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 30,
       "name": "Kennedy Fuller",
       "ovr": 65,
       "status": "reserva",
@@ -1288,7 +1288,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 25,
       "name": "Casey Phair",
       "ovr": 63,
       "status": "reserva",

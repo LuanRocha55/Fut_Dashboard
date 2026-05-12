@@ -23,12 +23,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 80,
+        "seg": 73,
+        "esp": 88,
+        "ref": 79,
+        "pos": 78,
+        "vel": 44,
         "sta": 29
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Mickaëlla Cardia",
       "ovr": 75,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Laurie Cance",
       "ovr": 74,
       "status": "titular",
@@ -181,7 +181,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 3,
       "name": "Silke Demeyere",
       "ovr": 74,
       "status": "titular",
@@ -237,7 +237,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 18,
       "name": "Salomé Elisor",
       "ovr": 74,
       "status": "titular",
@@ -295,7 +295,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 2,
       "name": "Eva Kouache",
       "ovr": 74,
       "status": "titular",
@@ -351,7 +351,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 4,
       "name": "Héloïse Mansuy",
       "ovr": 74,
       "status": "titular",
@@ -407,7 +407,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 9,
       "name": "Madeline Roth",
       "ovr": 74,
       "status": "titular",
@@ -465,7 +465,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 19,
       "name": "Zoé Stiévenart",
       "ovr": 74,
       "status": "titular",
@@ -520,7 +520,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 13,
       "name": "Romane Enguehard",
       "ovr": 73,
       "status": "titular",
@@ -576,7 +576,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 20,
       "name": "Christy Gavory",
       "ovr": 73,
       "status": "titular",
@@ -648,12 +648,12 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
+        "alc": 69,
         "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "esp": 81,
+        "ref": 76,
+        "pos": 71,
+        "vel": 47,
         "sta": 36
       },
       "detailedStats": {
@@ -688,7 +688,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 14,
       "name": "Élisabeth Tsé",
       "ovr": 71,
       "status": "reserva",
@@ -744,7 +744,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 22,
       "name": "Chloé N'Gazi",
       "ovr": 70,
       "status": "reserva",
@@ -759,12 +759,12 @@
         "Far Reach"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 69,
+        "esp": 81,
+        "ref": 74,
+        "pos": 64,
+        "vel": 44,
         "sta": 29
       },
       "detailedStats": {
@@ -799,7 +799,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 10,
       "name": "Chancelle Effa Effa",
       "ovr": 69,
       "status": "reserva",
@@ -854,7 +854,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 27,
       "name": "Mélinda Mendy",
       "ovr": 60,
       "status": "reserva",

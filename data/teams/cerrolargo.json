@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 2,
       "name": "Nahuel Furtado",
       "ovr": 70,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 5,
       "name": "Sebastián Assís",
       "ovr": 68,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 1,
       "name": "Rodrigo Formento",
       "ovr": 68,
       "status": "titular",
@@ -133,12 +133,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 68,
+        "esp": 74,
+        "ref": 71,
+        "pos": 68,
+        "vel": 29,
         "sta": 17
       },
       "detailedStats": {
@@ -173,7 +173,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 3,
       "name": "Enzo Castillo",
       "ovr": 67,
       "status": "titular",
@@ -228,7 +228,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 17,
       "name": "Luciano Cosentino",
       "ovr": 67,
       "status": "titular",
@@ -283,7 +283,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 9,
       "name": "Sebastián Sosa Sánchez",
       "ovr": 67,
       "status": "titular",
@@ -338,7 +338,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 13,
       "name": "Alan García",
       "ovr": 66,
       "status": "titular",
@@ -393,7 +393,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 10,
       "name": "Sergio Núñez",
       "ovr": 66,
       "status": "titular",
@@ -448,7 +448,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 23,
       "name": "Gianlucca Fatecha",
       "ovr": 65,
       "status": "titular",
@@ -503,7 +503,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 4,
       "name": "Brian Ferrares",
       "ovr": 64,
       "status": "titular",
@@ -614,7 +614,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 21,
       "name": "Hamilton Pereira",
       "ovr": 64,
       "status": "reserva",
@@ -669,7 +669,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 14,
       "name": "Axel Prado",
       "ovr": 64,
       "status": "reserva",
@@ -725,7 +725,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 19,
       "name": "Renzo Rabino",
       "ovr": 64,
       "status": "reserva",
@@ -780,7 +780,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "Nicolás Cabral",
       "ovr": 63,
       "status": "reserva",
@@ -836,7 +836,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 8,
       "name": "Mauro Estol",
       "ovr": 63,
       "status": "reserva",
@@ -891,7 +891,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 12,
       "name": "Tomer Haran",
       "ovr": 63,
       "status": "reserva",
@@ -906,12 +906,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 66,
+        "esp": 66,
+        "ref": 55,
+        "pos": 76,
+        "vel": 29,
         "sta": 30
       },
       "detailedStats": {
@@ -946,7 +946,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 28,
       "name": "Matías Mir",
       "ovr": 63,
       "status": "reserva",
@@ -1001,7 +1001,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Gino Santilli",
       "ovr": 63,
       "status": "reserva",
@@ -1016,12 +1016,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 63,
+        "esp": 72,
+        "ref": 66,
+        "pos": 63,
+        "vel": 31,
         "sta": 25
       },
       "detailedStats": {
@@ -1111,7 +1111,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 31,
       "name": "Alfonso De Luca",
       "ovr": 59,
       "status": "reserva",
@@ -1166,7 +1166,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 16,
       "name": "Ezequiel Olivera",
       "ovr": 58,
       "status": "reserva",
@@ -1221,7 +1221,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Santiago Rollano",
       "ovr": 58,
       "status": "reserva",
@@ -1276,7 +1276,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Thomas González",
       "ovr": 57,
       "status": "reserva",

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Kurt Zouma",
       "ovr": 78,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Jóhann Berg Guðmundsson",
       "ovr": 72,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 5,
       "name": "Jean Michaël Seri",
       "ovr": 72,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 14,
       "name": "Ismaël Kandouss",
       "ovr": 71,
       "status": "titular",
@@ -234,7 +234,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 21,
       "name": "Karlo Muhar",
       "ovr": 70,
       "status": "titular",
@@ -290,7 +290,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 9,
       "name": "Mohammed Al Saiari",
       "ovr": 63,
       "status": "titular",
@@ -345,7 +345,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 1,
       "name": "Rafea Al Ruwaili",
       "ovr": 62,
       "status": "titular",
@@ -360,11 +360,11 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 63,
+        "seg": 59,
+        "esp": 69,
+        "ref": 62,
+        "pos": 64,
         "vel": 40,
         "sta": 37
       },
@@ -400,7 +400,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 25,
       "name": "Hussain Al Shuwaysh",
       "ovr": 62,
       "status": "titular",
@@ -457,7 +457,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "Ibrahim Al Zubaidi",
       "ovr": 61,
       "status": "titular",
@@ -512,7 +512,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 23,
       "name": "Fahad Al Rashidi",
       "ovr": 60,
       "status": "titular",
@@ -567,7 +567,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 16,
       "name": "Hamed Al Maqati",
       "ovr": 59,
       "status": "titular",
@@ -622,7 +622,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 2,
       "name": "Hamdan Al Ruwaili",
       "ovr": 59,
       "status": "reserva",
@@ -677,7 +677,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 19,
       "name": "Fawaz Al Tryes",
       "ovr": 59,
       "status": "reserva",
@@ -732,7 +732,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 27,
       "name": "Sattam Al Rouqi",
       "ovr": 58,
       "status": "reserva",
@@ -787,7 +787,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 26,
       "name": "Abdulmalek Al Shammari",
       "ovr": 58,
       "status": "reserva",
@@ -842,7 +842,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 17,
       "name": "Ziad Al Haniti",
       "ovr": 56,
       "status": "reserva",
@@ -898,7 +898,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 8,
       "name": "Abdulrahman Al Enazi",
       "ovr": 55,
       "status": "reserva",

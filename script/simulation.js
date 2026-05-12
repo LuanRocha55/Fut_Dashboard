@@ -20,6 +20,7 @@ import {
   getTeamDef,
   degradeStamina,
 } from "./matchEngine.js";
+import { getTeamLogoHTML } from "./graphics.js";
 
 let simInterval = null;
 
@@ -244,6 +245,10 @@ export async function openMatchSimulation() {
     document.getElementById("simHomeTeam").innerText =
       matchInfo.home || "Seu Time";
     document.getElementById("simAwayTeam").innerText = currentOpponent.name;
+    
+    document.getElementById("simHomeLogo").innerHTML = getTeamLogoHTML(matchInfo.home || "Seu Time");
+    document.getElementById("simAwayLogo").innerHTML = getTeamLogoHTML(currentOpponent.name);
+
     document.getElementById("simMatchTitle").innerText =
       isLeagueMatch || isCupMatch || isContinentalMatch
         ? isLeagueMatch
@@ -296,18 +301,61 @@ export async function openMatchSimulation() {
   let homePlayedIds = new Set(titulares.map((p) => p.id));
   let homeTacklesIds = [];
 
-  // Atletas em campo (com energia e possibilidade de expulsão) e no banco
-  let homeActivePlayers = titulares
+  // 1. Primeiro pegamos os 11 titulares
+  let titularesBase = titulares
     .map((p) => {
       let fit = p.fitness !== undefined ? p.fitness : 100;
       homeFitnessTracker[p.id] = fit;
       return { ...p, currentStamina: fit };
-    })
-    .sort(
-      (a, b) =>
-        (ALL_POSITIONS.indexOf(a.aptitude?.[0]) ?? 99) -
-        (ALL_POSITIONS.indexOf(b.aptitude?.[0]) ?? 99),
-    );
+    });
+
+  // 2. Lógica de "Smart Assign" para preencher os slots da formação atual
+  const smartAssignToSlots = (players, formation) => {
+      const tacticalPos = getTacticalPositions(formation);
+      const assigned = new Array(11).fill(null);
+      const unassigned = [...players];
+      
+      const getRole = (pos) => {
+        if (["GL", "ZE", "ZD", "LE", "LD"].includes(pos)) return "def";
+        if (["VOL", "MC", "MEI", "ME", "MD"].includes(pos)) return "mid";
+        if (["CA", "SA", "PE", "PD"].includes(pos)) return "atk";
+        return "mid";
+      };
+
+      // Pass 1: Goleiro (Prioridade Máxima)
+      const glSlotIdx = tacticalPos.findIndex(s => s.pos === "GL");
+      if (glSlotIdx !== -1) {
+          const gkIdx = unassigned.findIndex(p => p.aptitude?.includes("GOL") || p.aptitude?.includes("GL"));
+          if (gkIdx !== -1) assigned[glSlotIdx] = unassigned.splice(gkIdx, 1)[0];
+      }
+
+      // Pass 2: Match exato por posição (ex: ZE no slot ZE)
+      tacticalPos.forEach((slot, sIdx) => {
+          if (assigned[sIdx]) return;
+          const pIdx = unassigned.findIndex(p => p.aptitude?.includes(slot.pos));
+          if (pIdx !== -1) assigned[sIdx] = unassigned.splice(pIdx, 1)[0];
+      });
+
+      // Pass 3: Match por papel (Role) - ex: VOL no slot MC
+      tacticalPos.forEach((slot, sIdx) => {
+          if (assigned[sIdx]) return;
+          const slotRole = getRole(slot.pos);
+          const pIdx = unassigned.findIndex(p => getRole(p.aptitude?.[0]) === slotRole);
+          if (pIdx !== -1) assigned[sIdx] = unassigned.splice(pIdx, 1)[0];
+      });
+
+      // Pass 4: Preencher o que sobrar
+      tacticalPos.forEach((slot, sIdx) => {
+          if (assigned[sIdx]) return;
+          if (unassigned.length > 0) assigned[sIdx] = unassigned.splice(0, 1)[0];
+      });
+
+      return assigned.filter(p => p !== null);
+  };
+
+  let currentFormation = coachInfo?.formation || "4-3-3";
+  let homeActivePlayers = smartAssignToSlots(titularesBase, currentFormation);
+
   let homeBench = squad
     .filter(
       (p) =>
@@ -344,6 +392,221 @@ export async function openMatchSimulation() {
   let selectedOutIdx = -1;
   let selectedInIdx = -1;
 
+  const getTacticalPositions = (formation) => {
+    const positions = {
+      "4-3-3": [
+        { x: 10, y: 50, pos: "GL" },
+        { x: 30, y: 30, pos: "ZE" }, { x: 30, y: 70, pos: "ZD" },
+        { x: 25, y: 15, pos: "LE" }, { x: 25, y: 85, pos: "LD" },
+        { x: 50, y: 50, pos: "MC" }, { x: 50, y: 25, pos: "MC" }, { x: 50, y: 75, pos: "MC" },
+        { x: 80, y: 15, pos: "PE" }, { x: 85, y: 50, pos: "CA" }, { x: 80, y: 85, pos: "PD" }
+      ],
+      "4-4-2": [
+        { x: 10, y: 50, pos: "GL" },
+        { x: 30, y: 30, pos: "ZE" }, { x: 30, y: 70, pos: "ZD" },
+        { x: 25, y: 15, pos: "LE" }, { x: 25, y: 85, pos: "LD" },
+        { x: 50, y: 40, pos: "MC" }, { x: 50, y: 60, pos: "MC" },
+        { x: 55, y: 15, pos: "ME" }, { x: 55, y: 85, pos: "MD" },
+        { x: 85, y: 35, pos: "CA" }, { x: 85, y: 65, pos: "CA" }
+      ],
+      "4-2-3-1": [
+        { x: 10, y: 50, pos: "GL" },
+        { x: 30, y: 30, pos: "ZE" }, { x: 30, y: 70, pos: "ZD" },
+        { x: 25, y: 15, pos: "LE" }, { x: 25, y: 85, pos: "LD" },
+        { x: 45, y: 35, pos: "VOL" }, { x: 45, y: 65, pos: "VOL" },
+        { x: 65, y: 50, pos: "MEI" }, { x: 65, y: 20, pos: "ME" }, { x: 65, y: 80, pos: "MD" },
+        { x: 85, y: 50, pos: "CA" }
+      ],
+      "3-5-2": [
+        { x: 10, y: 50, pos: "GL" },
+        { x: 30, y: 20, pos: "ZE" }, { x: 30, y: 50, pos: "ZE" }, { x: 30, y: 80, pos: "ZD" },
+        { x: 50, y: 10, pos: "LE" }, { x: 50, y: 90, pos: "LD" },
+        { x: 50, y: 35, pos: "MC" }, { x: 50, y: 50, pos: "MC" }, { x: 50, y: 65, pos: "MC" },
+        { x: 85, y: 35, pos: "CA" }, { x: 85, y: 65, pos: "CA" }
+      ],
+      "5-4-1": [
+        { x: 10, y: 50, pos: "GL" },
+        { x: 25, y: 10, pos: "LE" }, { x: 30, y: 30, pos: "ZE" }, { x: 30, y: 50, pos: "ZE" }, { x: 30, y: 70, pos: "ZD" }, { x: 25, y: 90, pos: "LD" },
+        { x: 55, y: 20, pos: "MC" }, { x: 55, y: 40, pos: "MC" }, { x: 55, y: 60, pos: "MC" }, { x: 55, y: 80, pos: "MC" },
+        { x: 85, y: 50, pos: "CA" }
+      ],
+      "4-1-4-1": [
+        { x: 10, y: 50, pos: "GL" },
+        { x: 30, y: 30, pos: "ZE" }, { x: 30, y: 70, pos: "ZD" },
+        { x: 25, y: 15, pos: "LE" }, { x: 25, y: 85, pos: "LD" },
+        { x: 45, y: 50, pos: "VOL" },
+        { x: 65, y: 35, pos: "MC" }, { x: 65, y: 65, pos: "MC" }, { x: 65, y: 15, pos: "ME" }, { x: 65, y: 85, pos: "MD" },
+        { x: 85, y: 50, pos: "CA" }
+      ],
+      "3-4-3": [
+        { x: 10, y: 50, pos: "GL" },
+        { x: 30, y: 20, pos: "ZE" }, { x: 30, y: 50, pos: "ZE" }, { x: 30, y: 80, pos: "ZD" },
+        { x: 55, y: 15, pos: "ME" }, { x: 55, y: 35, pos: "MC" }, { x: 55, y: 65, pos: "MC" }, { x: 55, y: 85, pos: "MD" },
+        { x: 85, y: 20, pos: "PE" }, { x: 85, y: 50, pos: "CA" }, { x: 85, y: 80, pos: "PD" }
+      ],
+      "5-3-2": [
+        { x: 10, y: 50, pos: "GL" },
+        { x: 25, y: 10, pos: "LE" }, { x: 30, y: 30, pos: "ZE" }, { x: 30, y: 50, pos: "ZE" }, { x: 30, y: 70, pos: "ZD" }, { x: 25, y: 90, pos: "LD" },
+        { x: 55, y: 25, pos: "MC" }, { x: 55, y: 50, pos: "MC" }, { x: 55, y: 75, pos: "MC" },
+        { x: 85, y: 35, pos: "CA" }, { x: 85, y: 65, pos: "CA" }
+      ]
+    };
+    return positions[formation] || positions["4-4-2"];
+  };
+
+  const calculateMatchPowers = () => {
+    const onPitch = homeActivePlayers.filter(p => !p.isExpelled);
+    const tacticalPos = getTacticalPositions(currentFormation);
+    
+    let totalAtk = 0;
+    let totalDef = 0;
+    let controlPoints = 0;
+    let speedSum = 0;
+    
+    let counts = { def: 0, mid: 0, atk: 0, vol: 0 };
+    
+    // Mapeamento de papéis por posição tática
+    const getRole = (pos) => {
+        if (["GL", "ZE", "ZD", "LE", "LD"].includes(pos)) return "def";
+        if (["VOL", "MC", "MEI", "ME", "MD"].includes(pos)) return "mid";
+        if (["CA", "SA", "PE", "PD"].includes(pos)) return "atk";
+        return "mid";
+    };
+
+    onPitch.forEach((p, i) => {
+      const slot = tacticalPos[i] || { pos: "MC" };
+      const slotRole = getRole(slot.pos);
+      const playerAptitude = p.aptitude?.[0] || "MC";
+      const playerRole = getRole(playerAptitude);
+      
+      // Penalidade se jogar fora da zona (Defesa/Meio/Ataque)
+      let efficiency = 1.0;
+      if (slotRole !== playerRole) {
+          efficiency = 0.6; // 40% de penalidade por improvisação
+      }
+
+      const baseFin = p.stats?.fin || p.stats?.sho || 50;
+      const baseDef = p.stats?.def || p.stats?.mar || 50;
+      const basePass = p.stats?.pas || 50;
+      const baseSpd = p.stats?.spd || p.stats?.vel || 50;
+      const staminaFactor = 0.5 + (p.currentStamina / 200);
+      
+      // Contribuição baseada no SLOT que ele ocupa
+      if (slotRole === "def") {
+        totalDef += baseDef * staminaFactor * efficiency;
+        if (slot.pos === "GL") totalDef += (p.stats?.ref || 50) * 0.4;
+        counts.def++;
+      } else if (slotRole === "mid") {
+        controlPoints += basePass * staminaFactor * efficiency;
+        totalAtk += baseFin * 0.2 * staminaFactor * efficiency;
+        totalDef += baseDef * 0.2 * staminaFactor * efficiency;
+        counts.mid++;
+        if (slot.pos === "VOL") counts.vol++;
+      } else if (slotRole === "atk") {
+        totalAtk += baseFin * staminaFactor * efficiency;
+        speedSum += baseSpd * staminaFactor * efficiency;
+        counts.atk++;
+      }
+    });
+
+    let chanceMod = 1.0;
+    let awayChanceMod = 1.0;
+    
+    if (currentPlaystyle === "bus") {
+      totalDef *= 1.35;
+      awayChanceMod = 1.3;
+      chanceMod = 0.4;
+    } else if (currentPlaystyle === "attack") {
+      totalAtk *= 1.45;
+      totalDef *= 0.7;
+      chanceMod = 1.5;
+    } else if (currentPlaystyle === "possession") {
+      controlPoints *= 1.6;
+      chanceMod = 0.75;
+      awayChanceMod = 0.75;
+    } else if (currentPlaystyle === "counter") {
+      const avgSpeed = speedSum / (counts.atk || 1);
+      if (avgSpeed > 75) chanceMod = 1.4;
+      totalDef *= 1.2;
+    }
+
+    if (counts.vol >= 2) totalDef *= 1.15;
+    if (counts.atk >= 3) chanceMod *= 1.1;
+    if (counts.mid >= 4) controlPoints *= 1.2;
+
+    return { 
+      atk: totalAtk / 11, 
+      def: totalDef / 11, 
+      control: controlPoints / 11,
+      chanceMod,
+      awayChanceMod
+    };
+  };
+
+  const simFormationSelect = document.getElementById("simFormationSelect");
+  if (simFormationSelect) {
+    simFormationSelect.value = currentFormation;
+    simFormationSelect.onchange = (e) => {
+      currentFormation = e.target.value;
+      // Re-organiza os jogadores atuais nos novos slots da formação
+      homeActivePlayers = smartAssignToSlots(homeActivePlayers, currentFormation);
+      addLog(`📋 ALTERAÇÃO TÁTICA: Time mudou para a formação <strong>${currentFormation}</strong>.`, "log-neutral");
+      renderMiniPitch();
+    };
+  }
+
+  const renderMiniPitch = () => {
+    const pitch = document.getElementById("miniPitchPlayers");
+    if (!pitch) return;
+    pitch.innerHTML = "";
+    
+    const tacticalPos = getTacticalPositions(currentFormation);
+    const onPitchPlayers = homeActivePlayers.filter(p => !p.isExpelled);
+    
+    const getRole = (pos) => {
+        if (["GL", "ZE", "ZD", "LE", "LD"].includes(pos)) return "def";
+        if (["VOL", "MC", "MEI", "ME", "MD"].includes(pos)) return "mid";
+        if (["CA", "SA", "PE", "PD"].includes(pos)) return "atk";
+        return "mid";
+    };
+
+    onPitchPlayers.forEach((p, i) => {
+      const slot = tacticalPos[i] || { x: 50, y: 50, pos: "MC" };
+      const coords = { x: slot.x, y: slot.y };
+      const isSelected = i === selectedOutIdx ? "selected" : "";
+      const fit = Math.floor(p.currentStamina);
+      const fitColor = fit > 70 ? "var(--accent)" : fit > 40 ? "var(--warning)" : "var(--danger)";
+      
+      const slotRole = getRole(slot.pos);
+      const playerRole = getRole(p.aptitude?.[0] || "MC");
+      const isOutPos = slotRole !== playerRole;
+
+      const node = document.createElement("div");
+      node.className = `mini-player-node ${isSelected}`;
+      node.style.left = `${coords.x}%`;
+      node.style.top = `${coords.y}%`;
+      node.style.borderColor = isOutPos ? "#fff" : fitColor;
+      node.style.borderStyle = isOutPos ? "dashed" : "solid";
+      node.style.boxShadow = isSelected ? `0 0 10px ${fitColor}` : "none";
+      
+      node.innerHTML = `
+        <span style="color: ${isOutPos ? '#fff' : fitColor}; font-weight: bold;">${p.aptitude?.[0] || "?"}</span>
+        <div class="mini-player-label">${p.name.split(" ").pop()}</div>
+        <div style="position:absolute; bottom:-3px; right:-3px; width:8px; height:8px; border-radius:50%; background:${fitColor}; border:1px solid #000;"></div>
+      `;
+      node.title = `${p.name} - Estamina: ${fit}% ${isOutPos ? '(Fora de Posição)' : ''}`;
+      
+      node.onclick = () => {
+        if (selectedOutIdx === i) selectedOutIdx = -1;
+        else selectedOutIdx = i;
+        renderMiniPitch();
+        checkSubButton();
+      };
+      
+      pitch.appendChild(node);
+    });
+  };
+
   const checkSubButton = () => {
     if (confirmSubBtn) {
       const hasAvailableSubs = homeBench.some((p) => !p.substitutedOut);
@@ -368,7 +631,7 @@ export async function openMatchSimulation() {
       const hasAvailableSubs = homeBench.some((p) => !p.substitutedOut);
       if (isPaused && homeSubs < 5 && hasAvailableSubs) {
         const item = e.target.closest(".sub-list-item");
-        if (item) {
+        if (item && !item.classList.contains("expelled-player")) {
           selectedOutIdx = parseInt(item.dataset.idx, 10);
           renderSubLists();
         }
@@ -390,29 +653,9 @@ export async function openMatchSimulation() {
   }
 
   const renderSubLists = () => {
-    if (!subOutList || !subInList) return;
-
-    subOutList.innerHTML = homeActivePlayers
-      .map((p, i) => {
-        const fit = Math.floor(p.currentStamina);
-        const fitColor =
-          fit > 70
-            ? "var(--accent)"
-            : fit > 40
-              ? "var(--warning)"
-              : "var(--danger)";
-        const isSelected = i === selectedOutIdx ? "selected" : "";
-        return `<div class="sub-list-item ${isSelected}" data-idx="${i}">
-          <div style="display: flex; justify-content: space-between;">
-              <span class="sub-name" title="${p.name}">${p.name}</span>
-              <span class="sub-stamina-percent" style="font-size: 0.65rem; color: ${fitColor}; font-weight: bold;">${fit}%</span>
-          </div>
-          <div class="sub-stamina-bar">
-              <div class="sub-stamina-fill" style="width: ${fit}%; background: ${fitColor};"></div>
-          </div>
-      </div>`;
-      })
-      .join("");
+    if (!subInList) return;
+    
+    renderMiniPitch();
 
     subInList.innerHTML = homeBench
       .map((p, i) => {
@@ -585,18 +828,34 @@ export async function openMatchSimulation() {
       const inIdx = selectedInIdx;
       if (outIdx !== -1 && inIdx !== -1) {
         const outPlayer = homeActivePlayers[outIdx];
-        const inPlayer = homeBench.splice(inIdx, 1)[0];
+        const inPlayer = homeBench[inIdx]; // Espreita o jogador sem tirar do banco ainda
 
+        // Validação Tática: Mínimo 1 Goleiro e 3 Defensores
+        const previewActive = [...homeActivePlayers];
+        previewActive.splice(outIdx, 1, inPlayer);
+        
+        const gks = previewActive.filter(p => p.aptitude?.includes("GOL") || p.aptitude?.includes("GL")).length;
+        const defenders = previewActive.filter(p => ["ZE", "ZD", "LE", "LD"].some(pos => p.aptitude?.includes(pos))).length;
+
+        if (gks < 1) {
+            showCustomModal("<strong>REGRA TÁTICA:</strong> Você não pode retirar seu único goleiro sem colocar outro no lugar!", "alert", "btn-danger");
+            return;
+        }
+        if (defenders < 3) {
+            showCustomModal("<strong>ESTRUTURA INVÁLIDA:</strong> A equipe precisa manter no mínimo 3 defensores (Zagueiros ou Laterais) para garantir a integridade da linha defensiva!", "alert", "btn-danger");
+            return;
+        }
+
+        // Se passou, executa a troca de fato
+        homeBench.splice(inIdx, 1);
         const wasCaptain = outPlayer.captain;
         outPlayer.substitutedOut = true;
         homeBench.push(outPlayer);
 
         homeActivePlayers.splice(outIdx, 1, inPlayer);
-        homeActivePlayers.sort(
-          (a, b) =>
-            (ALL_POSITIONS.indexOf(a.aptitude?.[0]) ?? 99) -
-            (ALL_POSITIONS.indexOf(b.aptitude?.[0]) ?? 99),
-        );
+        
+        // Re-organiza de forma inteligente para os slots da formação
+        homeActivePlayers = smartAssignToSlots(homeActivePlayers, currentFormation);
 
         homeFitnessTracker[outPlayer.id] = outPlayer.currentStamina;
         homeFitnessTracker[inPlayer.id] = inPlayer.currentStamina;
@@ -609,6 +868,7 @@ export async function openMatchSimulation() {
         selectedOutIdx = -1;
         selectedInIdx = -1;
         populateSubSelects();
+        renderMiniPitch(); // Re-render prancheta
         if (wasCaptain) {
           const newCap = ensureCaptain(homeActivePlayers);
           if (newCap)
@@ -714,6 +974,8 @@ export async function openMatchSimulation() {
 
   const runMinute = async () => {
     minute += Math.floor(Math.random() * 3) + 2;
+    
+    const powers = calculateMatchPowers();
 
     homePasses += Math.floor((homePossession / 100) * (Math.random() * 15 + 5));
     awayPasses += Math.floor(
@@ -770,17 +1032,6 @@ export async function openMatchSimulation() {
     updateSubListsStamina();
     handleAISubstitutions();
     
-    // Lógica de Chances de Gol baseada no Estilo
-    let homeChanceMod = 1.0;
-    let awayChanceMod = 1.0;
-
-    if (currentPlaystyle === "attack") homeChanceMod = 1.8;
-    if (currentPlaystyle === "bus") { homeChanceMod = 0.3; awayChanceMod = 0.3; }
-    if (currentPlaystyle === "counter") homeChanceMod = 1.4;
-
-    // A lógica de chutes já existe no matchEngine ou abaixo no arquivo, 
-    // vou garantir que esses modificadores sejam usados nos cálculos de chance.
-
     if (minute >= 45 && !isHalfTime) {
       minute = 45;
       isHalfTime = true;
@@ -879,40 +1130,39 @@ export async function openMatchSimulation() {
       return;
     }
 
-    const currentHomeAtk = getTeamAtk(homeActivePlayers);
-    const currentHomeDef = getTeamDef(homeActivePlayers);
+    const currentHomeAtk = powers.atk;
+    const currentHomeDef = powers.def;
     const currentAwayAtk = getTeamAtk(awayActivePlayers);
     const currentAwayDef = getTeamDef(awayActivePlayers);
 
-    let midControlHome = currentHomeAtk + currentHomeDef;
-    let midControlAway = currentAwayAtk + currentAwayDef;
-    if (midControlHome + midControlAway > 0) {
-      let targetPossession =
-        (midControlHome / (midControlHome + midControlAway)) * 100;
-      homePossession = Math.round(
-        homePossession * 0.7 +
-          targetPossession * 0.3 +
-          (Math.random() * 10 - 5),
-      );
-      homePossession = Math.max(20, Math.min(80, homePossession));
-    }
+    // Posse baseada no controle de meio-campo tático
+    let targetPossession = (powers.control / (powers.control + (currentAwayAtk + currentAwayDef) / 20)) * 100;
+    homePossession = Math.round(homePossession * 0.7 + targetPossession * 0.3 + (Math.random() * 10 - 5));
+    homePossession = Math.max(20, Math.min(80, homePossession));
+    
     updateStatsUI();
 
     timeEl.innerText = minute + "'";
     const rand = Math.random() * 100;
 
+    const homeChanceMod = powers.chanceMod;
+    const awayChanceMod = powers.awayChanceMod;
+
     if (rand < (currentHomeAtk / (currentHomeAtk + currentAwayDef)) * 15 * homeChanceMod) {
       if (homeActivePlayers.length === 0) return;
 
       let jogador;
+      const onPitch = homeActivePlayers.filter(p => !p.isExpelled);
+      if (onPitch.length === 0) return;
+
       const randPos = Math.random();
-      const attackers = homeActivePlayers.filter((p) =>
+      const attackers = onPitch.filter((p) =>
         ["CA", "SA", "PE", "PD", "MEI"].includes(p.aptitude?.[0]),
       );
-      const midfielders = homeActivePlayers.filter((p) =>
+      const midfielders = onPitch.filter((p) =>
         ["MC", "ME", "MD", "VOL"].includes(p.aptitude?.[0]),
       );
-      const defenders = homeActivePlayers.filter((p) =>
+      const defenders = onPitch.filter((p) =>
         ["ZE", "ZD", "LE", "LD"].includes(p.aptitude?.[0]),
       );
 
@@ -923,10 +1173,7 @@ export async function openMatchSimulation() {
       } else if (defenders.length > 0) {
         jogador = defenders[Math.floor(Math.random() * defenders.length)];
       } else {
-        jogador =
-          homeActivePlayers[
-            Math.floor(Math.random() * homeActivePlayers.length)
-          ];
+        jogador = onPitch[Math.floor(Math.random() * onPitch.length)];
       }
       homeShots++;
       if (
@@ -993,10 +1240,11 @@ export async function openMatchSimulation() {
             await delay(1500);
             if (!isSimulationActive) return;
 
-            if (Math.random() < 0.15 && homeActivePlayers.length > 0) {
+            const onPitch = homeActivePlayers.filter(p => !p.isExpelled);
+            if (Math.random() < 0.15 && onPitch.length > 0) {
               homeShots++;
               homeShotsOnTarget++;
-              const fieldPlayers = homeActivePlayers.filter(
+              const fieldPlayers = onPitch.filter(
                 (p) => p.aptitude?.[0] !== "GL",
               );
               const headerPlayer =
@@ -1004,7 +1252,7 @@ export async function openMatchSimulation() {
                   ? fieldPlayers[
                       Math.floor(Math.random() * fieldPlayers.length)
                     ]
-                  : homeActivePlayers[0];
+                  : onPitch[0];
               playSound(soundGoal);
               addLog(
                 `⚽ GOOOOOOOOOOOOOOOOOOOL! Na cobrança de escanteio, ${headerPlayer.name} sobe no terceiro andar e testa pro fundo das redes!`,
@@ -1040,26 +1288,28 @@ export async function openMatchSimulation() {
       rand >
       100 - (currentAwayAtk / (currentAwayAtk + currentHomeDef)) * 15 * awayChanceMod
     ) {
-      if (awayActivePlayers.length === 0) return;
-      const goleiros = homeActivePlayers.filter(
+      const onPitchHome = homeActivePlayers.filter(p => !p.isExpelled);
+      const onPitchAway = awayActivePlayers.filter(p => !p.isExpelled);
+      
+      const goleiros = onPitchHome.filter(
         (p) => p.aptitude?.[0] === "GL",
       );
       const goleiro =
         goleiros.length > 0
           ? goleiros[0]
-          : homeActivePlayers.length > 0
-            ? homeActivePlayers[0]
+          : onPitchHome.length > 0
+            ? onPitchHome[0]
             : titulares[0]; // Fallback de segurança
       let oppAttacker = null;
-      if (awayActivePlayers.length > 0) {
+      if (onPitchAway.length > 0) {
         const randPos = Math.random();
-        const attackers = awayActivePlayers.filter((p) =>
+        const attackers = onPitchAway.filter((p) =>
           ["CA", "SA", "PE", "PD", "MEI"].includes(p.aptitude?.[0]),
         );
-        const midfielders = awayActivePlayers.filter((p) =>
+        const midfielders = onPitchAway.filter((p) =>
           ["MC", "ME", "MD", "VOL"].includes(p.aptitude?.[0]),
         );
-        const defenders = awayActivePlayers.filter((p) =>
+        const defenders = onPitchAway.filter((p) =>
           ["ZE", "ZD", "LE", "LD"].includes(p.aptitude?.[0]),
         );
 
@@ -1071,10 +1321,7 @@ export async function openMatchSimulation() {
         } else if (defenders.length > 0) {
           oppAttacker = defenders[Math.floor(Math.random() * defenders.length)];
         } else {
-          oppAttacker =
-            awayActivePlayers[
-              Math.floor(Math.random() * awayActivePlayers.length)
-            ];
+          oppAttacker = onPitchAway[Math.floor(Math.random() * onPitchAway.length)];
         }
       }
 
@@ -1191,10 +1438,12 @@ export async function openMatchSimulation() {
       // Eventos Dinâmicos: Cartões e Lesões (Acontecem esporadicamente)
       if (Math.random() > 0.4) {
         const isHome = Math.random() > 0.5;
-        if (isHome && homeActivePlayers.length > 0) {
-          let idx = Math.floor(Math.random() * homeActivePlayers.length);
-          let p = homeActivePlayers[idx];
-          homeFouls++;
+        const onPitch = isHome ? homeActivePlayers.filter(px => !px.isExpelled) : awayActivePlayers.filter(px => !px.isExpelled);
+        if (onPitch.length > 0) {
+          let idx = Math.floor(Math.random() * onPitch.length);
+          let p = onPitch[idx];
+          if (isHome) homeFouls++;
+          else awayFouls++;
           const cardRand = Math.random();
           if (cardRand < 0.1) {
             playSound(soundMiss);
@@ -1248,17 +1497,19 @@ export async function openMatchSimulation() {
             } else {
               addLog(`O time fica com um a menos!`, "log-card-red");
               const wasCaptain = p.captain;
-              homeActivePlayers.splice(idx, 1);
+              p.isExpelled = true; 
               homeRedCards++;
               homeCards.push({ id: p.id, name: p.name, type: "red" });
               if (wasCaptain) {
-                const newCap = ensureCaptain(homeActivePlayers);
+                const onPitch = homeActivePlayers.filter(px => !px.isExpelled);
+                const newCap = ensureCaptain(onPitch);
                 if (newCap)
                   addLog(
                     `©️ ${p.name} era o capitão. A braçadeira é repassada para ${newCap.name}.`,
                     "log-neutral",
                   );
               }
+              renderSubLists(); // Atualiza UI
             }
           } else if (cardRand < 0.35) {
             homeCards.push({ id: p.id, name: p.name, type: "yellow" });
@@ -1308,7 +1559,7 @@ export async function openMatchSimulation() {
                   `🟥 DECISÃO MANTIDA PELO VAR! ${p.name} vai para o chuveiro mais cedo! Estão com um a menos!`,
                   "log-card-red",
                 );
-                awayActivePlayers.splice(idx, 1);
+                p.isExpelled = true;
                 awayRedCards++;
                 awayCards.push({ id: p.id, name: p.name, type: "red" });
               }
@@ -1398,6 +1649,7 @@ export async function openMatchSimulation() {
         );
       }
     }
+    renderMiniPitch();
   };
 
   startBtn.onclick = () => {

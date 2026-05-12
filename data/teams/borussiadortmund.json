@@ -25,12 +25,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 87,
+        "seg": 86,
+        "esp": 98,
+        "ref": 89,
+        "pos": 87,
+        "vel": 52,
         "sta": 30
       },
       "detailedStats": {
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Julian Brandt",
       "ovr": 85,
       "status": "titular",
@@ -126,7 +126,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Nico Schlotterbeck",
       "ovr": 85,
       "status": "titular",
@@ -187,7 +187,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Serhou Guirassy",
       "ovr": 84,
       "status": "titular",
@@ -247,7 +247,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 8,
       "name": "Marcel Sabitzer",
       "ovr": 84,
       "status": "titular",
@@ -305,7 +305,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 11,
       "name": "Donyell Malen",
       "ovr": 83,
       "status": "titular",
@@ -364,7 +364,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Emre Can",
       "ovr": 82,
       "status": "titular",
@@ -423,7 +423,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Niklas Süle",
       "ovr": 82,
       "status": "titular",
@@ -483,7 +483,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 25,
       "name": "Waldemar Anton",
       "ovr": 81,
       "status": "titular",
@@ -541,7 +541,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 21,
       "name": "Pascal Groß",
       "ovr": 81,
       "status": "titular",
@@ -597,7 +597,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Yan Couto",
       "ovr": 80,
       "status": "titular",
@@ -654,7 +654,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 27,
       "name": "Karim Adeyemi",
       "ovr": 79,
       "status": "reserva",
@@ -713,7 +713,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 2,
       "name": "Julian Ryerson",
       "ovr": 79,
       "status": "reserva",
@@ -769,7 +769,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 20,
       "name": "Maximilian Beier",
       "ovr": 78,
       "status": "reserva",
@@ -826,7 +826,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 3,
       "name": "Ramy Bensebaini",
       "ovr": 78,
       "status": "reserva",
@@ -882,7 +882,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 18,
       "name": "Felix Nmecha",
       "ovr": 77,
       "status": "reserva",
@@ -997,7 +997,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 12,
       "name": "Alexander Meyer",
       "ovr": 75,
       "status": "reserva",
@@ -1012,12 +1012,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 72,
+        "seg": 71,
+        "esp": 82,
+        "ref": 76,
+        "pos": 74,
+        "vel": 45,
         "sta": 19
       },
       "detailedStats": {
@@ -1052,7 +1052,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 28,
       "name": "Giovanni Reyna",
       "ovr": 75,
       "status": "reserva",
@@ -1110,7 +1110,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Marcel Lotka",
       "ovr": 68,
       "status": "reserva",
@@ -1126,12 +1126,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 65,
+        "esp": 77,
+        "ref": 71,
+        "pos": 69,
+        "vel": 25,
         "sta": 29
       },
       "detailedStats": {
@@ -1166,7 +1166,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 23,
       "name": "Julien Duranville",
       "ovr": 66,
       "status": "reserva",
@@ -1223,7 +1223,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Kjell Wätjen",
       "ovr": 65,
       "status": "reserva",
@@ -1278,7 +1278,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Cole Campbell",
       "ovr": 64,
       "status": "reserva",

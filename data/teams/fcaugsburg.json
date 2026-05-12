@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Jeffrey Gouweleeuw",
       "ovr": 76,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Arne Maier",
       "ovr": 76,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Steve Mounié",
       "ovr": 76,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 5,
       "name": "Kristijan Jakić",
       "ovr": 75,
       "status": "titular",
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 14,
       "name": "Keven Schlotterbeck",
       "ovr": 75,
       "status": "titular",
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 11,
       "name": "Ruben Vargas",
       "ovr": 75,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 1,
       "name": "Finn Dahmen",
       "ovr": 74,
       "status": "titular",
@@ -358,12 +358,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 74,
+        "seg": 68,
+        "esp": 84,
+        "ref": 78,
+        "pos": 72,
+        "vel": 43,
         "sta": 31
       },
       "detailedStats": {
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 10,
       "name": "Fredrik Jensen",
       "ovr": 74,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 18,
       "name": "Elvis Rexhbeçaj",
       "ovr": 74,
       "status": "titular",
@@ -510,7 +510,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 19,
       "name": "Phillip Tietz",
       "ovr": 74,
       "status": "titular",
@@ -565,7 +565,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 20,
       "name": "Samuel Essende",
       "ovr": 73,
       "status": "titular",
@@ -635,12 +635,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 76,
+        "seg": 70,
+        "esp": 83,
+        "ref": 74,
+        "pos": 73,
+        "vel": 39,
         "sta": 28
       },
       "detailedStats": {
@@ -675,7 +675,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 25,
       "name": "Reece Oxford",
       "ovr": 73,
       "status": "reserva",
@@ -731,7 +731,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 3,
       "name": "Mads Pedersen",
       "ovr": 73,
       "status": "reserva",
@@ -952,7 +952,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 2,
       "name": "Robert Gumny",
       "ovr": 71,
       "status": "reserva",
@@ -1007,7 +1007,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 27,
       "name": "Masaya Okugawa",
       "ovr": 71,
       "status": "reserva",
@@ -1063,7 +1063,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 21,
       "name": "Chrislain Matsima",
       "ovr": 70,
       "status": "reserva",
@@ -1119,7 +1119,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 23,
       "name": "Tim Breithaupt",
       "ovr": 69,
       "status": "reserva",
@@ -1174,7 +1174,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 28,
       "name": "Yusuf Kabadayi",
       "ovr": 67,
       "status": "reserva",
@@ -1229,7 +1229,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 30,
       "name": "Mert Kömür",
       "ovr": 64,
       "status": "reserva",
@@ -1340,7 +1340,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 22,
       "name": "Daniel Klein",
       "ovr": 61,
       "status": "reserva",
@@ -1355,12 +1355,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 59,
+        "esp": 69,
+        "ref": 63,
+        "pos": 58,
+        "vel": 27,
         "sta": 23
       },
       "detailedStats": {

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Fran Kirby",
       "ovr": 84,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Jelena Čanković",
       "ovr": 79,
       "status": "titular",
@@ -125,7 +125,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Pauline Bremer",
       "ovr": 78,
       "status": "titular",
@@ -180,7 +180,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 19,
       "name": "Lee Geum Min",
       "ovr": 78,
       "status": "titular",
@@ -237,7 +237,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 18,
       "name": "Vicky Losada",
       "ovr": 77,
       "status": "titular",
@@ -292,7 +292,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 2,
       "name": "Li Mengwen",
       "ovr": 76,
       "status": "titular",
@@ -347,7 +347,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 4,
       "name": "Maria Thorisdottir",
       "ovr": 75,
       "status": "titular",
@@ -403,7 +403,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 20,
       "name": "Madison Haley",
       "ovr": 74,
       "status": "titular",
@@ -458,7 +458,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 17,
       "name": "Bruna",
       "ovr": 74,
       "status": "titular",
@@ -513,7 +513,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 3,
       "name": "Poppy Pattinson",
       "ovr": 72,
       "status": "titular",
@@ -569,7 +569,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 31,
       "name": "Kiko Seike",
       "ovr": 72,
       "status": "titular",
@@ -625,7 +625,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 14,
       "name": "Guro Bergsvand",
       "ovr": 71,
       "status": "reserva",
@@ -681,7 +681,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 25,
       "name": "Jorelyn Carabalí",
       "ovr": 71,
       "status": "reserva",
@@ -737,7 +737,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 5,
       "name": "Dejana Stefanović",
       "ovr": 70,
       "status": "reserva",
@@ -792,7 +792,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 16,
       "name": "Marisa Olislagers",
       "ovr": 69,
       "status": "reserva",
@@ -847,7 +847,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 13,
       "name": "Charlize Rule",
       "ovr": 68,
       "status": "reserva",
@@ -902,7 +902,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 21,
       "name": "Maisie Symonds",
       "ovr": 68,
       "status": "reserva",
@@ -957,7 +957,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 1,
       "name": "Sophie Baggaley",
       "ovr": 66,
       "status": "reserva",
@@ -972,12 +972,12 @@
         "Far Reach"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 63,
+        "esp": 73,
+        "ref": 64,
+        "pos": 62,
+        "vel": 41,
         "sta": 20
       },
       "detailedStats": {
@@ -1012,7 +1012,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Libby Bance",
       "ovr": 65,
       "status": "reserva",
@@ -1067,7 +1067,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 12,
       "name": "Katie Startup",
       "ovr": 63,
       "status": "reserva",
@@ -1082,12 +1082,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 61,
+        "esp": 71,
+        "ref": 69,
+        "pos": 64,
+        "vel": 32,
         "sta": 23
       },
       "detailedStats": {
@@ -1122,7 +1122,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 23,
       "name": "Melina Loeck",
       "ovr": 62,
       "status": "reserva",
@@ -1137,12 +1137,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 56,
+        "seg": 58,
+        "esp": 66,
+        "ref": 63,
+        "pos": 64,
+        "vel": 18,
         "sta": 30
       },
       "detailedStats": {

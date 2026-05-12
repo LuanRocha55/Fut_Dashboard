@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Rodrigo Abascal",
       "ovr": 73,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Salvador Agra",
       "ovr": 73,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Róbert Boženík",
       "ovr": 72,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "João Gonçalves",
       "ovr": 72,
       "status": "titular",
@@ -190,12 +190,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 69,
+        "esp": 79,
+        "ref": 72,
+        "pos": 73,
+        "vel": 29,
         "sta": 24
       },
       "detailedStats": {
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 3,
       "name": "Bruno Onyemaechi",
       "ovr": 71,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 8,
       "name": "Miguel Reisinho",
       "ovr": 71,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 16,
       "name": "Filipe Ferreira",
       "ovr": 69,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 21,
       "name": "Ibrahima Camará",
       "ovr": 67,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 18,
       "name": "Ilija Vukotić",
       "ovr": 67,
       "status": "titular",
@@ -563,7 +563,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 23,
       "name": "Ibrahim Alhassan",
       "ovr": 65,
       "status": "titular",
@@ -618,7 +618,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 20,
       "name": "Joel Silva",
       "ovr": 65,
       "status": "reserva",
@@ -673,7 +673,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 10,
       "name": "Manuel Namora",
       "ovr": 64,
       "status": "reserva",
@@ -728,7 +728,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 30,
       "name": "Bruninho",
       "ovr": 64,
       "status": "reserva",
@@ -783,7 +783,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 12,
       "name": "Tomé Sousa",
       "ovr": 62,
       "status": "reserva",
@@ -798,12 +798,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 58,
+        "esp": 71,
+        "ref": 68,
+        "pos": 61,
+        "vel": 35,
         "sta": 30
       },
       "detailedStats": {
@@ -838,7 +838,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 14,
       "name": "Pedro Gomes",
       "ovr": 61,
       "status": "reserva",
@@ -894,7 +894,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 19,
       "name": "Tiago Machado",
       "ovr": 61,
       "status": "reserva",
@@ -949,7 +949,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 26,
       "name": "Augusto Dabó",
       "ovr": 60,
       "status": "reserva",
@@ -1004,7 +1004,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Luís Henrique",
       "ovr": 60,
       "status": "reserva",
@@ -1019,12 +1019,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 59,
+        "seg": 57,
+        "esp": 66,
+        "ref": 60,
+        "pos": 62,
+        "vel": 29,
         "sta": 35
       },
       "detailedStats": {
@@ -1059,7 +1059,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 2,
       "name": "Gonçalo Almeida",
       "ovr": 59,
       "status": "reserva",
@@ -1114,7 +1114,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Marco Ribeiro",
       "ovr": 59,
       "status": "reserva",

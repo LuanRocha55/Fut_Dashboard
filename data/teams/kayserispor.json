@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Carlos Mané",
       "ovr": 72,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 19,
       "name": "Aylton Boa Morte",
       "ovr": 71,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 27,
       "name": "Miguel Cardoso",
       "ovr": 71,
       "status": "titular",
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Bilal Bayazıt",
       "ovr": 70,
       "status": "titular",
@@ -192,12 +192,12 @@
         "Far Reach"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 65,
+        "esp": 79,
+        "ref": 73,
+        "pos": 70,
+        "vel": 25,
         "sta": 20
       },
       "detailedStats": {
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Majid Hosseini",
       "ovr": 69,
       "status": "titular",
@@ -289,7 +289,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Julian Jeanvier",
       "ovr": 69,
       "status": "titular",
@@ -346,7 +346,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 9,
       "name": "Duckens Nazon",
       "ovr": 68,
       "status": "titular",
@@ -401,7 +401,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 5,
       "name": "Kartal Yılmaz",
       "ovr": 68,
       "status": "titular",
@@ -456,7 +456,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 8,
       "name": "Ali Karimi",
       "ovr": 67,
       "status": "titular",
@@ -512,7 +512,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 21,
       "name": "Yaw Ackah",
       "ovr": 66,
       "status": "titular",
@@ -567,7 +567,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 25,
       "name": "Joseph Attamah",
       "ovr": 66,
       "status": "titular",
@@ -623,7 +623,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 28,
       "name": "Ramazan Civelek",
       "ovr": 66,
       "status": "reserva",
@@ -678,7 +678,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 3,
       "name": "Hasan Ali Kaldırım",
       "ovr": 66,
       "status": "reserva",
@@ -733,7 +733,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Dimitrios Kolovetsios",
       "ovr": 66,
       "status": "reserva",
@@ -789,7 +789,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 2,
       "name": "Gökhan Sazdağı",
       "ovr": 66,
       "status": "reserva",
@@ -844,7 +844,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 12,
       "name": "Onurcan Piri",
       "ovr": 64,
       "status": "reserva",
@@ -859,12 +859,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 64,
+        "esp": 72,
+        "ref": 65,
+        "pos": 64,
+        "vel": 20,
         "sta": 26
       },
       "detailedStats": {
@@ -1010,7 +1010,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 20,
       "name": "Hayrullah Erkip",
       "ovr": 57,
       "status": "reserva",
@@ -1065,7 +1065,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 31,
       "name": "Ethem Balcı",
       "ovr": 56,
       "status": "reserva",
@@ -1120,7 +1120,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 10,
       "name": "Talha Sarıarslan",
       "ovr": 56,
       "status": "reserva",
@@ -1175,7 +1175,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 16,
       "name": "Muhammed Eren Arıkan",
       "ovr": 55,
       "status": "reserva",
@@ -1285,7 +1285,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 30,
       "name": "Baran Ali Gezek",
       "ovr": 53,
       "status": "reserva",

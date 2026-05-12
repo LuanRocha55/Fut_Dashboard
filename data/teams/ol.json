@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Alexandre Lacazette",
       "ovr": 82,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Wilfried Zaha",
       "ovr": 81,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 5,
       "name": "Nemanja Matić",
       "ovr": 80,
       "status": "titular",
@@ -179,7 +179,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Anthony Lopes",
       "ovr": 79,
       "status": "titular",
@@ -194,12 +194,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 80,
+        "seg": 76,
+        "esp": 91,
+        "ref": 83,
+        "pos": 76,
+        "vel": 64,
         "sta": 36
       },
       "detailedStats": {
@@ -234,7 +234,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 7,
       "name": "Saïd Benrahma",
       "ovr": 78,
       "status": "titular",
@@ -292,7 +292,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Maxence Caqueret",
       "ovr": 78,
       "status": "titular",
@@ -350,7 +350,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 12,
       "name": "Lucas Perri",
       "ovr": 78,
       "status": "titular",
@@ -365,12 +365,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
+        "alc": 81,
+        "seg": 73,
+        "esp": 90,
+        "ref": 81,
         "pos": 75,
-        "vel": 40,
+        "vel": 39,
         "sta": 38
       },
       "detailedStats": {
@@ -405,7 +405,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Nicolás Tagliafico",
       "ovr": 78,
       "status": "titular",
@@ -460,7 +460,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 10,
       "name": "Georges Mikautadze",
       "ovr": 77,
       "status": "titular",
@@ -517,7 +517,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 2,
       "name": "Clinton Mata",
       "ovr": 76,
       "status": "titular",
@@ -573,7 +573,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 4,
       "name": "Moussa Niakhaté",
       "ovr": 76,
       "status": "titular",
@@ -630,7 +630,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 18,
       "name": "Corentin Tolisso",
       "ovr": 76,
       "status": "reserva",
@@ -686,7 +686,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 14,
       "name": "Duje Ćaleta-Car",
       "ovr": 75,
       "status": "reserva",
@@ -742,7 +742,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 23,
       "name": "Rayan Cherki",
       "ovr": 75,
       "status": "reserva",
@@ -803,7 +803,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 13,
       "name": "Ainsley Maitland-Niles",
       "ovr": 75,
       "status": "reserva",
@@ -858,7 +858,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 25,
       "name": "Warmed Omari",
       "ovr": 75,
       "status": "reserva",
@@ -970,7 +970,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 19,
       "name": "Dejan Lovren",
       "ovr": 74,
       "status": "reserva",
@@ -1028,7 +1028,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 31,
       "name": "Ernest Nuamah",
       "ovr": 74,
       "status": "reserva",
@@ -1140,7 +1140,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 16,
       "name": "Abner Vinícius",
       "ovr": 73,
       "status": "reserva",
@@ -1195,7 +1195,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 21,
       "name": "Paul Akouokou",
       "ovr": 72,
       "status": "reserva",
@@ -1250,7 +1250,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 29,
       "name": "Malick Fofana",
       "ovr": 72,
       "status": "reserva",
@@ -1360,7 +1360,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "Tanner Tessmann",
       "ovr": 71,
       "status": "reserva",
@@ -1418,7 +1418,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 27,
       "name": "Mahamadou Diawara",
       "ovr": 67,
       "status": "reserva",
@@ -1473,7 +1473,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 28,
       "name": "Irvyn Lomami",
       "ovr": 63,
       "status": "reserva",
@@ -1528,7 +1528,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 30,
       "name": "Florent Sanchez",
       "ovr": 63,
       "status": "reserva",
@@ -1583,7 +1583,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 22,
       "name": "Justin Bengui",
       "ovr": 59,
       "status": "reserva",
@@ -1598,12 +1598,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 57,
+        "esp": 67,
+        "ref": 60,
+        "pos": 56,
+        "vel": 22,
         "sta": 18
       },
       "detailedStats": {

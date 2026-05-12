@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Oscar Taty Maritu",
       "ovr": 72,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Héber",
       "ovr": 69,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Viv Solomon-Otabor",
       "ovr": 69,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Georgiy Zhukov",
       "ovr": 65,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 1,
       "name": "Han Rongze",
       "ovr": 63,
       "status": "titular",
@@ -248,12 +248,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 61,
+        "esp": 69,
+        "ref": 63,
+        "pos": 63,
+        "vel": 43,
         "sta": 33
       },
       "detailedStats": {
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 4,
       "name": "Zheng Kaimu",
       "ovr": 63,
       "status": "titular",
@@ -344,7 +344,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Ayo Obileye",
       "ovr": 62,
       "status": "titular",
@@ -401,7 +401,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 12,
       "name": "Shao Puliang",
       "ovr": 62,
       "status": "titular",
@@ -416,12 +416,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 62,
+        "esp": 65,
+        "ref": 59,
+        "pos": 63,
+        "vel": 35,
         "sta": 21
       },
       "detailedStats": {
@@ -456,7 +456,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 25,
       "name": "Yang Yun",
       "ovr": 62,
       "status": "titular",
@@ -512,7 +512,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 19,
       "name": "Zheng Dalun",
       "ovr": 62,
       "status": "titular",
@@ -567,7 +567,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 5,
       "name": "Hu Jiali",
       "ovr": 60,
       "status": "titular",
@@ -622,7 +622,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 13,
       "name": "Li Hong",
       "ovr": 60,
       "status": "reserva",
@@ -678,7 +678,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 15,
       "name": "Wang Peng",
       "ovr": 60,
       "status": "reserva",
@@ -734,7 +734,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 2,
       "name": "Wen Da",
       "ovr": 58,
       "status": "reserva",
@@ -789,7 +789,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 24,
       "name": "Sun Qinhan",
       "ovr": 57,
       "status": "reserva",
@@ -844,7 +844,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 3,
       "name": "Sun Minghim",
       "ovr": 57,
       "status": "reserva",
@@ -899,7 +899,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 16,
       "name": "Yan Zihao",
       "ovr": 57,
       "status": "reserva",
@@ -954,7 +954,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 28,
       "name": "Yao Xuchen",
       "ovr": 57,
       "status": "reserva",
@@ -1009,7 +1009,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Han Feng",
       "ovr": 56,
       "status": "reserva",
@@ -1024,12 +1024,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 57,
+        "seg": 54,
+        "esp": 62,
+        "ref": 54,
+        "pos": 55,
+        "vel": 52,
         "sta": 36
       },
       "detailedStats": {
@@ -1064,7 +1064,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 18,
       "name": "Zhao Yingjie",
       "ovr": 56,
       "status": "reserva",
@@ -1174,7 +1174,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Liu Xinyu",
       "ovr": 55,
       "status": "reserva",
@@ -1229,7 +1229,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Dong Hang",
       "ovr": 53,
       "status": "reserva",
@@ -1244,12 +1244,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 56,
+        "seg": 53,
+        "esp": 61,
+        "ref": 54,
+        "pos": 51,
+        "vel": 23,
         "sta": 38
       },
       "detailedStats": {
@@ -1284,7 +1284,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 27,
       "name": "Wu Wei",
       "ovr": 51,
       "status": "reserva",
@@ -1339,7 +1339,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Guo Yunqi",
       "ovr": 50,
       "status": "reserva",
@@ -1394,7 +1394,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 20,
       "name": "Zhou Jianyan",
       "ovr": 48,
       "status": "reserva",

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Adrián Luna",
       "ovr": 68,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Kwame Peprah",
       "ovr": 66,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Noah Wail Jacob Sadaoui",
       "ovr": 66,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 2,
       "name": "Alexandre Coeff",
       "ovr": 65,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Miloš Drinčić",
       "ovr": 64,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Pritam Kotal",
       "ovr": 62,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 19,
       "name": "Jaushua Sotirio",
       "ovr": 62,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 13,
       "name": "Prabir Das",
       "ovr": 60,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 25,
       "name": "Hormipam Ruivah",
       "ovr": 58,
       "status": "titular",
@@ -509,7 +509,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 20,
       "name": "Ishan Pandita",
       "ovr": 57,
       "status": "titular",
@@ -564,7 +564,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 28,
       "name": "Rahul Praveen",
       "ovr": 57,
       "status": "titular",
@@ -620,7 +620,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 24,
       "name": "Sandeep Singh",
       "ovr": 56,
       "status": "reserva",
@@ -675,7 +675,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 7,
       "name": "Bryce Miranda",
       "ovr": 55,
       "status": "reserva",
@@ -730,7 +730,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Aibanbha Dohling",
       "ovr": 54,
       "status": "reserva",
@@ -786,7 +786,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 1,
       "name": "Sachin Suresh",
       "ovr": 54,
       "status": "reserva",
@@ -801,12 +801,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 56,
+        "esp": 61,
+        "ref": 51,
+        "pos": 54,
+        "vel": 29,
         "sta": 27
       },
       "detailedStats": {
@@ -896,7 +896,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 3,
       "name": "Huidrom Singh",
       "ovr": 53,
       "status": "reserva",
@@ -951,7 +951,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 8,
       "name": "Danish Farooq Bhat",
       "ovr": 52,
       "status": "reserva",
@@ -1006,7 +1006,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 5,
       "name": "Freddy Lallawmawma",
       "ovr": 52,
       "status": "reserva",
@@ -1061,7 +1061,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 21,
       "name": "Mohammed Azhar",
       "ovr": 50,
       "status": "reserva",
@@ -1116,7 +1116,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Bijoy Varghese",
       "ovr": 50,
       "status": "reserva",
@@ -1172,7 +1172,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Mohammed Aimen",
       "ovr": 47,
       "status": "reserva",

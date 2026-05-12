@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Mamadou Fofana",
       "ovr": 70,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Antoine Leautey",
       "ovr": 70,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 5,
       "name": "Frank Boya",
       "ovr": 69,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 2,
       "name": "Sébastien Corchia",
       "ovr": 69,
       "status": "titular",
@@ -230,7 +230,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 1,
       "name": "Régis Gurtner",
       "ovr": 69,
       "status": "titular",
@@ -245,12 +245,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 67,
+        "esp": 73,
+        "ref": 65,
+        "pos": 69,
+        "vel": 46,
         "sta": 38
       },
       "detailedStats": {
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 9,
       "name": "Louis Mafouta",
       "ovr": 69,
       "status": "titular",
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "Andy Carroll",
       "ovr": 68,
       "status": "titular",
@@ -396,7 +396,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 21,
       "name": "Kylian Kaïboué",
       "ovr": 68,
       "status": "titular",
@@ -452,7 +452,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 23,
       "name": "Owen Gene",
       "ovr": 66,
       "status": "titular",
@@ -507,7 +507,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 12,
       "name": "Alexis Sauvage",
       "ovr": 66,
       "status": "titular",
@@ -522,12 +522,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
+        "alc": 69,
+        "seg": 67,
         "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "ref": 66,
+        "pos": 63,
+        "vel": 43,
         "sta": 34
       },
       "detailedStats": {
@@ -562,7 +562,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 14,
       "name": "Osaze Urhoghide",
       "ovr": 65,
       "status": "titular",
@@ -618,7 +618,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 3,
       "name": "Rémy Vita",
       "ovr": 65,
       "status": "reserva",
@@ -673,7 +673,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 19,
       "name": "Yvan Ikia Dimi",
       "ovr": 61,
       "status": "reserva",
@@ -728,7 +728,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 30,
       "name": "Ange Chibozo",
       "ovr": 60,
       "status": "reserva",
@@ -783,7 +783,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 22,
       "name": "Matthieu Rongier",
       "ovr": 59,
       "status": "reserva",
@@ -798,12 +798,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 62,
+        "esp": 66,
+        "ref": 59,
+        "pos": 56,
+        "vel": 24,
         "sta": 24
       },
       "detailedStats": {
@@ -838,7 +838,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 8,
       "name": "Ibrahim Fofana",
       "ovr": 58,
       "status": "reserva",
@@ -893,7 +893,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 18,
       "name": "Rayan Lutin",
       "ovr": 58,
       "status": "reserva",
@@ -948,7 +948,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 27,
       "name": "Mathis Touho",
       "ovr": 58,
       "status": "reserva",
@@ -1003,7 +1003,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 25,
       "name": "Siaka Bakayoko",
       "ovr": 57,
       "status": "reserva",

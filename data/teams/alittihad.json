@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Karim Benzema",
       "ovr": 86,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 5,
       "name": "N'Golo Kanté",
       "ovr": 85,
       "status": "titular",
@@ -124,7 +124,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Moussa Diaby",
       "ovr": 83,
       "status": "titular",
@@ -181,7 +181,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 21,
       "name": "Fabinho",
       "ovr": 82,
       "status": "titular",
@@ -240,7 +240,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Danilo Pereira",
       "ovr": 80,
       "status": "titular",
@@ -299,7 +299,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 7,
       "name": "Steven Bergwijn",
       "ovr": 79,
       "status": "titular",
@@ -357,7 +357,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 1,
       "name": "Predrag Rajković",
       "ovr": 78,
       "status": "titular",
@@ -372,12 +372,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 77,
+        "seg": 76,
+        "esp": 88,
+        "ref": 81,
+        "pos": 79,
+        "vel": 18,
         "sta": 26
       },
       "detailedStats": {
@@ -412,7 +412,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Luiz Felipe",
       "ovr": 77,
       "status": "titular",
@@ -472,7 +472,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 8,
       "name": "Houssem Aouar",
       "ovr": 75,
       "status": "titular",
@@ -527,7 +527,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Ahmed Sharahili",
       "ovr": 74,
       "status": "titular",
@@ -585,7 +585,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 12,
       "name": "Abdulelah Al Amri",
       "ovr": 69,
       "status": "titular",
@@ -644,7 +644,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 10,
       "name": "Saleh Al Shehri",
       "ovr": 68,
       "status": "reserva",
@@ -756,7 +756,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 2,
       "name": "Fawaz Al Sagour",
       "ovr": 67,
       "status": "reserva",
@@ -813,7 +813,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 24,
       "name": "Muhannad Al Shanqeeti",
       "ovr": 67,
       "status": "reserva",
@@ -868,7 +868,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 19,
       "name": "Abdulaziz Al Bishi",
       "ovr": 65,
       "status": "reserva",
@@ -924,7 +924,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 28,
       "name": "Abdulrahman Al Obud",
       "ovr": 65,
       "status": "reserva",
@@ -980,7 +980,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 27,
       "name": "Ahmed Al Ghamdi",
       "ovr": 64,
       "status": "reserva",
@@ -1036,7 +1036,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 3,
       "name": "Ahmed Ba Masoud",
       "ovr": 63,
       "status": "reserva",
@@ -1147,7 +1147,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 16,
       "name": "Muath Faqihi",
       "ovr": 62,
       "status": "reserva",
@@ -1202,7 +1202,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 18,
       "name": "Hamed Al Ghamdi",
       "ovr": 60,
       "status": "reserva",
@@ -1257,7 +1257,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 22,
       "name": "Mohammed Al Mahasna",
       "ovr": 60,
       "status": "reserva",
@@ -1272,12 +1272,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 56,
+        "esp": 67,
+        "ref": 62,
+        "pos": 64,
+        "vel": 46,
         "sta": 29
       },
       "detailedStats": {
@@ -1312,7 +1312,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Abdulelah Hawsawi",
       "ovr": 60,
       "status": "reserva",
@@ -1367,7 +1367,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 23,
       "name": "Awadh Al Nashri",
       "ovr": 59,
       "status": "reserva",
@@ -1422,7 +1422,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Osama Al Mermish",
       "ovr": 55,
       "status": "reserva",
@@ -1437,12 +1437,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 56,
+        "seg": 51,
+        "esp": 64,
+        "ref": 59,
+        "pos": 50,
+        "vel": 37,
         "sta": 20
       },
       "detailedStats": {
@@ -1477,7 +1477,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 30,
       "name": "Omar Al Jadaani",
       "ovr": 54,
       "status": "reserva",
@@ -1532,7 +1532,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 31,
       "name": "Almoatasim Siddiq",
       "ovr": 53,
       "status": "reserva",

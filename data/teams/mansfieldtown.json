@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Keanu Baccus",
       "ovr": 68,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Aden Flint",
       "ovr": 67,
       "status": "titular",
@@ -124,7 +124,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Will Evans",
       "ovr": 65,
       "status": "titular",
@@ -179,7 +179,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 10,
       "name": "Lee Gregory",
       "ovr": 65,
       "status": "titular",
@@ -290,7 +290,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 2,
       "name": "Jordan Bowery",
       "ovr": 64,
       "status": "titular",
@@ -346,7 +346,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Baily Cargill",
       "ovr": 64,
       "status": "titular",
@@ -404,7 +404,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 25,
       "name": "Alfie Kilgour",
       "ovr": 64,
       "status": "titular",
@@ -462,7 +462,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 21,
       "name": "Deji Oshilaja",
       "ovr": 64,
       "status": "titular",
@@ -517,7 +517,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 1,
       "name": "Christy Pym",
       "ovr": 64,
       "status": "titular",
@@ -532,11 +532,11 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 59,
+        "seg": 64,
+        "esp": 69,
+        "ref": 66,
+        "pos": 64,
         "vel": 40,
         "sta": 42
       },
@@ -572,7 +572,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Ben Waine",
       "ovr": 64,
       "status": "titular",
@@ -627,7 +627,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 20,
       "name": "Lucas Akins",
       "ovr": 63,
       "status": "reserva",
@@ -744,7 +744,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Elliott Hewitt",
       "ovr": 63,
       "status": "reserva",
@@ -801,7 +801,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 3,
       "name": "Stephen McLaughlin",
       "ovr": 63,
       "status": "reserva",
@@ -858,7 +858,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 18,
       "name": "Stephen Quinn",
       "ovr": 63,
       "status": "reserva",
@@ -914,7 +914,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 24,
       "name": "George Williams",
       "ovr": 63,
       "status": "reserva",
@@ -969,7 +969,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 22,
       "name": "Hiram Boateng",
       "ovr": 62,
       "status": "reserva",
@@ -1024,7 +1024,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 23,
       "name": "Aaron Lewis",
       "ovr": 62,
       "status": "reserva",
@@ -1081,7 +1081,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 16,
       "name": "Calum MacDonald",
       "ovr": 62,
       "status": "reserva",
@@ -1136,7 +1136,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 26,
       "name": "George Maris",
       "ovr": 62,
       "status": "reserva",
@@ -1192,7 +1192,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 27,
       "name": "Tom Nichols",
       "ovr": 62,
       "status": "reserva",
@@ -1248,7 +1248,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 28,
       "name": "Rhys Oates",
       "ovr": 62,
       "status": "reserva",
@@ -1303,7 +1303,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 12,
       "name": "Scott Flinders",
       "ovr": 60,
       "status": "reserva",
@@ -1318,12 +1318,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 58,
+        "esp": 67,
+        "ref": 60,
+        "pos": 59,
+        "vel": 27,
         "sta": 30
       },
       "detailedStats": {
@@ -1358,7 +1358,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "George Cooper",
       "ovr": 55,
       "status": "reserva",
@@ -1414,7 +1414,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 30,
       "name": "Owen Mason",
       "ovr": 54,
       "status": "reserva",
@@ -1429,12 +1429,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 56,
+        "seg": 53,
+        "esp": 61,
+        "ref": 54,
+        "pos": 52,
+        "vel": 27,
         "sta": 30
       },
       "detailedStats": {

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Juan Manuel Insaurralde",
       "ovr": 72,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 14,
       "name": "Facundo Roncaglia",
       "ovr": 72,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 1,
       "name": "Lucas Acosta",
       "ovr": 71,
       "status": "titular",
@@ -135,12 +135,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 71,
+        "esp": 79,
+        "ref": 73,
+        "pos": 72,
+        "vel": 59,
         "sta": 40
       },
       "detailedStats": {
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 10,
       "name": "Nicolás Gaitán",
       "ovr": 71,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 17,
       "name": "Gabriel Hauche",
       "ovr": 70,
       "status": "titular",
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 9,
       "name": "Lisandro López",
       "ovr": 70,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Juan Andrada",
       "ovr": 69,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Gabriel Díaz Núñez",
       "ovr": 69,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 11,
       "name": "Gabriel Gudiño",
       "ovr": 69,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 12,
       "name": "Fernando Monetti",
       "ovr": 69,
       "status": "titular",
@@ -523,12 +523,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 67,
+        "esp": 77,
+        "ref": 69,
+        "pos": 68,
+        "vel": 57,
         "sta": 32
       },
       "detailedStats": {
@@ -563,7 +563,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 2,
       "name": "Franco Paredes",
       "ovr": 69,
       "status": "titular",
@@ -618,7 +618,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 25,
       "name": "Gastón Sauro",
       "ovr": 69,
       "status": "reserva",
@@ -730,7 +730,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 21,
       "name": "Emiliano Méndez",
       "ovr": 68,
       "status": "reserva",
@@ -786,7 +786,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 23,
       "name": "Valentín Burgoa",
       "ovr": 67,
       "status": "reserva",
@@ -897,7 +897,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 24,
       "name": "Elías López",
       "ovr": 67,
       "status": "reserva",
@@ -952,7 +952,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 19,
       "name": "Iván Morales",
       "ovr": 67,
       "status": "reserva",
@@ -1007,7 +1007,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 30,
       "name": "Sergio Quiroga",
       "ovr": 67,
       "status": "reserva",
@@ -1062,7 +1062,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 27,
       "name": "Yair Arismendi",
       "ovr": 66,
       "status": "reserva",
@@ -1117,7 +1117,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 7,
       "name": "Bryan Cabezas",
       "ovr": 66,
       "status": "reserva",
@@ -1187,12 +1187,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 65,
+        "esp": 76,
+        "ref": 69,
+        "pos": 64,
+        "vel": 17,
         "sta": 27
       },
       "detailedStats": {
@@ -1227,7 +1227,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Diego Calcaterra",
       "ovr": 64,
       "status": "reserva",
@@ -1283,7 +1283,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 8,
       "name": "Fernando Godoy",
       "ovr": 64,
       "status": "reserva",
@@ -1338,7 +1338,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 28,
       "name": "Manuel Mónaco",
       "ovr": 63,
       "status": "reserva",
@@ -1393,7 +1393,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 18,
       "name": "Federico Paradela",
       "ovr": 63,
       "status": "reserva",
@@ -1448,7 +1448,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 29,
       "name": "Joaquín Gho",
       "ovr": 61,
       "status": "reserva",
@@ -1503,7 +1503,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 31,
       "name": "Santiago Morales",
       "ovr": 60,
       "status": "reserva",
@@ -1559,7 +1559,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 20,
       "name": "Ezequiel Naya",
       "ovr": 60,
       "status": "reserva",

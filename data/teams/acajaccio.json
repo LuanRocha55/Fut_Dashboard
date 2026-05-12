@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Thomas Mangani",
       "ovr": 69,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Benjamin Santelli",
       "ovr": 68,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 18,
       "name": "Tim Jabol-Folcarelli",
       "ovr": 67,
       "status": "titular",
@@ -284,7 +284,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 1,
       "name": "Mathieu Michel",
       "ovr": 67,
       "status": "titular",
@@ -299,12 +299,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 66,
+        "esp": 77,
+        "ref": 70,
+        "pos": 62,
+        "vel": 48,
         "sta": 35
       },
       "detailedStats": {
@@ -339,7 +339,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 12,
       "name": "Francois-Joseph Sollacaro",
       "ovr": 67,
       "status": "titular",
@@ -354,12 +354,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
+        "alc": 67,
+        "seg": 65,
         "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "ref": 68,
+        "pos": 66,
+        "vel": 46,
         "sta": 28
       },
       "detailedStats": {
@@ -394,7 +394,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 20,
       "name": "Julien Anziani",
       "ovr": 66,
       "status": "titular",
@@ -449,7 +449,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "Axel Bamba",
       "ovr": 66,
       "status": "titular",
@@ -505,7 +505,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 11,
       "name": "Michaël Barreto",
       "ovr": 66,
       "status": "titular",
@@ -560,7 +560,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Valentin Jacob",
       "ovr": 66,
       "status": "titular",
@@ -615,7 +615,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 3,
       "name": "Stephen Quemper",
       "ovr": 66,
       "status": "reserva",
@@ -670,7 +670,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 10,
       "name": "Moussa Soumano",
       "ovr": 65,
       "status": "reserva",
@@ -725,7 +725,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Yoann Touzghar",
       "ovr": 65,
       "status": "reserva",
@@ -780,7 +780,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 16,
       "name": "Christopher Ibayi",
       "ovr": 64,
       "status": "reserva",
@@ -835,7 +835,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 17,
       "name": "Ben Hamed Touré",
       "ovr": 64,
       "status": "reserva",
@@ -890,7 +890,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 13,
       "name": "Thibault Campanini",
       "ovr": 63,
       "status": "reserva",
@@ -945,7 +945,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 28,
       "name": "Al Hassan Touré",
       "ovr": 63,
       "status": "reserva",
@@ -1000,7 +1000,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 5,
       "name": "Mehdi Puch",
       "ovr": 61,
       "status": "reserva",
@@ -1055,7 +1055,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 26,
       "name": "Tony Strata",
       "ovr": 61,
       "status": "reserva",
@@ -1180,12 +1180,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 59,
+        "seg": 57,
+        "esp": 69,
+        "ref": 65,
+        "pos": 61,
+        "vel": 20,
         "sta": 25
       },
       "detailedStats": {

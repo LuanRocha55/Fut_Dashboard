@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Duván Zapata",
       "ovr": 83,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Perr Schuurs",
       "ovr": 79,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "Nikola Vlašić",
       "ovr": 79,
       "status": "titular",
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Ivan Ilić",
       "ovr": 77,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 14,
       "name": "Guillermo Maripán",
       "ovr": 77,
       "status": "titular",
@@ -291,7 +291,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 1,
       "name": "Vanja Milinković-Savić",
       "ovr": 77,
       "status": "titular",
@@ -307,12 +307,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 81,
+        "seg": 76,
+        "esp": 88,
+        "ref": 77,
+        "pos": 77,
+        "vel": 45,
         "sta": 33
       },
       "detailedStats": {
@@ -347,7 +347,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Samuele Ricci",
       "ovr": 77,
       "status": "titular",
@@ -402,7 +402,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 19,
       "name": "Antonio Sanabria",
       "ovr": 77,
       "status": "titular",
@@ -457,7 +457,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 25,
       "name": "Adrien Tameze",
       "ovr": 76,
       "status": "titular",
@@ -513,7 +513,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 20,
       "name": "Ché Adams",
       "ovr": 75,
       "status": "titular",
@@ -625,7 +625,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 23,
       "name": "Nemanja Radonjić",
       "ovr": 75,
       "status": "reserva",
@@ -680,7 +680,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 3,
       "name": "Borna Sosa",
       "ovr": 75,
       "status": "reserva",
@@ -737,7 +737,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 18,
       "name": "Karol Linetty",
       "ovr": 74,
       "status": "reserva",
@@ -848,7 +848,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 27,
       "name": "Valentino Lazaro",
       "ovr": 73,
       "status": "reserva",
@@ -903,7 +903,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 28,
       "name": "Marcus Holmgren Pedersen",
       "ovr": 73,
       "status": "reserva",
@@ -959,7 +959,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Yann Karamoh",
       "ovr": 72,
       "status": "reserva",
@@ -1014,7 +1014,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Adam Masina",
       "ovr": 72,
       "status": "reserva",
@@ -1070,7 +1070,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 12,
       "name": "Alberto Paleari",
       "ovr": 71,
       "status": "reserva",
@@ -1085,12 +1085,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 67,
+        "esp": 78,
+        "ref": 71,
+        "pos": 74,
+        "vel": 33,
         "sta": 30
       },
       "detailedStats": {
@@ -1125,7 +1125,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Mërgim Vojvoda",
       "ovr": 71,
       "status": "reserva",
@@ -1180,7 +1180,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Sebastian Walukiewicz",
       "ovr": 70,
       "status": "reserva",
@@ -1236,7 +1236,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 30,
       "name": "Krisztofer Horváth",
       "ovr": 68,
       "status": "reserva",
@@ -1291,7 +1291,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 29,
       "name": "Gvidas Gineitis",
       "ovr": 65,
       "status": "reserva",
@@ -1346,7 +1346,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 31,
       "name": "Emirhan İlkhan",
       "ovr": 64,
       "status": "reserva",
@@ -1401,7 +1401,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 32,
       "name": "Brian Jepthe Bayeye",
       "ovr": 62,
       "status": "reserva",
@@ -1456,7 +1456,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 2,
       "name": "Ali Bina Dembélé",
       "ovr": 60,
       "status": "reserva",
@@ -1511,7 +1511,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 33,
       "name": "Ange Caumenan N'Guessan",
       "ovr": 60,
       "status": "reserva",

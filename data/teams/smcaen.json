@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Alexandre Mendy",
       "ovr": 73,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Mathias Autret",
       "ovr": 70,
       "status": "titular",
@@ -173,7 +173,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Anthony Mandréa",
       "ovr": 70,
       "status": "titular",
@@ -189,12 +189,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 64,
+        "esp": 81,
+        "ref": 74,
+        "pos": 71,
+        "vel": 49,
         "sta": 28
       },
       "detailedStats": {
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Romain Thomas",
       "ovr": 70,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 3,
       "name": "Quentin Lecoeuche",
       "ovr": 69,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "Bilal Brahimi",
       "ovr": 68,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 19,
       "name": "Godson Kyeremeh",
       "ovr": 68,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 20,
       "name": "Mickaël Le Bihan",
       "ovr": 67,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Emmanuel Ntim",
       "ovr": 66,
       "status": "titular",
@@ -564,7 +564,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 25,
       "name": "Brahim Traoré",
       "ovr": 66,
       "status": "titular",
@@ -635,12 +635,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 64,
+        "esp": 73,
+        "ref": 66,
+        "pos": 65,
+        "vel": 37,
         "sta": 29
       },
       "detailedStats": {
@@ -675,7 +675,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 5,
       "name": "Dieudonné Gaucho Debohi",
       "ovr": 65,
       "status": "reserva",
@@ -730,7 +730,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 8,
       "name": "Noé Lebreton",
       "ovr": 65,
       "status": "reserva",
@@ -785,7 +785,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 27,
       "name": "Tidiam Gomis",
       "ovr": 62,
       "status": "reserva",
@@ -840,7 +840,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 23,
       "name": "Mohamed Hafid",
       "ovr": 62,
       "status": "reserva",
@@ -895,7 +895,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 22,
       "name": "Parfait Mandanda",
       "ovr": 62,
       "status": "reserva",
@@ -910,12 +910,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 59,
+        "esp": 71,
+        "ref": 65,
+        "pos": 62,
+        "vel": 45,
         "sta": 19
       },
       "detailedStats": {
@@ -1006,7 +1006,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 13,
       "name": "Lamine Sy",
       "ovr": 61,
       "status": "reserva",
@@ -1061,7 +1061,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 21,
       "name": "Ilyes Najim",
       "ovr": 60,
       "status": "reserva",
@@ -1116,7 +1116,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 16,
       "name": "Diabé Bolumbu",
       "ovr": 59,
       "status": "reserva",

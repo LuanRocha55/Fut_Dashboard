@@ -23,12 +23,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 64,
+        "esp": 74,
+        "ref": 68,
+        "pos": 66,
+        "vel": 30,
         "sta": 39
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Paddy Barrett",
       "ovr": 63,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Liam Burt",
       "ovr": 63,
       "status": "titular",
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 2,
       "name": "Sean Gannon",
       "ovr": 62,
       "status": "titular",
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 19,
       "name": "Rayhaan Tulloch",
       "ovr": 62,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Mark Coyle",
       "ovr": 61,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 3,
       "name": "Tyreke Wilson",
       "ovr": 61,
       "status": "titular",
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 9,
       "name": "Seán Boyd",
       "ovr": 60,
       "status": "titular",
@@ -452,7 +452,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 10,
       "name": "Ali Coote",
       "ovr": 60,
       "status": "titular",
@@ -510,7 +510,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Shane Griffin",
       "ovr": 60,
       "status": "titular",
@@ -566,7 +566,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 18,
       "name": "JJ Lunney",
       "ovr": 60,
       "status": "titular",
@@ -621,7 +621,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 28,
       "name": "John O'Sullivan",
       "ovr": 60,
       "status": "reserva",
@@ -676,7 +676,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Matty Smith",
       "ovr": 60,
       "status": "reserva",
@@ -732,7 +732,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 25,
       "name": "Sam Bone",
       "ovr": 59,
       "status": "reserva",
@@ -953,7 +953,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Kameron Ledwidge",
       "ovr": 58,
       "status": "reserva",
@@ -1009,7 +1009,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Dean Williams",
       "ovr": 57,
       "status": "reserva",
@@ -1064,7 +1064,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 12,
       "name": "Lorcan Healy",
       "ovr": 55,
       "status": "reserva",
@@ -1079,12 +1079,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 53,
+        "seg": 56,
+        "esp": 59,
+        "ref": 53,
+        "pos": 53,
+        "vel": 55,
         "sta": 42
       },
       "detailedStats": {

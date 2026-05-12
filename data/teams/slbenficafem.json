@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Martín-Prieto",
       "ovr": 80,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Carole Costa",
       "ovr": 78,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "Nycole Raysla",
       "ovr": 75,
       "status": "titular",
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 23,
       "name": "Marie-Yasmine Alidou",
       "ovr": 74,
       "status": "titular",
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 11,
       "name": "Jody Brown",
       "ovr": 74,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 5,
       "name": "Pauleta",
       "ovr": 74,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 8,
       "name": "Andreia Norton",
       "ovr": 74,
       "status": "titular",
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 2,
       "name": "Catarina Amado",
       "ovr": 74,
       "status": "titular",
@@ -452,7 +452,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "Lúcia Alves",
       "ovr": 74,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 1,
       "name": "Rute Costa",
       "ovr": 73,
       "status": "titular",
@@ -524,12 +524,12 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 71,
+        "esp": 81,
+        "ref": 76,
+        "pos": 70,
+        "vel": 38,
         "sta": 41
       },
       "detailedStats": {
@@ -564,7 +564,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 21,
       "name": "Andreia Faria",
       "ovr": 73,
       "status": "titular",
@@ -619,7 +619,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 7,
       "name": "Andrea Falcón",
       "ovr": 73,
       "status": "reserva",
@@ -674,7 +674,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 18,
       "name": "Anna Gasper",
       "ovr": 72,
       "status": "reserva",
@@ -785,7 +785,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "Laís Araújo",
       "ovr": 71,
       "status": "reserva",
@@ -897,7 +897,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 12,
       "name": "Lena Pauels",
       "ovr": 70,
       "status": "reserva",
@@ -912,12 +912,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 69,
+        "esp": 79,
+        "ref": 71,
+        "pos": 70,
+        "vel": 29,
         "sta": 36
       },
       "detailedStats": {
@@ -952,7 +952,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 19,
       "name": "Chandra Davidson",
       "ovr": 69,
       "status": "reserva",
@@ -1007,7 +1007,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 20,
       "name": "Beatriz Cameirão",
       "ovr": 65,
       "status": "reserva",
@@ -1062,7 +1062,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Lara Martins",
       "ovr": 60,
       "status": "reserva",

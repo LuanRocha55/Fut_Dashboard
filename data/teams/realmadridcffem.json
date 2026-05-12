@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Alba Redondo",
       "ovr": 84,
       "status": "titular",
@@ -68,7 +68,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Caroline Weir",
       "ovr": 84,
       "status": "titular",
@@ -185,7 +185,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 2,
       "name": "Antônia Silva",
       "ovr": 82,
       "status": "titular",
@@ -244,7 +244,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 17,
       "name": "Athenea",
       "ovr": 82,
       "status": "titular",
@@ -299,7 +299,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 1,
       "name": "Misa",
       "ovr": 82,
       "status": "titular",
@@ -315,12 +315,12 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 84,
+        "seg": 77,
+        "esp": 91,
+        "ref": 80,
+        "pos": 84,
+        "vel": 63,
         "sta": 30
       },
       "detailedStats": {
@@ -355,7 +355,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Melanie Leupolz",
       "ovr": 81,
       "status": "titular",
@@ -468,7 +468,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 18,
       "name": "Tere Abelleira",
       "ovr": 80,
       "status": "titular",
@@ -527,7 +527,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 19,
       "name": "Naomie Feller",
       "ovr": 80,
       "status": "titular",
@@ -584,7 +584,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 13,
       "name": "Oihane Hernández",
       "ovr": 80,
       "status": "titular",
@@ -640,7 +640,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 4,
       "name": "Maëlle Lakrar",
       "ovr": 80,
       "status": "reserva",
@@ -697,7 +697,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Signe Bruun",
       "ovr": 79,
       "status": "reserva",
@@ -752,7 +752,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 7,
       "name": "Linda Caicedo",
       "ovr": 79,
       "status": "reserva",
@@ -809,7 +809,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 12,
       "name": "Mylène Chavas",
       "ovr": 79,
       "status": "reserva",
@@ -824,12 +824,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 79,
+        "seg": 78,
+        "esp": 89,
+        "ref": 81,
+        "pos": 79,
+        "vel": 41,
         "sta": 25
       },
       "detailedStats": {
@@ -864,7 +864,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 14,
       "name": "Rocío Gálvez",
       "ovr": 79,
       "status": "reserva",
@@ -923,7 +923,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 24,
       "name": "Shei",
       "ovr": 79,
       "status": "reserva",
@@ -979,7 +979,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 25,
       "name": "Maria Méndez",
       "ovr": 79,
       "status": "reserva",
@@ -1036,7 +1036,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Caroline Møller",
       "ovr": 79,
       "status": "reserva",
@@ -1091,7 +1091,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Maite Oroz",
       "ovr": 79,
       "status": "reserva",
@@ -1148,7 +1148,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 23,
       "name": "Filippa Angeldahl",
       "ovr": 78,
       "status": "reserva",
@@ -1203,7 +1203,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 31,
       "name": "Eva Navarro",
       "ovr": 78,
       "status": "reserva",
@@ -1258,7 +1258,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Carla Camacho",
       "ovr": 68,
       "status": "reserva",
@@ -1313,7 +1313,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 27,
       "name": "Sara López",
       "ovr": 60,
       "status": "reserva",

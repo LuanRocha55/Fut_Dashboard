@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Eíran Cashin",
       "ovr": 71,
       "status": "titular",
@@ -69,7 +69,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 14,
       "name": "Nathaniel Phillips",
       "ovr": 71,
       "status": "titular",
@@ -126,7 +126,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 1,
       "name": "Jacob Widell Zetterström",
       "ovr": 71,
       "status": "titular",
@@ -142,12 +142,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "alc": 78,
+        "seg": 70,
+        "esp": 85,
         "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "pos": 67,
+        "vel": 27,
         "sta": 17
       },
       "detailedStats": {
@@ -182,7 +182,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Nathaniel Méndez-Laing",
       "ovr": 70,
       "status": "titular",
@@ -240,7 +240,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 25,
       "name": "Curtis Nelson",
       "ovr": 70,
       "status": "titular",
@@ -297,7 +297,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 3,
       "name": "Ben Osborn",
       "ovr": 70,
       "status": "titular",
@@ -352,7 +352,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Ebou Adams",
       "ovr": 69,
       "status": "titular",
@@ -462,7 +462,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 10,
       "name": "Jerry Yates",
       "ovr": 69,
       "status": "titular",
@@ -517,7 +517,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 11,
       "name": "Corey Blackett-Taylor",
       "ovr": 68,
       "status": "titular",
@@ -573,7 +573,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 2,
       "name": "Ryan Nyambe",
       "ovr": 68,
       "status": "titular",
@@ -628,7 +628,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 19,
       "name": "James Collins",
       "ovr": 67,
       "status": "reserva",
@@ -683,7 +683,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 27,
       "name": "Marcus Harness",
       "ovr": 67,
       "status": "reserva",
@@ -738,7 +738,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 13,
       "name": "Joe Ward",
       "ovr": 67,
       "status": "reserva",
@@ -796,7 +796,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 24,
       "name": "Kane Wilson",
       "ovr": 67,
       "status": "reserva",
@@ -964,7 +964,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 26,
       "name": "Callum Elder",
       "ovr": 66,
       "status": "reserva",
@@ -1019,7 +1019,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 20,
       "name": "Craig Forsyth",
       "ovr": 66,
       "status": "reserva",
@@ -1075,7 +1075,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 12,
       "name": "Josh Vickers",
       "ovr": 66,
       "status": "reserva",
@@ -1090,12 +1090,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 65,
+        "esp": 73,
+        "ref": 66,
+        "pos": 64,
+        "vel": 45,
         "sta": 32
       },
       "detailedStats": {
@@ -1295,7 +1295,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 28,
       "name": "David Ozoh",
       "ovr": 63,
       "status": "reserva",
@@ -1350,7 +1350,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Jake Rooney",
       "ovr": 62,
       "status": "reserva",
@@ -1406,7 +1406,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 30,
       "name": "Dajaune Brown",
       "ovr": 56,
       "status": "reserva",
@@ -1461,7 +1461,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 18,
       "name": "Ben Radcliffe",
       "ovr": 55,
       "status": "reserva",
@@ -1516,7 +1516,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 31,
       "name": "Darren Robinson",
       "ovr": 55,
       "status": "reserva",
@@ -1571,7 +1571,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 32,
       "name": "Max Bardell",
       "ovr": 52,
       "status": "reserva",

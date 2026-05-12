@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Malik Abubakari",
       "ovr": 66,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Pascal Gregor",
       "ovr": 66,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 1,
       "name": "David Jensen",
       "ovr": 66,
       "status": "titular",
@@ -135,12 +135,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 65,
+        "esp": 72,
+        "ref": 66,
+        "pos": 67,
+        "vel": 34,
         "sta": 37
       },
       "detailedStats": {
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 14,
       "name": "Magnus R. Jensen",
       "ovr": 66,
       "status": "titular",
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 25,
       "name": "Andreas Bjelland",
       "ovr": 65,
       "status": "titular",
@@ -344,7 +344,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "Sævar Atli Magnússon",
       "ovr": 65,
       "status": "titular",
@@ -455,7 +455,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 7,
       "name": "Magnus Warming",
       "ovr": 65,
       "status": "titular",
@@ -510,7 +510,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 23,
       "name": "Rezan Corlu",
       "ovr": 64,
       "status": "titular",
@@ -566,7 +566,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 18,
       "name": "Casper Winther",
       "ovr": 64,
       "status": "titular",
@@ -621,7 +621,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 17,
       "name": "Jonathan Amon",
       "ovr": 63,
       "status": "reserva",
@@ -677,7 +677,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 19,
       "name": "Frederik Gytkjær",
       "ovr": 63,
       "status": "reserva",
@@ -732,7 +732,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Lucas Lissens",
       "ovr": 63,
       "status": "reserva",
@@ -788,7 +788,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 16,
       "name": "Brian Hämäläinen",
       "ovr": 62,
       "status": "reserva",
@@ -844,7 +844,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 2,
       "name": "Willy Kumado",
       "ovr": 62,
       "status": "reserva",
@@ -899,7 +899,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 12,
       "name": "Jannich Storch",
       "ovr": 62,
       "status": "reserva",
@@ -914,12 +914,12 @@
         "Far Reach"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 58,
+        "esp": 71,
+        "ref": 63,
+        "pos": 59,
+        "vel": 55,
         "sta": 25
       },
       "detailedStats": {
@@ -954,7 +954,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 13,
       "name": "Tobias Storm",
       "ovr": 62,
       "status": "reserva",
@@ -1009,7 +1009,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Jonas Krumrey",
       "ovr": 60,
       "status": "reserva",
@@ -1024,12 +1024,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 60,
+        "esp": 69,
+        "ref": 60,
+        "pos": 55,
+        "vel": 51,
         "sta": 33
       },
       "detailedStats": {
@@ -1064,7 +1064,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 30,
       "name": "Enock Otoo",
       "ovr": 59,
       "status": "reserva",
@@ -1119,7 +1119,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 20,
       "name": "Lauge Sandgrav",
       "ovr": 57,
       "status": "reserva",
@@ -1174,7 +1174,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Gustav Fraulo",
       "ovr": 55,
       "status": "reserva",
@@ -1229,7 +1229,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Baptiste Rolland",
       "ovr": 55,
       "status": "reserva",
@@ -1285,7 +1285,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 27,
       "name": "Adam Vendelbo",
       "ovr": 51,
       "status": "reserva",

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 5,
       "name": "Jordan Henderson",
       "ovr": 80,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 17,
       "name": "Steven Berghuis",
       "ovr": 79,
       "status": "titular",
@@ -125,7 +125,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Brian Brobbey",
       "ovr": 79,
       "status": "titular",
@@ -237,7 +237,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 10,
       "name": "Wout Weghorst",
       "ovr": 77,
       "status": "titular",
@@ -292,7 +292,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 19,
       "name": "Chuba Akpom",
       "ovr": 76,
       "status": "titular",
@@ -347,7 +347,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Daniele Rugani",
       "ovr": 76,
       "status": "titular",
@@ -403,7 +403,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 31,
       "name": "Bertrand Traoré",
       "ovr": 76,
       "status": "titular",
@@ -459,7 +459,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 8,
       "name": "Branco van den Boomen",
       "ovr": 76,
       "status": "titular",
@@ -518,7 +518,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 18,
       "name": "Kenneth Taylor",
       "ovr": 74,
       "status": "titular",
@@ -573,7 +573,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 25,
       "name": "Jorrel Hato",
       "ovr": 73,
       "status": "titular",
@@ -631,7 +631,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 1,
       "name": "Diant Ramaj",
       "ovr": 73,
       "status": "reserva",
@@ -647,12 +647,12 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 74,
+        "seg": 69,
+        "esp": 83,
+        "ref": 76,
+        "pos": 72,
+        "vel": 25,
         "sta": 26
       },
       "detailedStats": {
@@ -687,7 +687,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 2,
       "name": "Devyne Rensch",
       "ovr": 73,
       "status": "reserva",
@@ -743,7 +743,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 3,
       "name": "Owen Wijndal",
       "ovr": 73,
       "status": "reserva",
@@ -798,7 +798,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 12,
       "name": "Remko Pasveer",
       "ovr": 72,
       "status": "reserva",
@@ -813,12 +813,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
+        "alc": 70,
         "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "esp": 77,
+        "ref": 68,
+        "pos": 77,
+        "vel": 28,
         "sta": 35
       },
       "detailedStats": {
@@ -853,7 +853,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 22,
       "name": "Jay Gorter",
       "ovr": 71,
       "status": "reserva",
@@ -868,12 +868,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 72,
+        "seg": 65,
+        "esp": 82,
+        "ref": 76,
+        "pos": 71,
+        "vel": 48,
         "sta": 42
       },
       "detailedStats": {
@@ -908,7 +908,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 20,
       "name": "Ahmetcan Kaplan",
       "ovr": 71,
       "status": "reserva",
@@ -964,7 +964,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Gastón Ávila",
       "ovr": 70,
       "status": "reserva",
@@ -1020,7 +1020,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 23,
       "name": "Benjamin Tahirović",
       "ovr": 70,
       "status": "reserva",
@@ -1075,7 +1075,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 24,
       "name": "Kian Fitz-Jim",
       "ovr": 69,
       "status": "reserva",
@@ -1130,7 +1130,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 7,
       "name": "Mika Godts",
       "ovr": 69,
       "status": "reserva",
@@ -1186,7 +1186,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 30,
       "name": "Kristian Hlynsson",
       "ovr": 69,
       "status": "reserva",
@@ -1241,7 +1241,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Sivert Heggheim Mannsverk",
       "ovr": 68,
       "status": "reserva",
@@ -1296,7 +1296,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 16,
       "name": "Youri Baas",
       "ovr": 67,
       "status": "reserva",
@@ -1351,7 +1351,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 13,
       "name": "Anton Gaaei",
       "ovr": 67,
       "status": "reserva",
@@ -1406,7 +1406,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 32,
       "name": "Christian Rasmussen",
       "ovr": 65,
       "status": "reserva",
@@ -1461,7 +1461,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 29,
       "name": "Amourricho van Axel Dongen",
       "ovr": 65,
       "status": "reserva",
@@ -1571,7 +1571,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 33,
       "name": "Julian Rijkhoff",
       "ovr": 64,
       "status": "reserva",

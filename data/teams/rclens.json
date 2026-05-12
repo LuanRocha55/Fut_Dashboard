@@ -23,12 +23,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 79,
+        "seg": 83,
+        "esp": 91,
+        "ref": 84,
+        "pos": 81,
+        "vel": 60,
         "sta": 37
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Kevin Danso",
       "ovr": 80,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 14,
       "name": "Facundo Medina",
       "ovr": 80,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 2,
       "name": "Przemysław Frankowski",
       "ovr": 78,
       "status": "titular",
@@ -236,7 +236,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 25,
       "name": "Jonathan Gradit",
       "ovr": 78,
       "status": "titular",
@@ -293,7 +293,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 9,
       "name": "M'Bala Nzola",
       "ovr": 78,
       "status": "titular",
@@ -348,7 +348,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 13,
       "name": "Ruben Aguilar",
       "ovr": 77,
       "status": "titular",
@@ -405,7 +405,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 10,
       "name": "Florian Sotoca",
       "ovr": 77,
       "status": "titular",
@@ -462,7 +462,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "Deiver Machado",
       "ovr": 76,
       "status": "titular",
@@ -518,7 +518,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 8,
       "name": "Neil El Aynaoui",
       "ovr": 75,
       "status": "titular",
@@ -573,7 +573,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 23,
       "name": "Angelo Fulgini",
       "ovr": 75,
       "status": "titular",
@@ -628,7 +628,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 5,
       "name": "Nampalys Mendy",
       "ovr": 75,
       "status": "reserva",
@@ -683,7 +683,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 30,
       "name": "David Costa",
       "ovr": 75,
       "status": "reserva",
@@ -738,7 +738,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 19,
       "name": "Wesley Saïd",
       "ovr": 75,
       "status": "reserva",
@@ -793,7 +793,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 20,
       "name": "Martín Satriano",
       "ovr": 75,
       "status": "reserva",
@@ -904,7 +904,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 18,
       "name": "Andy Diouf",
       "ovr": 74,
       "status": "reserva",
@@ -960,7 +960,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 12,
       "name": "Hervé Koffi",
       "ovr": 73,
       "status": "reserva",
@@ -976,11 +976,11 @@
       ],
       "stats": {
         "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "seg": 69,
+        "esp": 84,
+        "ref": 76,
+        "pos": 67,
+        "vel": 53,
         "sta": 30
       },
       "detailedStats": {
@@ -1015,7 +1015,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 11,
       "name": "Anass Zaroury",
       "ovr": 73,
       "status": "reserva",
@@ -1071,7 +1071,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 24,
       "name": "Jimmy Cabot",
       "ovr": 72,
       "status": "reserva",
@@ -1126,7 +1126,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 26,
       "name": "Jhoanner Chávez",
       "ovr": 72,
       "status": "reserva",
@@ -1237,7 +1237,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 27,
       "name": "Malang Sarr",
       "ovr": 71,
       "status": "reserva",
@@ -1293,7 +1293,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 28,
       "name": "Rémy Labeau Lascary",
       "ovr": 65,
       "status": "reserva",
@@ -1348,7 +1348,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Tom Pouilly",
       "ovr": 58,
       "status": "reserva",

@@ -25,12 +25,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 73,
+        "seg": 72,
+        "esp": 83,
+        "ref": 76,
+        "pos": 74,
+        "vel": 46,
         "sta": 36
       },
       "detailedStats": {
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Nicolás Oroz",
       "ovr": 73,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Francisco Álvarez",
       "ovr": 72,
       "status": "titular",
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 18,
       "name": "Alan Lescano",
       "ovr": 72,
       "status": "titular",
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 2,
       "name": "Fernando Meza",
       "ovr": 72,
       "status": "titular",
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 9,
       "name": "Tomás Molina",
       "ovr": 71,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 20,
       "name": "Alan Rodríguez",
       "ovr": 71,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 10,
       "name": "Maximiliano Romero",
       "ovr": 71,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 19,
       "name": "Gastón Verón",
       "ovr": 71,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Jonathan Galván",
       "ovr": 70,
       "status": "titular",
@@ -565,7 +565,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 25,
       "name": "Erik Godoy",
       "ovr": 70,
       "status": "titular",
@@ -732,7 +732,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 5,
       "name": "Francis Mac Allister",
       "ovr": 69,
       "status": "reserva",
@@ -787,7 +787,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 3,
       "name": "Sebastián Prieto",
       "ovr": 69,
       "status": "reserva",
@@ -898,7 +898,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 11,
       "name": "Luciano Sánchez",
       "ovr": 68,
       "status": "reserva",
@@ -953,7 +953,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 26,
       "name": "Román Vega",
       "ovr": 68,
       "status": "reserva",
@@ -1008,7 +1008,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 17,
       "name": "Jose Herrera",
       "ovr": 66,
       "status": "reserva",
@@ -1063,7 +1063,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Miguel Acosta",
       "ovr": 65,
       "status": "reserva",
@@ -1078,12 +1078,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 62,
+        "esp": 73,
+        "ref": 64,
+        "pos": 62,
+        "vel": 48,
         "sta": 35
       },
       "detailedStats": {
@@ -1118,7 +1118,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 28,
       "name": "Emiliano Viveros",
       "ovr": 63,
       "status": "reserva",
@@ -1173,7 +1173,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Juan Cardozo",
       "ovr": 62,
       "status": "reserva",

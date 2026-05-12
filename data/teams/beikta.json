@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Rafa",
       "ovr": 83,
       "status": "titular",
@@ -68,7 +68,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Ciro Immobile",
       "ovr": 82,
       "status": "titular",
@@ -124,7 +124,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 5,
       "name": "Ali Al Musrati",
       "ovr": 80,
       "status": "titular",
@@ -183,7 +183,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Alex Oxlade-Chamberlain",
       "ovr": 78,
       "status": "titular",
@@ -239,7 +239,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 19,
       "name": "Vincent Aboubakar",
       "ovr": 77,
       "status": "titular",
@@ -297,7 +297,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 4,
       "name": "Gabriel Paulista",
       "ovr": 77,
       "status": "titular",
@@ -356,7 +356,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 18,
       "name": "Gedson Fernandes",
       "ovr": 77,
       "status": "titular",
@@ -415,7 +415,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 1,
       "name": "Mert Günok",
       "ovr": 77,
       "status": "titular",
@@ -432,12 +432,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 74,
+        "seg": 76,
+        "esp": 84,
+        "ref": 77,
+        "pos": 78,
+        "vel": 57,
         "sta": 39
       },
       "detailedStats": {
@@ -472,7 +472,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "Arthur Masuaku",
       "ovr": 76,
       "status": "titular",
@@ -528,7 +528,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 11,
       "name": "Milot Rashica",
       "ovr": 75,
       "status": "titular",
@@ -585,7 +585,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 2,
       "name": "Jonas Svensson",
       "ovr": 75,
       "status": "titular",
@@ -640,7 +640,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 14,
       "name": "Felix Uduokhai",
       "ovr": 75,
       "status": "reserva",
@@ -696,7 +696,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 23,
       "name": "Ernest Muçi",
       "ovr": 74,
       "status": "reserva",
@@ -751,7 +751,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 12,
       "name": "Ersin Destanoğlu",
       "ovr": 73,
       "status": "reserva",
@@ -766,12 +766,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 73,
+        "seg": 74,
+        "esp": 81,
+        "ref": 73,
+        "pos": 74,
+        "vel": 36,
         "sta": 24
       },
       "detailedStats": {
@@ -806,7 +806,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 20,
       "name": "Salih Uçan",
       "ovr": 73,
       "status": "reserva",
@@ -973,7 +973,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 13,
       "name": "Onur Bulut",
       "ovr": 69,
       "status": "reserva",
@@ -1028,7 +1028,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Cher Ndour",
       "ovr": 69,
       "status": "reserva",
@@ -1083,7 +1083,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 25,
       "name": "Tayyip Sanuç",
       "ovr": 69,
       "status": "reserva",
@@ -1141,7 +1141,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Emirhan Topçu",
       "ovr": 69,
       "status": "reserva",
@@ -1200,7 +1200,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Necip Uysal",
       "ovr": 69,
       "status": "reserva",
@@ -1256,7 +1256,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 27,
       "name": "Bakhtiyor Zainutdinov",
       "ovr": 69,
       "status": "reserva",
@@ -1311,7 +1311,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 28,
       "name": "Can Keleş",
       "ovr": 68,
       "status": "reserva",
@@ -1366,7 +1366,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "Serkan Emrecan Terzi",
       "ovr": 66,
       "status": "reserva",
@@ -1421,7 +1421,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Mustafa Erhan Hekimoğlu",
       "ovr": 62,
       "status": "reserva",
@@ -1476,7 +1476,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 30,
       "name": "Demir Ege Tıknaz",
       "ovr": 62,
       "status": "reserva",
@@ -1531,7 +1531,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 7,
       "name": "Yakup Arda Kılıç",
       "ovr": 57,
       "status": "reserva",

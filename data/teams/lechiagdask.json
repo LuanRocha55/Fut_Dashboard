@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Conrado",
       "ovr": 66,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Sergiy Buletsa",
       "ovr": 66,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 1,
       "name": "Bogdan Sarnavskyi",
       "ovr": 66,
       "status": "titular",
@@ -133,12 +133,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 63,
+        "esp": 73,
+        "ref": 68,
+        "pos": 64,
+        "vel": 52,
         "sta": 21
       },
       "detailedStats": {
@@ -173,7 +173,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 23,
       "name": "Anton Tsarenko",
       "ovr": 66,
       "status": "titular",
@@ -228,7 +228,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 30,
       "name": "Luis Fernández",
       "ovr": 65,
       "status": "titular",
@@ -283,7 +283,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Rifet Kapić",
       "ovr": 65,
       "status": "titular",
@@ -338,7 +338,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 9,
       "name": "Tomáš Bobček",
       "ovr": 64,
       "status": "titular",
@@ -393,7 +393,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 4,
       "name": "Andrei Chindriș",
       "ovr": 64,
       "status": "titular",
@@ -449,7 +449,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 5,
       "name": "Ivan Zhelizko",
       "ovr": 64,
       "status": "titular",
@@ -504,7 +504,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 21,
       "name": "Louis D'Arrigo",
       "ovr": 63,
       "status": "titular",
@@ -562,7 +562,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 2,
       "name": "Filip Koperski",
       "ovr": 63,
       "status": "titular",
@@ -617,7 +617,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 17,
       "name": "Camilo Mena",
       "ovr": 63,
       "status": "reserva",
@@ -728,7 +728,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 19,
       "name": "Kacper Sezonienko",
       "ovr": 63,
       "status": "reserva",
@@ -783,7 +783,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 20,
       "name": "Bohdan Viunnyk",
       "ovr": 63,
       "status": "reserva",
@@ -838,7 +838,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 27,
       "name": "Tomasz Wójtowicz",
       "ovr": 63,
       "status": "reserva",
@@ -893,7 +893,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 3,
       "name": "Miłosz Kałahur",
       "ovr": 62,
       "status": "reserva",
@@ -948,7 +948,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 14,
       "name": "Elias Olsson",
       "ovr": 62,
       "status": "reserva",
@@ -1004,7 +1004,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 25,
       "name": "Loup Diwan Gueho",
       "ovr": 61,
       "status": "reserva",
@@ -1060,7 +1060,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 24,
       "name": "Dominik Piła",
       "ovr": 59,
       "status": "reserva",
@@ -1115,7 +1115,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 12,
       "name": "Szymon Weirauch",
       "ovr": 58,
       "status": "reserva",
@@ -1130,12 +1130,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 57,
+        "seg": 56,
+        "esp": 66,
+        "ref": 62,
+        "pos": 57,
+        "vel": 33,
         "sta": 26
       },
       "detailedStats": {

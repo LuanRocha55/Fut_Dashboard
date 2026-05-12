@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Yusuf Sarı",
       "ovr": 75,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Andreaw Gravillon",
       "ovr": 74,
       "status": "titular",
@@ -123,7 +123,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 7,
       "name": "Nabil Alioui",
       "ovr": 70,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 14,
       "name": "Semih Güler",
       "ovr": 70,
       "status": "titular",
@@ -237,7 +237,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 10,
       "name": "Aksel Aktaş",
       "ovr": 65,
       "status": "titular",
@@ -292,7 +292,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 9,
       "name": "Yusuf Barası",
       "ovr": 65,
       "status": "titular",
@@ -347,7 +347,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Mahamadou Ba",
       "ovr": 64,
       "status": "titular",
@@ -402,7 +402,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 25,
       "name": "Jovan Manev",
       "ovr": 63,
       "status": "titular",
@@ -459,7 +459,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 19,
       "name": "Ali Yavuz Kol",
       "ovr": 62,
       "status": "titular",
@@ -514,7 +514,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 28,
       "name": "Florent Shehu",
       "ovr": 61,
       "status": "titular",
@@ -569,7 +569,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 12,
       "name": "Abdulsamet Burak",
       "ovr": 60,
       "status": "titular",
@@ -625,7 +625,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 1,
       "name": "Vedat Karakuş",
       "ovr": 59,
       "status": "reserva",
@@ -640,12 +640,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 58,
+        "esp": 71,
+        "ref": 65,
+        "pos": 53,
+        "vel": 28,
         "sta": 27
       },
       "detailedStats": {

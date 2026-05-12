@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Rose Lavelle",
       "ovr": 87,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Ann-Katrin Berger",
       "ovr": 84,
       "status": "titular",
@@ -83,12 +83,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 85,
+        "seg": 84,
+        "esp": 94,
+        "ref": 84,
+        "pos": 81,
+        "vel": 52,
         "sta": 29
       },
       "detailedStats": {
@@ -123,7 +123,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Crystal Dunn",
       "ovr": 84,
       "status": "titular",
@@ -180,7 +180,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 7,
       "name": "Lynn Williams",
       "ovr": 83,
       "status": "titular",
@@ -239,7 +239,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Emily Sonnett",
       "ovr": 82,
       "status": "titular",
@@ -299,7 +299,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 9,
       "name": "Esther",
       "ovr": 81,
       "status": "titular",
@@ -354,7 +354,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Tierna Davidson",
       "ovr": 80,
       "status": "titular",
@@ -410,7 +410,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 2,
       "name": "Kelley O'Hara",
       "ovr": 80,
       "status": "titular",
@@ -465,7 +465,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 17,
       "name": "Midge Purce",
       "ovr": 80,
       "status": "titular",
@@ -522,7 +522,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Maitane",
       "ovr": 79,
       "status": "titular",
@@ -581,7 +581,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 31,
       "name": "Yazmeen Ryan",
       "ovr": 78,
       "status": "titular",
@@ -637,7 +637,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 19,
       "name": "Katie Stengel",
       "ovr": 77,
       "status": "reserva",
@@ -749,7 +749,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 12,
       "name": "Abby Smith",
       "ovr": 76,
       "status": "reserva",
@@ -765,11 +765,11 @@
       ],
       "stats": {
         "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "seg": 76,
+        "esp": 84,
+        "ref": 77,
+        "pos": 76,
+        "vel": 47,
         "sta": 24
       },
       "detailedStats": {
@@ -804,7 +804,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 22,
       "name": "Cassie Miller",
       "ovr": 75,
       "status": "reserva",
@@ -819,12 +819,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 77,
+        "seg": 70,
+        "esp": 86,
+        "ref": 77,
+        "pos": 76,
+        "vel": 43,
         "sta": 39
       },
       "detailedStats": {
@@ -859,7 +859,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 5,
       "name": "McCall Zerboni",
       "ovr": 75,
       "status": "reserva",
@@ -914,7 +914,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 18,
       "name": "Michelle Betos",
       "ovr": 74,
       "status": "reserva",
@@ -929,11 +929,11 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "alc": 73,
+        "seg": 74,
+        "esp": 82,
         "ref": 75,
-        "pos": 75,
+        "pos": 74,
         "vel": 40,
         "sta": 34
       },
@@ -969,7 +969,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Nealy Martin",
       "ovr": 74,
       "status": "reserva",
@@ -1024,7 +1024,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 20,
       "name": "Ella Stevens",
       "ovr": 74,
       "status": "reserva",
@@ -1079,7 +1079,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 23,
       "name": "Svava Rós Gudmundsdóttir",
       "ovr": 73,
       "status": "reserva",
@@ -1134,7 +1134,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Bruninha",
       "ovr": 73,
       "status": "reserva",
@@ -1192,7 +1192,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Mandy Freeman",
       "ovr": 72,
       "status": "reserva",
@@ -1248,7 +1248,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 27,
       "name": "Delanie Sheehan",
       "ovr": 72,
       "status": "reserva",
@@ -1303,7 +1303,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 3,
       "name": "Jenna Nighswonger",
       "ovr": 71,
       "status": "reserva",
@@ -1358,7 +1358,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 28,
       "name": "Taryn Torres",
       "ovr": 71,
       "status": "reserva",

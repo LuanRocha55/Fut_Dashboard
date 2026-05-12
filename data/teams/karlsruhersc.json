@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Marvin Wanitzek",
       "ovr": 73,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Marcel Franke",
       "ovr": 71,
       "status": "titular",
@@ -124,7 +124,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 14,
       "name": "Robin Bormuth",
       "ovr": 70,
       "status": "titular",
@@ -180,7 +180,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 2,
       "name": "Sebastian Jung",
       "ovr": 70,
       "status": "titular",
@@ -237,7 +237,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 18,
       "name": "Robin Heußer",
       "ovr": 69,
       "status": "titular",
@@ -295,7 +295,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 9,
       "name": "Luca Pfeiffer",
       "ovr": 69,
       "status": "titular",
@@ -350,7 +350,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "Fabian Schleusener",
       "ovr": 69,
       "status": "titular",
@@ -405,7 +405,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 19,
       "name": "Budu Zivzivadze",
       "ovr": 69,
       "status": "titular",
@@ -460,7 +460,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 25,
       "name": "Marcel Beifus",
       "ovr": 68,
       "status": "titular",
@@ -518,7 +518,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 5,
       "name": "Dženis Burnić",
       "ovr": 68,
       "status": "titular",
@@ -573,7 +573,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 20,
       "name": "Leon Jensen",
       "ovr": 68,
       "status": "titular",
@@ -628,7 +628,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 21,
       "name": "Nicolai Rapp",
       "ovr": 68,
       "status": "reserva",
@@ -683,7 +683,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 1,
       "name": "Robin Himmelmann",
       "ovr": 67,
       "status": "reserva",
@@ -698,12 +698,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 63,
+        "esp": 77,
+        "ref": 70,
+        "pos": 65,
+        "vel": 34,
         "sta": 29
       },
       "detailedStats": {
@@ -738,7 +738,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Christoph Kobald",
       "ovr": 67,
       "status": "reserva",
@@ -794,7 +794,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 3,
       "name": "David Herold",
       "ovr": 66,
       "status": "reserva",
@@ -905,7 +905,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 26,
       "name": "Benedikt Bauer",
       "ovr": 62,
       "status": "reserva",
@@ -960,7 +960,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 12,
       "name": "Max Weiß",
       "ovr": 62,
       "status": "reserva",
@@ -975,12 +975,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 60,
+        "esp": 74,
+        "ref": 70,
+        "pos": 52,
+        "vel": 33,
         "sta": 23
       },
       "detailedStats": {
@@ -1015,7 +1015,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 11,
       "name": "Bambasé Conté",
       "ovr": 60,
       "status": "reserva",
@@ -1070,7 +1070,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 23,
       "name": "Ali Eren Ersungur",
       "ovr": 60,
       "status": "reserva",
@@ -1125,7 +1125,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Andrin Hunziker",
       "ovr": 57,
       "status": "reserva",
@@ -1180,7 +1180,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Aki Koch",
       "ovr": 57,
       "status": "reserva",
@@ -1195,12 +1195,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 56,
+        "esp": 68,
+        "ref": 62,
+        "pos": 57,
+        "vel": 20,
         "sta": 20
       },
       "detailedStats": {
@@ -1235,7 +1235,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 27,
       "name": "Efe-Kaan Sihlaroglu",
       "ovr": 57,
       "status": "reserva",
@@ -1290,7 +1290,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 28,
       "name": "Noah Rupp",
       "ovr": 56,
       "status": "reserva",

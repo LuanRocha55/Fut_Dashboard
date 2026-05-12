@@ -23,12 +23,12 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 65,
+        "esp": 80,
+        "ref": 73,
+        "pos": 70,
+        "vel": 42,
         "sta": 34
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Lukas Fadinger",
       "ovr": 68,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Paul Koller",
       "ovr": 68,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Mike-Steven Bähre",
       "ovr": 67,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 9,
       "name": "Lincoln",
       "ovr": 67,
       "status": "titular",
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 19,
       "name": "Lukas Fridrikas",
       "ovr": 67,
       "status": "titular",
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 11,
       "name": "Christian Gebauer",
       "ovr": 67,
       "status": "titular",
@@ -395,7 +395,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Lukas Gugganig",
       "ovr": 67,
       "status": "titular",
@@ -452,7 +452,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 23,
       "name": "Dijon Kameri",
       "ovr": 67,
       "status": "titular",
@@ -507,7 +507,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 5,
       "name": "Lukas Jäger",
       "ovr": 66,
       "status": "titular",
@@ -563,7 +563,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 20,
       "name": "Atdhe Nuhiu",
       "ovr": 66,
       "status": "titular",
@@ -619,7 +619,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 17,
       "name": "Sofian Bahloul",
       "ovr": 65,
       "status": "reserva",
@@ -729,7 +729,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 27,
       "name": "Leonardo Lukacevic",
       "ovr": 65,
       "status": "reserva",
@@ -784,7 +784,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "Pascal Estrada",
       "ovr": 64,
       "status": "reserva",
@@ -840,7 +840,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 2,
       "name": "Sandro Ingolitsch",
       "ovr": 64,
       "status": "reserva",
@@ -895,7 +895,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 18,
       "name": "Luca Kronberger",
       "ovr": 64,
       "status": "reserva",
@@ -950,7 +950,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Vesel Demaku",
       "ovr": 63,
       "status": "reserva",
@@ -1005,7 +1005,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 12,
       "name": "Ammar Helac",
       "ovr": 63,
       "status": "reserva",
@@ -1020,11 +1020,11 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 65,
+        "seg": 64,
+        "esp": 73,
+        "ref": 66,
+        "pos": 63,
         "vel": 40,
         "sta": 22
       },
@@ -1060,7 +1060,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 28,
       "name": "Oliver Strunz",
       "ovr": 63,
       "status": "reserva",
@@ -1115,7 +1115,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 3,
       "name": "Mohamed Ouédraogo",
       "ovr": 60,
       "status": "reserva",
@@ -1170,7 +1170,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Samuel Mischitz",
       "ovr": 59,
       "status": "reserva",
@@ -1225,7 +1225,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 22,
       "name": "Paul Piffer",
       "ovr": 57,
       "status": "reserva",
@@ -1240,12 +1240,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 59,
+        "seg": 52,
+        "esp": 66,
+        "ref": 60,
+        "pos": 55,
+        "vel": 27,
         "sta": 19
       },
       "detailedStats": {
@@ -1280,7 +1280,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Filip Milojevic",
       "ovr": 52,
       "status": "reserva",
@@ -1336,7 +1336,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Felix Oberwaditzer",
       "ovr": 51,
       "status": "reserva",

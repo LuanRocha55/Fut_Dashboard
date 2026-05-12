@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Andrés Mosquera",
       "ovr": 73,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Adrián Ramos",
       "ovr": 72,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 14,
       "name": "Daniel Bocanegra",
       "ovr": 71,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Joel Graterol",
       "ovr": 71,
       "status": "titular",
@@ -190,12 +190,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 68,
+        "esp": 79,
+        "ref": 72,
+        "pos": 72,
+        "vel": 16,
         "sta": 27
       },
       "detailedStats": {
@@ -230,7 +230,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 11,
       "name": "Cristian Barrios",
       "ovr": 70,
       "status": "titular",
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 3,
       "name": "Edwin Velasco",
       "ovr": 69,
       "status": "titular",
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 19,
       "name": "Alexis Zapata",
       "ovr": 69,
       "status": "titular",
@@ -395,7 +395,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 2,
       "name": "Nilson Castrillón",
       "ovr": 68,
       "status": "titular",
@@ -450,7 +450,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 5,
       "name": "Franco Leys",
       "ovr": 68,
       "status": "titular",
@@ -505,7 +505,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 21,
       "name": "Luis Paz",
       "ovr": 68,
       "status": "titular",
@@ -560,7 +560,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 23,
       "name": "Harold Rivera",
       "ovr": 68,
       "status": "titular",
@@ -615,7 +615,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 27,
       "name": "Ever Valencia",
       "ovr": 68,
       "status": "reserva",
@@ -670,7 +670,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 25,
       "name": "Jeisson Palacios",
       "ovr": 67,
       "status": "reserva",
@@ -726,7 +726,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 12,
       "name": "Jorge Soto",
       "ovr": 67,
       "status": "reserva",
@@ -741,12 +741,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 69,
+        "esp": 76,
+        "ref": 70,
+        "pos": 63,
+        "vel": 42,
         "sta": 42
       },
       "detailedStats": {

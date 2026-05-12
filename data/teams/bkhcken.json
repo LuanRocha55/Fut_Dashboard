@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Mikkel Rygaard",
       "ovr": 74,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 17,
       "name": "Amor Layouni",
       "ovr": 72,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Even Hovland",
       "ovr": 71,
       "status": "titular",
@@ -179,7 +179,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 14,
       "name": "Marius Lode",
       "ovr": 71,
       "status": "titular",
@@ -290,7 +290,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 1,
       "name": "Andreas Linde",
       "ovr": 70,
       "status": "titular",
@@ -305,12 +305,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 64,
+        "esp": 81,
+        "ref": 74,
+        "pos": 72,
+        "vel": 49,
         "sta": 25
       },
       "detailedStats": {
@@ -345,7 +345,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 25,
       "name": "Johan Hammar",
       "ovr": 68,
       "status": "titular",
@@ -401,7 +401,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 18,
       "name": "Samuel Leach Holm",
       "ovr": 68,
       "status": "titular",
@@ -456,7 +456,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 11,
       "name": "Lars Olden Larsen",
       "ovr": 68,
       "status": "titular",
@@ -511,7 +511,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 3,
       "name": "Jacob Barrett Laursen",
       "ovr": 68,
       "status": "titular",
@@ -566,7 +566,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 12,
       "name": "Peter Abrahamsson",
       "ovr": 67,
       "status": "titular",
@@ -581,12 +581,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
+        "alc": 67,
+        "seg": 68,
         "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "ref": 68,
+        "pos": 65,
+        "vel": 42,
         "sta": 25
       },
       "detailedStats": {
@@ -621,7 +621,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 7,
       "name": "Zeidane Inoussa",
       "ovr": 67,
       "status": "reserva",
@@ -676,7 +676,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 16,
       "name": "Adam Lundqvist",
       "ovr": 67,
       "status": "reserva",
@@ -731,7 +731,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 20,
       "name": "Romeo Amane",
       "ovr": 64,
       "status": "reserva",
@@ -788,7 +788,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 2,
       "name": "Axel Lindahl",
       "ovr": 64,
       "status": "reserva",
@@ -844,7 +844,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 31,
       "name": "Julius Lindberg",
       "ovr": 64,
       "status": "reserva",
@@ -899,7 +899,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 29,
       "name": "Ali Youssef",
       "ovr": 63,
       "status": "reserva",
@@ -954,7 +954,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 19,
       "name": "Pontus Dahbo",
       "ovr": 61,
       "status": "reserva",
@@ -1009,7 +1009,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Severin Nioule",
       "ovr": 60,
       "status": "reserva",
@@ -1064,7 +1064,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Nikola Zečević",
       "ovr": 58,
       "status": "reserva",
@@ -1120,7 +1120,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 23,
       "name": "Jeremy Agbonifo",
       "ovr": 57,
       "status": "reserva",
@@ -1175,7 +1175,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 13,
       "name": "Ben Engdahl",
       "ovr": 56,
       "status": "reserva",
@@ -1230,7 +1230,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 9,
       "name": "Filip Trpcevski",
       "ovr": 55,
       "status": "reserva",
@@ -1340,7 +1340,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 10,
       "name": "John Paul Dembe",
       "ovr": 53,
       "status": "reserva",

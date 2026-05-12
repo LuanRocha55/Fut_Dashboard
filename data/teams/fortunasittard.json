@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Ezequiel Bullaude",
       "ovr": 71,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Rodrigo Guth",
       "ovr": 71,
       "status": "titular",
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 23,
       "name": "Alen Halilović",
       "ovr": 71,
       "status": "titular",
@@ -236,7 +236,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 8,
       "name": "Samuel Bastien",
       "ovr": 70,
       "status": "titular",
@@ -291,7 +291,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 1,
       "name": "Mattijs Branderhorst",
       "ovr": 70,
       "status": "titular",
@@ -306,12 +306,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 68,
+        "esp": 79,
+        "ref": 71,
+        "pos": 69,
+        "vel": 39,
         "sta": 28
       },
       "detailedStats": {
@@ -346,7 +346,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Loreintz Rosier",
       "ovr": 70,
       "status": "titular",
@@ -401,7 +401,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 9,
       "name": "Kaj Sierhuis",
       "ovr": 70,
       "status": "titular",
@@ -456,7 +456,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "Shawn Adewoye",
       "ovr": 69,
       "status": "titular",
@@ -514,7 +514,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 3,
       "name": "Mitchell Dijks",
       "ovr": 69,
       "status": "titular",
@@ -624,7 +624,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 19,
       "name": "Alessio Da Cruz",
       "ovr": 67,
       "status": "reserva",
@@ -680,7 +680,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 27,
       "name": "Kristoffer Peterson",
       "ovr": 67,
       "status": "reserva",
@@ -735,7 +735,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 20,
       "name": "Ante Erceg",
       "ovr": 66,
       "status": "reserva",
@@ -790,7 +790,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "Darijo Grujčić",
       "ovr": 65,
       "status": "reserva",
@@ -846,7 +846,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 12,
       "name": "Luuk Koopmans",
       "ovr": 65,
       "status": "reserva",
@@ -861,12 +861,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 64,
+        "esp": 72,
+        "ref": 65,
+        "pos": 64,
+        "vel": 32,
         "sta": 20
       },
       "detailedStats": {
@@ -1012,7 +1012,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 28,
       "name": "Milan Robberechts",
       "ovr": 62,
       "status": "reserva",

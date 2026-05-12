@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Fábio Martins",
       "ovr": 76,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 19,
       "name": "Khaled Narey",
       "ovr": 74,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 1,
       "name": "Ibrahim Šehić",
       "ovr": 74,
       "status": "titular",
@@ -137,12 +137,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 74,
+        "esp": 80,
+        "ref": 74,
+        "pos": 77,
+        "vel": 35,
         "sta": 32
       },
       "detailedStats": {
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 3,
       "name": "Pedro Rebocho",
       "ovr": 72,
       "status": "titular",
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Marcel Tisserand",
       "ovr": 72,
       "status": "titular",
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 9,
       "name": "Mohamed Sherif",
       "ovr": 69,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 8,
       "name": "Mansour Hamzi",
       "ovr": 65,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Mohammed Khubrani",
       "ovr": 65,
       "status": "titular",
@@ -454,7 +454,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 25,
       "name": "Abdullah Al Fahad",
       "ovr": 62,
       "status": "titular",
@@ -510,7 +510,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 2,
       "name": "Saeed Al Hamsal",
       "ovr": 62,
       "status": "titular",
@@ -565,7 +565,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 5,
       "name": "Mo Adams",
       "ovr": 61,
       "status": "titular",
@@ -635,12 +635,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 56,
+        "esp": 67,
+        "ref": 60,
+        "pos": 65,
+        "vel": 32,
         "sta": 25
       },
       "detailedStats": {
@@ -675,7 +675,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 10,
       "name": "Abdullah Al Salem",
       "ovr": 61,
       "status": "reserva",
@@ -730,7 +730,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 18,
       "name": "Khaled Al Samiri",
       "ovr": 61,
       "status": "reserva",
@@ -785,7 +785,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 13,
       "name": "Aref Al Haider",
       "ovr": 60,
       "status": "reserva",
@@ -895,7 +895,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 24,
       "name": "Omar Al Owdah",
       "ovr": 58,
       "status": "reserva",
@@ -950,7 +950,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Hisham Al Dubais",
       "ovr": 57,
       "status": "reserva",
@@ -1005,7 +1005,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Rayan Al Dawsari",
       "ovr": 50,
       "status": "reserva",
@@ -1020,12 +1020,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 48,
+        "seg": 50,
+        "esp": 55,
+        "ref": 51,
+        "pos": 50,
+        "vel": 31,
         "sta": 19
       },
       "detailedStats": {

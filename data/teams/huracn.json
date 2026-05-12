@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Rodrigo Echeverría",
       "ovr": 74,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 5,
       "name": "Federico Fattori",
       "ovr": 74,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 1,
       "name": "Hernán Galíndez",
       "ovr": 74,
       "status": "titular",
@@ -134,12 +134,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 74,
+        "seg": 73,
+        "esp": 82,
+        "ref": 74,
+        "pos": 76,
+        "vel": 30,
         "sta": 28
       },
       "detailedStats": {
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 12,
       "name": "Sebastián Meza",
       "ovr": 72,
       "status": "titular",
@@ -189,12 +189,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 72,
+        "seg": 70,
+        "esp": 81,
+        "ref": 73,
+        "pos": 71,
+        "vel": 35,
         "sta": 28
       },
       "detailedStats": {
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Fabio Pereyra",
       "ovr": 71,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 18,
       "name": "Alan Soñora",
       "ovr": 71,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 9,
       "name": "Ramón Ábila",
       "ovr": 70,
       "status": "titular",
@@ -399,7 +399,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 2,
       "name": "Hernán De La Fuente",
       "ovr": 70,
       "status": "titular",
@@ -454,7 +454,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 11,
       "name": "Héctor Fertoli",
       "ovr": 70,
       "status": "titular",
@@ -509,7 +509,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Fernando Tobio",
       "ovr": 70,
       "status": "titular",
@@ -565,7 +565,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Rodrigo Cabral",
       "ovr": 69,
       "status": "titular",
@@ -620,7 +620,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 28,
       "name": "Walter Mazzantti",
       "ovr": 69,
       "status": "reserva",
@@ -676,7 +676,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 10,
       "name": "Franco Watson",
       "ovr": 69,
       "status": "reserva",
@@ -731,7 +731,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 20,
       "name": "Williams Alarcón",
       "ovr": 68,
       "status": "reserva",
@@ -841,7 +841,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 25,
       "name": "Guillermo Burdisso",
       "ovr": 67,
       "status": "reserva",
@@ -898,7 +898,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 13,
       "name": "Lucas Souto",
       "ovr": 67,
       "status": "reserva",
@@ -953,7 +953,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 27,
       "name": "Franco Alfonso",
       "ovr": 66,
       "status": "reserva",
@@ -1008,7 +1008,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 3,
       "name": "Guillermo Benítez",
       "ovr": 66,
       "status": "reserva",
@@ -1063,7 +1063,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 21,
       "name": "Lucas Carrizo",
       "ovr": 66,
       "status": "reserva",
@@ -1119,7 +1119,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 16,
       "name": "Cesar Ibañez",
       "ovr": 66,
       "status": "reserva",
@@ -1174,7 +1174,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Agustín Toledo",
       "ovr": 66,
       "status": "reserva",
@@ -1229,7 +1229,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 17,
       "name": "Sebastián Ramírez",
       "ovr": 63,
       "status": "reserva",

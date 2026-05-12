@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Iñigo Vicente",
       "ovr": 75,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Unai Vencedor",
       "ovr": 74,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 1,
       "name": "Ezkieta",
       "ovr": 72,
       "status": "titular",
@@ -138,12 +138,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "alc": 71,
+        "seg": 70,
+        "esp": 81,
         "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "pos": 69,
+        "vel": 49,
         "sta": 38
       },
       "detailedStats": {
@@ -235,7 +235,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 19,
       "name": "Lago Júnior",
       "ovr": 70,
       "status": "titular",
@@ -292,7 +292,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 28,
       "name": "Andrés Martín",
       "ovr": 70,
       "status": "titular",
@@ -347,7 +347,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 3,
       "name": "Saúl",
       "ovr": 69,
       "status": "titular",
@@ -402,7 +402,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 2,
       "name": "Clément Michelin",
       "ovr": 69,
       "status": "titular",
@@ -512,7 +512,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 12,
       "name": "Miquel Parera",
       "ovr": 67,
       "status": "titular",
@@ -527,12 +527,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 65,
+        "esp": 78,
+        "ref": 70,
+        "pos": 61,
+        "vel": 37,
         "sta": 44
       },
       "detailedStats": {
@@ -567,7 +567,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 5,
       "name": "Aldasoro",
       "ovr": 66,
       "status": "titular",
@@ -622,7 +622,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 10,
       "name": "Karrikaburu",
       "ovr": 66,
       "status": "reserva",
@@ -677,7 +677,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 14,
       "name": "Pol Moreno",
       "ovr": 66,
       "status": "reserva",
@@ -733,7 +733,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 20,
       "name": "Pablo Rodríguez",
       "ovr": 66,
       "status": "reserva",
@@ -788,7 +788,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 21,
       "name": "Íñigo Sainz-Maza",
       "ovr": 66,
       "status": "reserva",
@@ -953,7 +953,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 25,
       "name": "Manu Hernando",
       "ovr": 65,
       "status": "reserva",
@@ -1009,7 +1009,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 13,
       "name": "Mantilla",
       "ovr": 65,
       "status": "reserva",
@@ -1064,7 +1064,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Javi Castro",
       "ovr": 64,
       "status": "reserva",
@@ -1120,7 +1120,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 26,
       "name": "Mario García",
       "ovr": 63,
       "status": "reserva",
@@ -1175,7 +1175,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Jeremy",
       "ovr": 59,
       "status": "reserva",
@@ -1230,7 +1230,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 18,
       "name": "Dani González",
       "ovr": 55,
       "status": "reserva",

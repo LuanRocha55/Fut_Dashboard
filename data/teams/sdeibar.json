@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 5,
       "name": "Sergio Álvarez",
       "ovr": 74,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Toni Villa",
       "ovr": 74,
       "status": "titular",
@@ -123,7 +123,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Arbilla",
       "ovr": 73,
       "status": "titular",
@@ -183,7 +183,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 19,
       "name": "Corpas",
       "ovr": 72,
       "status": "titular",
@@ -240,7 +240,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 21,
       "name": "Matheus Pereira",
       "ovr": 71,
       "status": "titular",
@@ -297,7 +297,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 28,
       "name": "Alkain",
       "ovr": 70,
       "status": "titular",
@@ -352,7 +352,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 1,
       "name": "Fuzato",
       "ovr": 70,
       "status": "titular",
@@ -367,12 +367,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 69,
+        "esp": 76,
+        "ref": 70,
+        "pos": 71,
+        "vel": 23,
         "sta": 22
       },
       "detailedStats": {
@@ -407,7 +407,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Cristian Gutiérrez",
       "ovr": 70,
       "status": "titular",
@@ -462,7 +462,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 7,
       "name": "Merquelanz",
       "ovr": 70,
       "status": "titular",
@@ -573,7 +573,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 9,
       "name": "Jon Bautista",
       "ovr": 69,
       "status": "titular",
@@ -628,7 +628,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 23,
       "name": "Nolaskoain",
       "ovr": 69,
       "status": "reserva",
@@ -685,7 +685,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 14,
       "name": "Chema",
       "ovr": 69,
       "status": "reserva",
@@ -741,7 +741,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 25,
       "name": "Arambarri",
       "ovr": 68,
       "status": "reserva",
@@ -797,7 +797,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 2,
       "name": "Cubero",
       "ovr": 66,
       "status": "reserva",
@@ -852,7 +852,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 12,
       "name": "Magunagoitia",
       "ovr": 66,
       "status": "reserva",
@@ -867,12 +867,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 66,
+        "esp": 74,
+        "ref": 69,
+        "pos": 64,
+        "vel": 28,
         "sta": 25
       },
       "detailedStats": {
@@ -907,7 +907,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 20,
       "name": "Jorge Pascual",
       "ovr": 65,
       "status": "reserva",
@@ -962,7 +962,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 17,
       "name": "Eric Pérez",
       "ovr": 63,
       "status": "reserva",
@@ -1017,7 +1017,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Troncho",
       "ovr": 63,
       "status": "reserva",
@@ -1072,7 +1072,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 16,
       "name": "Hodei Arrillaga",
       "ovr": 60,
       "status": "reserva",
@@ -1127,7 +1127,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 30,
       "name": "Mada",
       "ovr": 57,
       "status": "reserva",
@@ -1182,7 +1182,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Iker Aldai",
       "ovr": 55,
       "status": "reserva",
@@ -1238,7 +1238,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Ibon Ispizua",
       "ovr": 55,
       "status": "reserva",
@@ -1253,12 +1253,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 55,
+        "seg": 59,
+        "esp": 61,
+        "ref": 54,
+        "pos": 51,
+        "vel": 31,
         "sta": 21
       },
       "detailedStats": {

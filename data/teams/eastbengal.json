@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Dimitris Diamantakos",
       "ovr": 71,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Cleiton Silva",
       "ovr": 68,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Héctor Yuste",
       "ovr": 67,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Saúl Crespo",
       "ovr": 66,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 23,
       "name": "Madih Talal",
       "ovr": 63,
       "status": "titular",
@@ -284,7 +284,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 3,
       "name": "Nishu Kumar",
       "ovr": 61,
       "status": "titular",
@@ -339,7 +339,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 1,
       "name": "Prabhsukhan Singh Gill",
       "ovr": 61,
       "status": "titular",
@@ -354,12 +354,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 65,
+        "esp": 67,
+        "ref": 60,
+        "pos": 64,
+        "vel": 29,
         "sta": 22
       },
       "detailedStats": {
@@ -394,7 +394,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Anwar Ali",
       "ovr": 59,
       "status": "titular",
@@ -450,7 +450,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 11,
       "name": "Naorem Mahesh Singh",
       "ovr": 59,
       "status": "titular",
@@ -505,7 +505,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 5,
       "name": "Jeakson Singh Thounaojam",
       "ovr": 59,
       "status": "titular",
@@ -560,7 +560,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Nandha Kumar Sekar",
       "ovr": 58,
       "status": "titular",
@@ -615,7 +615,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 28,
       "name": "Suhair Vadakkepeedika",
       "ovr": 57,
       "status": "reserva",
@@ -670,7 +670,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 2,
       "name": "Edwin Sydney Vanspaul",
       "ovr": 57,
       "status": "reserva",
@@ -725,7 +725,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 12,
       "name": "Debjit Majumder",
       "ovr": 56,
       "status": "reserva",
@@ -740,12 +740,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 51,
+        "esp": 66,
+        "ref": 60,
+        "pos": 55,
+        "vel": 44,
         "sta": 28
       },
       "detailedStats": {
@@ -780,7 +780,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 13,
       "name": "Souvik Chakrabarti",
       "ovr": 55,
       "status": "reserva",
@@ -835,7 +835,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 24,
       "name": "Provat Lakra",
       "ovr": 55,
       "status": "reserva",
@@ -890,7 +890,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 25,
       "name": "Lalchungnunga Lalchungnunga",
       "ovr": 55,
       "status": "reserva",
@@ -946,7 +946,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 22,
       "name": "Kamaljit Singh",
       "ovr": 55,
       "status": "reserva",
@@ -961,12 +961,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 55,
+        "seg": 49,
+        "esp": 62,
+        "ref": 57,
+        "pos": 54,
+        "vel": 31,
         "sta": 30
       },
       "detailedStats": {
@@ -1001,7 +1001,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 16,
       "name": "Hira Mondal",
       "ovr": 53,
       "status": "reserva",
@@ -1168,7 +1168,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 18,
       "name": "Vanlalpeka Guite",
       "ovr": 51,
       "status": "reserva",
@@ -1223,7 +1223,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Mark Zothanpuia",
       "ovr": 48,
       "status": "reserva",

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 3,
       "name": "Ashleigh Neville",
       "ovr": 83,
       "status": "titular",
@@ -69,7 +69,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Bethany England",
       "ovr": 82,
       "status": "titular",
@@ -125,7 +125,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Molly Bartrip",
       "ovr": 79,
       "status": "titular",
@@ -183,7 +183,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 17,
       "name": "Wang Shuang",
       "ovr": 79,
       "status": "titular",
@@ -240,7 +240,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 16,
       "name": "Amanda Nildén",
       "ovr": 78,
       "status": "titular",
@@ -295,7 +295,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Luana Bühler",
       "ovr": 77,
       "status": "titular",
@@ -353,7 +353,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 25,
       "name": "Clare Hunt",
       "ovr": 77,
       "status": "titular",
@@ -409,7 +409,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 10,
       "name": "Martha Thomas",
       "ovr": 77,
       "status": "titular",
@@ -464,7 +464,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 11,
       "name": "Celin Bizet",
       "ovr": 76,
       "status": "titular",
@@ -522,7 +522,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 19,
       "name": "Jessica Naz",
       "ovr": 76,
       "status": "titular",
@@ -577,7 +577,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 1,
       "name": "Becky Spencer",
       "ovr": 76,
       "status": "titular",
@@ -593,12 +593,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 76,
+        "seg": 76,
+        "esp": 82,
+        "ref": 71,
+        "pos": 79,
+        "vel": 45,
         "sta": 25
       },
       "detailedStats": {
@@ -633,7 +633,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 8,
       "name": "Eveliina Summanen",
       "ovr": 76,
       "status": "reserva",
@@ -690,7 +690,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 18,
       "name": "Drew Spence",
       "ovr": 74,
       "status": "reserva",
@@ -747,7 +747,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 20,
       "name": "Olga Ahtinen",
       "ovr": 72,
       "status": "reserva",
@@ -802,7 +802,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 2,
       "name": "Charlotte Grant",
       "ovr": 71,
       "status": "reserva",
@@ -857,7 +857,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 23,
       "name": "Kit Graham",
       "ovr": 70,
       "status": "reserva",
@@ -913,7 +913,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 21,
       "name": "Amy Turner",
       "ovr": 68,
       "status": "reserva",
@@ -969,7 +969,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 22,
       "name": "Matilda Vinberg",
       "ovr": 65,
       "status": "reserva",
@@ -1024,7 +1024,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 24,
       "name": "Lenna Gunning-Williams",
       "ovr": 57,
       "status": "reserva",
@@ -1079,7 +1079,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 12,
       "name": "Eleanor Heeps",
       "ovr": 57,
       "status": "reserva",
@@ -1094,12 +1094,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 57,
+        "seg": 59,
+        "esp": 64,
+        "ref": 59,
+        "pos": 53,
+        "vel": 41,
         "sta": 22
       },
       "detailedStats": {
@@ -1134,7 +1134,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 26,
       "name": "Araya Dennis",
       "ovr": 53,
       "status": "reserva",

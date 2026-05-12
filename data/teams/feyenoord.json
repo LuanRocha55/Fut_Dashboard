@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Dávid Hancko",
       "ovr": 81,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Santiago Giménez",
       "ovr": 79,
       "status": "titular",
@@ -123,7 +123,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Quinten Timber",
       "ovr": 79,
       "status": "titular",
@@ -181,7 +181,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 14,
       "name": "Gernot Trauner",
       "ovr": 78,
       "status": "titular",
@@ -238,7 +238,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 7,
       "name": "Igor Paixão",
       "ovr": 77,
       "status": "titular",
@@ -295,7 +295,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 1,
       "name": "Justin Bijlow",
       "ovr": 77,
       "status": "titular",
@@ -311,12 +311,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
+        "alc": 80,
         "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "esp": 87,
+        "ref": 77,
+        "pos": 74,
+        "vel": 48,
         "sta": 30
       },
       "detailedStats": {
@@ -351,7 +351,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 11,
       "name": "Quilindschy Hartman",
       "ovr": 77,
       "status": "titular",
@@ -408,7 +408,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 10,
       "name": "Calvin Stengs",
       "ovr": 77,
       "status": "titular",
@@ -466,7 +466,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 17,
       "name": "Luka Ivanušec",
       "ovr": 76,
       "status": "titular",
@@ -524,7 +524,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 12,
       "name": "Timon Wellenreuther",
       "ovr": 76,
       "status": "titular",
@@ -540,12 +540,12 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
+        "alc": 77,
         "seg": 75,
-        "esp": 75,
-        "ref": 75,
+        "esp": 85,
+        "ref": 76,
         "pos": 75,
-        "vel": 40,
+        "vel": 54,
         "sta": 37
       },
       "detailedStats": {
@@ -580,7 +580,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 2,
       "name": "Jordan Lotomba",
       "ovr": 75,
       "status": "titular",
@@ -635,7 +635,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 19,
       "name": "Bart Nieuwkoop",
       "ovr": 75,
       "status": "reserva",
@@ -690,7 +690,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 5,
       "name": "Ramiz Zerrouki",
       "ovr": 75,
       "status": "reserva",
@@ -746,7 +746,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 27,
       "name": "Gijs Smal",
       "ovr": 74,
       "status": "reserva",
@@ -804,7 +804,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 20,
       "name": "Ayase Ueda",
       "ovr": 74,
       "status": "reserva",
@@ -860,7 +860,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 25,
       "name": "Thomas Beelen",
       "ovr": 73,
       "status": "reserva",
@@ -916,7 +916,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 18,
       "name": "Julián Carranza",
       "ovr": 73,
       "status": "reserva",
@@ -971,7 +971,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 3,
       "name": "Hugo Bueno",
       "ovr": 72,
       "status": "reserva",
@@ -1026,7 +1026,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 31,
       "name": "Anis Hadj-Moussa",
       "ovr": 67,
       "status": "reserva",
@@ -1081,7 +1081,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 23,
       "name": "Antoni Milambo",
       "ovr": 66,
       "status": "reserva",
@@ -1249,7 +1249,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Gjivai Zechiël",
       "ovr": 64,
       "status": "reserva",
@@ -1306,7 +1306,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 28,
       "name": "Givairo Read",
       "ovr": 62,
       "status": "reserva",
@@ -1361,7 +1361,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 32,
       "name": "Jaden Slory",
       "ovr": 62,
       "status": "reserva",
@@ -1431,12 +1431,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 59,
+        "seg": 69,
+        "esp": 64,
+        "ref": 56,
+        "pos": 58,
+        "vel": 20,
         "sta": 25
       },
       "detailedStats": {

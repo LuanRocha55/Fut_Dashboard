@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Sophia Smith",
       "ovr": 89,
       "status": "titular",
@@ -68,7 +68,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Becky Sauerbrunn",
       "ovr": 85,
       "status": "titular",
@@ -126,7 +126,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "Christine Sinclair",
       "ovr": 83,
       "status": "titular",
@@ -184,7 +184,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Hina Sugita",
       "ovr": 83,
       "status": "titular",
@@ -244,7 +244,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 1,
       "name": "Bella Bixby",
       "ovr": 82,
       "status": "titular",
@@ -259,12 +259,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 83,
+        "seg": 79,
+        "esp": 94,
+        "ref": 87,
+        "pos": 80,
+        "vel": 43,
         "sta": 39
       },
       "detailedStats": {
@@ -299,7 +299,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 3,
       "name": "Meghan Klingenberg",
       "ovr": 82,
       "status": "titular",
@@ -355,7 +355,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 18,
       "name": "Jessie Fleming",
       "ovr": 80,
       "status": "titular",
@@ -410,7 +410,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 20,
       "name": "Sam Coffey",
       "ovr": 79,
       "status": "titular",
@@ -470,7 +470,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 16,
       "name": "Marie Müller",
       "ovr": 79,
       "status": "titular",
@@ -531,7 +531,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 7,
       "name": "Morgan Weaver",
       "ovr": 79,
       "status": "titular",
@@ -589,7 +589,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 14,
       "name": "Kelli Hubly",
       "ovr": 77,
       "status": "titular",
@@ -700,7 +700,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 22,
       "name": "Shelby Hogan",
       "ovr": 75,
       "status": "reserva",
@@ -715,12 +715,12 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 78,
+        "seg": 70,
+        "esp": 84,
+        "ref": 73,
+        "pos": 72,
+        "vel": 45,
         "sta": 35
       },
       "detailedStats": {
@@ -755,7 +755,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 25,
       "name": "Gabby Provenzano",
       "ovr": 71,
       "status": "reserva",
@@ -826,12 +826,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 76,
+        "seg": 67,
+        "esp": 79,
+        "ref": 66,
+        "pos": 68,
+        "vel": 32,
         "sta": 24
       },
       "detailedStats": {
@@ -866,7 +866,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 17,
       "name": "Isabella Obaze",
       "ovr": 70,
       "status": "reserva",
@@ -922,7 +922,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 2,
       "name": "Nicole Payne",
       "ovr": 70,
       "status": "reserva",
@@ -977,7 +977,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 13,
       "name": "Reyna Reyes",
       "ovr": 70,
       "status": "reserva",
@@ -1032,7 +1032,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 23,
       "name": "Marissa Sheva",
       "ovr": 70,
       "status": "reserva",
@@ -1087,7 +1087,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 21,
       "name": "Lauren Kozal",
       "ovr": 68,
       "status": "reserva",
@@ -1102,12 +1102,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 67,
+        "esp": 74,
+        "ref": 65,
+        "pos": 69,
+        "vel": 37,
         "sta": 21
       },
       "detailedStats": {
@@ -1142,7 +1142,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 19,
       "name": "Payton Linnehan",
       "ovr": 68,
       "status": "reserva",
@@ -1197,7 +1197,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Izzy D'Aquila",
       "ovr": 67,
       "status": "reserva",
@@ -1252,7 +1252,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 5,
       "name": "Sophie Hirst",
       "ovr": 67,
       "status": "reserva",
@@ -1307,7 +1307,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Mallie McKenzie",
       "ovr": 67,
       "status": "reserva",
@@ -1363,7 +1363,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 27,
       "name": "Olivia Wade-Katoa",
       "ovr": 67,
       "status": "reserva",
@@ -1418,7 +1418,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 28,
       "name": "Ana Dias",
       "ovr": 66,
       "status": "reserva",

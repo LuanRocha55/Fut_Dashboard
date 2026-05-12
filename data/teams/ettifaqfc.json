@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Seko Fofana",
       "ovr": 80,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 18,
       "name": "Medrán",
       "ovr": 79,
       "status": "titular",
@@ -124,7 +124,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 20,
       "name": "Georginio Wijnaldum",
       "ovr": 78,
       "status": "titular",
@@ -180,7 +180,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 7,
       "name": "Demarai Gray",
       "ovr": 76,
       "status": "titular",
@@ -235,7 +235,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 9,
       "name": "Moussa Dembélé",
       "ovr": 75,
       "status": "titular",
@@ -290,7 +290,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 4,
       "name": "Jack Hendry",
       "ovr": 75,
       "status": "titular",
@@ -346,7 +346,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 1,
       "name": "Marek Rodák",
       "ovr": 74,
       "status": "titular",
@@ -361,12 +361,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "alc": 74,
+        "seg": 71,
+        "esp": 83,
         "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "pos": 72,
+        "vel": 41,
         "sta": 27
       },
       "detailedStats": {
@@ -401,7 +401,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 17,
       "name": "Karl Toko Ekambi",
       "ovr": 74,
       "status": "titular",
@@ -456,7 +456,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 10,
       "name": "Vitinho",
       "ovr": 69,
       "status": "titular",
@@ -511,7 +511,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 5,
       "name": "Abdulelah Al Malki",
       "ovr": 66,
       "status": "titular",
@@ -566,7 +566,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 2,
       "name": "Radhi Al Otaibi",
       "ovr": 66,
       "status": "titular",
@@ -621,7 +621,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 14,
       "name": "Abdulbasit Hindi",
       "ovr": 66,
       "status": "reserva",
@@ -677,7 +677,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 25,
       "name": "Abdullah Madu",
       "ovr": 66,
       "status": "reserva",
@@ -733,7 +733,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 3,
       "name": "Abdullah Al Khatib",
       "ovr": 65,
       "status": "reserva",
@@ -788,7 +788,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 13,
       "name": "Madallah Al Olayan",
       "ovr": 65,
       "status": "reserva",
@@ -843,7 +843,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 12,
       "name": "Ahmad Al Ruhaili",
       "ovr": 61,
       "status": "reserva",
@@ -858,12 +858,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 59,
+        "esp": 67,
+        "ref": 59,
+        "pos": 60,
+        "vel": 39,
         "sta": 33
       },
       "detailedStats": {
@@ -898,7 +898,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 19,
       "name": "Abdullah Radif",
       "ovr": 61,
       "status": "reserva",
@@ -953,7 +953,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 24,
       "name": "Mohammed Abdulrahman",
       "ovr": 58,
       "status": "reserva",
@@ -1008,7 +1008,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 11,
       "name": "Abdulaziz Al Olewah",
       "ovr": 58,
       "status": "reserva",
@@ -1063,7 +1063,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 28,
       "name": "Nawaf Hazazi",
       "ovr": 54,
       "status": "reserva",
@@ -1118,7 +1118,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Belal Al Doaa",
       "ovr": 51,
       "status": "reserva",
@@ -1133,12 +1133,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 56,
+        "seg": 50,
+        "esp": 62,
+        "ref": 56,
+        "pos": 41,
+        "vel": 37,
         "sta": 28
       },
       "detailedStats": {

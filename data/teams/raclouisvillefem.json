@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Abby Erceg",
       "ovr": 81,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Katie Lund",
       "ovr": 80,
       "status": "titular",
@@ -80,12 +80,12 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 78,
+        "seg": 78,
+        "esp": 89,
+        "ref": 83,
+        "pos": 79,
+        "vel": 43,
         "sta": 39
       },
       "detailedStats": {
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "Savannah DeMelo",
       "ovr": 79,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 14,
       "name": "Arin Wright",
       "ovr": 79,
       "status": "titular",
@@ -294,7 +294,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 21,
       "name": "Marisa DiGrande",
       "ovr": 77,
       "status": "titular",
@@ -349,7 +349,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 8,
       "name": "Jordan Baggett",
       "ovr": 75,
       "status": "titular",
@@ -404,7 +404,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 2,
       "name": "Lauren Milliet",
       "ovr": 75,
       "status": "titular",
@@ -459,7 +459,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 18,
       "name": "Linda Motlhalo",
       "ovr": 75,
       "status": "titular",
@@ -518,7 +518,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 3,
       "name": "Courtney Petersen",
       "ovr": 74,
       "status": "titular",
@@ -573,7 +573,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 20,
       "name": "Ary Borges",
       "ovr": 73,
       "status": "titular",
@@ -629,7 +629,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 11,
       "name": "Uchenna Kanu",
       "ovr": 73,
       "status": "reserva",
@@ -684,7 +684,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 12,
       "name": "Jordyn Bloomer",
       "ovr": 72,
       "status": "reserva",
@@ -699,12 +699,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 68,
+        "esp": 82,
+        "ref": 77,
+        "pos": 72,
+        "vel": 43,
         "sta": 35
       },
       "detailedStats": {
@@ -739,7 +739,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 9,
       "name": "Kirsten Wright",
       "ovr": 72,
       "status": "reserva",
@@ -794,7 +794,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "Elli Pikkujämsä",
       "ovr": 71,
       "status": "reserva",
@@ -850,7 +850,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 23,
       "name": "Kayla Fischer",
       "ovr": 70,
       "status": "reserva",
@@ -905,7 +905,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 19,
       "name": "Parker Goins",
       "ovr": 70,
       "status": "reserva",
@@ -960,7 +960,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 28,
       "name": "Emma Sears",
       "ovr": 70,
       "status": "reserva",
@@ -1015,7 +1015,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Elexa Bahr",
       "ovr": 69,
       "status": "reserva",
@@ -1070,7 +1070,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 24,
       "name": "Ellie Jean",
       "ovr": 69,
       "status": "reserva",
@@ -1126,7 +1126,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 26,
       "name": "Olivia Sekany",
       "ovr": 69,
       "status": "reserva",
@@ -1141,12 +1141,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
+        "alc": 65,
+        "seg": 69,
         "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "ref": 70,
+        "pos": 69,
+        "vel": 32,
         "sta": 34
       },
       "detailedStats": {
@@ -1181,7 +1181,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 27,
       "name": "Maddie Pokorny",
       "ovr": 67,
       "status": "reserva",
@@ -1236,7 +1236,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 29,
       "name": "Milly Clegg",
       "ovr": 64,
       "status": "reserva",

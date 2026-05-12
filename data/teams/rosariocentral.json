@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Jaminton Campaz",
       "ovr": 76,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Víctor Ignacio Malcorra",
       "ovr": 75,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 1,
       "name": "Jorge Broun",
       "ovr": 73,
       "status": "titular",
@@ -138,12 +138,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
+        "alc": 71,
+        "seg": 71,
+        "esp": 80,
+        "ref": 73,
         "pos": 75,
-        "vel": 40,
+        "vel": 43,
         "sta": 30
       },
       "detailedStats": {
@@ -237,7 +237,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 8,
       "name": "Jonatan Gómez",
       "ovr": 72,
       "status": "titular",
@@ -292,7 +292,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Facundo Mallo",
       "ovr": 72,
       "status": "titular",
@@ -348,7 +348,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Mauricio Martínez",
       "ovr": 72,
       "status": "titular",
@@ -405,7 +405,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 25,
       "name": "Miguel Barbieri",
       "ovr": 71,
       "status": "titular",
@@ -517,7 +517,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 12,
       "name": "Juan Cruz Komar",
       "ovr": 71,
       "status": "titular",
@@ -575,7 +575,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Maximiliano Lovera",
       "ovr": 71,
       "status": "titular",
@@ -631,7 +631,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 2,
       "name": "Damián Martínez",
       "ovr": 71,
       "status": "reserva",
@@ -686,7 +686,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 28,
       "name": "Lautaro Giaccone",
       "ovr": 70,
       "status": "reserva",
@@ -741,7 +741,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 21,
       "name": "Kevin Ortiz",
       "ovr": 70,
       "status": "reserva",
@@ -797,7 +797,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 3,
       "name": "Alan Rodríguez",
       "ovr": 70,
       "status": "reserva",
@@ -907,7 +907,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 22,
       "name": "Axel Werner",
       "ovr": 69,
       "status": "reserva",
@@ -922,12 +922,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 72,
+        "seg": 71,
+        "esp": 78,
+        "ref": 69,
+        "pos": 67,
+        "vel": 46,
         "sta": 38
       },
       "detailedStats": {
@@ -962,7 +962,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 13,
       "name": "Emanuel Coronel",
       "ovr": 68,
       "status": "reserva",
@@ -1017,7 +1017,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 18,
       "name": "Tomás O'Connor",
       "ovr": 67,
       "status": "reserva",
@@ -1127,7 +1127,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 27,
       "name": "Francesco Lo Celso",
       "ovr": 65,
       "status": "reserva",
@@ -1182,7 +1182,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Franco Ibarra",
       "ovr": 64,
       "status": "reserva",
@@ -1237,7 +1237,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Valentino Quintero",
       "ovr": 61,
       "status": "reserva",
@@ -1252,12 +1252,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 56,
+        "esp": 72,
+        "ref": 67,
+        "pos": 57,
+        "vel": 38,
         "sta": 37
       },
       "detailedStats": {
@@ -1292,7 +1292,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Kevin Silva",
       "ovr": 60,
       "status": "reserva",
@@ -1348,7 +1348,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Juan Giménez",
       "ovr": 59,
       "status": "reserva",

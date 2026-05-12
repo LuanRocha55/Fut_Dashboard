@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Dejan Dražić",
       "ovr": 68,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 7,
       "name": "Guarrotxena",
       "ovr": 68,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Odei",
       "ovr": 68,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Armando Sadiku",
       "ovr": 68,
       "status": "titular",
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 10,
       "name": "Borja Herrera",
       "ovr": 65,
       "status": "titular",
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Sandesh Jhingan",
       "ovr": 62,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 17,
       "name": "Mohammed Yasir",
       "ovr": 59,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 21,
       "name": "Rowllin Borges",
       "ovr": 58,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 1,
       "name": "Laxmikant Kattimani",
       "ovr": 58,
       "status": "titular",
@@ -523,11 +523,11 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 57,
+        "seg": 59,
+        "esp": 65,
+        "ref": 60,
+        "pos": 58,
         "vel": 40,
         "sta": 25
       },
@@ -563,7 +563,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Udanta Singh",
       "ovr": 58,
       "status": "titular",
@@ -619,7 +619,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 28,
       "name": "Boris Singh",
       "ovr": 56,
       "status": "reserva",
@@ -674,7 +674,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 23,
       "name": "Ayush Chhetri",
       "ovr": 55,
       "status": "reserva",
@@ -729,7 +729,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 3,
       "name": "Aakash Sangwan",
       "ovr": 55,
       "status": "reserva",
@@ -784,7 +784,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 12,
       "name": "Arshdeep Singh",
       "ovr": 55,
       "status": "reserva",
@@ -799,12 +799,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 53,
+        "seg": 51,
+        "esp": 64,
+        "ref": 62,
+        "pos": 53,
+        "vel": 45,
         "sta": 25
       },
       "detailedStats": {
@@ -894,7 +894,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 20,
       "name": "Devendra Murgaonkar",
       "ovr": 54,
       "status": "reserva",
@@ -949,7 +949,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 30,
       "name": "Muhammed Nemil",
       "ovr": 53,
       "status": "reserva",
@@ -1004,7 +1004,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Lara Sharma",
       "ovr": 53,
       "status": "reserva",
@@ -1019,12 +1019,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 55,
+        "seg": 54,
+        "esp": 62,
+        "ref": 56,
+        "pos": 51,
+        "vel": 31,
         "sta": 16
       },
       "detailedStats": {
@@ -1059,7 +1059,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 24,
       "name": "Sahil Tavora",
       "ovr": 53,
       "status": "reserva",
@@ -1114,7 +1114,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 2,
       "name": "Leander D'Cunha",
       "ovr": 51,
       "status": "reserva",
@@ -1169,7 +1169,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 25,
       "name": "Hrithik Tiwari",
       "ovr": 50,
       "status": "reserva",
@@ -1184,12 +1184,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 52,
+        "seg": 51,
+        "esp": 57,
+        "ref": 50,
+        "pos": 50,
+        "vel": 31,
         "sta": 19
       },
       "detailedStats": {

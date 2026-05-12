@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 2,
       "name": "Jonathan Clauss",
       "ovr": 80,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Marcin Bułka",
       "ovr": 79,
       "status": "titular",
@@ -81,12 +81,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 79,
+        "seg": 76,
+        "esp": 89,
+        "ref": 81,
+        "pos": 79,
+        "vel": 25,
         "sta": 37
       },
       "detailedStats": {
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Dante",
       "ovr": 79,
       "status": "titular",
@@ -180,7 +180,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 3,
       "name": "Melvin Bard",
       "ovr": 78,
       "status": "titular",
@@ -237,7 +237,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 17,
       "name": "Gaëtan Laborde",
       "ovr": 78,
       "status": "titular",
@@ -295,7 +295,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 7,
       "name": "Jérémie Boga",
       "ovr": 77,
       "status": "titular",
@@ -351,7 +351,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 9,
       "name": "Terem Moffi",
       "ovr": 77,
       "status": "titular",
@@ -407,7 +407,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 10,
       "name": "Youssoufa Moukoko",
       "ovr": 77,
       "status": "titular",
@@ -466,7 +466,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 8,
       "name": "Hicham Boudaoui",
       "ovr": 76,
       "status": "titular",
@@ -521,7 +521,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 29,
       "name": "Sofiane Diop",
       "ovr": 76,
       "status": "titular",
@@ -577,7 +577,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 5,
       "name": "Youssouf Ndayishimiye",
       "ovr": 76,
       "status": "titular",
@@ -632,7 +632,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 18,
       "name": "Tanguy Ndombele",
       "ovr": 76,
       "status": "reserva",
@@ -688,7 +688,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Morgan Sanson",
       "ovr": 76,
       "status": "reserva",
@@ -743,7 +743,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 21,
       "name": "Pablo Rosario",
       "ovr": 75,
       "status": "reserva",
@@ -798,7 +798,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 31,
       "name": "Mohamed-Ali Cho",
       "ovr": 74,
       "status": "reserva",
@@ -853,7 +853,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 12,
       "name": "Maxime Dupé",
       "ovr": 74,
       "status": "reserva",
@@ -868,12 +868,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 76,
+        "seg": 73,
+        "esp": 83,
+        "ref": 74,
+        "pos": 71,
+        "vel": 42,
         "sta": 21
       },
       "detailedStats": {
@@ -908,7 +908,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 19,
       "name": "Evann Guessand",
       "ovr": 74,
       "status": "reserva",
@@ -963,7 +963,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 16,
       "name": "Ali Abdi",
       "ovr": 71,
       "status": "reserva",
@@ -1021,7 +1021,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 32,
       "name": "Billal Brahimi",
       "ovr": 70,
       "status": "reserva",
@@ -1076,7 +1076,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Badredine Bouanani",
       "ovr": 69,
       "status": "reserva",
@@ -1131,7 +1131,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 14,
       "name": "Antoine Mendy",
       "ovr": 69,
       "status": "reserva",
@@ -1187,7 +1187,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 11,
       "name": "Rareș Ilie",
       "ovr": 68,
       "status": "reserva",
@@ -1298,7 +1298,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 25,
       "name": "Moïse Bombito",
       "ovr": 67,
       "status": "reserva",
@@ -1354,7 +1354,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "Teddy Boulhendi",
       "ovr": 63,
       "status": "reserva",
@@ -1369,12 +1369,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 62,
+        "esp": 70,
+        "ref": 63,
+        "pos": 61,
+        "vel": 48,
         "sta": 34
       },
       "detailedStats": {
@@ -1409,7 +1409,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 27,
       "name": "Amidou Doumbouya",
       "ovr": 58,
       "status": "reserva",

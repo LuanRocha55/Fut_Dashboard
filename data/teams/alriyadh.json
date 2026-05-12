@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Nawaf Al Abed",
       "ovr": 66,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Yahia Al Shehri",
       "ovr": 65,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Ahmed Asiri",
       "ovr": 63,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 3,
       "name": "Abdulelah Al Khaibari",
       "ovr": 62,
       "status": "titular",
@@ -230,7 +230,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 14,
       "name": "Ziyad Al Sahafi",
       "ovr": 62,
       "status": "titular",
@@ -286,7 +286,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 25,
       "name": "Mohammed Al Shuwayrikh",
       "ovr": 61,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 19,
       "name": "Ali Al Zaqan",
       "ovr": 60,
       "status": "titular",
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 2,
       "name": "Yazeed Al Bakr",
       "ovr": 58,
       "status": "titular",
@@ -452,7 +452,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 13,
       "name": "Hussain Al Nowaiqi",
       "ovr": 58,
       "status": "titular",
@@ -507,7 +507,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 24,
       "name": "Amir Kurdi",
       "ovr": 58,
       "status": "titular",
@@ -562,7 +562,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 1,
       "name": "Zaid Al Bawardi",
       "ovr": 57,
       "status": "titular",
@@ -577,12 +577,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 58,
+        "esp": 64,
+        "ref": 55,
+        "pos": 56,
+        "vel": 27,
         "sta": 24
       },
       "detailedStats": {
@@ -632,12 +632,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 57,
+        "seg": 56,
+        "esp": 63,
+        "ref": 56,
+        "pos": 53,
+        "vel": 42,
         "sta": 26
       },
       "detailedStats": {
@@ -672,7 +672,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 8,
       "name": "Mohammed Al Aqeel",
       "ovr": 55,
       "status": "reserva",
@@ -727,7 +727,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 28,
       "name": "Mohammed Al Aqel",
       "ovr": 55,
       "status": "reserva",
@@ -782,7 +782,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 22,
       "name": "Abdulaziz Al Ouwiradi",
       "ovr": 55,
       "status": "reserva",
@@ -797,12 +797,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 57,
+        "seg": 51,
+        "esp": 64,
+        "ref": 58,
+        "pos": 56,
+        "vel": 39,
         "sta": 25
       },
       "detailedStats": {
@@ -948,7 +948,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 9,
       "name": "Rayan Al Bloushi",
       "ovr": 53,
       "status": "reserva",
@@ -1003,7 +1003,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 23,
       "name": "Nasser Al Bishi",
       "ovr": 52,
       "status": "reserva",
@@ -1058,7 +1058,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 5,
       "name": "Nawaf Hawsawi",
       "ovr": 52,
       "status": "reserva",
@@ -1113,7 +1113,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 18,
       "name": "Bader Al Mutairi",
       "ovr": 49,
       "status": "reserva",

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 5,
       "name": "Léa Declercq",
       "ovr": 75,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 11,
       "name": "Rose Lavaud",
       "ovr": 73,
       "status": "titular",
@@ -286,7 +286,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 9,
       "name": "Viktoria Pinther",
       "ovr": 73,
       "status": "titular",
@@ -341,7 +341,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 1,
       "name": "Katriina Talaslahti",
       "ovr": 73,
       "status": "titular",
@@ -356,12 +356,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 73,
+        "seg": 70,
+        "esp": 83,
+        "ref": 77,
+        "pos": 74,
+        "vel": 53,
         "sta": 30
       },
       "detailedStats": {
@@ -396,7 +396,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 19,
       "name": "Meriame Terchoun",
       "ovr": 73,
       "status": "titular",
@@ -452,7 +452,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 10,
       "name": "Wu Chengshu",
       "ovr": 73,
       "status": "titular",
@@ -507,7 +507,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Noémie Carage",
       "ovr": 72,
       "status": "titular",
@@ -563,7 +563,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 21,
       "name": "Sarah Jankovska",
       "ovr": 71,
       "status": "titular",
@@ -636,12 +636,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "alc": 70,
+        "seg": 69,
+        "esp": 81,
         "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "pos": 69,
+        "vel": 47,
         "sta": 36
       },
       "detailedStats": {
@@ -676,7 +676,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 28,
       "name": "Klaudia Jedlińska",
       "ovr": 70,
       "status": "reserva",
@@ -731,7 +731,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 23,
       "name": "Océane Picard",
       "ovr": 70,
       "status": "reserva",
@@ -841,7 +841,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 13,
       "name": "Margaux Vairon",
       "ovr": 68,
       "status": "reserva",
@@ -896,7 +896,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 25,
       "name": "Kate Taylor",
       "ovr": 65,
       "status": "reserva",

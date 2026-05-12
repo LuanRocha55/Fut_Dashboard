@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Matías Pérez García",
       "ovr": 71,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Luis Benítes",
       "ovr": 70,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 23,
       "name": "Marcos Lliuya",
       "ovr": 70,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 30,
       "name": "Ray Gómez",
       "ovr": 68,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 17,
       "name": "Carlos Ross",
       "ovr": 68,
       "status": "titular",
@@ -286,7 +286,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 4,
       "name": "Guti",
       "ovr": 68,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 2,
       "name": "Luis Garro",
       "ovr": 67,
       "status": "titular",
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 13,
       "name": "Angel Pérez",
       "ovr": 67,
       "status": "titular",
@@ -452,7 +452,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 5,
       "name": "Ricardo Salcedo",
       "ovr": 67,
       "status": "titular",
@@ -507,7 +507,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 1,
       "name": "Ángel Zamudio",
       "ovr": 67,
       "status": "titular",
@@ -522,12 +522,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 66,
+        "esp": 76,
+        "ref": 70,
+        "pos": 67,
+        "vel": 32,
         "sta": 19
       },
       "detailedStats": {
@@ -562,7 +562,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 3,
       "name": "Hugo Ángeles",
       "ovr": 66,
       "status": "titular",
@@ -617,7 +617,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 9,
       "name": "Ronal Huaccha",
       "ovr": 65,
       "status": "reserva",
@@ -672,7 +672,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 7,
       "name": "Javier Núñez",
       "ovr": 64,
       "status": "reserva",
@@ -727,7 +727,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 12,
       "name": "Joel Pinto",
       "ovr": 63,
       "status": "reserva",
@@ -742,12 +742,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 59,
+        "seg": 62,
+        "esp": 67,
+        "ref": 62,
+        "pos": 64,
+        "vel": 49,
         "sta": 33
       },
       "detailedStats": {

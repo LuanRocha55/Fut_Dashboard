@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 7,
       "name": "Ashleigh Weerden",
       "ovr": 76,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 3,
       "name": "Katrine Veje",
       "ovr": 74,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 16,
       "name": "Felicity Gibbons",
       "ovr": 72,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 5,
       "name": "Hayley Nolan",
       "ovr": 72,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 8,
       "name": "Chloë Arthur",
       "ovr": 71,
       "status": "titular",
@@ -286,7 +286,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 9,
       "name": "Elise Hughes",
       "ovr": 70,
       "status": "titular",
@@ -341,7 +341,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "Molly-Mae Sharpe",
       "ovr": 70,
       "status": "titular",
@@ -396,7 +396,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 1,
       "name": "Shae Yáñez",
       "ovr": 70,
       "status": "titular",
@@ -411,12 +411,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 70,
+        "esp": 78,
+        "ref": 70,
+        "pos": 68,
+        "vel": 44,
         "sta": 27
       },
       "detailedStats": {
@@ -451,7 +451,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 17,
       "name": "Izzy Atkinson",
       "ovr": 69,
       "status": "titular",
@@ -506,7 +506,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 2,
       "name": "Jorja Fox",
       "ovr": 67,
       "status": "titular",
@@ -561,7 +561,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 29,
       "name": "Abbie Larkin",
       "ovr": 66,
       "status": "titular",
@@ -616,7 +616,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 18,
       "name": "Annabel Blanchard",
       "ovr": 60,
       "status": "reserva",
@@ -671,7 +671,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Aimee Everett",
       "ovr": 58,
       "status": "reserva",
@@ -726,7 +726,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 19,
       "name": "Shanade Hopcroft",
       "ovr": 58,
       "status": "reserva",
@@ -781,7 +781,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 11,
       "name": "Isabella Sibley",
       "ovr": 56,
       "status": "reserva",

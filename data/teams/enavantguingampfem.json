@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Hélène Fercocq",
       "ovr": 75,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Agathe Donnary",
       "ovr": 73,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 14,
       "name": "Sofia Guellati",
       "ovr": 73,
       "status": "titular",
@@ -230,7 +230,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 1,
       "name": "Cindy Perrault",
       "ovr": 73,
       "status": "titular",
@@ -246,11 +246,11 @@
       ],
       "stats": {
         "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "seg": 72,
+        "esp": 84,
+        "ref": 76,
+        "pos": 71,
+        "vel": 29,
         "sta": 28
       },
       "detailedStats": {
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 12,
       "name": "Marie-Morgane Sieber",
       "ovr": 73,
       "status": "titular",
@@ -300,12 +300,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "alc": 73,
+        "seg": 69,
+        "esp": 82,
         "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "pos": 73,
+        "vel": 37,
         "sta": 34
       },
       "detailedStats": {
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Sana Daoudi",
       "ovr": 72,
       "status": "titular",
@@ -395,7 +395,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 9,
       "name": "Alison Peniguel",
       "ovr": 72,
       "status": "titular",
@@ -450,7 +450,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 10,
       "name": "Latifah Abdu",
       "ovr": 71,
       "status": "titular",
@@ -505,7 +505,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 11,
       "name": "Maureen Bigot",
       "ovr": 71,
       "status": "titular",
@@ -560,7 +560,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 3,
       "name": "Agathe Ollivier",
       "ovr": 71,
       "status": "titular",
@@ -617,7 +617,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 25,
       "name": "Maïwen Renard",
       "ovr": 71,
       "status": "reserva",
@@ -673,7 +673,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 18,
       "name": "Leïla Peneau",
       "ovr": 69,
       "status": "reserva",
@@ -728,7 +728,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 20,
       "name": "Maëlle Seguin",
       "ovr": 68,
       "status": "reserva",
@@ -783,7 +783,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 19,
       "name": "Imane Touriss",
       "ovr": 67,
       "status": "reserva",
@@ -893,7 +893,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 22,
       "name": "Laura Prieur",
       "ovr": 63,
       "status": "reserva",
@@ -908,12 +908,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 61,
+        "esp": 74,
+        "ref": 68,
+        "pos": 59,
+        "vel": 33,
         "sta": 25
       },
       "detailedStats": {

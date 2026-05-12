@@ -24,12 +24,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 84,
+        "seg": 82,
+        "esp": 94,
+        "ref": 86,
+        "pos": 87,
+        "vel": 57,
         "sta": 40
       },
       "detailedStats": {
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Ollie Watkins",
       "ovr": 85,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Leon Bailey",
       "ovr": 82,
       "status": "titular",
@@ -290,7 +290,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "John McGinn",
       "ovr": 82,
       "status": "titular",
@@ -347,7 +347,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Ezri Konsa",
       "ovr": 81,
       "status": "titular",
@@ -405,7 +405,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 18,
       "name": "Youri Tielemans",
       "ovr": 81,
       "status": "titular",
@@ -463,7 +463,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 25,
       "name": "Diego Carlos",
       "ovr": 80,
       "status": "titular",
@@ -520,7 +520,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 2,
       "name": "Matty Cash",
       "ovr": 79,
       "status": "titular",
@@ -578,7 +578,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 3,
       "name": "Lucas Digne",
       "ovr": 79,
       "status": "titular",
@@ -634,7 +634,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 16,
       "name": "Ian Maatsen",
       "ovr": 79,
       "status": "reserva",
@@ -748,7 +748,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 20,
       "name": "Ross Barkley",
       "ovr": 78,
       "status": "reserva",
@@ -803,7 +803,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 19,
       "name": "Emiliano Buendía",
       "ovr": 78,
       "status": "reserva",
@@ -861,7 +861,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 21,
       "name": "Amadou Onana",
       "ovr": 78,
       "status": "reserva",
@@ -917,7 +917,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 27,
       "name": "Jacob Ramsey",
       "ovr": 78,
       "status": "reserva",
@@ -972,7 +972,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 22,
       "name": "Jaden Philogene",
       "ovr": 75,
       "status": "reserva",
@@ -1028,7 +1028,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 23,
       "name": "Morgan Rogers",
       "ovr": 75,
       "status": "reserva",
@@ -1084,7 +1084,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 10,
       "name": "Jhon Durán",
       "ovr": 74,
       "status": "reserva",
@@ -1139,7 +1139,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 12,
       "name": "Robin Olsen",
       "ovr": 74,
       "status": "reserva",
@@ -1154,11 +1154,11 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 74,
+        "seg": 70,
+        "esp": 82,
+        "ref": 74,
+        "pos": 76,
         "vel": 40,
         "sta": 37
       },
@@ -1194,7 +1194,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Kortney Hause",
       "ovr": 72,
       "status": "reserva",
@@ -1250,7 +1250,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Joe Gauci",
       "ovr": 68,
       "status": "reserva",
@@ -1266,12 +1266,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 65,
+        "esp": 79,
+        "ref": 72,
+        "pos": 64,
+        "vel": 35,
         "sta": 27
       },
       "detailedStats": {
@@ -1306,7 +1306,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 28,
       "name": "Lamare Bogarde",
       "ovr": 64,
       "status": "reserva",
@@ -1361,7 +1361,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Oliwier Zych",
       "ovr": 63,
       "status": "reserva",
@@ -1376,12 +1376,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 64,
+        "esp": 68,
+        "ref": 61,
+        "pos": 64,
+        "vel": 31,
         "sta": 25
       },
       "detailedStats": {
@@ -1416,7 +1416,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 30,
       "name": "Kerr Smith",
       "ovr": 57,
       "status": "reserva",
@@ -1472,7 +1472,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 31,
       "name": "Kadan Young",
       "ovr": 57,
       "status": "reserva",
@@ -1527,7 +1527,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 32,
       "name": "Sil Swinkels",
       "ovr": 56,
       "status": "reserva",

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Deniz Undav",
       "ovr": 81,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Alexander Nübel",
       "ovr": 80,
       "status": "titular",
@@ -81,12 +81,12 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 81,
+        "seg": 76,
+        "esp": 91,
+        "ref": 82,
+        "pos": 78,
+        "vel": 46,
         "sta": 39
       },
       "detailedStats": {
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "Ermedin Demirović",
       "ovr": 79,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 11,
       "name": "Chris Führich",
       "ovr": 79,
       "status": "titular",
@@ -235,7 +235,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 3,
       "name": "Maximilian Mittelstädt",
       "ovr": 79,
       "status": "titular",
@@ -290,7 +290,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 5,
       "name": "Angelo Stiller",
       "ovr": 78,
       "status": "titular",
@@ -348,7 +348,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 4,
       "name": "Julian Chabot",
       "ovr": 77,
       "status": "titular",
@@ -407,7 +407,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 23,
       "name": "Enzo Millot",
       "ovr": 77,
       "status": "titular",
@@ -464,7 +464,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "Dan-Axel Zagadou",
       "ovr": 77,
       "status": "titular",
@@ -522,7 +522,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 21,
       "name": "Atakan Karazor",
       "ovr": 75,
       "status": "titular",
@@ -577,7 +577,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 25,
       "name": "Anthony Rouault",
       "ovr": 75,
       "status": "titular",
@@ -634,7 +634,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 2,
       "name": "Josha Vagnoman",
       "ovr": 75,
       "status": "reserva",
@@ -690,7 +690,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 19,
       "name": "Jamie Leweling",
       "ovr": 74,
       "status": "reserva",
@@ -745,7 +745,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 30,
       "name": "Fabian Rieder",
       "ovr": 74,
       "status": "reserva",
@@ -860,7 +860,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 20,
       "name": "El Bilal Touré",
       "ovr": 72,
       "status": "reserva",
@@ -915,7 +915,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 12,
       "name": "Fabian Bredlow",
       "ovr": 71,
       "status": "reserva",
@@ -930,12 +930,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 67,
+        "esp": 81,
+        "ref": 74,
+        "pos": 68,
+        "vel": 36,
         "sta": 20
       },
       "detailedStats": {
@@ -1025,7 +1025,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 13,
       "name": "Pascal Stenzel",
       "ovr": 71,
       "status": "reserva",
@@ -1080,7 +1080,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Leonidas Stergiou",
       "ovr": 71,
       "status": "reserva",
@@ -1139,7 +1139,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Nick Woltemade",
       "ovr": 69,
       "status": "reserva",
@@ -1194,7 +1194,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 8,
       "name": "Nikolas Nartey",
       "ovr": 68,
       "status": "reserva",
@@ -1249,7 +1249,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Ramon Hendriks",
       "ovr": 67,
       "status": "reserva",
@@ -1305,7 +1305,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 27,
       "name": "Stefan Drljača",
       "ovr": 66,
       "status": "reserva",
@@ -1321,12 +1321,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 62,
+        "esp": 77,
+        "ref": 71,
+        "pos": 64,
+        "vel": 42,
         "sta": 30
       },
       "detailedStats": {
@@ -1361,7 +1361,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 28,
       "name": "Wahid Faghir",
       "ovr": 66,
       "status": "reserva",
@@ -1416,7 +1416,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 16,
       "name": "Frans Krätzig",
       "ovr": 66,
       "status": "reserva",
@@ -1471,7 +1471,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 29,
       "name": "Justin Diehl",
       "ovr": 65,
       "status": "reserva",
@@ -1526,7 +1526,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 31,
       "name": "Thomas Kastanaras",
       "ovr": 63,
       "status": "reserva",
@@ -1581,7 +1581,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 32,
       "name": "Dennis Seimen",
       "ovr": 63,
       "status": "reserva",
@@ -1596,12 +1596,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 58,
+        "esp": 72,
+        "ref": 65,
+        "pos": 59,
+        "vel": 44,
         "sta": 36
       },
       "detailedStats": {
@@ -1636,7 +1636,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 33,
       "name": "Luca Raimund",
       "ovr": 62,
       "status": "reserva",

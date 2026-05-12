@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 7,
       "name": "Rasheedat Ajibade",
       "ovr": 83,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 5,
       "name": "Gabriela García",
       "ovr": 82,
       "status": "titular",
@@ -126,7 +126,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 17,
       "name": "Synne Jensen",
       "ovr": 81,
       "status": "titular",
@@ -243,7 +243,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 8,
       "name": "Tatiana Pinto",
       "ovr": 80,
       "status": "titular",
@@ -301,7 +301,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 1,
       "name": "Lola Gallardo",
       "ovr": 80,
       "status": "titular",
@@ -317,12 +317,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
+        "alc": 81,
         "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "esp": 91,
+        "ref": 82,
+        "pos": 80,
+        "vel": 54,
         "sta": 35
       },
       "detailedStats": {
@@ -357,7 +357,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 9,
       "name": "Sheila",
       "ovr": 80,
       "status": "titular",
@@ -413,7 +413,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Andrea Medina",
       "ovr": 80,
       "status": "titular",
@@ -472,7 +472,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 2,
       "name": "Ainhoa Moraza",
       "ovr": 80,
       "status": "titular",
@@ -528,7 +528,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 18,
       "name": "Vilde Bøe Risa",
       "ovr": 79,
       "status": "titular",
@@ -583,7 +583,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 14,
       "name": "Lauren",
       "ovr": 79,
       "status": "titular",
@@ -642,7 +642,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 10,
       "name": "Ana Vitória",
       "ovr": 78,
       "status": "reserva",
@@ -699,7 +699,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 16,
       "name": "Rosa Otermín",
       "ovr": 78,
       "status": "reserva",
@@ -757,7 +757,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 31,
       "name": "Marta Cardona",
       "ovr": 77,
       "status": "reserva",
@@ -812,7 +812,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 19,
       "name": "Luany",
       "ovr": 77,
       "status": "reserva",
@@ -867,7 +867,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 25,
       "name": "Silvia Lloris",
       "ovr": 77,
       "status": "reserva",
@@ -923,7 +923,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 23,
       "name": "Fiamma Benítez",
       "ovr": 76,
       "status": "reserva",
@@ -979,7 +979,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Gio Garbelini",
       "ovr": 75,
       "status": "reserva",
@@ -1034,7 +1034,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Merle Barth",
       "ovr": 73,
       "status": "reserva",
@@ -1090,7 +1090,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Xènia Pérez",
       "ovr": 73,
       "status": "reserva",
@@ -1146,7 +1146,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 12,
       "name": "Patricia Larqué",
       "ovr": 68,
       "status": "reserva",
@@ -1161,12 +1161,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 62,
+        "esp": 74,
+        "ref": 68,
+        "pos": 72,
+        "vel": 34,
         "sta": 22
       },
       "detailedStats": {

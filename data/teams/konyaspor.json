@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 3,
       "name": "Guilherme Sityá",
       "ovr": 76,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Danijel Aleksić",
       "ovr": 72,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Umut Nayir",
       "ovr": 72,
       "status": "titular",
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 11,
       "name": "Yusuf Erdoğan",
       "ovr": 70,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 17,
       "name": "Louka Prip",
       "ovr": 69,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 19,
       "name": "Alassane Ndao",
       "ovr": 68,
       "status": "titular",
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 1,
       "name": "Jakub Słowik",
       "ovr": 67,
       "status": "titular",
@@ -412,12 +412,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 59,
+        "esp": 77,
+        "ref": 71,
+        "pos": 70,
+        "vel": 32,
         "sta": 21
       },
       "detailedStats": {
@@ -452,7 +452,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 21,
       "name": "Ufuk Akyol",
       "ovr": 66,
       "status": "titular",
@@ -507,7 +507,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 4,
       "name": "Adil Demirbağ",
       "ovr": 66,
       "status": "titular",
@@ -563,7 +563,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 18,
       "name": "Emmanuel Boateng",
       "ovr": 65,
       "status": "titular",
@@ -618,7 +618,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 23,
       "name": "Oğulcan Ülgün",
       "ovr": 64,
       "status": "reserva",
@@ -673,7 +673,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 14,
       "name": "Uğurcan Yazğılı",
       "ovr": 64,
       "status": "reserva",
@@ -729,7 +729,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 12,
       "name": "Yavuz Aygün",
       "ovr": 63,
       "status": "reserva",
@@ -744,12 +744,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 63,
+        "esp": 72,
+        "ref": 64,
+        "pos": 62,
+        "vel": 48,
         "sta": 30
       },
       "detailedStats": {
@@ -784,7 +784,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 20,
       "name": "Melih Ibrahimoglu",
       "ovr": 62,
       "status": "reserva",
@@ -839,7 +839,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 10,
       "name": "Emrehan Gedikli",
       "ovr": 61,
       "status": "reserva",
@@ -894,7 +894,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 25,
       "name": "Metehan Mert",
       "ovr": 61,
       "status": "reserva",
@@ -950,7 +950,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 16,
       "name": "Yasir Subaşı",
       "ovr": 61,
       "status": "reserva",
@@ -1005,7 +1005,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 27,
       "name": "Tunahan Taşçı",
       "ovr": 61,
       "status": "reserva",
@@ -1060,7 +1060,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Deniz Ertaş",
       "ovr": 55,
       "status": "reserva",
@@ -1075,12 +1075,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 52,
+        "esp": 64,
+        "ref": 56,
+        "pos": 52,
+        "vel": 24,
         "sta": 26
       },
       "detailedStats": {

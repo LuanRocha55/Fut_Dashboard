@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 5,
       "name": "Jon Gorenc Stanković",
       "ovr": 74,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Otar Kiteishvili",
       "ovr": 74,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 23,
       "name": "Tomi Horvat",
       "ovr": 73,
       "status": "titular",
@@ -235,7 +235,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 2,
       "name": "Jusuf Gazibegović",
       "ovr": 72,
       "status": "titular",
@@ -292,7 +292,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Dimitri Lavalée",
       "ovr": 72,
       "status": "titular",
@@ -348,7 +348,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 9,
       "name": "Manprit Sarkaria",
       "ovr": 72,
       "status": "titular",
@@ -406,7 +406,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 1,
       "name": "Kjell Scherpen",
       "ovr": 72,
       "status": "titular",
@@ -422,12 +422,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 76,
+        "seg": 67,
+        "esp": 83,
+        "ref": 73,
+        "pos": 72,
+        "vel": 46,
         "sta": 32
       },
       "detailedStats": {
@@ -462,7 +462,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "Emir Karić",
       "ovr": 69,
       "status": "titular",
@@ -517,7 +517,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 19,
       "name": "Mika Biereth",
       "ovr": 68,
       "status": "titular",
@@ -572,7 +572,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 20,
       "name": "William Bøving",
       "ovr": 68,
       "status": "titular",
@@ -627,7 +627,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 8,
       "name": "Tochi Chukwuani",
       "ovr": 68,
       "status": "reserva",
@@ -737,7 +737,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 18,
       "name": "Stefan Hierländer",
       "ovr": 67,
       "status": "reserva",
@@ -792,7 +792,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "Emanuel Aiwu",
       "ovr": 66,
       "status": "reserva",
@@ -849,7 +849,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 30,
       "name": "Lovro Zvonarek",
       "ovr": 66,
       "status": "reserva",
@@ -960,7 +960,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Niklas Geyrhofer",
       "ovr": 65,
       "status": "reserva",
@@ -1016,7 +1016,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Seedy Jatta",
       "ovr": 64,
       "status": "reserva",
@@ -1071,7 +1071,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 24,
       "name": "Max Johnston",
       "ovr": 64,
       "status": "reserva",
@@ -1126,7 +1126,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 26,
       "name": "Amady Camara",
       "ovr": 62,
       "status": "reserva",
@@ -1181,7 +1181,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 12,
       "name": "Daniil Khudyakov",
       "ovr": 62,
       "status": "reserva",
@@ -1196,12 +1196,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 59,
+        "esp": 70,
+        "ref": 66,
+        "pos": 61,
+        "vel": 43,
         "sta": 20
       },
       "detailedStats": {
@@ -1236,7 +1236,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 27,
       "name": "Leon Grgić",
       "ovr": 60,
       "status": "reserva",
@@ -1291,7 +1291,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 28,
       "name": "Matteo Bignetti",
       "ovr": 59,
       "status": "reserva",
@@ -1306,12 +1306,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 58,
+        "esp": 68,
+        "ref": 61,
+        "pos": 55,
+        "vel": 43,
         "sta": 28
       },
       "detailedStats": {
@@ -1346,7 +1346,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Arjan Malić",
       "ovr": 59,
       "status": "reserva",
@@ -1402,7 +1402,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 31,
       "name": "Martin Kern",
       "ovr": 56,
       "status": "reserva",

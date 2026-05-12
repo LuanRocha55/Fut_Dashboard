@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Michael Santos",
       "ovr": 76,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Claudio Aquino",
       "ovr": 75,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 1,
       "name": "Tomás Marchiori",
       "ovr": 74,
       "status": "titular",
@@ -136,12 +136,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 74,
+        "seg": 73,
+        "esp": 82,
+        "ref": 74,
+        "pos": 74,
+        "vel": 38,
         "sta": 33
       },
       "detailedStats": {
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 11,
       "name": "Francisco Pizzini",
       "ovr": 73,
       "status": "titular",
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 2,
       "name": "Joaquín García",
       "ovr": 72,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 4,
       "name": "Valentín Gómez",
       "ovr": 72,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 3,
       "name": "Elías Gómez",
       "ovr": 72,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Emanuel Mammana",
       "ovr": 72,
       "status": "titular",
@@ -455,7 +455,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 5,
       "name": "Agustín Bouzat",
       "ovr": 71,
       "status": "titular",
@@ -512,7 +512,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Damián Fernández",
       "ovr": 71,
       "status": "titular",
@@ -568,7 +568,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Rodrigo Piñeiro",
       "ovr": 71,
       "status": "titular",
@@ -624,7 +624,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 20,
       "name": "Braian Romero",
       "ovr": 71,
       "status": "reserva",
@@ -679,7 +679,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 21,
       "name": "Santiago Cáseres",
       "ovr": 70,
       "status": "reserva",
@@ -734,7 +734,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 27,
       "name": "Thiago Fernández",
       "ovr": 70,
       "status": "reserva",
@@ -789,7 +789,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 23,
       "name": "Christian Ordoñez",
       "ovr": 70,
       "status": "reserva",
@@ -956,7 +956,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 13,
       "name": "Leonardo Jara",
       "ovr": 69,
       "status": "reserva",
@@ -1011,7 +1011,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 24,
       "name": "Agustín Lagos",
       "ovr": 68,
       "status": "reserva",
@@ -1066,7 +1066,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 26,
       "name": "Tomás Cavanagh",
       "ovr": 67,
       "status": "reserva",
@@ -1121,7 +1121,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Yeison Gordillo",
       "ovr": 67,
       "status": "reserva",
@@ -1176,7 +1176,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 30,
       "name": "Ricardo Centurión",
       "ovr": 66,
       "status": "reserva",
@@ -1234,7 +1234,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 28,
       "name": "Tomás Guidara",
       "ovr": 66,
       "status": "reserva",
@@ -1289,7 +1289,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 29,
       "name": "Patricio Pernicone",
       "ovr": 66,
       "status": "reserva",
@@ -1345,7 +1345,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 12,
       "name": "Randall Rodríguez",
       "ovr": 66,
       "status": "reserva",
@@ -1360,12 +1360,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 57,
+        "esp": 76,
+        "ref": 66,
+        "pos": 62,
+        "vel": 23,
         "sta": 28
       },
       "detailedStats": {
@@ -1400,7 +1400,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 31,
       "name": "Emmanuel Gómez Riga",
       "ovr": 65,
       "status": "reserva",
@@ -1415,12 +1415,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 62,
+        "esp": 76,
+        "ref": 68,
+        "pos": 61,
+        "vel": 45,
         "sta": 40
       },
       "detailedStats": {
@@ -1455,7 +1455,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 32,
       "name": "Maher Carrizo",
       "ovr": 63,
       "status": "reserva",

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Puado",
       "ovr": 77,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Joan García",
       "ovr": 76,
       "status": "titular",
@@ -82,12 +82,12 @@
         "Long Ball Pass"
       ],
       "stats": {
-        "alc": 75,
+        "alc": 76,
         "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "esp": 84,
+        "ref": 76,
+        "pos": 74,
+        "vel": 44,
         "sta": 35
       },
       "detailedStats": {
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Alejo Veliz",
       "ovr": 75,
       "status": "titular",
@@ -239,7 +239,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 10,
       "name": "Walid Cheddira",
       "ovr": 74,
       "status": "titular",
@@ -294,7 +294,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Edu Expósito",
       "ovr": 74,
       "status": "titular",
@@ -349,7 +349,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Alex Král",
       "ovr": 74,
       "status": "titular",
@@ -404,7 +404,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Marash Kumbulla",
       "ovr": 74,
       "status": "titular",
@@ -461,7 +461,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 18,
       "name": "Aguado",
       "ovr": 73,
       "status": "titular",
@@ -516,7 +516,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Calero",
       "ovr": 73,
       "status": "titular",
@@ -573,7 +573,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Irvin Cardona",
       "ovr": 73,
       "status": "titular",
@@ -628,7 +628,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 2,
       "name": "Omar El Hilali",
       "ovr": 73,
       "status": "reserva",
@@ -739,7 +739,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 21,
       "name": "José Gragera",
       "ovr": 73,
       "status": "reserva",
@@ -795,7 +795,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 20,
       "name": "Pere Milla",
       "ovr": 73,
       "status": "reserva",
@@ -853,7 +853,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 3,
       "name": "Brian Oliván",
       "ovr": 73,
       "status": "reserva",
@@ -908,7 +908,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 12,
       "name": "Pacheco",
       "ovr": 73,
       "status": "reserva",
@@ -923,12 +923,12 @@
         "Pinged Pass"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 73,
+        "seg": 72,
+        "esp": 81,
+        "ref": 73,
+        "pos": 72,
+        "vel": 42,
         "sta": 43
       },
       "detailedStats": {
@@ -963,7 +963,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 24,
       "name": "Álvaro Tejero",
       "ovr": 73,
       "status": "reserva",
@@ -1020,7 +1020,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 28,
       "name": "Jofre",
       "ovr": 70,
       "status": "reserva",
@@ -1075,7 +1075,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 23,
       "name": "Pol Lozano",
       "ovr": 70,
       "status": "reserva",
@@ -1131,7 +1131,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Salvi Sánchez",
       "ovr": 70,
       "status": "reserva",
@@ -1187,7 +1187,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 16,
       "name": "Carlos Romero",
       "ovr": 69,
       "status": "reserva",
@@ -1243,7 +1243,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 7,
       "name": "Naci Ünüvar",
       "ovr": 68,
       "status": "reserva",
@@ -1300,7 +1300,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Fortuño",
       "ovr": 65,
       "status": "reserva",
@@ -1315,11 +1315,11 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 63,
+        "seg": 64,
+        "esp": 71,
+        "ref": 65,
+        "pos": 65,
         "vel": 40,
         "sta": 30
       },
@@ -1355,7 +1355,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 27,
       "name": "Antoniu Roca",
       "ovr": 65,
       "status": "reserva",
@@ -1410,7 +1410,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Ian Forns",
       "ovr": 64,
       "status": "reserva",
@@ -1465,7 +1465,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 30,
       "name": "Joan Puig",
       "ovr": 64,
       "status": "reserva",
@@ -1520,7 +1520,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 31,
       "name": "Omar Sadik",
       "ovr": 63,
       "status": "reserva",
@@ -1575,7 +1575,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 32,
       "name": "Marc Jurado",
       "ovr": 62,
       "status": "reserva",
@@ -1631,7 +1631,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 33,
       "name": "Català",
       "ovr": 61,
       "status": "reserva",

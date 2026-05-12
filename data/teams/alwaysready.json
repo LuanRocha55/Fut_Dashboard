@@ -23,12 +23,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 67,
+        "esp": 81,
+        "ref": 74,
+        "pos": 66,
+        "vel": 42,
         "sta": 44
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Luis Adrián Caicedo",
       "ovr": 69,
       "status": "titular",
@@ -119,7 +119,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "Adalid Terrazas",
       "ovr": 67,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 2,
       "name": "Diego Medina",
       "ovr": 66,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 8,
       "name": "Héctor Cuellar",
       "ovr": 65,
       "status": "titular",
@@ -284,7 +284,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Pablo Vaca",
       "ovr": 65,
       "status": "titular",
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 3,
       "name": "Enrique Taborga",
       "ovr": 63,
       "status": "titular",
@@ -395,7 +395,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 9,
       "name": "José Briceño",
       "ovr": 62,
       "status": "titular",
@@ -450,7 +450,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 19,
       "name": "Marcos Ovejero",
       "ovr": 62,
       "status": "titular",
@@ -505,7 +505,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Marcelo Suárez",
       "ovr": 62,
       "status": "titular",
@@ -561,7 +561,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 20,
       "name": "José Martínes",
       "ovr": 60,
       "status": "titular",

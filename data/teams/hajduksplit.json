@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Ivan Rakitić",
       "ovr": 80,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Marko Livaja",
       "ovr": 75,
       "status": "titular",
@@ -123,7 +123,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Stipe Biuk",
       "ovr": 72,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 10,
       "name": "Filip Krovinović",
       "ovr": 72,
       "status": "titular",
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Filip Uremović",
       "ovr": 72,
       "status": "titular",
@@ -291,7 +291,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 2,
       "name": "Fahd Moufi",
       "ovr": 71,
       "status": "titular",
@@ -347,7 +347,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 23,
       "name": "Yassine Benrahou",
       "ovr": 70,
       "status": "titular",
@@ -403,7 +403,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Dario Melnjak",
       "ovr": 70,
       "status": "titular",
@@ -458,7 +458,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "Zvonimir Šarlija",
       "ovr": 70,
       "status": "titular",
@@ -515,7 +515,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 5,
       "name": "Mihael Žaper",
       "ovr": 70,
       "status": "titular",
@@ -570,7 +570,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 16,
       "name": "Ismaël Chester Diallo",
       "ovr": 69,
       "status": "titular",
@@ -625,7 +625,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 1,
       "name": "Ivan Lučić",
       "ovr": 69,
       "status": "reserva",
@@ -640,12 +640,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 65,
+        "esp": 78,
+        "ref": 72,
+        "pos": 67,
+        "vel": 41,
         "sta": 21
       },
       "detailedStats": {
@@ -680,7 +680,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 18,
       "name": "Rokas Pukštas",
       "ovr": 69,
       "status": "reserva",
@@ -735,7 +735,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 13,
       "name": "Niko Sigur",
       "ovr": 69,
       "status": "reserva",
@@ -790,7 +790,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "Josip Elez",
       "ovr": 68,
       "status": "reserva",
@@ -846,7 +846,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 12,
       "name": "Lovre Kalinić",
       "ovr": 67,
       "status": "reserva",
@@ -861,12 +861,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 63,
+        "esp": 77,
+        "ref": 69,
+        "pos": 68,
+        "vel": 34,
         "sta": 31
       },
       "detailedStats": {
@@ -901,7 +901,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 19,
       "name": "Abdoulie Sanyang",
       "ovr": 67,
       "status": "reserva",
@@ -956,7 +956,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 27,
       "name": "Aleksandar Trajkovski",
       "ovr": 67,
       "status": "reserva",
@@ -1012,7 +1012,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 30,
       "name": "Anthony Kalik",
       "ovr": 66,
       "status": "reserva",
@@ -1123,7 +1123,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 28,
       "name": "Leon Dajaku",
       "ovr": 65,
       "status": "reserva",
@@ -1233,7 +1233,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Roko Brajković",
       "ovr": 62,
       "status": "reserva",
@@ -1288,7 +1288,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Borna Buljan",
       "ovr": 61,
       "status": "reserva",
@@ -1303,12 +1303,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 58,
+        "esp": 71,
+        "ref": 61,
+        "pos": 58,
+        "vel": 33,
         "sta": 21
       },
       "detailedStats": {
@@ -1343,7 +1343,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Luka Jurak",
       "ovr": 61,
       "status": "reserva",
@@ -1398,7 +1398,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 31,
       "name": "Šimun Hrgović",
       "ovr": 60,
       "status": "reserva",

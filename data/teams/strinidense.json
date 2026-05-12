@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 5,
       "name": "Luis de la Cruz",
       "ovr": 67,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Víctor Samudio",
       "ovr": 67,
       "status": "titular",
@@ -78,12 +78,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 65,
+        "esp": 73,
+        "ref": 67,
+        "pos": 69,
+        "vel": 27,
         "sta": 18
       },
       "detailedStats": {
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 12,
       "name": "Wilson Quiñónez",
       "ovr": 66,
       "status": "titular",
@@ -133,12 +133,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 65,
+        "esp": 71,
+        "ref": 63,
+        "pos": 68,
+        "vel": 31,
         "sta": 20
       },
       "detailedStats": {
@@ -173,7 +173,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Marcos Riveros",
       "ovr": 66,
       "status": "titular",
@@ -228,7 +228,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "César Benítez",
       "ovr": 65,
       "status": "titular",
@@ -284,7 +284,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "David Villalba",
       "ovr": 65,
       "status": "titular",
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 9,
       "name": "Enrique Borja",
       "ovr": 64,
       "status": "titular",
@@ -395,7 +395,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 3,
       "name": "Sergio Mendoza",
       "ovr": 64,
       "status": "titular",
@@ -450,7 +450,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 2,
       "name": "Victor Dávalos",
       "ovr": 63,
       "status": "titular",
@@ -505,7 +505,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Juan Vera",
       "ovr": 63,
       "status": "titular",
@@ -561,7 +561,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 16,
       "name": "Wildo Alonso",
       "ovr": 62,
       "status": "titular",
@@ -616,7 +616,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 11,
       "name": "Joel Román",
       "ovr": 62,
       "status": "reserva",
@@ -726,7 +726,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Iván Flores",
       "ovr": 61,
       "status": "reserva",
@@ -782,7 +782,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 10,
       "name": "Oscar Giménez",
       "ovr": 61,
       "status": "reserva",
@@ -837,7 +837,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 19,
       "name": "Tomás Rayer",
       "ovr": 61,
       "status": "reserva",
@@ -892,7 +892,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 27,
       "name": "Brian Andrada",
       "ovr": 60,
       "status": "reserva",
@@ -947,7 +947,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 24,
       "name": "Axel Cañete",
       "ovr": 60,
       "status": "reserva",
@@ -1002,7 +1002,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 18,
       "name": "Juan Salcedo",
       "ovr": 60,
       "status": "reserva",
@@ -1057,7 +1057,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 28,
       "name": "Marcos Machuca",
       "ovr": 59,
       "status": "reserva",
@@ -1112,7 +1112,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Mauro Rodas",
       "ovr": 56,
       "status": "reserva",
@@ -1127,12 +1127,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 57,
+        "seg": 55,
+        "esp": 63,
+        "ref": 57,
+        "pos": 54,
+        "vel": 25,
         "sta": 26
       },
       "detailedStats": {
@@ -1167,7 +1167,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 20,
       "name": "Cristian Martínez",
       "ovr": 55,
       "status": "reserva",

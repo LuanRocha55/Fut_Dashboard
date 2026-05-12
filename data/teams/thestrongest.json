@@ -23,12 +23,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 74,
+        "seg": 70,
+        "esp": 81,
+        "ref": 72,
+        "pos": 73,
+        "vel": 31,
         "sta": 28
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Enrique Triverio",
       "ovr": 70,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "Michael Ortega",
       "ovr": 69,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 11,
       "name": "Joel Amoroso",
       "ovr": 68,
       "status": "titular",
@@ -286,7 +286,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 2,
       "name": "Maximiliano Caire",
       "ovr": 68,
       "status": "titular",
@@ -341,7 +341,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Marc-Francois Enoumba",
       "ovr": 68,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 25,
       "name": "Adrián Jusino",
       "ovr": 68,
       "status": "titular",
@@ -456,7 +456,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 5,
       "name": "Álvaro Quiroga",
       "ovr": 68,
       "status": "titular",
@@ -511,7 +511,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 8,
       "name": "Luciano Ursino",
       "ovr": 68,
       "status": "titular",
@@ -568,7 +568,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Jaime Arrascaita",
       "ovr": 67,
       "status": "titular",
@@ -623,7 +623,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 28,
       "name": "Jeyson Chura",
       "ovr": 67,
       "status": "reserva",
@@ -678,7 +678,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 27,
       "name": "Rodrigo Ramallo",
       "ovr": 67,
       "status": "reserva",
@@ -733,7 +733,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 3,
       "name": "Daniel Lino",
       "ovr": 65,
       "status": "reserva",
@@ -788,7 +788,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 20,
       "name": "Bruno Miranda",
       "ovr": 65,
       "status": "reserva",
@@ -953,7 +953,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Diego Wayar",
       "ovr": 64,
       "status": "reserva",
@@ -1008,7 +1008,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 13,
       "name": "Ronald Bustos",
       "ovr": 62,
       "status": "reserva",
@@ -1063,7 +1063,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 18,
       "name": "Víctor Cuellar",
       "ovr": 62,
       "status": "reserva",
@@ -1118,7 +1118,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 12,
       "name": "Jhohan Gutiérrez",
       "ovr": 62,
       "status": "reserva",
@@ -1133,12 +1133,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 60,
+        "esp": 69,
+        "ref": 62,
+        "pos": 61,
+        "vel": 49,
         "sta": 40
       },
       "detailedStats": {
@@ -1188,12 +1188,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 60,
+        "esp": 69,
+        "ref": 63,
+        "pos": 58,
+        "vel": 48,
         "sta": 30
       },
       "detailedStats": {
@@ -1228,7 +1228,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Fabricio Quaglio",
       "ovr": 60,
       "status": "reserva",

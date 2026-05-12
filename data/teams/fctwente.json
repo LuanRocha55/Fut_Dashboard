@@ -23,12 +23,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 80,
+        "seg": 80,
+        "esp": 91,
+        "ref": 83,
+        "pos": 80,
+        "vel": 34,
         "sta": 35
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 5,
       "name": "Michal Sadílek",
       "ovr": 76,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "Sem Steijn",
       "ovr": 75,
       "status": "titular",
@@ -234,7 +234,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 9,
       "name": "Sam Lammers",
       "ovr": 74,
       "status": "titular",
@@ -290,7 +290,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 19,
       "name": "Ricky van Wolfswinkel",
       "ovr": 74,
       "status": "titular",
@@ -345,7 +345,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 3,
       "name": "Bas Kuipers",
       "ovr": 73,
       "status": "titular",
@@ -401,7 +401,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 11,
       "name": "Daan Rots",
       "ovr": 73,
       "status": "titular",
@@ -458,7 +458,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 27,
       "name": "Michel Vlap",
       "ovr": 73,
       "status": "titular",
@@ -513,7 +513,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 8,
       "name": "Carel Eiting",
       "ovr": 72,
       "status": "titular",
@@ -570,7 +570,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 2,
       "name": "Youri Regeer",
       "ovr": 72,
       "status": "titular",
@@ -625,7 +625,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 21,
       "name": "Mathias Kjølø",
       "ovr": 71,
       "status": "reserva",
@@ -735,7 +735,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 28,
       "name": "Mitchell van Bergen",
       "ovr": 69,
       "status": "reserva",
@@ -791,7 +791,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 24,
       "name": "Bart van Rooij",
       "ovr": 69,
       "status": "reserva",
@@ -847,7 +847,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 14,
       "name": "Gustaf Lagerbielke",
       "ovr": 67,
       "status": "reserva",
@@ -905,7 +905,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 16,
       "name": "Anass Salah-Eddine",
       "ovr": 67,
       "status": "reserva",
@@ -1015,7 +1015,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 25,
       "name": "Alec Van Hoorenbeeck",
       "ovr": 67,
       "status": "reserva",
@@ -1127,7 +1127,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 12,
       "name": "Przemysław Tytoń",
       "ovr": 66,
       "status": "reserva",
@@ -1142,12 +1142,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 63,
+        "esp": 73,
+        "ref": 65,
+        "pos": 65,
+        "vel": 49,
         "sta": 31
       },
       "detailedStats": {
@@ -1197,12 +1197,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 60,
+        "esp": 72,
+        "ref": 65,
+        "pos": 62,
+        "vel": 39,
         "sta": 27
       },
       "detailedStats": {
@@ -1292,7 +1292,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Sam Karssies",
       "ovr": 59,
       "status": "reserva",
@@ -1307,12 +1307,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 58,
+        "seg": 60,
+        "esp": 66,
+        "ref": 60,
+        "pos": 56,
+        "vel": 20,
         "sta": 17
       },
       "detailedStats": {
@@ -1347,7 +1347,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Juliën Mesbahi",
       "ovr": 57,
       "status": "reserva",

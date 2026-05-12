@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 5,
       "name": "Patrick Berg",
       "ovr": 76,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Philip Zinckernagel",
       "ovr": 75,
       "status": "titular",
@@ -180,7 +180,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 17,
       "name": "Håkon Evjen",
       "ovr": 72,
       "status": "titular",
@@ -237,7 +237,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 7,
       "name": "Jens Petter Hauge",
       "ovr": 71,
       "status": "titular",
@@ -294,7 +294,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Ulrik Saltnes",
       "ovr": 71,
       "status": "titular",
@@ -349,7 +349,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 2,
       "name": "Michal Tomič",
       "ovr": 71,
       "status": "titular",
@@ -404,7 +404,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 13,
       "name": "Omar Elabdellaoui",
       "ovr": 70,
       "status": "titular",
@@ -460,7 +460,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 4,
       "name": "Jostein Gundersen",
       "ovr": 70,
       "status": "titular",
@@ -520,7 +520,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 1,
       "name": "Nikita Haikin",
       "ovr": 70,
       "status": "titular",
@@ -536,12 +536,12 @@
         "Far Reach"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 67,
+        "esp": 79,
+        "ref": 72,
+        "pos": 68,
+        "vel": 53,
         "sta": 42
       },
       "detailedStats": {
@@ -576,7 +576,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 14,
       "name": "Brede Mathias Moe",
       "ovr": 70,
       "status": "titular",
@@ -632,7 +632,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 24,
       "name": "Brice Wembangomo",
       "ovr": 70,
       "status": "reserva",
@@ -688,7 +688,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 18,
       "name": "Sondre Fet",
       "ovr": 69,
       "status": "reserva",
@@ -743,7 +743,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 25,
       "name": "Odin Luraas Bjørtuft",
       "ovr": 68,
       "status": "reserva",
@@ -799,7 +799,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 29,
       "name": "August Mikkelsen",
       "ovr": 68,
       "status": "reserva",
@@ -913,7 +913,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 31,
       "name": "Nino Žugelj",
       "ovr": 67,
       "status": "reserva",
@@ -968,7 +968,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 9,
       "name": "Runar Espejord",
       "ovr": 66,
       "status": "reserva",
@@ -1023,7 +1023,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 32,
       "name": "Sondre Sørli",
       "ovr": 66,
       "status": "reserva",
@@ -1078,7 +1078,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 12,
       "name": "Julian Faye Lund",
       "ovr": 65,
       "status": "reserva",
@@ -1093,12 +1093,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 64,
+        "esp": 74,
+        "ref": 68,
+        "pos": 64,
+        "vel": 47,
         "sta": 30
       },
       "detailedStats": {
@@ -1133,7 +1133,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 26,
       "name": "Isak Dybvik Määttä",
       "ovr": 65,
       "status": "reserva",
@@ -1243,7 +1243,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 10,
       "name": "Kasper Høgh",
       "ovr": 64,
       "status": "reserva",
@@ -1298,7 +1298,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 20,
       "name": "Gaute Vetti",
       "ovr": 64,
       "status": "reserva",
@@ -1353,7 +1353,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 27,
       "name": "Sondre Auklend",
       "ovr": 63,
       "status": "reserva",
@@ -1408,7 +1408,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 28,
       "name": "Daniel Bassi",
       "ovr": 62,
       "status": "reserva",
@@ -1463,7 +1463,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 19,
       "name": "Andreas Helmersen",
       "ovr": 62,
       "status": "reserva",
@@ -1518,7 +1518,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 30,
       "name": "Oscar Forsmo Kapskarmo",
       "ovr": 62,
       "status": "reserva",
@@ -1573,7 +1573,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 33,
       "name": "Villads Nielsen",
       "ovr": 57,
       "status": "reserva",
@@ -1629,7 +1629,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 34,
       "name": "Magnus Brøndbo",
       "ovr": 55,
       "status": "reserva",
@@ -1644,12 +1644,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 57,
+        "seg": 54,
+        "esp": 63,
+        "ref": 57,
+        "pos": 54,
+        "vel": 35,
         "sta": 30
       },
       "detailedStats": {
@@ -1684,7 +1684,7 @@
     },
     {
       "id": 31,
-      "number": 31,
+      "number": 35,
       "name": "Isak Sjong",
       "ovr": 53,
       "status": "reserva",
@@ -1699,12 +1699,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 53,
+        "seg": 51,
+        "esp": 59,
+        "ref": 54,
+        "pos": 51,
+        "vel": 35,
         "sta": 18
       },
       "detailedStats": {

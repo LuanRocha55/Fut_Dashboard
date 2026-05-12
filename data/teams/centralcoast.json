@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Brian Kaltak",
       "ovr": 70,
       "status": "titular",
@@ -68,7 +68,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 3,
       "name": "Lucas Mauragis",
       "ovr": 65,
       "status": "titular",
@@ -124,7 +124,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Mikael Doka",
       "ovr": 65,
       "status": "titular",
@@ -179,7 +179,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 2,
       "name": "Storm Roux",
       "ovr": 64,
       "status": "titular",
@@ -234,7 +234,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 19,
       "name": "Christian Theoharous",
       "ovr": 63,
       "status": "titular",
@@ -290,7 +290,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 8,
       "name": "Alfie McCalmont",
       "ovr": 62,
       "status": "titular",
@@ -345,7 +345,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 9,
       "name": "Ryan Edmondson",
       "ovr": 61,
       "status": "titular",
@@ -400,7 +400,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 10,
       "name": "Alou Kuol",
       "ovr": 61,
       "status": "titular",
@@ -455,7 +455,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 23,
       "name": "Miguel Di Pizio",
       "ovr": 60,
       "status": "titular",
@@ -510,7 +510,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 18,
       "name": "Harry Steele",
       "ovr": 60,
       "status": "titular",
@@ -565,7 +565,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 16,
       "name": "Noah Smith",
       "ovr": 59,
       "status": "titular",
@@ -621,7 +621,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 5,
       "name": "Brad Tapp",
       "ovr": 59,
       "status": "reserva",
@@ -676,7 +676,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Dylan Wenzel-Halls",
       "ovr": 59,
       "status": "reserva",
@@ -731,7 +731,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 27,
       "name": "Will Wilson",
       "ovr": 58,
       "status": "reserva",
@@ -786,7 +786,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 14,
       "name": "Nathan Paull",
       "ovr": 57,
       "status": "reserva",
@@ -842,7 +842,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 13,
       "name": "Sasha Kuzevski",
       "ovr": 56,
       "status": "reserva",
@@ -897,7 +897,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 1,
       "name": "Adam Pavlesic",
       "ovr": 56,
       "status": "reserva",
@@ -912,12 +912,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 56,
+        "seg": 57,
+        "esp": 64,
+        "ref": 59,
+        "pos": 58,
+        "vel": 29,
         "sta": 18
       },
       "detailedStats": {
@@ -952,7 +952,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 12,
       "name": "Jack Warshawsky",
       "ovr": 55,
       "status": "reserva",
@@ -967,12 +967,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 57,
+        "seg": 51,
+        "esp": 63,
+        "ref": 57,
+        "pos": 52,
+        "vel": 34,
         "sta": 25
       },
       "detailedStats": {

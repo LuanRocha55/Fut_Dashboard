@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Lee Seung Woo",
       "ovr": 72,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Park Jin Seob",
       "ovr": 72,
       "status": "titular",
@@ -125,7 +125,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 23,
       "name": "Song Min Kyu",
       "ovr": 72,
       "status": "titular",
@@ -182,7 +182,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Lee Yeong Jae",
       "ovr": 71,
       "status": "titular",
@@ -240,7 +240,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 2,
       "name": "Ahn Hyun Beom",
       "ovr": 70,
       "status": "titular",
@@ -298,7 +298,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 5,
       "name": "Han Kook Young",
       "ovr": 70,
       "status": "titular",
@@ -355,7 +355,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 9,
       "name": "Tiago Orobó",
       "ovr": 70,
       "status": "titular",
@@ -411,7 +411,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 18,
       "name": "Kim Jin Kyu",
       "ovr": 68,
       "status": "titular",
@@ -468,7 +468,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 1,
       "name": "Kim Joon Hong",
       "ovr": 68,
       "status": "titular",
@@ -484,12 +484,12 @@
         "Far Reach"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 66,
+        "esp": 78,
+        "ref": 72,
+        "pos": 66,
+        "vel": 29,
         "sta": 26
       },
       "detailedStats": {
@@ -524,7 +524,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 3,
       "name": "Kim Jin Su",
       "ovr": 68,
       "status": "titular",
@@ -582,7 +582,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 17,
       "name": "Andrigo",
       "ovr": 68,
       "status": "titular",
@@ -637,7 +637,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 21,
       "name": "Bismark Adjei-Boateng",
       "ovr": 67,
       "status": "reserva",
@@ -694,7 +694,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 14,
       "name": "Hong Jeong Ho",
       "ovr": 67,
       "status": "reserva",
@@ -754,7 +754,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Lee Soo Bin",
       "ovr": 67,
       "status": "reserva",
@@ -809,7 +809,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 11,
       "name": "Jeon Byung Kwan",
       "ovr": 66,
       "status": "reserva",
@@ -864,7 +864,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 25,
       "name": "Lee Jae Ik",
       "ovr": 66,
       "status": "reserva",
@@ -920,7 +920,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 19,
       "name": "Moon Seon Min",
       "ovr": 66,
       "status": "reserva",
@@ -976,7 +976,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Hernandes",
       "ovr": 66,
       "status": "reserva",
@@ -1031,7 +1031,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 12,
       "name": "Kim Jeong Hoon",
       "ovr": 65,
       "status": "reserva",
@@ -1046,12 +1046,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 66,
+        "esp": 72,
+        "ref": 68,
+        "pos": 62,
+        "vel": 17,
         "sta": 24
       },
       "detailedStats": {
@@ -1086,7 +1086,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 13,
       "name": "Kim Tae Hwan",
       "ovr": 65,
       "status": "reserva",
@@ -1143,7 +1143,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Yeon Je Woon",
       "ovr": 65,
       "status": "reserva",
@@ -1199,7 +1199,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 16,
       "name": "Jeong Woo Jae",
       "ovr": 64,
       "status": "reserva",
@@ -1255,7 +1255,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Kim Tae Hyun",
       "ovr": 64,
       "status": "reserva",
@@ -1310,7 +1310,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Koo Ja Ryong",
       "ovr": 64,
       "status": "reserva",
@@ -1367,7 +1367,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 27,
       "name": "Bak Jae Yong",
       "ovr": 62,
       "status": "reserva",
@@ -1422,7 +1422,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 28,
       "name": "Yu Je Ho",
       "ovr": 61,
       "status": "reserva",
@@ -1478,7 +1478,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 29,
       "name": "Jeon Jin Woo",
       "ovr": 60,
       "status": "reserva",
@@ -1533,7 +1533,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 30,
       "name": "Choi Chul Soon",
       "ovr": 58,
       "status": "reserva",
@@ -1588,7 +1588,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 31,
       "name": "Kim Ha Jun",
       "ovr": 56,
       "status": "reserva",
@@ -1644,7 +1644,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 32,
       "name": "Park Kyu Min",
       "ovr": 56,
       "status": "reserva",
@@ -1699,7 +1699,7 @@
     },
     {
       "id": 31,
-      "number": 31,
+      "number": 33,
       "name": "Park Chang Woo",
       "ovr": 55,
       "status": "reserva",
@@ -1754,7 +1754,7 @@
     },
     {
       "id": 32,
-      "number": 32,
+      "number": 34,
       "name": "Park Jun Beom",
       "ovr": 53,
       "status": "reserva",
@@ -1809,7 +1809,7 @@
     },
     {
       "id": 33,
-      "number": 33,
+      "number": 35,
       "name": "Eom Seung Min",
       "ovr": 52,
       "status": "reserva",
@@ -1864,7 +1864,7 @@
     },
     {
       "id": 34,
-      "number": 34,
+      "number": 36,
       "name": "Kwon Chang Hoon",
       "ovr": 52,
       "status": "reserva",
@@ -1919,7 +1919,7 @@
     },
     {
       "id": 35,
-      "number": 35,
+      "number": 37,
       "name": "Park Chae Jun",
       "ovr": 52,
       "status": "reserva",
@@ -1974,7 +1974,7 @@
     },
     {
       "id": 36,
-      "number": 36,
+      "number": 38,
       "name": "Kang Young Suk",
       "ovr": 51,
       "status": "reserva",
@@ -2029,7 +2029,7 @@
     },
     {
       "id": 37,
-      "number": 37,
+      "number": 39,
       "name": "Lee Woo Yeon",
       "ovr": 51,
       "status": "reserva",
@@ -2085,7 +2085,7 @@
     },
     {
       "id": 38,
-      "number": 38,
+      "number": 40,
       "name": "Park Si Hwa",
       "ovr": 50,
       "status": "reserva",

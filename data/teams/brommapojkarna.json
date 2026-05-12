@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 5,
       "name": "Serge-Junior M. Ngouali",
       "ovr": 68,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Ludvig Fritzson",
       "ovr": 65,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 10,
       "name": "Daleho Irandust",
       "ovr": 65,
       "status": "titular",
@@ -173,7 +173,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Adam Jakobsen",
       "ovr": 65,
       "status": "titular",
@@ -228,7 +228,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 2,
       "name": "Alexander Jensen",
       "ovr": 65,
       "status": "titular",
@@ -283,7 +283,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 19,
       "name": "Nikola Vasic",
       "ovr": 65,
       "status": "titular",
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 18,
       "name": "Kevin Ackermann",
       "ovr": 64,
       "status": "titular",
@@ -395,7 +395,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 11,
       "name": "Alex Timossi Andersson",
       "ovr": 64,
       "status": "titular",
@@ -450,7 +450,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 3,
       "name": "Tim Waker",
       "ovr": 64,
       "status": "titular",
@@ -506,7 +506,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 4,
       "name": "Alexander Abrahamsson",
       "ovr": 63,
       "status": "titular",
@@ -562,7 +562,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 14,
       "name": "Eric Björkander",
       "ovr": 63,
       "status": "titular",
@@ -618,7 +618,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 23,
       "name": "Rasmus Örqvist",
       "ovr": 63,
       "status": "reserva",
@@ -673,7 +673,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 25,
       "name": "André Calisir",
       "ovr": 62,
       "status": "reserva",
@@ -729,7 +729,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 27,
       "name": "Frederik Christensen",
       "ovr": 62,
       "status": "reserva",
@@ -784,7 +784,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 20,
       "name": "Wilmer Odefalk",
       "ovr": 62,
       "status": "reserva",
@@ -950,7 +950,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 1,
       "name": "Lucas Hägg Johansson",
       "ovr": 60,
       "status": "reserva",
@@ -965,12 +965,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 60,
+        "esp": 67,
+        "ref": 60,
+        "pos": 59,
+        "vel": 42,
         "sta": 25
       },
       "detailedStats": {
@@ -1005,7 +1005,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Hlynur Freyr Karlsson",
       "ovr": 60,
       "status": "reserva",
@@ -1061,7 +1061,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 13,
       "name": "Theo Bergvall",
       "ovr": 59,
       "status": "reserva",
@@ -1116,7 +1116,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 12,
       "name": "Fabian Mrozek",
       "ovr": 58,
       "status": "reserva",
@@ -1131,12 +1131,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 57,
+        "seg": 56,
+        "esp": 65,
+        "ref": 60,
+        "pos": 57,
+        "vel": 32,
         "sta": 20
       },
       "detailedStats": {
@@ -1171,7 +1171,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Liam Tahwildaran",
       "ovr": 56,
       "status": "reserva",
@@ -1226,7 +1226,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Mario Butros",
       "ovr": 55,
       "status": "reserva",
@@ -1281,7 +1281,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 28,
       "name": "Alfons Lohake",
       "ovr": 55,
       "status": "reserva",
@@ -1336,7 +1336,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 22,
       "name": "Otega Ekperuoh",
       "ovr": 54,
       "status": "reserva",
@@ -1351,12 +1351,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 57,
+        "seg": 56,
+        "esp": 63,
+        "ref": 56,
+        "pos": 55,
+        "vel": 22,
         "sta": 40
       },
       "detailedStats": {

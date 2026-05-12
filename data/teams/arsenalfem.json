@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 17,
       "name": "Beth Mead",
       "ovr": 88,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Kim Little",
       "ovr": 86,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 7,
       "name": "Caitlin Foord",
       "ovr": 85,
       "status": "titular",
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 3,
       "name": "Katie McCabe",
       "ovr": 85,
       "status": "titular",
@@ -237,7 +237,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 9,
       "name": "Alessia Russo",
       "ovr": 85,
       "status": "titular",
@@ -296,7 +296,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 4,
       "name": "Leah Williamson",
       "ovr": 85,
       "status": "titular",
@@ -355,7 +355,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 29,
       "name": "Mariona",
       "ovr": 84,
       "status": "titular",
@@ -416,7 +416,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Amanda Ilestedt",
       "ovr": 84,
       "status": "titular",
@@ -472,7 +472,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 1,
       "name": "Manuela Zinsberger",
       "ovr": 84,
       "status": "titular",
@@ -488,12 +488,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 84,
+        "seg": 77,
+        "esp": 94,
+        "ref": 85,
+        "pos": 85,
+        "vel": 42,
         "sta": 22
       },
       "detailedStats": {
@@ -528,7 +528,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 16,
       "name": "Steph Catley",
       "ovr": 83,
       "status": "titular",
@@ -585,7 +585,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 5,
       "name": "Lia Wälti",
       "ovr": 83,
       "status": "titular",
@@ -642,7 +642,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 10,
       "name": "Stina Blackstenius",
       "ovr": 82,
       "status": "reserva",
@@ -699,7 +699,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 18,
       "name": "Frida Maanum",
       "ovr": 82,
       "status": "reserva",
@@ -758,7 +758,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 26,
       "name": "Emily Fox",
       "ovr": 81,
       "status": "reserva",
@@ -816,7 +816,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "Lotte Wubben-Moy",
       "ovr": 81,
       "status": "reserva",
@@ -873,7 +873,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 19,
       "name": "Lina Hurtig",
       "ovr": 78,
       "status": "reserva",
@@ -929,7 +929,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 23,
       "name": "Victoria Pelova",
       "ovr": 78,
       "status": "reserva",
@@ -984,7 +984,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Laia Codina",
       "ovr": 76,
       "status": "reserva",
@@ -1040,7 +1040,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Kyra Cooney-Cross",
       "ovr": 75,
       "status": "reserva",
@@ -1095,7 +1095,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 12,
       "name": "Daphne van Domselaar",
       "ovr": 74,
       "status": "reserva",
@@ -1111,12 +1111,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
+        "alc": 73,
+        "seg": 69,
+        "esp": 82,
+        "ref": 74,
         "pos": 75,
-        "vel": 40,
+        "vel": 45,
         "sta": 21
       },
       "detailedStats": {
@@ -1151,7 +1151,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Kathrine Kühl",
       "ovr": 72,
       "status": "reserva",
@@ -1206,7 +1206,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 2,
       "name": "Laura Wienroither",
       "ovr": 72,
       "status": "reserva",
@@ -1261,7 +1261,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 24,
       "name": "Freya Godfrey",
       "ovr": 59,
       "status": "reserva",
@@ -1316,7 +1316,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 27,
       "name": "Naomi Williams",
       "ovr": 57,
       "status": "reserva",
@@ -1331,11 +1331,11 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 53,
+        "seg": 54,
+        "esp": 62,
+        "ref": 59,
+        "pos": 56,
         "vel": 40,
         "sta": 24
       },

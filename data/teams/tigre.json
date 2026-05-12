@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Facundo Ferreyra",
       "ovr": 71,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Leonel Miranda",
       "ovr": 71,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Blas Armoa",
       "ovr": 69,
       "status": "titular",
@@ -173,7 +173,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 19,
       "name": "Romeo Benítez",
       "ovr": 69,
       "status": "titular",
@@ -228,7 +228,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 18,
       "name": "Agustín Cardozo",
       "ovr": 69,
       "status": "titular",
@@ -283,7 +283,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 10,
       "name": "Nicolás Contin",
       "ovr": 67,
       "status": "titular",
@@ -338,7 +338,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 4,
       "name": "Brian Leizza",
       "ovr": 67,
       "status": "titular",
@@ -394,7 +394,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 23,
       "name": "Gonzalo Maroni",
       "ovr": 67,
       "status": "titular",
@@ -450,7 +450,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 20,
       "name": "Eric Ramírez",
       "ovr": 67,
       "status": "titular",
@@ -505,7 +505,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 17,
       "name": "Darío Sarmiento",
       "ovr": 67,
       "status": "titular",
@@ -560,7 +560,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 30,
       "name": "Tomás Galván",
       "ovr": 66,
       "status": "titular",
@@ -615,7 +615,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 14,
       "name": "Gian Nardelli",
       "ovr": 66,
       "status": "reserva",
@@ -671,7 +671,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 28,
       "name": "Ijiel Protti",
       "ovr": 66,
       "status": "reserva",
@@ -726,7 +726,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 25,
       "name": "Pablo Minissale",
       "ovr": 65,
       "status": "reserva",
@@ -893,7 +893,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 3,
       "name": "Nahuel Banegas",
       "ovr": 64,
       "status": "reserva",
@@ -948,7 +948,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 2,
       "name": "Martín Ortega",
       "ovr": 64,
       "status": "reserva",
@@ -1003,7 +1003,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 1,
       "name": "Felipe Zenobio",
       "ovr": 61,
       "status": "reserva",
@@ -1018,12 +1018,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 59,
+        "esp": 67,
+        "ref": 60,
+        "pos": 60,
+        "vel": 34,
         "sta": 21
       },
       "detailedStats": {
@@ -1058,7 +1058,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 21,
       "name": "Ezequiel Forclaz",
       "ovr": 59,
       "status": "reserva",

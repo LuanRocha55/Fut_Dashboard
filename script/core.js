@@ -92,10 +92,15 @@ export function applyMatchResults(
   assistsIds = [],
   daysPassed = 7,
   tacklesIds = [],
+  compType = "league"
 ) {
   let updated = false;
 
   squad.forEach((p) => {
+    // Inicializa stats por competição se não existir
+    if (!p.compStats) p.compStats = {};
+    if (!p.compStats[compType]) p.compStats[compType] = { goals: 0, assists: 0, matches: 0, sumRatings: 0, tackles: 0 };
+
     // Recupera jogadores suspensos ou machucados
     if (
       p.matchStatus === "red" &&
@@ -126,6 +131,10 @@ export function applyMatchResults(
       p.matchesPlayed = (p.matchesPlayed || 0) + 1;
       p.sumRatings = (p.sumRatings || 0) + playerRatings[p.id];
       p.avgRating = p.sumRatings / p.matchesPlayed;
+
+      // Stats da Competição
+      p.compStats[compType].matches++;
+      p.compStats[compType].sumRatings += playerRatings[p.id];
       
       let currentForm = p.form !== undefined ? p.form : 0;
       if (playerRatings[p.id] >= 8.5) currentForm = Math.min(2, currentForm + 1);
@@ -139,12 +148,24 @@ export function applyMatchResults(
 
   scorersIds.forEach((id) => {
     let p = squad.find((x) => x.id === id);
-    if (p) { p.goals = (p.goals || 0) + 1; updated = true; }
+    if (p) { 
+      p.goals = (p.goals || 0) + 1; 
+      if (!p.compStats) p.compStats = {};
+      if (!p.compStats[compType]) p.compStats[compType] = { goals: 0, assists: 0, matches: 0, sumRatings: 0, tackles: 0 };
+      p.compStats[compType].goals++;
+      updated = true; 
+    }
   });
 
   assistsIds.forEach((id) => {
     let p = squad.find((x) => x.id === id);
-    if (p) { p.assists = (p.assists || 0) + 1; updated = true; }
+    if (p) { 
+      p.assists = (p.assists || 0) + 1; 
+      if (!p.compStats) p.compStats = {};
+      if (!p.compStats[compType]) p.compStats[compType] = { goals: 0, assists: 0, matches: 0, sumRatings: 0, tackles: 0 };
+      p.compStats[compType].assists++;
+      updated = true; 
+    }
   });
 
   cards.forEach((c) => {
@@ -172,7 +193,13 @@ export function applyMatchResults(
 
   tacklesIds.forEach((id) => {
     let p = squad.find((x) => x.id === id);
-    if (p) { p.tackles = (p.tackles || 0) + 1; updated = true; }
+    if (p) { 
+      p.tackles = (p.tackles || 0) + 1; 
+      if (!p.compStats) p.compStats = {};
+      if (!p.compStats[compType]) p.compStats[compType] = { goals: 0, assists: 0, matches: 0, sumRatings: 0, tackles: 0 };
+      p.compStats[compType].tackles++;
+      updated = true; 
+    }
   });
 
   if (updated) saveToLocal();
@@ -379,6 +406,8 @@ export async function syncRealData() {
 
 export async function initSystem() {
   try {
+    squad.length = 0;
+    matchHistory.length = 0;
     let currentTeamFile = (await Storage.getCurrentTeamFile()) || "vasco.json";
     const savedSquad = await Storage.getSquad();
     const savedTactics = await Storage.getTactics();
@@ -421,9 +450,14 @@ export async function initSystem() {
 
     if (sourceSquad) {
       sourceSquad.forEach(p => {
+        // Garantir que temos aptidões base
         if (!p.aptitude) p.aptitude = p.positions || ["CA"];
-        // Expande aptidões para maior fluidez tática
-        p.aptitude = expandAptitudes(p.aptitude);
+        
+        // Se o jogador já tem MUITAS posições, ele provavelmente já foi expandido.
+        // Vamos expandir apenas se a lista for curta (original), evitando recursividade infinita no save.
+        if (p.aptitude.length < 5) {
+            p.aptitude = expandAptitudes(p.aptitude);
+        }
         
         const isGK = p.aptitude && (p.aptitude.includes("GOL") || p.aptitude.includes("GL"));
         p.rating = calculateOVR(p.stats, p.form, isGK, p.aptitude[0]);

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Braydon Manu",
       "ovr": 73,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 1,
       "name": "Jasper Schendelaar",
       "ovr": 69,
       "status": "titular",
@@ -135,12 +135,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 66,
+        "esp": 78,
+        "ref": 73,
+        "pos": 66,
+        "vel": 32,
         "sta": 17
       },
       "detailedStats": {
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 10,
       "name": "Filip Krastev",
       "ovr": 68,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 8,
       "name": "Davy van den Berg",
       "ovr": 68,
       "status": "titular",
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 9,
       "name": "Dylan Vente",
       "ovr": 68,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 4,
       "name": "Anselmo García MacNulty",
       "ovr": 67,
       "status": "titular",
@@ -399,7 +399,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 19,
       "name": "Odysseus Velanas",
       "ovr": 67,
       "status": "titular",
@@ -454,7 +454,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 20,
       "name": "Thomas Buitink",
       "ovr": 66,
       "status": "titular",
@@ -509,7 +509,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 13,
       "name": "Simon Graves",
       "ovr": 66,
       "status": "titular",
@@ -564,7 +564,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 18,
       "name": "Ryan Thomas",
       "ovr": 66,
       "status": "titular",
@@ -619,7 +619,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 5,
       "name": "Anouar El Azzouzi",
       "ovr": 65,
       "status": "reserva",
@@ -674,7 +674,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 3,
       "name": "Thierry Lutonda",
       "ovr": 65,
       "status": "reserva",
@@ -730,7 +730,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 28,
       "name": "Dylan Mbayo",
       "ovr": 65,
       "status": "reserva",
@@ -786,7 +786,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 27,
       "name": "Eliano Reijnders",
       "ovr": 65,
       "status": "reserva",
@@ -841,7 +841,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 24,
       "name": "Tristan Gooijer",
       "ovr": 64,
       "status": "reserva",
@@ -951,7 +951,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 23,
       "name": "Anthony Fontana",
       "ovr": 63,
       "status": "reserva",
@@ -1006,7 +1006,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 12,
       "name": "Mike Hauptmeijer",
       "ovr": 63,
       "status": "reserva",
@@ -1021,12 +1021,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 62,
+        "esp": 69,
+        "ref": 64,
+        "pos": 63,
+        "vel": 35,
         "sta": 30
       },
       "detailedStats": {
@@ -1061,7 +1061,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 21,
       "name": "Nick Fichtinger",
       "ovr": 62,
       "status": "reserva",
@@ -1116,7 +1116,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Kenneth Vermeer",
       "ovr": 62,
       "status": "reserva",
@@ -1131,12 +1131,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 60,
+        "esp": 69,
+        "ref": 62,
+        "pos": 64,
+        "vel": 44,
         "sta": 20
       },
       "detailedStats": {
@@ -1171,7 +1171,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 25,
       "name": "Samir Lagsir",
       "ovr": 61,
       "status": "reserva",
@@ -1226,7 +1226,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 14,
       "name": "Damian van der Haar",
       "ovr": 59,
       "status": "reserva",
@@ -1282,7 +1282,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 30,
       "name": "Mohamed Oukhattou",
       "ovr": 56,
       "status": "reserva",
@@ -1337,7 +1337,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "Duke Verduin",
       "ovr": 55,
       "status": "reserva",
@@ -1352,12 +1352,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 55,
+        "seg": 54,
+        "esp": 61,
+        "ref": 55,
+        "pos": 55,
+        "vel": 29,
         "sta": 26
       },
       "detailedStats": {

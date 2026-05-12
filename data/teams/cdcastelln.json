@@ -23,12 +23,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 68,
+        "esp": 79,
+        "ref": 72,
+        "pos": 71,
+        "vel": 25,
         "sta": 21
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Kenneth Mamah",
       "ovr": 69,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Thomas van den Belt",
       "ovr": 69,
       "status": "titular",
@@ -173,7 +173,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Mats Seuntjens",
       "ovr": 68,
       "status": "titular",
@@ -228,7 +228,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 3,
       "name": "Jetro Willems",
       "ovr": 68,
       "status": "titular",
@@ -284,7 +284,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 19,
       "name": "Douglas Aurélio",
       "ovr": 67,
       "status": "titular",
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 4,
       "name": "Alberto Jiménez",
       "ovr": 67,
       "status": "titular",
@@ -396,7 +396,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 16,
       "name": "Salva Ruíz",
       "ovr": 67,
       "status": "titular",
@@ -451,7 +451,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 2,
       "name": "Daijiro Chirino",
       "ovr": 66,
       "status": "titular",
@@ -506,7 +506,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 7,
       "name": "Brian Cipenga",
       "ovr": 66,
       "status": "titular",
@@ -561,7 +561,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 10,
       "name": "Jesús de Miguel",
       "ovr": 66,
       "status": "titular",
@@ -616,7 +616,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 27,
       "name": "Raúl Sánchez",
       "ovr": 66,
       "status": "reserva",
@@ -671,7 +671,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 18,
       "name": "Villahermosa",
       "ovr": 66,
       "status": "reserva",
@@ -726,7 +726,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 5,
       "name": "Albert-Nicolas Lottin",
       "ovr": 65,
       "status": "reserva",
@@ -781,7 +781,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 28,
       "name": "Álex Calatrava",
       "ovr": 64,
       "status": "reserva",
@@ -836,7 +836,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 20,
       "name": "Calavera",
       "ovr": 64,
       "status": "reserva",
@@ -891,7 +891,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 12,
       "name": "Gonzalo Crettaz",
       "ovr": 64,
       "status": "reserva",
@@ -906,12 +906,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 66,
+        "esp": 72,
+        "ref": 65,
+        "pos": 62,
+        "vel": 32,
         "sta": 24
       },
       "detailedStats": {
@@ -946,7 +946,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 23,
       "name": "Moyita",
       "ovr": 64,
       "status": "reserva",
@@ -1001,7 +1001,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 14,
       "name": "Óscar Gil",
       "ovr": 64,
       "status": "reserva",
@@ -1057,7 +1057,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 30,
       "name": "Israel Suero Fernández",
       "ovr": 64,
       "status": "reserva",
@@ -1112,7 +1112,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Brian Schwake",
       "ovr": 63,
       "status": "reserva",
@@ -1127,12 +1127,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 60,
+        "esp": 72,
+        "ref": 63,
+        "pos": 60,
+        "vel": 28,
         "sta": 25
       },
       "detailedStats": {
@@ -1167,7 +1167,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Jozhua Vertrouwd",
       "ovr": 63,
       "status": "reserva",

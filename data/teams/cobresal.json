@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Leonardo Valencia",
       "ovr": 71,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Gastón Lezcano",
       "ovr": 70,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 7,
       "name": "César Munder",
       "ovr": 69,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 19,
       "name": "Diego Coelho",
       "ovr": 68,
       "status": "titular",
@@ -230,7 +230,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 1,
       "name": "Leandro Requena",
       "ovr": 67,
       "status": "titular",
@@ -245,12 +245,12 @@
         "1v1 Close Down"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 64,
+        "esp": 76,
+        "ref": 69,
+        "pos": 64,
+        "vel": 65,
         "sta": 43
       },
       "detailedStats": {
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 17,
       "name": "Franco Emanuel García",
       "ovr": 66,
       "status": "titular",
@@ -341,7 +341,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 2,
       "name": "Guillermo Pacheco",
       "ovr": 66,
       "status": "titular",
@@ -451,7 +451,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 4,
       "name": "Francisco Alarcón",
       "ovr": 64,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Franco Bechtholdt",
       "ovr": 64,
       "status": "titular",
@@ -564,7 +564,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 3,
       "name": "Marcelo Jorquera",
       "ovr": 64,
       "status": "titular",
@@ -619,7 +619,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 18,
       "name": "Nelson Sepúlveda",
       "ovr": 64,
       "status": "reserva",
@@ -674,7 +674,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 25,
       "name": "Diego Céspedes",
       "ovr": 63,
       "status": "reserva",
@@ -730,7 +730,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 13,
       "name": "Marcelo Filla",
       "ovr": 62,
       "status": "reserva",
@@ -785,7 +785,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 29,
       "name": "Franco Lobos",
       "ovr": 62,
       "status": "reserva",
@@ -840,7 +840,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 20,
       "name": "Sergio Carrasco",
       "ovr": 61,
       "status": "reserva",
@@ -895,7 +895,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 12,
       "name": "Alejandro Santander",
       "ovr": 61,
       "status": "reserva",
@@ -910,12 +910,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 57,
+        "esp": 69,
+        "ref": 63,
+        "pos": 59,
+        "vel": 23,
         "sta": 28
       },
       "detailedStats": {
@@ -950,7 +950,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Cristian Toro",
       "ovr": 61,
       "status": "reserva",
@@ -1006,7 +1006,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 31,
       "name": "Felipe Barrientos",
       "ovr": 60,
       "status": "reserva",
@@ -1061,7 +1061,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 16,
       "name": "Jens Buss",
       "ovr": 60,
       "status": "reserva",
@@ -1116,7 +1116,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 5,
       "name": "Ignacio Pacheco",
       "ovr": 60,
       "status": "reserva",
@@ -1297,12 +1297,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 48,
+        "seg": 55,
+        "esp": 57,
+        "ref": 55,
+        "pos": 49,
+        "vel": 20,
         "sta": 28
       },
       "detailedStats": {

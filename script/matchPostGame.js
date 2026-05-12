@@ -187,6 +187,10 @@ export const handleMatchPostGame = async ({
     leagueData.lastMatchDate = currentMatchDate;
   }
 
+  let compType = "league";
+  if (isCupMatch) compType = "cup";
+  if (isContinentalMatch) compType = "continental";
+
   applyMatchResults(
     homeScorersIds,
     homeCards,
@@ -196,6 +200,7 @@ export const handleMatchPostGame = async ({
     homeAssistsIds,
     daysPassed,
     homeTacklesIds,
+    compType
   );
   registerMatchResult(
     matchInfo.home || "Seu Time",

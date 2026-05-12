@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 3,
       "name": "Rayan Aït-Nouri",
       "ovr": 79,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Matheus Cunha",
       "ovr": 79,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 5,
       "name": "Mario Lemina",
       "ovr": 79,
       "status": "titular",
@@ -177,7 +177,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "José Sá",
       "ovr": 79,
       "status": "titular",
@@ -193,12 +193,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
+        "alc": 80,
         "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "esp": 89,
+        "ref": 81,
+        "pos": 78,
+        "vel": 53,
         "sta": 34
       },
       "detailedStats": {
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 2,
       "name": "Nélson Semedo",
       "ovr": 78,
       "status": "titular",
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 21,
       "name": "João Gomes",
       "ovr": 78,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "Hwang Hee Chan",
       "ovr": 78,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 12,
       "name": "Sam Johnstone",
       "ovr": 78,
       "status": "titular",
@@ -413,12 +413,12 @@
         "Deflector"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 79,
+        "seg": 79,
+        "esp": 88,
+        "ref": 80,
+        "pos": 76,
+        "vel": 45,
         "sta": 37
       },
       "detailedStats": {
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 4,
       "name": "Santiago Bueno",
       "ovr": 77,
       "status": "titular",
@@ -509,7 +509,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Craig Dawson",
       "ovr": 77,
       "status": "titular",
@@ -568,7 +568,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 19,
       "name": "Gonçalo Guedes",
       "ovr": 77,
       "status": "titular",
@@ -625,7 +625,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 20,
       "name": "Saša Kalajdžić",
       "ovr": 77,
       "status": "reserva",
@@ -680,7 +680,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 23,
       "name": "Pablo Sarabia",
       "ovr": 77,
       "status": "reserva",
@@ -736,7 +736,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 25,
       "name": "Toti",
       "ovr": 76,
       "status": "reserva",
@@ -792,7 +792,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 8,
       "name": "Jean-Ricner Bellegarde",
       "ovr": 75,
       "status": "reserva",
@@ -902,7 +902,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 18,
       "name": "Tommy Doyle",
       "ovr": 74,
       "status": "reserva",
@@ -958,7 +958,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 13,
       "name": "Matt Doherty",
       "ovr": 73,
       "status": "reserva",
@@ -1013,7 +1013,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Daniel Bentley",
       "ovr": 72,
       "status": "reserva",
@@ -1028,12 +1028,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 73,
+        "seg": 67,
+        "esp": 81,
+        "ref": 73,
+        "pos": 72,
+        "vel": 43,
         "sta": 31
       },
       "detailedStats": {
@@ -1068,7 +1068,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 17,
       "name": "Rodrigo Gomes",
       "ovr": 72,
       "status": "reserva",
@@ -1123,7 +1123,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Boubacar Traoré",
       "ovr": 71,
       "status": "reserva",
@@ -1178,7 +1178,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 7,
       "name": "Carlos Forbs",
       "ovr": 70,
       "status": "reserva",
@@ -1234,7 +1234,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Yerson Mosquera",
       "ovr": 70,
       "status": "reserva",
@@ -1290,7 +1290,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 27,
       "name": "Pedro Lima",
       "ovr": 68,
       "status": "reserva",
@@ -1345,7 +1345,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 28,
       "name": "Luke Cundle",
       "ovr": 66,
       "status": "reserva",
@@ -1400,7 +1400,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Dexter Lembikisa",
       "ovr": 65,
       "status": "reserva",
@@ -1455,7 +1455,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 30,
       "name": "Tom King",
       "ovr": 64,
       "status": "reserva",
@@ -1470,12 +1470,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 64,
+        "seg": 63,
+        "esp": 71,
+        "ref": 64,
+        "pos": 63,
+        "vel": 44,
         "sta": 32
       },
       "detailedStats": {
@@ -1510,7 +1510,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 31,
       "name": "Enso González",
       "ovr": 63,
       "status": "reserva",
@@ -1565,7 +1565,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 32,
       "name": "Harvey Griffiths",
       "ovr": 58,
       "status": "reserva",
@@ -1620,7 +1620,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 33,
       "name": "Leon Chiwome",
       "ovr": 56,
       "status": "reserva",
@@ -1675,7 +1675,7 @@
     },
     {
       "id": 31,
-      "number": 31,
+      "number": 34,
       "name": "Alfie Pond",
       "ovr": 56,
       "status": "reserva",

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 9,
       "name": "Juninho Vieira",
       "ovr": 73,
       "status": "titular",
@@ -64,7 +64,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 10,
       "name": "Yassine Benzia",
       "ovr": 71,
       "status": "titular",
@@ -121,7 +121,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 1,
       "name": "Fabijan Buntić",
       "ovr": 70,
       "status": "titular",
@@ -136,12 +136,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 68,
+        "esp": 78,
+        "ref": 71,
+        "pos": 69,
+        "vel": 27,
         "sta": 19
       },
       "detailedStats": {
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 17,
       "name": "Leandro Andrade",
       "ovr": 70,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 7,
       "name": "Abdellah Zoubir",
       "ovr": 70,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 2,
       "name": "Matheus Silva",
       "ovr": 69,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 29,
       "name": "Hamidou Keyta",
       "ovr": 69,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 13,
       "name": "Marko Vešović",
       "ovr": 69,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 31,
       "name": "Nariman Akhundzada",
       "ovr": 68,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 4,
       "name": "Badavi Hüseynov",
       "ovr": 68,
       "status": "titular",
@@ -564,7 +564,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 8,
       "name": "Marko Janković",
       "ovr": 68,
       "status": "titular",
@@ -634,12 +634,12 @@
         "1v1 Close Down"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 63,
+        "esp": 78,
+        "ref": 72,
+        "pos": 69,
+        "vel": 32,
         "sta": 34
       },
       "detailedStats": {
@@ -674,7 +674,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 5,
       "name": "Júlio Romão",
       "ovr": 68,
       "status": "reserva",
@@ -729,7 +729,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 3,
       "name": "Elvin Cafarquliyev",
       "ovr": 67,
       "status": "reserva",
@@ -784,7 +784,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 21,
       "name": "Patrick Andrade",
       "ovr": 67,
       "status": "reserva",
@@ -839,7 +839,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 18,
       "name": "Riçard Almeyda",
       "ovr": 66,
       "status": "reserva",
@@ -894,7 +894,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 20,
       "name": "Aleksey Isayev",
       "ovr": 66,
       "status": "reserva",
@@ -949,7 +949,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 14,
       "name": "Bahlul Mustafazada",
       "ovr": 66,
       "status": "reserva",
@@ -1005,7 +1005,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 24,
       "name": "Abbas Hüseynov",
       "ovr": 65,
       "status": "reserva",
@@ -1060,7 +1060,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 19,
       "name": "Redon Xhixha",
       "ovr": 64,
       "status": "reserva",
@@ -1115,7 +1115,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Musa Gurbanli",
       "ovr": 62,
       "status": "reserva",

@@ -24,10 +24,10 @@
       ],
       "stats": {
         "alc": 75,
-        "seg": 75,
-        "esp": 75,
+        "seg": 72,
+        "esp": 83,
         "ref": 75,
-        "pos": 75,
+        "pos": 73,
         "vel": 40,
         "sta": 36
       },
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Janner Corozo",
       "ovr": 73,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 2,
       "name": "Byron Castillo",
       "ovr": 72,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Fernando Gaibor",
       "ovr": 71,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 19,
       "name": "Braian Oyola",
       "ovr": 71,
       "status": "titular",
@@ -288,7 +288,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 5,
       "name": "Leonai",
       "ovr": 71,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 21,
       "name": "Jesús Trindade",
       "ovr": 71,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 23,
       "name": "Dixon Arroyo",
       "ovr": 70,
       "status": "titular",
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 28,
       "name": "Adonis Preciado",
       "ovr": 70,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 4,
       "name": "Luca Sosa",
       "ovr": 70,
       "status": "titular",
@@ -564,7 +564,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 9,
       "name": "Octavio Rivero",
       "ovr": 69,
       "status": "titular",
@@ -619,7 +619,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 3,
       "name": "Aníbal Chalá",
       "ovr": 68,
       "status": "reserva",
@@ -674,7 +674,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 14,
       "name": "Walter Jhonnier Chalá",
       "ovr": 68,
       "status": "reserva",
@@ -730,7 +730,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 25,
       "name": "Franklin Guerra",
       "ovr": 68,
       "status": "reserva",
@@ -842,7 +842,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 27,
       "name": "Joao Rojas",
       "ovr": 68,
       "status": "reserva",
@@ -897,7 +897,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 12,
       "name": "Víctor Mendoza",
       "ovr": 67,
       "status": "reserva",
@@ -912,12 +912,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
+        "alc": 67,
+        "seg": 67,
         "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "ref": 68,
+        "pos": 65,
+        "vel": 32,
         "sta": 24
       },
       "detailedStats": {
@@ -952,7 +952,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 10,
       "name": "Allen Obando",
       "ovr": 66,
       "status": "reserva",
@@ -1007,7 +1007,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 20,
       "name": "Djorkaeff Reasco",
       "ovr": 66,
       "status": "reserva",
@@ -1062,7 +1062,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 30,
       "name": "Jefferson Arce",
       "ovr": 65,
       "status": "reserva",
@@ -1117,7 +1117,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 22,
       "name": "Cristhian Solano",
       "ovr": 65,
       "status": "reserva",
@@ -1172,7 +1172,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Alex Rangel",
       "ovr": 62,
       "status": "reserva",

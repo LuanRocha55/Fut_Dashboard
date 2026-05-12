@@ -23,12 +23,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 70,
+        "esp": 77,
+        "ref": 70,
+        "pos": 69,
+        "vel": 42,
         "sta": 32
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Postigo",
       "ovr": 69,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 8,
       "name": "Santiago Homenchenko",
       "ovr": 67,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 14,
       "name": "Tachi",
       "ovr": 67,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 11,
       "name": "Ander Martín",
       "ovr": 66,
       "status": "titular",
@@ -342,7 +342,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 2,
       "name": "Hugo Rincón",
       "ovr": 65,
       "status": "titular",
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 18,
       "name": "Mathis Lachuer",
       "ovr": 64,
       "status": "titular",
@@ -452,7 +452,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 16,
       "name": "Parada",
       "ovr": 64,
       "status": "titular",
@@ -507,7 +507,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 20,
       "name": "Alberto Reina",
       "ovr": 64,
       "status": "titular",
@@ -562,7 +562,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 12,
       "name": "Pablo Tomeo",
       "ovr": 64,
       "status": "titular",
@@ -617,7 +617,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 22,
       "name": "Luis López",
       "ovr": 63,
       "status": "reserva",
@@ -632,12 +632,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 62,
+        "esp": 72,
+        "ref": 63,
+        "pos": 58,
+        "vel": 29,
         "sta": 18
       },
       "detailedStats": {
@@ -672,7 +672,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 25,
       "name": "Juan Gutiérrez",
       "ovr": 62,
       "status": "reserva",
@@ -728,7 +728,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 9,
       "name": "Joaquín Panichelli",
       "ovr": 62,
       "status": "reserva",

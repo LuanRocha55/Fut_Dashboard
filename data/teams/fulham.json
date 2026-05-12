@@ -23,12 +23,12 @@
         "1v1 Close Down"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 83,
+        "seg": 79,
+        "esp": 93,
+        "ref": 84,
+        "pos": 82,
+        "vel": 51,
         "sta": 44
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Joachim Andersen",
       "ovr": 80,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 10,
       "name": "Andreas Pereira",
       "ovr": 78,
       "status": "titular",
@@ -235,7 +235,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 2,
       "name": "Timothy Castagne",
       "ovr": 77,
       "status": "titular",
@@ -290,7 +290,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 14,
       "name": "Issa Diop",
       "ovr": 77,
       "status": "titular",
@@ -347,7 +347,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 11,
       "name": "Alex Iwobi",
       "ovr": 77,
       "status": "titular",
@@ -404,7 +404,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 19,
       "name": "Emile Smith Rowe",
       "ovr": 77,
       "status": "titular",
@@ -460,7 +460,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 25,
       "name": "Calvin Bassey",
       "ovr": 76,
       "status": "titular",
@@ -516,7 +516,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 8,
       "name": "Sander Berge",
       "ovr": 76,
       "status": "titular",
@@ -571,7 +571,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 13,
       "name": "Kenny Tete",
       "ovr": 76,
       "status": "titular",
@@ -627,7 +627,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 18,
       "name": "Tom Cairney",
       "ovr": 75,
       "status": "reserva",
@@ -682,7 +682,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Saša Lukić",
       "ovr": 75,
       "status": "reserva",
@@ -737,7 +737,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 9,
       "name": "Rodrigo Muniz",
       "ovr": 75,
       "status": "reserva",
@@ -793,7 +793,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 17,
       "name": "Reiss Nelson",
       "ovr": 75,
       "status": "reserva",
@@ -849,7 +849,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 5,
       "name": "Harrison Reed",
       "ovr": 75,
       "status": "reserva",
@@ -904,7 +904,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 28,
       "name": "Adama Traoré",
       "ovr": 75,
       "status": "reserva",
@@ -960,7 +960,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Harry Wilson",
       "ovr": 75,
       "status": "reserva",
@@ -1015,7 +1015,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Vinícius",
       "ovr": 74,
       "status": "reserva",
@@ -1070,7 +1070,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 23,
       "name": "Jorge Cuenca",
       "ovr": 74,
       "status": "reserva",
@@ -1127,7 +1127,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Raúl Jiménez",
       "ovr": 74,
       "status": "reserva",
@@ -1182,7 +1182,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 16,
       "name": "Ryan Sessegnon",
       "ovr": 74,
       "status": "reserva",
@@ -1237,7 +1237,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 12,
       "name": "Steven Benda",
       "ovr": 67,
       "status": "reserva",
@@ -1252,12 +1252,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 65,
+        "esp": 76,
+        "ref": 70,
+        "pos": 66,
+        "vel": 38,
         "sta": 30
       },
       "detailedStats": {
@@ -1292,7 +1292,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 26,
       "name": "Adrion Pajaziti",
       "ovr": 63,
       "status": "reserva",
@@ -1347,7 +1347,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 27,
       "name": "Luc De Fougerolles",
       "ovr": 58,
       "status": "reserva",

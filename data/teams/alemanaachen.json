@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Gianluca Gaudino",
       "ovr": 66,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 23,
       "name": "Bentley Baxter Bahn",
       "ovr": 65,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 11,
       "name": "Anton Heinz",
       "ovr": 65,
       "status": "titular",
@@ -173,7 +173,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Marcel Johnen",
       "ovr": 64,
       "status": "titular",
@@ -189,12 +189,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 60,
+        "esp": 76,
+        "ref": 68,
+        "pos": 59,
+        "vel": 26,
         "sta": 44
       },
       "detailedStats": {
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 4,
       "name": "Jan-Luca Rumpf",
       "ovr": 64,
       "status": "titular",
@@ -285,7 +285,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 3,
       "name": "Sasa Strujic",
       "ovr": 64,
       "status": "titular",
@@ -340,7 +340,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 2,
       "name": "Nils Winter",
       "ovr": 64,
       "status": "titular",
@@ -395,7 +395,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 9,
       "name": "Charlison Benschop",
       "ovr": 63,
       "status": "titular",
@@ -450,7 +450,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 19,
       "name": "Kevin Goden",
       "ovr": 63,
       "status": "titular",
@@ -505,7 +505,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Mika Hanraths",
       "ovr": 63,
       "status": "titular",
@@ -561,7 +561,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 27,
       "name": "Leandro Putaro",
       "ovr": 63,
       "status": "titular",
@@ -672,7 +672,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 5,
       "name": "Julian Schwermann",
       "ovr": 63,
       "status": "reserva",
@@ -727,7 +727,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 20,
       "name": "Dustin Willms",
       "ovr": 63,
       "status": "reserva",
@@ -782,7 +782,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "Lamar Yarbrough",
       "ovr": 63,
       "status": "reserva",
@@ -838,7 +838,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 30,
       "name": "Ulrich Bapoh",
       "ovr": 62,
       "status": "reserva",
@@ -893,7 +893,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 13,
       "name": "Florian Heister",
       "ovr": 62,
       "status": "reserva",
@@ -1003,7 +1003,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Anas Bakhat",
       "ovr": 61,
       "status": "reserva",
@@ -1058,7 +1058,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Frederic Baum",
       "ovr": 61,
       "status": "reserva",
@@ -1113,7 +1113,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Aldin Dervisevic",
       "ovr": 61,
       "status": "reserva",
@@ -1169,7 +1169,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Ismail Harnafi",
       "ovr": 61,
       "status": "reserva",
@@ -1224,7 +1224,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 16,
       "name": "Felix Meyer",
       "ovr": 61,
       "status": "reserva",
@@ -1279,7 +1279,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 28,
       "name": "Elias Bördner",
       "ovr": 60,
       "status": "reserva",
@@ -1294,12 +1294,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 59,
+        "esp": 69,
+        "ref": 63,
+        "pos": 59,
+        "vel": 22,
         "sta": 21
       },
       "detailedStats": {
@@ -1334,7 +1334,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Soufiane El-Faouzi",
       "ovr": 60,
       "status": "reserva",
@@ -1389,7 +1389,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 31,
       "name": "Sascha Marquet",
       "ovr": 60,
       "status": "reserva",
@@ -1444,7 +1444,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 32,
       "name": "Julius Schell",
       "ovr": 60,
       "status": "reserva",
@@ -1500,7 +1500,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 33,
       "name": "Leroy Zeller",
       "ovr": 60,
       "status": "reserva",
@@ -1515,12 +1515,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 60,
+        "esp": 69,
+        "ref": 63,
+        "pos": 62,
+        "vel": 25,
         "sta": 26
       },
       "detailedStats": {
@@ -1555,7 +1555,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 34,
       "name": "Jabez Makanda",
       "ovr": 59,
       "status": "reserva",
@@ -1610,7 +1610,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 35,
       "name": "Luca Schmidt",
       "ovr": 55,
       "status": "reserva",
@@ -1625,12 +1625,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 55,
+        "seg": 51,
+        "esp": 63,
+        "ref": 59,
+        "pos": 59,
+        "vel": 21,
         "sta": 28
       },
       "detailedStats": {

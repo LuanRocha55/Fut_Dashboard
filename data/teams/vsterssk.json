@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 7,
       "name": "Abdelrahman Boudah",
       "ovr": 64,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Viktor Granath",
       "ovr": 64,
       "status": "titular",
@@ -174,7 +174,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 5,
       "name": "Mattéo Ahlinvi",
       "ovr": 63,
       "status": "titular",
@@ -229,7 +229,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 10,
       "name": "Ibrahim Diabate",
       "ovr": 63,
       "status": "titular",
@@ -284,7 +284,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 3,
       "name": "Victor Wernersson",
       "ovr": 63,
       "status": "titular",
@@ -339,7 +339,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 13,
       "name": "Elyas Bouzaiene",
       "ovr": 62,
       "status": "titular",
@@ -394,7 +394,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 1,
       "name": "Johan Brattberg",
       "ovr": 61,
       "status": "titular",
@@ -409,12 +409,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 59,
+        "esp": 70,
+        "ref": 64,
+        "pos": 62,
+        "vel": 35,
         "sta": 30
       },
       "detailedStats": {
@@ -449,7 +449,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 12,
       "name": "Anton Fagerström",
       "ovr": 61,
       "status": "titular",
@@ -464,12 +464,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 62,
+        "esp": 67,
+        "ref": 59,
+        "pos": 61,
+        "vel": 36,
         "sta": 23
       },
       "detailedStats": {
@@ -504,7 +504,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 4,
       "name": "Gustav Granath",
       "ovr": 61,
       "status": "titular",
@@ -561,7 +561,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 8,
       "name": "Marcus Linday",
       "ovr": 60,
       "status": "titular",
@@ -616,7 +616,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 14,
       "name": "Frédéric Nsabiyumva",
       "ovr": 60,
       "status": "reserva",
@@ -672,7 +672,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 17,
       "name": "Camil Jebara",
       "ovr": 59,
       "status": "reserva",
@@ -727,7 +727,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 31,
       "name": "Simon Johansson",
       "ovr": 59,
       "status": "reserva",
@@ -782,7 +782,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "Isak Jönsson",
       "ovr": 59,
       "status": "reserva",
@@ -893,7 +893,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 18,
       "name": "Herman Magnusson",
       "ovr": 59,
       "status": "reserva",
@@ -949,7 +949,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 19,
       "name": "Mikael Marqués",
       "ovr": 59,
       "status": "reserva",
@@ -1005,7 +1005,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 20,
       "name": "Henry Offia",
       "ovr": 57,
       "status": "reserva",
@@ -1060,7 +1060,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 24,
       "name": "Alexander Warneryd",
       "ovr": 56,
       "status": "reserva",
@@ -1241,12 +1241,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 53,
+        "seg": 54,
+        "esp": 61,
+        "ref": 57,
+        "pos": 49,
+        "vel": 27,
         "sta": 35
       },
       "detailedStats": {

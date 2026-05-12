@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Ángel Di María",
       "ovr": 83,
       "status": "titular",
@@ -69,7 +69,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Orkun Kökçü",
       "ovr": 81,
       "status": "titular",
@@ -128,7 +128,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 4,
       "name": "Nicolás Otamendi",
       "ovr": 81,
       "status": "titular",
@@ -189,7 +189,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 2,
       "name": "Fredrik Aursnes",
       "ovr": 80,
       "status": "titular",
@@ -247,7 +247,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 19,
       "name": "João Mário",
       "ovr": 80,
       "status": "titular",
@@ -304,7 +304,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 9,
       "name": "Vangelis Pavlidis",
       "ovr": 80,
       "status": "titular",
@@ -362,7 +362,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 13,
       "name": "Alexander Bah",
       "ovr": 79,
       "status": "titular",
@@ -423,7 +423,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 5,
       "name": "Florentino",
       "ovr": 79,
       "status": "titular",
@@ -482,7 +482,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "António Silva",
       "ovr": 79,
       "status": "titular",
@@ -540,7 +540,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 27,
       "name": "Jan-Niklas Beste",
       "ovr": 78,
       "status": "titular",
@@ -598,7 +598,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 10,
       "name": "Arthur Cabral",
       "ovr": 78,
       "status": "titular",
@@ -654,7 +654,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 1,
       "name": "Anatoliy Trubin",
       "ovr": 78,
       "status": "reserva",
@@ -669,12 +669,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 72,
+        "seg": 76,
+        "esp": 86,
+        "ref": 82,
+        "pos": 84,
+        "vel": 38,
         "sta": 33
       },
       "detailedStats": {
@@ -709,7 +709,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 15,
       "name": "Kerem Aktürkoğlu",
       "ovr": 77,
       "status": "reserva",
@@ -769,7 +769,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 18,
       "name": "Renato Sanches",
       "ovr": 77,
       "status": "reserva",
@@ -824,7 +824,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 20,
       "name": "Marcos Leonardo",
       "ovr": 77,
       "status": "reserva",
@@ -936,7 +936,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 23,
       "name": "Benjamín Rollheiser",
       "ovr": 75,
       "status": "reserva",
@@ -993,7 +993,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 28,
       "name": "Tiago Gouveia",
       "ovr": 74,
       "status": "reserva",
@@ -1048,7 +1048,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Zeki Amdouni",
       "ovr": 73,
       "status": "reserva",
@@ -1104,7 +1104,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 24,
       "name": "Issa Kaboré",
       "ovr": 73,
       "status": "reserva",
@@ -1159,7 +1159,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 25,
       "name": "Tomás Araújo",
       "ovr": 73,
       "status": "reserva",
@@ -1217,7 +1217,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 3,
       "name": "Álvaro Carreras",
       "ovr": 72,
       "status": "reserva",
@@ -1272,7 +1272,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 7,
       "name": "Andreas Schjelderup",
       "ovr": 72,
       "status": "reserva",
@@ -1329,7 +1329,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 12,
       "name": "Samuel Soares",
       "ovr": 68,
       "status": "reserva",
@@ -1344,12 +1344,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 65,
+        "esp": 78,
+        "ref": 72,
+        "pos": 64,
+        "vel": 57,
         "sta": 33
       },
       "detailedStats": {
@@ -1384,7 +1384,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "Gianluca Prestianni",
       "ovr": 68,
       "status": "reserva",
@@ -1442,7 +1442,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 22,
       "name": "André Gomes",
       "ovr": 65,
       "status": "reserva",
@@ -1457,12 +1457,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 66,
+        "seg": 62,
+        "esp": 74,
+        "ref": 67,
+        "pos": 64,
+        "vel": 34,
         "sta": 21
       },
       "detailedStats": {
@@ -1497,7 +1497,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 30,
       "name": "João Rêgo",
       "ovr": 64,
       "status": "reserva",

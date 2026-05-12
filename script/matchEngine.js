@@ -60,25 +60,27 @@ export async function loadOpponentData(selectedValue, leagueData = null) {
 }
 
 export function getTeamAtk(activePlayers) {
-  if (activePlayers.length === 0) return 10;
-  return (activePlayers.reduce((sum, p) => {
+  const onPitch = activePlayers.filter(p => !p.isExpelled);
+  if (onPitch.length === 0) return 10;
+  return (onPitch.reduce((sum, p) => {
     const baseAtk = ((p.stats?.fin || 50) * 0.6 + (p.stats?.vel || 50) * 0.4);
     const staminaMult = 0.5 + (p.currentStamina / 200); // Mínimo 0.5, Máximo 1.0
     return sum + (baseAtk * staminaMult);
-  }, 0) / activePlayers.length) * (activePlayers.length / 11);
+  }, 0) / onPitch.length) * (onPitch.length / 11);
 }
 
 export function getTeamDef(activePlayers) {
-  if (activePlayers.length === 0) return 10;
-  return (activePlayers.reduce((sum, p) => {
+  const onPitch = activePlayers.filter(p => !p.isExpelled);
+  if (onPitch.length === 0) return 10;
+  return (onPitch.reduce((sum, p) => {
     const baseDef = ((p.stats?.def || 50) * 0.7 + (p.stats?.fis || 50) * 0.3);
     const staminaMult = 0.5 + (p.currentStamina / 200);
     return sum + (baseDef * staminaMult);
-  }, 0) / activePlayers.length) * (activePlayers.length / 11);
+  }, 0) / onPitch.length) * (onPitch.length / 11);
 }
 
 export function degradeStamina(players, isHome, homeFitnessTracker, staminaDrainFactor = 1.0) {
-  players.forEach((p) => {
+  players.filter(p => !p.isExpelled).forEach((p) => {
     const isGK = p.aptitude && p.aptitude[0] === "GL";
     const sta = p.stats?.sta || p.stats?.stm || (isGK ? 50 : 75);
     

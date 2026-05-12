@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Carles Gil",
       "ovr": 79,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 11,
       "name": "Tomás Chancalay",
       "ovr": 75,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 19,
       "name": "Luca Langoni",
       "ovr": 72,
       "status": "titular",
@@ -179,7 +179,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 5,
       "name": "Alhassan Yusuf",
       "ovr": 72,
       "status": "titular",
@@ -236,7 +236,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 2,
       "name": "Brandon Bye",
       "ovr": 71,
       "status": "titular",
@@ -291,7 +291,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 21,
       "name": "Matt Polster",
       "ovr": 70,
       "status": "titular",
@@ -346,7 +346,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 4,
       "name": "Tim Parker",
       "ovr": 69,
       "status": "titular",
@@ -402,7 +402,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Dave Romney",
       "ovr": 69,
       "status": "titular",
@@ -516,7 +516,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 25,
       "name": "Andrew Farrell",
       "ovr": 68,
       "status": "titular",
@@ -572,7 +572,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 28,
       "name": "Nacho Gil",
       "ovr": 68,
       "status": "titular",
@@ -627,7 +627,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 8,
       "name": "Mark-Anthony Kaye",
       "ovr": 68,
       "status": "reserva",
@@ -683,7 +683,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 1,
       "name": "Aljaž Ivačič",
       "ovr": 67,
       "status": "reserva",
@@ -699,12 +699,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 65,
+        "esp": 77,
+        "ref": 70,
+        "pos": 64,
+        "vel": 41,
         "sta": 34
       },
       "detailedStats": {
@@ -739,7 +739,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 13,
       "name": "Nick Lima",
       "ovr": 67,
       "status": "reserva",
@@ -906,7 +906,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 27,
       "name": "Emmanuel Boateng",
       "ovr": 66,
       "status": "reserva",
@@ -961,7 +961,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 20,
       "name": "Bobby Wood",
       "ovr": 66,
       "status": "reserva",
@@ -1016,7 +1016,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Dylan Borrero",
       "ovr": 65,
       "status": "reserva",
@@ -1071,7 +1071,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 18,
       "name": "Ian Harkes",
       "ovr": 65,
       "status": "reserva",
@@ -1126,7 +1126,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 23,
       "name": "Tommy McNamara",
       "ovr": 64,
       "status": "reserva",
@@ -1181,7 +1181,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 30,
       "name": "Esmir Bajraktarevic",
       "ovr": 63,
       "status": "reserva",
@@ -1236,7 +1236,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 12,
       "name": "Earl Edwards Jr.",
       "ovr": 63,
       "status": "reserva",
@@ -1251,12 +1251,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 62,
+        "esp": 70,
+        "ref": 63,
+        "pos": 65,
+        "vel": 44,
         "sta": 45
       },
       "detailedStats": {
@@ -1346,7 +1346,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 26,
       "name": "Joshua Bolma",
       "ovr": 61,
       "status": "reserva",
@@ -1401,7 +1401,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Jack Panayotou",
       "ovr": 59,
       "status": "reserva",
@@ -1456,7 +1456,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 17,
       "name": "Malcolm Fry",
       "ovr": 57,
       "status": "reserva",

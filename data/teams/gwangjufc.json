@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Jung Ho Yeon",
       "ovr": 71,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Ahn Young Kyu",
       "ovr": 70,
       "status": "titular",
@@ -124,7 +124,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 2,
       "name": "Doo Hyun Seok",
       "ovr": 70,
       "status": "titular",
@@ -180,7 +180,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 11,
       "name": "Jasir Asani",
       "ovr": 69,
       "status": "titular",
@@ -236,7 +236,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 18,
       "name": "Choi Kyoung Rok",
       "ovr": 69,
       "status": "titular",
@@ -291,7 +291,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 1,
       "name": "Kim Gyeong Min",
       "ovr": 68,
       "status": "titular",
@@ -306,12 +306,12 @@
         "1v1 Close Down"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 64,
+        "esp": 74,
+        "ref": 67,
+        "pos": 70,
+        "vel": 49,
         "sta": 26
       },
       "detailedStats": {
@@ -346,7 +346,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 9,
       "name": "Lee Hee Kyun",
       "ovr": 68,
       "status": "titular",
@@ -401,7 +401,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 10,
       "name": "Lee Geon Hee",
       "ovr": 67,
       "status": "titular",
@@ -456,7 +456,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 19,
       "name": "Beka Mikeltadze",
       "ovr": 67,
       "status": "titular",
@@ -511,7 +511,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 28,
       "name": "Gabriel Tigrão",
       "ovr": 66,
       "status": "titular",
@@ -566,7 +566,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 3,
       "name": "Kim Jin Ho",
       "ovr": 65,
       "status": "titular",
@@ -622,7 +622,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 16,
       "name": "Lee Min Gi",
       "ovr": 65,
       "status": "reserva",
@@ -677,7 +677,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 14,
       "name": "Byeon Jun Soo",
       "ovr": 64,
       "status": "reserva",
@@ -733,7 +733,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 25,
       "name": "Bruno Oliveira",
       "ovr": 64,
       "status": "reserva",
@@ -846,7 +846,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 20,
       "name": "João Magno",
       "ovr": 64,
       "status": "reserva",
@@ -901,7 +901,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 5,
       "name": "Lee Kang Hyeon",
       "ovr": 64,
       "status": "reserva",
@@ -956,7 +956,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 26,
       "name": "Lee Eu Ddeum",
       "ovr": 63,
       "status": "reserva",
@@ -1012,7 +1012,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 13,
       "name": "Lee Sang Ki",
       "ovr": 63,
       "status": "reserva",
@@ -1067,7 +1067,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 27,
       "name": "Moon Min Seo",
       "ovr": 63,
       "status": "reserva",
@@ -1234,7 +1234,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 12,
       "name": "Lee Jun",
       "ovr": 62,
       "status": "reserva",
@@ -1249,12 +1249,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 65,
+        "seg": 57,
+        "esp": 73,
+        "ref": 66,
+        "pos": 61,
+        "vel": 24,
         "sta": 15
       },
       "detailedStats": {
@@ -1344,7 +1344,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 29,
       "name": "Jeong Ji Yong",
       "ovr": 60,
       "status": "reserva",
@@ -1399,7 +1399,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 30,
       "name": "Shin Chang Moo",
       "ovr": 60,
       "status": "reserva",
@@ -1454,7 +1454,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 31,
       "name": "Yeo Bong Hun",
       "ovr": 60,
       "status": "reserva",
@@ -1509,7 +1509,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 32,
       "name": "Cho Sung Gwon",
       "ovr": 59,
       "status": "reserva",
@@ -1565,7 +1565,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 7,
       "name": "Ha Seung Un",
       "ovr": 59,
       "status": "reserva",
@@ -1620,7 +1620,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 33,
       "name": "Kim Gyeong Jae",
       "ovr": 59,
       "status": "reserva",
@@ -1676,7 +1676,7 @@
     },
     {
       "id": 31,
-      "number": 31,
+      "number": 34,
       "name": "Kim Seung Woo",
       "ovr": 58,
       "status": "reserva",
@@ -1732,7 +1732,7 @@
     },
     {
       "id": 32,
-      "number": 32,
+      "number": 35,
       "name": "Jung Ji Hoon",
       "ovr": 56,
       "status": "reserva",
@@ -1787,7 +1787,7 @@
     },
     {
       "id": 33,
-      "number": 33,
+      "number": 36,
       "name": "Oh Hoo Sung",
       "ovr": 54,
       "status": "reserva",
@@ -1842,7 +1842,7 @@
     },
     {
       "id": 34,
-      "number": 34,
+      "number": 37,
       "name": "Ahn Hyeok Ju",
       "ovr": 50,
       "status": "reserva",
@@ -1897,7 +1897,7 @@
     },
     {
       "id": 35,
-      "number": 35,
+      "number": 38,
       "name": "Kim Tae Jun",
       "ovr": 48,
       "status": "reserva",
@@ -1912,12 +1912,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 51,
+        "seg": 46,
+        "esp": 56,
+        "ref": 49,
+        "pos": 42,
+        "vel": 23,
         "sta": 19
       },
       "detailedStats": {
@@ -1952,7 +1952,7 @@
     },
     {
       "id": 36,
-      "number": 36,
+      "number": 39,
       "name": "Roh Hee Dong",
       "ovr": 48,
       "status": "reserva",
@@ -1967,12 +1967,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 48,
+        "seg": 50,
+        "esp": 54,
+        "ref": 50,
+        "pos": 43,
+        "vel": 26,
         "sta": 26
       },
       "detailedStats": {

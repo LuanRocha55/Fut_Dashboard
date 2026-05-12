@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 8,
       "name": "Pablo De Blasis",
       "ovr": 74,
       "status": "titular",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Leonardo Morales",
       "ovr": 72,
       "status": "titular",
@@ -123,7 +123,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 14,
       "name": "Yonathan Cabral",
       "ovr": 71,
       "status": "titular",
@@ -179,7 +179,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 2,
       "name": "Juan Pintado",
       "ovr": 71,
       "status": "titular",
@@ -234,7 +234,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 25,
       "name": "Brian Blasi",
       "ovr": 70,
       "status": "titular",
@@ -290,7 +290,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 9,
       "name": "Norberto Briasco",
       "ovr": 70,
       "status": "titular",
@@ -345,7 +345,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 18,
       "name": "Lucas Castro",
       "ovr": 70,
       "status": "titular",
@@ -402,7 +402,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 10,
       "name": "Cristian Colmán",
       "ovr": 70,
       "status": "titular",
@@ -458,7 +458,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 11,
       "name": "Matías Abaldo",
       "ovr": 68,
       "status": "titular",
@@ -513,7 +513,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 19,
       "name": "Juan Cruz Esquivel",
       "ovr": 68,
       "status": "titular",
@@ -568,7 +568,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 1,
       "name": "Marcos Ledesma",
       "ovr": 68,
       "status": "titular",
@@ -583,12 +583,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 70,
+        "seg": 65,
+        "esp": 77,
+        "ref": 69,
+        "pos": 67,
+        "vel": 46,
         "sta": 30
       },
       "detailedStats": {
@@ -623,7 +623,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 3,
       "name": "Valentín Rodríguez",
       "ovr": 68,
       "status": "reserva",
@@ -679,7 +679,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Franco Troyansky",
       "ovr": 68,
       "status": "reserva",
@@ -734,7 +734,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 27,
       "name": "Matías Ramírez",
       "ovr": 67,
       "status": "reserva",
@@ -789,7 +789,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 28,
       "name": "David Zalazar",
       "ovr": 67,
       "status": "reserva",
@@ -954,7 +954,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 21,
       "name": "Nicolás Garayalde",
       "ovr": 66,
       "status": "reserva",
@@ -1009,7 +1009,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 22,
       "name": "Ivo Mammini",
       "ovr": 65,
       "status": "reserva",
@@ -1064,7 +1064,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 5,
       "name": "Agustín Bolivar",
       "ovr": 64,
       "status": "reserva",

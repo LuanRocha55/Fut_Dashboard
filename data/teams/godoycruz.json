@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Federico Rasmussen",
       "ovr": 74,
       "status": "titular",
@@ -66,7 +66,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 14,
       "name": "Pier Barrios",
       "ovr": 73,
       "status": "titular",
@@ -122,7 +122,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Nicolás Fernández",
       "ovr": 73,
       "status": "titular",
@@ -178,7 +178,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 1,
       "name": "Franco Petroli",
       "ovr": 73,
       "status": "titular",
@@ -193,12 +193,12 @@
         "1v1 Close Down"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 71,
+        "seg": 72,
+        "esp": 81,
+        "ref": 74,
+        "pos": 73,
+        "vel": 45,
         "sta": 37
       },
       "detailedStats": {
@@ -233,7 +233,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 18,
       "name": "Gonzalo Abrego",
       "ovr": 72,
       "status": "titular",
@@ -290,7 +290,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 2,
       "name": "Lucas Arce",
       "ovr": 72,
       "status": "titular",
@@ -345,7 +345,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 5,
       "name": "Bruno Leyes",
       "ovr": 70,
       "status": "titular",
@@ -400,7 +400,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 20,
       "name": "Vicente Poggi",
       "ovr": 70,
       "status": "titular",
@@ -455,7 +455,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 12,
       "name": "Roberto Ramírez",
       "ovr": 70,
       "status": "titular",
@@ -470,12 +470,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 72,
+        "seg": 67,
+        "esp": 81,
+        "ref": 73,
+        "pos": 69,
+        "vel": 47,
         "sta": 31
       },
       "detailedStats": {
@@ -510,7 +510,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 7,
       "name": "Juan Bautista Cejas",
       "ovr": 69,
       "status": "titular",
@@ -565,7 +565,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 9,
       "name": "Nahuel Ulariaga",
       "ovr": 69,
       "status": "titular",
@@ -620,7 +620,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 3,
       "name": "Elías Pereyra",
       "ovr": 68,
       "status": "reserva",
@@ -675,7 +675,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 17,
       "name": "Tomás Pozzo",
       "ovr": 68,
       "status": "reserva",
@@ -730,7 +730,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 10,
       "name": "Salomón Rodríguez",
       "ovr": 68,
       "status": "reserva",
@@ -786,7 +786,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 25,
       "name": "Brian Salvareschi",
       "ovr": 68,
       "status": "reserva",
@@ -842,7 +842,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 31,
       "name": "Daniel Barrea",
       "ovr": 67,
       "status": "reserva",
@@ -897,7 +897,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 16,
       "name": "Martín Luciano",
       "ovr": 66,
       "status": "reserva",
@@ -952,7 +952,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 32,
       "name": "Luciano Cingolani",
       "ovr": 64,
       "status": "reserva",
@@ -1063,7 +1063,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Edilson Salinas",
       "ovr": 63,
       "status": "reserva",
@@ -1078,12 +1078,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 63,
+        "seg": 62,
+        "esp": 70,
+        "ref": 63,
+        "pos": 66,
+        "vel": 30,
         "sta": 30
       },
       "detailedStats": {
@@ -1173,7 +1173,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 23,
       "name": "Gonzalo Torres",
       "ovr": 61,
       "status": "reserva",

@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Raphaël Varane",
       "ovr": 82,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 1,
       "name": "Emil Audero",
       "ovr": 79,
       "status": "titular",
@@ -80,12 +80,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 80,
+        "seg": 74,
+        "esp": 91,
+        "ref": 83,
+        "pos": 76,
+        "vel": 49,
         "sta": 25
       },
       "detailedStats": {
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 9,
       "name": "Andrea Belotti",
       "ovr": 78,
       "status": "titular",
@@ -175,7 +175,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 3,
       "name": "Alberto Moreno",
       "ovr": 76,
       "status": "titular",
@@ -232,7 +232,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 12,
       "name": "Pepe Reina",
       "ovr": 76,
       "status": "titular",
@@ -249,10 +249,10 @@
       "stats": {
         "alc": 75,
         "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "esp": 83,
+        "ref": 74,
+        "pos": 77,
+        "vel": 49,
         "sta": 34
       },
       "detailedStats": {
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 17,
       "name": "Gabriel Strefezza",
       "ovr": 76,
       "status": "titular",
@@ -344,7 +344,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 10,
       "name": "Simone Verdi",
       "ovr": 75,
       "status": "titular",
@@ -403,7 +403,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 19,
       "name": "Patrick Cutrone",
       "ovr": 74,
       "status": "titular",
@@ -458,7 +458,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 11,
       "name": "Lucas Da Cunha",
       "ovr": 74,
       "status": "titular",
@@ -513,7 +513,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 14,
       "name": "Alberto Dossena",
       "ovr": 74,
       "status": "titular",
@@ -571,7 +571,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 8,
       "name": "Luca Mazzitelli",
       "ovr": 73,
       "status": "titular",
@@ -626,7 +626,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 25,
       "name": "Federico Barba",
       "ovr": 72,
       "status": "reserva",
@@ -685,7 +685,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 18,
       "name": "Matthias Braunöder",
       "ovr": 72,
       "status": "reserva",
@@ -741,7 +741,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Edoardo Goldaniga",
       "ovr": 72,
       "status": "reserva",
@@ -797,7 +797,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 16,
       "name": "Marc-Oliver Kempf",
       "ovr": 72,
       "status": "reserva",
@@ -858,7 +858,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 2,
       "name": "Alessio Iovine",
       "ovr": 71,
       "status": "reserva",
@@ -913,7 +913,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 20,
       "name": "Máximo Perrone",
       "ovr": 71,
       "status": "reserva",
@@ -968,7 +968,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 5,
       "name": "Yannik Engelhardt",
       "ovr": 70,
       "status": "reserva",
@@ -1025,7 +1025,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 27,
       "name": "Alieu Fadera",
       "ovr": 70,
       "status": "reserva",
@@ -1080,7 +1080,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 26,
       "name": "Marco Sala",
       "ovr": 70,
       "status": "reserva",
@@ -1135,7 +1135,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 13,
       "name": "Ignace Van der Brempt",
       "ovr": 70,
       "status": "reserva",
@@ -1300,7 +1300,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 30,
       "name": "Nico Paz",
       "ovr": 69,
       "status": "reserva",
@@ -1355,7 +1355,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 28,
       "name": "Liam Kerrigan",
       "ovr": 68,
       "status": "reserva",
@@ -1410,7 +1410,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Alberto Cerri",
       "ovr": 67,
       "status": "reserva",
@@ -1466,7 +1466,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 31,
       "name": "Moutir Chajia",
       "ovr": 67,
       "status": "reserva",
@@ -1521,7 +1521,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 32,
       "name": "Ben Lhassine Kone",
       "ovr": 66,
       "status": "reserva",
@@ -1576,7 +1576,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 33,
       "name": "Mauro Vigorito",
       "ovr": 64,
       "status": "reserva",
@@ -1591,11 +1591,11 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
+        "alc": 63,
+        "seg": 63,
+        "esp": 71,
+        "ref": 65,
+        "pos": 65,
         "vel": 40,
         "sta": 32
       },

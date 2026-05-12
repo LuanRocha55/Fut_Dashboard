@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 4,
       "name": "Stoppila Sunzu",
       "ovr": 74,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Peter Žulj",
       "ovr": 73,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 18,
       "name": "Serginho",
       "ovr": 72,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 9,
       "name": "Robert Berić",
       "ovr": 71,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 14,
       "name": "Lazar Rosić",
       "ovr": 71,
       "status": "titular",
@@ -287,7 +287,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 11,
       "name": "Tan Long",
       "ovr": 67,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 19,
       "name": "Wang Jinxian",
       "ovr": 65,
       "status": "titular",
@@ -398,7 +398,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 1,
       "name": "Wu Yake",
       "ovr": 65,
       "status": "titular",
@@ -413,12 +413,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 67,
+        "seg": 62,
+        "esp": 72,
+        "ref": 62,
+        "pos": 69,
+        "vel": 42,
         "sta": 20
       },
       "detailedStats": {
@@ -453,7 +453,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 28,
       "name": "Liu Yun",
       "ovr": 64,
       "status": "titular",
@@ -508,7 +508,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 2,
       "name": "Liao Chengjian",
       "ovr": 62,
       "status": "titular",
@@ -563,7 +563,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 13,
       "name": "Abduhamit Abdugheni",
       "ovr": 61,
       "status": "titular",
@@ -618,7 +618,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 25,
       "name": "Yuan Mincheng",
       "ovr": 61,
       "status": "reserva",
@@ -674,7 +674,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 20,
       "name": "Zhang Yufeng",
       "ovr": 61,
       "status": "reserva",
@@ -730,7 +730,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 15,
       "name": "Sabit Abdusalam",
       "ovr": 60,
       "status": "reserva",
@@ -785,7 +785,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 12,
       "name": "Wang Zhifeng",
       "ovr": 60,
       "status": "reserva",
@@ -800,12 +800,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 65,
+        "esp": 67,
+        "ref": 60,
+        "pos": 60,
+        "vel": 35,
         "sta": 35
       },
       "detailedStats": {
@@ -840,7 +840,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 24,
       "name": "Li Shenyuan",
       "ovr": 59,
       "status": "reserva",
@@ -950,7 +950,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 22,
       "name": "Zou Dehai",
       "ovr": 59,
       "status": "reserva",
@@ -965,12 +965,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 57,
+        "seg": 58,
+        "esp": 64,
+        "ref": 59,
+        "pos": 59,
+        "vel": 42,
         "sta": 30
       },
       "detailedStats": {
@@ -1005,7 +1005,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 5,
       "name": "Wang Yu",
       "ovr": 57,
       "status": "reserva",
@@ -1060,7 +1060,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 21,
       "name": "Zhang Huachen",
       "ovr": 57,
       "status": "reserva",
@@ -1115,7 +1115,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 23,
       "name": "Cui Qi",
       "ovr": 56,
       "status": "reserva",
@@ -1171,7 +1171,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "He Zhenyu",
       "ovr": 56,
       "status": "reserva",
@@ -1226,7 +1226,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 27,
       "name": "Wang Yaopeng",
       "ovr": 56,
       "status": "reserva",
@@ -1282,7 +1282,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 3,
       "name": "Yan Zhiyu",
       "ovr": 56,
       "status": "reserva",
@@ -1337,7 +1337,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 10,
       "name": "Cheng Changcheng",
       "ovr": 55,
       "status": "reserva",
@@ -1392,7 +1392,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 29,
       "name": "Sun Guoliang",
       "ovr": 54,
       "status": "reserva",
@@ -1448,7 +1448,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 30,
       "name": "He Yiran",
       "ovr": 52,
       "status": "reserva",
@@ -1504,7 +1504,7 @@
     },
     {
       "id": 28,
-      "number": 28,
+      "number": 16,
       "name": "Jiang Wenhao",
       "ovr": 52,
       "status": "reserva",
@@ -1559,7 +1559,7 @@
     },
     {
       "id": 29,
-      "number": 29,
+      "number": 31,
       "name": "Tian Yuda",
       "ovr": 52,
       "status": "reserva",
@@ -1614,7 +1614,7 @@
     },
     {
       "id": 30,
-      "number": 30,
+      "number": 32,
       "name": "Yang Xinyang",
       "ovr": 50,
       "status": "reserva",
@@ -1629,12 +1629,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 51,
+        "seg": 52,
+        "esp": 58,
+        "ref": 53,
+        "pos": 49,
+        "vel": 31,
         "sta": 26
       },
       "detailedStats": {
@@ -1669,7 +1669,7 @@
     },
     {
       "id": 31,
-      "number": 31,
+      "number": 33,
       "name": "Wei Feng",
       "ovr": 47,
       "status": "reserva",

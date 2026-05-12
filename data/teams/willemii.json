@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 10,
       "name": "Ringo Meerveld",
       "ovr": 69,
       "status": "titular",
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 4,
       "name": "Raffael Behounek",
       "ovr": 67,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 1,
       "name": "Thomas Didillon-Hödl",
       "ovr": 67,
       "status": "titular",
@@ -136,12 +136,12 @@
         "Footwork"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 68,
+        "seg": 62,
+        "esp": 77,
+        "ref": 71,
+        "pos": 66,
+        "vel": 54,
         "sta": 20
       },
       "detailedStats": {
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 2,
       "name": "Mickaël Tirpan",
       "ovr": 67,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 9,
       "name": "Kyan Vaesen",
       "ovr": 67,
       "status": "titular",
@@ -286,7 +286,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 19,
       "name": "Jeremy Bokila",
       "ovr": 66,
       "status": "titular",
@@ -341,7 +341,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 14,
       "name": "Erik Schouten",
       "ovr": 66,
       "status": "titular",
@@ -397,7 +397,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 13,
       "name": "Tommy St. Jago",
       "ovr": 66,
       "status": "titular",
@@ -452,7 +452,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 8,
       "name": "Jesse Bosch",
       "ovr": 65,
       "status": "titular",
@@ -507,7 +507,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 17,
       "name": "Nick Doodeman",
       "ovr": 65,
       "status": "titular",
@@ -562,7 +562,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 7,
       "name": "Patrick Joosten",
       "ovr": 65,
       "status": "titular",
@@ -617,7 +617,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 18,
       "name": "Cisse Sandra",
       "ovr": 65,
       "status": "reserva",
@@ -672,7 +672,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 3,
       "name": "Rúnar Þór Sigurgeirsson",
       "ovr": 65,
       "status": "reserva",
@@ -727,7 +727,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 20,
       "name": "Emilio Kehrer",
       "ovr": 63,
       "status": "reserva",
@@ -782,7 +782,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 16,
       "name": "Rob Nizet",
       "ovr": 63,
       "status": "reserva",
@@ -837,7 +837,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 5,
       "name": "Amine Lachkar",
       "ovr": 62,
       "status": "reserva",
@@ -892,7 +892,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 24,
       "name": "Valentino Vermeulen",
       "ovr": 62,
       "status": "reserva",
@@ -947,7 +947,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 12,
       "name": "Connor van den Berg",
       "ovr": 60,
       "status": "reserva",
@@ -962,12 +962,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 60,
+        "seg": 60,
+        "esp": 66,
+        "ref": 59,
+        "pos": 59,
+        "vel": 18,
         "sta": 18
       },
       "detailedStats": {
@@ -1002,7 +1002,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 31,
       "name": "Khaled Razak",
       "ovr": 57,
       "status": "reserva",
@@ -1057,7 +1057,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Maarten Schut",
       "ovr": 56,
       "status": "reserva",
@@ -1072,12 +1072,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 62,
+        "seg": 54,
+        "esp": 68,
+        "ref": 60,
+        "pos": 44,
+        "vel": 15,
         "sta": 28
       },
       "detailedStats": {

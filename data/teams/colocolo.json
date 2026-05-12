@@ -23,12 +23,12 @@
         "Far Throw"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 73,
+        "seg": 73,
+        "esp": 83,
+        "ref": 76,
+        "pos": 71,
+        "vel": 48,
         "sta": 40
       },
       "detailedStats": {
@@ -63,7 +63,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 8,
       "name": "Arturo Vidal",
       "ovr": 74,
       "status": "titular",
@@ -118,7 +118,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 7,
       "name": "Carlos Palacios",
       "ovr": 72,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 12,
       "name": "Fernando De Paul",
       "ovr": 71,
       "status": "titular",
@@ -246,12 +246,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 72,
+        "seg": 64,
+        "esp": 81,
+        "ref": 73,
+        "pos": 70,
+        "vel": 44,
         "sta": 36
       },
       "detailedStats": {
@@ -286,7 +286,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 5,
       "name": "César Fuentes",
       "ovr": 71,
       "status": "titular",
@@ -343,7 +343,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 21,
       "name": "Esteban Pavez",
       "ovr": 71,
       "status": "titular",
@@ -400,7 +400,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 23,
       "name": "Vicente Pizarro",
       "ovr": 71,
       "status": "titular",
@@ -455,7 +455,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 14,
       "name": "Maximiliano Falcón",
       "ovr": 70,
       "status": "titular",
@@ -513,7 +513,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 18,
       "name": "Leonardo Gil",
       "ovr": 70,
       "status": "titular",
@@ -569,7 +569,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 25,
       "name": "Emiliano Amor",
       "ovr": 69,
       "status": "titular",
@@ -625,7 +625,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 20,
       "name": "Gonzalo Castellani",
       "ovr": 69,
       "status": "reserva",
@@ -680,7 +680,7 @@
     },
     {
       "id": 13,
-      "number": 13,
+      "number": 9,
       "name": "Guillermo Paiva",
       "ovr": 69,
       "status": "reserva",
@@ -735,7 +735,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 3,
       "name": "Erick Wiemberg",
       "ovr": 68,
       "status": "reserva",
@@ -790,7 +790,7 @@
     },
     {
       "id": 15,
-      "number": 15,
+      "number": 17,
       "name": "Cristián Zavala",
       "ovr": 68,
       "status": "reserva",
@@ -846,7 +846,7 @@
     },
     {
       "id": 16,
-      "number": 16,
+      "number": 31,
       "name": "Marcos Bolados",
       "ovr": 67,
       "status": "reserva",
@@ -902,7 +902,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 2,
       "name": "Óscar Opazo",
       "ovr": 67,
       "status": "reserva",
@@ -957,7 +957,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 29,
       "name": "Lucas Cepeda",
       "ovr": 66,
       "status": "reserva",
@@ -1012,7 +1012,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 32,
       "name": "Alexander Oroz",
       "ovr": 66,
       "status": "reserva",
@@ -1067,7 +1067,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Daniel Gutiérrez",
       "ovr": 65,
       "status": "reserva",
@@ -1123,7 +1123,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 24,
       "name": "Matías Moya",
       "ovr": 65,
       "status": "reserva",
@@ -1178,7 +1178,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 26,
       "name": "Lucas Soto",
       "ovr": 64,
       "status": "reserva",
@@ -1233,7 +1233,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 27,
       "name": "Ramiro González",
       "ovr": 63,
       "status": "reserva",
@@ -1289,7 +1289,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 28,
       "name": "Dylan Portilla",
       "ovr": 62,
       "status": "reserva",
@@ -1344,7 +1344,7 @@
     },
     {
       "id": 25,
-      "number": 25,
+      "number": 13,
       "name": "Bruno Gutiérrez",
       "ovr": 61,
       "status": "reserva",
@@ -1399,7 +1399,7 @@
     },
     {
       "id": 26,
-      "number": 26,
+      "number": 30,
       "name": "Leandro Hernández",
       "ovr": 61,
       "status": "reserva",
@@ -1454,7 +1454,7 @@
     },
     {
       "id": 27,
-      "number": 27,
+      "number": 33,
       "name": "Eduardo Villanueva",
       "ovr": 60,
       "status": "reserva",
@@ -1469,12 +1469,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 61,
+        "seg": 58,
+        "esp": 68,
+        "ref": 62,
+        "pos": 59,
+        "vel": 32,
         "sta": 20
       },
       "detailedStats": {

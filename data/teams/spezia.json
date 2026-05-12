@@ -8,7 +8,7 @@
   "squad": [
     {
       "id": 1,
-      "number": 1,
+      "number": 11,
       "name": "Arkadiusz Reca",
       "ovr": 73,
       "status": "titular",
@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "number": 2,
+      "number": 9,
       "name": "Antonio Čolak",
       "ovr": 71,
       "status": "titular",
@@ -120,7 +120,7 @@
     },
     {
       "id": 3,
-      "number": 3,
+      "number": 8,
       "name": "Filippo Bandinelli",
       "ovr": 70,
       "status": "titular",
@@ -176,7 +176,7 @@
     },
     {
       "id": 4,
-      "number": 4,
+      "number": 18,
       "name": "Ádám Nagy",
       "ovr": 70,
       "status": "titular",
@@ -231,7 +231,7 @@
     },
     {
       "id": 5,
-      "number": 5,
+      "number": 19,
       "name": "Salvatore Elia",
       "ovr": 69,
       "status": "titular",
@@ -286,7 +286,7 @@
     },
     {
       "id": 6,
-      "number": 6,
+      "number": 20,
       "name": "Salvatore Esposito",
       "ovr": 69,
       "status": "titular",
@@ -346,7 +346,7 @@
     },
     {
       "id": 7,
-      "number": 7,
+      "number": 4,
       "name": "Aleš Matějů",
       "ovr": 69,
       "status": "titular",
@@ -405,7 +405,7 @@
     },
     {
       "id": 8,
-      "number": 8,
+      "number": 14,
       "name": "Petko Hristov",
       "ovr": 68,
       "status": "titular",
@@ -461,7 +461,7 @@
     },
     {
       "id": 9,
-      "number": 9,
+      "number": 25,
       "name": "Przemysław Wiśniewski",
       "ovr": 68,
       "status": "titular",
@@ -517,7 +517,7 @@
     },
     {
       "id": 10,
-      "number": 10,
+      "number": 3,
       "name": "Giuseppe Aurelio",
       "ovr": 67,
       "status": "titular",
@@ -572,7 +572,7 @@
     },
     {
       "id": 11,
-      "number": 11,
+      "number": 10,
       "name": "Diego Falcinelli",
       "ovr": 67,
       "status": "titular",
@@ -627,7 +627,7 @@
     },
     {
       "id": 12,
-      "number": 12,
+      "number": 2,
       "name": "Salva Ferrer",
       "ovr": 67,
       "status": "reserva",
@@ -739,7 +739,7 @@
     },
     {
       "id": 14,
-      "number": 14,
+      "number": 28,
       "name": "Luca Vignali",
       "ovr": 67,
       "status": "reserva",
@@ -904,7 +904,7 @@
     },
     {
       "id": 17,
-      "number": 17,
+      "number": 5,
       "name": "Duccio Degli Innocenti",
       "ovr": 65,
       "status": "reserva",
@@ -959,7 +959,7 @@
     },
     {
       "id": 18,
-      "number": 18,
+      "number": 1,
       "name": "Mouhamadou Sarr",
       "ovr": 65,
       "status": "reserva",
@@ -974,12 +974,12 @@
         "Cross Claimer"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 69,
+        "seg": 62,
+        "esp": 78,
+        "ref": 72,
+        "pos": 58,
+        "vel": 44,
         "sta": 38
       },
       "detailedStats": {
@@ -1014,7 +1014,7 @@
     },
     {
       "id": 19,
-      "number": 19,
+      "number": 21,
       "name": "Nicolò Bertola",
       "ovr": 63,
       "status": "reserva",
@@ -1070,7 +1070,7 @@
     },
     {
       "id": 20,
-      "number": 20,
+      "number": 22,
       "name": "Francesco Cassata",
       "ovr": 63,
       "status": "reserva",
@@ -1125,7 +1125,7 @@
     },
     {
       "id": 21,
-      "number": 21,
+      "number": 23,
       "name": "Rachid Kouda",
       "ovr": 63,
       "status": "reserva",
@@ -1180,7 +1180,7 @@
     },
     {
       "id": 22,
-      "number": 22,
+      "number": 24,
       "name": "Gregorio Tanco",
       "ovr": 63,
       "status": "reserva",
@@ -1236,7 +1236,7 @@
     },
     {
       "id": 23,
-      "number": 23,
+      "number": 26,
       "name": "Pietro Candelari",
       "ovr": 53,
       "status": "reserva",
@@ -1291,7 +1291,7 @@
     },
     {
       "id": 24,
-      "number": 24,
+      "number": 12,
       "name": "Gian Marco Crespi",
       "ovr": 52,
       "status": "reserva",
@@ -1306,12 +1306,12 @@
         "Goleiro Defensivo"
       ],
       "stats": {
-        "alc": 75,
-        "seg": 75,
-        "esp": 75,
-        "ref": 75,
-        "pos": 75,
-        "vel": 40,
+        "alc": 53,
+        "seg": 48,
+        "esp": 59,
+        "ref": 54,
+        "pos": 51,
+        "vel": 22,
         "sta": 27
       },
       "detailedStats": {
