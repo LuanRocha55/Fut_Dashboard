@@ -339,9 +339,11 @@ export const handleMatchPostGame = async ({
       await simulateCurrentRound(true);
 
       const updatedLeague = await Storage.getLeagueData();
+      const updatedUserDiv = updatedLeague && updatedLeague.divisions ? updatedLeague.divisions.find(d => d.table.some(t => t.isUser)) : updatedLeague;
+      
       if (
-        updatedLeague &&
-        updatedLeague.currentRound <= updatedLeague.rounds.length
+        updatedLeague && updatedUserDiv && updatedUserDiv.rounds &&
+        updatedLeague.currentRound <= updatedUserDiv.rounds.length
       ) {
         const playNext = await showCustomModal(
           "Rodada da Liga finalizada! Deseja ir para a Prancheta Tática se preparar para o PRÓXIMO JOGO?",
