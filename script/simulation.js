@@ -395,60 +395,60 @@ export async function openMatchSimulation() {
   function getTacticalPositions(formation) {
     const positions = {
       "4-3-3": [
-        { x: 10, y: 50, pos: "GL" },
-        { x: 30, y: 30, pos: "ZE" }, { x: 30, y: 70, pos: "ZD" },
-        { x: 25, y: 15, pos: "LE" }, { x: 25, y: 85, pos: "LD" },
-        { x: 50, y: 50, pos: "MC" }, { x: 50, y: 25, pos: "MC" }, { x: 50, y: 75, pos: "MC" },
-        { x: 80, y: 15, pos: "PE" }, { x: 85, y: 50, pos: "CA" }, { x: 80, y: 85, pos: "PD" }
+        { x: 8, y: 50, pos: "GL" },
+        { x: 25, y: 35, pos: "ZE" }, { x: 25, y: 65, pos: "ZD" },
+        { x: 30, y: 12, pos: "LE" }, { x: 30, y: 88, pos: "LD" },
+        { x: 45, y: 50, pos: "MC" }, { x: 55, y: 28, pos: "MC" }, { x: 55, y: 72, pos: "MC" },
+        { x: 75, y: 18, pos: "PE" }, { x: 82, y: 50, pos: "CA" }, { x: 75, y: 82, pos: "PD" }
       ],
       "4-4-2": [
-        { x: 10, y: 50, pos: "GL" },
-        { x: 30, y: 30, pos: "ZE" }, { x: 30, y: 70, pos: "ZD" },
-        { x: 25, y: 15, pos: "LE" }, { x: 25, y: 85, pos: "LD" },
-        { x: 50, y: 40, pos: "MC" }, { x: 50, y: 60, pos: "MC" },
-        { x: 55, y: 15, pos: "ME" }, { x: 55, y: 85, pos: "MD" },
-        { x: 85, y: 35, pos: "CA" }, { x: 85, y: 65, pos: "CA" }
+        { x: 8, y: 50, pos: "GL" },
+        { x: 25, y: 35, pos: "ZE" }, { x: 25, y: 65, pos: "ZD" },
+        { x: 28, y: 12, pos: "LE" }, { x: 28, y: 88, pos: "LD" },
+        { x: 50, y: 35, pos: "MC" }, { x: 50, y: 65, pos: "MC" },
+        { x: 50, y: 15, pos: "ME" }, { x: 50, y: 85, pos: "MD" },
+        { x: 80, y: 40, pos: "CA" }, { x: 80, y: 60, pos: "CA" }
       ],
       "4-2-3-1": [
-        { x: 10, y: 50, pos: "GL" },
-        { x: 30, y: 30, pos: "ZE" }, { x: 30, y: 70, pos: "ZD" },
-        { x: 25, y: 15, pos: "LE" }, { x: 25, y: 85, pos: "LD" },
-        { x: 45, y: 35, pos: "VOL" }, { x: 45, y: 65, pos: "VOL" },
-        { x: 65, y: 50, pos: "MEI" }, { x: 65, y: 20, pos: "ME" }, { x: 65, y: 80, pos: "MD" },
-        { x: 85, y: 50, pos: "CA" }
+        { x: 8, y: 50, pos: "GL" },
+        { x: 25, y: 35, pos: "ZE" }, { x: 25, y: 65, pos: "ZD" },
+        { x: 28, y: 12, pos: "LE" }, { x: 28, y: 88, pos: "LD" },
+        { x: 42, y: 35, pos: "VOL" }, { x: 42, y: 65, pos: "VOL" },
+        { x: 62, y: 50, pos: "MEI" }, { x: 60, y: 18, pos: "ME" }, { x: 60, y: 82, pos: "MD" },
+        { x: 82, y: 50, pos: "CA" }
       ],
       "3-5-2": [
-        { x: 10, y: 50, pos: "GL" },
-        { x: 30, y: 20, pos: "ZE" }, { x: 30, y: 50, pos: "ZE" }, { x: 30, y: 80, pos: "ZD" },
-        { x: 50, y: 10, pos: "LE" }, { x: 50, y: 90, pos: "LD" },
-        { x: 50, y: 35, pos: "MC" }, { x: 50, y: 50, pos: "MC" }, { x: 50, y: 65, pos: "MC" },
-        { x: 85, y: 35, pos: "CA" }, { x: 85, y: 65, pos: "CA" }
+        { x: 8, y: 50, pos: "GL" },
+        { x: 25, y: 25, pos: "ZE" }, { x: 25, y: 50, pos: "ZE" }, { x: 25, y: 75, pos: "ZD" },
+        { x: 45, y: 12, pos: "LE" }, { x: 45, y: 88, pos: "LD" },
+        { x: 45, y: 50, pos: "MC" }, { x: 55, y: 35, pos: "MC" }, { x: 55, y: 65, pos: "MC" },
+        { x: 80, y: 38, pos: "CA" }, { x: 80, y: 62, pos: "CA" }
       ],
       "5-4-1": [
-        { x: 10, y: 50, pos: "GL" },
-        { x: 25, y: 10, pos: "LE" }, { x: 30, y: 30, pos: "ZE" }, { x: 30, y: 50, pos: "ZE" }, { x: 30, y: 70, pos: "ZD" }, { x: 25, y: 90, pos: "LD" },
-        { x: 55, y: 20, pos: "MC" }, { x: 55, y: 40, pos: "MC" }, { x: 55, y: 60, pos: "MC" }, { x: 55, y: 80, pos: "MC" },
-        { x: 85, y: 50, pos: "CA" }
+        { x: 8, y: 50, pos: "GL" },
+        { x: 25, y: 12, pos: "LE" }, { x: 22, y: 30, pos: "ZE" }, { x: 22, y: 50, pos: "ZE" }, { x: 22, y: 70, pos: "ZD" }, { x: 25, y: 88, pos: "LD" },
+        { x: 45, y: 25, pos: "MC" }, { x: 45, y: 45, pos: "MC" }, { x: 45, y: 65, pos: "MC" }, { x: 45, y: 85, pos: "MC" },
+        { x: 82, y: 50, pos: "CA" }
       ],
       "4-1-4-1": [
-        { x: 10, y: 50, pos: "GL" },
-        { x: 30, y: 30, pos: "ZE" }, { x: 30, y: 70, pos: "ZD" },
-        { x: 25, y: 15, pos: "LE" }, { x: 25, y: 85, pos: "LD" },
-        { x: 45, y: 50, pos: "VOL" },
-        { x: 65, y: 35, pos: "MC" }, { x: 65, y: 65, pos: "MC" }, { x: 65, y: 15, pos: "ME" }, { x: 65, y: 85, pos: "MD" },
-        { x: 85, y: 50, pos: "CA" }
+        { x: 8, y: 50, pos: "GL" },
+        { x: 25, y: 35, pos: "ZE" }, { x: 25, y: 65, pos: "ZD" },
+        { x: 28, y: 12, pos: "LE" }, { x: 28, y: 88, pos: "LD" },
+        { x: 40, y: 50, pos: "VOL" },
+        { x: 55, y: 35, pos: "MC" }, { x: 55, y: 65, pos: "MC" }, { x: 55, y: 15, pos: "ME" }, { x: 55, y: 85, pos: "MD" },
+        { x: 82, y: 50, pos: "CA" }
       ],
       "3-4-3": [
-        { x: 10, y: 50, pos: "GL" },
-        { x: 30, y: 20, pos: "ZE" }, { x: 30, y: 50, pos: "ZE" }, { x: 30, y: 80, pos: "ZD" },
-        { x: 55, y: 15, pos: "ME" }, { x: 55, y: 35, pos: "MC" }, { x: 55, y: 65, pos: "MC" }, { x: 55, y: 85, pos: "MD" },
-        { x: 85, y: 20, pos: "PE" }, { x: 85, y: 50, pos: "CA" }, { x: 85, y: 80, pos: "PD" }
+        { x: 8, y: 50, pos: "GL" },
+        { x: 25, y: 25, pos: "ZE" }, { x: 25, y: 50, pos: "ZE" }, { x: 25, y: 75, pos: "ZD" },
+        { x: 50, y: 15, pos: "ME" }, { x: 50, y: 38, pos: "MC" }, { x: 50, y: 62, pos: "MC" }, { x: 50, y: 85, pos: "MD" },
+        { x: 75, y: 20, pos: "PE" }, { x: 82, y: 50, pos: "CA" }, { x: 75, y: 80, pos: "PD" }
       ],
       "5-3-2": [
-        { x: 10, y: 50, pos: "GL" },
-        { x: 25, y: 10, pos: "LE" }, { x: 30, y: 30, pos: "ZE" }, { x: 30, y: 50, pos: "ZE" }, { x: 30, y: 70, pos: "ZD" }, { x: 25, y: 90, pos: "LD" },
-        { x: 55, y: 25, pos: "MC" }, { x: 55, y: 50, pos: "MC" }, { x: 55, y: 75, pos: "MC" },
-        { x: 85, y: 35, pos: "CA" }, { x: 85, y: 65, pos: "CA" }
+        { x: 8, y: 50, pos: "GL" },
+        { x: 25, y: 12, pos: "LE" }, { x: 22, y: 30, pos: "ZE" }, { x: 22, y: 50, pos: "ZE" }, { x: 22, y: 70, pos: "ZD" }, { x: 25, y: 88, pos: "LD" },
+        { x: 50, y: 25, pos: "MC" }, { x: 45, y: 50, pos: "MC" }, { x: 50, y: 75, pos: "MC" },
+        { x: 80, y: 38, pos: "CA" }, { x: 80, y: 62, pos: "CA" }
       ]
     };
     return positions[formation] || positions["4-4-2"];
@@ -583,6 +583,8 @@ export async function openMatchSimulation() {
 
       const node = document.createElement("div");
       node.className = `mini-player-node ${isSelected}`;
+      node.style.position = "absolute";
+      node.style.transform = "translate(-50%, -50%)";
       node.style.left = `${coords.x}%`;
       node.style.top = `${coords.y}%`;
       node.style.borderColor = isOutPos ? "#fff" : fitColor;
