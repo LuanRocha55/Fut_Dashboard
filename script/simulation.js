@@ -723,33 +723,35 @@ export async function openMatchSimulation() {
     homeScorersDiv.innerHTML = formatStats(homeScorers, homeCards);
     awayScorersDiv.innerHTML = formatStats(awayScorers, awayCards);
 
-    document.getElementById("simHomePossession").innerText = homePossession;
-    document.getElementById("simAwayPossession").innerText =
-      100 - homePossession;
-    document.getElementById("simHomeShots").innerText = homeShots;
-    document.getElementById("simHomeShotsOnTarget").innerText =
-      homeShotsOnTarget;
-    document.getElementById("simAwayShots").innerText = awayShots;
-    document.getElementById("simAwayShotsOnTarget").innerText =
-      awayShotsOnTarget;
-    document.getElementById("simHomeFouls").innerText = homeFouls;
-    document.getElementById("simAwayFouls").innerText = awayFouls;
-    document.getElementById("simHomePasses").innerText = homePasses;
-    document.getElementById("simAwayPasses").innerText = awayPasses;
-    document.getElementById("simHomeCorners").innerText = homeCorners;
-    document.getElementById("simAwayCorners").innerText = awayCorners;
-    document.getElementById("simHomeCrosses").innerText = homeCrosses;
-    document.getElementById("simAwayCrosses").innerText = awayCrosses;
-    document.getElementById("simHomeOffsides").innerText = homeOffsides;
-    document.getElementById("simAwayOffsides").innerText = awayOffsides;
-    document.getElementById("simHomeLongBalls").innerText = homeLongBalls;
-    document.getElementById("simAwayLongBalls").innerText = awayLongBalls;
-    document.getElementById("simHomeTackles").innerText = homeTackles;
-    document.getElementById("simAwayTackles").innerText = awayTackles;
-    document.getElementById("simHomeCards").innerText = homeCards.length;
-    document.getElementById("simAwayCards").innerText = awayCards.length;
-    document.getElementById("simHomeSaves").innerText = homeSaves;
-    document.getElementById("simAwaySaves").innerText = awaySaves;
+    const setElText = (id, text) => {
+      const el = document.getElementById(id);
+      if (el) el.innerText = text;
+    };
+
+    setElText("simHomePossession", homePossession);
+    setElText("simAwayPossession", 100 - homePossession);
+    setElText("simHomeShots", homeShots);
+    setElText("simHomeShotsOnTarget", homeShotsOnTarget);
+    setElText("simAwayShots", awayShots);
+    setElText("simAwayShotsOnTarget", awayShotsOnTarget);
+    setElText("simHomeFouls", homeFouls);
+    setElText("simAwayFouls", awayFouls);
+    setElText("simHomePasses", homePasses);
+    setElText("simAwayPasses", awayPasses);
+    setElText("simHomeCorners", homeCorners);
+    setElText("simAwayCorners", awayCorners);
+    setElText("simHomeCrosses", homeCrosses);
+    setElText("simAwayCrosses", awayCrosses);
+    setElText("simHomeOffsides", homeOffsides);
+    setElText("simAwayOffsides", awayOffsides);
+    setElText("simHomeLongBalls", homeLongBalls);
+    setElText("simAwayLongBalls", awayLongBalls);
+    setElText("simHomeTackles", homeTackles);
+    setElText("simAwayTackles", awayTackles);
+    setElText("simHomeCards", homeCards.length);
+    setElText("simAwayCards", awayCards.length);
+    setElText("simHomeSaves", homeSaves);
+    setElText("simAwaySaves", awaySaves);
   };
 
   const togglePause = () => {
