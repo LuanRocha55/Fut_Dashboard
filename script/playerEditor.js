@@ -19,7 +19,8 @@ import {
   renderStatsNumbers,
 } from "./graphics.js";
 import { showCustomModal } from "./modal.js";
-import { highlightZones, clearZones, renderApp } from "./ui.js";
+import { render } from "./ui.js";
+import { highlightZones, clearZones } from "./ui/squad.js";
 
 export let isEditMode = false;
 
@@ -340,7 +341,7 @@ export function initEditorEvents() {
       }
       const newId = addNewPlayer();
       window.dispatchEvent(new CustomEvent("viewChanged", { detail: "pitch" }));
-      renderApp();
+      render();
       openMenu(newId);
       setEditMode(true);
     });
@@ -356,7 +357,7 @@ export function initEditorEvents() {
         removePlayer(activePlayerId);
         isEditMode = false;
         closeMenu();
-        renderApp();
+        render();
       }
     });
   document.getElementById("closeMenuBtn").onclick = closeMenu;
@@ -421,7 +422,7 @@ export function initEditorEvents() {
       });
       isEditMode = false;
       closeMenu();
-      renderApp();
+      render();
     }
   };
   document.getElementById("compareSelect").onchange = (e) => {
