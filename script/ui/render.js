@@ -30,6 +30,7 @@ import {
 } from "./uiTableView.js";
 import { Storage } from "../core/appStorage.js";
 import { showOnlyFitPlayers } from "./state.js";
+import { loadBadgesLazy, loadLeagueLogosLazy } from "./teams.js";
 
 export function renderApp() {
   render();
@@ -146,6 +147,10 @@ export async function render() {
   initDragAndDrop();
   if (isTableView) renderTable();
   if (window.lucide) window.lucide.createIcons();
+  
+  // 7. Carrega logos reais
+  loadBadgesLazy();
+  loadLeagueLogosLazy();
 }
 
 export function renderBench(reservas, benchSortValue) {
@@ -244,15 +249,6 @@ export function renderTeamStats() {
 
   if (!goalsBody) return;
 
-  const playersWithStats = squad.filter(
-    (p) =>
-      p.matchesPlayed > 0 ||
-      p.goals > 0 ||
-      p.assists > 0 ||
-      p.yellowCards > 0 ||
-      p.tackles > 0,
-  );
-
   const renderList = (
     container,
     list,
@@ -264,10 +260,16 @@ export function renderTeamStats() {
   ) => {
     container.innerHTML = "";
     const frag = document.createDocumentFragment();
-    list.slice(0, 15).forEach((p, i) => {
-      const val = formatValue ? formatValue(p[valueKey]) : p[valueKey];
-      if (val == 0 || val == "0.0") return;
+    
+    // Filtra jogadores com valor > 0 antes de renderizar
+    const visibleList = list.filter(p => {
+      const val = p[valueKey] || 0;
+      return isRating ? p.matchesPlayed > 0 : val > 0;
+    }).slice(0, 15);
 
+    visibleList.forEach((p, i) => {
+      const val = formatValue ? formatValue(p[valueKey]) : p[valueKey];
+      
       let displayColor = valueColor;
       if (isRating && p[valueKey]) {
         displayColor = getRatingColor(p[valueKey]);
@@ -284,6 +286,7 @@ export function renderTeamStats() {
             `;
       frag.appendChild(tr);
     });
+
     if (frag.childNodes.length === 0) {
       container.innerHTML = `<tr><td colspan="3" style="padding: 20px; color: #888; text-align: center;">Nenhum registro.</td></tr>`;
     } else {
@@ -291,19 +294,22 @@ export function renderTeamStats() {
     }
   };
 
-  const topScorers = [...playersWithStats].sort(
+  const topScorers = [...squad].sort(
     (a, b) => (b.goals || 0) - (a.goals || 0),
   );
   renderList(goalsBody, topScorers, "goals", "Gols", "var(--accent)");
-  const topAssists = [...playersWithStats].sort(
+
+  const topAssists = [...squad].sort(
     (a, b) => (b.assists || 0) - (a.assists || 0),
   );
   renderList(assistsBody, topAssists, "assists", "Assis.", "#00aaff");
-  const topMatches = [...playersWithStats].sort(
+
+  const topMatches = [...squad].sort(
     (a, b) => (b.matchesPlayed || 0) - (a.matchesPlayed || 0),
   );
   renderList(matchesBody, topMatches, "matchesPlayed", "Jogos", "#4caf50");
-  const topRating = [...playersWithStats]
+
+  const topRating = [...squad]
     .filter((p) => p.matchesPlayed > 0)
     .sort((a, b) => (b.avgRating || 0) - (a.avgRating || 0));
   renderList(
@@ -315,13 +321,14 @@ export function renderTeamStats() {
     (val) => val.toFixed(1),
     true,
   );
-  const topCards = [...playersWithStats].sort(
+
+  const topCards = [...squad].sort(
     (a, b) => (b.yellowCards || 0) - (a.yellowCards || 0),
   );
   renderList(cardsBody, topCards, "yellowCards", "CA", "var(--danger)");
 
   if (tacklesBody) {
-    const topTackles = [...playersWithStats].sort(
+    const topTackles = [...squad].sort(
       (a, b) => (b.tackles || 0) - (a.tackles || 0),
     );
     renderList(tacklesBody, topTackles, "tackles", "Desar.", "#9c27b0");

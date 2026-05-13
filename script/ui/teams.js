@@ -64,8 +64,11 @@ import { initLeagueEvents, autoInitLeague } from "../league/leagueMain.js";
 import { renderLeagueData } from "../league/leagueRenderer.js";
 import { Storage } from "../core/appStorage.js";
 
-let _badgeCache = {};
-let _leagueBadgeMap = null;
+let _badgeCache = JSON.parse(localStorage.getItem("fut_badge_cache") || "{}");
+let _leagueBadgeMap = JSON.parse(
+  localStorage.getItem("fut_league_logo_cache") || "{}",
+);
+if (Object.keys(_leagueBadgeMap).length === 0) _leagueBadgeMap = null;
 let _pendingLeagueFetch = null;
 
 const LEAGUE_COLORS = {
@@ -171,6 +174,9 @@ export async function loadTeams() {
 }
 
 export async function fetchTeamBadge(teamName) {
+  if (!teamName) return null;
+  if (_badgeCache[teamName]) return _badgeCache[teamName];
+
   try {
     let cleanName = teamName.replace(/\s*\(Fem\)$/i, "").trim();
     const r = await fetch(
@@ -181,13 +187,22 @@ export async function fetchTeamBadge(teamName) {
 
     let badge = data?.teams?.[0]?.strTeamBadge;
 
-    // Se não achou com (Fem), tenta com o nome limpo
     if (!badge && cleanName !== teamName) {
       const r2 = await fetch(
         `https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t=${encodeURIComponent(cleanName)}`,
       );
-      const data2 = await r2.json();
-      badge = data2?.teams?.[0]?.strTeamBadge;
+      if (r2.ok) {
+        const data2 = await r2.json();
+        badge = data2?.teams?.[0]?.strTeamBadge;
+      }
+    }
+
+    if (badge) {
+      _badgeCache[teamName] = badge;
+      // Salva no cache persistente (limitado para não explodir localStorage)
+      const keys = Object.keys(_badgeCache);
+      if (keys.length > 500) delete _badgeCache[keys[0]];
+      localStorage.setItem("fut_badge_cache", JSON.stringify(_badgeCache));
     }
 
     return badge || null;
@@ -240,10 +255,10 @@ export async function getLeagueBadgeMap() {
         }
       });
       _leagueBadgeMap = map;
+      localStorage.setItem("fut_league_logo_cache", JSON.stringify(map));
       return map;
     } catch {
-      _leagueBadgeMap = {};
-      return {};
+      return _leagueBadgeMap || {};
     }
   })();
   return _pendingLeagueFetch;

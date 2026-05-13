@@ -34,6 +34,7 @@ import {
   smartAssignToSlots,
   calculateMatchPowers,
 } from "./simTactics.js";
+import { loadBadgesLazy, loadLeagueLogosLazy } from "../ui/teams.js";
 export async function openMatchSimulation() {
   const titulares = squad.filter((p) => p.status === "titular");
   if (titulares.length < 11) {
@@ -286,6 +287,8 @@ export async function openMatchSimulation() {
     }
   };
   updateUI();
+  loadBadgesLazy();
+  loadLeagueLogosLazy();
 
   if (opponentSelect) {
     opponentSelect.onchange = async (e) => {
@@ -511,10 +514,7 @@ export async function openMatchSimulation() {
             homeActivePlayers[selectedOutIdx] = player2;
             homeActivePlayers[i] = player1;
 
-            addLog(
-              `🔄 TROCA DE POSIÇÃO: ${player1.name} e ${player2.name} trocam de lugar em campo.`,
-              "log-neutral",
-            );
+            // Removido log de troca de posição a pedido do usuário
             selectedOutIdx = -1;
           }
         }
@@ -576,8 +576,42 @@ export async function openMatchSimulation() {
 
     renderMiniPitch();
 
-    subInList.innerHTML = homeBench
-      .map((p, i) => {
+    const activePosBtn = document.querySelector("#simBenchPosFilters .filter-btn.active");
+    const activeSortBtn = document.querySelector("#simBenchSortFilters .sort-btn.active");
+    
+    const posFilter = activePosBtn ? activePosBtn.dataset.pos : "";
+    const sortBy = activeSortBtn ? activeSortBtn.dataset.sort : "rating";
+
+    let filteredBench = homeBench.map((p, originalIdx) => ({ ...p, originalIdx }));
+
+    // Filtrar
+    if (posFilter) {
+      filteredBench = filteredBench.filter(p => {
+        const primaryPos = p.aptitude?.[0] || "";
+        if (posFilter === "GL") return ["GL", "GOL"].includes(primaryPos);
+        if (posFilter === "DEF") return ["ZE", "ZD", "LE", "LD"].includes(primaryPos);
+        if (posFilter === "MEI") return ["VOL", "MC", "MEI", "MD", "ME"].includes(primaryPos);
+        if (posFilter === "ATA") return ["PE", "PD", "SA", "CA"].includes(primaryPos);
+        return primaryPos === posFilter;
+      });
+    }
+
+    // Ordenar
+    filteredBench.sort((a, b) => {
+      // Prioridade: Quem já saiu (SubbedOut) vai pro fim
+      if (a.substitutedOut !== b.substitutedOut) return a.substitutedOut ? 1 : -1;
+      
+      if (sortBy === "rating") return (b.rating || 0) - (a.rating || 0);
+      if (sortBy === "fitness") return (b.currentStamina || 0) - (a.currentStamina || 0);
+      if (sortBy === "pos") {
+        return (ALL_POSITIONS.indexOf(a.aptitude?.[0]) ?? 99) - (ALL_POSITIONS.indexOf(b.aptitude?.[0]) ?? 99);
+      }
+      return 0;
+    });
+
+    subInList.innerHTML = filteredBench
+      .map((p) => {
+        const i = p.originalIdx;
         const fit = Math.floor(p.currentStamina);
         const fitColor =
           fit > 70
@@ -616,14 +650,40 @@ export async function openMatchSimulation() {
   };
 
   const populateSubSelects = () => {
-    homeBench.sort((a, b) => {
-      if (a.substitutedOut !== b.substitutedOut)
-        return a.substitutedOut ? 1 : -1;
-      return (
-        (ALL_POSITIONS.indexOf(a.aptitude?.[0]) ?? 99) -
-        (ALL_POSITIONS.indexOf(b.aptitude?.[0]) ?? 99)
-      );
+    // Listeners para botões de filtro de posição
+    const posBtns = document.querySelectorAll("#simBenchPosFilters .filter-btn");
+    posBtns.forEach(btn => {
+      if (!btn.dataset.listener) {
+        btn.onclick = () => {
+          posBtns.forEach(b => {
+            b.classList.remove("active");
+            b.style.color = "#aaa";
+          });
+          btn.classList.add("active");
+          btn.style.color = "#fff";
+          renderSubLists();
+        };
+        btn.dataset.listener = "true";
+      }
     });
+
+    // Listeners para botões de ordenação
+    const sortBtns = document.querySelectorAll("#simBenchSortFilters .sort-btn");
+    sortBtns.forEach(btn => {
+      if (!btn.dataset.listener) {
+        btn.onclick = () => {
+          sortBtns.forEach(b => {
+            b.classList.remove("active");
+            b.style.color = "#aaa";
+          });
+          btn.classList.add("active");
+          btn.style.color = "#fff";
+          renderSubLists();
+        };
+        btn.dataset.listener = "true";
+      }
+    });
+
     renderSubLists();
   };
   populateSubSelects();
@@ -837,6 +897,9 @@ export async function openMatchSimulation() {
         behavior: "smooth",
       });
     }, 10);
+
+    // Atualiza logos reais no log
+    loadBadgesLazy();
   };
 
   const closeSimulationView = () => {

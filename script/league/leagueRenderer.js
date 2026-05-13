@@ -5,6 +5,7 @@ import {
   normalizeTeamName,
   getCompetitionLogoHTML,
 } from "../ui/uiGraphics.js";
+import { loadBadgesLazy, loadLeagueLogosLazy } from "../ui/teams.js";
 
 export let fixtureViewMode = "month";
 export let selectedRoundIndex = 0;
@@ -113,6 +114,10 @@ export async function renderLeagueData() {
 
   await renderFixtures(true);
   if (window.lucide) window.lucide.createIcons();
+
+  // Logos reais
+  loadBadgesLazy();
+  loadLeagueLogosLazy();
 }
 
 export async function renderFixtures(forceUpdateParams = false) {
@@ -564,6 +569,9 @@ async function renderGenericStatTable({
     statsArray = statsArray
       .filter((r) => r.matches > 0)
       .map((r) => ({ ...r, avgRating: r.sumRatings / r.matches }));
+  } else {
+    // Filtrar zeros para outras estatísticas
+    statsArray = statsArray.filter((s) => (s[valueKey] || 0) > 0);
   }
 
   statsArray.sort((a, b) => {

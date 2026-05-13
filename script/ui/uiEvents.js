@@ -32,6 +32,7 @@ import { renderLeagueData } from "../league/leagueRenderer.js";
 import { Storage } from "../core/appStorage.js";
 import { toggleFitFilter } from "./state.js";
 import { initTransferMarket } from "../core/transferMarket.js";
+import { loadTeams, renderVisualTeams } from "./teams.js";
 
 let isEditorInitialized = false;
 
@@ -413,10 +414,11 @@ export function initCareerEvents(teams) {
     };
   const nextBtn = document.getElementById("goToTeamSelectBtn");
   if (nextBtn)
-    nextBtn.onclick = () => {
+    nextBtn.onclick = async () => {
       const name = document.getElementById("setupCoachName").value;
       if (!name) return alert("Por favor, digite o nome do treinador.");
       dbgToast("⚽ Indo para seleção de time...", "#1a3a5c");
+      const teams = await loadTeams();
       renderVisualTeams(teams);
       showScreen("teamSelectionScreen");
     };

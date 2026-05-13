@@ -152,7 +152,7 @@ export function degradeStamina(
 
       // Perda de estamina: Jogadores com menos estamina perdem mais rápido
       let loss = ((100 - sta) * 0.05 + 0.6) * staminaDrainFactor;
-      if (isGK) loss = loss * 0.15;
+      if (isGK) loss = loss * 0.05; // Reduzi de 0.15 para 0.05 para durar mais
 
       p.currentStamina = Math.max(5, p.currentStamina - loss);
       if (isHome && homeFitnessTracker)

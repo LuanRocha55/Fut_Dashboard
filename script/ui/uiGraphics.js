@@ -45,9 +45,18 @@ export function getCompetitionLogoHTML(name) {
     color = "var(--accent)";
   }
 
-  return `<div style="display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; background: ${color}; border-radius: 4px; margin-right: 8px; color: #fff; flex-shrink: 0;">
-    <i data-lucide="${icon}" style="width: 14px; height: 14px;"></i>
-  </div>`;
+  return `
+    <div style="display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; margin-right: 8px; flex-shrink: 0; position: relative;">
+      <img class="league-logo-img" data-league="${name}" 
+        referrerpolicy="no-referrer" crossorigin="anonymous"
+        style="width: 24px; height: 24px; object-fit: contain; display: none;" 
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+        onload="this.style.display='block';this.nextElementSibling.style.display='none';">
+      <div class="league-logo-fallback" style="width: 24px; height: 24px; background: ${color}; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #fff;">
+        <i data-lucide="${icon}" style="width: 14px; height: 14px;"></i>
+      </div>
+    </div>
+  `;
 }
 
 export function getFlag(nation) {
@@ -453,5 +462,16 @@ export function getTeamLogoHTML(teamName) {
       : realName.substring(0, 2)
   ).toUpperCase();
 
-  return `<div style="width: 24px; height: 24px; border-radius: 50%; background: linear-gradient(135deg, ${color}, #111); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 0.65rem; font-weight: 900; border: 1px solid ${borderCol}; box-shadow: 0 2px 4px rgba(0,0,0,0.5); flex-shrink: 0;" title="${realName}">${initials}</div>`;
+  return `
+    <div style="width: 24px; height: 24px; position: relative; flex-shrink: 0;">
+      <img class="team-badge-img" data-name="${realName}" 
+        referrerpolicy="no-referrer" crossorigin="anonymous"
+        style="width: 24px; height: 24px; object-fit: contain; display: none;" 
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+        onload="this.style.display='block';this.nextElementSibling.style.display='none';">
+      <div class="team-badge-fallback" style="width: 24px; height: 24px; border-radius: 50%; background: linear-gradient(135deg, ${color}, #111); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 0.65rem; font-weight: 900; border: 1px solid ${borderCol}; box-shadow: 0 2px 4px rgba(0,0,0,0.5);" title="${realName}">
+        ${initials}
+      </div>
+    </div>
+  `;
 }
