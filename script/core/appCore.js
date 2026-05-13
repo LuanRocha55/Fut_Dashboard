@@ -379,7 +379,7 @@ export async function advanceSeason() {
         p.aptitude && p.aptitude[0] === "GL",
         p.aptitude ? p.aptitude[0] : null,
       );
-      let diff = (p.rating - oldRating).toFixed(1);
+      let diff = (p.rating && oldRating) ? (p.rating - oldRating).toFixed(1) : "0.0";
       if (diff > 0.0)
         evolutionLog.push(
           `📈 <span style="color: var(--rating-top);">Evoluiu:</span> <strong>${p.name}</strong> (+${diff}).`,
@@ -602,7 +602,7 @@ export async function initSystem() {
         const isGK =
           p.aptitude &&
           (p.aptitude.includes("GOL") || p.aptitude.includes("GL"));
-        p.rating = calculateOVR(p.stats, p.form, isGK, p.aptitude[0]);
+        p.rating = calculateOVR(p.stats, p.form, isGK, p.aptitude[0]) || 5.0;
       });
       squad.push(...sourceSquad);
       saveToLocal();

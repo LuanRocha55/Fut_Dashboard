@@ -1,45 +1,19 @@
 import { dbgToast } from "./uiUtils.js";
 import { highlightZones, clearZones } from "./zones.js";
-import { switchMainView, showScreen } from "./views.js";
-import { handleSubstitution, initDragAndDrop } from "./dragDrop.js";
-import {
-  setupEventListeners,
-  initCareerEvents,
-  finalizeCareerSetup,
-} from "./uiEvents.js";
-import {
-  loadTeams,
-  fetchTeamBadge,
-  getLeagueBadgeMap,
-  loadBadgesLazy,
-  loadLeagueLogosLazy,
-  renderVisualTeams,
-} from "./teams.js";
-import { main } from "./init.js";
-
+import { initDragAndDrop } from "./dragDrop.js";
 import {
   squad,
   formations,
   ALL_POSITIONS,
-  initSystem,
   performSwap,
-  downloadJSON,
-  resetFormationAlignment,
   calculateOVR,
-  saveToLocal,
-  healSquad,
-  matchHistory,
-  matchInfo,
   ensureCaptain,
 } from "../core/appCore.js";
 import {
   getEfootballPosition,
   checkPositionFit,
   swapTitulares,
-  handlePlayerMove,
-  autoFillTeam,
 } from "../tactics/pitchTactics.js";
-import { openMatchSimulation } from "../simulation/simMain.js";
 import {
   getRatingColor,
   getStarsHTML,
@@ -49,16 +23,11 @@ import {
   normalizeTeamName,
 } from "./uiGraphics.js";
 import { showCustomModal } from "./uiModal.js";
-import { normalizeStr } from "../core/appUtils.js";
-import { initEditorEvents, openMenu } from "../player/playerEditor.js";
+import { openMenu } from "../player/playerEditor.js";
 import {
-  initTableEvents,
   isTableView,
   renderTable,
-  setTableView,
 } from "./uiTableView.js";
-import { initLeagueEvents, autoInitLeague } from "../league/leagueMain.js";
-import { renderLeagueData } from "../league/leagueRenderer.js";
 import { Storage } from "../core/appStorage.js";
 import { showOnlyFitPlayers } from "./state.js";
 
@@ -400,17 +369,8 @@ export function renderPitchPlayers(titulares, format, squad) {
     }
 
     const fitLevel = p.fitness !== undefined ? p.fitness : 100;
-    const fitColorBar =
-      fitLevel > 70
-        ? "var(--accent)"
-        : fitLevel > 40
-          ? "var(--warning)"
-          : "var(--danger)";
-    const fitBarHtml = `<div style="position:absolute; top: calc(100% + 32px); left: 50%; transform: translateX(-50%); width: 34px; height: 4px; background: rgba(0,0,0,0.6); border: 1px solid rgba(0,0,0,0.8); border-radius: 2px; overflow: hidden; z-index: 15;"><div style="height: 100%; width: ${fitLevel}%; background: ${fitColorBar}; transition: width 0.3s ease;"></div></div>`;
-
-    let liveStatusClass = "";
-    if (p.matchStatus === "red") liveStatusClass = "is-suspended";
-    if (p.matchStatus === "injury") liveStatusClass = "is-injured";
+    const fitColorBar = fitLevel > 70 ? "var(--accent)" : (fitLevel > 40 ? "var(--warning)" : "var(--danger)");
+    const liveStatusClass = p.matchStatus === "red" ? "is-suspended" : (p.matchStatus === "injury" ? "is-injured" : "");
 
     stats.totalRating += displayRating;
     stats.totalAge += p.age || 25;
@@ -437,10 +397,31 @@ export function renderPitchPlayers(titulares, format, squad) {
         (stats.playstylesCount[p.playstyle] || 0) + 1;
 
     const el = document.createElement("div");
-    el.className = `player ${fitClass} ${liveStatusClass}`;
+    el.className = `player player-card ${fitClass} ${liveStatusClass}`;
     el.dataset.id = p.id;
     el.style.cssText = `top: ${topPos}%; left: ${leftPos}%;`;
-    el.innerHTML = `<div class="p-icon" style="border-color: ${getRatingColor(pRating)}">${getMatchStatusHTML(p.matchStatus)}${p.captain ? '<div class="captain-armband">C</div>' : ""}<div class="p-pos-badge">${currentZone}</div><div class="p-form">${getFormHTML(p.form)}</div>${p.number}<span class="p-badge" style="background: ${getRatingColor(displayRating)}">${displayRating.toFixed(1)}</span></div><div class="p-name">${p.name}</div>${fitBarHtml}`;
+    
+    el.innerHTML = `
+      <div class="player-card-header">
+        <span class="player-card-pos">${currentZone}</span>
+        <div class="p-form">${getFormHTML(p.form)}</div>
+        <span class="player-card-ovr" style="background: ${getRatingColor(displayRating)}">${displayRating.toFixed(1)}</span>
+      </div>
+      <div class="player-card-photo">
+        <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+      </div>
+      <div class="player-card-name-row">
+        <div class="player-card-name">${p.name}</div>
+        <div class="player-card-status-icons">
+          ${getMatchStatusHTML(p.matchStatus)}
+          ${p.captain ? '<div class="captain-armband-mini">C</div>' : ""}
+        </div>
+      </div>
+      <div class="player-card-stamina">
+        <div class="player-card-stamina-fill" style="width: ${fitLevel}%; background: ${fitColorBar};"></div>
+      </div>
+    `;
+    
     el.draggable = true;
     el.ondragstart = (e) => {
       e.dataTransfer.setData("playerId", p.id);

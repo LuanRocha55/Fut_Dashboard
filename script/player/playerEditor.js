@@ -130,7 +130,7 @@ export async function openMenu(id) {
   document.getElementById("editNationInput").value = p.nationality || "BR";
 
   document.getElementById("viewName").innerText = p.name;
-  document.getElementById("viewRating").innerText = p.rating.toFixed(1);
+  document.getElementById("viewRating").innerText = (p.rating || 5.0).toFixed(1);
   document.getElementById("viewRating").style.color = getRatingColor(p.rating);
   document.getElementById("viewNumber").innerText = p.number || 99;
   document.getElementById("viewAge").innerText = p.age || 25;
@@ -249,10 +249,10 @@ export async function openMenu(id) {
         10,
       );
       const newOvr = calculateOVR(newStats, formVal, isGK);
-      document.getElementById("viewRating").innerText = newOvr.toFixed(1);
+      document.getElementById("viewRating").innerText = (newOvr || 5.0).toFixed(1);
       document.getElementById("viewRating").style.color =
         getRatingColor(newOvr);
-      document.getElementById("editRatingInput").value = newOvr.toFixed(1);
+      document.getElementById("editRatingInput").value = (newOvr || 5.0).toFixed(1);
     };
     statKeys.forEach((s) => {
       document.getElementById(`slider_${s.key}`).oninput = (e) => {

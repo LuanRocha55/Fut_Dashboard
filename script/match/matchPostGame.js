@@ -151,7 +151,7 @@ export const handleMatchPostGame = async ({
     <p style="font-size: 1.2rem; font-weight: bold; margin: 0;">${matchInfo.home || "Seu Time"} ${scoreDisplay} ${currentOpponent.name}</p>
   </div>
   <div style="text-align: center; margin-bottom: 15px; color: var(--warning); font-weight: bold;">
-    🌟 MVP da Partida: ${bestPlayer.name} (${bestPlayer.rating.toFixed(1)})
+    🌟 MVP da Partida: ${bestPlayer.name} (${(bestPlayer.rating || 6.0).toFixed(1)})
   </div>
   ${scorersHTML}
   <div style="max-height: 350px; overflow-y: auto; text-align: left; background: #1a1a1a; padding: 10px; border-radius: 8px; font-size: 0.9rem;">`;
@@ -159,7 +159,7 @@ export const handleMatchPostGame = async ({
   playersReport.forEach((p) => {
     reportHTML += `<div style="display: flex; justify-content: space-between; padding: 8px 5px; border-bottom: 1px solid #333;">
       <span>${p.name}</span>
-      <strong style="color: ${getRatingColor(p.rating)}">${p.rating.toFixed(1)}</strong>
+      <strong style="color: ${getRatingColor(p.rating)}">${(p.rating || 6.0).toFixed(1)}</strong>
   </div>`;
   });
   reportHTML += `</div>`;

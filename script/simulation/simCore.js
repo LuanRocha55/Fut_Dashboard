@@ -461,7 +461,7 @@ export async function openMatchSimulation() {
       node.style.gap = "4px";
       node.style.transition = "all 0.2s ease";
 
-      const ovr = p.rating.toFixed(1);
+      const ovr = (p.rating || 5.0).toFixed(1);
       const ovrColor = getRatingColor(p.rating);
 
       let statusHtml = "";
@@ -590,7 +590,7 @@ export async function openMatchSimulation() {
         const disabledClass = isSubbedOut ? "disabled-sub" : "";
         const opacity = isSubbedOut ? "0.4" : "1";
         const cursor = isSubbedOut ? "not-allowed" : "pointer";
-        const ovr = p.rating.toFixed(1);
+        const ovr = (p.rating || 5.0).toFixed(1);
         const ovrColor = getRatingColor(p.rating);
 
         return `<div class="sub-list-item ${isSelected} ${disabledClass}" data-idx="${i}" style="opacity: ${opacity}; cursor: ${cursor};">

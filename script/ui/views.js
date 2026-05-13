@@ -1,75 +1,10 @@
-import { dbgToast } from "./uiUtils.js";
-import { highlightZones, clearZones } from "./zones.js";
-import { handleSubstitution, initDragAndDrop } from "./dragDrop.js";
-import {
-  setupEventListeners,
-  initCareerEvents,
-  finalizeCareerSetup,
-} from "./uiEvents.js";
-import {
-  loadTeams,
-  fetchTeamBadge,
-  getLeagueBadgeMap,
-  loadBadgesLazy,
-  loadLeagueLogosLazy,
-  renderVisualTeams,
-} from "./teams.js";
 import {
   renderApp,
-  render,
-  renderBench,
-  renderMatchHistory,
   renderTeamStats,
-  renderPitchPlayers,
-  updateTeamStatsUI,
-  renderTeamChemistry,
-  updateDashboardCoach,
 } from "./render.js";
-import { main } from "./init.js";
-
 import {
-  squad,
-  formations,
-  ALL_POSITIONS,
-  initSystem,
-  performSwap,
-  downloadJSON,
-  resetFormationAlignment,
-  calculateOVR,
-  saveToLocal,
-  healSquad,
-  matchHistory,
-  matchInfo,
-  ensureCaptain,
-} from "../core/appCore.js";
-import {
-  getEfootballPosition,
-  checkPositionFit,
-  swapTitulares,
-  handlePlayerMove,
-  autoFillTeam,
-} from "../tactics/pitchTactics.js";
-import { openMatchSimulation } from "../simulation/simMain.js";
-import {
-  getRatingColor,
-  getStarsHTML,
-  getFormHTML,
-  getMatchStatusHTML,
-  drawRadar,
-  normalizeTeamName,
-} from "./uiGraphics.js";
-import { showCustomModal } from "./uiModal.js";
-import { normalizeStr } from "../core/appUtils.js";
-import { initEditorEvents, openMenu } from "../player/playerEditor.js";
-import {
-  initTableEvents,
-  isTableView,
-  renderTable,
   setTableView,
 } from "./uiTableView.js";
-import { initLeagueEvents, autoInitLeague } from "../league/leagueMain.js";
-import { renderLeagueData } from "../league/leagueRenderer.js";
-import { Storage } from "../core/appStorage.js";
 
 export function switchMainView(viewName) {
   setTableView(viewName === "table");
@@ -80,6 +15,7 @@ export function switchMainView(viewName) {
   const dashboard = document.getElementById("dashboardView");
   const league = document.getElementById("leagueView");
   const teamStats = document.getElementById("teamStatsView");
+  const transfer = document.getElementById("transferView");
   const bench = document.querySelector(".bottom-bench");
   const sidebar = document.getElementById("sidebar");
 
@@ -89,13 +25,16 @@ export function switchMainView(viewName) {
   if (dashboard) dashboard.style.display = "none";
   if (league) league.style.display = "none";
   if (teamStats) teamStats.style.display = "none";
+  if (transfer) transfer.style.display = "none";
 
   const navDash = document.getElementById("navDashboardBtn");
   const navPitch = document.getElementById("navPitchBtn");
   const navTable = document.getElementById("navTableBtn");
+  const navTransfer = document.getElementById("navTransferBtn");
 
   if (navPitch) navPitch.className = "btn-secondary";
   if (navTable) navTable.className = "btn-secondary";
+  if (navTransfer) navTransfer.className = "btn-secondary";
 
   if (viewName === "simulation") {
     if (sidebar) sidebar.style.display = "none";
@@ -123,6 +62,11 @@ export function switchMainView(viewName) {
     if (teamStats) teamStats.style.display = "block";
     if (bench) bench.style.display = "none";
     renderTeamStats();
+  } else if (viewName === "transfer") {
+    if (sidebar) sidebar.style.display = "flex";
+    if (transfer) transfer.style.display = "block";
+    if (bench) bench.style.display = "none";
+    if (navTransfer) navTransfer.className = "btn-primary";
   } else {
     // dashboard
     if (sidebar) sidebar.style.display = "none";

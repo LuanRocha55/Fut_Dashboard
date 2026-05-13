@@ -1,73 +1,37 @@
 import { dbgToast } from "./uiUtils.js";
 import { highlightZones, clearZones } from "./zones.js";
 import { switchMainView, showScreen } from "./views.js";
-import { handleSubstitution, initDragAndDrop } from "./dragDrop.js";
-import {
-  loadTeams,
-  fetchTeamBadge,
-  getLeagueBadgeMap,
-  loadBadgesLazy,
-  loadLeagueLogosLazy,
-  renderVisualTeams,
-} from "./teams.js";
+import { initDragAndDrop } from "./dragDrop.js";
 import {
   renderApp,
   render,
-  renderBench,
-  renderMatchHistory,
-  renderTeamStats,
-  renderPitchPlayers,
-  updateTeamStatsUI,
-  renderTeamChemistry,
   updateDashboardCoach,
 } from "./render.js";
-import { main } from "./init.js";
-
 import {
-  squad,
   formations,
-  ALL_POSITIONS,
   initSystem,
   performSwap,
   downloadJSON,
   resetFormationAlignment,
-  calculateOVR,
   saveToLocal,
   healSquad,
-  matchHistory,
-  matchInfo,
-  ensureCaptain,
 } from "../core/appCore.js";
 import {
-  getEfootballPosition,
-  checkPositionFit,
   swapTitulares,
-  handlePlayerMove,
   autoFillTeam,
 } from "../tactics/pitchTactics.js";
 import { openMatchSimulation } from "../simulation/simMain.js";
-import {
-  getRatingColor,
-  getStarsHTML,
-  getFormHTML,
-  getMatchStatusHTML,
-  drawRadar,
-  normalizeTeamName,
-} from "./uiGraphics.js";
 import { showCustomModal } from "./uiModal.js";
 import { normalizeStr } from "../core/appUtils.js";
 import { initEditorEvents, openMenu } from "../player/playerEditor.js";
 import {
   initTableEvents,
-  isTableView,
-  renderTable,
-  setTableView,
 } from "./uiTableView.js";
 import { initLeagueEvents, autoInitLeague } from "../league/leagueMain.js";
 import { renderLeagueData } from "../league/leagueRenderer.js";
 import { Storage } from "../core/appStorage.js";
 import { toggleFitFilter } from "./state.js";
-import { initTransferMarket } from "../transfer/transferMarket.js";
+import { initTransferMarket } from "../core/transferMarket.js";
 
 let isEditorInitialized = false;
 
