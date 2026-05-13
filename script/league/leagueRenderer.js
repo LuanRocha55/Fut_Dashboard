@@ -1,6 +1,10 @@
-import { Storage } from "./storage.js";
-import { getMatchDate, formatMatchDate, updateMonthUI } from "./league.js";
-import { getTeamLogoHTML, normalizeTeamName, getCompetitionLogoHTML } from "./graphics.js";
+import { Storage } from "../core/appStorage.js";
+import { getMatchDate, formatMatchDate, updateMonthUI } from "./leagueMain.js";
+import {
+  getTeamLogoHTML,
+  normalizeTeamName,
+  getCompetitionLogoHTML,
+} from "../ui/uiGraphics.js";
 
 export let fixtureViewMode = "month";
 export let selectedRoundIndex = 0;
@@ -8,12 +12,15 @@ export let selectedMonth = 0;
 export let currentViewDivision = 0;
 
 export function updateLeagueState(updates) {
-  if (updates.fixtureViewMode !== undefined) fixtureViewMode = updates.fixtureViewMode;
-  if (updates.selectedRoundIndex !== undefined) selectedRoundIndex = updates.selectedRoundIndex;
-  if (updates.selectedMonth !== undefined) selectedMonth = updates.selectedMonth;
-  if (updates.currentViewDivision !== undefined) currentViewDivision = updates.currentViewDivision;
+  if (updates.fixtureViewMode !== undefined)
+    fixtureViewMode = updates.fixtureViewMode;
+  if (updates.selectedRoundIndex !== undefined)
+    selectedRoundIndex = updates.selectedRoundIndex;
+  if (updates.selectedMonth !== undefined)
+    selectedMonth = updates.selectedMonth;
+  if (updates.currentViewDivision !== undefined)
+    currentViewDivision = updates.currentViewDivision;
 }
-
 
 export async function renderLeagueData() {
   const data = await Storage.getLeagueData();
@@ -29,19 +36,26 @@ export async function renderLeagueData() {
     }
     return;
   }
-  
+
   if (!data.divisions && data.table) {
-      data.divisions = [{ level: 1, name: "1ª Divisão", table: data.table, rounds: data.rounds }];
+    data.divisions = [
+      { level: 1, name: "1ª Divisão", table: data.table, rounds: data.rounds },
+    ];
   }
 
   const divSelect = document.getElementById("leagueDivisionSelect");
   if (divSelect) {
-      if (data.divisions.length > 1) {
-          divSelect.style.display = "block";
-          divSelect.innerHTML = data.divisions.map((d, i) => `<option value="${i}" ${i === currentViewDivision ? "selected" : ""}>${d.name}</option>`).join("");
-      } else {
-          divSelect.style.display = "none";
-      }
+    if (data.divisions.length > 1) {
+      divSelect.style.display = "block";
+      divSelect.innerHTML = data.divisions
+        .map(
+          (d, i) =>
+            `<option value="${i}" ${i === currentViewDivision ? "selected" : ""}>${d.name}</option>`,
+        )
+        .join("");
+    } else {
+      divSelect.style.display = "none";
+    }
   }
 
   const currentDiv = data.divisions[currentViewDivision] || data.divisions[0];
@@ -49,7 +63,11 @@ export async function renderLeagueData() {
 
   const nextSeasonBtn = document.getElementById("nextSeasonBtn");
   if (nextSeasonBtn) {
-    if (data.currentRound > Math.max(...data.divisions.map(d => d.rounds.length)) && (!data.cup || data.cup.finished))
+    if (
+      data.currentRound >
+        Math.max(...data.divisions.map((d) => d.rounds.length)) &&
+      (!data.cup || data.cup.finished)
+    )
       nextSeasonBtn.style.display = "block";
     else nextSeasonBtn.style.display = "none";
   }
@@ -106,7 +124,7 @@ export async function renderFixtures(forceUpdateParams = false) {
 
   if (!data || !data.divisions) {
     if (fixturesContainer) {
-        fixturesContainer.innerHTML = `<div style="text-align: center; color: #888; padding: 20px;">Nenhuma liga ativa. Crie uma nova liga para ver o calendário.</div>`;
+      fixturesContainer.innerHTML = `<div style="text-align: center; color: #888; padding: 20px;">Nenhuma liga ativa. Crie uma nova liga para ver o calendário.</div>`;
     }
     return;
   }
@@ -118,8 +136,8 @@ export async function renderFixtures(forceUpdateParams = false) {
 
   if (forceUpdateParams || typeof selectedRoundIndex === "undefined") {
     updateLeagueState({
-        selectedRoundIndex: currentRoundIdx,
-        selectedMonth: Math.floor((currentRoundIdx * 10) / totalRounds)
+      selectedRoundIndex: currentRoundIdx,
+      selectedMonth: Math.floor((currentRoundIdx * 10) / totalRounds),
     });
     if (monthSelect) monthSelect.value = selectedMonth;
   }
@@ -160,40 +178,67 @@ export async function renderFixtures(forceUpdateParams = false) {
         const matchMonth = Math.floor(dateNum / 30);
         if (matchMonth === selectedMonth) {
           const phaseMatches = data.cup.phases[phaseIdx];
-          const userMatch = phaseMatches.find((m) => m.home === userTeamId || m.away === userTeamId);
+          const userMatch = phaseMatches.find(
+            (m) => m.home === userTeamId || m.away === userTeamId,
+          );
           if (userMatch) {
-            schedule.push({ type: "cup", index: phaseIdx, match: userMatch, title: `Copa - ${data.cup.phaseNames[phaseIdx]}` });
+            schedule.push({
+              type: "cup",
+              index: phaseIdx,
+              match: userMatch,
+              title: `Copa - ${data.cup.phaseNames[phaseIdx]}`,
+            });
           }
         }
       }
     }
-    
+
     if (data.continentalCup && !data.continentalCup.finished) {
       // 3.1 Fase de Grupos
       if (data.continentalCup.currentPhaseIndex < 3) {
-        data.continentalCup.groups.forEach(group => {
-          group.matches.forEach(m => {
+        data.continentalCup.groups.forEach((group) => {
+          group.matches.forEach((m) => {
             if (m.home === userTeamId || m.away === userTeamId) {
-              const dateNum = getMatchDate("continental", m.round - 1, totalRounds);
+              const dateNum = getMatchDate(
+                "continental",
+                m.round - 1,
+                totalRounds,
+              );
               const matchMonth = Math.floor(dateNum / 30);
               if (matchMonth === selectedMonth) {
-                schedule.push({ type: "continental", index: m.round - 1, match: m, title: `${data.continentalCup.name} - Rodada ${m.round}` });
+                schedule.push({
+                  type: "continental",
+                  index: m.round - 1,
+                  match: m,
+                  title: `${data.continentalCup.name} - Rodada ${m.round}`,
+                });
               }
             }
           });
         });
       }
-      
+
       // 3.2 Mata-mata
-      for (let knockoutIdx = 0; knockoutIdx < data.continentalCup.phases.length; knockoutIdx++) {
+      for (
+        let knockoutIdx = 0;
+        knockoutIdx < data.continentalCup.phases.length;
+        knockoutIdx++
+      ) {
         const phaseIdx = knockoutIdx + 3; // Oitavas é index 3 no getMatchDate
         const dateNum = getMatchDate("continental", phaseIdx, totalRounds);
         const matchMonth = Math.floor(dateNum / 30);
         if (matchMonth === selectedMonth) {
           const phaseMatches = data.continentalCup.phases[knockoutIdx];
-          const userMatch = phaseMatches.find((m) => m.home === userTeamId || m.away === userTeamId);
+          const userMatch = phaseMatches.find(
+            (m) => m.home === userTeamId || m.away === userTeamId,
+          );
           if (userMatch) {
-            schedule.push({ type: "continental", index: phaseIdx, match: userMatch, title: `${data.continentalCup.name} - ${data.continentalCup.phaseNames[knockoutIdx + 1]}` });
+            schedule.push({
+              type: "continental",
+              index: phaseIdx,
+              match: userMatch,
+              title: `${data.continentalCup.name} - ${data.continentalCup.phaseNames[knockoutIdx + 1]}`,
+            });
           }
         }
       }
@@ -224,7 +269,10 @@ export async function renderFixtures(forceUpdateParams = false) {
             statusLabel = `<span style="float: right; color: #888; font-size: 0.7rem;">FINALIZADA</span>`;
           }
         } else if (item.type === "continental") {
-          if (data.continentalCup.currentPhaseIndex === item.index && !match.played) {
+          if (
+            data.continentalCup.currentPhaseIndex === item.index &&
+            !match.played
+          ) {
             statusLabel = `<span style="float: right; color: var(--warning); font-size: 0.7rem;">PRÓXIMO JOGO</span>`;
           } else if (match.played) {
             statusLabel = `<span style="float: right; color: #888; font-size: 0.7rem;">FINALIZADA</span>`;
@@ -234,21 +282,25 @@ export async function renderFixtures(forceUpdateParams = false) {
         const roundHeader = document.createElement("div");
         roundHeader.style.cssText =
           "margin-top: 15px; margin-bottom: 5px; color: var(--accent); font-weight: bold; font-size: 0.85rem; text-transform: uppercase; border-bottom: 1px solid #333; padding-bottom: 5px; display: flex; justify-content: space-between;";
-        const dateStr = formatMatchDate(item.dateNum, data.startMonth || 0, data.baseYear || 2026);
+        const dateStr = formatMatchDate(
+          item.dateNum,
+          data.startMonth || 0,
+          data.baseYear || 2026,
+        );
         roundHeader.innerHTML = `<span>📅 ${dateStr} - ${item.title}</span> ${statusLabel}`;
-        
+
         const getTeamNameInfo = (id) => {
-            let t = teamData[id];
-            if (t) return normalizeTeamName(t.name);
-            if (data.continentalCup && data.continentalCup.teams) {
-                let c = data.continentalCup.teams.find(x => x.id === id);
-                if (c) return normalizeTeamName(c.name);
-            }
-            if (data.cup && data.cup.teams) {
-              let ct = data.cup.teams.find(x => x.id === id);
-              if (ct) return normalizeTeamName(ct.name);
-            }
-            return "Desconhecido";
+          let t = teamData[id];
+          if (t) return normalizeTeamName(t.name);
+          if (data.continentalCup && data.continentalCup.teams) {
+            let c = data.continentalCup.teams.find((x) => x.id === id);
+            if (c) return normalizeTeamName(c.name);
+          }
+          if (data.cup && data.cup.teams) {
+            let ct = data.cup.teams.find((x) => x.id === id);
+            if (ct) return normalizeTeamName(ct.name);
+          }
+          return "Desconhecido";
         };
 
         const homeTeamName = getTeamNameInfo(match.home);
@@ -354,17 +406,19 @@ export async function renderContinental() {
   const container = document.getElementById("continentalBracket");
   const title = document.getElementById("continentalTitle");
   if (!data || !data.continentalCup) {
-    container.innerHTML = "<div style='text-align:center; color:#888; padding:20px;'>Crie uma nova Liga para gerar a Copa Continental!</div>";
+    container.innerHTML =
+      "<div style='text-align:center; color:#888; padding:20px;'>Crie uma nova Liga para gerar a Copa Continental!</div>";
     return;
   }
-  if (title) title.innerHTML = `${getCompetitionLogoHTML(data.continentalCup.name)} ${normalizeTeamName(data.continentalCup.name)}`;
+  if (title)
+    title.innerHTML = `${getCompetitionLogoHTML(data.continentalCup.name)} ${normalizeTeamName(data.continentalCup.name)}`;
   container.innerHTML = "";
-  
+
   const getTeamName = (id) => {
-    let t = data.continentalCup.teams.find(x => x.id === id);
+    let t = data.continentalCup.teams.find((x) => x.id === id);
     if (t) return t.name;
-    const flat = data.divisions ? data.divisions.flatMap(d => d.table) : [];
-    t = flat.find(x => x.id === id);
+    const flat = data.divisions ? data.divisions.flatMap((d) => d.table) : [];
+    t = flat.find((x) => x.id === id);
     return t ? t.name : "Desconhecido";
   };
 
@@ -374,26 +428,35 @@ export async function renderContinental() {
   }
 
   // FASE DE GRUPOS
-  if (data.continentalCup.currentPhaseIndex < 3 || (data.continentalCup.phases.length === 0 && !data.continentalCup.finished)) {
+  if (
+    data.continentalCup.currentPhaseIndex < 3 ||
+    (data.continentalCup.phases.length === 0 && !data.continentalCup.finished)
+  ) {
     const groupsDiv = document.createElement("div");
     groupsDiv.style.display = "grid";
-    groupsDiv.style.gridTemplateColumns = "repeat(auto-fit, minmax(300px, 1fr))";
+    groupsDiv.style.gridTemplateColumns =
+      "repeat(auto-fit, minmax(300px, 1fr))";
     groupsDiv.style.gap = "20px";
-    
-    data.continentalCup.groups.forEach(g => {
+
+    data.continentalCup.groups.forEach((g) => {
       const gBox = document.createElement("div");
       gBox.className = "league-card";
       gBox.style.padding = "10px";
-      
-      let rows = g.teams.sort((a,b) => b.pts - a.pts || b.gd - a.gd).map((t, idx) => `
-        <tr style="${idx < 2 ? 'background: rgba(0, 170, 255, 0.05);' : ''}">
-          <td style="padding: 5px; color: ${idx < 2 ? 'var(--accent)' : '#888'}; font-weight: bold;">${idx+1}º</td>
+
+      let rows = g.teams
+        .sort((a, b) => b.pts - a.pts || b.gd - a.gd)
+        .map(
+          (t, idx) => `
+        <tr style="${idx < 2 ? "background: rgba(0, 170, 255, 0.05);" : ""}">
+          <td style="padding: 5px; color: ${idx < 2 ? "var(--accent)" : "#888"}; font-weight: bold;">${idx + 1}º</td>
           <td style="padding: 5px; display: flex; align-items: center; gap: 5px;">${getTeamLogoHTML(t.name)} <span style="font-size: 0.85rem;">${normalizeTeamName(t.name)}</span></td>
           <td style="padding: 5px; text-align: center; font-weight: bold; color: var(--accent);">${t.pts}</td>
           <td style="padding: 5px; text-align: center; font-size: 0.75rem; color: #aaa;">${t.p}</td>
           <td style="padding: 5px; text-align: center; font-size: 0.75rem; color: #aaa;">${t.gd}</td>
         </tr>
-      `).join("");
+      `,
+        )
+        .join("");
 
       gBox.innerHTML = `
         <h4 style="color: var(--warning); margin-bottom: 10px; text-align: center; border-bottom: 1px solid #333; padding-bottom: 5px;">Grupo ${g.name}</h4>
@@ -419,7 +482,7 @@ export async function renderContinental() {
   if (data.continentalCup.phases.length > 0) {
     const knockoutContainer = document.createElement("div");
     knockoutContainer.style.marginTop = "30px";
-    
+
     for (let i = data.continentalCup.phases.length - 1; i >= 0; i--) {
       const phaseMatches = data.continentalCup.phases[i];
       const phaseName = data.continentalCup.phaseNames[i + 1]; // +1 porque index 0 é "Fase de Grupos"
@@ -433,10 +496,16 @@ export async function renderContinental() {
         const aName = getTeamName(m.away);
         let scoreText = "VS";
         if (m.played) {
-          if (m.homePen !== null && m.homePen !== undefined) scoreText = `<strong>${m.homeScore}</strong> (${m.homePen}) - (${m.awayPen}) <strong>${m.awayScore}</strong>`;
-          else scoreText = `<strong>${m.homeScore}</strong> - <strong>${m.awayScore}</strong>`;
+          if (m.homePen !== null && m.homePen !== undefined)
+            scoreText = `<strong>${m.homeScore}</strong> (${m.homePen}) - (${m.awayPen}) <strong>${m.awayScore}</strong>`;
+          else
+            scoreText = `<strong>${m.homeScore}</strong> - <strong>${m.awayScore}</strong>`;
         }
-        const isUserMatch = (m.home === (data.table ? data.table.find(t=>t.isUser)?.id : "meu_time")) || (m.away === (data.table ? data.table.find(t=>t.isUser)?.id : "meu_time"));
+        const isUserMatch =
+          m.home ===
+            (data.table ? data.table.find((t) => t.isUser)?.id : "meu_time") ||
+          m.away ===
+            (data.table ? data.table.find((t) => t.isUser)?.id : "meu_time");
         const bg = isUserMatch ? "rgba(0, 255, 136, 0.1)" : "#1a1a1a";
         const border = isUserMatch ? "#00aaff" : "#333";
 
@@ -471,7 +540,7 @@ async function renderGenericStatTable({
   emptyMessage,
   formatValue = (v) => v,
   isRating = false,
-  sortOrder = "desc"
+  sortOrder = "desc",
 }) {
   const data = await Storage.getLeagueData();
   const tbody = document.getElementById(tbodyId);
@@ -498,7 +567,9 @@ async function renderGenericStatTable({
   }
 
   statsArray.sort((a, b) => {
-    return sortOrder === "desc" ? b[valueKey] - a[valueKey] : a[valueKey] - b[valueKey];
+    return sortOrder === "desc"
+      ? b[valueKey] - a[valueKey]
+      : a[valueKey] - b[valueKey];
   });
 
   const topStats = statsArray.slice(0, 20);
@@ -507,12 +578,23 @@ async function renderGenericStatTable({
   tbody.innerHTML = "";
   topStats.forEach((player, index) => {
     const isUserPlayer = player.team === userTeamName;
-    const highlightStyle = isUserPlayer ? "background: rgba(0, 255, 136, 0.1);" : "";
-    
+    const highlightStyle = isUserPlayer
+      ? "background: rgba(0, 255, 136, 0.1);"
+      : "";
+
     let displayColor = valueColor;
     if (isRating) {
       const val = player[valueKey];
-      displayColor = val >= 8.5 ? "var(--rating-top)" : val >= 7.5 ? "var(--rating-high)" : val >= 6.0 ? "var(--rating-mid)" : val >= 5.0 ? "var(--rating-low)" : "var(--rating-bad)";
+      displayColor =
+        val >= 8.5
+          ? "var(--rating-top)"
+          : val >= 7.5
+            ? "var(--rating-high)"
+            : val >= 6.0
+              ? "var(--rating-mid)"
+              : val >= 5.0
+                ? "var(--rating-low)"
+                : "var(--rating-bad)";
     }
 
     const tr = document.createElement("tr");
@@ -546,7 +628,8 @@ export async function renderSeasonHistory() {
   const reversed = [...history].reverse();
   reversed.forEach((season) => {
     const item = document.createElement("div");
-    item.style.cssText = "background: #1a1a1a; border: 1px solid #333; border-radius: 8px; padding: 15px; display: flex; justify-content: space-between; align-items: center;";
+    item.style.cssText =
+      "background: #1a1a1a; border: 1px solid #333; border-radius: 8px; padding: 15px; display: flex; justify-content: space-between; align-items: center;";
     item.innerHTML = `
             <div>
                 <h4 style="color: var(--accent); margin: 0 0 10px 0;">Temporada ${season.season}</h4>
@@ -568,25 +651,26 @@ export async function renderCup() {
   const data = await Storage.getLeagueData();
   const container = document.getElementById("cupBracket");
   if (!data || !data.cup) {
-    container.innerHTML = "<div style='text-align:center; color:#888; padding:20px;'>Crie uma nova Liga para gerar a Copa Nacional!</div>";
+    container.innerHTML =
+      "<div style='text-align:center; color:#888; padding:20px;'>Crie uma nova Liga para gerar a Copa Nacional!</div>";
     return;
   }
   container.innerHTML = "";
   if (data.cup.finished) {
-    const flatTeams = data.divisions.flatMap(d => d.table);
+    const flatTeams = data.divisions.flatMap((d) => d.table);
     const winnerTeam = flatTeams.find((t) => t.id === data.cup.winner);
     container.innerHTML = `<h3 style='color:var(--warning); text-align:center; margin-bottom:20px;'>🏆 O ${winnerTeam?.name} é o Campeão da Copa!</h3>`;
   }
   for (let i = data.cup.phases.length - 1; i >= 0; i--) {
     const phaseMatches = data.cup.phases[i];
     const phaseName = data.cup.phaseNames[i];
-    const flatTeams = data.divisions.flatMap(d => d.table);
-    
+    const flatTeams = data.divisions.flatMap((d) => d.table);
+
     const getTeamName = (id) => {
-      let t = flatTeams.find(x => x.id === id);
+      let t = flatTeams.find((x) => x.id === id);
       if (t) return t.name;
       if (data.cup.teams) {
-        let ct = data.cup.teams.find(x => x.id === id);
+        let ct = data.cup.teams.find((x) => x.id === id);
         if (ct) return ct.name;
       }
       return "Desconhecido";
@@ -595,7 +679,7 @@ export async function renderCup() {
     const phaseDiv = document.createElement("div");
     phaseDiv.style.marginBottom = "15px";
     phaseDiv.innerHTML = `<h4 style="color:var(--accent); margin-bottom: 10px; border-bottom: 1px solid #333; padding-bottom: 5px;">${getCompetitionLogoHTML("Copa")} ${phaseName}</h4>`;
-    
+
     phaseMatches.forEach((m) => {
       const hName = getTeamName(m.home);
       const aName = getTeamName(m.away);
@@ -603,13 +687,18 @@ export async function renderCup() {
       if (m.played) {
         if (m.homePen !== null && m.homePen !== undefined)
           scoreText = `<strong>${m.homeScore}</strong> (${m.homePen}) - (${m.awayPen}) <strong>${m.awayScore}</strong>`;
-        else scoreText = `<strong>${m.homeScore}</strong> - <strong>${m.awayScore}</strong>`;
+        else
+          scoreText = `<strong>${m.homeScore}</strong> - <strong>${m.awayScore}</strong>`;
       }
-      
-      const isUserMatch = (m.home === (data.table ? data.table.find(t=>t.isUser)?.id : "meu_time")) || (m.away === (data.table ? data.table.find(t=>t.isUser)?.id : "meu_time"));
+
+      const isUserMatch =
+        m.home ===
+          (data.table ? data.table.find((t) => t.isUser)?.id : "meu_time") ||
+        m.away ===
+          (data.table ? data.table.find((t) => t.isUser)?.id : "meu_time");
       const bg = isUserMatch ? "rgba(0, 255, 136, 0.1)" : "#1a1a1a";
       const border = isUserMatch ? "var(--accent)" : "#333";
-      
+
       phaseDiv.innerHTML += `
             <div style="display:flex; justify-content:space-between; align-items:center; background:${bg}; border: 1px solid ${border}; padding: 10px; border-radius: 8px; margin-bottom: 5px;">
                 <div style="flex:1; text-align:right; display:flex; align-items:center; justify-content:flex-end; gap:8px;">
@@ -630,7 +719,7 @@ export async function renderCup() {
 export async function renderLeagueScorers() {
   const filter = document.getElementById("statsCompFilter")?.value || "total";
   const squadData = await Storage.getSquad();
-  
+
   const renderTable = (tbodyId, type) => {
     const tbody = document.getElementById(tbodyId);
     if (!tbody) return;
@@ -639,7 +728,7 @@ export async function renderLeagueScorers() {
     let players = [...squadData];
     let stats = [];
 
-    players.forEach(p => {
+    players.forEach((p) => {
       let val = 0;
       if (type === "total") {
         if (tbodyId === "leagueScorersBody") val = p.goals || 0;
@@ -647,8 +736,10 @@ export async function renderLeagueScorers() {
         else if (tbodyId === "leagueRatingsBody") val = p.avgRating || 0;
       } else if (p.compStats && p.compStats[type]) {
         if (tbodyId === "leagueScorersBody") val = p.compStats[type].goals || 0;
-        else if (tbodyId === "leagueAssistsBody") val = p.compStats[type].assists || 0;
-        else if (tbodyId === "leagueRatingsBody") val = (p.compStats[type].sumRatings / p.compStats[type].matches) || 0;
+        else if (tbodyId === "leagueAssistsBody")
+          val = p.compStats[type].assists || 0;
+        else if (tbodyId === "leagueRatingsBody")
+          val = p.compStats[type].sumRatings / p.compStats[type].matches || 0;
       }
       if (val > 0) stats.push({ name: p.name, value: val });
     });
@@ -675,12 +766,4 @@ export async function renderLeagueScorers() {
   renderTable("leagueScorersBody", filter);
   renderTable("leagueAssistsBody", filter);
   renderTable("leagueRatingsBody", filter);
-}
-
-export async function renderLeagueAssists() {
-  // Chamado por renderLeagueScorers agora para simplificar
-}
-
-export async function renderLeagueRatings() {
-  // Chamado por renderLeagueScorers agora para simplificar
 }

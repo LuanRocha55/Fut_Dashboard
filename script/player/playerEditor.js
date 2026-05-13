@@ -7,7 +7,7 @@ import {
   addNewPlayer,
   removePlayer,
   updatePlayerData,
-} from "./core.js";
+} from "../core/appCore.js";
 import {
   getRatingColor,
   getFlag,
@@ -17,9 +17,9 @@ import {
   getMatchStatusLabel,
   drawRadar,
   renderStatsNumbers,
-} from "./graphics.js";
-import { showCustomModal } from "./modal.js";
-import { highlightZones, clearZones, renderApp } from "./ui.js";
+} from "../ui/uiGraphics.js";
+import { showCustomModal } from "../ui/uiModal.js";
+import { highlightZones, clearZones, renderApp } from "../ui/uiMain.js";
 
 export let isEditMode = false;
 
@@ -94,7 +94,7 @@ export function setEditMode(enable) {
   isEditMode = enable;
   const playerView = document.getElementById("playerView");
   const toggleBtn = document.getElementById("toggleEditBtn");
-  playerView.className = enable ? "edit-mode" : "view-mode";
+  playerView.className = enable ? "edit-mode player-view-container" : "view-mode player-view-container";
   toggleBtn.className = enable
     ? "badge-btn badge-btn-danger"
     : "badge-btn badge-btn-dark";

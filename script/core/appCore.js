@@ -1,4 +1,5 @@
-import { Storage } from "./storage.js";
+import { Storage } from "./appStorage.js";
+import { showCustomModal } from "../ui/uiModal.js";
 
 export let squad = [];
 export let formations = {};
@@ -31,26 +32,26 @@ export function setActivePlayerId(id) {
 export function expandAptitudes(originalAptitudes) {
   if (!originalAptitudes || !Array.isArray(originalAptitudes)) return ["CA"];
   const expanded = new Set(originalAptitudes);
-  
+
   const map = {
-    "ZE": ["ZD", "VOL"],
-    "ZD": ["ZE", "VOL"],
-    "LE": ["ZE", "ME"],
-    "LD": ["ZD", "MD"],
-    "VOL": ["MC", "ZE", "ZD"],
-    "MC": ["VOL", "MEI"],
-    "MEI": ["MC", "SA", "PE", "PD"],
-    "ME": ["LE", "PE", "MC"],
-    "MD": ["LD", "PD", "MC"],
-    "PE": ["ME", "SA", "PD"],
-    "PD": ["MD", "SA", "PE"],
-    "SA": ["CA", "MEI", "PE", "PD"],
-    "CA": ["SA"]
+    ZE: ["ZD", "VOL"],
+    ZD: ["ZE", "VOL"],
+    LE: ["ZE", "ME"],
+    LD: ["ZD", "MD"],
+    VOL: ["MC", "ZE", "ZD"],
+    MC: ["VOL", "MEI"],
+    MEI: ["MC", "SA", "PE", "PD"],
+    ME: ["LE", "PE", "MC"],
+    MD: ["LD", "PD", "MC"],
+    PE: ["ME", "SA", "PD"],
+    PD: ["MD", "SA", "PE"],
+    SA: ["CA", "MEI", "PE", "PD"],
+    CA: ["SA"],
   };
 
-  originalAptitudes.forEach(pos => {
+  originalAptitudes.forEach((pos) => {
     if (map[pos]) {
-      map[pos].forEach(sec => expanded.add(sec));
+      map[pos].forEach((sec) => expanded.add(sec));
     }
   });
 
@@ -78,7 +79,13 @@ export function healSquad() {
 }
 
 export function registerMatchResult(homeTeam, awayTeam, homeScore, awayScore) {
-  matchHistory.push({ homeTeam, awayTeam, homeScore, awayScore, timestamp: new Date().toISOString() });
+  matchHistory.push({
+    homeTeam,
+    awayTeam,
+    homeScore,
+    awayScore,
+    timestamp: new Date().toISOString(),
+  });
   if (matchHistory.length > 10) matchHistory.shift();
   Storage.saveMatchHistory(matchHistory);
 }
@@ -92,14 +99,21 @@ export function applyMatchResults(
   assistsIds = [],
   daysPassed = 7,
   tacklesIds = [],
-  compType = "league"
+  compType = "league",
 ) {
   let updated = false;
 
   squad.forEach((p) => {
     // Inicializa stats por competição se não existir
     if (!p.compStats) p.compStats = {};
-    if (!p.compStats[compType]) p.compStats[compType] = { goals: 0, assists: 0, matches: 0, sumRatings: 0, tackles: 0 };
+    if (!p.compStats[compType])
+      p.compStats[compType] = {
+        goals: 0,
+        assists: 0,
+        matches: 0,
+        sumRatings: 0,
+        tackles: 0,
+      };
 
     // Recupera jogadores suspensos ou machucados
     if (
@@ -135,36 +149,57 @@ export function applyMatchResults(
       // Stats da Competição
       p.compStats[compType].matches++;
       p.compStats[compType].sumRatings += playerRatings[p.id];
-      
+
       let currentForm = p.form !== undefined ? p.form : 0;
-      if (playerRatings[p.id] >= 8.5) currentForm = Math.min(2, currentForm + 1);
-      else if (playerRatings[p.id] <= 5.0) currentForm = Math.max(-2, currentForm - 1);
-      
+      if (playerRatings[p.id] >= 8.5)
+        currentForm = Math.min(2, currentForm + 1);
+      else if (playerRatings[p.id] <= 5.0)
+        currentForm = Math.max(-2, currentForm - 1);
+
       p.form = currentForm;
       const isGK = p.aptitude && p.aptitude[0] === "GL";
-      p.rating = calculateOVR(p.stats, p.form, isGK, p.aptitude ? p.aptitude[0] : null);
+      p.rating = calculateOVR(
+        p.stats,
+        p.form,
+        isGK,
+        p.aptitude ? p.aptitude[0] : null,
+      );
     }
   });
 
   scorersIds.forEach((id) => {
     let p = squad.find((x) => x.id === id);
-    if (p) { 
-      p.goals = (p.goals || 0) + 1; 
+    if (p) {
+      p.goals = (p.goals || 0) + 1;
       if (!p.compStats) p.compStats = {};
-      if (!p.compStats[compType]) p.compStats[compType] = { goals: 0, assists: 0, matches: 0, sumRatings: 0, tackles: 0 };
+      if (!p.compStats[compType])
+        p.compStats[compType] = {
+          goals: 0,
+          assists: 0,
+          matches: 0,
+          sumRatings: 0,
+          tackles: 0,
+        };
       p.compStats[compType].goals++;
-      updated = true; 
+      updated = true;
     }
   });
 
   assistsIds.forEach((id) => {
     let p = squad.find((x) => x.id === id);
-    if (p) { 
-      p.assists = (p.assists || 0) + 1; 
+    if (p) {
+      p.assists = (p.assists || 0) + 1;
       if (!p.compStats) p.compStats = {};
-      if (!p.compStats[compType]) p.compStats[compType] = { goals: 0, assists: 0, matches: 0, sumRatings: 0, tackles: 0 };
+      if (!p.compStats[compType])
+        p.compStats[compType] = {
+          goals: 0,
+          assists: 0,
+          matches: 0,
+          sumRatings: 0,
+          tackles: 0,
+        };
       p.compStats[compType].assists++;
-      updated = true; 
+      updated = true;
     }
   });
 
@@ -188,17 +223,28 @@ export function applyMatchResults(
 
   injuriesList.forEach((inj) => {
     let p = squad.find((x) => x.id === inj.id);
-    if (p) { p.matchStatus = "injury"; p.status = "reserva"; updated = true; }
+    if (p) {
+      p.matchStatus = "injury";
+      p.status = "reserva";
+      updated = true;
+    }
   });
 
   tacklesIds.forEach((id) => {
     let p = squad.find((x) => x.id === id);
-    if (p) { 
-      p.tackles = (p.tackles || 0) + 1; 
+    if (p) {
+      p.tackles = (p.tackles || 0) + 1;
       if (!p.compStats) p.compStats = {};
-      if (!p.compStats[compType]) p.compStats[compType] = { goals: 0, assists: 0, matches: 0, sumRatings: 0, tackles: 0 };
+      if (!p.compStats[compType])
+        p.compStats[compType] = {
+          goals: 0,
+          assists: 0,
+          matches: 0,
+          sumRatings: 0,
+          tackles: 0,
+        };
       p.compStats[compType].tackles++;
-      updated = true; 
+      updated = true;
     }
   });
 
@@ -213,13 +259,18 @@ export function calculateOVR(stats, form = 0, isGK = false, position = null) {
     const alc = stats.alc || stats.div || stats.sal || 70; // Reach / Alcance
     const seg = stats.seg || stats.han || stats.man || 70; // Catching / Segurança
     const esp = stats.esp || stats.par || stats.rep || 70; // Parrying / Espalmada
-    const ref = stats.ref || 70;                          // Reflexes
-    const pos = stats.pos || 70;                          // Awareness / Posicionamento
+    const ref = stats.ref || 70; // Reflexes
+    const pos = stats.pos || 70; // Awareness / Posicionamento
     const vel = stats.vel || stats.spd || 40;
     const sta = stats.sta || stats.stm || 50;
 
     // Pesos eFootball: Reflexos (30%), Posicionamento (25%), Alcance (20%)
-    avg = (ref * 0.30) + (pos * 0.25) + (alc * 0.20) + (seg * 0.15) + ((esp + vel + sta)/3 * 0.10);
+    avg =
+      ref * 0.3 +
+      pos * 0.25 +
+      alc * 0.2 +
+      seg * 0.15 +
+      ((esp + vel + sta) / 3) * 0.1;
   } else {
     const vel = stats.vel || stats.pac || stats.spd || 50;
     const fin = stats.fin || stats.sho || stats.atk || 50;
@@ -230,18 +281,18 @@ export function calculateOVR(stats, form = 0, isGK = false, position = null) {
     const sta = stats.sta || stats.stm || 70;
 
     if (["ZE", "ZD", "LE", "LD"].includes(position)) {
-      avg = (def * 0.50) + (fis * 0.20) + (vel * 0.15) + (pas * 0.10) + (sta * 0.05);
+      avg = def * 0.5 + fis * 0.2 + vel * 0.15 + pas * 0.1 + sta * 0.05;
     } else if (["VOL", "MC", "MEI", "ME", "MD"].includes(position)) {
-      avg = (pas * 0.40) + (dri * 0.20) + (def * 0.15) + (fis * 0.15) + (sta * 0.10);
+      avg = pas * 0.4 + dri * 0.2 + def * 0.15 + fis * 0.15 + sta * 0.1;
     } else if (["PE", "PD", "SA", "CA"].includes(position)) {
-      avg = (fin * 0.50) + (vel * 0.20) + (dri * 0.20) + (pas * 0.05) + (sta * 0.05);
+      avg = fin * 0.5 + vel * 0.2 + dri * 0.2 + pas * 0.05 + sta * 0.05;
     } else {
       avg = (vel + fin + pas + dri + def + fis + sta) / 7;
     }
   }
 
-  const formBonus = (form * 0.2); 
-  return Math.min(10.0, Math.max(1.0, (avg / 10) + formBonus));
+  const formBonus = form * 0.2;
+  return Math.min(10.0, Math.max(1.0, avg / 10 + formBonus));
 }
 
 export function saveToLocal() {
@@ -253,24 +304,30 @@ export function ensureCaptain(pool = null) {
   let checkPool = pool;
   let isSimulation = true;
   if (!checkPool) {
-    checkPool = squad.filter(p => p && p.status === "titular" && p.matchStatus !== "red" && p.matchStatus !== "injury");
+    checkPool = squad.filter(
+      (p) =>
+        p &&
+        p.status === "titular" &&
+        p.matchStatus !== "red" &&
+        p.matchStatus !== "injury",
+    );
     isSimulation = false;
   }
 
   if (checkPool.length === 0) return null;
-  if (checkPool.some(p => p.captain)) return null;
+  if (checkPool.some((p) => p.captain)) return null;
 
   let newCap = checkPool.reduce((prev, current) => {
     if ((current.age || 0) > (prev.age || 0)) return current;
     if ((current.age || 0) === (prev.age || 0)) {
-        if ((current.avgRating || 0) > (prev.avgRating || 0)) return current;
-        if ((current.rating || 0) > (prev.rating || 0)) return current;
+      if ((current.avgRating || 0) > (prev.avgRating || 0)) return current;
+      if ((current.rating || 0) > (prev.rating || 0)) return current;
     }
     return prev;
   });
 
-  squad.forEach(p => p.captain = false);
-  const realPlayer = squad.find(x => x && x.id === newCap.id);
+  squad.forEach((p) => (p.captain = false));
+  const realPlayer = squad.find((x) => x && x.id === newCap.id);
   if (realPlayer) realPlayer.captain = true;
   if (isSimulation) newCap.captain = true;
 
@@ -287,16 +344,24 @@ export async function advanceSeason() {
     let statChanges = 0;
 
     if (p.age >= 36 && Math.random() < (p.age - 35) * 0.3) {
-      evolutionLog.unshift(`👴 <strong>${p.name}</strong> anunciou sua aposentadoria aos ${p.age} anos.`);
+      evolutionLog.unshift(
+        `👴 <strong>${p.name}</strong> anunciou sua aposentadoria aos ${p.age} anos.`,
+      );
       squad.splice(i, 1);
       continue;
     }
 
     if (p.age <= 24) {
-      if ((p.matchesPlayed || 0) > 5 && (p.avgRating || 6.0) >= 6.5) { evResult = 1; statChanges = Math.floor(Math.random() * 3) + 2; }
-      else if (Math.random() < 0.4) { evResult = 1; statChanges = Math.floor(Math.random() * 2) + 1; }
+      if ((p.matchesPlayed || 0) > 5 && (p.avgRating || 6.0) >= 6.5) {
+        evResult = 1;
+        statChanges = Math.floor(Math.random() * 3) + 2;
+      } else if (Math.random() < 0.4) {
+        evResult = 1;
+        statChanges = Math.floor(Math.random() * 2) + 1;
+      }
     } else if (p.age >= 32 && Math.random() < 0.6) {
-      evResult = -1; statChanges = Math.floor(Math.random() * 2) + 1;
+      evResult = -1;
+      statChanges = Math.floor(Math.random() * 2) + 1;
     }
 
     if (evResult !== 0 && p.stats) {
@@ -304,50 +369,84 @@ export async function advanceSeason() {
       const oldRating = p.rating;
       for (let j = 0; j < statChanges; j++) {
         const randStat = statKeys[Math.floor(Math.random() * statKeys.length)];
-        if (evResult === 1) p.stats[randStat] = Math.min(99, p.stats[randStat] + 1);
+        if (evResult === 1)
+          p.stats[randStat] = Math.min(99, p.stats[randStat] + 1);
         else p.stats[randStat] = Math.max(1, p.stats[randStat] - 1);
       }
-      p.rating = calculateOVR(p.stats, p.form, p.aptitude && p.aptitude[0] === "GL", p.aptitude ? p.aptitude[0] : null);
+      p.rating = calculateOVR(
+        p.stats,
+        p.form,
+        p.aptitude && p.aptitude[0] === "GL",
+        p.aptitude ? p.aptitude[0] : null,
+      );
       let diff = (p.rating - oldRating).toFixed(1);
-      if (diff > 0.0) evolutionLog.push(`📈 <span style="color: var(--rating-top);">Evoluiu:</span> <strong>${p.name}</strong> (+${diff}).`);
-      else if (diff < 0.0) evolutionLog.push(`📉 <span style="color: var(--danger);">Declinou:</span> <strong>${p.name}</strong> (${diff}).`);
+      if (diff > 0.0)
+        evolutionLog.push(
+          `📈 <span style="color: var(--rating-top);">Evoluiu:</span> <strong>${p.name}</strong> (+${diff}).`,
+        );
+      else if (diff < 0.0)
+        evolutionLog.push(
+          `📉 <span style="color: var(--danger);">Declinou:</span> <strong>${p.name}</strong> (${diff}).`,
+        );
     }
 
-    p.matchesPlayed = 0; p.sumRatings = 0; p.avgRating = 0; p.goals = 0; p.assists = 0; p.yellowCards = 0; p.fitness = 100; p.form = 0; p.tackles = 0;
+    p.matchesPlayed = 0;
+    p.sumRatings = 0;
+    p.avgRating = 0;
+    p.goals = 0;
+    p.assists = 0;
+    p.yellowCards = 0;
+    p.fitness = 100;
+    p.form = 0;
+    p.tackles = 0;
   }
   saveToLocal();
+
+  const reportHtml = `
+    <div style="text-align: center; margin-bottom: 15px;">
+        <h3 style="color: var(--accent); margin: 0 0 5px 0;">Fim de Temporada!</h3>
+        <p style="font-size: 1rem; color: #aaa; margin: 0;">Relatório de Desempenho e Evolução</p>
+    </div>
+    <div style="max-height: 350px; overflow-y: auto; text-align: left; background: #1a1a1a; padding: 15px; border-radius: 8px; font-size: 0.9rem;">
+        ${evolutionLog.length > 0 ? evolutionLog.map((l) => `<div style="margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px solid #333;">${l}</div>`).join("") : "<div style='text-align: center; color: #888;'>Nenhum jogador teve alterações significativas de atributos nesta temporada.</div>"}
+    </div>
+  `;
+  await showCustomModal(reportHtml, "alert", "btn-primary");
+
   return evolutionLog;
 }
 
 export function resetPlayerStats() {
-  squad.forEach(p => {
-    p.matchesPlayed = 0; p.sumRatings = 0; p.avgRating = 0; p.goals = 0; p.assists = 0; p.yellowCards = 0; p.fitness = 100; p.form = 0; p.tackles = 0;
+  squad.forEach((p) => {
+    p.matchesPlayed = 0;
+    p.sumRatings = 0;
+    p.avgRating = 0;
+    p.goals = 0;
+    p.assists = 0;
+    p.yellowCards = 0;
+    p.fitness = 100;
+    p.form = 0;
+    p.tackles = 0;
   });
   saveToLocal();
 }
 
-export async function resetData() {
-  await Storage.removeSquad();
-  await Storage.removeTactics();
-  await Storage.removeLeagueData();
-  await Storage.removeCoachInfo();
-  
-  location.reload();
-}
-
 export function updatePlayerData(id, data) {
-  const pIndex = squad.findIndex(x => x.id === id);
+  const pIndex = squad.findIndex((x) => x.id === id);
   if (pIndex > -1) {
-    if (data.captain) squad.forEach(p => { if (p.id !== id) p.captain = false; });
+    if (data.captain)
+      squad.forEach((p) => {
+        if (p.id !== id) p.captain = false;
+      });
     squad[pIndex] = { ...squad[pIndex], ...data };
     saveToLocal();
   }
 }
 
 export function performSwap(titularId, reserveId) {
-  const tIndex = squad.findIndex(p => p && p.id === titularId);
-  const rIndex = squad.findIndex(p => p && p.id === reserveId);
-  
+  const tIndex = squad.findIndex((p) => p && p.id === titularId);
+  const rIndex = squad.findIndex((p) => p && p.id === reserveId);
+
   if (tIndex !== -1 && rIndex !== -1) {
     const isTitularSlot = tIndex < 11;
     const isReserveSlot = rIndex >= 11;
@@ -360,14 +459,16 @@ export function performSwap(titularId, reserveId) {
     const temp = squad[tIndex];
     squad[tIndex] = squad[rIndex];
     squad[rIndex] = temp;
-    
+
     saveToLocal();
   }
 }
 
 export function downloadJSON() {
   const dataToSave = { matchInfo: matchInfo, squad: squad };
-  const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(dataToSave, null, 2));
+  const dataStr =
+    "data:text/json;charset=utf-8," +
+    encodeURIComponent(JSON.stringify(dataToSave, null, 2));
   const downloadAnchorNode = document.createElement("a");
   downloadAnchorNode.setAttribute("href", dataStr);
   downloadAnchorNode.setAttribute("download", "data.json");
@@ -377,11 +478,23 @@ export function downloadJSON() {
 }
 
 export function addNewPlayer() {
-  const newId = squad.length > 0 ? Math.max(...squad.map(p => p.id)) + 1 : 1;
+  const newId = squad.length > 0 ? Math.max(...squad.map((p) => p.id)) + 1 : 1;
   const newPlayer = {
-    id: newId, name: "Novo Jogador", number: 99, status: "reserva", aptitude: ["MC"], age: 20, foot: "Destro", nationality: "BR",
-    playstyle: "Meia Versátil", form: 0, matchStatus: "normal", stats: { vel: 50, fin: 50, pas: 50, dri: 50, def: 50, fis: 50, sta: 75 },
-    fitness: 100, rating: 5.0, captain: false
+    id: newId,
+    name: "Novo Jogador",
+    number: 99,
+    status: "reserva",
+    aptitude: ["MC"],
+    age: 20,
+    foot: "Destro",
+    nationality: "BR",
+    playstyle: "Meia Versátil",
+    form: 0,
+    matchStatus: "normal",
+    stats: { vel: 50, fin: 50, pas: 50, dri: 50, def: 50, fis: 50, sta: 75 },
+    fitness: 100,
+    rating: 5.0,
+    captain: false,
   };
   squad.push(newPlayer);
   saveToLocal();
@@ -389,18 +502,10 @@ export function addNewPlayer() {
 }
 
 export function removePlayer(id) {
-  const index = squad.findIndex(p => p.id === id);
-  if (index !== -1) { squad.splice(index, 1); saveToLocal(); }
-}
-
-export const API_KEY = "SUA_CHAVE_AQUI";
-
-export async function syncRealData() {
-  try {
-    console.log("Iniciando varredura da API...");
-    return { status: "Aguardando Chave API" };
-  } catch (error) {
-    console.error("Erro ao sincronizar dados da API:", error);
+  const index = squad.findIndex((p) => p.id === id);
+  if (index !== -1) {
+    squad.splice(index, 1);
+    saveToLocal();
   }
 }
 
@@ -417,49 +522,86 @@ export async function initSystem() {
     let remoteData = { squad: null, matchInfo: null };
 
     try {
-      const response = await fetch("data/teams/" + currentTeamFile, { cache: "no-store" });
+      const response = await fetch("data/teams/" + currentTeamFile, {
+        cache: "no-store",
+      });
       if (response.ok) {
         remoteData = await response.json();
         Object.assign(matchInfo, remoteData.matchInfo || {});
       } else {
-        if (currentTeamFile !== "vasco.json") await Storage.removeCurrentTeamFile();
+        if (currentTeamFile !== "vasco.json")
+          await Storage.removeCurrentTeamFile();
         return `ERRO: Arquivo ${currentTeamFile} não encontrado.`;
       }
     } catch (e) {
-      if (!savedSquad) return "ERRO DE REDE: O sistema não conseguiu carregar os dados iniciais.";
+      if (!savedSquad)
+        return "ERRO DE REDE: O sistema não conseguiu carregar os dados iniciais.";
     }
 
     let tacticsData = null;
     try {
-      const tacticsResponse = await fetch("data/tactics.json", { cache: "no-store" });
+      const tacticsResponse = await fetch("data/tactics.json", {
+        cache: "no-store",
+      });
       if (tacticsResponse.ok) tacticsData = await tacticsResponse.json();
-    } catch (e) { console.warn("Falha ao carregar tactics.json"); }
+    } catch (e) {
+      console.warn("Falha ao carregar tactics.json");
+    }
 
     const fallbackTactics = {
-      "4-2-3-1": [{ t: 50, l: 5 }, { t: 20, l: 20 }, { t: 80, l: 20 }, { t: 35, l: 20 }, { t: 65, l: 20 }, { t: 35, l: 35 }, { t: 65, l: 35 }, { t: 20, l: 65 }, { t: 80, l: 65 }, { t: 50, l: 65 }, { t: 50, l: 92 }],
-      "4-3-3": [{ t: 50, l: 5 }, { t: 20, l: 20 }, { t: 80, l: 20 }, { t: 35, l: 20 }, { t: 65, l: 20 }, { t: 50, l: 35 }, { t: 25, l: 50 }, { t: 75, l: 50 }, { t: 20, l: 78 }, { t: 80, l: 78 }, { t: 50, l: 92 }]
+      "4-2-3-1": [
+        { t: 50, l: 5 },
+        { t: 20, l: 20 },
+        { t: 80, l: 20 },
+        { t: 35, l: 20 },
+        { t: 65, l: 20 },
+        { t: 35, l: 35 },
+        { t: 65, l: 35 },
+        { t: 20, l: 65 },
+        { t: 80, l: 65 },
+        { t: 50, l: 65 },
+        { t: 50, l: 92 },
+      ],
+      "4-3-3": [
+        { t: 50, l: 5 },
+        { t: 20, l: 20 },
+        { t: 80, l: 20 },
+        { t: 35, l: 20 },
+        { t: 65, l: 20 },
+        { t: 50, l: 35 },
+        { t: 25, l: 50 },
+        { t: 75, l: 50 },
+        { t: 20, l: 78 },
+        { t: 80, l: 78 },
+        { t: 50, l: 92 },
+      ],
     };
 
     tacticsData = tacticsData || fallbackTactics;
     Object.assign(defaultFormations, tacticsData);
     Object.assign(formations, savedTactics || tacticsData);
 
-    const sourceSquad = (savedSquad && savedSquad.length > 0)
-      ? savedSquad
-      : (remoteData.squad && remoteData.squad.length > 0 ? remoteData.squad : null);
+    const sourceSquad =
+      savedSquad && savedSquad.length > 0
+        ? savedSquad
+        : remoteData.squad && remoteData.squad.length > 0
+          ? remoteData.squad
+          : null;
 
     if (sourceSquad) {
-      sourceSquad.forEach(p => {
+      sourceSquad.forEach((p) => {
         // Garantir que temos aptidões base
         if (!p.aptitude) p.aptitude = p.positions || ["CA"];
-        
+
         // Se o jogador já tem MUITAS posições, ele provavelmente já foi expandido.
         // Vamos expandir apenas se a lista for curta (original), evitando recursividade infinita no save.
         if (p.aptitude.length < 5) {
-            p.aptitude = expandAptitudes(p.aptitude);
+          p.aptitude = expandAptitudes(p.aptitude);
         }
-        
-        const isGK = p.aptitude && (p.aptitude.includes("GOL") || p.aptitude.includes("GL"));
+
+        const isGK =
+          p.aptitude &&
+          (p.aptitude.includes("GOL") || p.aptitude.includes("GL"));
         p.rating = calculateOVR(p.stats, p.form, isGK, p.aptitude[0]);
       });
       squad.push(...sourceSquad);
@@ -474,15 +616,11 @@ export async function initSystem() {
   }
 }
 
-export async function resetSystem() {
-  await Storage.removeSquad();
-  await Storage.removeTactics();
-  location.reload();
-}
-
 export function resetFormationAlignment(formationName) {
   if (defaultFormations[formationName]) {
-    formations[formationName] = JSON.parse(JSON.stringify(defaultFormations[formationName]));
+    formations[formationName] = JSON.parse(
+      JSON.stringify(defaultFormations[formationName]),
+    );
     saveToLocal();
   }
 }

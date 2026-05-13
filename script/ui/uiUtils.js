@@ -1,6 +1,3 @@
-let _mainCalled = false;
-
-import { dbgToast } from "./uiUtils.js";
 import { highlightZones, clearZones } from "./zones.js";
 import { switchMainView, showScreen } from "./views.js";
 import { handleSubstitution, initDragAndDrop } from "./dragDrop.js";
@@ -28,6 +25,7 @@ import {
   renderTeamChemistry,
   updateDashboardCoach,
 } from "./render.js";
+import { main } from "./init.js";
 
 import {
   squad,
@@ -73,51 +71,22 @@ import { initLeagueEvents, autoInitLeague } from "../league/leagueMain.js";
 import { renderLeagueData } from "../league/leagueRenderer.js";
 import { Storage } from "../core/appStorage.js";
 
-export async function main() {
-  if (_mainCalled) {
-    console.warn("main() chamado mais de uma vez — ignorado.");
-    return;
+let _dbgContainer = null;
+
+export function dbgToast(msg, bg = "#222", duration = 4000) {
+  if (!_dbgContainer) {
+    _dbgContainer = document.createElement("div");
+    _dbgContainer.style.cssText =
+      "position:fixed;top:10px;right:10px;z-index:999999;display:flex;flex-direction:column;gap:6px;max-width:420px;pointer-events:none;";
+    document.body.appendChild(_dbgContainer);
   }
-  _mainCalled = true;
-  dbgToast("⚙️ Iniciando sistema...", "#333");
-  try {
-    // 0. Inicialização de Slots (MIGRAÇÃO)
-    const activeSlot = await Storage.getActiveSlot();
-    const slots = await Storage.getSlots();
-    if (slots.length === 0) {
-      const coach = await Storage.getCoachInfo();
-      if (coach) {
-        await Storage.saveSlotsList([
-          {
-            id: "default",
-            name: "Carreira Principal",
-            teamFile: coach.teamFile,
-            teamName: coach.teamName,
-            date: coach.startDate || new Date().toLocaleDateString("pt-BR"),
-            lastPlayed: Date.now(),
-          },
-        ]);
-      }
-    }
-
-    // 1. Carrega os times
-    let teams = [];
-    try {
-      dbgToast("📋 Carregando lista de times...", "#333");
-      teams = await loadTeams();
-      dbgToast(`✅ ${teams.length} times carregados`, "#1a5c2a");
-    } catch (e) {
-      dbgToast("⚠️ Erro ao carregar times: " + e.message, "#8b4000");
-    }
-
-    // 2. Inicializa os eventos do menu
-    initCareerEvents(teams);
-
-    // 4. Inicializa o menu principal
-    showScreen("mainMenuScreen");
-    dbgToast("🆕 Menu pronto!", "#1a5c2a");
-  } catch (error) {
-    dbgToast("❌ ERRO CRÍTICO: " + error.message, "#8b0000", 30000);
-    console.error("❌ Erro crítico no Main:", error);
-  }
+  const el = document.createElement("div");
+  el.style.cssText = `background:${bg};color:#fff;padding:8px 12px;border-radius:6px;font-size:0.75rem;font-family:monospace;border-left:3px solid rgba(255,255,255,0.3);opacity:1;transition:opacity 0.5s;`;
+  el.textContent = msg;
+  _dbgContainer.appendChild(el);
+  console.log("[DBG]", msg);
+  setTimeout(() => {
+    el.style.opacity = "0";
+    setTimeout(() => el.remove(), 500);
+  }, duration);
 }

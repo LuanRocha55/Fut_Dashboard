@@ -1,12 +1,12 @@
-import { squad, ALL_POSITIONS, calculateOVR } from "./core.js";
+import { squad, ALL_POSITIONS, calculateOVR } from "../core/appCore.js";
 import {
   getRatingColor,
   getFlag,
   getMatchStatusHTML,
   getFormHTML,
-} from "./graphics.js";
-import { openMenu, setEditMode } from "./playerEditor.js";
-import { normalizeStr } from "./utils.js";
+} from "./uiGraphics.js";
+import { openMenu, setEditMode } from "../player/playerEditor.js";
+import { normalizeStr } from "../core/appUtils.js";
 
 export let isTableView = false;
 export let tableSortCol = "rating";

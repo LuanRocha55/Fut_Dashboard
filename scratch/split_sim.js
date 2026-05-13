@@ -1,24 +1,29 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
 function splitFile(filePath, destFolder, modulesConfig) {
-  const code = fs.readFileSync(filePath, 'utf8');
-  const lines = code.split('\n');
-  
+  const code = fs.readFileSync(filePath, "utf8");
+  const lines = code.split("\n");
+
   let currentFunc = null;
   let braceCount = 0;
   let inFunc = false;
   let funcBody = [];
-  
+
   const extractedFuncs = {};
-  
+
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
-    
+
     if (!inFunc) {
-      const match = line.match(/^(?:export\s+)?(?:async\s+)?function\s+([a-zA-Z0-9_]+)\s*\(/) || 
-                    line.match(/^(?:export\s+)?(?:const|let)\s+([a-zA-Z0-9_]+)\s*=\s*(?:async\s*)?\(/);
-                    
+      const match =
+        line.match(
+          /^(?:export\s+)?(?:async\s+)?function\s+([a-zA-Z0-9_]+)\s*\(/,
+        ) ||
+        line.match(
+          /^(?:export\s+)?(?:const|let)\s+([a-zA-Z0-9_]+)\s*=\s*(?:async\s*)?\(/,
+        );
+
       if (match) {
         currentFunc = match[1] || match[2];
         inFunc = true;
@@ -26,15 +31,18 @@ function splitFile(filePath, destFolder, modulesConfig) {
         funcBody = [];
       }
     }
-    
+
     if (inFunc) {
       funcBody.push(line);
-      let cleanLine = line.replace(/(['"`]).*?\1/g, '').replace(/\/\/.*$/, '').replace(/\/\*.*?\*\//g, '');
+      let cleanLine = line
+        .replace(/(['"`]).*?\1/g, "")
+        .replace(/\/\/.*$/, "")
+        .replace(/\/\*.*?\*\//g, "");
       braceCount += (cleanLine.match(/\{/g) || []).length;
       braceCount -= (cleanLine.match(/\}/g) || []).length;
-      
-      if (braceCount === 0 && funcBody.some(l => l.includes('{'))) {
-        extractedFuncs[currentFunc] = funcBody.join('\n');
+
+      if (braceCount === 0 && funcBody.some((l) => l.includes("{"))) {
+        extractedFuncs[currentFunc] = funcBody.join("\n");
         inFunc = false;
         currentFunc = null;
       }
@@ -57,21 +65,21 @@ function splitFile(filePath, destFolder, modulesConfig) {
   coreImports += `import { playSound } from "./audio.js";\n`;
 
   for (const [filename, funcs] of Object.entries(modulesConfig)) {
-    let content = filename === 'audio.js' ? audioImports : coreImports;
+    let content = filename === "audio.js" ? audioImports : coreImports;
     for (const fn of funcs) {
       if (extractedFuncs[fn]) {
-        content += extractedFuncs[fn] + '\n\n';
+        content += extractedFuncs[fn] + "\n\n";
       }
     }
     fs.writeFileSync(path.join(destFolder, filename), content);
   }
-  
-  console.log('Extraction complete for', filePath);
+
+  console.log("Extraction complete for", filePath);
 }
 
 const simModules = {
-  'audio.js': ['playSound'],
-  'core.js': ['openMatchSimulation']
+  "audio.js": ["playSound"],
+  "core.js": ["openMatchSimulation"],
 };
 
-splitFile('script/simulation.js', 'script/simulation', simModules);
+splitFile("script/simulation.js", "script/simulation", simModules);

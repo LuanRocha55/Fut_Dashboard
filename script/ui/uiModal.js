@@ -31,20 +31,32 @@ export function showCustomModal(
       setTimeout(() => {
         const maleBtn = document.getElementById("modalSelectMale");
         const femaleBtn = document.getElementById("modalSelectFemale");
-        if (maleBtn) maleBtn.onclick = () => { cleanup(); resolve("male"); };
-        if (femaleBtn) femaleBtn.onclick = () => { cleanup(); resolve("female"); };
+        if (maleBtn)
+          maleBtn.onclick = () => {
+            cleanup();
+            resolve("male");
+          };
+        if (femaleBtn)
+          femaleBtn.onclick = () => {
+            cleanup();
+            resolve("female");
+          };
 
         const cards = document.querySelectorAll(".save-slot-card");
-        cards.forEach(card => {
+        cards.forEach((card) => {
           card.onclick = (e) => {
-            if (e.target.classList.contains("delete-save-btn") || e.target.classList.contains("select-save-btn")) return;
+            if (
+              e.target.classList.contains("delete-save-btn") ||
+              e.target.classList.contains("select-save-btn")
+            )
+              return;
             cleanup();
             resolve(`load:${card.dataset.id}`);
           };
         });
 
         const selectBtns = document.querySelectorAll(".select-save-btn");
-        selectBtns.forEach(btn => {
+        selectBtns.forEach((btn) => {
           btn.onclick = () => {
             cleanup();
             resolve(`load:${btn.dataset.id}`);
@@ -52,7 +64,7 @@ export function showCustomModal(
         });
 
         const delBtns = document.querySelectorAll(".delete-save-btn");
-        delBtns.forEach(btn => {
+        delBtns.forEach((btn) => {
           btn.onclick = (e) => {
             e.stopPropagation();
             cleanup();

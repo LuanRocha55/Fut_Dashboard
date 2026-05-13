@@ -1,22 +1,65 @@
-import { dbgToast } from './utils.js';
-import { highlightZones, clearZones } from './zones.js';
-import { switchMainView, showScreen } from './views.js';
-import { handleSubstitution, initDragAndDrop } from './dragDrop.js';
-import { setupEventListeners, initCareerEvents, finalizeCareerSetup } from './events.js';
-import { loadTeams, fetchTeamBadge, getLeagueBadgeMap, loadBadgesLazy, loadLeagueLogosLazy, renderVisualTeams } from './teams.js';
-import { main } from './init.js';
+import { dbgToast } from "./uiUtils.js";
+import { highlightZones, clearZones } from "./zones.js";
+import { switchMainView, showScreen } from "./views.js";
+import { handleSubstitution, initDragAndDrop } from "./dragDrop.js";
+import {
+  setupEventListeners,
+  initCareerEvents,
+  finalizeCareerSetup,
+} from "./uiEvents.js";
+import {
+  loadTeams,
+  fetchTeamBadge,
+  getLeagueBadgeMap,
+  loadBadgesLazy,
+  loadLeagueLogosLazy,
+  renderVisualTeams,
+} from "./teams.js";
+import { main } from "./init.js";
 
-import { squad, formations, ALL_POSITIONS, initSystem, performSwap, downloadJSON, resetData, resetFormationAlignment, resetSystem, calculateOVR, saveToLocal, healSquad, matchHistory, matchInfo, ensureCaptain } from "../core.js";
-import { getEfootballPosition, checkPositionFit, swapTitulares, handlePlayerMove, autoFillTeam } from "../tactics.js";
-import { openMatchSimulation } from "../simulation.js";
-import { getRatingColor, getStarsHTML, getFormHTML, getMatchStatusHTML, drawRadar, normalizeTeamName } from "../graphics.js";
-import { showCustomModal } from "../modal.js";
-import { normalizeStr } from "../utils.js";
-import { initEditorEvents, openMenu } from "../playerEditor.js";
-import { initTableEvents, isTableView, renderTable, setTableView } from "../tableView.js";
-import { initLeagueEvents, autoInitLeague } from "../league.js";
-import { renderLeagueData } from "../leagueRenderer.js";
-import { Storage } from "../storage.js";
+import {
+  squad,
+  formations,
+  ALL_POSITIONS,
+  initSystem,
+  performSwap,
+  downloadJSON,
+  resetFormationAlignment,
+  calculateOVR,
+  saveToLocal,
+  healSquad,
+  matchHistory,
+  matchInfo,
+  ensureCaptain,
+} from "../core/appCore.js";
+import {
+  getEfootballPosition,
+  checkPositionFit,
+  swapTitulares,
+  handlePlayerMove,
+  autoFillTeam,
+} from "../tactics/pitchTactics.js";
+import { openMatchSimulation } from "../simulation/simMain.js";
+import {
+  getRatingColor,
+  getStarsHTML,
+  getFormHTML,
+  getMatchStatusHTML,
+  drawRadar,
+  normalizeTeamName,
+} from "./uiGraphics.js";
+import { showCustomModal } from "./uiModal.js";
+import { normalizeStr } from "../core/appUtils.js";
+import { initEditorEvents, openMenu } from "../player/playerEditor.js";
+import {
+  initTableEvents,
+  isTableView,
+  renderTable,
+  setTableView,
+} from "./uiTableView.js";
+import { initLeagueEvents, autoInitLeague } from "../league/leagueMain.js";
+import { renderLeagueData } from "../league/leagueRenderer.js";
+import { Storage } from "../core/appStorage.js";
 import { showOnlyFitPlayers } from "./state.js";
 
 export function renderApp() {
@@ -29,15 +72,19 @@ export async function render() {
 
   ensureCaptain();
 
-  const formatName = document.getElementById("formationSelect")?.value || "4-3-3";
-  const format = formations[formatName] || formations["4-3-3"] || Object.values(formations)[0];
+  const formatName =
+    document.getElementById("formationSelect")?.value || "4-3-3";
+  const format =
+    formations[formatName] ||
+    formations["4-3-3"] ||
+    Object.values(formations)[0];
 
   const titulares = [];
   for (let i = 0; i < 11; i++) {
     titulares.push(squad[i] || null);
   }
 
-  const reservas = squad.slice(11).filter(p => p !== null);
+  const reservas = squad.slice(11).filter((p) => p !== null);
   const benchSortValue = document.getElementById("benchSortSelect").value;
 
   // 1. Limpa o campo e reconstroi com grid-cells (necessário para highlightZones)
@@ -61,7 +108,12 @@ export async function render() {
 
         // 1. Calcula a largura (span horizontal)
         let w = 0;
-        while (c + w < 7 && GRID_POSITIONS[r][c + w] === pos && !visited[r][c + w]) w++;
+        while (
+          c + w < 7 &&
+          GRID_POSITIONS[r][c + w] === pos &&
+          !visited[r][c + w]
+        )
+          w++;
 
         // 2. Calcula a altura (span vertical) para essa largura
         let h = 0;
@@ -88,9 +140,12 @@ export async function render() {
       }
     }
 
-    const gridCellsHTML = cells.map(cell =>
-      `<div class="grid-cell" data-pos="${cell.pos}" style="grid-row: ${cell.r} / span ${cell.h}; grid-column: ${cell.c} / span ${cell.w};">${cell.pos}</div>`
-    ).join("");
+    const gridCellsHTML = cells
+      .map(
+        (cell) =>
+          `<div class="grid-cell" data-pos="${cell.pos}" style="grid-row: ${cell.r} / span ${cell.h}; grid-column: ${cell.c} / span ${cell.w};">${cell.pos}</div>`,
+      )
+      .join("");
 
     pitch.innerHTML = `
       <div class="pitch-grid">${gridCellsHTML}</div>
@@ -157,7 +212,8 @@ export function renderBench(reservas, benchSortValue) {
   reservasDisplay.forEach((p) => {
     const res = document.createElement("div");
     const isGK = p.aptitude && p.aptitude[0] === "GOL";
-    const pRating = p.rating ?? calculateOVR(p.stats, p.form, isGK, p.aptitude?.[0]);
+    const pRating =
+      p.rating ?? calculateOVR(p.stats, p.form, isGK, p.aptitude?.[0]);
     const mStatusHtml = getMatchStatusHTML(p.matchStatus);
     const fitLevel = p.fitness !== undefined ? p.fitness : 100;
     const fitColor =
@@ -176,7 +232,8 @@ export function renderBench(reservas, benchSortValue) {
 }
 
 export function renderMatchHistory(data) {
-  const history = (data && data.matchHistory) ? data.matchHistory : (window.matchHistory || []);
+  const history =
+    data && data.matchHistory ? data.matchHistory : window.matchHistory || [];
   const histContainer = document.getElementById("matchHistoryList");
   if (!histContainer) return;
 
@@ -186,23 +243,26 @@ export function renderMatchHistory(data) {
     return;
   }
 
-  [...history].reverse().slice(0, 10).forEach((m) => {
-    const item = document.createElement("div");
-    item.className = "history-item";
-    const isWin = m.userScore > m.oppScore;
-    const isDraw = m.userScore === m.oppScore;
-    const statusClass = isWin ? "win" : isDraw ? "draw" : "loss";
-    const statusLabel = isWin ? "V" : isDraw ? "E" : "D";
+  [...history]
+    .reverse()
+    .slice(0, 10)
+    .forEach((m) => {
+      const item = document.createElement("div");
+      item.className = "history-item";
+      const isWin = m.userScore > m.oppScore;
+      const isDraw = m.userScore === m.oppScore;
+      const statusClass = isWin ? "win" : isDraw ? "draw" : "loss";
+      const statusLabel = isWin ? "V" : isDraw ? "E" : "D";
 
-    item.innerHTML = `
+      item.innerHTML = `
             <div class="history-status ${statusClass}">${statusLabel}</div>
             <div class="history-info">
                 <div class="history-teams">${m.userTeam || "Time"} <span>${m.userScore} - ${m.oppScore}</span> ${m.oppTeam || "Opo."}</div>
                 <div class="history-meta">${m.competition || "Amistoso"} | ${m.date || ""}</div>
             </div>
         `;
-    histContainer.appendChild(item);
-  });
+      histContainer.appendChild(item);
+    });
 }
 
 export function renderTeamStats() {
@@ -328,15 +388,24 @@ export function renderPitchPlayers(titulares, format, squad) {
     const currentZone = getEfootballPosition(topPos, leftPos);
     const fitClass = checkPositionFit(p, currentZone);
     const isGK = p.aptitude && p.aptitude[0] === "GOL";
-    const pRating = p.rating ?? calculateOVR(p.stats, p.form, isGK, currentZone);
+    const pRating =
+      p.rating ?? calculateOVR(p.stats, p.form, isGK, currentZone);
     let displayRating = pRating;
 
     if (fitClass === "fit-warning") {
-      displayRating = (p.aptitude && p.aptitude.includes("GOL")) || currentZone === "GOL" ? 1.0 : Math.max(1.0, pRating - 2.5);
+      displayRating =
+        (p.aptitude && p.aptitude.includes("GOL")) || currentZone === "GOL"
+          ? 1.0
+          : Math.max(1.0, pRating - 2.5);
     }
 
     const fitLevel = p.fitness !== undefined ? p.fitness : 100;
-    const fitColorBar = fitLevel > 70 ? "var(--accent)" : fitLevel > 40 ? "var(--warning)" : "var(--danger)";
+    const fitColorBar =
+      fitLevel > 70
+        ? "var(--accent)"
+        : fitLevel > 40
+          ? "var(--warning)"
+          : "var(--danger)";
     const fitBarHtml = `<div style="position:absolute; top: calc(100% + 32px); left: 50%; transform: translateX(-50%); width: 34px; height: 4px; background: rgba(0,0,0,0.6); border: 1px solid rgba(0,0,0,0.8); border-radius: 2px; overflow: hidden; z-index: 15;"><div style="height: 100%; width: ${fitLevel}%; background: ${fitColorBar}; transition: width 0.3s ease;"></div></div>`;
 
     let liveStatusClass = "";
@@ -363,7 +432,9 @@ export function renderPitchPlayers(titulares, format, squad) {
     }
 
     if (p.nationality && p.nationality !== "BR") stats.estrangeirosCount++;
-    if (p.playstyle) stats.playstylesCount[p.playstyle] = (stats.playstylesCount[p.playstyle] || 0) + 1;
+    if (p.playstyle)
+      stats.playstylesCount[p.playstyle] =
+        (stats.playstylesCount[p.playstyle] || 0) + 1;
 
     const el = document.createElement("div");
     el.className = `player ${fitClass} ${liveStatusClass}`;
@@ -376,10 +447,15 @@ export function renderPitchPlayers(titulares, format, squad) {
       highlightZones(p);
     };
     el.ondragend = clearZones;
-    el.onclick = () => { if (!el.classList.contains("dragging")) openMenu(p.id); };
+    el.onclick = () => {
+      if (!el.classList.contains("dragging")) openMenu(p.id);
+    };
 
     // Drop zone logic for swapping
-    el.ondragover = (e) => { e.preventDefault(); el.classList.add("drag-over-player"); };
+    el.ondragover = (e) => {
+      e.preventDefault();
+      el.classList.add("drag-over-player");
+    };
     el.ondragleave = () => el.classList.remove("drag-over-player");
     el.ondrop = (e) => {
       e.preventDefault();
@@ -392,9 +468,17 @@ export function renderPitchPlayers(titulares, format, squad) {
       } else {
         const reserveId = e.dataTransfer.getData("reserveId");
         if (reserveId) {
-          const resPlayer = squad.find(x => x.id === parseInt(reserveId, 10));
-          if (resPlayer && (resPlayer.matchStatus === "red" || resPlayer.matchStatus === "injury")) {
-            showCustomModal("Jogadores suspensos ou machucados não podem ser escalados.", "alert", "btn-danger");
+          const resPlayer = squad.find((x) => x.id === parseInt(reserveId, 10));
+          if (
+            resPlayer &&
+            (resPlayer.matchStatus === "red" ||
+              resPlayer.matchStatus === "injury")
+          ) {
+            showCustomModal(
+              "Jogadores suspensos ou machucados não podem ser escalados.",
+              "alert",
+              "btn-danger",
+            );
             return;
           }
           performSwap(p.id, parseInt(reserveId, 10));
@@ -441,11 +525,17 @@ export function updateTeamStatsUI(stats, titularesCount) {
   const fitEl = document.getElementById("teamFitness");
   if (fitEl) {
     fitEl.innerText = `${stats.fitCount}/${titularesCount}`;
-    fitEl.style.color = stats.fitCount === titularesCount ? "var(--rating-top)" : stats.fitCount >= 8 ? "var(--rating-high)" : "var(--warning)";
+    fitEl.style.color =
+      stats.fitCount === titularesCount
+        ? "var(--rating-top)"
+        : stats.fitCount >= 8
+          ? "var(--rating-high)"
+          : "var(--warning)";
   }
 
   const footEl = document.getElementById("teamFoot");
-  if (footEl) footEl.innerText = `${stats.destrosCount}D | ${stats.canhotosCount}C${stats.ambiCount > 0 ? ` | ${stats.ambiCount}A` : ""}`;
+  if (footEl)
+    footEl.innerText = `${stats.destrosCount}D | ${stats.canhotosCount}C${stats.ambiCount > 0 ? ` | ${stats.ambiCount}A` : ""}`;
 
   const atkEl = document.getElementById("teamAtk");
   if (atkEl) {
@@ -462,9 +552,13 @@ export function updateTeamStatsUI(stats, titularesCount) {
   const forEl = document.getElementById("teamForeigners");
   if (forEl) forEl.innerText = stats.estrangeirosCount;
 
-  let topStyle = "--", maxCount = 0;
+  let topStyle = "--",
+    maxCount = 0;
   for (const [style, count] of Object.entries(stats.playstylesCount)) {
-    if (count > maxCount) { maxCount = count; topStyle = style; }
+    if (count > maxCount) {
+      maxCount = count;
+      topStyle = style;
+    }
   }
   const psEl = document.getElementById("teamPlaystyle");
   if (psEl) {
@@ -482,14 +576,23 @@ export function renderTeamChemistry(titulares, format, formatName) {
 
   titulares.forEach((p, i) => {
     if (!format[i]) return;
-    if (format[i].l > 14) outfieldPlayers.push({ player: p, index: i, t: format[i].t, l: format[i].l });
+    if (format[i].l > 14)
+      outfieldPlayers.push({
+        player: p,
+        index: i,
+        t: format[i].t,
+        l: format[i].l,
+      });
   });
 
   outfieldPlayers.sort((a, b) => a.l - b.l);
   const lines = [];
   let currentIndex = 0;
   linesCounts.forEach((count) => {
-    const currentLine = outfieldPlayers.slice(currentIndex, currentIndex + count);
+    const currentLine = outfieldPlayers.slice(
+      currentIndex,
+      currentIndex + count,
+    );
     if (currentLine.length > 0) lines.push(currentLine);
     currentIndex += count;
   });
@@ -497,12 +600,21 @@ export function renderTeamChemistry(titulares, format, formatName) {
   const drawChemLine = (p1, p2) => {
     const fit1 = checkPositionFit(p1.player, getEfootballPosition(p1.t, p1.l));
     const fit2 = checkPositionFit(p2.player, getEfootballPosition(p2.t, p2.l));
-    let stroke = "var(--rating-bad)", width = "1", dash = "4,4", op = "0.3";
+    let stroke = "var(--rating-bad)",
+      width = "1",
+      dash = "4,4",
+      op = "0.3";
 
     if (fit1 === "fit-perfect" && fit2 === "fit-perfect") {
-      stroke = "var(--rating-high)"; width = "3"; dash = "none"; op = "0.6";
+      stroke = "var(--rating-high)";
+      width = "3";
+      dash = "none";
+      op = "0.6";
     } else if (fit1 === "fit-perfect" || fit2 === "fit-perfect") {
-      stroke = "var(--rating-mid)"; width = "2"; dash = "6,4"; op = "0.5";
+      stroke = "var(--rating-mid)";
+      width = "2";
+      dash = "6,4";
+      op = "0.5";
     }
 
     const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
@@ -533,4 +645,3 @@ export function updateDashboardCoach(info) {
   if (styleEl) styleEl.innerText = `DNA: ${info.playstyle}`;
   if (teamEl) teamEl.innerText = normalizeTeamName(info.teamName) || "--";
 }
-

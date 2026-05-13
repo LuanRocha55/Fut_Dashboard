@@ -1,3 +1,4 @@
+import { matchInfo } from "../core/appCore.js";
 
 export const REFEREES = [
   {
@@ -36,7 +37,7 @@ export function getRandomReferee() {
   return REFEREES[Math.floor(Math.random() * REFEREES.length)];
 }
 
-export async function loadOpponentData(selectedValue, leagueData = null, matchInfoData = {}) {
+export async function loadOpponentData(selectedValue, leagueData = null) {
   if (selectedValue.startsWith("abs_")) {
     let teamName = "Adversário Genérico";
     let ovr = 75;
@@ -60,7 +61,7 @@ export async function loadOpponentData(selectedValue, leagueData = null, matchIn
 
   if (selectedValue === "generic") {
     return {
-      name: matchInfoData.away || "Adversário Genérico",
+      name: matchInfo.away || "Adversário Genérico",
       atk: 65,
       def: 65,
       squad: [],
@@ -146,7 +147,7 @@ export function degradeStamina(
   players
     .filter((p) => !p.isExpelled)
     .forEach((p) => {
-          const isGK = p.aptitude && (p.aptitude.includes("GOL") || p.aptitude.includes("GL"));
+      const isGK = p.aptitude && p.aptitude[0] === "GL";
       const sta = p.stats?.sta || p.stats?.stm || (isGK ? 50 : 75);
 
       // Perda de estamina: Jogadores com menos estamina perdem mais rápido

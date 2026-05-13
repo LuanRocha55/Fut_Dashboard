@@ -1,22 +1,105 @@
-import { dbgToast } from './utils.js';
-import { highlightZones, clearZones } from './zones.js';
-import { switchMainView, showScreen } from './views.js';
-import { handleSubstitution, initDragAndDrop } from './dragDrop.js';
-import { setupEventListeners, initCareerEvents, finalizeCareerSetup } from './events.js';
-import { renderApp, render, renderBench, renderMatchHistory, renderTeamStats, renderPitchPlayers, updateTeamStatsUI, renderTeamChemistry, updateDashboardCoach } from './render.js';
-import { main } from './init.js';
+import { dbgToast } from "./uiUtils.js";
+import { highlightZones, clearZones } from "./zones.js";
+import { switchMainView, showScreen } from "./views.js";
+import { handleSubstitution, initDragAndDrop } from "./dragDrop.js";
+import {
+  setupEventListeners,
+  initCareerEvents,
+  finalizeCareerSetup,
+} from "./uiEvents.js";
+import {
+  renderApp,
+  render,
+  renderBench,
+  renderMatchHistory,
+  renderTeamStats,
+  renderPitchPlayers,
+  updateTeamStatsUI,
+  renderTeamChemistry,
+  updateDashboardCoach,
+} from "./render.js";
+import { main } from "./init.js";
 
-import { squad, formations, ALL_POSITIONS, initSystem, performSwap, downloadJSON, resetData, resetFormationAlignment, resetSystem, calculateOVR, saveToLocal, healSquad, matchHistory, matchInfo, ensureCaptain } from "../core.js";
-import { getEfootballPosition, checkPositionFit, swapTitulares, handlePlayerMove, autoFillTeam } from "../tactics.js";
-import { openMatchSimulation } from "../simulation.js";
-import { getRatingColor, getStarsHTML, getFormHTML, getMatchStatusHTML, drawRadar, normalizeTeamName } from "../graphics.js";
-import { showCustomModal } from "../modal.js";
-import { normalizeStr } from "../utils.js";
-import { initEditorEvents, openMenu } from "../playerEditor.js";
-import { initTableEvents, isTableView, renderTable, setTableView } from "../tableView.js";
-import { initLeagueEvents, autoInitLeague } from "../league.js";
-import { renderLeagueData } from "../leagueRenderer.js";
-import { Storage } from "../storage.js";
+import {
+  squad,
+  formations,
+  ALL_POSITIONS,
+  initSystem,
+  performSwap,
+  downloadJSON,
+  resetFormationAlignment,
+  calculateOVR,
+  saveToLocal,
+  healSquad,
+  matchHistory,
+  matchInfo,
+  ensureCaptain,
+} from "../core/appCore.js";
+import {
+  getEfootballPosition,
+  checkPositionFit,
+  swapTitulares,
+  handlePlayerMove,
+  autoFillTeam,
+} from "../tactics/pitchTactics.js";
+import { openMatchSimulation } from "../simulation/simMain.js";
+import {
+  getRatingColor,
+  getStarsHTML,
+  getFormHTML,
+  getMatchStatusHTML,
+  drawRadar,
+  normalizeTeamName,
+} from "./uiGraphics.js";
+import { showCustomModal } from "./uiModal.js";
+import { normalizeStr } from "../core/appUtils.js";
+import { initEditorEvents, openMenu } from "../player/playerEditor.js";
+import {
+  initTableEvents,
+  isTableView,
+  renderTable,
+  setTableView,
+} from "./uiTableView.js";
+import { initLeagueEvents, autoInitLeague } from "../league/leagueMain.js";
+import { renderLeagueData } from "../league/leagueRenderer.js";
+import { Storage } from "../core/appStorage.js";
+
+let _badgeCache = {};
+let _leagueBadgeMap = null;
+let _pendingLeagueFetch = null;
+
+const LEAGUE_COLORS = {
+  "Premier League": "#3d195b",
+  "English Premier League": "#3d195b",
+  "Barclays WSL": "#3d195b",
+  "LaLiga EA Sports": "#ee2e31",
+  "Spanish La Liga": "#ee2e31",
+  "Liga F": "#ee2e31",
+  Bundesliga: "#d90429",
+  "German Bundesliga": "#d90429",
+  GPFBL: "#d90429",
+  "Serie A TIM": "#02c39a",
+  "Italian Serie A": "#02c39a",
+  "Ligue 1 Uber Eats": "#f9c200",
+  "French Ligue 1": "#f9c200",
+  "Arkema PL": "#f9c200",
+  "Brasileirão Série A": "#009c3b",
+  "Brazilian Serie A": "#009c3b",
+  "Brasileirão Série B": "#fdd835",
+  NWSL: "#0077c8",
+  "Copa Libertadores": "#ffb703",
+  "Copa Sudamericana": "#fb8500",
+  "UEFA Champions League": "#003399",
+};
+
+const LEAGUE_EMOJIS = {
+  "Premier League": "🦁",
+  "LaLiga EA Sports": "🏆",
+  Bundesliga: "🛡️",
+  "Serie A TIM": "⭐",
+  "Ligue 1 Uber Eats": "💎",
+  "Brasileirão Série A": "🇧🇷",
+};
 
 export async function loadTeams() {
   try {
@@ -29,19 +112,22 @@ export async function loadTeams() {
 
     if (teamSelect) {
       teamSelect.innerHTML = "";
-      teams.sort((a, b) => a.name.localeCompare(b.name)).forEach(t => {
-        const opt = document.createElement("option");
-        opt.value = t.file;
-        opt.innerText = t.name;
-        teamSelect.appendChild(opt);
-      });
+      teams
+        .sort((a, b) => a.name.localeCompare(b.name))
+        .forEach((t) => {
+          const opt = document.createElement("option");
+          opt.value = t.file;
+          opt.innerText = t.name;
+          teamSelect.appendChild(opt);
+        });
       teamSelect.value = (await Storage.getCurrentTeamFile()) || "vasco.json";
     }
 
     if (simOpponentSelect) {
-      simOpponentSelect.innerHTML = '<option value="generic">Adversário Genérico (OVR 65)</option>';
+      simOpponentSelect.innerHTML =
+        '<option value="generic">Adversário Genérico (OVR 65)</option>';
       const sortedTeams = teams.sort((a, b) => a.name.localeCompare(b.name));
-      sortedTeams.forEach(t => {
+      sortedTeams.forEach((t) => {
         const opt = document.createElement("option");
         opt.value = t.file;
         opt.innerText = `${t.name} (${t.league || "Extra"})`;
@@ -50,28 +136,31 @@ export async function loadTeams() {
 
       const setupTeamSelect = document.getElementById("setupTeamSelect");
       if (setupTeamSelect) {
-        setupTeamSelect.innerHTML = '<option value="">-- Selecione um Clube --</option>';
+        setupTeamSelect.innerHTML =
+          '<option value="">-- Selecione um Clube --</option>';
 
         // Agrupar times por liga
         const leagues = {};
-        sortedTeams.forEach(t => {
+        sortedTeams.forEach((t) => {
           const leagueName = t.league || "Outros";
           if (!leagues[leagueName]) leagues[leagueName] = [];
           leagues[leagueName].push(t);
         });
 
         // Criar optgroups
-        Object.keys(leagues).sort().forEach(league => {
-          const group = document.createElement("optgroup");
-          group.label = league.toUpperCase();
-          leagues[league].forEach(t => {
-            const opt = document.createElement("option");
-            opt.value = t.file;
-            opt.innerText = t.name;
-            group.appendChild(opt);
+        Object.keys(leagues)
+          .sort()
+          .forEach((league) => {
+            const group = document.createElement("optgroup");
+            group.label = league.toUpperCase();
+            leagues[league].forEach((t) => {
+              const opt = document.createElement("option");
+              opt.value = t.file;
+              opt.innerText = t.name;
+              group.appendChild(opt);
+            });
+            setupTeamSelect.appendChild(group);
           });
-          setupTeamSelect.appendChild(group);
-        });
       }
     }
     return teams;
@@ -84,21 +173,27 @@ export async function loadTeams() {
 export async function fetchTeamBadge(teamName) {
   try {
     let cleanName = teamName.replace(/\s*\(Fem\)$/i, "").trim();
-    const r = await fetch(`https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t=${encodeURIComponent(teamName)}`);
+    const r = await fetch(
+      `https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t=${encodeURIComponent(teamName)}`,
+    );
     if (!r.ok) return null;
     const data = await r.json();
-    
+
     let badge = data?.teams?.[0]?.strTeamBadge;
-    
+
     // Se não achou com (Fem), tenta com o nome limpo
     if (!badge && cleanName !== teamName) {
-      const r2 = await fetch(`https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t=${encodeURIComponent(cleanName)}`);
+      const r2 = await fetch(
+        `https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t=${encodeURIComponent(cleanName)}`,
+      );
       const data2 = await r2.json();
       badge = data2?.teams?.[0]?.strTeamBadge;
     }
-    
+
     return badge || null;
-  } catch { return null; }
+  } catch {
+    return null;
+  }
 }
 
 export async function getLeagueBadgeMap() {
@@ -106,30 +201,32 @@ export async function getLeagueBadgeMap() {
   if (_pendingLeagueFetch) return _pendingLeagueFetch;
   _pendingLeagueFetch = (async () => {
     try {
-      const r = await fetch("https://www.thesportsdb.com/api/v1/json/3/all_leagues.php");
+      const r = await fetch(
+        "https://www.thesportsdb.com/api/v1/json/3/all_leagues.php",
+      );
       if (!r.ok) return {};
       const data = await r.json();
       const map = {};
       const aliases = {
         "laliga ea sports": "Spanish La Liga",
         "premier league": "English Premier League",
-        "bundesliga": "German Bundesliga",
+        bundesliga: "German Bundesliga",
         "ligue 1 mcdonald's": "French Ligue 1",
         "serie a enilive": "Italian Serie A",
         "liga f": "Spanish Liga F",
         "barclays wsl": "English WSL",
-        "nwsl": "USA NWSL",
-        "gpfbl": "German Frauen Bundesliga",
+        nwsl: "USA NWSL",
+        gpfbl: "German Frauen Bundesliga",
         "brasileirão série a": "Brazilian Serie A",
         "brasileirao serie a": "Brazilian Serie A",
         "brasileirão série b": "Brazilian Serie B",
-        "libertadores": "Copa Libertadores",
-        "sudamericana": "Copa Sudamericana",
+        libertadores: "Copa Libertadores",
+        sudamericana: "Copa Sudamericana",
         "champions league": "UEFA Champions League",
-        "europa league": "UEFA Europa League"
+        "europa league": "UEFA Europa League",
       };
 
-      (data?.leagues || []).forEach(l => {
+      (data?.leagues || []).forEach((l) => {
         if (l.strBadge) {
           map[l.strLeague] = l.strBadge;
           map[l.strLeague.toLowerCase()] = l.strBadge;
@@ -144,7 +241,10 @@ export async function getLeagueBadgeMap() {
       });
       _leagueBadgeMap = map;
       return map;
-    } catch { _leagueBadgeMap = {}; return {}; }
+    } catch {
+      _leagueBadgeMap = {};
+      return {};
+    }
   })();
   return _pendingLeagueFetch;
 }
@@ -152,33 +252,36 @@ export async function getLeagueBadgeMap() {
 export function loadBadgesLazy() {
   const imgs = document.querySelectorAll(".team-badge-img[data-name]");
   let delay = 0;
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      const img = entry.target;
-      const name = img.dataset.name;
-      if (img.dataset.loaded) return;
-      img.dataset.loaded = "1";
-      observer.unobserve(img);
-      // Escalonamento para evitar 429 (rate limit)
-      setTimeout(async () => {
-        if (!_badgeCache[name]) {
-          _badgeCache[name] = await fetchTeamBadge(name);
-        }
-        if (_badgeCache[name] && img.isConnected) {
-          img.src = _badgeCache[name];
-        }
-      }, delay);
-      delay = Math.min(delay + 120, 3000); // max 3s de espera
-    });
-  }, { rootMargin: "150px" });
-  imgs.forEach(img => observer.observe(img));
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const img = entry.target;
+        const name = img.dataset.name;
+        if (img.dataset.loaded) return;
+        img.dataset.loaded = "1";
+        observer.unobserve(img);
+        // Escalonamento para evitar 429 (rate limit)
+        setTimeout(async () => {
+          if (!_badgeCache[name]) {
+            _badgeCache[name] = await fetchTeamBadge(name);
+          }
+          if (_badgeCache[name] && img.isConnected) {
+            img.src = _badgeCache[name];
+          }
+        }, delay);
+        delay = Math.min(delay + 120, 3000); // max 3s de espera
+      });
+    },
+    { rootMargin: "150px" },
+  );
+  imgs.forEach((img) => observer.observe(img));
 }
 
 export function loadLeagueLogosLazy() {
   const imgs = document.querySelectorAll(".league-logo-img[data-league]");
-  getLeagueBadgeMap().then(map => {
-    imgs.forEach(img => {
+  getLeagueBadgeMap().then((map) => {
+    imgs.forEach((img) => {
       if (img.dataset.loaded) return;
       img.dataset.loaded = "1";
       const name = img.dataset.league;
@@ -197,7 +300,7 @@ export function renderVisualTeams(teams) {
 
   // Agrupar por liga
   const leagues = {};
-  teams.forEach(t => {
+  teams.forEach((t) => {
     const l = t.league || "Outros";
     if (!leagues[l]) leagues[l] = [];
     leagues[l].push(t);
@@ -238,11 +341,12 @@ export function renderVisualTeams(teams) {
         <button id="backToCoachBtnSelect" style="background:transparent;border:1px solid #333;color:#666;padding:12px 24px;border-radius:12px;cursor:pointer;font-size:0.9rem;margin-top:20px;">← VOLTAR AO PERFIL</button>
       </div>
     `;
-    
+
     if (window.lucide) window.lucide.createIcons();
-    
-    document.getElementById("backToCoachBtnSelect").onclick = () => showScreen("coachCreationScreen");
-    
+
+    document.getElementById("backToCoachBtnSelect").onclick = () =>
+      showScreen("coachCreationScreen");
+
     const maleBtn = document.getElementById("selectMaleBtn");
     maleBtn.onmouseenter = () => {
       maleBtn.style.borderColor = "var(--accent)";
@@ -257,7 +361,7 @@ export function renderVisualTeams(teams) {
       maleBtn.style.boxShadow = "";
     };
     maleBtn.onclick = () => showLeagueGrid("male");
-    
+
     const femaleBtn = document.getElementById("selectFemaleBtn");
     femaleBtn.onmouseenter = () => {
       femaleBtn.style.borderColor = "#ff0066";
@@ -294,34 +398,58 @@ export function renderVisualTeams(teams) {
             </div>
         `;
 
-    document.getElementById("backToGenderBtn").onclick = () => showGenderSelection();
+    document.getElementById("backToGenderBtn").onclick = () =>
+      showGenderSelection();
 
     const leagueGrid = document.getElementById("leagueGrid");
     const leagueSearch = document.getElementById("leagueSearchInput");
 
     function renderLeagueCards(filter = "") {
       leagueGrid.innerHTML = "";
-      
-      const femLeagueKeywords = ["NWSL", "Barclays WSL", "Liga F", "GPFBL", "Arkema PL", "Nederland Vrouwen Liga", "Vrouwen", "Fem"];
-      
+
+      const femLeagueKeywords = [
+        "NWSL",
+        "Barclays WSL",
+        "Liga F",
+        "GPFBL",
+        "Arkema PL",
+        "Nederland Vrouwen Liga",
+        "Vrouwen",
+        "Fem",
+      ];
+
       const sortedLeagueNames = leagueNames
-        .filter(l => {
-          const isFemLeague = femLeagueKeywords.some(fem => l.includes(fem));
-          const matchesGender = gender === "female" ? isFemLeague : !isFemLeague;
+        .filter((l) => {
+          const isFemLeague = femLeagueKeywords.some((fem) => l.includes(fem));
+          const matchesGender =
+            gender === "female" ? isFemLeague : !isFemLeague;
           const matchesFilter = l.toLowerCase().includes(filter.toLowerCase());
           return matchesGender && matchesFilter;
         })
         .sort((a, b) => {
-          const avgA = leagues[a].reduce((s, t) => s + (t.ovr || 75), 0) / leagues[a].length;
-          const avgB = leagues[b].reduce((s, t) => s + (t.ovr || 75), 0) / leagues[b].length;
+          const avgA =
+            leagues[a].reduce((s, t) => s + (t.ovr || 75), 0) /
+            leagues[a].length;
+          const avgB =
+            leagues[b].reduce((s, t) => s + (t.ovr || 75), 0) /
+            leagues[b].length;
           return avgB - avgA;
         });
 
-      sortedLeagueNames.forEach(l => {
+      sortedLeagueNames.forEach((l) => {
         const count = leagues[l].length;
-        const avgOvr = Math.round(leagues[l].reduce((s, t) => s + (t.ovr || 75), 0) / count);
-        const color = LEAGUE_COLORS[l] || (gender === "female" ? "#ff0066" : "#00ff88");
-        const initials = l.split(" ").map(w => w[0]).filter(Boolean).join("").substring(0, 3).toUpperCase();
+        const avgOvr = Math.round(
+          leagues[l].reduce((s, t) => s + (t.ovr || 75), 0) / count,
+        );
+        const color =
+          LEAGUE_COLORS[l] || (gender === "female" ? "#ff0066" : "#00ff88");
+        const initials = l
+          .split(" ")
+          .map((w) => w[0])
+          .filter(Boolean)
+          .join("")
+          .substring(0, 3)
+          .toUpperCase();
 
         const card = document.createElement("div");
         card.style.cssText = `
@@ -368,15 +496,41 @@ export function renderVisualTeams(teams) {
     }
 
     renderLeagueCards();
-    leagueSearch.addEventListener("input", () => renderLeagueCards(leagueSearch.value));
+    leagueSearch.addEventListener("input", () =>
+      renderLeagueCards(leagueSearch.value),
+    );
   }
 
   // ── TELA 2: Times do Campeonato ────────────────────────────────────────
   function showTeamsOfLeague(leagueName, teamsList, gender) {
-    const color = LEAGUE_COLORS[leagueName] || (gender === "female" ? "#ff0066" : "#00ff88");
-    const palette = ["#00ff88", "#00aaff", "#ff6b35", "#a855f7", "#f59e0b", "#ec4899", "#14b8a6", "#f43f5e", "#84cc16", "#6366f1"];
-    const getColor = name => palette[name.charCodeAt(0) % palette.length];
-    const ovrColor = o => o >= 85 ? "#00f2ff" : o >= 80 ? "#00ff88" : o >= 74 ? "#a3e635" : o >= 68 ? "#ffcc00" : o >= 62 ? "#ff8800" : "#ff4444";
+    const color =
+      LEAGUE_COLORS[leagueName] ||
+      (gender === "female" ? "#ff0066" : "#00ff88");
+    const palette = [
+      "#00ff88",
+      "#00aaff",
+      "#ff6b35",
+      "#a855f7",
+      "#f59e0b",
+      "#ec4899",
+      "#14b8a6",
+      "#f43f5e",
+      "#84cc16",
+      "#6366f1",
+    ];
+    const getColor = (name) => palette[name.charCodeAt(0) % palette.length];
+    const ovrColor = (o) =>
+      o >= 85
+        ? "#00f2ff"
+        : o >= 80
+          ? "#00ff88"
+          : o >= 74
+            ? "#a3e635"
+            : o >= 68
+              ? "#ffcc00"
+              : o >= 62
+                ? "#ff8800"
+                : "#ff4444";
 
     container.innerHTML = `
             <div style="width:100%;height:100%;display:flex;flex-direction:column;overflow:hidden;background:#050505;">
@@ -399,20 +553,27 @@ export function renderVisualTeams(teams) {
             </div>
         `;
 
-    document.getElementById("backToLeaguesBtn").onclick = () => showLeagueGrid(gender);
+    document.getElementById("backToLeaguesBtn").onclick = () =>
+      showLeagueGrid(gender);
 
     const grid = document.getElementById("teamCardsGrid");
     const searchEl = document.getElementById("teamSearchInput");
 
     function renderCards(filter = "") {
       const filtered = teamsList
-        .filter(t => t.name.toLowerCase().includes(filter.toLowerCase()))
+        .filter((t) => t.name.toLowerCase().includes(filter.toLowerCase()))
         .sort((a, b) => (b.ovr || 0) - (a.ovr || 0));
       grid.innerHTML = "";
-      filtered.forEach(team => {
+      filtered.forEach((team) => {
         const tc = getColor(team.name);
         const ovr = team.ovr || 75;
-        const initials = team.name.split(" ").map(w => w[0]).filter(Boolean).join("").substring(0, 3).toUpperCase();
+        const initials = team.name
+          .split(" ")
+          .map((w) => w[0])
+          .filter(Boolean)
+          .join("")
+          .substring(0, 3)
+          .toUpperCase();
 
         const card = document.createElement("div");
         card.style.cssText = `padding:16px 12px;text-align:center;cursor:pointer;border-radius:12px;border:1px solid rgba(255,255,255,0.07);background:#0f0f0f;transition:all 0.2s;position:relative;overflow:hidden;`;
@@ -430,8 +591,16 @@ export function renderVisualTeams(teams) {
           <div style="font-weight:800;color:#fff;font-size:0.82rem;line-height:1.3;margin-bottom:7px;word-break:break-word;">${team.name}</div>
           <div style="display:inline-block;padding:3px 9px;border-radius:10px;background:${ovrColor(ovr)}18;border:1px solid ${ovrColor(ovr)}44;font-size:0.68rem;font-weight:900;color:${ovrColor(ovr)};">OVR ${ovr}</div>
         `;
-        card.addEventListener("mouseenter", () => { card.style.borderColor = color; card.style.transform = "translateY(-3px)"; card.style.boxShadow = `0 6px 20px ${color}18`; });
-        card.addEventListener("mouseleave", () => { card.style.borderColor = "rgba(255,255,255,0.07)"; card.style.transform = ""; card.style.boxShadow = ""; });
+        card.addEventListener("mouseenter", () => {
+          card.style.borderColor = color;
+          card.style.transform = "translateY(-3px)";
+          card.style.boxShadow = `0 6px 20px ${color}18`;
+        });
+        card.addEventListener("mouseleave", () => {
+          card.style.borderColor = "rgba(255,255,255,0.07)";
+          card.style.transform = "";
+          card.style.boxShadow = "";
+        });
         card.onclick = () => finalizeCareerSetup(team);
         grid.appendChild(card);
       });
@@ -440,10 +609,11 @@ export function renderVisualTeams(teams) {
     }
 
     renderCards();
-    searchEl.addEventListener("input", () => renderCards(searchEl.value.trim()));
+    searchEl.addEventListener("input", () =>
+      renderCards(searchEl.value.trim()),
+    );
   }
 
   // ── Início: mostra a tela de seleção de gênero ────────────────────────
   showGenderSelection();
 }
-

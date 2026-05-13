@@ -1,4 +1,4 @@
-import { squad, formations, saveToLocal } from "./core.js";
+import { squad, formations, saveToLocal } from "../core/appCore.js";
 
 export function getEfootballPosition(top, left) {
   // Fatias de 14.28% (100 / 7 colunas)
@@ -21,11 +21,11 @@ export function getEfootballPosition(top, left) {
   if (slice === 2) return "VOL";
   if (slice === 3) return "MC";
   if (slice === 4) return "MEI";
-  
+
   // ZONA DE ATAQUE FINAL (Garante CA em formações com l >= 80)
   if (left >= 80) return "CA";
   if (slice === 5) return "SA";
-  return "CA"; 
+  return "CA";
 }
 
 export function checkPositionFit(player, currentZone) {
@@ -45,12 +45,27 @@ export function autoFillTeam() {
     let preferredFoot = null;
     if (["ZE", "LE"].includes(zone)) preferredFoot = "Canhoto";
     if (["ZD", "LD"].includes(zone)) preferredFoot = "Destro";
-    
+
     return { zone, index, preferredFoot };
   });
 
   // Ordem de prioridade de preenchimento
-  const FILL_ORDER = ["GOL", "CA", "SA", "PE", "PD", "MEI", "MC", "VOL", "ME", "MD", "LE", "LD", "ZE", "ZD"];
+  const FILL_ORDER = [
+    "GOL",
+    "CA",
+    "SA",
+    "PE",
+    "PD",
+    "MEI",
+    "MC",
+    "VOL",
+    "ME",
+    "MD",
+    "LE",
+    "LD",
+    "ZE",
+    "ZD",
+  ];
   const sortedRequired = [...requiredPositions].sort((a, b) => {
     const ai = FILL_ORDER.indexOf(a.zone);
     const bi = FILL_ORDER.indexOf(b.zone);
@@ -67,26 +82,34 @@ export function autoFillTeam() {
 
   // Passo 1: Melhor jogador para a posição com pé preferencial
   sortedRequired.forEach((req) => {
-    let best = availablePlayers.find(p => 
-      !assignedIds.has(p.id) && 
-      p.aptitude && p.aptitude[0] === req.zone && 
-      (!req.preferredFoot || p.foot === req.preferredFoot || p.foot === "Ambidestro")
+    let best = availablePlayers.find(
+      (p) =>
+        !assignedIds.has(p.id) &&
+        p.aptitude &&
+        p.aptitude[0] === req.zone &&
+        (!req.preferredFoot ||
+          p.foot === req.preferredFoot ||
+          p.foot === "Ambidestro"),
     );
 
     // Passo 2: Melhor jogador com aptidão secundária e pé preferencial
     if (!best) {
-      best = availablePlayers.find(p => 
-        !assignedIds.has(p.id) && 
-        p.aptitude && p.aptitude.includes(req.zone) && 
-        (!req.preferredFoot || p.foot === req.preferredFoot || p.foot === "Ambidestro")
+      best = availablePlayers.find(
+        (p) =>
+          !assignedIds.has(p.id) &&
+          p.aptitude &&
+          p.aptitude.includes(req.zone) &&
+          (!req.preferredFoot ||
+            p.foot === req.preferredFoot ||
+            p.foot === "Ambidestro"),
       );
     }
 
     // Passo 3: Qualquer jogador com aptidão (independente do pé)
     if (!best) {
-      best = availablePlayers.find(p => 
-        !assignedIds.has(p.id) && 
-        p.aptitude && p.aptitude.includes(req.zone)
+      best = availablePlayers.find(
+        (p) =>
+          !assignedIds.has(p.id) && p.aptitude && p.aptitude.includes(req.zone),
       );
     }
 
@@ -99,7 +122,7 @@ export function autoFillTeam() {
   // Passo 4: Vagas restantes com os melhores que sobraram
   newTitulares.forEach((p, i) => {
     if (!p) {
-      const next = availablePlayers.find(pl => !assignedIds.has(pl.id));
+      const next = availablePlayers.find((pl) => !assignedIds.has(pl.id));
       if (next) {
         newTitulares[i] = next;
         assignedIds.add(next.id);

@@ -1,32 +1,39 @@
-import { squad, matchInfo, ALL_POSITIONS, ensureCaptain } from "../core.js";
-import { showCustomModal } from "../modal.js";
-import { switchMainView } from "../ui.js";
-import { setTableView } from "../tableView.js";
-import { Storage } from "../storage.js";
-import { getMatchDate } from "../league.js";
+import {
+  squad,
+  matchInfo,
+  ALL_POSITIONS,
+  ensureCaptain,
+  applyMatchResults,
+  registerMatchResult,
+} from "../core/appCore.js";
+import { showCustomModal } from "../ui/uiModal.js";
+import { switchMainView } from "../ui/uiMain.js";
+import { setTableView } from "../ui/uiTableView.js";
+import { Storage } from "../core/appStorage.js";
+import { getMatchDate } from "../league/leagueMain.js";
 import {
   getHomeGoalPhrase,
   getAwayGoalPhrase,
   getMissPhrase,
   getSavePhrase,
   getOppSavePhrase,
-} from "../narrator.js";
-import { handleMatchPostGame } from "../matchPostGame.js";
-import { startPenaltyShootout } from "../penalties.js";
+} from "../match/narrator.js";
+import { handleMatchPostGame } from "../match/matchPostGame.js";
+import { startPenaltyShootout } from "../match/penalties.js";
 import {
   loadOpponentData,
   getRandomReferee,
   getTeamAtk,
   getTeamDef,
   degradeStamina,
-} from "../matchEngine.js";
-import { getTeamLogoHTML } from "../graphics.js";
+} from "../match/matchEngine.js";
+import { getRatingColor, getTeamLogoHTML } from "../ui/uiGraphics.js";
 import { playSound, soundGoal, soundMiss, soundWhistle } from "./audio.js";
 import {
   getTacticalPositions,
   smartAssignToSlots,
   calculateMatchPowers,
-} from "../tactics/tactics.js";
+} from "./simTactics.js";
 export async function openMatchSimulation() {
   const titulares = squad.filter((p) => p.status === "titular");
   if (titulares.length < 11) {
@@ -247,11 +254,7 @@ export async function openMatchSimulation() {
   }
 
   // Carrega os dados baseados no arquivo selecionado
-  let currentOpponent = await loadOpponentData(
-    currentOpponentId,
-    leagueData,
-    matchInfo,
-  );
+  let currentOpponent = await loadOpponentData(currentOpponentId, leagueData);
 
   const updateUI = () => {
     document.getElementById("simHomeTeam").innerText =
@@ -289,11 +292,7 @@ export async function openMatchSimulation() {
       startBtn.style.display = "none";
       logContainer.innerHTML =
         "<div class='log-entry log-neutral'>Escaneando dados do arquivo JSON...</div>";
-      currentOpponent = await loadOpponentData(
-        e.target.value,
-        leagueData,
-        matchInfo,
-      );
+      currentOpponent = await loadOpponentData(e.target.value);
       updateUI();
       logContainer.innerHTML =
         "<div class='log-entry log-neutral'>Arquivos do adversário carregados! Aguardando o apito inicial...</div>";
@@ -330,8 +329,10 @@ export async function openMatchSimulation() {
     return { ...p, currentStamina: fit };
   });
 
-  let currentFormation = coachInfo?.formation || "4-3-3";
-  let homeActivePlayers = smartAssignToSlots(titularesBase, currentFormation);
+  let currentFormation =
+    (await Storage.getCurrentFormation()) || coachInfo?.specialty || "4-3-3";
+  // Importa fielmente os titulares e suas posições da prancheta
+  let homeActivePlayers = [...titularesBase];
 
   let homeBench = squad
     .filter(
@@ -397,7 +398,7 @@ export async function openMatchSimulation() {
     const onPitchPlayers = homeActivePlayers.filter((p) => !p.isExpelled);
 
     const getRole = (pos) => {
-      if (["GL", "ZE", "ZD", "LE", "LD"].includes(pos)) return "def";
+      if (["GL", "GOL", "ZE", "ZD", "LE", "LD"].includes(pos)) return "def";
       if (["VOL", "MC", "MEI", "ME", "MD"].includes(pos)) return "mid";
       if (["CA", "SA", "PE", "PD"].includes(pos)) return "atk";
       return "mid";
@@ -415,9 +416,25 @@ export async function openMatchSimulation() {
             ? "var(--warning)"
             : "var(--danger)";
 
-      const slotRole = getRole(slot.pos);
-      const playerRole = getRole(p.aptitude?.[0] || "MC");
-      const isOutPos = slotRole !== playerRole;
+      // Mapa de tolerância para não marcar como "Fora de Posição" (Improvisado) visualmente
+      const fallbackMap = {
+        GL: ["GL", "GOL"],
+        ZE: ["ZE", "ZD", "VOL"],
+        ZD: ["ZD", "ZE", "LD", "VOL"],
+        LE: ["LE", "ME", "PE"],
+        LD: ["LD", "MD", "PD"],
+        VOL: ["VOL", "MC", "ZE", "ZD"],
+        MC: ["MC", "VOL", "MEI", "ME", "MD"],
+        ME: ["ME", "LE", "PE", "MC"],
+        MD: ["MD", "LD", "PD", "MC"],
+        MEI: ["MEI", "MC", "SA", "PE", "PD"],
+        PE: ["PE", "ME", "SA", "PD"],
+        PD: ["PD", "MD", "SA", "PE"],
+        SA: ["SA", "CA", "MEI", "PE", "PD"],
+        CA: ["CA", "SA", "PE", "PD"],
+      };
+      const allowedPositions = fallbackMap[slot.pos] || [slot.pos];
+      const isOutPos = !(p.aptitude && p.aptitude.some(ap => allowedPositions.includes(ap)));
 
       const node = document.createElement("div");
       node.className = `mini-player-node ${isSelected}`;
@@ -425,20 +442,82 @@ export async function openMatchSimulation() {
       node.style.transform = "translate(-50%, -50%)";
       node.style.left = `${coords.x}%`;
       node.style.top = `${coords.y}%`;
-      node.style.borderColor = isOutPos ? "#fff" : fitColor;
-      node.style.borderStyle = isOutPos ? "dashed" : "solid";
-      node.style.boxShadow = isSelected ? `0 0 10px ${fitColor}` : "none";
+      node.style.background = isSelected
+        ? "rgba(0, 170, 255, 0.2)"
+        : "rgba(10, 10, 10, 0.85)";
+      node.style.border = `1px solid ${isSelected ? "#00aaff" : isOutPos ? "#666" : fitColor}`;
+      node.style.borderRadius = "8px";
+      node.style.padding = "6px";
+      node.style.width = "75px";
+      node.style.boxShadow = isSelected
+        ? `0 0 15px rgba(0, 170, 255, 0.4)`
+        : "0 4px 6px rgba(0,0,0,0.6)";
+      node.style.zIndex = isSelected ? "10" : "1";
+      node.style.cursor = "pointer";
+      node.style.backdropFilter = "blur(4px)";
+      node.style.display = "flex";
+      node.style.flexDirection = "column";
+      node.style.alignItems = "center";
+      node.style.gap = "4px";
+      node.style.transition = "all 0.2s ease";
+
+      const ovr = p.rating.toFixed(1);
+      const ovrColor = getRatingColor(p.rating);
+
+      let statusHtml = "";
+      const isYellow = homeCards.some(
+        (c) => c.id === p.id && c.type === "yellow",
+      );
+      const isInjured = homeInjuriesList.some((inj) => inj.id === p.id);
+      if (isYellow)
+        statusHtml += `<div style="position: absolute; top: -6px; right: -6px; width: 14px; height: 18px; background: #ffcc00; border-radius: 3px; border: 1px solid #000;" title="Cartão Amarelo"></div>`;
+      if (isInjured)
+        statusHtml += `<div style="position: absolute; top: -6px; left: -6px; width: 18px; height: 18px; background: #ff4444; color: #fff; font-size: 11px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid #000;" title="Lesionado">✚</div>`;
+      if (p.captain)
+        statusHtml += `<div style="position: absolute; bottom: -6px; right: -6px; width: 16px; height: 16px; background: var(--warning); color: #000; font-size: 10px; font-weight: bold; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid #000;" title="Capitão">C</div>`;
+
+      const lastName = p.name.split(" ").pop();
+      const firstNameInit =
+        p.name.split(" ").length > 1 ? p.name.charAt(0) + "." : "";
 
       node.innerHTML = `
-        <span style="color: ${isOutPos ? "#fff" : fitColor}; font-weight: bold;">${p.aptitude?.[0] || "?"}</span>
-        <div class="mini-player-label">${p.name.split(" ").pop()}</div>
-        <div style="position:absolute; bottom:-3px; right:-3px; width:8px; height:8px; border-radius:50%; background:${fitColor}; border:1px solid #000;"></div>
+        ${statusHtml}
+        <div style="display: flex; justify-content: space-between; width: 100%; align-items: center; margin-bottom: 2px;">
+          <span style="font-size: 0.7rem; font-weight: 900; color: ${isOutPos ? "#888" : "#fff"};">${p.aptitude?.[0] || "?"}</span>
+          <span style="background: ${ovrColor}; color: #000; padding: 2px 4px; border-radius: 4px; font-size: 0.65rem; font-weight: 900;">${ovr}</span>
+        </div>
+        <div style="color: #fff; font-size: 0.75rem; font-weight: bold; white-space: nowrap; text-shadow: 1px 1px 2px #000; overflow: hidden; text-overflow: ellipsis; width: 100%; text-align: center;">${firstNameInit} ${lastName}</div>
+        <div style="width: 100%; height: 5px; background: #333; border-radius: 3px; margin-top: 2px; overflow: hidden;">
+           <div style="width: ${fit}%; height: 100%; background: ${fitColor}; transition: 1s;"></div>
+        </div>
       `;
-      node.title = `${p.name} - Estamina: ${fit}% ${isOutPos ? "(Fora de Posição)" : ""}`;
+      node.title = `${p.name} (OVR ${ovr}) - Estamina: ${fit}% ${isOutPos ? "(Improvisado)" : ""}`;
 
       node.onclick = () => {
-        if (selectedOutIdx === i) selectedOutIdx = -1;
-        else selectedOutIdx = i;
+        if (selectedInIdx !== -1) {
+          selectedInIdx = -1;
+          renderSubLists();
+        }
+
+        if (selectedOutIdx === -1) {
+          selectedOutIdx = i;
+        } else {
+          if (selectedOutIdx === i) {
+            selectedOutIdx = -1;
+          } else {
+            const player1 = homeActivePlayers[selectedOutIdx];
+            const player2 = homeActivePlayers[i];
+
+            homeActivePlayers[selectedOutIdx] = player2;
+            homeActivePlayers[i] = player1;
+
+            addLog(
+              `🔄 TROCA DE POSIÇÃO: ${player1.name} e ${player2.name} trocam de lugar em campo.`,
+              "log-neutral",
+            );
+            selectedOutIdx = -1;
+          }
+        }
         renderMiniPitch();
         checkSubButton();
       };
@@ -511,10 +590,16 @@ export async function openMatchSimulation() {
         const disabledClass = isSubbedOut ? "disabled-sub" : "";
         const opacity = isSubbedOut ? "0.4" : "1";
         const cursor = isSubbedOut ? "not-allowed" : "pointer";
+        const ovr = p.rating.toFixed(1);
+        const ovrColor = getRatingColor(p.rating);
+
         return `<div class="sub-list-item ${isSelected} ${disabledClass}" data-idx="${i}" style="opacity: ${opacity}; cursor: ${cursor};">
-          <div style="display: flex; justify-content: space-between;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
               <span class="sub-name" title="${p.name}">${isSubbedOut ? "❌ " : ""}${p.name}</span>
-              <span style="font-size: 0.65rem; font-weight: bold;">${p.aptitude?.[0] || "?"}</span>
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <span style="font-size: 0.65rem; font-weight: bold; color: #aaa;">${p.aptitude?.[0] || "?"}</span>
+                <span style="font-size: 0.8rem; font-weight: 900; color: ${ovrColor}; background: ${ovrColor}22; padding: 1px 5px; border-radius: 4px;">${ovr}</span>
+              </div>
           </div>
           <div class="sub-stamina-bar">
               <div class="sub-stamina-fill" style="width: ${fit}%; background: ${fitColor};"></div>
@@ -648,7 +733,10 @@ export async function openMatchSimulation() {
   const handleAISubstitutions = () => {
     if (awaySubs < 5 && awayBench.length > 0) {
       const exhaustedIndex = awayActivePlayers.findIndex(
-        (p) => p.currentStamina < 40 && p.aptitude?.[0] !== "GL",
+        (p) =>
+          p.currentStamina < 40 &&
+          p.aptitude?.[0] !== "GL" &&
+          p.aptitude?.[0] !== "GOL",
       );
       if (exhaustedIndex > -1) {
         const outPlayer = awayActivePlayers[exhaustedIndex];
@@ -707,12 +795,6 @@ export async function openMatchSimulation() {
         homeBench.push(outPlayer);
 
         homeActivePlayers.splice(outIdx, 1, inPlayer);
-
-        // Re-organiza de forma inteligente para os slots da formação
-        homeActivePlayers = smartAssignToSlots(
-          homeActivePlayers,
-          currentFormation,
-        );
 
         homeFitnessTracker[outPlayer.id] = outPlayer.currentStamina;
         homeFitnessTracker[inPlayer.id] = inPlayer.currentStamina;
@@ -961,11 +1043,82 @@ export async function openMatchSimulation() {
             isContinentalMatch,
             awayActivePlayers,
             closeSimulationView,
+            squad,
+            applyMatchResults,
+            registerMatchResult,
           });
         };
       };
 
-      if (homeScore === awayScore && !isLeagueMatch && penaltiesBtn) {
+      let needsPenalties = false;
+      if (homeScore === awayScore && !isLeagueMatch) {
+        needsPenalties = true;
+
+        if (isCupMatch) {
+          const phaseIdx = leagueData.cup.currentPhaseIndex;
+          const isFinal = phaseIdx === 8;
+          const isIda = phaseIdx % 2 === 0 && !isFinal;
+          const isVolta = phaseIdx % 2 === 1 && !isFinal;
+
+          if (isIda) {
+            needsPenalties = false;
+          } else if (isVolta) {
+            const idaMatch = leagueData.cup.phases[phaseIdx - 1].find(
+              (m) =>
+                (m.home === cupMatch.home && m.away === cupMatch.away) ||
+                (m.home === cupMatch.away && m.away === cupMatch.home),
+            );
+            if (idaMatch) {
+              const prevHomeGoals = isHomeInCup
+                ? idaMatch.awayScore
+                : idaMatch.homeScore;
+              const prevAwayGoals = isHomeInCup
+                ? idaMatch.homeScore
+                : idaMatch.awayScore;
+              if (homeScore + prevHomeGoals !== awayScore + prevAwayGoals) {
+                needsPenalties = false;
+              }
+            }
+          }
+        } else if (isContinentalMatch) {
+          const phaseIdx = leagueData.continentalCup.currentPhaseIndex;
+          if (phaseIdx < 3) {
+            needsPenalties = false;
+          } else {
+            const knockoutIdx = phaseIdx - 3;
+            const isFinal = phaseIdx === 9;
+            const isIda = knockoutIdx % 2 === 0 && !isFinal;
+            const isVolta = knockoutIdx % 2 === 1 && !isFinal;
+
+            if (isIda) {
+              needsPenalties = false;
+            } else if (isVolta) {
+              const idaMatch = leagueData.continentalCup.phases[
+                knockoutIdx - 1
+              ].find(
+                (m) =>
+                  (m.home === continentalMatch.home &&
+                    m.away === continentalMatch.away) ||
+                  (m.home === continentalMatch.away &&
+                    m.away === continentalMatch.home),
+              );
+              if (idaMatch) {
+                const prevHomeGoals = isHomeInContinental
+                  ? idaMatch.awayScore
+                  : idaMatch.homeScore;
+                const prevAwayGoals = isHomeInContinental
+                  ? idaMatch.homeScore
+                  : idaMatch.awayScore;
+                if (homeScore + prevHomeGoals !== awayScore + prevAwayGoals) {
+                  needsPenalties = false;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      if (needsPenalties && penaltiesBtn) {
         penaltiesBtn.style.display = "block";
         pauseSimBtn.style.display = "none";
 
@@ -1102,7 +1255,7 @@ export async function openMatchSimulation() {
           awaySaves++;
           playSound(soundMiss);
           const awayKeeper = awayActivePlayers.find(
-            (p) => p.aptitude?.[0] === "GL",
+            (p) => p.aptitude?.[0] === "GL" || p.aptitude?.[0] === "GOL",
           ) || { name: "o goleiro adversário" };
           addLog(getOppSavePhrase(jogador.name, awayKeeper.name), "log-chance");
           if (Math.random() < 0.6) {
@@ -1119,7 +1272,7 @@ export async function openMatchSimulation() {
               homeShots++;
               homeShotsOnTarget++;
               const fieldPlayers = onPitch.filter(
-                (p) => p.aptitude?.[0] !== "GL",
+                (p) => p.aptitude?.[0] !== "GL" && p.aptitude?.[0] !== "GOL",
               );
               const headerPlayer =
                 fieldPlayers.length > 0
@@ -1168,7 +1321,9 @@ export async function openMatchSimulation() {
       const onPitchHome = homeActivePlayers.filter((p) => !p.isExpelled);
       const onPitchAway = awayActivePlayers.filter((p) => !p.isExpelled);
 
-      const goleiros = onPitchHome.filter((p) => p.aptitude?.[0] === "GL");
+      const goleiros = onPitchHome.filter(
+        (p) => p.aptitude?.[0] === "GL" || p.aptitude?.[0] === "GOL",
+      );
       const goleiro =
         goleiros.length > 0
           ? goleiros[0]
@@ -1279,7 +1434,7 @@ export async function openMatchSimulation() {
             awayShots++;
             awayShotsOnTarget++;
             const fieldPlayers = awayActivePlayers.filter(
-              (p) => p.aptitude?.[0] !== "GL",
+              (p) => p.aptitude?.[0] !== "GL" && p.aptitude?.[0] !== "GOL",
             );
             const headerPlayer =
               fieldPlayers.length > 0

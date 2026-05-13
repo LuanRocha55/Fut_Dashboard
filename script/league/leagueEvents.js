@@ -1,17 +1,47 @@
-import { Storage } from "../storage.js";
-import { renderLeagueData, renderContinental, renderCup, renderFixtures, renderSeasonHistory, renderLeagueScorers, updateLeagueState, selectedMonth, selectedRoundIndex } from "../leagueRenderer.js";
-import { LEAGUES } from "../leagueConfig.js";
-import { showCustomModal } from "../modal.js";
+import { Storage } from "../core/appStorage.js";
+import {
+  renderLeagueData,
+  renderContinental,
+  renderCup,
+  renderFixtures,
+  renderSeasonHistory,
+  renderLeagueScorers,
+  updateLeagueState,
+  selectedMonth,
+  selectedRoundIndex,
+} from "./leagueRenderer.js";
+import { LEAGUES } from "./leagueConfig.js";
+import { showCustomModal } from "../ui/uiModal.js";
 
 // Add exports for inter-module calls
-import { simulateCurrentRound, autoInitLeague, createNewLeague, generateFixtures, getAutoLeagueType, formatMatchDate, getMatchDate } from "./core.js";
-
+import {
+  simulateCurrentRound,
+  autoInitLeague,
+  createNewLeague,
+  generateFixtures,
+  getAutoLeagueType,
+  formatMatchDate,
+  getMatchDate,
+} from "./leagueCore.js";
 
 export const updateMonthUI = async () => {
   const data = await Storage.getLeagueData();
   const offset = (data && data.startMonth) || 0;
   const monthDisplay = document.getElementById("currentMonthDisplay");
-  const monthNames = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+  const monthNames = [
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julho",
+    "Agosto",
+    "Setembro",
+    "Outubro",
+    "Novembro",
+    "Dezembro",
+  ];
 
   if (monthDisplay) {
     const actualMonthIdx = (offset + selectedMonth) % 12;
@@ -32,7 +62,9 @@ export function initLeagueEvents() {
 
   const contentStandings = document.getElementById("leagueStandingsContent");
   const contentCup = document.getElementById("leagueCupContent");
-  const contentContinental = document.getElementById("leagueContinentalContent");
+  const contentContinental = document.getElementById(
+    "leagueContinentalContent",
+  );
   const contentFixtures = document.getElementById("leagueFixturesContent");
   const contentStats = document.getElementById("leagueStatsContent");
   const contentHistory = document.getElementById("leagueHistoryContent");
@@ -42,17 +74,28 @@ export function initLeagueEvents() {
   if (!tabTournament) return;
 
   const clearTabs = () => {
-    [tabTournament, tabFixtures, tabStats, tabHistory].forEach(t => t.className = "btn-secondary");
-    [contentStandings, contentCup, contentContinental, contentFixtures, contentStats, contentHistory].forEach(c => c.style.display = "none");
+    [tabTournament, tabFixtures, tabStats, tabHistory].forEach(
+      (t) => (t.className = "btn-secondary"),
+    );
+    [
+      contentStandings,
+      contentCup,
+      contentContinental,
+      contentFixtures,
+      contentStats,
+      contentHistory,
+    ].forEach((c) => (c.style.display = "none"));
     tournamentSubNav.style.display = "none";
   };
 
   const clearSubTabs = () => {
-    [subTabLeague, subTabCup, subTabContinental].forEach(t => {
+    [subTabLeague, subTabCup, subTabContinental].forEach((t) => {
       t.style.color = "#666";
       t.style.background = "transparent";
     });
-    [contentStandings, contentCup, contentContinental].forEach(c => c.style.display = "none");
+    [contentStandings, contentCup, contentContinental].forEach(
+      (c) => (c.style.display = "none"),
+    );
   };
 
   const activateSubTab = (tab, content, renderFn) => {
@@ -70,9 +113,11 @@ export function initLeagueEvents() {
     activateSubTab(subTabLeague, contentStandings, renderLeagueData);
   };
 
-  subTabLeague.onclick = () => activateSubTab(subTabLeague, contentStandings, renderLeagueData);
+  subTabLeague.onclick = () =>
+    activateSubTab(subTabLeague, contentStandings, renderLeagueData);
   subTabCup.onclick = () => activateSubTab(subTabCup, contentCup, renderCup);
-  subTabContinental.onclick = () => activateSubTab(subTabContinental, contentContinental, renderContinental);
+  subTabContinental.onclick = () =>
+    activateSubTab(subTabContinental, contentContinental, renderContinental);
 
   tabFixtures.onclick = () => {
     clearTabs();
@@ -113,7 +158,6 @@ export function initLeagueEvents() {
       renderFixtures();
     });
   }
-
 
   document.getElementById("prevMonthBtn")?.addEventListener("click", () => {
     let newMonth = selectedMonth - 1;
@@ -173,7 +217,8 @@ export function initLeagueEvents() {
       );
     }
     if (proceed) {
-      const genderChoice = await showCustomModal(`
+      const genderChoice = await showCustomModal(
+        `
         <div style="text-align:center;">
           <h3 style="color:#fff;margin-bottom:20px;">Escolha a Modalidade</h3>
           <div style="display:flex;gap:15px;justify-content:center;">
@@ -181,7 +226,9 @@ export function initLeagueEvents() {
             <button id="modalSelectFemale" class="btn-primary" style="padding:15px 30px;background:#ff0066;border-color:#ff0066;">FEMININO</button>
           </div>
         </div>
-      `, "custom");
+      `,
+        "custom",
+      );
 
       if (genderChoice === "male" || genderChoice === "female") {
         resetPlayerStats();
@@ -327,8 +374,10 @@ export function initLeagueEvents() {
       const winners = [];
 
       const getTeamOvr = (id) => {
-        const flat = data.divisions ? data.divisions.flatMap(d => d.table) : [];
-        let t = flat.find(x => x.id === id);
+        const flat = data.divisions
+          ? data.divisions.flatMap((d) => d.table)
+          : [];
+        let t = flat.find((x) => x.id === id);
         if (t) return t.ovr || 75;
         return 75; // Genérico estrangeiro
       };
@@ -341,30 +390,52 @@ export function initLeagueEvents() {
           let aScore = Math.floor(Math.random() * 3);
           if (hOvr > aOvr + 5) hScore += 1;
           if (aOvr > hOvr + 5) aScore += 1;
-          let hPen = null, aPen = null;
+          let hPen = null,
+            aPen = null;
           if (hScore === aScore) {
             hPen = Math.floor(Math.random() * 4) + 2;
             aPen = Math.floor(Math.random() * 4) + 2;
             if (hPen === aPen) hPen++;
           }
-          m.homeScore = hScore; m.awayScore = aScore;
-          m.homePen = hPen; m.awayPen = aPen; m.played = true;
+          m.homeScore = hScore;
+          m.awayScore = aScore;
+          m.homePen = hPen;
+          m.awayPen = aPen;
+          m.played = true;
         }
-        const homeWon = m.homeScore > m.awayScore || (m.homeScore === m.awayScore && m.homePen > m.awayPen);
+        const homeWon =
+          m.homeScore > m.awayScore ||
+          (m.homeScore === m.awayScore && m.homePen > m.awayPen);
         winners.push(homeWon ? m.home : m.away);
       });
 
       if (phaseIdx < 3) {
         const nextPhase = [];
         for (let i = 0; i < winners.length; i += 2)
-          nextPhase.push({ home: winners[i], away: winners[i + 1], played: false, homeScore: null, awayScore: null, homePen: null, awayPen: null });
+          nextPhase.push({
+            home: winners[i],
+            away: winners[i + 1],
+            played: false,
+            homeScore: null,
+            awayScore: null,
+            homePen: null,
+            awayPen: null,
+          });
         data.continentalCup.phases.push(nextPhase);
         data.continentalCup.currentPhaseIndex++;
-        showCustomModal("Fase Continental simulada! Veja quem passou para a próxima fase.", "alert", "btn-primary");
+        showCustomModal(
+          "Fase Continental simulada! Veja quem passou para a próxima fase.",
+          "alert",
+          "btn-primary",
+        );
       } else {
         data.continentalCup.finished = true;
         data.continentalCup.winner = winners[0];
-        showCustomModal("A GRANDE FINAL FOI DECIDIDA! O Campeão Continental foi coroado!", "alert", "btn-warning");
+        showCustomModal(
+          "A GRANDE FINAL FOI DECIDIDA! O Campeão Continental foi coroado!",
+          "alert",
+          "btn-warning",
+        );
       }
       await Storage.saveLeagueData(data);
       renderContinental();
@@ -388,7 +459,9 @@ export function initLeagueEvents() {
         if (currentData) {
           let history = (await Storage.getSeasonHistory()) || [];
 
-          let topDiv = currentData.divisions ? currentData.divisions[0] : currentData;
+          let topDiv = currentData.divisions
+            ? currentData.divisions[0]
+            : currentData;
           topDiv.table.sort((a, b) => {
             if (b.pts !== a.pts) return b.pts - a.pts;
             if (b.w !== a.w) return b.w - a.w;
@@ -400,12 +473,12 @@ export function initLeagueEvents() {
 
           // GESTÃO DE QUALIFICAÇÃO (Mérito Esportivo)
           // 1. Top 4 da Liga
-          let qualifiedIds = topDiv.table.slice(0, 4).map(t => t.id);
+          let qualifiedIds = topDiv.table.slice(0, 4).map((t) => t.id);
 
           // 2. Campeão da Copa (se não estiver no top 4)
           if (currentData.cup && currentData.cup.winner) {
             const cWinnerId = currentData.cup.winner;
-            const cWinnerObj = topDiv.table.find(t => t.id === cWinnerId);
+            const cWinnerObj = topDiv.table.find((t) => t.id === cWinnerId);
             if (cWinnerObj) cupWinnerName = cWinnerObj.name;
             if (!qualifiedIds.includes(cWinnerId)) qualifiedIds.push(cWinnerId);
           }
@@ -413,7 +486,8 @@ export function initLeagueEvents() {
           // 3. Campeão Continental (se não estiver qualificado)
           if (currentData.continentalCup && currentData.continentalCup.winner) {
             const contWinnerId = currentData.continentalCup.winner;
-            if (!qualifiedIds.includes(contWinnerId)) qualifiedIds.push(contWinnerId);
+            if (!qualifiedIds.includes(contWinnerId))
+              qualifiedIds.push(contWinnerId);
           }
 
           if (currentData.scorers) {
@@ -436,7 +510,12 @@ export function initLeagueEvents() {
           const leagueType = await getAutoLeagueType();
 
           // Passamos os qualificados para a próxima geração
-          await createNewLeague(leagueType, currentData.divisions, "male", qualifiedIds);
+          await createNewLeague(
+            leagueType,
+            currentData.divisions,
+            "male",
+            qualifiedIds,
+          );
 
           let reportHTML = `
             <div style="text-align: center; margin-bottom: 20px;">
@@ -478,4 +557,3 @@ export function initLeagueEvents() {
     };
   }
 }
-

@@ -1,10 +1,9 @@
-import { Storage } from "./storage.js";
-import { showCustomModal } from "./modal.js";
-import { getRatingColor } from "./graphics.js";
-import { applyMatchResults, registerMatchResult, squad } from "./core.js";
-import { renderApp, switchMainView } from "./ui.js";
-import { simulateCurrentRound } from "./league.js";
-import { renderLeagueData } from "./leagueRenderer.js";
+import { Storage } from "../core/appStorage.js";
+import { showCustomModal } from "../ui/uiModal.js";
+import { getRatingColor } from "../ui/uiGraphics.js";
+import { renderApp, switchMainView } from "../ui/uiMain.js";
+import { simulateCurrentRound } from "../league/leagueMain.js";
+import { renderLeagueData } from "../league/leagueRenderer.js";
 
 export const handleMatchPostGame = async ({
   homeScore,
@@ -34,18 +33,17 @@ export const handleMatchPostGame = async ({
   isHomeInContinental,
   isContinentalMatch,
   awayActivePlayers,
-  closeSimulationView
+  closeSimulationView,
+  squad,
+  applyMatchResults,
+  registerMatchResult,
 }) => {
   let homePlayerRatings = {};
   const isWin = homeScore > awayScore;
   const isDraw = homeScore === awayScore;
 
-  let homePenScore = window.simPenalties
-    ? window.simPenalties.home
-    : null;
-  let awayPenScore = window.simPenalties
-    ? window.simPenalties.away
-    : null;
+  let homePenScore = window.simPenalties ? window.simPenalties.home : null;
+  let awayPenScore = window.simPenalties ? window.simPenalties.away : null;
   window.simPenalties = null;
 
   let bestPlayer = { name: "Nenhum", rating: 0 };
@@ -109,19 +107,16 @@ export const handleMatchPostGame = async ({
 
   let scoreDisplay = `${homeScore} x ${awayScore}`;
   if (homePenScore !== null && awayPenScore !== null) {
-      scoreDisplay = `${homeScore} (${homePenScore}) - (${awayPenScore}) ${awayScore}`;
+    scoreDisplay = `${homeScore} (${homePenScore}) - (${awayPenScore}) ${awayScore}`;
   }
 
   let scorersHTML =
     '<div style="display: flex; justify-content: space-around; font-size: 0.8rem; margin-bottom: 15px; text-align: left; background: #1a1a1a; padding: 10px; border-radius: 8px;">';
-  scorersHTML +=
-    '<div><strong style="color: #fff;">Gols (Casa):</strong><br>';
+  scorersHTML += '<div><strong style="color: #fff;">Gols (Casa):</strong><br>';
   scorersHTML +=
     Object.keys(homeScorersCount).length > 0
       ? Object.entries(homeScorersCount)
-          .map(
-            ([name, count]) => `⚽ ${name} ${count > 1 ? `(${count})` : ""}`
-          )
+          .map(([name, count]) => `⚽ ${name} ${count > 1 ? `(${count})` : ""}`)
           .join("<br>")
       : "Nenhum";
   scorersHTML +=
@@ -129,21 +124,16 @@ export const handleMatchPostGame = async ({
   scorersHTML +=
     Object.keys(homeAssistsCount).length > 0
       ? Object.entries(homeAssistsCount)
-          .map(
-            ([name, count]) => `👟 ${name} ${count > 1 ? `(${count})` : ""}`
-          )
+          .map(([name, count]) => `👟 ${name} ${count > 1 ? `(${count})` : ""}`)
           .join("<br>")
       : "Nenhuma";
   scorersHTML += "</div>";
 
-  scorersHTML +=
-    '<div><strong style="color: #fff;">Gols (Fora):</strong><br>';
+  scorersHTML += '<div><strong style="color: #fff;">Gols (Fora):</strong><br>';
   scorersHTML +=
     Object.keys(awayScorersCount).length > 0
       ? Object.entries(awayScorersCount)
-          .map(
-            ([name, count]) => `⚽ ${name} ${count > 1 ? `(${count})` : ""}`
-          )
+          .map(([name, count]) => `⚽ ${name} ${count > 1 ? `(${count})` : ""}`)
           .join("<br>")
       : "Nenhum";
   scorersHTML +=
@@ -151,9 +141,7 @@ export const handleMatchPostGame = async ({
   scorersHTML +=
     Object.keys(awayAssistsCount).length > 0
       ? Object.entries(awayAssistsCount)
-          .map(
-            ([name, count]) => `👟 ${name} ${count > 1 ? `(${count})` : ""}`
-          )
+          .map(([name, count]) => `👟 ${name} ${count > 1 ? `(${count})` : ""}`)
           .join("<br>")
       : "Nenhuma";
   scorersHTML += "</div></div>";
@@ -200,7 +188,7 @@ export const handleMatchPostGame = async ({
     homeAssistsIds,
     daysPassed,
     homeTacklesIds,
-    compType
+    compType,
   );
   registerMatchResult(
     matchInfo.home || "Seu Time",
@@ -221,12 +209,12 @@ export const handleMatchPostGame = async ({
 
     const getTeam = (id) => {
       if (leagueData.divisions) {
-          for (let d of leagueData.divisions) {
-              let t = d.table.find(x => x.id === id);
-              if (t) return t;
-          }
+        for (let d of leagueData.divisions) {
+          let t = d.table.find((x) => x.id === id);
+          if (t) return t;
+        }
       }
-      return leagueData.table.find(x => x.id === id);
+      return leagueData.table.find((x) => x.id === id);
     };
 
     const homeTeam = getTeam(leagueMatch.home);
@@ -267,14 +255,8 @@ export const handleMatchPostGame = async ({
         leagueData.scorers[key].goals++;
       });
     };
-    updateScorers(
-      isHomeInLeague ? homeScorers : awayScorers,
-      homeTeam.name,
-    );
-    updateScorers(
-      isHomeInLeague ? awayScorers : homeScorers,
-      awayTeam.name,
-    );
+    updateScorers(isHomeInLeague ? homeScorers : awayScorers, homeTeam.name);
+    updateScorers(isHomeInLeague ? awayScorers : homeScorers, awayTeam.name);
 
     if (!leagueData.assists) leagueData.assists = {};
     const updateAssists = (assistsArr, teamName) => {
@@ -289,14 +271,8 @@ export const handleMatchPostGame = async ({
         leagueData.assists[key].assists++;
       });
     };
-    updateAssists(
-      isHomeInLeague ? homeAssists : awayAssists,
-      homeTeam.name,
-    );
-    updateAssists(
-      isHomeInLeague ? awayAssists : homeAssists,
-      awayTeam.name,
-    );
+    updateAssists(isHomeInLeague ? homeAssists : awayAssists, homeTeam.name);
+    updateAssists(isHomeInLeague ? awayAssists : homeAssists, awayTeam.name);
 
     if (!leagueData.ratings) leagueData.ratings = {};
     const updateRatings = (ratingsArr, teamName) => {
@@ -319,10 +295,7 @@ export const handleMatchPostGame = async ({
       r += awayScorers.filter((n) => n === p.name).length * 1.5;
       return {
         name: p.name,
-        rating: Math.max(
-          3.0,
-          Math.min(10.0, r + (Math.random() * 1.5 - 0.75)),
-        ),
+        rating: Math.max(3.0, Math.min(10.0, r + (Math.random() * 1.5 - 0.75))),
       };
     });
     updateRatings(awayPlayersReport, currentOpponent.name);
@@ -339,10 +312,15 @@ export const handleMatchPostGame = async ({
       await simulateCurrentRound(true);
 
       const updatedLeague = await Storage.getLeagueData();
-      const updatedUserDiv = updatedLeague && updatedLeague.divisions ? updatedLeague.divisions.find(d => d.table.some(t => t.isUser)) : updatedLeague;
-      
+      const updatedUserDiv =
+        updatedLeague && updatedLeague.divisions
+          ? updatedLeague.divisions.find((d) => d.table.some((t) => t.isUser))
+          : updatedLeague;
+
       if (
-        updatedLeague && updatedUserDiv && updatedUserDiv.rounds &&
+        updatedLeague &&
+        updatedUserDiv &&
+        updatedUserDiv.rounds &&
         updatedLeague.currentRound <= updatedUserDiv.rounds.length
       ) {
         const playNext = await showCustomModal(
@@ -394,13 +372,157 @@ export const handleMatchPostGame = async ({
     if (simRest) {
       const phaseIdx = leagueData.cup.currentPhaseIndex;
       const matches = leagueData.cup.phases[phaseIdx];
-      const winners = [];
+      const isFinal = phaseIdx === 8;
+      const isVolta = phaseIdx % 2 === 1 && !isFinal;
+      const isIda = phaseIdx % 2 === 0 && !isFinal;
+
+      const getTeamOvr = (id) => {
+        const flat = leagueData.divisions
+          ? leagueData.divisions.flatMap((d) => d.table)
+          : leagueData.table || [];
+        let t = flat.find((x) => x.id === id);
+        return t ? t.ovr || 75 : 75;
+      };
+
       matches.forEach((m) => {
         if (!m.played) {
-          const hOvr =
-            leagueData.table.find((t) => t.id === m.home)?.ovr || 75;
-          const aOvr =
-            leagueData.table.find((t) => t.id === m.away)?.ovr || 75;
+          const hOvr = getTeamOvr(m.home);
+          const aOvr = getTeamOvr(m.away);
+          let hScore = Math.floor(Math.random() * 3);
+          let aScore = Math.floor(Math.random() * 3);
+          if (hOvr > aOvr + 5) hScore += 1;
+          if (aOvr > hOvr + 5) aScore += 1;
+          let hPen = null,
+            aPen = null;
+          
+          if (isFinal) {
+            if (hScore === aScore) {
+              hPen = Math.floor(Math.random() * 4) + 2;
+              aPen = Math.floor(Math.random() * 4) + 2;
+              if (hPen === aPen) hPen++;
+            }
+          } else if (isVolta) {
+            const idaMatch = leagueData.cup.phases[phaseIdx - 1].find(
+              (im) => im.home === m.away && im.away === m.home,
+            );
+            if (idaMatch) {
+              const aggHome = idaMatch.homeScore + aScore;
+              const aggAway = idaMatch.awayScore + hScore;
+              if (aggHome === aggAway) {
+                hPen = Math.floor(Math.random() * 4) + 2;
+                aPen = Math.floor(Math.random() * 4) + 2;
+                if (hPen === aPen) hPen++;
+              }
+            }
+          }
+
+          m.homeScore = hScore;
+          m.awayScore = aScore;
+          m.homePen = hPen;
+          m.awayPen = aPen;
+          m.played = true;
+        }
+      });
+
+      if (isIda) {
+        const voltaPhase = matches.map((m) => ({
+          home: m.away,
+          away: m.home,
+          played: false,
+          homeScore: null,
+          awayScore: null,
+          homePen: null,
+          awayPen: null,
+        }));
+        leagueData.cup.phases.push(voltaPhase);
+        leagueData.cup.currentPhaseIndex++;
+      } else if (isVolta) {
+        const winners = [];
+        matches.forEach((m) => {
+          const idaMatch = leagueData.cup.phases[phaseIdx - 1].find(
+            (im) => im.home === m.away && im.away === m.home,
+          );
+          const aggHome = idaMatch.homeScore + m.awayScore;
+          const aggAway = idaMatch.awayScore + m.homeScore;
+          if (aggAway > aggHome || (aggAway === aggHome && m.homePen > m.awayPen))
+            winners.push(m.home);
+          else winners.push(m.away);
+        });
+
+        if (winners.length > 1) {
+          const nextIda = [];
+          for (let i = 0; i < winners.length; i += 2) {
+            nextIda.push({
+              home: winners[i],
+              away: winners[i + 1],
+              played: false,
+              homeScore: null,
+              awayScore: null,
+              homePen: null,
+              awayPen: null,
+            });
+          }
+          leagueData.cup.phases.push(nextIda);
+          leagueData.cup.currentPhaseIndex++;
+        } else {
+          leagueData.cup.currentPhaseIndex++; // Vai para a Final
+        }
+      } else if (isFinal) {
+        const m = matches[0];
+        leagueData.cup.winner =
+          m.homeScore > m.awayScore || (m.homeScore === m.awayScore && m.homePen > m.awayPen)
+            ? m.home
+            : m.away;
+        leagueData.cup.finished = true;
+      }
+
+      await Storage.saveLeagueData(leagueData);
+
+      closeSimulationView();
+      switchMainView("league");
+      renderLeagueData();
+      showCustomModal("Fase da Copa finalizada!", "alert", "btn-primary");
+      return;
+    }
+  } else if (isContinentalMatch) {
+    continentalMatch.played = true;
+    if (isHomeInContinental) {
+      continentalMatch.homeScore = homeScore;
+      continentalMatch.awayScore = awayScore;
+      if (homeScore === awayScore) {
+        continentalMatch.homePen = homePenScore;
+        continentalMatch.awayPen = awayPenScore;
+      }
+    } else {
+      continentalMatch.homeScore = awayScore;
+      continentalMatch.awayScore = homeScore;
+      if (homeScore === awayScore) {
+        continentalMatch.homePen = awayPenScore;
+        continentalMatch.awayPen = homePenScore;
+      }
+    }
+    await Storage.saveLeagueData(leagueData);
+
+    const simRest = await showCustomModal(
+      "Deseja simular automaticamente as outras partidas desta fase?",
+      "confirm",
+      "btn-primary",
+    );
+    if (simRest) {
+      const phaseIdx = leagueData.continentalCup.currentPhaseIndex;
+      const matches = leagueData.continentalCup.phases[phaseIdx];
+      const winners = [];
+      const getTeamOvr = (id) => {
+        const flat = leagueData.divisions
+          ? leagueData.divisions.flatMap((d) => d.table)
+          : [];
+        let t = flat.find((x) => x.id === id);
+        return t ? t.ovr || 75 : 75;
+      };
+      matches.forEach((m) => {
+        if (!m.played) {
+          const hOvr = getTeamOvr(m.home);
+          const aOvr = getTeamOvr(m.away);
           let hScore = Math.floor(Math.random() * 3);
           let aScore = Math.floor(Math.random() * 3);
           if (hOvr > aOvr + 5) hScore += 1;
@@ -418,12 +540,13 @@ export const handleMatchPostGame = async ({
           m.awayPen = aPen;
           m.played = true;
         }
-        const homeWon =
+        winners.push(
           m.homeScore > m.awayScore ||
-          (m.homeScore === m.awayScore && m.homePen > m.awayPen);
-        winners.push(homeWon ? m.home : m.away);
+            (m.homeScore === m.awayScore && m.homePen > m.awayPen)
+            ? m.home
+            : m.away,
+        );
       });
-
       if (phaseIdx < 3) {
         const nextPhase = [];
         for (let i = 0; i < winners.length; i += 2)
@@ -436,62 +559,16 @@ export const handleMatchPostGame = async ({
             homePen: null,
             awayPen: null,
           });
-        leagueData.cup.phases.push(nextPhase);
-        leagueData.cup.currentPhaseIndex++;
+        leagueData.continentalCup.phases.push(nextPhase);
+        leagueData.continentalCup.currentPhaseIndex++;
       } else {
-        leagueData.cup.finished = true;
-        leagueData.cup.winner = winners[0];
+        leagueData.continentalCup.finished = true;
+        leagueData.continentalCup.winner = winners[0];
       }
       await Storage.saveLeagueData(leagueData);
-
       closeSimulationView();
       switchMainView("league");
       renderLeagueData();
-      showCustomModal(
-        "Fase da Copa finalizada!",
-        "alert",
-        "btn-primary",
-      );
-      return;
-    }
-  } else if (isContinentalMatch) {
-    continentalMatch.played = true;
-    if (isHomeInContinental) {
-      continentalMatch.homeScore = homeScore; continentalMatch.awayScore = awayScore;
-      if (homeScore === awayScore) { continentalMatch.homePen = homePenScore; continentalMatch.awayPen = awayPenScore; }
-    } else {
-      continentalMatch.homeScore = awayScore; continentalMatch.awayScore = homeScore;
-      if (homeScore === awayScore) { continentalMatch.homePen = awayPenScore; continentalMatch.awayPen = homePenScore; }
-    }
-    await Storage.saveLeagueData(leagueData);
-
-    const simRest = await showCustomModal("Deseja simular automaticamente as outras partidas desta fase?", "confirm", "btn-primary");
-    if (simRest) {
-      const phaseIdx = leagueData.continentalCup.currentPhaseIndex;
-      const matches = leagueData.continentalCup.phases[phaseIdx];
-      const winners = [];
-      const getTeamOvr = (id) => {
-          const flat = leagueData.divisions ? leagueData.divisions.flatMap(d => d.table) : [];
-          let t = flat.find(x => x.id === id); return t ? t.ovr || 75 : 75;
-      };
-      matches.forEach((m) => {
-        if (!m.played) {
-          const hOvr = getTeamOvr(m.home); const aOvr = getTeamOvr(m.away);
-          let hScore = Math.floor(Math.random() * 3); let aScore = Math.floor(Math.random() * 3);
-          if (hOvr > aOvr + 5) hScore += 1; if (aOvr > hOvr + 5) aScore += 1;
-          let hPen = null, aPen = null;
-          if (hScore === aScore) { hPen = Math.floor(Math.random() * 4) + 2; aPen = Math.floor(Math.random() * 4) + 2; if (hPen === aPen) hPen++; }
-          m.homeScore = hScore; m.awayScore = aScore; m.homePen = hPen; m.awayPen = aPen; m.played = true;
-        }
-        winners.push((m.homeScore > m.awayScore || (m.homeScore === m.awayScore && m.homePen > m.awayPen)) ? m.home : m.away);
-      });
-      if (phaseIdx < 3) {
-        const nextPhase = [];
-        for (let i = 0; i < winners.length; i += 2) nextPhase.push({ home: winners[i], away: winners[i + 1], played: false, homeScore: null, awayScore: null, homePen: null, awayPen: null });
-        leagueData.continentalCup.phases.push(nextPhase); leagueData.continentalCup.currentPhaseIndex++;
-      } else { leagueData.continentalCup.finished = true; leagueData.continentalCup.winner = winners[0]; }
-      await Storage.saveLeagueData(leagueData);
-      closeSimulationView(); switchMainView("league"); renderLeagueData();
       showCustomModal("Fase Continental finalizada!", "alert", "btn-primary");
       return;
     }

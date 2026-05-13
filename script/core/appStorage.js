@@ -1,8 +1,26 @@
 // Tenta obter as funções do idbKeyval global
 const idb = window.idbKeyval || {};
-const get = async (...args) => { try { return idb.get ? await idb.get(...args) : null; } catch(e) { return null; } };
-const set = async (...args) => { try { if (idb.set) await idb.set(...args); } catch(e) { console.warn('Storage set falhou:', e); } };
-const del = async (...args) => { try { if (idb.del) await idb.del(...args); } catch(e) { console.warn('Storage del falhou:', e); } };
+const get = async (...args) => {
+  try {
+    return idb.get ? await idb.get(...args) : null;
+  } catch (e) {
+    return null;
+  }
+};
+const set = async (...args) => {
+  try {
+    if (idb.set) await idb.set(...args);
+  } catch (e) {
+    console.warn("Storage set falhou:", e);
+  }
+};
+const del = async (...args) => {
+  try {
+    if (idb.del) await idb.del(...args);
+  } catch (e) {
+    console.warn("Storage del falhou:", e);
+  }
+};
 
 let _activeSlot = null;
 
@@ -35,7 +53,7 @@ export const Storage = {
       teamFile: teamFile || "desconhecido",
       teamName: teamName || "Sem Time",
       date: new Date().toLocaleDateString("pt-BR"),
-      lastPlayed: Date.now()
+      lastPlayed: Date.now(),
     };
     slots.push(newSlot);
     await this.saveSlotsList(slots);
@@ -45,16 +63,25 @@ export const Storage = {
 
   async deleteSlot(id) {
     const slots = await this.getSlots();
-    const filtered = slots.filter(s => s.id !== id);
+    const filtered = slots.filter((s) => s.id !== id);
     await this.saveSlotsList(filtered);
-    
+
     // Deletar todos os dados do slot
-    const keys = ["squad_data", "futTactics", "matchHistory", "currentTeamFile", "currentFormation", "leagueData", "seasonHistory", "coachInfo"];
+    const keys = [
+      "squad_data",
+      "futTactics",
+      "matchHistory",
+      "currentTeamFile",
+      "currentFormation",
+      "leagueData",
+      "seasonHistory",
+      "coachInfo",
+    ];
     for (const key of keys) {
       const fullKey = id === "default" ? key : `${id}_${key}`;
       await del(fullKey);
     }
-    
+
     if (_activeSlot === id) {
       _activeSlot = "default";
       await set("activeSaveSlot", "default");
@@ -127,15 +154,18 @@ export const Storage = {
   async saveSeasonHistory(history) {
     await set(await this.k("seasonHistory"), history);
   },
-  
+
   async getCoachInfo() {
     return (await get(await this.k("coachInfo"))) || null;
   },
   async saveCoachInfo(info) {
-    if (info === null) { await del(await this.k("coachInfo")); }
-    else { await set(await this.k("coachInfo"), info); }
+    if (info === null) {
+      await del(await this.k("coachInfo"));
+    } else {
+      await set(await this.k("coachInfo"), info);
+    }
   },
   async removeCoachInfo() {
     await del(await this.k("coachInfo"));
-  }
+  },
 };

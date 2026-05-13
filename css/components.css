@@ -88,11 +88,25 @@
   line-height: 1;
 }
 
-.form-up { color: #00ff88; transform: rotate(-90deg); }
-.form-good { color: #8bc34a; transform: rotate(-45deg); }
-.form-normal { color: #ffd000; }
-.form-poor { color: #ff8c00; transform: rotate(45deg); }
-.form-down { color: #ff4d4d; transform: rotate(90deg); }
+.form-up {
+  color: #00ff88;
+  transform: rotate(-90deg);
+}
+.form-good {
+  color: #8bc34a;
+  transform: rotate(-45deg);
+}
+.form-normal {
+  color: #ffd000;
+}
+.form-poor {
+  color: #ff8c00;
+  transform: rotate(45deg);
+}
+.form-down {
+  color: #ff4d4d;
+  transform: rotate(90deg);
+}
 
 .p-form {
   position: absolute;
@@ -121,8 +135,14 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.status-yellow { background: #ffd000; border: 1px solid #b39200; }
-.status-red { background: #ff4d4d; border: 1px solid #cc0000; }
+.status-yellow {
+  background: #ffd000;
+  border: 1px solid #b39200;
+}
+.status-red {
+  background: #ff4d4d;
+  border: 1px solid #cc0000;
+}
 .status-injury {
   background: #fff;
   color: #ff4d4d;
@@ -141,8 +161,10 @@
 /* ========================================================= */
 .modal-overlay {
   position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(4px);
   display: flex;
@@ -154,7 +176,10 @@
   transition: opacity 0.3s ease;
 }
 
-.modal-overlay.show { opacity: 1; pointer-events: auto; }
+.modal-overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
 
 .modal-content {
   background: #111;
@@ -169,7 +194,9 @@
   transition: transform 0.3s ease;
 }
 
-.modal-overlay.show .modal-content { transform: translateY(0); }
+.modal-overlay.show .modal-content {
+  transform: translateY(0);
+}
 
 .modal-content p {
   font-size: 1rem;
@@ -178,8 +205,15 @@
   font-weight: 600;
 }
 
-.modal-buttons { display: flex; gap: 15px; justify-content: center; }
-.modal-buttons button { margin-top: 0; flex: 1; }
+.modal-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+.modal-buttons button {
+  margin-top: 0;
+  flex: 1;
+}
 
 /* ========================================================= */
 /* Táticas e Setup                                           */
@@ -198,7 +232,10 @@
   transition: 0.3s;
 }
 
-.tactic-btn:hover { background: rgba(255, 255, 255, 0.1); color: #fff; }
+.tactic-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
 .tactic-btn.active {
   background: var(--accent);
   color: #000;
@@ -206,7 +243,9 @@
   box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
 }
 
-.tactic-btn.active i { color: #000; }
+.tactic-btn.active i {
+  color: #000;
+}
 
 .playstyle-option input:checked + .playstyle-box {
   background: var(--accent) !important;
@@ -216,7 +255,11 @@
   box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
 }
 
-select, option { background-color: #1a1a1a !important; color: #ffffff !important; }
+select,
+option {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+}
 
 /* ========================================================= */
 /* Galeria Visual e Menu Principal                           */
@@ -230,7 +273,9 @@ select, option { background-color: #1a1a1a !important; color: #ffffff !important
   transform: translateY(-10px) scale(1.05);
   background: rgba(255, 255, 255, 0.08) !important;
   border-color: var(--accent) !important;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 255, 136, 0.1);
+  box-shadow:
+    0 15px 30px rgba(0, 0, 0, 0.4),
+    0 0 20px rgba(0, 255, 136, 0.1);
 }
 
 #mainMenuScreen button {
@@ -243,10 +288,13 @@ select, option { background-color: #1a1a1a !important; color: #ffffff !important
 
 #mainMenuScreen button:hover {
   transform: translateX(10px);
-  box-shadow: -5px 5px 20px rgba(0,0,0,0.3);
+  box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.3);
 }
 
-#mainMenuScreen button i { width: 1.2rem; height: 1.2rem; }
+#mainMenuScreen button i {
+  width: 1.2rem;
+  height: 1.2rem;
+}
 
 .badge-btn {
   cursor: pointer;
@@ -258,16 +306,31 @@ select, option { background-color: #1a1a1a !important; color: #ffffff !important
   text-transform: uppercase;
 }
 
-.badge-btn-dark { background: #333; color: white; }
-.badge-btn-dark:hover { background: #555; }
-.badge-btn-danger { background: transparent; color: var(--danger); border: 1px solid var(--danger); }
-.badge-btn-danger:hover { background: var(--danger); color: #000; }
+.badge-btn-dark {
+  background: #333;
+  color: white;
+}
+.badge-btn-dark:hover {
+  background: #555;
+}
+.badge-btn-danger {
+  background: transparent;
+  color: var(--danger);
+  border: 1px solid var(--danger);
+}
+.badge-btn-danger:hover {
+  background: var(--danger);
+  color: #000;
+}
 
 .player-silhouette {
-  width: 45px; height: 45px;
+  width: 45px;
+  height: 45px;
   margin: 10px 0;
-  fill: #444; background: #1a1a1a;
-  border-radius: 50%; border: 1px solid #333;
+  fill: #444;
+  background: #1a1a1a;
+  border-radius: 50%;
+  border: 1px solid #333;
 }
 /* Simulation View Specifics */
 .stat-mini-box {
@@ -305,22 +368,10 @@ select, option { background-color: #1a1a1a !important; color: #ffffff !important
 /* Mini-Pitch Simulation Styles */
 .mini-player-node {
   position: absolute;
-  width: 32px;
-  height: 32px;
-  background: var(--accent);
-  color: #000;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.6rem;
-  font-weight: 900;
-  cursor: pointer;
-  border: 2px solid #fff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
   transition: all 0.2s ease;
   z-index: 5;
   transform: translate(-50%, -50%);
+  /* As dimensões e cores reais agora são injetadas dinamicamente via JS */
 }
 
 .mini-player-node:hover {
@@ -339,7 +390,7 @@ select, option { background-color: #1a1a1a !important; color: #ffffff !important
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(0,0,0,0.8);
+  background: rgba(0, 0, 0, 0.8);
   color: #fff;
   padding: 1px 4px;
   border-radius: 3px;
@@ -350,14 +401,14 @@ select, option { background-color: #1a1a1a !important; color: #ffffff !important
 
 /* Tactic Buttons Styling */
 .tactic-btn.active {
-    background: var(--accent) !important;
-    color: #000 !important;
-    border-color: var(--accent) !important;
-    font-weight: bold;
-    box-shadow: 0 0 8px rgba(0, 255, 136, 0.4);
+  background: var(--accent) !important;
+  color: #000 !important;
+  border-color: var(--accent) !important;
+  font-weight: bold;
+  box-shadow: 0 0 8px rgba(0, 255, 136, 0.4);
 }
 
 .tactic-btn:hover:not(.active) {
-    border-color: #666 !important;
-    color: #fff !important;
+  border-color: #666 !important;
+  color: #fff !important;
 }

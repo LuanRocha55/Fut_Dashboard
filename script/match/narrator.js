@@ -57,24 +57,11 @@ const awayGoalWithAdvantagePhrases = [
   "A pressão de ter um a menos pesou... {oppAttacker} bota pra dentro. É gol do {awayTeam}.",
 ];
 
-const tacklePhrases = [
-  "🛡️ DESARME PRECISO! {defender} dá o bote na hora certa e rouba a bola de {attacker}!",
-  "🛡️ PAREDE INTRANSPONÍVEL! {defender} não cai na finta de {attacker} e recupera a posse.",
-  "🛡️ CORTE PROVIDENCIAL! {attacker} ia saindo de cara pro gol, mas {defender} aparece de carrinho rasgando tudo!",
-  "🛡️ ROUBADA DE BOLA! {defender} antecipa o passe e sai jogando com estilo.",
-];
-
 const oppSavePhrases = [
   "DEFENDEU {goleiro}! {player} finaliza bem, mas o paredão adversário faz grande defesa!",
   "MILAGRE DE {goleiro}! {player} tinha o gol aberto, mas o arqueiro operou um milagre!",
   "ESPALMA {goleiro}! Chute forte de {player} e a bola vai pra escanteio.",
   "GIGANTE {goleiro}! O camisa 1 sai fechando o ângulo e impede o gol de {player}!",
-];
-
-const foulPhrases = [
-  "🚩 FALTA! {player} chega atrasado e derruba {opponent}. O clima esquenta!",
-  "🚩 FALTA DURA! {player} entra com força excessiva e o juizão já está de olho.",
-  "🚩 INFRAÇÃO! {player} para o contra-ataque com uma falta tática.",
 ];
 
 export const getRandomPhrase = (arr, vars) => {
@@ -86,19 +73,41 @@ export const getRandomPhrase = (arr, vars) => {
 };
 
 export const getHomeGoalPhrase = (playerName, homeReds, awayReds) => {
-  if (homeReds > awayReds) return getRandomPhrase(goalWithDisadvantagePhrases, { player: playerName });
-  if (homeReds < awayReds) return getRandomPhrase(goalWithAdvantagePhrases, { player: playerName });
+  if (homeReds > awayReds)
+    return getRandomPhrase(goalWithDisadvantagePhrases, { player: playerName });
+  if (homeReds < awayReds)
+    return getRandomPhrase(goalWithAdvantagePhrases, { player: playerName });
   return getRandomPhrase(goalPhrases, { player: playerName });
 };
 
-export const getAwayGoalPhrase = (awayTeamName, oppAttackerName, awayReds, homeReds) => {
-  if (awayReds > homeReds) return getRandomPhrase(awayGoalWithDisadvantagePhrases, { awayTeam: awayTeamName, oppAttacker: oppAttackerName });
-  if (awayReds < homeReds) return getRandomPhrase(awayGoalWithAdvantagePhrases, { awayTeam: awayTeamName, oppAttacker: oppAttackerName });
-  return getRandomPhrase(awayGoalPhrases, { awayTeam: awayTeamName, oppAttacker: oppAttackerName });
+export const getAwayGoalPhrase = (
+  awayTeamName,
+  oppAttackerName,
+  awayReds,
+  homeReds,
+) => {
+  if (awayReds > homeReds)
+    return getRandomPhrase(awayGoalWithDisadvantagePhrases, {
+      awayTeam: awayTeamName,
+      oppAttacker: oppAttackerName,
+    });
+  if (awayReds < homeReds)
+    return getRandomPhrase(awayGoalWithAdvantagePhrases, {
+      awayTeam: awayTeamName,
+      oppAttacker: oppAttackerName,
+    });
+  return getRandomPhrase(awayGoalPhrases, {
+    awayTeam: awayTeamName,
+    oppAttacker: oppAttackerName,
+  });
 };
 
-export const getTacklePhrase = (defenderName, attackerName) => getRandomPhrase(tacklePhrases, { defender: defenderName, attacker: attackerName });
-export const getOppSavePhrase = (playerName, goleiroName) => getRandomPhrase(oppSavePhrases, { player: playerName, goleiro: goleiroName });
-export const getMissPhrase = (playerName) => getRandomPhrase(missPhrases, { player: playerName });
-export const getSavePhrase = (goleiroName, oppAttackerName) => getRandomPhrase(savePhrases, { goleiro: goleiroName, oppAttacker: oppAttackerName });
-export const getFoulPhrase = (playerName, opponentName) => getRandomPhrase(foulPhrases, { player: playerName, opponent: opponentName });
+export const getOppSavePhrase = (playerName, goleiroName) =>
+  getRandomPhrase(oppSavePhrases, { player: playerName, goleiro: goleiroName });
+export const getMissPhrase = (playerName) =>
+  getRandomPhrase(missPhrases, { player: playerName });
+export const getSavePhrase = (goleiroName, oppAttackerName) =>
+  getRandomPhrase(savePhrases, {
+    goleiro: goleiroName,
+    oppAttacker: oppAttackerName,
+  });

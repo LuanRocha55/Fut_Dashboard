@@ -149,11 +149,11 @@
 }
 
 .sortable.asc .sort-icon::after {
-  content: '▲';
+  content: "▲";
 }
 
 .sortable.desc .sort-icon::after {
-  content: '▼';
+  content: "▼";
 }
 
 /* Cards de Destaques (Highlights) */
@@ -301,7 +301,9 @@
 
 .sub-list-item .sub-stamina-fill {
   height: 100%;
-  transition: width 0.3s ease, background 0.3s ease;
+  transition:
+    width 0.3s ease,
+    background 0.3s ease;
 }
 
 @keyframes slideIn {

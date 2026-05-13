@@ -19,14 +19,31 @@ export function getCompetitionLogoHTML(name) {
   let icon = "trophy";
   let color = "var(--warning)";
 
-  if (norm.includes("premier")) { icon = "crown"; color = "#3d195b"; }
-  else if (norm.includes("laliga") || norm.includes("liga")) { icon = "award"; color = "#ee2e31"; }
-  else if (norm.includes("bundesliga")) { icon = "shield"; color = "#ef4444"; }
-  else if (norm.includes("serie a")) { icon = "star"; color = "#0ea5e9"; }
-  else if (norm.includes("ligue 1")) { icon = "hexagon"; color = "#facc15"; }
-  else if (norm.includes("champions") || norm.includes("continental")) { icon = "globe"; color = "#003399"; }
-  else if (norm.includes("libertadores")) { icon = "award"; color = "#ffcc00"; }
-  else if (norm.includes("copa") || norm.includes("cup")) { icon = "medal"; color = "var(--accent)"; }
+  if (norm.includes("premier")) {
+    icon = "crown";
+    color = "#3d195b";
+  } else if (norm.includes("laliga") || norm.includes("liga")) {
+    icon = "award";
+    color = "#ee2e31";
+  } else if (norm.includes("bundesliga")) {
+    icon = "shield";
+    color = "#ef4444";
+  } else if (norm.includes("serie a")) {
+    icon = "star";
+    color = "#0ea5e9";
+  } else if (norm.includes("ligue 1")) {
+    icon = "hexagon";
+    color = "#facc15";
+  } else if (norm.includes("champions") || norm.includes("continental")) {
+    icon = "globe";
+    color = "#003399";
+  } else if (norm.includes("libertadores")) {
+    icon = "award";
+    color = "#ffcc00";
+  } else if (norm.includes("copa") || norm.includes("cup")) {
+    icon = "medal";
+    color = "var(--accent)";
+  }
 
   return `<div style="display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; background: ${color}; border-radius: 4px; margin-right: 8px; color: #fff; flex-shrink: 0;">
     <i data-lucide="${icon}" style="width: 14px; height: 14px;"></i>
@@ -35,20 +52,70 @@ export function getCompetitionLogoHTML(name) {
 
 export function getFlag(nation) {
   if (!nation || nation === "--") return "";
-  if (nation === "INT") return `<svg viewBox="0 0 24 24" width="16" height="16" fill="var(--warning)" style="vertical-align: middle; margin-right: 4px;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>`;
+  if (nation === "INT")
+    return `<svg viewBox="0 0 24 24" width="16" height="16" fill="var(--warning)" style="vertical-align: middle; margin-right: 4px;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>`;
 
   const code = (nation || "").toUpperCase();
   const fifaToIso = {
-    "BRA": "br", "ARG": "ar", "GER": "de", "ESP": "es", "FRA": "fr", "ITA": "it",
-    "ENG": "gb-eng", "POR": "pt", "NED": "nl", "BEL": "be", "USA": "us", "MEX": "mx",
-    "COL": "co", "URU": "uy", "CHI": "cl", "PAR": "py", "ECU": "ec", "PER": "pe",
-    "VEN": "ve", "BOL": "bo", "CRO": "hr", "SRB": "rs", "SUI": "ch", "DEN": "dk",
-    "SWE": "se", "NOR": "no", "POL": "pl", "TUR": "tr", "RUS": "ru", "UKR": "ua",
-    "GRE": "gr", "AUT": "at", "CZE": "cz", "HUN": "hu", "ROU": "ro", "BUL": "bg",
-    "SVK": "sk", "FIN": "fi", "IRL": "ie", "SCO": "gb-sct", "WAL": "gb-wls",
-    "NIR": "gb-nir", "JPN": "jp", "KOR": "kr", "CHN": "cn", "AUS": "au", "KSA": "sa",
-    "UAE": "ae", "QAT": "qa", "EGY": "eg", "MAR": "ma", "ALG": "dz", "TUN": "tn",
-    "SEN": "sn", "NGA": "ng", "GHA": "gh", "CIV": "ci", "CMR": "cm", "RSA": "za"
+    BRA: "br",
+    ARG: "ar",
+    GER: "de",
+    ESP: "es",
+    FRA: "fr",
+    ITA: "it",
+    ENG: "gb-eng",
+    POR: "pt",
+    NED: "nl",
+    BEL: "be",
+    USA: "us",
+    MEX: "mx",
+    COL: "co",
+    URU: "uy",
+    CHI: "cl",
+    PAR: "py",
+    ECU: "ec",
+    PER: "pe",
+    VEN: "ve",
+    BOL: "bo",
+    CRO: "hr",
+    SRB: "rs",
+    SUI: "ch",
+    DEN: "dk",
+    SWE: "se",
+    NOR: "no",
+    POL: "pl",
+    TUR: "tr",
+    RUS: "ru",
+    UKR: "ua",
+    GRE: "gr",
+    AUT: "at",
+    CZE: "cz",
+    HUN: "hu",
+    ROU: "ro",
+    BUL: "bg",
+    SVK: "sk",
+    FIN: "fi",
+    IRL: "ie",
+    SCO: "gb-sct",
+    WAL: "gb-wls",
+    NIR: "gb-nir",
+    JPN: "jp",
+    KOR: "kr",
+    CHN: "cn",
+    AUS: "au",
+    KSA: "sa",
+    UAE: "ae",
+    QAT: "qa",
+    EGY: "eg",
+    MAR: "ma",
+    ALG: "dz",
+    TUN: "tn",
+    SEN: "sn",
+    NGA: "ng",
+    GHA: "gh",
+    CIV: "ci",
+    CMR: "cm",
+    RSA: "za",
   };
 
   let lowerCode = fifaToIso[code] || nation.toLowerCase();
@@ -157,23 +224,23 @@ export function drawRadar(canvasId, stats1, stats2 = null, isGK = false) {
   const getVals = (s) =>
     isGK
       ? [
-        s.sal || s.div || s.def || 75,
-        s.man || s.han || s.def || 75,
-        s.rep || s.kic || s.pas || 60,
-        s.ref || s.def || 75,
-        s.vel || s.spd || s.pac || 40,
-        s.pos || s.def || 75,
-        s.sta || s.stm || 50,
-      ].map((v) => v / 100)
+          s.sal || s.div || s.def || 75,
+          s.man || s.han || s.def || 75,
+          s.rep || s.kic || s.pas || 60,
+          s.ref || s.def || 75,
+          s.vel || s.spd || s.pac || 40,
+          s.pos || s.def || 75,
+          s.sta || s.stm || 50,
+        ].map((v) => v / 100)
       : [
-        s.vel || s.pac || s.spd || 50,
-        s.fin || s.sho || s.atk || 50,
-        s.pas || 50,
-        s.dri || s.atk || 50,
-        s.def || 50,
-        s.fis || s.phy || s.str || 50,
-        s.sta || s.stm || 75,
-      ].map((v) => v / 100);
+          s.vel || s.pac || s.spd || 50,
+          s.fin || s.sho || s.atk || 50,
+          s.pas || 50,
+          s.dri || s.atk || 50,
+          s.def || 50,
+          s.fis || s.phy || s.str || 50,
+          s.sta || s.stm || 75,
+        ].map((v) => v / 100);
 
   const drawPolygon = (playerStats, fillColor, strokeColor) => {
     const values = getVals(playerStats);
@@ -205,35 +272,35 @@ export function renderStatsNumbers(stats1, stats2 = null, isGK = false) {
 
   const labels = isGK
     ? [
-      { key: "alc", fallback: "div", name: "alc" },
-      { key: "seg", fallback: "han", name: "seg" },
-      { key: "esp", fallback: "kic", name: "esp" },
-      { key: "ref", fallback: "ref", name: "REF" },
-      { key: "vel", fallback: "spd", name: "VEL" },
-      { key: "pos", fallback: "pos", name: "POS" },
-      { key: "sta", fallback: "stm", name: "FÔL" },
-    ]
+        { key: "alc", fallback: "div", name: "alc" },
+        { key: "seg", fallback: "han", name: "seg" },
+        { key: "esp", fallback: "kic", name: "esp" },
+        { key: "ref", fallback: "ref", name: "REF" },
+        { key: "vel", fallback: "spd", name: "VEL" },
+        { key: "pos", fallback: "pos", name: "POS" },
+        { key: "sta", fallback: "stm", name: "FÔL" },
+      ]
     : [
-      { key: "vel", fallback: "pac", name: "VEL" },
-      { key: "fin", fallback: "sho", name: "FIN" },
-      { key: "pas", fallback: "pas", name: "PAS" },
-      { key: "dri", fallback: "dri", name: "DRI" },
-      { key: "def", fallback: "def", name: "DEF" },
-      { key: "fis", fallback: "phy", name: "FÍS" },
-      { key: "sta", fallback: "stm", name: "FÔL" },
-    ];
+        { key: "vel", fallback: "pac", name: "VEL" },
+        { key: "fin", fallback: "sho", name: "FIN" },
+        { key: "pas", fallback: "pas", name: "PAS" },
+        { key: "dri", fallback: "dri", name: "DRI" },
+        { key: "def", fallback: "def", name: "DEF" },
+        { key: "fis", fallback: "phy", name: "FÍS" },
+        { key: "sta", fallback: "stm", name: "FÔL" },
+      ];
 
   const s1 = stats1 || {};
 
   labels.forEach((l) => {
     let defVal = 50;
     if (isGK) {
-      if (['sal', 'man', 'ref', 'pos'].includes(l.key)) defVal = 75;
-      else if (l.key === 'rep') defVal = 60;
-      else if (l.key === 'vel') defVal = 40;
-      else if (l.key === 'sta') defVal = 50;
+      if (["sal", "man", "ref", "pos"].includes(l.key)) defVal = 75;
+      else if (l.key === "rep") defVal = 60;
+      else if (l.key === "vel") defVal = 40;
+      else if (l.key === "sta") defVal = 50;
     } else {
-      if (l.key === 'sta') defVal = 75;
+      if (l.key === "sta") defVal = 75;
     }
     const v1 = s1[l.key] || s1[l.fallback] || defVal;
     let p2Html = "",
@@ -264,14 +331,14 @@ export function normalizeTeamName(name) {
   if (!name) return "";
   const genericToReal = {
     "Lombardia FC": "Inter Milan",
-    "Latium": "Lazio",
+    Latium: "Lazio",
     "Roma FC": "Roma",
     "Napoli FC": "Napoli",
     "Piemonte Calcio": "Juventus",
     "Bergamo Calcio": "Atalanta",
-    "Salento": "Lecce",
-    "Brianza": "Monza",
-    "Udine": "Udinese",
+    Salento: "Lecce",
+    Brianza: "Monza",
+    Udine: "Udinese",
     "VPC Bologna": "Bologna",
     "VPC Empoli": "Empoli",
     "VPC Fiorentina": "Fiorentina",
@@ -280,8 +347,8 @@ export function normalizeTeamName(name) {
     "VPC Sassuolo": "Sassuolo",
     "VPC Torino": "Torino",
     "Sussex Borough": "Brighton",
-    "Tyneside": "Newcastle",
-    "Hampshire": "Southampton",
+    Tyneside: "Newcastle",
+    Hampshire: "Southampton",
     "West Midlands Village": "Aston Villa",
     "North London": "Arsenal",
     "East London": "West Ham",
@@ -295,16 +362,14 @@ export function normalizeTeamName(name) {
     "Merseyside Red": "Liverpool",
     "Madrid Rosas": "Atletico Madrid",
     "Madrid White": "Real Madrid",
-    "Barcelona": "FC Barcelona",
-    "Vigo": "Celta de Vigo",
+    Barcelona: "FC Barcelona",
+    Vigo: "Celta de Vigo",
     "Sevilla Triana": "Real Betis",
     "Valencia Orange": "Valencia CF",
-    "Granada": "Granada CF",
+    Granada: "Granada CF",
   };
   return genericToReal[name] || name;
 }
-
-
 
 export function getTeamLogoHTML(teamName) {
   if (!teamName) return "";

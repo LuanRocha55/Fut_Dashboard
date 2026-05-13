@@ -1,22 +1,75 @@
-import { dbgToast } from './utils.js';
-import { highlightZones, clearZones } from './zones.js';
-import { handleSubstitution, initDragAndDrop } from './dragDrop.js';
-import { setupEventListeners, initCareerEvents, finalizeCareerSetup } from './events.js';
-import { loadTeams, fetchTeamBadge, getLeagueBadgeMap, loadBadgesLazy, loadLeagueLogosLazy, renderVisualTeams } from './teams.js';
-import { renderApp, render, renderBench, renderMatchHistory, renderTeamStats, renderPitchPlayers, updateTeamStatsUI, renderTeamChemistry, updateDashboardCoach } from './render.js';
-import { main } from './init.js';
+import { dbgToast } from "./uiUtils.js";
+import { highlightZones, clearZones } from "./zones.js";
+import { handleSubstitution, initDragAndDrop } from "./dragDrop.js";
+import {
+  setupEventListeners,
+  initCareerEvents,
+  finalizeCareerSetup,
+} from "./uiEvents.js";
+import {
+  loadTeams,
+  fetchTeamBadge,
+  getLeagueBadgeMap,
+  loadBadgesLazy,
+  loadLeagueLogosLazy,
+  renderVisualTeams,
+} from "./teams.js";
+import {
+  renderApp,
+  render,
+  renderBench,
+  renderMatchHistory,
+  renderTeamStats,
+  renderPitchPlayers,
+  updateTeamStatsUI,
+  renderTeamChemistry,
+  updateDashboardCoach,
+} from "./render.js";
+import { main } from "./init.js";
 
-import { squad, formations, ALL_POSITIONS, initSystem, performSwap, downloadJSON, resetData, resetFormationAlignment, resetSystem, calculateOVR, saveToLocal, healSquad, matchHistory, matchInfo, ensureCaptain } from "../core.js";
-import { getEfootballPosition, checkPositionFit, swapTitulares, handlePlayerMove, autoFillTeam } from "../tactics.js";
-import { openMatchSimulation } from "../simulation.js";
-import { getRatingColor, getStarsHTML, getFormHTML, getMatchStatusHTML, drawRadar, normalizeTeamName } from "../graphics.js";
-import { showCustomModal } from "../modal.js";
-import { normalizeStr } from "../utils.js";
-import { initEditorEvents, openMenu } from "../playerEditor.js";
-import { initTableEvents, isTableView, renderTable, setTableView } from "../tableView.js";
-import { initLeagueEvents, autoInitLeague } from "../league.js";
-import { renderLeagueData } from "../leagueRenderer.js";
-import { Storage } from "../storage.js";
+import {
+  squad,
+  formations,
+  ALL_POSITIONS,
+  initSystem,
+  performSwap,
+  downloadJSON,
+  resetFormationAlignment,
+  calculateOVR,
+  saveToLocal,
+  healSquad,
+  matchHistory,
+  matchInfo,
+  ensureCaptain,
+} from "../core/appCore.js";
+import {
+  getEfootballPosition,
+  checkPositionFit,
+  swapTitulares,
+  handlePlayerMove,
+  autoFillTeam,
+} from "../tactics/pitchTactics.js";
+import { openMatchSimulation } from "../simulation/simMain.js";
+import {
+  getRatingColor,
+  getStarsHTML,
+  getFormHTML,
+  getMatchStatusHTML,
+  drawRadar,
+  normalizeTeamName,
+} from "./uiGraphics.js";
+import { showCustomModal } from "./uiModal.js";
+import { normalizeStr } from "../core/appUtils.js";
+import { initEditorEvents, openMenu } from "../player/playerEditor.js";
+import {
+  initTableEvents,
+  isTableView,
+  renderTable,
+  setTableView,
+} from "./uiTableView.js";
+import { initLeagueEvents, autoInitLeague } from "../league/leagueMain.js";
+import { renderLeagueData } from "../league/leagueRenderer.js";
+import { Storage } from "../core/appStorage.js";
 
 export function switchMainView(viewName) {
   setTableView(viewName === "table");
@@ -81,17 +134,22 @@ export function switchMainView(viewName) {
 }
 
 export function showScreen(screenId) {
-  const screens = ["mainMenuScreen", "coachCreationScreen", "teamSelectionScreen", "mainApp"];
-  screens.forEach(id => {
+  const screens = [
+    "mainMenuScreen",
+    "coachCreationScreen",
+    "teamSelectionScreen",
+    "mainApp",
+  ];
+  screens.forEach((id) => {
     const el = document.getElementById(id);
     if (!el) return;
     if (id === screenId) {
       // mainApp e teamSelectionScreen precisam de flex para o layout funcionar
-      el.style.display = (id === "mainApp" || id === "teamSelectionScreen") ? "flex" : "flex";
+      el.style.display =
+        id === "mainApp" || id === "teamSelectionScreen" ? "flex" : "flex";
     } else {
       el.style.display = "none";
     }
   });
   if (window.lucide) window.lucide.createIcons();
 }
-

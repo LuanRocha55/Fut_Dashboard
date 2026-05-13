@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap");
 
 :root {
   /* Core Palette */
@@ -10,22 +10,22 @@
   --danger: #ff4d4d;
   --text: #f0f0f0;
   --text-dim: #a0a0a0;
-  
+
   /* Glassmorphism */
   --glass: rgba(255, 255, 255, 0.03);
   --glass-border: rgba(255, 255, 255, 0.08);
   --glass-blur: blur(12px);
-  
+
   /* Rating Palette (Premium Hues) */
   --rating-top: #00f2ff;
   --rating-high: #00ff88;
   --rating-mid: #ffcc00;
   --rating-low: #ff8800;
   --rating-bad: #ff4444;
-  
+
   --border: rgba(255, 255, 255, 0.08);
   --pitch: #0a1a09;
-  
+
   /* Transitions */
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
   --transition: all 0.3s var(--ease);
@@ -41,11 +41,11 @@
 
 body {
   background: var(--bg);
-  background-image: 
+  background-image:
     radial-gradient(circle at 50% -20%, rgba(0, 255, 136, 0.05), transparent),
     radial-gradient(circle at 0% 100%, rgba(0, 242, 255, 0.03), transparent);
   color: var(--text);
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   display: flex;
   height: 100vh;
   overflow: hidden;
@@ -184,7 +184,11 @@ button {
   flex: 1;
   overflow: hidden;
   min-height: 0;
-  background: radial-gradient(circle at 50% 50%, rgba(0, 255, 136, 0.02), transparent);
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(0, 255, 136, 0.02),
+    transparent
+  );
 }
 
 .main-content {
