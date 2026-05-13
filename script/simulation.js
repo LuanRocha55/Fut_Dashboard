@@ -512,11 +512,11 @@ export async function openMatchSimulation() {
     let chanceMod = 1.0;
     let awayChanceMod = 1.0;
     
-    if (currentPlaystyle === "bus") {
+    if (currentPlaystyle === "retranca") {
       totalDef *= 1.35;
       awayChanceMod = 1.3;
       chanceMod = 0.4;
-    } else if (currentPlaystyle === "attack") {
+    } else if (currentPlaystyle === "ataque total") {
       totalAtk *= 1.45;
       totalDef *= 0.7;
       chanceMod = 1.5;
@@ -524,7 +524,7 @@ export async function openMatchSimulation() {
       controlPoints *= 1.6;
       chanceMod = 0.75;
       awayChanceMod = 0.75;
-    } else if (currentPlaystyle === "counter") {
+    } else if (currentPlaystyle === "contra ataque") {
       const avgSpeed = speedSum / (counts.atk || 1);
       if (avgSpeed > 75) chanceMod = 1.4;
       totalDef *= 1.2;
@@ -1019,14 +1019,14 @@ export async function openMatchSimulation() {
     // Aplicação dos Estilos de Jogo
     if (currentPlaystyle === "possession") {
         homePossession = Math.min(65, homePossession + (Math.random() * 2));
-        staminaDrainFactor = 0.8; // Cansa menos
-    } else if (currentPlaystyle === "counter") {
+        staminaDrainFactor = 1.0; 
+    } else if (currentPlaystyle === "contra ataque") {
         homePossession = Math.max(35, homePossession - (Math.random() * 2));
-        staminaDrainFactor = 1.1; // Cansa um pouco mais pela correria
-    } else if (currentPlaystyle === "attack") {
+        staminaDrainFactor = 0.8; 
+    } else if (currentPlaystyle === "ataque total") {
         homePossession = Math.min(70, homePossession + (Math.random() * 3));
         staminaDrainFactor = 1.5; // Cansa MUITO
-    } else if (currentPlaystyle === "bus") {
+    } else if (currentPlaystyle === "retranca") {
         homePossession = Math.max(25, homePossession - (Math.random() * 4));
         staminaDrainFactor = 0.6; // Economiza energia total
     }
@@ -1049,7 +1049,7 @@ export async function openMatchSimulation() {
       startBtn.innerText = "Rolar a Bola (2º Tempo)";
       startBtn.style.display = "block";
       pauseSimBtn.style.display = "none";
-      setSimControlsDisabled(true);
+      setSimControlsDisabled(false);
       return;
     }
 

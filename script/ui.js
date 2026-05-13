@@ -989,10 +989,7 @@ function initCareerEvents(teams) {
           <h3 style="color:#fff; margin-bottom: 25px; font-size: 1.5rem; letter-spacing: 1px;">CONFIGURAÇÕES</h3>
           
           <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 25px;">
-            <button id="editSquadsBtn" class="btn-secondary" style="width:100%; padding: 15px; border-radius: 10px; display: flex; align-items: center; justify-content: center; gap: 10px;">
-              <i data-lucide="edit-3"></i> EDITAR ELENCOS
-            </button>
-            
+
             <button id="resetAllDataBtn" class="btn-danger" style="width:100%; padding: 15px; border-radius: 10px; display: flex; align-items: center; justify-content: center; gap: 10px; background: #ff444415; border: 1px solid #ff444444; color: #ff4444;">
               <i data-lucide="trash-2"></i> RESETAR TUDO
             </button>
@@ -1022,14 +1019,7 @@ function initCareerEvents(teams) {
         }
       }
 
-      if (choice === "edit_squads") {
-        dbgToast("📋 Abrindo editor de elencos...", "#1a3a5c");
-        // Para editar elencos sem começar carreira, podemos usar o fluxo de Novo Jogo mas sem salvar o save no final?
-        // Ou apenas abrir a tela de seleção de times e permitir a edição lá.
-        // Por simplicidade agora, vamos levar o usuário para a seleção de times.
-        renderVisualTeams(teams);
-        showScreen("teamSelectionScreen");
-      }
+
     };
   }
 
