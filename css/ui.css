@@ -1,0 +1,121 @@
+/* UI specific styles (previously inline in ui.js) */
+
+/* Diagnostic Toasts */
+.dbg-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-width: 420px;
+    pointer-events: none;
+}
+
+.dbg-toast {
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-family: monospace;
+    border-left: 3px solid rgba(255, 255, 255, 0.3);
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+/* Match History Items */
+.history-empty {
+    text-align: center;
+    color: #888;
+    padding: 20px;
+    font-size: 0.8rem;
+}
+
+/* Team Stats Table Rows */
+.stats-rank-top {
+    font-weight: bold;
+    color: var(--warning);
+    width: 40px;
+}
+.stats-rank-other {
+    font-weight: bold;
+    color: #aaa;
+    width: 40px;
+}
+.stats-player-name {
+    text-align: left;
+    font-weight: bold;
+    color: #fff;
+}
+.stats-player-pos {
+    font-size: 0.65rem;
+    color: #888;
+    margin-left: 5px;
+    font-weight: normal;
+}
+.stats-value {
+    font-weight: 900;
+    font-size: 1.1rem;
+    width: 60px;
+}
+.stats-empty-row {
+    padding: 20px;
+    color: #888;
+    text-align: center;
+}
+
+/* Reserve Items (Bench) */
+.reserve-item-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+.reserve-item-pos {
+    font-size: 0.65rem;
+    background: #222;
+    padding: 2px 4px;
+    border-radius: 4px;
+    border: 1px solid #444;
+    font-weight: 800;
+}
+.reserve-item-rating-container {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.reserve-item-rating {
+    color: #000;
+    font-size: 0.7rem;
+    font-weight: 900;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+.reserve-item-name {
+    margin-top: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    width: 100%;
+}
+.reserve-item-fitness-bg {
+    width: 90%;
+    height: 5px;
+    background: rgba(0,0,0,0.6);
+    border: 1px solid rgba(0,0,0,0.8);
+    border-radius: 2px;
+    overflow: hidden;
+    margin: 6px auto;
+}
+.reserve-item-fitness-fill {
+    height: 100%;
+    transition: width 0.3s ease;
+}
+.reserve-item-footer {
+    font-size: 0.6rem;
+    color: #888;
+    margin-top: 2px;
+}
