@@ -3,11 +3,6 @@ import { highlightZones, clearZones } from "./zones.js";
 import { switchMainView, showScreen } from "./views.js";
 import { handleSubstitution, initDragAndDrop } from "./dragDrop.js";
 import {
-  setupEventListeners,
-  initCareerEvents,
-  finalizeCareerSetup,
-} from "./uiEvents.js";
-import {
   renderApp,
   render,
   renderBench,
@@ -18,7 +13,6 @@ import {
   renderTeamChemistry,
   updateDashboardCoach,
 } from "./render.js";
-import { main } from "./init.js";
 
 import {
   squad,
@@ -313,6 +307,12 @@ export function renderVisualTeams(teams) {
   const container = document.getElementById("teamSelectionScreen");
   if (!container) return;
 
+  if (!teams || teams.length === 0) {
+    dbgToast("⚠️ Lista de times está vazia ou falhou ao carregar.", "#8b4000");
+    console.error("renderVisualTeams: teams list is empty");
+    return;
+  }
+
   // Agrupar por liga
   const leagues = {};
   teams.forEach((t) => {
@@ -321,6 +321,7 @@ export function renderVisualTeams(teams) {
     leagues[l].push(t);
   });
   const leagueNames = Object.keys(leagues);
+  dbgToast(`📂 ${leagueNames.length} ligas identificadas`, "#333");
 
   // ── TELA 0: Seleção de Gênero ──────────────────────────────────────────
   function showGenderSelection() {
@@ -375,7 +376,10 @@ export function renderVisualTeams(teams) {
       maleBtn.style.transform = "";
       maleBtn.style.boxShadow = "";
     };
-    maleBtn.onclick = () => showLeagueGrid("male");
+    maleBtn.onclick = () => {
+      dbgToast("⚡ Abrindo Universo Masculino...", "var(--accent)");
+      showLeagueGrid("male");
+    };
 
     const femaleBtn = document.getElementById("selectFemaleBtn");
     femaleBtn.onmouseenter = () => {
@@ -390,7 +394,10 @@ export function renderVisualTeams(teams) {
       femaleBtn.style.transform = "";
       femaleBtn.style.boxShadow = "";
     };
-    femaleBtn.onclick = () => showLeagueGrid("female");
+    femaleBtn.onclick = () => {
+      dbgToast("💖 Abrindo Universo Feminino...", "#ff0066");
+      showLeagueGrid("female");
+    };
   }
 
   // ── TELA 1: Seleção de Campeonato ─────────────────────────────────────
@@ -433,25 +440,30 @@ export function renderVisualTeams(teams) {
         "Fem",
       ];
 
-      const sortedLeagueNames = leagueNames
-        .filter((l) => {
-          const isFemLeague = femLeagueKeywords.some((fem) => l.includes(fem));
-          const matchesGender =
-            gender === "female" ? isFemLeague : !isFemLeague;
-          const matchesFilter = l.toLowerCase().includes(filter.toLowerCase());
-          return matchesGender && matchesFilter;
-        })
-        .sort((a, b) => {
-          const avgA =
-            leagues[a].reduce((s, t) => s + (t.ovr || 75), 0) /
-            leagues[a].length;
-          const avgB =
-            leagues[b].reduce((s, t) => s + (t.ovr || 75), 0) /
-            leagues[b].length;
-          return avgB - avgA;
-        });
+    const sortedLeagueNames = leagueNames
+      .filter((l) => {
+        const isFemLeague = femLeagueKeywords.some((fem) => l.includes(fem));
+        const matchesGender = gender === "female" ? isFemLeague : !isFemLeague;
+        const matchesFilter = l.toLowerCase().includes(filter.toLowerCase());
+        return matchesGender && matchesFilter;
+      })
+      .sort((a, b) => {
+        const avgA =
+          leagues[a].reduce((s, t) => s + (t.ovr || 75), 0) / leagues[a].length;
+        const avgB =
+          leagues[b].reduce((s, t) => s + (t.ovr || 75), 0) / leagues[b].length;
+        return avgB - avgA;
+      });
 
-      sortedLeagueNames.forEach((l) => {
+    if (sortedLeagueNames.length === 0) {
+      leagueGrid.innerHTML = `
+        <div style="grid-column: 1 / -1; text-align: center; padding: 50px; color: #666;">
+          <p>Nenhum campeonato encontrado para esta modalidade.</p>
+        </div>
+      `;
+    }
+
+    sortedLeagueNames.forEach((l) => {
         const count = leagues[l].length;
         const avgOvr = Math.round(
           leagues[l].reduce((s, t) => s + (t.ovr || 75), 0) / count,
@@ -631,4 +643,46 @@ export function renderVisualTeams(teams) {
 
   // ── Início: mostra a tela de seleção de gênero ────────────────────────
   showGenderSelection();
+}
+
+export async function finalizeCareerSetup(selectedTeam) {
+  dbgToast("💾 Criando novo save...", "#1a3a5c");
+  try {
+    const coachName = document.getElementById("setupCoachName").value;
+    const formation = document.getElementById("setupFormationSelect").value;
+    const checkedStyle = document.querySelector(
+      'input[name="setupPlaystyle"]:checked',
+    );
+    const playstyle = checkedStyle ? checkedStyle.value : "possession";
+
+    // Criar o slot primeiro
+    const slotId = await Storage.createSlot(
+      `Carreira: ${coachName}`,
+      selectedTeam.file,
+      selectedTeam.name,
+    );
+
+    const coachData = {
+      name: coachName,
+      teamFile: selectedTeam.file,
+      teamName: selectedTeam.name,
+      specialty: formation,
+      playstyle: playstyle,
+      startDate: new Date().toLocaleDateString("pt-BR"),
+    };
+
+    await Storage.saveCoachInfo(coachData);
+    await Storage.setCurrentTeamFile(selectedTeam.file);
+    await Storage.setCurrentFormation(formation);
+
+    // Inicialização AUTOMÁTICA da liga baseada no time escolhido
+    await autoInitLeague();
+
+    dbgToast("🔄 Iniciando jornada...", "#333");
+    document.body.style.opacity = "0";
+    setTimeout(() => window.location.reload(), 800);
+  } catch (e) {
+    dbgToast("❌ Erro ao salvar carreira: " + e.message, "#8b0000", 20000);
+    console.error("Erro no finalizeCareerSetup:", e);
+  }
 }

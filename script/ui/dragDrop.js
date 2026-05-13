@@ -2,14 +2,7 @@ import { dbgToast } from "./uiUtils.js";
 import { highlightZones, clearZones } from "./zones.js";
 import { switchMainView, showScreen } from "./views.js";
 import {
-  setupEventListeners,
-  initCareerEvents,
-  finalizeCareerSetup,
-} from "./uiEvents.js";
-import {
   loadTeams,
-  fetchTeamBadge,
-  getLeagueBadgeMap,
   loadBadgesLazy,
   loadLeagueLogosLazy,
   renderVisualTeams,
