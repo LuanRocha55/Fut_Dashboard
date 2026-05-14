@@ -20,6 +20,7 @@ import {
 } from "../ui/uiGraphics.js";
 import { showCustomModal } from "../ui/uiModal.js";
 import { highlightZones, clearZones, renderApp } from "../ui/uiMain.js";
+import { formatMoney } from "../core/appUtils.js";
 
 export let isEditMode = false;
 
@@ -122,7 +123,7 @@ export async function openMenu(id) {
   document.getElementById("teamView").style.display = "none";
   document.getElementById("playerView").style.display = "flex";
   document.getElementById("editNameInput").value = p.name;
-  document.getElementById("editRatingInput").value = p.rating;
+  document.getElementById("editRatingInput").value = p.ovr || p.rating;
   document.getElementById("editNumberInput").value = p.number || 99;
   document.getElementById("editAgeInput").value = p.age || 25;
   document.getElementById("editFootInput").value = p.foot || "Destro";
@@ -130,8 +131,9 @@ export async function openMenu(id) {
   document.getElementById("editNationInput").value = p.nationality || "BR";
 
   document.getElementById("viewName").innerText = p.name;
-  document.getElementById("viewRating").innerText = (p.rating || 5.0).toFixed(1);
-  document.getElementById("viewRating").style.color = getRatingColor(p.rating);
+  const currentOvr = p.ovr || p.rating || 5.0;
+  document.getElementById("viewRating").innerText = currentOvr.toFixed(1);
+  document.getElementById("viewRating").style.color = getRatingColor(currentOvr);
   document.getElementById("viewNumber").innerText = p.number || 99;
   document.getElementById("viewAge").innerText = p.age || 25;
   document.getElementById("viewFoot").innerText = p.foot || "Destro";
@@ -143,6 +145,15 @@ export async function openMenu(id) {
   document.getElementById("viewCaptain").innerHTML = p.captain
     ? `<svg viewBox="0 0 24 24" width="1.2em" height="1.2em" fill="var(--warning)" style="vertical-align: sub; margin-right: 4px;"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg> CAPITÃO DA EQUIPE`
     : "";
+
+  document.getElementById("viewMarketValue").innerText = formatMoney(p.marketValue || calculateMarketValue(currentOvr, p.age || 25));
+    
+  const tStatusEl = document.getElementById("viewTransferStatus");
+  if (tStatusEl) {
+      const statusMap = { none: "Intocável", transfer: "LISTADO PARA VENDA", loan: "DISPONÍVEL PARA EMPRÉSTIMO" };
+      tStatusEl.innerText = statusMap[p.transferStatus || "none"];
+      tStatusEl.style.color = p.transferStatus === "none" ? "#888" : "var(--accent)";
+  }
 
   document.getElementById("viewGoals").innerText = p.goals || 0;
   document.getElementById("viewAssists").innerText = p.assists || 0;
@@ -303,8 +314,9 @@ export async function openMenu(id) {
         p.aptitude && p.aptitude.length > 0 ? p.aptitude[0] : "CA";
       updatePlaystyleOptions(
         newMainPos,
-        document.getElementById("editPlaystyleInput").value,
+        document.getElementById("editPlaystyleInput").value = p.playstyle || "",
       );
+      document.getElementById("editTransferStatus").value = p.transferStatus || "none";
     };
     posContainer.appendChild(chip);
   });
@@ -326,37 +338,58 @@ export async function closeMenu() {
 }
 
 export function initEditorEvents() {
-  document
-    .getElementById("addPlayerBtn")
-    .addEventListener("click", async () => {
-      if (isEditMode) {
-        const proceed = await showCustomModal(
-          "Você tem edições em andamento. Deseja descartar e criar um novo jogador?",
-          "confirm",
-          "btn-primary",
-        );
-        if (!proceed) return;
-        isEditMode = false;
-      }
-      const newId = addNewPlayer();
-      window.dispatchEvent(new CustomEvent("viewChanged", { detail: "pitch" }));
-      renderApp();
-      openMenu(newId);
-      setEditMode(true);
-    });
+  // Botão de Novo Atleta removido da interface (contratações via Mercado)
   document
     .getElementById("deletePlayerBtn")
     .addEventListener("click", async () => {
+      const coach = await Storage.getCoachInfo();
+      const { isTransferWindowOpen } = await import("../core/appUtils.js");
+
+      if (!isTransferWindowOpen(coach.currentDate)) {
+        showCustomModal(
+          "<strong>Janela Fechada!</strong><br><br>Vendas só são permitidas durante os períodos de transferência (Jan, Jul, Ago).",
+          "alert",
+          "btn-danger",
+        );
+        return;
+      }
+
+      const p = squad.find((x) => x.id === activePlayerId);
+      const sellValue = p ? Math.round((p.marketValue || 0) * 0.8) : 0;
+
       const proceed = await showCustomModal(
-        "Tem certeza que deseja dispensar este jogador permanentemente do clube?",
+        `Deseja vender <strong>${p ? p.name : "este jogador"}</strong>?<br><br>Retorno financeiro: <strong>${formatMoney(sellValue)}</strong>.`,
         "confirm",
         "btn-danger",
       );
+
+      if (proceed) {
+        coach.budget += sellValue;
+        await Storage.saveCoachInfo(coach);
+        removePlayer(activePlayerId);
+        isEditMode = false;
+        closeMenu();
+        renderApp();
+        showCustomModal(`Venda realizada! ${formatMoney(sellValue)} adicionados ao orçamento.`, "alert", "btn-primary");
+      }
+    });
+
+  document
+    .getElementById("terminateContractBtn")
+    .addEventListener("click", async () => {
+      const p = squad.find((x) => x.id === activePlayerId);
+      const proceed = await showCustomModal(
+        `Deseja rescindir o contrato de <strong>${p ? p.name : "este jogador"}</strong>?<br><br><span style="color:var(--danger); font-weight:bold;">Atenção:</span> O clube não receberá nenhum valor por esta ação.`,
+        "confirm",
+        "btn-danger",
+      );
+
       if (proceed) {
         removePlayer(activePlayerId);
         isEditMode = false;
         closeMenu();
         renderApp();
+        showCustomModal(`Contrato de <strong>${p ? p.name : "Atleta"}</strong> rescindido.`, "alert", "btn-secondary");
       }
     });
   document.getElementById("closeMenuBtn").onclick = closeMenu;
@@ -416,6 +449,7 @@ export function initEditorEvents() {
         foot: document.getElementById("editFootInput").value,
         nationality: document.getElementById("editNationInput").value,
         playstyle: document.getElementById("editPlaystyleInput").value,
+        transferStatus: document.getElementById("editTransferStatus").value,
         captain: document.getElementById("editCaptainInput").checked,
         aptitude: [...p.aptitude],
       });

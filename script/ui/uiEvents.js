@@ -37,8 +37,17 @@ import { loadTeams, renderVisualTeams } from "./teams.js";
 import { syncSquadWithAPI } from "../core/squadSync.js";
 
 let isEditorInitialized = false;
+let isAppInitialized = false;
 
 export async function setupEventListeners() {
+  if (isAppInitialized) {
+    // Se já inicializou os globais, só garante as tabelas e mercado
+    initTableEvents();
+    initTransferMarket();
+    return;
+  }
+  isAppInitialized = true;
+
   if (!isEditorInitialized) {
     initEditorEvents();
     isEditorInitialized = true;
@@ -60,9 +69,6 @@ export async function setupEventListeners() {
   document
     .getElementById("navTableBtn")
     ?.addEventListener("click", () => switchMainView("table"));
-  document
-    .getElementById("navTransferBtn")
-    ?.addEventListener("click", () => switchMainView("transfer"));
   document
     .getElementById("headerHomeBtn")
     ?.addEventListener("click", () => showScreen("mainMenuScreen"));
@@ -96,6 +102,25 @@ export async function setupEventListeners() {
   document
     .getElementById("navTransferDashboardBtn")
     ?.addEventListener("click", () => switchMainView("dashboard"));
+
+  // Eventos das Abas do Mercado
+  document.getElementById("transferTabBuyBtn")?.addEventListener("click", () => {
+    document.getElementById("marketBuySection").style.display = "grid";
+    document.getElementById("marketSellSection").style.display = "none";
+    document.getElementById("transferTabBuyBtn").className = "btn-primary";
+    document.getElementById("transferTabSellBtn").className = "btn-secondary";
+  });
+
+  document.getElementById("transferTabSellBtn")?.addEventListener("click", async () => {
+    document.getElementById("marketBuySection").style.display = "none";
+    document.getElementById("marketSellSection").style.display = "grid";
+    document.getElementById("transferTabBuyBtn").className = "btn-secondary";
+    document.getElementById("transferTabSellBtn").className = "btn-primary";
+    
+    // Atualizar lista de vendas e propostas
+    const { renderMyTransferMarketHub } = await import("../core/transferMarket.js");
+    await renderMyTransferMarketHub();
+  });
 
   document
     .getElementById("healSquadBtn")
@@ -351,6 +376,17 @@ export function initCareerEvents(teams) {
         if (initResult === true) {
           const coachInfo = await Storage.getCoachInfo();
           if (coachInfo) {
+            // PATCH para saves antigos (Economia e Calendário)
+            let coachChanged = false;
+            if (!coachInfo.currentDate) {
+              coachInfo.currentDate = "2024-07-01";
+              coachChanged = true;
+            }
+            if (coachInfo.budget === undefined) {
+              coachInfo.budget = 80000000; 
+              coachChanged = true;
+            }
+            if (coachChanged) await Storage.saveCoachInfo(coachInfo);
             showScreen("mainApp");
             switchMainView("dashboard");
             updateDashboardCoach(coachInfo);

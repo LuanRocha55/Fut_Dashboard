@@ -1,5 +1,6 @@
 import { Storage } from "./appStorage.js";
 import { showCustomModal } from "../ui/uiModal.js";
+import { calculateMarketValue, isTransferWindowOpen } from "./appUtils.js";
 
 export let squad = [];
 export let formations = {};
@@ -248,7 +249,52 @@ export function applyMatchResults(
     }
   });
 
-  if (updated) saveToLocal();
+  if (updated) {
+    // Avançar Calendário e Gerar Propostas
+    Storage.getCoachInfo().then(async (coach) => {
+      if (coach && coach.currentDate) {
+        const d = new Date(coach.currentDate);
+        d.setDate(d.getDate() + 7);
+        coach.currentDate = d.toISOString().split("T")[0];
+
+        // Se a janela estiver aberta, chance de propostas para jogadores listados
+        if (isTransferWindowOpen(coach.currentDate)) {
+          if (!coach.proposals) coach.proposals = [];
+          
+          const listedPlayers = squad.filter(p => p.transferStatus && p.transferStatus !== "none");
+          
+          listedPlayers.forEach(p => {
+            // 30% de chance de proposta por jogo por jogador listado
+            if (Math.random() < 0.3) {
+              const buyerClubs = ["Real Madrid", "Chelsea", "Manchester City", "Flamengo", "Palmeiras", "Al-Hilal", "Juventus", "PSG", "Bayern", "Liverpool", "Inter", "Benfica"];
+              const club = buyerClubs[Math.floor(Math.random() * buyerClubs.length)];
+              const type = p.transferStatus === "transfer" ? "Compra" : "Empréstimo";
+              
+              // Valor da proposta: 90% a 110% do valor de mercado
+              const variance = 0.9 + Math.random() * 0.2;
+              const offerValue = Math.round((p.marketValue || 0) * variance);
+
+              // Evitar duplicados para o mesmo jogador do mesmo clube
+              if (!coach.proposals.some(pr => pr.playerId === p.id && pr.from === club)) {
+                coach.proposals.push({
+                  id: Date.now() + Math.floor(Math.random() * 1000),
+                  playerId: p.id,
+                  playerName: p.name,
+                  from: club,
+                  value: offerValue,
+                  type: type,
+                  date: coach.currentDate
+                });
+              }
+            }
+          });
+        }
+
+        await Storage.saveCoachInfo(coach);
+      }
+    });
+    saveToLocal();
+  }
 }
 
 export function calculateOVR(stats, form = 0, isGK = false, position = null) {
@@ -291,8 +337,8 @@ export function calculateOVR(stats, form = 0, isGK = false, position = null) {
     }
   }
 
-  const formBonus = form * 0.2;
-  return Math.min(10.0, Math.max(1.0, avg / 10 + formBonus));
+  const formBonus = form * 2; // Bônus de forma agora proporcional (1 estrela = +2 OVR)
+  return Math.min(99, Math.max(1, Math.round(avg + formBonus)));
 }
 
 export function saveToLocal() {
@@ -603,6 +649,11 @@ export async function initSystem() {
           p.aptitude &&
           (p.aptitude.includes("GOL") || p.aptitude.includes("GL"));
         p.rating = calculateOVR(p.stats, p.form, isGK, p.aptitude[0]) || 5.0;
+
+        // Enriquecimento: Valor de Mercado
+        if (!p.marketValue) {
+          p.marketValue = calculateMarketValue(p.rating, p.age || 25);
+        }
       });
       squad.push(...sourceSquad);
       saveToLocal();

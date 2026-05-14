@@ -214,7 +214,9 @@ export async function syncSquadWithAPI(teamName, baseTeamOvr = 75) {
         number: number || (index + 1),
         name: csvP ? csvP.Name : p.name,
         ovr: baseOvr,
-        rating: baseOvr / 10,
+        rating: baseOvr,
+        marketValue: 0, // Será calculado no dashboard/mercado se 0
+        transferStatus: "none",
         status: index < 11 ? "titular" : "reserva",
         aptitude: aptitudes,
         age: csvP ? (parseInt(csvP.Age) || p.age || 25) : (p.age || 25),

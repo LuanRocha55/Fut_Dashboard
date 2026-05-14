@@ -2,6 +2,9 @@ import { squad, saveToLocal, calculateOVR } from "../core/appCore.js";
 import { showCustomModal } from "../ui/uiModal.js";
 import { getRatingColor, getFlag } from "../ui/uiGraphics.js";
 import { renderApp } from "../ui/render.js";
+import { Storage } from "../core/appStorage.js";
+import { formatMoney, calculateMarketValue, isTransferWindowOpen } from "../core/appUtils.js";
+import { normalizeStr } from "../core/appUtils.js";
 
 let teamsListCache = [];
 
@@ -58,9 +61,14 @@ export async function initTransferMarket() {
   searchBtn.onclick = async () => {
     const file = teamSelect.value;
     if (!file) return;
+
+    const searchTerm = normalizeStr(document.getElementById("transferSearchInput")?.value);
+    const posFilter = document.getElementById("transferPosFilter")?.value;
+    const minOvr = parseInt(document.getElementById("transferMinOvr")?.value) || 0;
+
     searchBtn.disabled = true;
     searchBtn.innerText = "Buscando...";
-    resultsList.innerHTML = "<div style='text-align:center; padding: 20px;'><span style='color:var(--accent);'>Analisando elenco alvo...</span></div>";
+    resultsList.innerHTML = "<div style='text-align:center; padding: 20px;'><span style='color:var(--accent);'>Analisando rede de olheiros...</span></div>";
 
     try {
       const res = await fetch("data/teams/" + file, { cache: "no-store" });
@@ -69,49 +77,98 @@ export async function initTransferMarket() {
       const oppSquad = teamData.fullSquad || teamData.squad || [];
 
       resultsList.innerHTML = "";
-      if (oppSquad.length === 0) {
-        resultsList.innerHTML = "<div style='text-align:center; color:#888; padding:20px;'>Nenhum jogador encontrado.</div>";
+      
+      // Aplicar Filtros
+      const filtered = oppSquad.filter(p => {
+        const ovr = p.ovr || p.rating || calculateOVR(p.stats, 0, p.aptitude?.[0] === "GOL" || p.aptitude?.[0] === "GL", p.aptitude?.[0]);
+        const matchName = searchTerm ? normalizeStr(p.name).includes(searchTerm) : true;
+        const matchOvr = ovr >= minOvr;
+        
+        let matchPos = true;
+        if (posFilter) {
+          const pPos = p.aptitude?.[0] || "";
+          if (posFilter === "GL") matchPos = (pPos === "GL" || pPos === "GOL");
+          else if (posFilter === "ZE") matchPos = ["ZE", "ZD", "LE", "LD"].includes(pPos);
+          else if (posFilter === "VOL") matchPos = ["VOL", "MC", "MEI", "ME", "MD"].includes(pPos);
+          else if (posFilter === "CA") matchPos = ["CA", "SA", "PE", "PD"].includes(pPos);
+        }
+        
+        return matchName && matchOvr && matchPos;
+      });
+
+      if (filtered.length === 0) {
+        resultsList.innerHTML = "<div style='text-align:center; color:#888; padding:20px;'>Nenhum jogador corresponde aos filtros.</div>";
         return;
       }
 
-      oppSquad.sort((a, b) => {
-        const ovrA = a.rating || calculateOVR(a.stats, 0, a.aptitude?.[0] === "GOL" || a.aptitude?.[0] === "GL", a.aptitude?.[0]);
-        const ovrB = b.rating || calculateOVR(b.stats, 0, b.aptitude?.[0] === "GOL" || b.aptitude?.[0] === "GL", b.aptitude?.[0]);
+      filtered.sort((a, b) => {
+        const ovrA = a.ovr || a.rating || calculateOVR(a.stats, 0, a.aptitude?.[0] === "GOL" || a.aptitude?.[0] === "GL", a.aptitude?.[0]);
+        const ovrB = b.ovr || b.rating || calculateOVR(b.stats, 0, b.aptitude?.[0] === "GOL" || b.aptitude?.[0] === "GL", b.aptitude?.[0]);
         return ovrB - ovrA;
       }).forEach((p) => {
-        const ovr = p.rating || calculateOVR(p.stats, 0, p.aptitude?.[0] === "GOL" || p.aptitude?.[0] === "GL", p.aptitude?.[0]);
+        const ovr = p.ovr || p.rating || calculateOVR(p.stats, 0, p.aptitude?.[0] === "GOL" || p.aptitude?.[0] === "GL", p.aptitude?.[0]);
         const ovrColor = getRatingColor(ovr);
+        const marketValue = p.marketValue || calculateMarketValue(ovr, p.age || 25);
+        p.marketValue = marketValue;
+
         const card = document.createElement("div");
-        card.style.cssText = "background: #1a1a1a; border: 1px solid #333; border-radius: 8px; padding: 12px; display: flex; justify-content: space-between; align-items: center;";
+        card.style.cssText = "background: #151515; border: 1px solid #222; border-radius: 12px; padding: 15px; display: flex; justify-content: space-between; align-items: center; transition: all 0.2s; margin-bottom: 5px;";
         
+        card.onmouseover = () => { card.style.borderColor = "var(--accent)"; card.style.background = "#1a1a1a"; };
+        card.onmouseout = () => { card.style.borderColor = "#222"; card.style.background = "#151515"; };
+
         card.innerHTML = `
           <div style="display: flex; align-items: center; gap: 15px;">
-            <div style="background: ${ovrColor}22; border: 1px solid ${ovrColor}; color: ${ovrColor}; padding: 8px 12px; border-radius: 8px; font-weight: 900; font-size: 1.2rem;">${(ovr || 0).toFixed(0)}</div>
+            <div style="position: relative;">
+              <div style="background: ${ovrColor}; color: #000; padding: 10px; border-radius: 10px; font-weight: 900; font-size: 1.3rem; min-width: 50px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">${(ovr || 0).toFixed(0)}</div>
+              <div style="position: absolute; bottom: -5px; right: -5px; background: #000; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 10px; border: 1px solid #333;">${p.aptitude?.[0] || "?"}</div>
+            </div>
             <div>
-              <div style="font-weight: bold; color: #fff; font-size: 1.1rem; display: flex; align-items: center; gap: 5px;">${getFlag(p.nationality)} ${p.name}</div>
-              <div style="font-size: 0.8rem; color: #888; margin-top: 4px;">Idade: <span style="color:#ccc;">${p.age || 25}</span> | Pos: <span style="color:#ccc; font-weight:bold;">${p.aptitude?.[0] || "?"}</span> | Pé: <span style="color:#ccc;">${p.foot || "?"}</span></div>
+              <div style="font-weight: bold; color: #fff; font-size: 1.15rem; display: flex; align-items: center; gap: 8px;">${getFlag(p.nationality)} ${p.name}</div>
+              <div style="font-size: 0.85rem; color: #666; margin-top: 4px; display: flex; gap: 10px;">
+                <span>Idade: <b style="color:#aaa;">${p.age || 25}</b></span>
+                <span>Pé: <b style="color:#aaa;">${p.foot || "?"}</b></span>
+                <span style="color:var(--accent); font-weight:bold;">${formatMoney(marketValue)}</span>
+              </div>
             </div>
           </div>
-          <button class="btn-primary buy-btn" style="width: auto; padding: 8px 15px; margin: 0; font-size: 0.85rem;" data-player='${JSON.stringify(p).replace(/'/g, "&#39;")}'>Contratar</button>
+          <button class="buy-btn btn-primary" style="width: auto; padding: 10px 20px; border-radius: 8px; font-weight: bold;" data-player='${JSON.stringify(p).replace(/'/g, "&#39;")}'>CONTRATAR</button>
         `;
         resultsList.appendChild(card);
       });
 
       document.querySelectorAll(".buy-btn").forEach((btn) => {
         btn.onclick = async (e) => {
-          const pData = JSON.parse(e.target.dataset.player.replace(/&#39;/g, "'"));
-          const confirm = await showCustomModal(`Deseja contratar o jogador <strong>${pData.name}</strong> para a sua equipe?`, "confirm", "btn-primary");
+          const pData = JSON.parse(e.currentTarget.dataset.player.replace(/&#39;/g, "'"));
+          const coach = await Storage.getCoachInfo();
+          
+          if (!isTransferWindowOpen(coach.currentDate)) {
+            showCustomModal("<strong>Janela de Transferências Fechada!</strong><br><br>As negociações só são permitidas em Janeiro, Julho e Agosto.", "alert", "btn-danger");
+            return;
+          }
+
+          if (coach.budget < pData.marketValue) {
+            showCustomModal(`<strong>Saldo Insuficiente!</strong><br><br>O jogador custa ${formatMoney(pData.marketValue)}, mas você tem apenas ${formatMoney(coach.budget)}.`, "alert", "btn-danger");
+            return;
+          }
+
+          const confirm = await showCustomModal(`Deseja contratar <strong>${pData.name}</strong> por <strong>${formatMoney(pData.marketValue)}</strong>?`, "confirm", "btn-primary");
           if (confirm) {
             if (squad.some((s) => s.name === pData.name && s.age === pData.age && s.nationality === pData.nationality)) {
-              showCustomModal(`<strong>${pData.name}</strong> já faz parte do seu elenco atual!`, "alert", "btn-warning");
+              showCustomModal(`<strong>${pData.name}</strong> já faz parte do seu elenco!`, "alert", "btn-warning");
               return;
             }
+
+            coach.budget -= pData.marketValue;
+            await Storage.saveCoachInfo(coach);
+
             const newId = squad.length > 0 ? Math.max(...squad.map((x) => x.id)) + 1 : 1;
             const newPlayer = { ...pData, id: newId, status: "reserva", matchStatus: "normal", captain: false };
             squad.push(newPlayer);
             saveToLocal();
             renderApp();
-            showCustomModal(`<strong>${pData.name}</strong> é o novo reforço do seu time! Ele já está disponível no banco de reservas.`, "alert", "btn-primary");
+            
+            showCustomModal(`<strong>${pData.name}</strong> contratado! Saldo restante: ${formatMoney(coach.budget)}`, "alert", "btn-primary");
           }
         };
       });
@@ -123,4 +180,63 @@ export async function initTransferMarket() {
       searchBtn.innerText = "Buscar Jogadores";
     }
   };
+}
+
+export async function renderMyTransferMarketHub() {
+    const list = document.getElementById("myTransferListedPlayers");
+    if (!list) return;
+
+    const listedPlayers = squad.filter(p => p.transferStatus && p.transferStatus !== "none");
+    
+    if (listedPlayers.length === 0) {
+        list.innerHTML = `<div style="text-align: center; color: #444; padding: 40px; border: 1px dashed #222; border-radius: 10px;">
+            <i data-lucide="info" style="width: 2rem; height: 2rem; margin-bottom: 10px; opacity: 0.2;"></i>
+            <p>Nenhum atleta do seu elenco está listado para venda.</p>
+            <small>Use a lista de elenco para colocar jogadores no mercado.</small>
+        </div>`;
+    } else {
+        list.innerHTML = "";
+        listedPlayers.forEach(p => {
+            const card = document.createElement("div");
+            card.style.cssText = "background: #1a1a1a; border: 1px solid #333; padding: 15px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center;";
+            
+            const statusLabel = p.transferStatus === "transfer" ? "À VENDA" : "EMPRÉSTIMO";
+            const statusColor = p.transferStatus === "transfer" ? "var(--accent)" : "#00aaff";
+            const ovr = p.ovr || p.rating || 75;
+
+            card.innerHTML = `
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <div style="background: ${getRatingColor(ovr)}; color: #000; width: 35px; height: 35px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-weight: 900;">${ovr.toFixed(0)}</div>
+                    <div>
+                        <div style="color: #fff; font-weight: bold; font-size: 0.9rem;">${p.name}</div>
+                        <div style="font-size: 0.65rem; color: ${statusColor}; font-weight: 800; text-transform: uppercase;">${statusLabel}</div>
+                    </div>
+                </div>
+                <div style="text-align: right;">
+                    <div style="color: #fff; font-weight: 800; font-size: 0.85rem;">${formatMoney(p.marketValue || 0)}</div>
+                    <button class="delist-btn btn-secondary" style="font-size: 0.6rem; padding: 4px 8px; margin-top: 5px; width: auto;" data-id="${p.id}">REMOVER DA LISTA</button>
+                </div>
+            `;
+            list.appendChild(card);
+        });
+
+        list.querySelectorAll(".delist-btn").forEach(btn => {
+            btn.onclick = () => {
+                const id = parseInt(btn.dataset.id);
+                const player = squad.find(x => x.id === id);
+                if (player) {
+                    player.transferStatus = "none";
+                    saveToLocal();
+                    renderApp();
+                    renderMyTransferMarketHub();
+                }
+            };
+        });
+    }
+
+    const info = await Storage.getCoachInfo();
+    const { renderProposals } = await import("../ui/render.js");
+    await renderProposals(info, "marketProposalsList", null, null);
+    
+    if (window.lucide) window.lucide.createIcons();
 }

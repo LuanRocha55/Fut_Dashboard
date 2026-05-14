@@ -6,7 +6,7 @@ import {
   getFormHTML,
 } from "./uiGraphics.js";
 import { openMenu, setEditMode } from "../player/playerEditor.js";
-import { normalizeStr } from "../core/appUtils.js";
+import { normalizeStr, formatMoney } from "../core/appUtils.js";
 
 export let isTableView = false;
 export let tableSortCol = "rating";
@@ -142,6 +142,10 @@ export function renderTable() {
         valA = a.status;
         valB = b.status;
         break;
+      case "marketValue":
+        valA = a.marketValue || 0;
+        valB = b.marketValue || 0;
+        break;
       case "pos":
         valA = ALL_POSITIONS.indexOf(a.aptitude?.[0]);
         if (valA === -1) valA = 99;
@@ -149,8 +153,8 @@ export function renderTable() {
         if (valB === -1) valB = 99;
         break;
       default:
-        valA = a.rating;
-        valB = b.rating;
+        valA = a.ovr || a.rating || 0;
+        valB = b.ovr || b.rating || 0;
         break;
     }
     if (typeof valA === "string")
@@ -164,8 +168,8 @@ export function renderTable() {
   filteredPlayers.forEach((p) => {
     const tr = document.createElement("tr");
     const mainPos = p.aptitude && p.aptitude.length > 0 ? p.aptitude[0] : "--";
-    const isGK = p.aptitude && p.aptitude[0] === "GL";
-    const pRating = p.rating ?? calculateOVR(p.stats, p.form, isGK);
+    const isGK = p.aptitude && (p.aptitude[0] === "GL" || p.aptitude[0] === "GOL");
+    const pRating = p.ovr || p.rating || calculateOVR(p.stats, p.form, isGK, mainPos);
     const ratingColor = getRatingColor(pRating);
     const nat = p.nationality || "--";
     const flagHtml = getFlag(nat);
@@ -197,8 +201,8 @@ export function renderTable() {
           ${p.status.toUpperCase()}
         </span>
       </td>
-      <td style="text-align: center;">
-        <button class="edit-btn-table" style="background: transparent; border: none; color: var(--accent); cursor: pointer; font-size: 1.1rem; margin: 0; padding: 0; transition: transform 0.2s;" title="Editar Jogador"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor"><path d="M3 17.25V21h3.75L17.81 10.19l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg></button>
+      <td style="text-align: center; color: var(--accent); font-weight: 800; font-size: 0.85rem;">
+        ${formatMoney(p.marketValue || 0)}
       </td>
     `;
     tr.onclick = (e) => {

@@ -67,6 +67,19 @@ export function switchMainView(viewName) {
     if (transfer) transfer.style.display = "block";
     if (bench) bench.style.display = "none";
     if (navTransfer) navTransfer.className = "btn-primary";
+    
+    // Resetar abas do Mercado para Comprar por padrão
+    const buySec = document.getElementById("marketBuySection");
+    const sellSec = document.getElementById("marketSellSection");
+    if (buySec) buySec.style.display = "grid";
+    if (sellSec) sellSec.style.display = "none";
+    const buyBtn = document.getElementById("transferTabBuyBtn");
+    const sellBtn = document.getElementById("transferTabSellBtn");
+    if (buyBtn) buyBtn.className = "btn-primary";
+    if (sellBtn) sellBtn.className = "btn-secondary";
+
+    // Inicializar Mercado (Ligas e Times)
+    import("../core/transferMarket.js").then(m => m.initTransferMarket());
   } else {
     // dashboard
     if (sidebar) sidebar.style.display = "none";

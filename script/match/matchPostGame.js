@@ -52,31 +52,29 @@ export const handleMatchPostGame = async ({
   homePlayedIds.forEach((id) => {
     let p = squad.find((x) => x.id === id);
     if (p) {
-      let r = 6.0; // Nota Base
-      if (isWin) r += 0.5;
-      if (!isWin && !isDraw) r -= 0.5;
+      let r = 60; // Nota Base (6.0)
+      if (isWin) r += 5;
+      if (!isWin && !isDraw) r -= 5;
 
       let goals = homeScorersIds.filter((gId) => gId === id).length;
-      r += goals * 1.5;
+      r += goals * 15;
 
       let card = homeCards.find((c) => c.id === id);
       if (card) {
-        if (card.type === "yellow") r -= 0.5;
-        if (card.type === "red") r -= 1.5;
+        if (card.type === "yellow") r -= 5;
+        if (card.type === "red") r -= 15;
       }
 
       const isDef =
         p.aptitude &&
         ["GL", "ZE", "ZD", "LE", "LD", "VOL"].includes(p.aptitude[0]);
       if (isDef) {
-        if (awayScore === 0) r += 1.0;
-        else r -= awayScore * 0.3;
+        if (awayScore === 0) r += 10;
+        else r -= awayScore * 3;
       }
 
-      r += Math.random() * 1.5 - 0.75; // Fator de aleatoriedade (+/- 0.75)
-      const finalRating = parseFloat(
-        Math.max(3.0, Math.min(10.0, r)).toFixed(1),
-      );
+      r += Math.random() * 15 - 7.5; // Fator de aleatoriedade
+      const finalRating = Math.max(30, Math.min(100, Math.round(r)));
       homePlayerRatings[id] = finalRating;
 
       playersReport.push({ name: p.name, rating: finalRating });
@@ -151,7 +149,7 @@ export const handleMatchPostGame = async ({
     <p style="font-size: 1.2rem; font-weight: bold; margin: 0;">${matchInfo.home || "Seu Time"} ${scoreDisplay} ${currentOpponent.name}</p>
   </div>
   <div style="text-align: center; margin-bottom: 15px; color: var(--warning); font-weight: bold;">
-    🌟 MVP da Partida: ${bestPlayer.name} (${(bestPlayer.rating || 6.0).toFixed(1)})
+    🌟 MVP da Partida: ${bestPlayer.name} (${((bestPlayer.rating || 60) / 10).toFixed(1)})
   </div>
   ${scorersHTML}
   <div style="max-height: 350px; overflow-y: auto; text-align: left; background: #1a1a1a; padding: 10px; border-radius: 8px; font-size: 0.9rem;">`;
@@ -159,7 +157,7 @@ export const handleMatchPostGame = async ({
   playersReport.forEach((p) => {
     reportHTML += `<div style="display: flex; justify-content: space-between; padding: 8px 5px; border-bottom: 1px solid #333;">
       <span>${p.name}</span>
-      <strong style="color: ${getRatingColor(p.rating)}">${(p.rating || 6.0).toFixed(1)}</strong>
+      <strong style="color: ${getRatingColor(p.rating)}">${((p.rating || 60) / 10).toFixed(1)}</strong>
   </div>`;
   });
   reportHTML += `</div>`;
@@ -291,11 +289,11 @@ export const handleMatchPostGame = async ({
     };
     updateRatings(playersReport, matchInfo.home || "Seu Time");
     const awayPlayersReport = awayActivePlayers.map((p) => {
-      let r = 6.0 + (!isWin ? 0.5 : 0) + (!isWin && !isDraw ? 0.5 : 0);
-      r += awayScorers.filter((n) => n === p.name).length * 1.5;
+      let r = 60 + (!isWin ? 5 : 0) + (!isWin && !isDraw ? 5 : 0);
+      r += awayScorers.filter((n) => n === p.name).length * 15;
       return {
         name: p.name,
-        rating: Math.max(3.0, Math.min(10.0, r + (Math.random() * 1.5 - 0.75))),
+        rating: Math.max(30, Math.min(100, Math.round(r + (Math.random() * 15 - 7.5)))),
       };
     });
     updateRatings(awayPlayersReport, currentOpponent.name);

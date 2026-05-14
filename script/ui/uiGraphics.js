@@ -1,16 +1,16 @@
 export function getRatingColor(rating) {
-  if (rating >= 8.5) return "var(--rating-top)";
-  if (rating >= 7.5) return "var(--rating-high)";
-  if (rating >= 6.0) return "var(--rating-mid)";
-  if (rating >= 5.0) return "var(--rating-low)";
+  if (rating >= 85) return "var(--rating-top)";
+  if (rating >= 75) return "var(--rating-high)";
+  if (rating >= 60) return "var(--rating-mid)";
+  if (rating >= 45) return "var(--rating-low)";
   return "var(--rating-bad)";
 }
 
 export function getStarsHTML(rating) {
-  if (rating >= 8.5) return "★★★★★";
-  if (rating >= 8.0) return "★★★★☆";
-  if (rating >= 7.3) return "★★★☆☆";
-  if (rating >= 6.5) return "★★☆☆☆";
+  if (rating >= 85) return "★★★★★";
+  if (rating >= 78) return "★★★★☆";
+  if (rating >= 70) return "★★★☆☆";
+  if (rating >= 60) return "★★☆☆☆";
   return "★☆☆☆☆";
 }
 
@@ -190,8 +190,8 @@ export function drawRadar(canvasId, stats1, stats2 = null, isGK = false) {
   const radius = canvas.width / 2 - 25;
 
   const labels = isGK
-    ? ["alc", "seg", "esp", "REF", "VEL", "POS", "FÔL"]
-    : ["VEL", "FIN", "PAS", "DRI", "DEF", "FÍS", "FÔL"];
+    ? ["alc", "seg", "esp", "REF", "VEL", "POS"]
+    : ["VEL", "FIN", "PAS", "DRI", "DEF", "FÍS"];
   const SIDES = labels.length;
 
   ctx.strokeStyle = "rgba(255,255,255,0.1)";
@@ -239,7 +239,6 @@ export function drawRadar(canvasId, stats1, stats2 = null, isGK = false) {
           s.ref || s.def || 75,
           s.vel || s.spd || s.pac || 40,
           s.pos || s.def || 75,
-          s.sta || s.stm || 50,
         ].map((v) => v / 100)
       : [
           s.vel || s.pac || s.spd || 50,
@@ -248,7 +247,6 @@ export function drawRadar(canvasId, stats1, stats2 = null, isGK = false) {
           s.dri || s.atk || 50,
           s.def || 50,
           s.fis || s.phy || s.str || 50,
-          s.sta || s.stm || 75,
         ].map((v) => v / 100);
 
   const drawPolygon = (playerStats, fillColor, strokeColor) => {
@@ -287,7 +285,6 @@ export function renderStatsNumbers(stats1, stats2 = null, isGK = false) {
         { key: "ref", fallback: "ref", name: "REF" },
         { key: "vel", fallback: "spd", name: "VEL" },
         { key: "pos", fallback: "pos", name: "POS" },
-        { key: "sta", fallback: "stm", name: "FÔL" },
       ]
     : [
         { key: "vel", fallback: "pac", name: "VEL" },
@@ -296,7 +293,6 @@ export function renderStatsNumbers(stats1, stats2 = null, isGK = false) {
         { key: "dri", fallback: "dri", name: "DRI" },
         { key: "def", fallback: "def", name: "DEF" },
         { key: "fis", fallback: "phy", name: "FÍS" },
-        { key: "sta", fallback: "stm", name: "FÔL" },
       ];
 
   const s1 = stats1 || {};

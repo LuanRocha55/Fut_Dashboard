@@ -577,6 +577,13 @@ export async function finalizeCareerSetup(selectedTeam) {
       selectedTeam.name,
     );
 
+    const { getStartingBudget } = await import("../core/appUtils.js");
+    const teamOvr = selectedTeam.ovr || 75;
+    const initialBudget = getStartingBudget(teamOvr);
+
+    const isBr = selectedTeam.league && selectedTeam.league.includes("Brasileir");
+    const calendarType = isBr ? "br" : "eu";
+
     const coachData = {
       name: coachName,
       teamFile: selectedTeam.file,
@@ -584,6 +591,9 @@ export async function finalizeCareerSetup(selectedTeam) {
       specialty: formation,
       playstyle: playstyle,
       startDate: new Date().toLocaleDateString("pt-BR"),
+      currentDate: isBr ? "2024-01-01" : "2024-07-01", // Data inicial dinâmica
+      budget: initialBudget,
+      calendarType: calendarType,
     };
 
     await Storage.saveCoachInfo(coachData);
@@ -604,12 +614,20 @@ export async function finalizeCareerSetup(selectedTeam) {
     setTimeout(async () => {
       // Forçamos o recarregamento dos dados do Storage
       await initSystem();
-      // Chamamos o main do init.js para renderizar tudo
-      await main();
       
+      const { setupEventListeners } = await import("./uiEvents.js");
+      const { render, updateDashboardCoach } = await import("./render.js");
+      const coachInfo = await Storage.getCoachInfo();
+
       document.body.style.opacity = "1";
       showScreen("mainApp");
       switchMainView("dashboard");
+      
+      if (coachInfo) {
+        updateDashboardCoach(coachInfo);
+      }
+      setupEventListeners();
+      render();
     }, 500);
   } catch (e) {
     dbgToast("❌ Erro ao salvar carreira: " + e.message, "#8b0000", 20000);

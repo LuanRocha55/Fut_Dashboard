@@ -31,6 +31,7 @@ import {
 import { Storage } from "../core/appStorage.js";
 import { showOnlyFitPlayers } from "./state.js";
 import { loadBadgesLazy, loadLeagueLogosLazy } from "./teams.js";
+import { formatMoney, formatGameDate, isTransferWindowOpen } from "../core/appUtils.js";
 
 export function renderApp() {
   render();
@@ -198,7 +199,7 @@ export function renderBench(reservas, benchSortValue) {
           : "var(--danger)";
     res.className = "reserve-item";
     res.dataset.id = p.id;
-    res.innerHTML = `<div style="display: flex; justify-content: space-between; width: 100%; align-items: center; position: relative;">${mStatusHtml}<span style="font-size: 0.65rem; background: #222; padding: 2px 4px; border-radius: 4px; border: 1px solid #444; font-weight: 800; margin-left: ${mStatusHtml ? "12px" : "0"};">${p.aptitude?.[0] || "??"}</span><div style="display: flex; align-items: center; gap: 4px;">${getFormHTML(p.form)} <span style="background: ${getRatingColor(pRating)}; color: #000; font-size: 0.7rem; font-weight: 900; padding: 2px 4px; border-radius: 4px;">${pRating.toFixed(1)}</span></div></div><svg class="player-silhouette" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg><div style="margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; width: 100%;"><strong>${p.name}</strong></div><div style="width: 90%; height: 5px; background: rgba(0,0,0,0.6); border: 1px solid rgba(0,0,0,0.8); border-radius: 2px; overflow: hidden; margin: 6px auto;"><div style="height: 100%; width: ${fitLevel}%; background: ${fitColor}; transition: width 0.3s ease;"></div></div><div style="font-size: 0.6rem; color: #888; margin-top: 2px;">Nº ${p.number} | ${p.age || "--"}A | ${p.foot ? p.foot.charAt(0).toUpperCase() : "D"}</div>`;
+    res.innerHTML = `<div style="display: flex; justify-content: space-between; width: 100%; align-items: center; position: relative;">${mStatusHtml}<span style="font-size: 0.65rem; background: #222; padding: 2px 4px; border-radius: 4px; border: 1px solid #444; font-weight: 800; margin-left: ${mStatusHtml ? "12px" : "0"};">${p.aptitude?.[0] || "??"}</span><div style="display: flex; align-items: center; gap: 4px;">${getFormHTML(p.form)} <span style="background: ${getRatingColor(pRating)}; color: #000; font-size: 0.7rem; font-weight: 900; padding: 2px 4px; border-radius: 4px;">${pRating.toFixed(1)}</span></div></div><svg class="player-silhouette" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg><div style="margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; width: 100%;"><strong>${p.name}</strong></div><div style="width: 90%; height: 5px; background: rgba(0,0,0,0.6); border: 1px solid rgba(0,0,0,0.8); border-radius: 2px; overflow: hidden; margin: 6px auto;"><div style="height: 100%; width: ${fitLevel}%; background: ${fitColor}; transition: width 0.3s ease;"></div></div><div style="font-size: 0.6rem; color: #888; margin-top: 2px;">Nº ${p.number} | ${p.age || "--"}A | <span style="color:var(--accent); font-weight:bold;">${formatMoney(p.marketValue || 0)}</span></div>`;
     res.onclick = () => openMenu(p.id);
     benchFragment.appendChild(res);
   });
@@ -528,13 +529,13 @@ export function updateTeamStatsUI(stats, titularesCount) {
   const atkEl = document.getElementById("teamAtk");
   if (atkEl) {
     atkEl.innerText = avgStats.fin;
-    atkEl.style.color = getRatingColor(avgStats.fin / 10);
+    atkEl.style.color = getRatingColor(avgStats.fin);
   }
 
   const defEl = document.getElementById("teamDef");
   if (defEl) {
     defEl.innerText = avgStats.def;
-    defEl.style.color = getRatingColor(avgStats.def / 10);
+    defEl.style.color = getRatingColor(avgStats.def);
   }
 
   const forEl = document.getElementById("teamForeigners");
@@ -629,7 +630,338 @@ export function updateDashboardCoach(info) {
   const nameEl = document.getElementById("dashCoachName");
   const styleEl = document.getElementById("dashCoachStyle");
   const teamEl = document.getElementById("dashTeamName");
+  const budgetEl = document.getElementById("dashBudget");
+  const dateEl = document.getElementById("dashGameDate");
+  const windowEl = document.getElementById("dashWindowStatus");
+
   if (nameEl) nameEl.innerText = `Treinador: ${info.name}`;
   if (styleEl) styleEl.innerText = `DNA: ${info.playstyle}`;
   if (teamEl) teamEl.innerText = normalizeTeamName(info.teamName) || "--";
+  if (budgetEl) budgetEl.innerText = formatMoney(info.budget || 0);
+
+  if (dateEl && info.currentDate) {
+    dateEl.innerText = formatGameDate(info.currentDate);
+    if (windowEl) {
+      const isOpen = isTransferWindowOpen(info.currentDate, info.calendarType || "eu");
+      windowEl.innerText = `JANELA: ${isOpen ? "ABERTA" : "FECHADA"}`;
+      windowEl.style.background = isOpen ? "rgba(0,255,136,0.15)" : "rgba(255,255,255,0.05)";
+      windowEl.style.color = isOpen ? "var(--accent)" : "#888";
+      windowEl.style.border = `1px solid ${isOpen ? "rgba(0,255,136,0.3)" : "rgba(255,255,255,0.1)"}`;
+    }
+  }
+
+  renderProposals(info);
+  renderCalendar(info);
+  renderNewsFeed(info);
+}
+
+async function renderNewsFeed(info) {
+  const feed = document.getElementById("newsFeed");
+  if (!feed) return;
+  feed.innerHTML = "";
+
+  const news = [];
+
+  // 0. Histórico de Partidas (Novidade: Agora como Notícia)
+  const history = await Storage.getMatchHistory();
+  if (history && history.length > 0) {
+    const lastMatches = history.slice(-3).reverse();
+    lastMatches.forEach(m => {
+        let resColor = "var(--warning)"; // Empate
+        let resIcon = "minus-circle";
+        let resText = "Empate";
+
+        if (m.result === "V") {
+            resColor = "var(--rating-high)";
+            resIcon = "check-circle";
+            resText = "Vitória";
+        } else if (m.result === "D") {
+            resColor = "#ff4444";
+            resIcon = "x-circle";
+            resText = "Derrota";
+        }
+
+        news.push({
+            type: "match-result",
+            icon: resIcon,
+            color: resColor,
+            title: `Resultado: ${m.home} ${m.score} ${m.away}`,
+            desc: `Partida finalizada com ${resText}. Confira o relatório técnico.`
+        });
+    });
+  }
+
+  // 1. Propostas
+  if (info.proposals && info.proposals.length > 0) {
+    news.push({
+      type: "proposal",
+      icon: "shopping-bag",
+      color: "var(--accent)",
+      title: "Novas Propostas!",
+      desc: `Você recebeu ${info.proposals.length} proposta(s) de transferência.`
+    });
+  }
+
+  // 2. Próximo Jogo
+  const leagueData = await Storage.getLeagueData();
+  if (leagueData && !leagueData.finished) {
+     news.push({
+        type: "match",
+        icon: "trophy",
+        color: "var(--warning)",
+        title: "Preparação para o Jogo",
+        desc: `Sua equipe entra em campo em breve pela liga.`
+     });
+  }
+
+  // 3. Jogadores Cansados / Lesionados
+  const lowFitness = squad.filter(p => p.fitness < 60 && p.matchStatus === "normal");
+  if (lowFitness.length > 0) {
+    news.push({
+      type: "fitness",
+      icon: "alert-triangle",
+      color: "#ff4444",
+      title: "Alerta de Desgaste",
+      desc: `${lowFitness[0].name} e outros ${lowFitness.length - 1} estão muito cansados.`
+    });
+  }
+
+  // 4. Jogador em Destaque
+  const star = [...squad].sort((a,b) => (b.rating || 0) - (a.rating || 0))[0];
+  if (star && star.rating > 85) {
+     news.push({
+        type: "info",
+        icon: "star",
+        color: "#f9c200",
+        title: "Destaque do Treino",
+        desc: `${star.name} está em excelente forma técnica.`
+     });
+  }
+
+  // 5. Reclamações de Jogadores
+  const unhappy = squad.slice(11).filter(p => p.rating > 80 && p.matchStatus === "normal");
+  if (unhappy.length > 0) {
+     news.push({
+        type: "complaint",
+        icon: "message-square",
+        color: "#ff8800",
+        title: "Reclamação de Atleta",
+        desc: `${unhappy[0].name} não está feliz com a reserva e quer mais tempo de jogo.`
+     });
+  }
+
+  // 6. Janela de Transferências
+  const isWindow = isTransferWindowOpen(info.currentDate, info.calendarType);
+  if (isWindow) {
+    news.push({
+      type: "window",
+      icon: "unlock",
+      color: "var(--accent)",
+      title: "Mercado Aberto",
+      desc: "A janela de transferências está aberta para negócios."
+    });
+  }
+
+  if (news.length === 0) {
+    feed.innerHTML = `<div style="text-align: center; color: #444; padding: 40px; font-size: 0.8rem;">Sem novas mensagens no momento.</div>`;
+    return;
+  }
+
+  news.forEach(item => {
+    const msg = document.createElement("div");
+    msg.style.cssText = `background: #181818; border-left: 3px solid ${item.color}; padding: 12px 15px; border-radius: 8px; display: flex; align-items: flex-start; gap: 15px; transition: all 0.2s; cursor: pointer; border-top: 1px solid #222; border-right: 1px solid #222; border-bottom: 1px solid #222;`;
+    
+    msg.onmouseover = () => msg.style.background = "#202020";
+    msg.onmouseout = () => msg.style.background = "#181818";
+
+    msg.innerHTML = `
+      <div style="background: ${item.color}22; padding: 8px; border-radius: 8px;">
+        <i data-lucide="${item.icon}" style="width: 1.2rem; height: 1.2rem; color: ${item.color};"></i>
+      </div>
+      <div style="flex: 1;">
+        <div style="font-weight: bold; color: #fff; font-size: 0.85rem; margin-bottom: 3px;">${item.title}</div>
+        <div style="font-size: 0.75rem; color: #999; line-height: 1.4;">${item.desc}</div>
+      </div>
+    `;
+    feed.appendChild(msg);
+  });
+
+  if (window.lucide) window.lucide.createIcons();
+}
+
+async function renderCalendar(info) {
+  const grid = document.getElementById("calendarGrid");
+  const title = document.getElementById("calendarMonthTitle");
+  if (!grid || !title || !info.currentDate) return;
+
+  const date = new Date(info.currentDate);
+  const year = date.getFullYear();
+  const month = date.getMonth(); // 0-11
+  const today = date.getDate();
+
+  const months = [
+    "JANEIRO", "FEVEREIRO", "MARÇO", "ABRIL", "MAIO", "JUNHO",
+    "JULHO", "AGOSTO", "SETEMBRO", "OUTUBRO", "NOVEMBRO", "DEZEMBRO"
+  ];
+  title.innerText = `${months[month]} ${year}`;
+
+  const firstDay = new Date(year, month, 1).getDay(); // 0 (Dom) a 6 (Sáb)
+  const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+  grid.innerHTML = "";
+
+  // Headers de Dias da Semana
+  const weekDays = ["D", "S", "T", "Q", "Q", "S", "S"];
+  weekDays.forEach(d => {
+    const dayHead = document.createElement("div");
+    dayHead.style.cssText = "font-size: 0.55rem; color: #333; font-weight: 900; padding: 2px 0;";
+    dayHead.innerText = d;
+    grid.appendChild(dayHead);
+  });
+
+  // Espaços vazios para o primeiro dia
+  for (let i = 0; i < firstDay; i++) {
+    grid.appendChild(document.createElement("div"));
+  }
+
+  const isWindowOpen = isTransferWindowOpen(info.currentDate, info.calendarType || "eu");
+
+  for (let d = 1; d <= daysInMonth; d++) {
+    const dayEl = document.createElement("div");
+    const isToday = d === today;
+    const hasMatch = isToday; 
+    
+    // Estilo Base
+    let bgColor = "rgba(255,255,255,0.02)";
+    let border = "1px solid rgba(255,255,255,0.04)";
+    let color = "#444";
+    let transform = "none";
+    let boxShadow = "none";
+
+    if (isWindowOpen) {
+        bgColor = "rgba(0, 255, 136, 0.05)";
+        border = "1px solid rgba(0, 255, 136, 0.1)";
+        color = "#888";
+    }
+
+    if (isToday) {
+      bgColor = "var(--accent)";
+      color = "#000";
+      border = "1px solid var(--accent)";
+      boxShadow = "0 0 15px rgba(0,255,136,0.4)";
+      transform = "scale(1.1)";
+    }
+
+    const isWeekend = (firstDay + d - 1) % 7 === 0 || (firstDay + d - 1) % 7 === 6;
+    if (isWeekend && !isToday && !isWindowOpen) {
+        color = "#444";
+    }
+
+    dayEl.style.cssText = `
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 800;
+      border-radius: 6px;
+      background: ${bgColor};
+      border: ${border};
+      color: ${color};
+      transition: all 0.2s;
+      transform: ${transform};
+      box-shadow: ${boxShadow};
+      position: relative;
+    `;
+    
+    dayEl.innerText = d;
+
+    // Se tiver jogo (ex: hoje)
+    if (isToday) {
+       const dot = document.createElement("div");
+       dot.style.cssText = "position: absolute; bottom: 2px; width: 4px; height: 4px; background: #000; border-radius: 50%;";
+       dayEl.appendChild(dot);
+    }
+
+    grid.appendChild(dayEl);
+  }
+}
+
+export async function renderProposals(info, containerId = "proposalsList", badgeId = "proposalCountBadge", cardId = "transferProposalsCard") {
+  const card = document.getElementById(cardId);
+  const list = document.getElementById(containerId);
+  const badge = document.getElementById(badgeId);
+  if (!list) return;
+
+  const proposals = info.proposals || [];
+  if (proposals.length === 0) {
+    if (card) card.style.display = "none";
+    list.innerHTML = `<p style="color: #444; text-align: center; padding: 30px;">Sem propostas pendentes.</p>`;
+    return;
+  }
+
+  if (card) card.style.display = "block";
+  if (badge) badge.innerText = `${proposals.length} Pendente${proposals.length > 1 ? "s" : ""}`;
+  list.innerHTML = "";
+
+  proposals.forEach((prop) => {
+    const item = document.createElement("div");
+    item.style.cssText = "background: #1a1a1a; border: 1px solid #333; padding: 15px; border-radius: 10px; display: flex; flex-direction: column; gap: 10px;";
+    
+    item.innerHTML = `
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <span style="font-size: 0.65rem; color: var(--accent); font-weight: 800; text-transform: uppercase;">PROPOSTA: ${prop.type}</span>
+        <span style="font-size: 0.6rem; color: #666;">${formatGameDate(prop.date)}</span>
+      </div>
+      <div>
+        <div style="font-weight: bold; color: #fff; font-size: 1rem;">${prop.playerName}</div>
+        <div style="font-size: 0.8rem; color: #888;">Interesse de: <b style="color: #fff;">${prop.from}</b></div>
+      </div>
+      <div style="font-size: 1.1rem; font-weight: 900; color: var(--accent); margin: 5px 0;">${formatMoney(prop.value)}</div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+        <button class="accept-prop-btn btn-primary" style="padding: 8px; font-size: 0.7rem; margin:0;" data-id="${prop.id}">ACEITAR</button>
+        <button class="reject-prop-btn btn-secondary" style="padding: 8px; font-size: 0.7rem; margin:0; background: #222; border: 1px solid #444; color: #888;" data-id="${prop.id}">RECUSAR</button>
+      </div>
+    `;
+    list.appendChild(item);
+  });
+
+  // Eventos
+  list.querySelectorAll(".accept-prop-btn").forEach(btn => {
+    btn.onclick = async () => {
+      const id = parseInt(btn.dataset.id);
+      const prop = proposals.find(x => x.id === id);
+      const coach = await Storage.getCoachInfo();
+      
+      const confirm = await showCustomModal(`Deseja aceitar a proposta de <b>${formatMoney(prop.value)}</b> de <b>${prop.from}</b> por <b>${prop.playerName}</b>?`, "confirm", "btn-primary");
+      if (confirm) {
+        // 1. Dar dinheiro
+        coach.budget += prop.value;
+        // 2. Remover Proposta
+        coach.proposals = coach.proposals.filter(x => x.id !== id);
+        // 3. Remover Jogador do Elenco
+        const { squad, saveToLocal } = await import("../core/appCore.js");
+        const idx = squad.findIndex(p => p.id === prop.playerId);
+        if (idx !== -1) {
+            squad.splice(idx, 1);
+            saveToLocal();
+        }
+        await Storage.saveCoachInfo(coach);
+        renderApp();
+        showCustomModal("Transferência concretizada!", "alert", "btn-primary");
+      }
+    };
+  });
+
+  list.querySelectorAll(".reject-prop-btn").forEach(btn => {
+    btn.onclick = async () => {
+      const id = parseInt(btn.dataset.id);
+      const coach = await Storage.getCoachInfo();
+      coach.proposals = coach.proposals.filter(x => x.id !== id);
+      await Storage.saveCoachInfo(coach);
+      renderApp();
+    };
+  });
+
+  if (window.lucide) window.lucide.createIcons();
 }
