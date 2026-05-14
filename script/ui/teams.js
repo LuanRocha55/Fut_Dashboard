@@ -594,8 +594,23 @@ export async function finalizeCareerSetup(selectedTeam) {
     await autoInitLeague();
 
     dbgToast("🔄 Iniciando jornada...", "#333");
+    
+    // Em vez de reload, vamos disparar a inicialização manual
+    const { initSystem } = await import("../core/appCore.js");
+    const { main } = await import("./init.js");
+    
+    // Limpamos o estado atual e reinicializamos
     document.body.style.opacity = "0";
-    setTimeout(() => window.location.reload(), 800);
+    setTimeout(async () => {
+      // Forçamos o recarregamento dos dados do Storage
+      await initSystem();
+      // Chamamos o main do init.js para renderizar tudo
+      await main();
+      
+      document.body.style.opacity = "1";
+      showScreen("mainApp");
+      switchMainView("dashboard");
+    }, 500);
   } catch (e) {
     dbgToast("❌ Erro ao salvar carreira: " + e.message, "#8b0000", 20000);
     console.error("Erro no finalizeCareerSetup:", e);

@@ -425,57 +425,47 @@
                             </div>
                         </div>
 
-                        <!-- Botões Gigantes de Modo de Jogo -->
-                        <div
-                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; margin-bottom: 25px;">
-                            <button id="dashToPitchBtn" class="dash-btn">
-                                <i data-lucide="layout"
-                                    style="width: 2.5rem; height: 2.5rem; color: var(--accent); margin-bottom: 10px;"></i>
-                                <strong style="color: var(--accent); font-size: 1.1rem;">PRANCHETA TÁTICA</strong>
-                                <span
-                                    style="font-size: 0.75rem; color: #888; text-transform: none; font-weight: normal;">Escale
-                                    os jogadores e defina a tática</span>
-                            </button>
-                            <button id="dashToTableBtn" class="dash-btn">
-                                <i data-lucide="users"
-                                    style="width: 2.5rem; height: 2.5rem; color: #fff; margin-bottom: 10px;"></i>
-                                <strong style="font-size: 1.1rem;">ELENCO COMPLETO</strong>
-                                <span
-                                    style="font-size: 0.75rem; color: #888; text-transform: none; font-weight: normal;">Gerencie
-                                    atributos e contratos</span>
-                            </button>
-                            <button id="dashToLeagueBtn" class="dash-btn">
-                                <i data-lucide="trophy"
-                                    style="width: 2.5rem; height: 2.5rem; color: var(--warning); margin-bottom: 10px;"></i>
-                                <strong style="color: var(--warning); font-size: 1.1rem;">COMPETIÇÕES</strong>
-                                <span
-                                    style="font-size: 0.75rem; color: #888; text-transform: none; font-weight: normal;">Liga
-                                    Nacional e Artilharia</span>
-                            </button>
-                            <button id="dashToTeamStatsBtn" class="dash-btn">
-                                <i data-lucide="bar-chart-2"
-                                    style="width: 2.5rem; height: 2.5rem; color: #00aaff; margin-bottom: 10px;"></i>
-                                <strong style="color: #00aaff; font-size: 1.1rem;">ESTATÍSTICAS</strong>
-                                <span
-                                    style="font-size: 0.75rem; color: #888; text-transform: none; font-weight: normal;">Desempenho
-                                    do seu elenco</span>
-                            </button>
-                            <button id="dashToTransferBtn" class="dash-btn">
-                                <i data-lucide="shopping-cart"
-                                    style="width: 2.5rem; height: 2.5rem; color: #a855f7; margin-bottom: 10px;"></i>
-                                <strong style="color: #a855f7; font-size: 1.1rem;">MERCADO</strong>
-                                <span
-                                    style="font-size: 0.75rem; color: #888; text-transform: none; font-weight: normal;">Contratações
-                                    e Vendas</span>
-                            </button>
-                            <button id="simulateMatchBtn" class="dash-btn dash-btn-play">
-                                <i data-lucide="play-circle"
-                                    style="width: 2.5rem; height: 2.5rem; color: #000; margin-bottom: 10px;"></i>
-                                <strong style="font-size: 1.1rem;">JOGAR PARTIDA</strong>
-                                <span
-                                    style="font-size: 0.75rem; color: #333; text-transform: none; font-weight: normal;">Vá
-                                    para o campo e simule o jogo</span>
-                            </button>
+                        <!-- Seção: Gestão e Ação -->
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-bottom: 25px;">
+                            
+                            <!-- Grupo 1: Gestão Técnica -->
+                            <div style="background: rgba(255,255,255,0.02); padding: 20px; border-radius: 15px; border: 1px solid var(--border);">
+                                <h3 style="font-size: 0.7rem; color: #666; letter-spacing: 2px; margin-bottom: 15px; text-transform: uppercase; font-weight: 800;">Gestão do Clube</h3>
+                                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px;">
+                                    <button id="dashToTableBtn" class="dash-btn" style="padding: 15px 10px;">
+                                        <i data-lucide="users" style="width: 1.5rem; height: 1.5rem; color: #fff; margin-bottom: 8px;"></i>
+                                        <strong style="font-size: 0.8rem;">ELENCO</strong>
+                                    </button>
+                                    <button id="dashToTransferBtn" class="dash-btn" style="padding: 15px 10px;">
+                                        <i data-lucide="shopping-cart" style="width: 1.5rem; height: 1.5rem; color: #a855f7; margin-bottom: 8px;"></i>
+                                        <strong style="color: #a855f7; font-size: 0.8rem;">MERCADO</strong>
+                                    </button>
+                                    <button id="dashToTeamStatsBtn" class="dash-btn" style="padding: 15px 10px;">
+                                        <i data-lucide="bar-chart-2" style="width: 1.5rem; height: 1.5rem; color: #00aaff; margin-bottom: 8px;"></i>
+                                        <strong style="color: #00aaff; font-size: 0.8rem;">STATS</strong>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Grupo 2: Preparação e Jogo -->
+                            <div style="background: rgba(0, 255, 136, 0.03); padding: 20px; border-radius: 15px; border: 1px solid rgba(0, 255, 136, 0.1);">
+                                <h3 style="font-size: 0.7rem; color: var(--accent); opacity: 0.6; letter-spacing: 2px; margin-bottom: 15px; text-transform: uppercase; font-weight: 800;">Dia de Jogo</h3>
+                                <div style="display: grid; grid-template-columns: 1fr 1fr 2fr; gap: 15px;">
+                                    <button id="dashToPitchBtn" class="dash-btn" style="padding: 15px 10px;">
+                                        <i data-lucide="layout" style="width: 1.5rem; height: 1.5rem; color: var(--accent); margin-bottom: 8px;"></i>
+                                        <strong style="color: var(--accent); font-size: 0.8rem;">TÁTICA</strong>
+                                    </button>
+                                    <button id="dashToLeagueBtn" class="dash-btn" style="padding: 15px 10px;">
+                                        <i data-lucide="trophy" style="width: 1.5rem; height: 1.5rem; color: var(--warning); margin-bottom: 8px;"></i>
+                                        <strong style="color: var(--warning); font-size: 0.8rem;">LIGA</strong>
+                                    </button>
+                                    <button id="simulateMatchBtn" class="dash-btn dash-btn-play" style="padding: 15px 10px; border-radius: 10px;">
+                                        <i data-lucide="play-circle" style="width: 1.8rem; height: 1.8rem; color: #000; margin-bottom: 5px;"></i>
+                                        <strong style="font-size: 1rem;">JOGAR</strong>
+                                    </button>
+                                </div>
+                            </div>
+
                         </div>
 
                         <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 20px;">
