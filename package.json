@@ -1,0 +1,20 @@
+{
+  "name": "fut-dashboard",
+  "version": "1.0.0",
+  "description": "Dashboard Profissional de Futebol",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --inspect=5858",
+    "migrate": "node database/migrate_db.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^31.0.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.0.0"
+  }
+}

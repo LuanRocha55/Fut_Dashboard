@@ -57,6 +57,7 @@ import {
 import { initLeagueEvents, autoInitLeague } from "../league/leagueMain.js";
 import { renderLeagueData } from "../league/leagueRenderer.js";
 import { Storage } from "../core/appStorage.js";
+import { getTeamBadge, getCompetitionBadge } from "../core/badgeService.js";
 
 let _badgeCache = JSON.parse(localStorage.getItem("fut_badge_cache") || "{}");
 let _leagueBadgeMap = JSON.parse(
@@ -167,95 +168,13 @@ export async function loadTeams() {
   }
 }
 
-export async function fetchTeamBadge(teamName) {
-  if (!teamName) return null;
-  if (_badgeCache[teamName]) return _badgeCache[teamName];
-
-  try {
-    let cleanName = teamName.replace(/\s*\(Fem\)$/i, "").trim();
-    const r = await fetch(
-      `https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t=${encodeURIComponent(teamName)}`,
-    );
-    if (!r.ok) return null;
-    const data = await r.json();
-
-    let badge = data?.teams?.[0]?.strTeamBadge;
-
-    if (!badge && cleanName !== teamName) {
-      const r2 = await fetch(
-        `https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t=${encodeURIComponent(cleanName)}`,
-      );
-      if (r2.ok) {
-        const data2 = await r2.json();
-        badge = data2?.teams?.[0]?.strTeamBadge;
-      }
-    }
-
-    if (badge) {
-      _badgeCache[teamName] = badge;
-      // Salva no cache persistente (limitado para não explodir localStorage)
-      const keys = Object.keys(_badgeCache);
-      if (keys.length > 500) delete _badgeCache[keys[0]];
-      localStorage.setItem("fut_badge_cache", JSON.stringify(_badgeCache));
-    }
-
-    return badge || null;
-  } catch {
-    return null;
-  }
+export async function fetchTeamBadge(teamName, leagueName = "") {
+  return await getTeamBadge(teamName, leagueName);
 }
 
 export async function getLeagueBadgeMap() {
-  if (_leagueBadgeMap) return _leagueBadgeMap;
-  if (_pendingLeagueFetch) return _pendingLeagueFetch;
-  _pendingLeagueFetch = (async () => {
-    try {
-      const r = await fetch(
-        "https://www.thesportsdb.com/api/v1/json/3/all_leagues.php",
-      );
-      if (!r.ok) return {};
-      const data = await r.json();
-      const map = {};
-      const aliases = {
-        "laliga ea sports": "Spanish La Liga",
-        "premier league": "English Premier League",
-        bundesliga: "German Bundesliga",
-        "ligue 1 mcdonald's": "French Ligue 1",
-        "serie a enilive": "Italian Serie A",
-        "liga f": "Spanish Liga F",
-        "barclays wsl": "English WSL",
-        nwsl: "USA NWSL",
-        gpfbl: "German Frauen Bundesliga",
-        "brasileirão série a": "Brazilian Serie A",
-        "brasileirao serie a": "Brazilian Serie A",
-        "brasileirão série b": "Brazilian Serie B",
-        libertadores: "Copa Libertadores",
-        sudamericana: "Copa Sudamericana",
-        "champions league": "UEFA Champions League",
-        "europa league": "UEFA Europa League",
-      };
-
-      (data?.leagues || []).forEach((l) => {
-        if (l.strBadge) {
-          map[l.strLeague] = l.strBadge;
-          map[l.strLeague.toLowerCase()] = l.strBadge;
-        }
-      });
-
-      // Aplica aliases se a liga destino existir no mapa
-      Object.entries(aliases).forEach(([alias, target]) => {
-        if (map[target.toLowerCase()]) {
-          map[alias] = map[target.toLowerCase()];
-        }
-      });
-      _leagueBadgeMap = map;
-      localStorage.setItem("fut_league_logo_cache", JSON.stringify(map));
-      return map;
-    } catch {
-      return _leagueBadgeMap || {};
-    }
-  })();
-  return _pendingLeagueFetch;
+  // Agora o badgeService lida com isso individualmente ou via cache central
+  return {};
 }
 
 export function loadBadgesLazy() {
@@ -267,19 +186,18 @@ export function loadBadgesLazy() {
         if (!entry.isIntersecting) return;
         const img = entry.target;
         const name = img.dataset.name;
+        const league = img.dataset.league || ""; 
         if (img.dataset.loaded) return;
         img.dataset.loaded = "1";
         observer.unobserve(img);
-        // Escalonamento para evitar 429 (rate limit)
+        
         setTimeout(async () => {
-          if (!_badgeCache[name]) {
-            _badgeCache[name] = await fetchTeamBadge(name);
-          }
-          if (_badgeCache[name] && img.isConnected) {
-            img.src = _badgeCache[name];
+          const url = await fetchTeamBadge(name, league);
+          if (url && img.isConnected) {
+            img.src = url;
           }
         }, delay);
-        delay = Math.min(delay + 120, 3000); // max 3s de espera
+        delay = Math.min(delay + 100, 3000);
       });
     },
     { rootMargin: "150px" },
@@ -289,17 +207,14 @@ export function loadBadgesLazy() {
 
 export function loadLeagueLogosLazy() {
   const imgs = document.querySelectorAll(".league-logo-img[data-league]");
-  getLeagueBadgeMap().then((map) => {
-    imgs.forEach((img) => {
-      if (img.dataset.loaded) return;
-      img.dataset.loaded = "1";
-      const name = img.dataset.league;
-      // Tenta nome exato, depois lowercase
-      const url = map[name] || map[name.toLowerCase()] || null;
-      if (url && img.isConnected) {
-        img.src = url;
-      }
-    });
+  imgs.forEach(async (img) => {
+    if (img.dataset.loaded) return;
+    img.dataset.loaded = "1";
+    const name = img.dataset.league;
+    const url = await getCompetitionBadge(name);
+    if (url && img.isConnected) {
+      img.src = url;
+    }
   });
 }
 

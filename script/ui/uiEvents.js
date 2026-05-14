@@ -8,6 +8,7 @@ import {
   updateDashboardCoach,
 } from "./render.js";
 import {
+  squad,
   formations,
   initSystem,
   performSwap,
@@ -33,6 +34,7 @@ import { Storage } from "../core/appStorage.js";
 import { toggleFitFilter } from "./state.js";
 import { initTransferMarket } from "../core/transferMarket.js";
 import { loadTeams, renderVisualTeams } from "./teams.js";
+import { syncSquadWithAPI } from "../core/squadSync.js";
 
 let isEditorInitialized = false;
 
@@ -129,6 +131,49 @@ export async function setupEventListeners() {
   document
     .getElementById("sidebarSimulateMatchBtn")
     ?.addEventListener("click", openMatchSimulation);
+
+  document.getElementById("syncSquadBtn")?.addEventListener("click", async () => {
+    const currentTeam = document.getElementById("dashTeamName").innerText;
+    const currentOvrText = document.getElementById("teamOverall").innerText;
+    const currentOvr = parseFloat(currentOvrText) * 10 || 75; // Converte de 7.5 para 75, por exemplo
+
+    if (!currentTeam || currentTeam === "--") return;
+
+    const confirmSync = await showCustomModal(
+      `Deseja sincronizar o elenco do <strong>${currentTeam}</strong> com os dados reais da API?<br><br><small style="color: #888;">Isso irá substituir os jogadores atuais pelos nomes e números reais de hoje.</small>`,
+      "confirm",
+      "btn-primary"
+    );
+
+    if (confirmSync) {
+      dbgToast("🔄 Sincronizando elenco...", "#00ff88");
+      try {
+        const newPlayers = await syncSquadWithAPI(currentTeam, currentOvr);
+        if (newPlayers && newPlayers.length > 0) {
+          // Limpa o elenco atual (preservando a referência do array se possível, ou reatribuindo se permitido)
+          squad.length = 0;
+          squad.push(...newPlayers);
+
+          autoFillTeam(); // Escala automaticamente o novo elenco
+          saveToLocal();
+          renderApp();
+          render();
+
+          showCustomModal(
+            `Sucesso! O elenco do <strong>${currentTeam}</strong> foi atualizado com ${newPlayers.length} jogadores reais.`,
+            "alert",
+            "btn-primary"
+          );
+        }
+      } catch (error) {
+        showCustomModal(
+          `Erro na sincronização: ${error.message}`,
+          "alert",
+          "btn-danger"
+        );
+      }
+    }
+  });
 
   document
     .getElementById("saveTacticBtn")
@@ -384,10 +429,10 @@ export function initCareerEvents(teams) {
             "customModal",
             "mainApp",
           ];
-          
+
           document.querySelectorAll("div").forEach((el) => {
             if (el.id && knownIds.includes(el.id)) return; // Ignora as telas estruturais nativas
-            
+
             // Se achar um elemento fixo (como o editor)
             if (window.getComputedStyle(el).position === "fixed") {
               // Se ele foi criado dentro de um contêiner oculto (como mainApp), nós o resgatamos para o body!

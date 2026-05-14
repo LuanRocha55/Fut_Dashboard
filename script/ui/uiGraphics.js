@@ -380,7 +380,7 @@ export function normalizeTeamName(name) {
   return genericToReal[name] || name;
 }
 
-export function getTeamLogoHTML(teamName) {
+export function getTeamLogoHTML(teamName, leagueName = "") {
   if (!teamName) return "";
   const realName = normalizeTeamName(teamName);
   const normalized = realName
@@ -464,7 +464,7 @@ export function getTeamLogoHTML(teamName) {
 
   return `
     <div style="width: 24px; height: 24px; position: relative; flex-shrink: 0;">
-      <img class="team-badge-img" data-name="${realName}" 
+      <img class="team-badge-img" data-name="${realName}" data-league="${leagueName}"
         referrerpolicy="no-referrer" crossorigin="anonymous"
         style="width: 24px; height: 24px; object-fit: contain; display: none;" 
         onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"

@@ -21,7 +21,8 @@ const normalizeString = (str) => {
 
 const teamNameInput = normalizeString(args[0]);
 const isAll = teamNameInput === "todos";
-const csvFilePath = "./all_players.csv";
+const path = require("path");
+const csvFilePath = path.join(__dirname, "../all_players.csv");
 
 if (!fs.existsSync(csvFilePath)) {
   console.log("❌ ARQUIVO NÃO ENCONTRADO: " + csvFilePath);
@@ -385,7 +386,7 @@ for (const realTeamName of timesEncontrados) {
   const fileName =
     realTeamName.toLowerCase().replace(/[^a-z0-9]/g, "") + ".json";
 
-  const dir = "./data/teams";
+  const dir = path.join(__dirname, "../data/teams");
   if (!fs.existsSync(dir)) {
     fs.mkdirSync(dir, { recursive: true });
   }
@@ -396,7 +397,7 @@ for (const realTeamName of timesEncontrados) {
 }
 
 listaDeTimes.sort((a, b) => a.name.localeCompare(b.name));
-fs.writeFileSync("./data/teamsList.json", JSON.stringify(listaDeTimes, null, 2));
+fs.writeFileSync(path.join(__dirname, "../data/teamsList.json"), JSON.stringify(listaDeTimes, null, 2));
 
 console.log(`🎉 Sucesso! ${timesGerados} times foram salvos na pasta data/teams/`);
 console.log(`📋 Arquivo 'teamsList.json' atualizado com sucesso!`);

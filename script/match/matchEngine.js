@@ -147,12 +147,12 @@ export function degradeStamina(
   players
     .filter((p) => !p.isExpelled)
     .forEach((p) => {
-      const isGK = p.aptitude && p.aptitude[0] === "GL";
-      const sta = p.stats?.sta || p.stats?.stm || (isGK ? 50 : 75);
+      const isGK = p.aptitude && (p.aptitude[0] === "GL" || p.aptitude[0] === "GOL");
+      const sta = p.stats?.sta || p.stats?.stm || (isGK ? 90 : 75);
 
-      // Perda de estamina: Jogadores com menos estamina perdem mais rápido
-      let loss = ((100 - sta) * 0.05 + 0.6) * staminaDrainFactor;
-      if (isGK) loss = loss * 0.05; // Reduzi de 0.15 para 0.05 para durar mais
+      // Perda de estamina: Suavizada para durar mais o jogo todo
+      let loss = ((100 - sta) * 0.03 + 0.4) * staminaDrainFactor;
+      if (isGK) loss = loss * 0.02; // Goleiros agora perdem quase nada por minuto
 
       p.currentStamina = Math.max(5, p.currentStamina - loss);
       if (isHome && homeFitnessTracker)

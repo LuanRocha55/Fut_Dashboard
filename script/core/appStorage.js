@@ -168,4 +168,23 @@ export const Storage = {
   async removeCoachInfo() {
     await del(await this.k("coachInfo"));
   },
+
+  // --- CACHE DE ESCUDOS (BADGES) ---
+  async getBadgeFromCache(name) {
+    const cache = (await get("fut_badge_cache")) || {};
+    return cache[name] || null;
+  },
+
+  async saveBadgeToCache(name, url) {
+    const cache = (await get("fut_badge_cache")) || {};
+    cache[name] = url;
+    
+    // Limpeza básica se o cache ficar muito grande (>1000 itens)
+    const keys = Object.keys(cache);
+    if (keys.length > 1000) {
+      delete cache[keys[0]];
+    }
+    
+    await set("fut_badge_cache", cache);
+  },
 };

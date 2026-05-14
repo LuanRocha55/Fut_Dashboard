@@ -1705,25 +1705,31 @@ export async function openMatchSimulation() {
           if (p.currentStamina < 15) riskFactor = 6;
 
           if (Math.random() * 10 < riskFactor) {
-            p.currentStamina -= 30; // Lesão por cansaço
+            const isGK = p.aptitude && (p.aptitude[0] === "GL" || p.aptitude[0] === "GOL");
+            if (isGK) return; // Goleiros não sofrem lesão por cansaço de corrida
+
+            p.currentStamina -= 10; // Lesão por cansaço (Reduzido de 30 para 10)
             if (isHome) {
               homeInjuriesList.push({ id: p.id, name: p.name });
               homeFitnessTracker[p.id] = p.currentStamina;
               addLog(
-                `🚑 LESÃO MUSCULAR! O cansaço cobrou a conta. ${p.name} (${Math.floor(p.currentStamina)}% fôlego) sente uma fisgada, desaba no gramado e pede substituição imediata!`,
+                `🚑 LESÃO MUSCULAR! O esforço pesou. ${p.name} sente uma fisgada e desaba no gramado!`,
                 "log-injury",
               );
             } else {
               addLog(
-                `🚑 Jogo parado! ${p.name} do ${currentOpponent.name} sentiu uma lesão muscular por desgaste e cai no gramado.`,
+                `🚑 Jogo parado! ${p.name} do ${currentOpponent.name} sentiu uma lesão muscular por desgaste.`,
                 "log-injury",
               );
             }
           } else {
-            p.currentStamina -= 15; // Perde fôlego
+            const isGK = p.aptitude && (p.aptitude[0] === "GL" || p.aptitude[0] === "GOL");
+            const lossAmount = isGK ? 1 : 5; // Goleiro perde 1, jogador de linha perde 5 (era 15)
+
+            p.currentStamina -= lossAmount; // Perde fôlego suavizado
             if (isHome) homeFitnessTracker[p.id] = p.currentStamina;
             addLog(
-              `😰 ${p.name} parece exausto em campo, respirando ofegante após uma sequência intensa de jogadas. O físico está pesando!`,
+              `😰 ${p.name} parece exausto em campo, respirando ofegante após uma sequência intensa.`,
               "log-chance",
             );
           }

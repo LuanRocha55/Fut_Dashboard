@@ -5,4 +5,5 @@ export { renderApp, render, renderTeamStats } from "./render.js";
 
 import { main } from "./init.js";
 
-main();
+// Exportamos o main para ser chamado pelo index.html
+export { main };

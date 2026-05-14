@@ -37,6 +37,7 @@
   padding: 0;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
+  image-rendering: -webkit-optimize-contrast; /* Evita logos embaçados */
 }
 
 body {
@@ -50,6 +51,11 @@ body {
   height: 100vh;
   overflow: hidden;
   letter-spacing: -0.01em;
+  
+  /* Melhorias de Nitidez para Telas Grandes */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 select,

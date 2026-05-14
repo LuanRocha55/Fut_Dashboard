@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Política de Segurança para o Electron -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://*.api-sports.io https://*.api-football.com; connect-src 'self' https://v3.football.api-sports.io; font-src 'self' https://fonts.gstatic.com;">
     <title>FutDashboard</title>
     <!-- CSS do Sistema -->
     <link rel="stylesheet" href="css/base.css">
@@ -17,7 +19,8 @@
 
     <!-- SUPER ALARME ANTI-CRASH -->
     <script>
-        if (window.location.protocol === 'file:') {
+        const isElectron = (typeof process !== 'undefined' && process.versions && process.versions.electron);
+        if (window.location.protocol === 'file:' && !isElectron) {
             alert("🚨 ERRO: MODO DE EXECUÇÃO INVÁLIDO 🚨\n\nVocê está tentando rodar o FutDashboard diretamente do explorador de arquivos (protocolo file:///).\nDevido à arquitetura modular moderna, os navegadores bloqueiam o carregamento de scripts locais por segurança.\n\n🛠️ COMO RESOLVER:\n1. Feche esta aba do navegador.\n2. Abra a pasta do projeto no VS Code.\n3. Inicie o 'Live Server' (botão 'Go Live' no canto inferior direito).\n4. Acesse o jogo através do endereço http://127.0.0.1:5500");
         }
 
@@ -412,6 +415,11 @@
                                     <div id="dashTeamName"
                                         style="color: var(--accent); font-size: 1.1rem; font-weight: 900; letter-spacing: 0.5px;">
                                         --</div>
+                                    <button id="syncSquadBtn"
+                                        style="background: #00ff8815; border: 1px solid #00ff8844; color: #00ff88; font-size: 0.65rem; font-weight: bold; padding: 4px 8px; border-radius: 4px; cursor: pointer; margin-top: 5px; display: flex; align-items: center; gap: 5px; width: fit-content; margin-left: auto;">
+                                        <i data-lucide="refresh-cw" style="width: 0.8rem; height: 0.8rem;"></i>
+                                        SINCRONIZAR ELENCO
+                                    </button>
                                 </div>
 
                             </div>
@@ -902,20 +910,31 @@
                                 <label
                                     style="font-size: 0.9rem; color: #888; display: block; margin-bottom: 12px; text-align: center; text-transform: uppercase; font-weight: bold;">Banco
                                     de Reservas</label>
-                                
+
                                 <!-- Filtros do Banco -->
-                                <div class="sim-bench-filters" style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 15px;">
+                                <div class="sim-bench-filters"
+                                    style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 15px;">
                                     <div id="simBenchPosFilters" style="display: flex; gap: 5px; flex-wrap: wrap;">
-                                        <button class="filter-btn active" data-pos="" style="flex: 1; padding: 8px 4px; font-size: 0.8rem; background: #222; border: 1px solid #444; color: #fff; border-radius: 4px; cursor: pointer;">TUDO</button>
-                                        <button class="filter-btn" data-pos="GL" style="flex: 1; padding: 8px 4px; font-size: 0.8rem; background: #222; border: 1px solid #444; color: #aaa; border-radius: 4px; cursor: pointer;">GL</button>
-                                        <button class="filter-btn" data-pos="DEF" style="flex: 1; padding: 8px 4px; font-size: 0.8rem; background: #222; border: 1px solid #444; color: #aaa; border-radius: 4px; cursor: pointer;">DEF</button>
-                                        <button class="filter-btn" data-pos="MEI" style="flex: 1; padding: 8px 4px; font-size: 0.8rem; background: #222; border: 1px solid #444; color: #aaa; border-radius: 4px; cursor: pointer;">MEI</button>
-                                        <button class="filter-btn" data-pos="ATA" style="flex: 1; padding: 8px 4px; font-size: 0.8rem; background: #222; border: 1px solid #444; color: #aaa; border-radius: 4px; cursor: pointer;">ATA</button>
+                                        <button class="filter-btn active" data-pos=""
+                                            style="flex: 1; padding: 8px 4px; font-size: 0.8rem; background: #222; border: 1px solid #444; color: #fff; border-radius: 4px; cursor: pointer;">TUDO</button>
+                                        <button class="filter-btn" data-pos="GL"
+                                            style="flex: 1; padding: 8px 4px; font-size: 0.8rem; background: #222; border: 1px solid #444; color: #aaa; border-radius: 4px; cursor: pointer;">GL</button>
+                                        <button class="filter-btn" data-pos="DEF"
+                                            style="flex: 1; padding: 8px 4px; font-size: 0.8rem; background: #222; border: 1px solid #444; color: #aaa; border-radius: 4px; cursor: pointer;">DEF</button>
+                                        <button class="filter-btn" data-pos="MEI"
+                                            style="flex: 1; padding: 8px 4px; font-size: 0.8rem; background: #222; border: 1px solid #444; color: #aaa; border-radius: 4px; cursor: pointer;">MEI</button>
+                                        <button class="filter-btn" data-pos="ATA"
+                                            style="flex: 1; padding: 8px 4px; font-size: 0.8rem; background: #222; border: 1px solid #444; color: #aaa; border-radius: 4px; cursor: pointer;">ATA</button>
                                     </div>
                                     <div id="simBenchSortFilters" style="display: flex; gap: 5px;">
-                                        <button class="sort-btn active" data-sort="rating" style="flex: 1; padding: 8px 4px; font-size: 0.8rem; background: #222; border: 1px solid #444; color: #fff; border-radius: 4px; cursor: pointer;">OVR ↓</button>
-                                        <button class="sort-btn" data-sort="fitness" style="flex: 1; padding: 8px 4px; font-size: 0.8rem; background: #222; border: 1px solid #444; color: #aaa; border-radius: 4px; cursor: pointer;">STA ↓</button>
-                                        <button class="sort-btn" data-sort="pos" style="flex: 1; padding: 8px 4px; font-size: 0.8rem; background: #222; border: 1px solid #444; color: #aaa; border-radius: 4px; cursor: pointer;">POS</button>
+                                        <button class="sort-btn active" data-sort="rating"
+                                            style="flex: 1; padding: 8px 4px; font-size: 0.8rem; background: #222; border: 1px solid #444; color: #fff; border-radius: 4px; cursor: pointer;">OVR
+                                            ↓</button>
+                                        <button class="sort-btn" data-sort="fitness"
+                                            style="flex: 1; padding: 8px 4px; font-size: 0.8rem; background: #222; border: 1px solid #444; color: #aaa; border-radius: 4px; cursor: pointer;">STA
+                                            ↓</button>
+                                        <button class="sort-btn" data-sort="pos"
+                                            style="flex: 1; padding: 8px 4px; font-size: 0.8rem; background: #222; border: 1px solid #444; color: #aaa; border-radius: 4px; cursor: pointer;">POS</button>
                                     </div>
                                 </div>
 
@@ -1519,7 +1538,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
     <!-- PONTO DE ENTRADA DO SISTEMA -->
-    <script type="module" src="script/ui/uiMain.js?v=3"></script>
+    <script type="module">
+        import { main } from "./script/ui/uiMain.js";
+        main();
+    </script>
 </body>
 
 </html>
