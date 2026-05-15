@@ -28,15 +28,21 @@ export async function renderLeagueData() {
   const tbody = document.getElementById("leagueTableBody");
   const currentRoundEl = document.getElementById("leagueCurrentRound");
   const totalRoundsEl = document.getElementById("leagueTotalRounds");
-
   if (!data) {
-    tbody.innerHTML = `<tr><td colspan="10" style="padding: 30px; color: #888;">Nenhuma competição ativa nesta carreira. Clique em "GERAR CAMPEONATO" para começar!</td></tr>`;
+    if (tbody) {
+      tbody.innerHTML = `<tr><td colspan="10" style="padding: 30px; color: #888;">Nenhuma competição ativa nesta carreira. Clique em "GERAR CAMPEONATO" para começar!</td></tr>`;
+    }
     const fixturesContainer = document.getElementById("leagueMatchesList");
     if (fixturesContainer) {
       fixturesContainer.innerHTML = `<div style="text-align: center; color: #888; padding: 20px;">Crie uma nova liga para ver o calendário.</div>`;
     }
+    const newLeagueBtn = document.getElementById("newLeagueBtn");
+    if (newLeagueBtn) newLeagueBtn.style.display = "block";
     return;
   }
+
+  const newLeagueBtn = document.getElementById("newLeagueBtn");
+  if (newLeagueBtn) newLeagueBtn.style.display = "none";
 
   if (!data.divisions && data.table) {
     data.divisions = [

@@ -233,21 +233,21 @@ export function drawRadar(canvasId, stats1, stats2 = null, isGK = false) {
   const getVals = (s) =>
     isGK
       ? [
-          s.sal || s.div || s.def || 75,
-          s.man || s.han || s.def || 75,
-          s.rep || s.kic || s.pas || 60,
-          s.ref || s.def || 75,
-          s.vel || s.spd || s.pac || 40,
-          s.pos || s.def || 75,
-        ].map((v) => v / 100)
+        s.sal || s.div || s.def || 75,
+        s.man || s.han || s.def || 75,
+        s.rep || s.kic || s.pas || 60,
+        s.ref || s.def || 75,
+        s.vel || s.spd || s.pac || 40,
+        s.pos || s.def || 75,
+      ].map((v) => v / 100)
       : [
-          s.vel || s.pac || s.spd || 50,
-          s.fin || s.sho || s.atk || 50,
-          s.pas || 50,
-          s.dri || s.atk || 50,
-          s.def || 50,
-          s.fis || s.phy || s.str || 50,
-        ].map((v) => v / 100);
+        s.vel || s.pac || s.spd || 50,
+        s.fin || s.sho || s.atk || 50,
+        s.pas || 50,
+        s.dri || s.atk || 50,
+        s.def || 50,
+        s.fis || s.phy || s.str || 50,
+      ].map((v) => v / 100);
 
   const drawPolygon = (playerStats, fillColor, strokeColor) => {
     const values = getVals(playerStats);
@@ -272,28 +272,28 @@ export function drawRadar(canvasId, stats1, stats2 = null, isGK = false) {
   drawPolygon(stats1, "rgba(0, 255, 136, 0.4)", "#00ff88");
 }
 
-export function renderStatsNumbers(stats1, stats2 = null, isGK = false) {
-  const container = document.getElementById("statsNumbers");
+export function renderStatsNumbers(stats1, stats2 = null, isGK = false, containerId = "statsNumbers") {
+  const container = document.getElementById(containerId);
   if (!container) return;
   container.innerHTML = "";
 
   const labels = isGK
     ? [
-        { key: "alc", fallback: "div", name: "alc" },
-        { key: "seg", fallback: "han", name: "seg" },
-        { key: "esp", fallback: "kic", name: "esp" },
-        { key: "ref", fallback: "ref", name: "REF" },
-        { key: "vel", fallback: "spd", name: "VEL" },
-        { key: "pos", fallback: "pos", name: "POS" },
-      ]
+      { key: "alc", fallback: "div", name: "alc" },
+      { key: "seg", fallback: "han", name: "seg" },
+      { key: "esp", fallback: "kic", name: "esp" },
+      { key: "ref", fallback: "ref", name: "REF" },
+      { key: "vel", fallback: "spd", name: "VEL" },
+      { key: "pos", fallback: "pos", name: "POS" },
+    ]
     : [
-        { key: "vel", fallback: "pac", name: "VEL" },
-        { key: "fin", fallback: "sho", name: "FIN" },
-        { key: "pas", fallback: "pas", name: "PAS" },
-        { key: "dri", fallback: "dri", name: "DRI" },
-        { key: "def", fallback: "def", name: "DEF" },
-        { key: "fis", fallback: "phy", name: "FÍS" },
-      ];
+      { key: "vel", fallback: "pac", name: "VEL" },
+      { key: "fin", fallback: "sho", name: "FIN" },
+      { key: "pas", fallback: "pas", name: "PAS" },
+      { key: "dri", fallback: "dri", name: "DRI" },
+      { key: "def", fallback: "def", name: "DEF" },
+      { key: "fis", fallback: "phy", name: "FÍS" },
+    ];
 
   const s1 = stats1 || {};
 

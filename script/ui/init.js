@@ -46,9 +46,30 @@ export async function main() {
     // 2. Inicializa os eventos do menu
     initCareerEvents(teams);
 
-    // 4. Inicializa o menu principal
-    showScreen("mainMenuScreen");
-    dbgToast("🆕 Menu pronto!", "#1a5c2a");
+    // 4. Inicializa o menu principal ou pula para o Dashboard
+    const jumpToDash = localStorage.getItem("fut_jump_to_dash");
+    if (jumpToDash === "true") {
+      localStorage.removeItem("fut_jump_to_dash");
+      
+      const { initSystem } = await import("../core/appCore.js");
+      const { setupEventListeners } = await import("./uiEvents.js");
+      const { render, updateDashboardCoach } = await import("./render.js");
+      const { switchMainView } = await import("./views.js");
+
+      await initSystem();
+      const coach = await Storage.getCoachInfo();
+      
+      showScreen("mainApp");
+      switchMainView("dashboard");
+      
+      if (coach) await updateDashboardCoach(coach);
+      setupEventListeners();
+      render();
+      dbgToast("🚀 Carreira iniciada!", "#1a5c2a");
+    } else {
+      showScreen("mainMenuScreen");
+      dbgToast("🆕 Menu pronto!", "#1a5c2a");
+    }
   } catch (error) {
     dbgToast("❌ ERRO CRÍTICO: " + error.message, "#8b0000", 30000);
     console.error("❌ Erro crítico no Main:", error);

@@ -216,7 +216,10 @@ export function renderTable() {
   tbody.appendChild(frag);
 }
 
+let _tableEventsInitialized = false;
 export function initTableEvents() {
+  if (_tableEventsInitialized) return;
+  _tableEventsInitialized = true;
   document
     .getElementById("tableSearchInput")
     ?.addEventListener("input", renderTable);

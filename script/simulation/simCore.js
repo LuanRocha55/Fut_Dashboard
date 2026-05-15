@@ -79,6 +79,14 @@ export async function openMatchSimulation() {
     awayTackles = 0;
   let homeSaves = 0,
     awaySaves = 0;
+  let homeXG = 0.0,
+    awayXG = 0.0;
+  let homePassesCompleted = 0,
+    awayPassesCompleted = 0;
+  let homeDribbles = 0,
+    awayDribbles = 0;
+  let homeInterceptions = 0,
+    awayInterceptions = 0;
   let homePossession = 50;
   let currentReferee = getRandomReferee();
 
@@ -112,8 +120,8 @@ export async function openMatchSimulation() {
   // Reset da UI para aguardar carregamento
   logContainer.innerHTML =
     "<div class='log-entry log-neutral'>Carregando informações da partida...</div>";
-  timeEl.innerText = "00'";
-  scoreEl.innerText = "0 x 0";
+  if (timeEl) timeEl.innerText = "00'";
+  if (scoreEl) scoreEl.innerText = "0 x 0";
   startBtn.style.display = "none";
   pauseSimBtn.style.display = "none";
   if (subOutList) subOutList.innerHTML = "";
@@ -258,9 +266,11 @@ export async function openMatchSimulation() {
   let currentOpponent = await loadOpponentData(currentOpponentId, leagueData);
 
   const updateUI = () => {
-    document.getElementById("simHomeTeam").innerText =
-      matchInfo.home || "Seu Time";
-    document.getElementById("simAwayTeam").innerText = currentOpponent.name;
+    const homeTeamEl = document.getElementById("simHomeTeam");
+    if (homeTeamEl) homeTeamEl.innerText = matchInfo.home || "Seu Time";
+
+    const awayTeamEl = document.getElementById("simAwayTeam");
+    if (awayTeamEl) awayTeamEl.innerText = currentOpponent.name;
 
     document.getElementById("simHomeLogo").innerHTML = getTeamLogoHTML(
       matchInfo.home || "Seu Time",
@@ -269,15 +279,20 @@ export async function openMatchSimulation() {
       currentOpponent.name,
     );
 
-    document.getElementById("simMatchTitle").innerText =
-      isLeagueMatch || isCupMatch || isContinentalMatch
-        ? isLeagueMatch
-          ? `Campeonato Nacional - Rodada ${leagueData.currentRound}`
-          : isCupMatch
-            ? `Copa Nacional - ${leagueData.cup.phaseNames[leagueData.cup.currentPhaseIndex]}`
-            : `${leagueData.continentalCup.name} - ${leagueData.continentalCup.phaseNames[leagueData.continentalCup.currentPhaseIndex]}`
-        : matchInfo.tournament || "Amistoso Internacional";
-    document.getElementById("simRefereeName").innerText = currentReferee.name;
+    const matchTitleEl = document.getElementById("simMatchTitle");
+    if (matchTitleEl) {
+      matchTitleEl.innerText =
+        isLeagueMatch || isCupMatch || isContinentalMatch
+          ? isLeagueMatch
+            ? `Campeonato Nacional - Rodada ${leagueData.currentRound}`
+            : isCupMatch
+              ? `Copa Nacional - ${leagueData.cup.phaseNames[leagueData.cup.currentPhaseIndex]}`
+              : `${leagueData.continentalCup.name} - ${leagueData.continentalCup.phaseNames[leagueData.continentalCup.currentPhaseIndex]}`
+          : matchInfo.tournament || "Amistoso Internacional";
+    }
+
+    const refEl = document.getElementById("simRefereeName");
+    if (refEl) refEl.innerText = currentReferee.name;
     if ((isLeagueMatch || isCupMatch || isContinentalMatch) && opponentSelect) {
       let opt = opponentSelect.querySelector(
         `option[value="${currentOpponentId}"]`,
@@ -329,7 +344,7 @@ export async function openMatchSimulation() {
   let titularesBase = titulares.map((p) => {
     let fit = p.fitness !== undefined ? p.fitness : 100;
     homeFitnessTracker[p.id] = fit;
-    return { ...p, currentStamina: fit };
+    return { ...p, currentStamina: fit, rating: 6.0 };
   });
 
   let currentFormation =
@@ -347,12 +362,13 @@ export async function openMatchSimulation() {
     .map((p) => {
       let fit = p.fitness !== undefined ? p.fitness : 100;
       homeFitnessTracker[p.id] = fit;
-      return { ...p, currentStamina: fit, substitutedOut: false };
+      return { ...p, currentStamina: fit, substitutedOut: false, rating: 6.0 };
     });
 
   let awayActivePlayers = currentOpponent.squad.map((p) => ({
     ...p,
     currentStamina: 100,
+    rating: 6.0,
   }));
   let awayBench = (currentOpponent.fullSquad || [])
     .filter(
@@ -361,7 +377,7 @@ export async function openMatchSimulation() {
         p.matchStatus !== "red" &&
         p.matchStatus !== "injury",
     )
-    .map((p) => ({ ...p, currentStamina: 100 }));
+    .map((p) => ({ ...p, currentStamina: 100, rating: 6.0 }));
 
   let homeRedCards = 0;
   let awayRedCards = 0;
@@ -574,8 +590,6 @@ export async function openMatchSimulation() {
   const renderSubLists = () => {
     if (!subInList) return;
 
-    renderMiniPitch();
-
     const activePosBtn = document.querySelector("#simBenchPosFilters .filter-btn.active");
     const activeSortBtn = document.querySelector("#simBenchSortFilters .sort-btn.active");
     
@@ -688,56 +702,80 @@ export async function openMatchSimulation() {
   };
   populateSubSelects();
 
-  const updateStatsUI = () => {
-    if (!homeScorersDiv || !awayScorersDiv) return;
-    const formatStats = (scorersArr, cardsArr) => {
-      const counts = {};
-      scorersArr.forEach((n) => (counts[n] = (counts[n] || 0) + 1));
-      let html = Object.entries(counts)
-        .map(([n, c]) => `⚽ ${n} ${c > 1 ? `(${c})` : ""}`)
-        .join("<br>");
+    const updateStatsUI = () => {
+      if (!homeScorersDiv || !awayScorersDiv) return;
 
-      if (cardsArr.length > 0) {
-        if (html) html += "<br>";
-        html += cardsArr
-          .map((c) => `${c.type === "red" ? "🟥" : "🟨"} ${c.name}`)
+      const formatScorers = (scorersArr, cardsArr) => {
+        const counts = {};
+        scorersArr.forEach((n) => (counts[n] = (counts[n] || 0) + 1));
+        let html = Object.entries(counts)
+          .map(([n, c]) => `⚽ ${n} ${c > 1 ? `(${c})` : ""}`)
           .join("<br>");
-      }
-      return html;
-    };
-    homeScorersDiv.innerHTML = formatStats(homeScorers, homeCards);
-    awayScorersDiv.innerHTML = formatStats(awayScorers, awayCards);
 
-    const setElText = (id, text) => {
-      const el = document.getElementById(id);
-      if (el) el.innerText = text;
-    };
+        if (cardsArr.length > 0) {
+          if (html) html += "<br>";
+          html += cardsArr
+            .map((c) => `${c.type === "red" ? "🟥" : "🟨"} ${c.name}`)
+            .join("<br>");
+        }
+        return html;
+      };
 
-    setElText("simHomePossession", homePossession);
-    setElText("simAwayPossession", 100 - homePossession);
-    setElText("simHomeShots", homeShots);
-    setElText("simHomeShotsOnTarget", homeShotsOnTarget);
-    setElText("simAwayShots", awayShots);
-    setElText("simAwayShotsOnTarget", awayShotsOnTarget);
-    setElText("simHomeFouls", homeFouls);
-    setElText("simAwayFouls", awayFouls);
-    setElText("simHomePasses", homePasses);
-    setElText("simAwayPasses", awayPasses);
-    setElText("simHomeCorners", homeCorners);
-    setElText("simAwayCorners", awayCorners);
-    setElText("simHomeCrosses", homeCrosses);
-    setElText("simAwayCrosses", awayCrosses);
-    setElText("simHomeOffsides", homeOffsides);
-    setElText("simAwayOffsides", awayOffsides);
-    setElText("simHomeLongBalls", homeLongBalls);
-    setElText("simAwayLongBalls", awayLongBalls);
-    setElText("simHomeTackles", homeTackles);
-    setElText("simAwayTackles", awayTackles);
-    setElText("simHomeCards", homeCards.length);
-    setElText("simAwayCards", awayCards.length);
-    setElText("simHomeSaves", homeSaves);
-    setElText("simAwaySaves", awaySaves);
-  };
+      homeScorersDiv.innerHTML = formatScorers(homeScorers, homeCards);
+      awayScorersDiv.innerHTML = formatScorers(awayScorers, awayCards);
+
+      const renderStatRow = (id, label, homeVal, awayVal, isPercentage = false) => {
+        const container = document.getElementById(id);
+        if (!container) return;
+
+        const total = (homeVal + awayVal) || 1;
+        const homePct = (homeVal / total) * 100;
+        const awayPct = (awayVal / total) * 100;
+
+        container.innerHTML = `
+          <div style="margin-bottom: 12px;">
+            <div style="display: flex; justify-content: space-between; font-size: 0.7rem; color: #888; font-weight: bold; text-transform: uppercase; margin-bottom: 4px;">
+              <span>${homeVal}${isPercentage ? "%" : ""}</span>
+              <span>${label}</span>
+              <span>${awayVal}${isPercentage ? "%" : ""}</span>
+            </div>
+            <div style="height: 6px; background: #222; border-radius: 3px; display: flex; overflow: hidden; border: 1px solid #333;">
+              <div style="width: ${homePct}%; background: var(--accent); transition: width 0.5s ease-out; border-right: 1px solid #000;"></div>
+              <div style="width: ${awayPct}%; background: #555; transition: width 0.5s ease-out;"></div>
+            </div>
+          </div>
+        `;
+      };
+
+      renderStatRow("statPossession", "Posse de Bola", homePossession, 100 - homePossession, true);
+      renderStatRow("statShots", "Finalizações", homeShots, awayShots);
+      renderStatRow("statShotsOnTarget", "No Alvo", homeShotsOnTarget, awayShotsOnTarget);
+      renderStatRow("statXG", "xG (Expectativa)", parseFloat(homeXG.toFixed(2)), parseFloat(awayXG.toFixed(2)));
+      renderStatRow("statPasses", "Passes", homePasses, awayPasses);
+      renderStatRow("statTackles", "Desarmes", homeTackles, awayTackles);
+      renderStatRow("statSaves", "Defesas", homeSaves, awaySaves);
+      renderStatRow("statFouls", "Faltas", homeFouls, awayFouls);
+      renderStatRow("statCorners", "Escanteios", homeCorners, awayCorners);
+      renderStatRow("statOffsides", "Impedimentos", homeOffsides, awayOffsides);
+      renderStatRow("statCards", "Cartões", homeCards.length, awayCards.length);
+
+      const setElText = (id, text) => {
+        const el = document.getElementById(id);
+        if (el) el.innerText = text;
+      };
+
+      setElText("simAwayXG", awayXG.toFixed(2));
+      
+      const hPassAcc = homePasses > 0 ? Math.round((homePassesCompleted / homePasses) * 100) : 0;
+      const aPassAcc = awayPasses > 0 ? Math.round((awayPassesCompleted / awayPasses) * 100) : 0;
+      setElText("simHomePassAcc", hPassAcc);
+      setElText("simAwayPassAcc", aPassAcc);
+
+      setElText("simHomeDribbles", homeDribbles);
+      setElText("simAwayDribbles", awayDribbles);
+      setElText("simHomeInterceptions", homeInterceptions);
+      setElText("simAwayInterceptions", awayInterceptions);
+    };
 
   const togglePause = () => {
     if (isPaused) {
@@ -949,9 +987,11 @@ export async function openMatchSimulation() {
           ];
         homeAssists.push(assister.name);
         homeAssistsIds.push(assister.id);
+        assister.rating = Math.min(10.0, (assister.rating || 6.0) + 0.8);
       }
     }
     scoreEl.innerText = `${homeScore} x ${awayScore}`;
+    jogador.rating = Math.min(10.0, (jogador.rating || 6.0) + 1.5);
     updateStatsUI();
   };
 
@@ -1000,6 +1040,7 @@ export async function openMatchSimulation() {
     if (Math.random() < 0.6) {
       const tacklesAmount = Math.floor(Math.random() * 3);
       homeTackles += tacklesAmount;
+      homeInterceptions += Math.floor(Math.random() * 2);
       for (let i = 0; i < tacklesAmount; i++) {
         const defenders = homeActivePlayers.filter((p) =>
           ["ZE", "ZD", "LE", "LD", "VOL", "MC"].includes(p.aptitude?.[0]),
@@ -1013,7 +1054,21 @@ export async function openMatchSimulation() {
         }
       }
     }
-    if (Math.random() < 0.6) awayTackles += Math.floor(Math.random() * 3);
+    if (Math.random() < 0.6) {
+      awayTackles += Math.floor(Math.random() * 3);
+      awayInterceptions += Math.floor(Math.random() * 2);
+    }
+
+    // Passes e Dribbles aleatórios por minuto
+    const hPass = Math.floor(Math.random() * 8) + 5;
+    const aPass = Math.floor(Math.random() * 8) + 5;
+    homePasses += hPass;
+    awayPasses += aPass;
+    homePassesCompleted += Math.floor(hPass * (0.7 + Math.random() * 0.25));
+    awayPassesCompleted += Math.floor(aPass * (0.65 + Math.random() * 0.25));
+
+    if (Math.random() < 0.4) homeDribbles += Math.floor(Math.random() * 2);
+    if (Math.random() < 0.4) awayDribbles += Math.floor(Math.random() * 2);
 
     // Sistemas Físicos e Táticos Baseados no Tempo
     let staminaDrainFactor = 1.0;
@@ -1040,6 +1095,14 @@ export async function openMatchSimulation() {
       staminaDrainFactor,
     );
     degradeStamina(awayActivePlayers, false, homeFitnessTracker);
+
+    // Atualização leve de notas baseada no tempo e eventos genéricos
+    homeActivePlayers.forEach(p => {
+      if (p.isExpelled) return;
+      // Flutuação aleatória pequena (-0.1 a +0.1)
+      p.rating = Math.max(3.0, Math.min(10.0, (p.rating || 6.0) + (Math.random() * 0.2 - 0.1)));
+    });
+
     updateSubListsStamina();
     handleAISubstitutions();
 
@@ -1266,6 +1329,7 @@ export async function openMatchSimulation() {
         jogador = onPitch[Math.floor(Math.random() * onPitch.length)];
       }
       homeShots++;
+      homeXG += 0.05 + Math.random() * 0.15;
       if (
         Math.random() * 100 <
         (jogador.stats?.fin || jogador.stats?.sho || 50)
@@ -1321,6 +1385,8 @@ export async function openMatchSimulation() {
             (p) => p.aptitude?.[0] === "GL" || p.aptitude?.[0] === "GOL",
           ) || { name: "o goleiro adversário" };
           addLog(getOppSavePhrase(jogador.name, awayKeeper.name), "log-chance");
+          // Bônus para o goleiro adversário? No momento focamos no jogador do user, 
+          // mas se quisermos notas pro rival: awayKeeper.rating += 0.5;
           if (Math.random() < 0.6) {
             homeCorners++;
             addLog("Escanteio para o nosso time!", "log-neutral");
@@ -1333,6 +1399,7 @@ export async function openMatchSimulation() {
             const onPitch = homeActivePlayers.filter((p) => !p.isExpelled);
             if (Math.random() < 0.15 && onPitch.length > 0) {
               homeShots++;
+              homeXG += 0.12;
               homeShotsOnTarget++;
               const fieldPlayers = onPitch.filter(
                 (p) => p.aptitude?.[0] !== "GL" && p.aptitude?.[0] !== "GOL",
@@ -1428,9 +1495,12 @@ export async function openMatchSimulation() {
       const goalChance = oppFinishing - homeKeeperReflex * 0.75;
 
       awayShots++;
+      awayXG += 0.05 + Math.random() * 0.15;
+
       if (Math.random() * 100 < goalChance) {
         awayShotsOnTarget++;
         playSound(soundMiss);
+        goleiro.rating = Math.max(3.0, (goleiro.rating || 6.0) - 0.3); // Pequena penalidade por sofrer gol
         addLog(
           getAwayGoalPhrase(
             currentOpponent.name,
@@ -1480,6 +1550,7 @@ export async function openMatchSimulation() {
         awayShotsOnTarget++;
         homeSaves++;
         playSound(soundGoal);
+        goleiro.rating = Math.min(10.0, (goleiro.rating || 6.0) + 0.4);
         addLog(getSavePhrase(goleiro.name, oppAttackerName), "log-chance");
         if (Math.random() < 0.4) {
           awayCorners++;
@@ -1495,6 +1566,7 @@ export async function openMatchSimulation() {
 
           if (Math.random() < 0.15 && awayActivePlayers.length > 0) {
             awayShots++;
+            awayXG += 0.12;
             awayShotsOnTarget++;
             const fieldPlayers = awayActivePlayers.filter(
               (p) => p.aptitude?.[0] !== "GL" && p.aptitude?.[0] !== "GOL",
@@ -1565,12 +1637,14 @@ export async function openMatchSimulation() {
                   `🟨 EXPULSÃO ANULADA! O árbitro retira o vermelho e aplica apenas o amarelo para ${p.name}! Ele segue em campo!`,
                   "log-card-yellow",
                 );
+                p.rating = Math.max(3.0, (p.rating || 6.0) - 0.5);
                 homeCards.push({ id: p.id, name: p.name, type: "yellow" });
               } else {
                 addLog(
                   `🟥 EXPULSÃO CONFIRMADA PELO VAR! O time fica com um a menos!`,
                   "log-card-red",
                 );
+                p.rating = Math.max(2.0, (p.rating || 6.0) - 1.5);
                 const wasCaptain = p.captain;
                 homeActivePlayers.splice(idx, 1);
                 homeRedCards++;
@@ -1592,6 +1666,7 @@ export async function openMatchSimulation() {
               }
             } else {
               addLog(`O time fica com um a menos!`, "log-card-red");
+              p.rating = Math.max(2.0, (p.rating || 6.0) - 1.5);
               const wasCaptain = p.captain;
               p.isExpelled = true;
               homeRedCards++;
@@ -1610,6 +1685,7 @@ export async function openMatchSimulation() {
               renderSubLists(); // Atualiza UI
             }
           } else if (cardRand < 0.35) {
+            p.rating = Math.max(3.0, (p.rating || 6.0) - 0.5);
             homeCards.push({ id: p.id, name: p.name, type: "yellow" });
             addLog(
               `🟨 CARTÃO AMARELO! ${p.name} chega atrasado na marcação e é advertido pelo juiz.`,
@@ -1793,4 +1869,8 @@ export async function openMatchSimulation() {
     }
     closeSimulationView();
   };
+
+  // Inicialização Visual
+  renderMiniPitch();
+  updateStatsUI();
 }

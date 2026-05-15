@@ -8,7 +8,10 @@ import { normalizeStr } from "../core/appUtils.js";
 
 let teamsListCache = [];
 
+let _marketInitialized = false;
 export async function initTransferMarket() {
+  if (_marketInitialized) return;
+  _marketInitialized = true;
   const leagueSelect = document.getElementById("transferLeagueSelect");
   const teamSelect = document.getElementById("transferTeamSelect");
   const searchBtn = document.getElementById("transferSearchBtn");
@@ -16,15 +19,8 @@ export async function initTransferMarket() {
 
   if (!leagueSelect || !teamSelect || !searchBtn || !resultsList) return;
 
-  try {
-    const res = await fetch("data/teamsList.json", { cache: "no-store" });
-    if (res.ok) {
-      teamsListCache = await res.json();
-    }
-  } catch (e) {
-    console.error("Erro ao carregar lista de times para o mercado", e);
-    return;
-  }
+  teamsListCache = await Storage.getTeamsList();
+  if (!teamsListCache.length) return;
 
   const leagues = [...new Set(teamsListCache.map((t) => t.league || "Outros"))].sort();
   leagueSelect.innerHTML = '<option value="">-- Selecione uma Liga --</option>';
@@ -147,29 +143,10 @@ export async function initTransferMarket() {
             return;
           }
 
-          if (coach.budget < pData.marketValue) {
-            showCustomModal(`<strong>Saldo Insuficiente!</strong><br><br>O jogador custa ${formatMoney(pData.marketValue)}, mas você tem apenas ${formatMoney(coach.budget)}.`, "alert", "btn-danger");
-            return;
-          }
-
-          const confirm = await showCustomModal(`Deseja contratar <strong>${pData.name}</strong> por <strong>${formatMoney(pData.marketValue)}</strong>?`, "confirm", "btn-primary");
-          if (confirm) {
-            if (squad.some((s) => s.name === pData.name && s.age === pData.age && s.nationality === pData.nationality)) {
-              showCustomModal(`<strong>${pData.name}</strong> já faz parte do seu elenco!`, "alert", "btn-warning");
-              return;
-            }
-
-            coach.budget -= pData.marketValue;
-            await Storage.saveCoachInfo(coach);
-
-            const newId = squad.length > 0 ? Math.max(...squad.map((x) => x.id)) + 1 : 1;
-            const newPlayer = { ...pData, id: newId, status: "reserva", matchStatus: "normal", captain: false };
-            squad.push(newPlayer);
-            saveToLocal();
-            renderApp();
-            
-            showCustomModal(`<strong>${pData.name}</strong> contratado! Saldo restante: ${formatMoney(coach.budget)}`, "alert", "btn-primary");
-          }
+          // Abrir tela de negociação
+          import("../ui/render.js").then(m => {
+            m.renderNegotiation(pData.id, null, true, pData);
+          });
         };
       });
 

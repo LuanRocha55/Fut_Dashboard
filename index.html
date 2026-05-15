@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Política de Segurança para o Electron -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://*.api-sports.io https://*.api-football.com https://flagcdn.com https://www.thesportsdb.com; connect-src 'self' https://v3.football.api-sports.io https://www.thesportsdb.com; font-src 'self' https://fonts.gstatic.com;">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://*.api-sports.io https://*.api-football.com https://flagcdn.com https://www.thesportsdb.com; connect-src 'self' https://v3.football.api-sports.io https://www.thesportsdb.com; font-src 'self' https://fonts.gstatic.com;">
     <title>FutDashboard</title>
     <!-- CSS do Sistema -->
     <link rel="stylesheet" href="css/base.css">
@@ -28,7 +29,7 @@
         window.addEventListener('error', function (e) {
             if (e.target && (e.target.tagName === 'SCRIPT' || e.target.tagName === 'LINK')) {
                 const url = e.target.src || e.target.href || "Origem desconhecida (provável script inline ou dinâmico)";
-                
+
                 console.error('Falha crítica de carregamento:', {
                     tag: e.target.tagName,
                     url: url,
@@ -148,9 +149,9 @@
                 </button>
             </div>
 
-                <!-- Cards de times injetados via JS -->
-            </div>
+            <!-- Cards de times injetados via JS -->
         </div>
+    </div>
     </div>
 
     <div id="mainApp" class="main-app-container" style="display: none;">
@@ -200,311 +201,167 @@
                     <button id="sidebarSimulateMatchBtn" class="btn-warning btn-sim-sidebar">IR PARA O JOGO ➔</button>
                 </section>
 
-                <section class="control-group" style="margin-top: 10px; padding: 15px; background: rgba(0,0,0,0.2); border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
+                <section class="control-group"
+                    style="margin-top: 10px; padding: 15px; background: rgba(0,0,0,0.2); border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
                     <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
                         <canvas id="teamRadarChart" width="180" height="180"></canvas>
                         <div style="text-align: center;">
-                             <div id="teamStars" style="color: var(--warning); font-size: 1.5rem; letter-spacing: 2px;">☆☆☆☆☆</div>
-                             <div style="font-size: 0.9rem; font-weight: 900; margin-top: 2px; color: #fff;">OVERALL: <span id="teamOverall" style="color: var(--accent);">0.0</span></div>
+                            <div id="teamStars" style="color: var(--warning); font-size: 1.5rem; letter-spacing: 2px;">
+                                ☆☆☆☆☆</div>
+                            <div style="font-size: 0.9rem; font-weight: 900; margin-top: 2px; color: #fff;">OVERALL:
+                                <span id="teamOverall" style="color: var(--accent);">0.0</span>
+                            </div>
                         </div>
                     </div>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 15px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 10px;">
-                        <div style="text-align: center;"><span style="font-size: 0.55rem; color: #666; display: block; text-transform: uppercase;">Ataque</span><span id="teamAtk" style="font-size: 0.9rem; font-weight: 800;">0</span></div>
-                        <div style="text-align: center;"><span style="font-size: 0.55rem; color: #666; display: block; text-transform: uppercase;">Defesa</span><span id="teamDef" style="font-size: 0.9rem; font-weight: 800;">0</span></div>
-                        <div style="text-align: center;"><span style="font-size: 0.55rem; color: #666; display: block; text-transform: uppercase;">Idade</span><span id="teamAge" style="font-size: 0.9rem; font-weight: 800;">0</span></div>
-                        <div style="text-align: center;"><span style="font-size: 0.55rem; color: #666; display: block; text-transform: uppercase;">Sintonia</span><span id="teamFitness" style="font-size: 0.9rem; font-weight: 800;">0/11</span></div>
+                    <div
+                        style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 15px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 10px;">
+                        <div style="text-align: center;"><span
+                                style="font-size: 0.55rem; color: #666; display: block; text-transform: uppercase;">Ataque</span><span
+                                id="teamAtk" style="font-size: 0.9rem; font-weight: 800;">0</span></div>
+                        <div style="text-align: center;"><span
+                                style="font-size: 0.55rem; color: #666; display: block; text-transform: uppercase;">Defesa</span><span
+                                id="teamDef" style="font-size: 0.9rem; font-weight: 800;">0</span></div>
+                        <div style="text-align: center;"><span
+                                style="font-size: 0.55rem; color: #666; display: block; text-transform: uppercase;">Idade</span><span
+                                id="teamAge" style="font-size: 0.9rem; font-weight: 800;">0</span></div>
+                        <div style="text-align: center;"><span
+                                style="font-size: 0.55rem; color: #666; display: block; text-transform: uppercase;">Sintonia</span><span
+                                id="teamFitness" style="font-size: 0.9rem; font-weight: 800;">0/11</span></div>
                     </div>
                 </section>
             </div>
-            <!-- PlayerView oculto -->
-            <div id="playerView" class="view-mode player-view-container" style="display: none; height: 100%;">
-                <div class="pv-header">
-                    <div class="pv-title-group">
-                        <h4 class="pv-title">Detalhes do Atleta</h4>
-                        <span id="toggleEditBtn" class="badge-btn badge-btn-dark" title="Alternar Edição">EDITAR</span>
-                    </div>
-                    <span id="closeMenuBtn" class="btn-close">&times;</span>
-                </div>
-
-                <div class="info-item info-item-base">
-                    <label>NOME DO JOGADOR</label>
-                    <span id="viewName" class="view-el pv-name"></span>
-                    <input type="text" id="editNameInput" class="edit-el pv-name-input">
-                </div>
-
-                <div class="view-el info-item-base">
-                    <label class="pv-compare-label">COMPARAR COM: (Gráfico Vermelho)</label>
-                    <select id="compareSelect" class="pv-compare-select">
-                        <option value="">-- Selecione um jogador --</option>
-                    </select>
-                </div>
-
-                <div class="view-el">
-                    <canvas id="radarChart" width="200" height="200" class="pv-radar"></canvas>
-                    <div id="statsNumbers" class="stats-compare-container"></div>
-                </div>
-
-                <div class="info-item view-el info-item-base">
-                    <label>ESTATÍSTICAS NO CLUBE (CARREIRA)</label>
-                    <div class="career-stats-wrap">
-                        <div class="career-stat-item"><i data-lucide="goal" class="icon-base icon-goal"></i> GOLS: <span
-                                id="viewGoals" class="text-goal">0</span></div>
-                        <div class="career-stat-item"><i data-lucide="move-right" class="icon-base icon-assist"></i>
-                            ASSIS: <span id="viewAssists" class="text-assist">0</span></div>
-                        <div class="career-stat-item"><i data-lucide="copy" class="icon-base icon-yellow icon-tilt"></i>
-                            <span id="viewYellows" class="text-yellow">0</span> / 3
-                        </div>
-                    </div>
-                </div>
-
-                <div class="info-grid">
-                    <div class="info-item">
-                        <label>NOTA GERAL</label>
-                        <span id="viewRating" class="view-el pv-rating"></span>
-                        <input type="number" id="editRatingInput" class="edit-el pv-rating-input" disabled
-                            title="Calculado automaticamente a partir dos atributos">
-                    </div>
-                    <div class="info-item">
-                        <label>CAMISA</label>
-                        <span id="viewNumber" class="view-el"></span>
-                        <input type="number" id="editNumberInput" class="edit-el" min="1" max="99">
-                    </div>
-                    <div class="info-item">
-                        <label>IDADE</label>
-                        <span id="viewAge" class="view-el"></span>
-                        <input type="number" id="editAgeInput" class="edit-el" min="15" max="50">
-                    </div>
-                    <div class="info-item">
-                        <label>PÉ PREFERIDO</label>
-                        <span id="viewFoot" class="view-el"></span>
-                        <select id="editFootInput" class="edit-el">
-                            <option value="Destro">Destro</option>
-                            <option value="Canhoto">Canhoto</option>
-                            <option value="Ambidestro">Ambidestro</option>
-                        </select>
-                    </div>
-                    <div class="info-item">
-                        <label>PAÍS</label>
-                        <span id="viewNation" class="view-el"></span>
-                        <select id="editNationInput" class="edit-el">
-                            <optgroup label="América do Sul">
-                                <option value="BR">Brasil (BR)</option>
-                                <option value="AR">Argentina (AR)</option>
-                                <option value="UY">Uruguai (UY)</option>
-                                <option value="CO">Colômbia (CO)</option>
-                                <option value="CL">Chile (CL)</option>
-                                <option value="PE">Peru (PE)</option>
-                                <option value="EC">Equador (EC)</option>
-                                <option value="PY">Paraguai (PY)</option>
-                                <option value="VE">Venezuela (VE)</option>
-                                <option value="BO">Bolívia (BO)</option>
-                            </optgroup>
-                            <optgroup label="Europa">
-                                <option value="PT">Portugal (PT)</option>
-                                <option value="ES">Espanha (ES)</option>
-                                <option value="FR">França (FR)</option>
-                                <option value="DE">Alemanha (DE)</option>
-                                <option value="IT">Itália (IT)</option>
-                                <option value="EN">Inglaterra (EN)</option>
-                                <option value="NL">Holanda (NL)</option>
-                                <option value="BE">Bélgica (BE)</option>
-                                <option value="HR">Croácia (HR)</option>
-                                <option value="DK">Dinamarca (DK)</option>
-                                <option value="PL">Polônia (PL)</option>
-                                <option value="RS">Sérvia (RS)</option>
-                                <option value="CH">Suíça (CH)</option>
-                                <option value="SE">Suécia (SE)</option>
-                                <option value="TR">Turquia (TR)</option>
-                                <option value="UA">Ucrânia (UA)</option>
-                            </optgroup>
-                            <optgroup label="África">
-                                <option value="MA">Marrocos (MA)</option>
-                                <option value="SN">Senegal (SN)</option>
-                                <option value="EG">Egito (EG)</option>
-                                <option value="NG">Nigéria (NG)</option>
-                                <option value="CI">Costa do Marfim (CI)</option>
-                                <option value="CM">Camarões (CM)</option>
-                                <option value="GH">Gana (GH)</option>
-                                <option value="ZA">África do Sul (ZA)</option>
-                            </optgroup>
-                            <optgroup label="América do Norte / Ásia">
-                                <option value="US">Estados Unidos (US)</option>
-                                <option value="MX">México (MX)</option>
-                                <option value="CA">Canadá (CA)</option>
-                                <option value="JP">Japão (JP)</option>
-                                <option value="KR">Coreia do Sul (KR)</option>
-                                <option value="AU">Austrália (AU)</option>
-                                <option value="SA">Arábia Saudita (SA)</option>
-                            </optgroup>
-                            <option value="INT">INT</option>
-                        </select>
-                    </div>
-                    <div class="info-item" style="grid-column: 1 / span 2;">
-                        <label>STATUS DA PARTIDA (LIVE EVENTS)</label>
-                        <span id="viewMatchStatus" class="view-el" style="font-weight: bold; color: #aaa;">Apto para
-                            Jogo</span>
-                        <select id="editMatchStatusInput" class="edit-el">
-                            <option value="normal">Apto para Jogo</option>
-                            <option value="yellow">Cartão Amarelo (Risco)</option>
-                            <option value="red">Cartão Vermelho (Suspenso)</option>
-                            <option value="injury">Lesionado (Indisponível)</option>
-                        </select>
-                    </div>
-                    <div class="info-item" style="grid-column: 1 / span 2;">
-                        <label>CONDIÇÃO / MOMENTO</label>
-                        <span id="viewForm" class="view-el" style="font-weight: bold;"></span>
-                        <select id="editFormInput" class="edit-el">
-                            <option value="2">➔ Excelente (Seta pra cima)</option>
-                            <option value="1">➔ Boa (Diagonal cima)</option>
-                            <option value="0">➔ Normal (Direita)</option>
-                            <option value="-1">➔ Ruim (Diagonal baixo)</option>
-                            <option value="-2">➔ Péssima (Seta pra baixo)</option>
-                        </select>
-                    </div>
-                    <div class="info-item edit-el" style="grid-column: 1 / span 2;">
-                        <label>ATRIBUTOS (DESLIZE PARA EDITAR)</label>
-                        <div id="editSlidersContainer"
-                            style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;"></div>
-                    </div>
-                    <div class="info-item" style="grid-column: 1 / span 2;">
-                        <label>ESTILO DE JOGO</label>
-                        <span id="viewPlaystyle" class="view-el" style="color: var(--warning);"></span>
-                        <select id="editPlaystyleInput" class="edit-el"></select>
-                    </div>
-
-                    <div class="info-item view-el" style="margin-top: 10px;">
-                        <label>VALOR DE MERCADO</label>
-                        <span id="viewMarketValue" style="color: var(--accent); font-weight: 900; font-size: 1.1rem;">€ 0.0M</span>
-                    </div>
-                </div>
-
-                <div id="viewCaptain" class="view-el"
-                    style="margin-top: 10px; color: var(--warning); font-size: 0.8rem; font-weight: bold; text-align: center;">
-                </div>
-
-                <label class="edit-el"
-                    style="display: flex; align-items: center; gap: 8px; margin-top: 15px; margin-bottom: 5px; cursor: pointer; background: #111; padding: 10px; border-radius: 8px; border: 1px solid #222;">
-                    <input type="checkbox" id="editCaptainInput" style="width: auto; margin: 0;">
-                    <strong style="color: var(--warning); font-size: 0.75rem;">MARCAR COMO CAPITÃO</strong>
-                </label>
-
-                <div class="info-item" style="margin-top: 15px; margin-bottom: 10px;">
-                    <label>STATUS DE MERCADO</label>
-                    <select id="editTransferStatus" class="edit-el" style="width: 100%; padding: 10px; background: #111; border: 1px solid #333; color: #fff; border-radius: 6px; outline: none;">
-                        <option value="none">Intocável (Não Negociável)</option>
-                        <option value="transfer">Listado para Venda</option>
-                        <option value="loan">Disponível para Empréstimo</option>
-                    </select>
-                    <span id="viewTransferStatus" class="view-el" style="font-size: 0.8rem; font-weight: bold; color: var(--accent);"></span>
-                </div>
-
-                <div class="info-item" style="margin-top: 15px; margin-bottom: 20px;">
-                    <label>POSIÇÕES <span class="edit-el" style="color: var(--accent); display: inline;">(Clique para
-                            Editar)</span></label>
-                    <div id="editPositions" class="positions-container" style="margin-top: 8px;"></div>
-                </div>
-
-                <button id="saveBtn" class="edit-el btn-primary" style="margin-top: auto;">SALVAR ALTERAÇÕES</button>
-                <button id="deletePlayerBtn" class="edit-el btn-danger"
-                    style="margin-top: 10px; border-color: var(--danger); color: var(--danger);">VENDER ATLETA</button>
-                <button id="terminateContractBtn" class="edit-el btn-secondary"
-                    style="margin-top: 10px; margin-bottom: 20px; background: transparent; border: 1px solid #444; color: #888; font-size: 0.65rem;">RESCINDIR CONTRATO (SEM RETORNO)</button>
-            </div>
         </aside>
 
-        <div class="main-wrapper" style="flex: 1; display: flex; flex-direction: column; height: 100vh; overflow: hidden; position: relative;">
-            
+        <div class="main-wrapper"
+            style="flex: 1; display: flex; flex-direction: column; height: 100vh; overflow: hidden; position: relative;">
+
             <!-- Header Global Unificado -->
-            <header style="background: #111; padding: 15px 30px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; z-index: 1000; flex-shrink: 0;">
+            <header
+                style="background: #111; padding: 15px 30px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; z-index: 1000; flex-shrink: 0;">
                 <div style="display: flex; align-items: center; gap: 20px;">
-                    <h1 style="color: #fff; margin: 0; font-size: 1.6rem; letter-spacing: -1px; font-weight: 900;">Fut<span style="color: var(--accent);">Dashboard</span></h1>
-                    <div id="coachBadge" style="display: flex; align-items: center; gap: 12px; background: rgba(255,255,255,0.02); padding: 6px 15px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.05);">
+                    <h1 style="color: #fff; margin: 0; font-size: 1.6rem; letter-spacing: -1px; font-weight: 900;">
+                        Fut<span style="color: var(--accent);">Dashboard</span></h1>
+                    <div id="coachBadge"
+                        style="display: flex; align-items: center; gap: 12px; background: rgba(255,255,255,0.02); padding: 6px 15px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.05);">
                         <i data-lucide="user" style="width: 0.9rem; height: 0.9rem; color: var(--accent);"></i>
-                        <span id="dashCoachName" style="color: #fff; font-size: 0.75rem; font-weight: bold; white-space: nowrap;">--</span>
+                        <span id="dashCoachName"
+                            style="color: #fff; font-size: 0.75rem; font-weight: bold; white-space: nowrap;">--</span>
                         <span style="color: #333;">|</span>
-                        <span id="dashCoachStyle" style="color: var(--accent); font-size: 0.65rem; text-transform: uppercase; font-weight: 800;">--</span>
+                        <span id="dashCoachStyle"
+                            style="color: var(--accent); font-size: 0.65rem; text-transform: uppercase; font-weight: 800;">--</span>
                         <span style="color: #333;">|</span>
                         <div id="dashDateContainer" style="display: flex; align-items: center; gap: 8px;">
-                            <i data-lucide="calendar" style="width: 0.9rem; height: 0.9rem; color: #fff; opacity: 0.4;"></i>
-                            <span id="dashGameDate" style="color: #fff; font-size: 0.75rem; font-weight: bold; white-space: nowrap;">--</span>
-                            <span id="dashWindowStatus" style="font-size: 0.6rem; padding: 2px 6px; border-radius: 4px; font-weight: 900; text-transform: uppercase; background: rgba(255,255,255,0.03); color: #666;">--</span>
+                            <i data-lucide="calendar"
+                                style="width: 0.9rem; height: 0.9rem; color: #fff; opacity: 0.4;"></i>
+                            <span id="dashGameDate"
+                                style="color: #fff; font-size: 0.75rem; font-weight: bold; white-space: nowrap;">--</span>
+                            <span id="dashWindowStatus"
+                                style="font-size: 0.6rem; padding: 2px 6px; border-radius: 4px; font-weight: 900; text-transform: uppercase; background: rgba(255,255,255,0.03); color: #666;">--</span>
                         </div>
                     </div>
                 </div>
 
                 <div style="display: flex; align-items: center; gap: 25px;">
                     <div style="text-align: right;">
-                        <div id="dashTeamName" style="color: var(--accent); font-size: 1rem; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase;">--</div>
-                        <div style="display: flex; align-items: center; gap: 10px; justify-content: flex-end; margin-top: 1px;">
+                        <div id="dashTeamName"
+                            style="color: var(--accent); font-size: 1rem; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase;">
+                            --</div>
+                        <div
+                            style="display: flex; align-items: center; gap: 10px; justify-content: flex-end; margin-top: 1px;">
                             <span id="dashBudget" style="color: #fff; font-size: 0.8rem; font-weight: 800;">€0.0M</span>
-                            <button id="syncSquadBtn" style="background: none; border: none; color: #555; cursor: pointer; padding: 0; display: flex; align-items: center; transition: color 0.2s;" title="Sincronizar Elenco">
+                            <button id="syncSquadBtn"
+                                style="background: none; border: none; color: #555; cursor: pointer; padding: 0; display: flex; align-items: center; transition: color 0.2s;"
+                                title="Sincronizar Elenco">
                                 <i data-lucide="refresh-cw" style="width: 0.8rem; height: 0.8rem;"></i>
                             </button>
                         </div>
                     </div>
                     <div style="width: 1px; height: 30px; background: var(--border);"></div>
-                    <button id="headerHomeBtn" class="btn-danger" style="width: auto; padding: 8px 12px; background: rgba(255,68,68,0.05); border: 1px solid rgba(255,68,68,0.15); color: #ff4444; border-radius: 6px; font-size: 0.7rem; font-weight: bold; cursor: pointer; display: flex; align-items: center; gap: 5px; transition: all 0.2s;">
+                    <button id="headerHomeBtn" class="btn-danger"
+                        style="width: auto; padding: 8px 12px; background: rgba(255,68,68,0.05); border: 1px solid rgba(255,68,68,0.15); color: #ff4444; border-radius: 6px; font-size: 0.7rem; font-weight: bold; cursor: pointer; display: flex; align-items: center; gap: 5px; transition: all 0.2s;">
                         <i data-lucide="log-out" style="width: 1rem; height: 1rem;"></i> SAIR
                     </button>
                 </div>
             </header>
 
-            <main class="main-content" style="flex: 1; overflow-y: auto; padding: 25px; position: relative; background: #050505;">
-                
+            <main class="main-content"
+                style="flex: 1; overflow-y: auto; padding: 25px; position: relative; background: #050505;">
+
                 <!-- Modo Dashboard (Visão Geral) -->
-                <div id="dashboardView" class="table-view" style="display: none; background: transparent; border: none; padding: 0;">
+                <div id="dashboardView" class="table-view"
+                    style="display: none; background: transparent; border: none; padding: 0;">
                     <div style="max-width: 1200px; margin: 0 auto;">
                         <!-- O Header anterior foi removido daqui e unificado acima -->
 
                         <!-- Central de Propostas -->
-                        <div id="transferProposalsCard" style="display: none; background: #111; padding: 20px; border-radius: 12px; border: 1px solid var(--accent); margin-bottom: 25px; box-shadow: 0 0 20px rgba(0,255,136,0.15);">
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
-                                <h3 style="color: var(--accent); margin: 0; display: flex; align-items: center; gap: 10px; font-size: 1.1rem; letter-spacing: 0.5px;">
-                                    <i data-lucide="bell-ring" style="width: 1.2rem; height: 1.2rem;"></i> NOVAS PROPOSTAS RECEBIDAS!
+                        <div id="transferProposalsCard"
+                            style="display: none; background: #111; padding: 20px; border-radius: 12px; border: 1px solid var(--accent); margin-bottom: 25px; box-shadow: 0 0 20px rgba(0,255,136,0.15);">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                                <h3
+                                    style="color: var(--accent); margin: 0; display: flex; align-items: center; gap: 10px; font-size: 1.1rem; letter-spacing: 0.5px;">
+                                    <i data-lucide="bell-ring" style="width: 1.2rem; height: 1.2rem;"></i> NOVAS
+                                    PROPOSTAS RECEBIDAS!
                                 </h3>
-                                <span id="proposalCountBadge" style="background: var(--accent); color: #000; padding: 4px 12px; border-radius: 20px; font-weight: 900; font-size: 0.75rem;">0 Pendentes</span>
+                                <span id="proposalCountBadge"
+                                    style="background: var(--accent); color: #000; padding: 4px 12px; border-radius: 20px; font-weight: 900; font-size: 0.75rem;">0
+                                    Pendentes</span>
                             </div>
-                            <div id="proposalsList" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 15px;">
+                            <div id="proposalsList"
+                                style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 15px;">
                                 <!-- Gerado via JS -->
                             </div>
                         </div>
 
                         <!-- Seção: Gestão e Ação (Topo) -->
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
-                            
+
                             <!-- Grupo 1: Gestão Técnica -->
-                            <div style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 12px; border: 1px solid var(--border);">
-                                <h3 style="font-size: 0.65rem; color: #666; letter-spacing: 2px; margin-bottom: 12px; text-transform: uppercase; font-weight: 800;">Gestão do Clube</h3>
+                            <div
+                                style="background: rgba(255,255,255,0.02); padding: 15px; border-radius: 12px; border: 1px solid var(--border);">
+                                <h3
+                                    style="font-size: 0.65rem; color: #666; letter-spacing: 2px; margin-bottom: 12px; text-transform: uppercase; font-weight: 800;">
+                                    Gestão do Clube</h3>
                                 <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px;">
                                     <button id="dashToTableBtn" class="dash-btn" style="padding: 10px;">
-                                        <i data-lucide="users" style="width: 1.2rem; height: 1.2rem; color: #fff; margin-bottom: 5px;"></i>
+                                        <i data-lucide="users"
+                                            style="width: 1.2rem; height: 1.2rem; color: #fff; margin-bottom: 5px;"></i>
                                         <strong style="font-size: 0.75rem;">ELENCO</strong>
                                     </button>
                                     <button id="dashToTransferBtn" class="dash-btn" style="padding: 10px;">
-                                        <i data-lucide="shopping-cart" style="width: 1.2rem; height: 1.2rem; color: #a855f7; margin-bottom: 5px;"></i>
+                                        <i data-lucide="shopping-cart"
+                                            style="width: 1.2rem; height: 1.2rem; color: #a855f7; margin-bottom: 5px;"></i>
                                         <strong style="color: #a855f7; font-size: 0.75rem;">MERCADO</strong>
                                     </button>
                                     <button id="dashToTeamStatsBtn" class="dash-btn" style="padding: 10px;">
-                                        <i data-lucide="bar-chart-2" style="width: 1.2rem; height: 1.2rem; color: #00aaff; margin-bottom: 5px;"></i>
+                                        <i data-lucide="bar-chart-2"
+                                            style="width: 1.2rem; height: 1.2rem; color: #00aaff; margin-bottom: 5px;"></i>
                                         <strong style="color: #00aaff; font-size: 0.75rem;">STATS</strong>
                                     </button>
                                 </div>
                             </div>
 
                             <!-- Grupo 2: Preparação e Jogo -->
-                            <div style="background: rgba(0, 255, 136, 0.03); padding: 15px; border-radius: 12px; border: 1px solid rgba(0, 255, 136, 0.1);">
-                                <h3 style="font-size: 0.65rem; color: var(--accent); opacity: 0.6; letter-spacing: 2px; margin-bottom: 12px; text-transform: uppercase; font-weight: 800;">Dia de Jogo</h3>
+                            <div
+                                style="background: rgba(0, 255, 136, 0.03); padding: 15px; border-radius: 12px; border: 1px solid rgba(0, 255, 136, 0.1);">
+                                <h3
+                                    style="font-size: 0.65rem; color: var(--accent); opacity: 0.6; letter-spacing: 2px; margin-bottom: 12px; text-transform: uppercase; font-weight: 800;">
+                                    Dia de Jogo</h3>
                                 <div style="display: grid; grid-template-columns: 1fr 1fr 2fr; gap: 10px;">
                                     <button id="dashToPitchBtn" class="dash-btn" style="padding: 10px;">
-                                        <i data-lucide="layout" style="width: 1.2rem; height: 1.2rem; color: var(--accent); margin-bottom: 5px;"></i>
+                                        <i data-lucide="layout"
+                                            style="width: 1.2rem; height: 1.2rem; color: var(--accent); margin-bottom: 5px;"></i>
                                         <strong style="color: var(--accent); font-size: 0.75rem;">TÁTICA</strong>
                                     </button>
                                     <button id="dashToLeagueBtn" class="dash-btn" style="padding: 10px;">
-                                        <i data-lucide="trophy" style="width: 1.2rem; height: 1.2rem; color: var(--warning); margin-bottom: 5px;"></i>
+                                        <i data-lucide="trophy"
+                                            style="width: 1.2rem; height: 1.2rem; color: var(--warning); margin-bottom: 5px;"></i>
                                         <strong style="color: var(--warning); font-size: 0.75rem;">LIGA</strong>
                                     </button>
-                                    <button id="simulateMatchBtn" class="dash-btn dash-btn-play" style="padding: 10px; border-radius: 8px;">
-                                        <i data-lucide="play-circle" style="width: 1.4rem; height: 1.4rem; color: #000; margin-bottom: 2px;"></i>
+                                    <button id="simulateMatchBtn" class="dash-btn dash-btn-play"
+                                        style="padding: 10px; border-radius: 8px;">
+                                        <i data-lucide="play-circle"
+                                            style="width: 1.4rem; height: 1.4rem; color: #000; margin-bottom: 2px;"></i>
                                         <strong style="font-size: 0.85rem;">JOGAR</strong>
                                     </button>
                                 </div>
@@ -513,13 +370,20 @@
 
                         <!-- Layout Principal Redistribuído (Inbox + Calendário) -->
                         <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; align-items: start;">
-                            
+
                             <!-- Coluna Esquerda: Notícias -->
-                            <div style="background: #111; padding: 25px; border-radius: 12px; border: 1px solid var(--border); height: 100%;">
-                                <h4 style="color: #888; margin: 0 0 20px 0; text-transform: uppercase; font-size: 0.85rem; display: flex; align-items: center; gap: 10px; font-weight: 800;">
-                                    <i data-lucide="mail" style="width: 1.2rem; height: 1.2rem; color: var(--accent);"></i> CENTRAL DE NOTÍCIAS
+                            <div
+                                style="background: #111; padding: 25px; border-radius: 12px; border: 1px solid var(--border); height: 100%;">
+                                <h4 id="dashToInboxBtn"
+                                    style="color: #888; margin: 0 0 20px 0; text-transform: uppercase; font-size: 0.85rem; display: flex; align-items: center; gap: 10px; font-weight: 800; cursor: pointer; transition: color 0.2s;"
+                                    onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='#888'">
+                                    <i data-lucide="mail"
+                                        style="width: 1.2rem; height: 1.2rem; color: var(--accent);"></i>
+                                    CENTRAL DE
+                                    NOTÍCIAS
                                 </h4>
-                                <div id="newsFeed" style="display: flex; flex-direction: column; gap: 12px; max-height: 550px; overflow-y: auto; padding-right: 8px;">
+                                <div id="newsFeed"
+                                    style="display: flex; flex-direction: column; gap: 12px; max-height: 550px; overflow-y: auto; padding-right: 8px;">
                                     <!-- Injetado via JS -->
                                 </div>
                             </div>
@@ -527,23 +391,85 @@
                             <!-- Coluna Direita: Calendário e Histórico -->
                             <div style="display: flex; flex-direction: column; gap: 20px;">
                                 <!-- Calendário -->
-                                <div style="background: #111; padding: 25px; border-radius: 12px; border: 1px solid var(--border);">
-                                    <h4 style="color: #888; margin: 0 0 20px 0; text-transform: uppercase; font-size: 0.85rem; display: flex; align-items: center; gap: 10px; font-weight: 800;">
-                                        <i data-lucide="calendar-days" style="width: 1.2rem; height: 1.2rem; color: var(--accent);"></i> CALENDÁRIO
+                                <div
+                                    style="background: #111; padding: 25px; border-radius: 12px; border: 1px solid var(--border);">
+                                    <h4
+                                        style="color: #888; margin: 0 0 20px 0; text-transform: uppercase; font-size: 0.85rem; display: flex; align-items: center; gap: 10px; font-weight: 800;">
+                                        <i data-lucide="calendar-days"
+                                            style="width: 1.2rem; height: 1.2rem; color: var(--accent);"></i> CALENDÁRIO
                                     </h4>
-                                    <div id="calendarMonthTitle" style="color: #fff; font-size: 1rem; font-weight: 800; margin-bottom: 15px; text-align: center; background: #1a1a1a; padding: 8px; border-radius: 6px;">--</div>
-                                    <div id="calendarGrid" style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; text-align: center;">
+                                    <div id="calendarMonthTitle"
+                                        style="color: #fff; font-size: 1rem; font-weight: 800; margin-bottom: 15px; text-align: center; background: #1a1a1a; padding: 8px; border-radius: 6px;">
+                                        --</div>
+                                    <div id="calendarGrid"
+                                        style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; text-align: center;">
                                         <!-- Injetado via JS -->
                                     </div>
-                                    <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 20px; font-size: 0.65rem; font-weight: bold; color: #555;">
-                                        <div style="display: flex; align-items: center; gap: 8px;"><div style="width: 8px; height: 8px; background: var(--accent); border-radius: 2px;"></div> JANELA ABERTA</div>
-                                        <div style="display: flex; align-items: center; gap: 8px;"><div style="width: 8px; height: 8px; background: var(--warning); border-radius: 50%;"></div> PRÓXIMO JOGO</div>
+                                    <div
+                                        style="display: flex; flex-direction: column; gap: 8px; margin-top: 20px; font-size: 0.65rem; font-weight: bold; color: #555;">
+                                        <div style="display: flex; align-items: center; gap: 8px;">
+                                            <div
+                                                style="width: 8px; height: 8px; background: var(--accent); border-radius: 2px;">
+                                            </div> JANELA ABERTA
+                                        </div>
+                                        <div style="display: flex; align-items: center; gap: 8px;">
+                                            <div
+                                                style="width: 8px; height: 8px; background: var(--warning); border-radius: 50%;">
+                                            </div> PRÓXIMO JOGO
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
                     </div>
+                </div>
+
+                <!-- Visão Dedicada de Inbox (E-mails) -->
+                <div id="inboxView" class="table-view"
+                    style="display: none; height: 100%; padding: 0; background: transparent; border: none;">
+                    <div
+                        style="display: flex; height: calc(100vh - 150px); gap: 20px; max-width: 1300px; margin: 0 auto;">
+
+                        <!-- Coluna Esquerda: Lista de Mensagens -->
+                        <div
+                            style="width: 350px; background: #111; border: 1px solid var(--border); border-radius: 12px; display: flex; flex-direction: column; overflow: hidden;">
+                            <div
+                                style="padding: 20px; border-bottom: 1px solid var(--border); background: rgba(255,255,255,0.02); flex-shrink: 0;">
+                                <h3
+                                    style="margin: 0; color: #fff; font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">
+                                    <i data-lucide="inbox"
+                                        style="width: 1.2rem; height: 1.2rem; color: var(--accent);"></i>
+                                    CAIXA DE
+                                    ENTRADA
+                                </h3>
+                            </div>
+                            <div id="inboxSidebarList"
+                                style="flex: 1; overflow-y: auto; padding: 10px; display: flex; flex-direction: column; gap: 8px;">
+                                <!-- Injetado via JS -->
+                            </div>
+                        </div>
+
+                        <!-- Coluna Direita: Conteúdo do E-mail -->
+                        <div id="inboxEmailContent"
+                            style="flex: 1; background: #111; border: 1px solid var(--border); border-radius: 12px; display: flex; flex-direction: column; overflow: hidden; position: relative;">
+                            <!-- Injetado via JS -->
+                            <div
+                                style="display: flex; align-items: center; justify-content: center; height: 100%; color: #444; flex-direction: column; gap: 15px;">
+                                <i data-lucide="mail-open" style="width: 4rem; height: 4rem; opacity: 0.1;"></i>
+                                <p
+                                    style="font-weight: bold; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 1px;">
+                                    Selecione uma mensagem para ler os detalhes</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Visão Dedicada de Detalhes do Atleta -->
+                <div id="playerDetailView" class="table-view"
+                    style="display: none; height: 100%; padding: 0; background: transparent; border: none;">
+                    <!-- Injetado via JS -->
                 </div>
 
                 <!-- Modo Tabela (Lista Completa) -->
@@ -600,7 +526,8 @@
                                 <th data-sort="playstyle" class="sortable">Estilo de Jogo<span class="sort-icon"></span>
                                 </th>
                                 <th data-sort="status" class="sortable">Status<span class="sort-icon"></span></th>
-                                <th data-sort="marketValue" class="sortable" style="text-align: center;">Valor<span class="sort-icon"></span></th>
+                                <th data-sort="marketValue" class="sortable" style="text-align: center;">Valor<span
+                                        class="sort-icon"></span></th>
                             </tr>
                         </thead>
                         <tbody id="rosterTableBody"></tbody>
@@ -660,15 +587,16 @@
                 </div>
 
                 <!-- Modo Simulação (Nova Tela Principal) -->
-                <div id="simulationView" class="table-view"
-                    style="display: none; background: transparent; border: none; padding: 0; height: 100vh; overflow: hidden;">
+                <div id="simulationView"
+                    style="display: none; background: transparent; border: none; padding: 0; height: 100vh; width: 100%; overflow: hidden; position: absolute; top: 0; left: 0;">
                     <div
                         style="width: 98%; max-width: 1800px; height: 98vh; display: flex; flex-direction: column; margin: 1vh auto; background: #111; border: 1px solid var(--border); border-radius: 12px; padding: 15px 25px; box-shadow: 0 10px 40px rgba(0,0,0,0.5); overflow: hidden;">
                         <div
                             style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; flex-shrink: 0;">
-                            <h3 style="color: var(--warning); margin: 0; font-size: 1.4rem;" id="simMatchTitle">
-                                Simulação de
-                                Partida</h3>
+                            <div style="display: flex; flex-direction: column; gap: 2px;">
+                                <h3 style="color: var(--warning); margin: 0; font-size: 1.4rem;" id="simMatchTitle">Simulação de Partida</h3>
+                                <span id="simRefereeName" style="color: #666; font-size: 0.75rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;"></span>
+                            </div>
                             <button id="closeSimBtn" class="btn-danger"
                                 style="width: auto; padding: 8px 15px; margin-top: 0;">Sair da Partida</button>
                         </div>
@@ -707,99 +635,18 @@
                             <!-- Esquerda: Estatísticas Reorganizadas -->
                             <div id="simMatchStats"
                                 style="display: flex; flex-direction: column; background: #1a1a1a; padding: 20px; border-radius: 10px; border: 1px solid #333; font-size: 1rem; color: #ccc; gap: 15px; overflow-y: auto; flex: 1; min-height: 0;">
-                                <div
-                                    style="text-align: center; padding-bottom: 10px; border-bottom: 1px solid #333; margin-bottom: 8px;">
-                                    <div
-                                        style="font-size: 0.8rem; color: #888; margin-bottom: 5px; font-weight: bold; text-transform: uppercase;">
-                                        Árbitro da Partida</div>
-                                    <div id="simRefereeName"
-                                        style="color: var(--accent); font-weight: bold; font-size: 1.1rem;">--</div>
-                                </div>
-
-                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-                                    <div
-                                        style="background: #111; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #222;">
-                                        <div style="font-size: 0.6rem; color: #666; font-weight: bold;">POSSE</div>
-                                        <div style="font-weight: bold; font-size: 1rem; color: var(--accent);"><span
-                                                id="simHomePossession">50</span>%</div>
-                                    </div>
-                                    <div
-                                        style="background: #111; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #222;">
-                                        <div style="font-size: 0.6rem; color: #666; font-weight: bold;">POSSE ADV.</div>
-                                        <div style="font-weight: bold; font-size: 1rem; color: #aaa;"><span
-                                                id="simAwayPossession">50</span>%</div>
-                                    </div>
-                                </div>
-
-                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
-                                    <div class="stat-mini-box">
-                                        <label>CHUTES</label>
-                                        <div class="val"><span id="simHomeShots">0</span> (<span
-                                                id="simHomeShotsOnTarget">0</span>)</div>
-                                    </div>
-                                    <div class="stat-mini-box">
-                                        <label>ADV. CHUTES</label>
-                                        <div class="val"><span id="simAwayShots">0</span> (<span
-                                                id="simAwayShotsOnTarget">0</span>)</div>
-                                    </div>
-                                    <div class="stat-mini-box">
-                                        <label>PASSES</label>
-                                        <div class="val"><span id="simHomePasses">0</span></div>
-                                    </div>
-                                    <div class="stat-mini-box">
-                                        <label>ADV. PASSES</label>
-                                        <div class="val"><span id="simAwayPasses">0</span></div>
-                                    </div>
-                                    <div class="stat-mini-box">
-                                        <label>DESARMES</label>
-                                        <div class="val"><span id="simHomeTackles">0</span></div>
-                                    </div>
-                                    <div class="stat-mini-box">
-                                        <label>ADV. DESARMES</label>
-                                        <div class="val"><span id="simAwayTackles">0</span></div>
-                                    </div>
-                                    <div class="stat-mini-box">
-                                        <label>DEFESAS</label>
-                                        <div class="val"><span id="simHomeSaves">0</span></div>
-                                    </div>
-                                    <div class="stat-mini-box">
-                                        <label>ADV. DEFESAS</label>
-                                        <div class="val"><span id="simAwaySaves">0</span></div>
-                                    </div>
-                                    <div class="stat-mini-box">
-                                        <label>FALTAS</label>
-                                        <div class="val"><span id="simHomeFouls">0</span></div>
-                                    </div>
-                                    <div class="stat-mini-box">
-                                        <label>ADV. FALTAS</label>
-                                        <div class="val"><span id="simAwayFouls">0</span></div>
-                                    </div>
-                                    <div class="stat-mini-box">
-                                        <label>IMPED.</label>
-                                        <div class="val"><span id="simHomeOffsides">0</span></div>
-                                    </div>
-                                    <div class="stat-mini-box">
-                                        <label>ADV. IMPED.</label>
-                                        <div class="val"><span id="simAwayOffsides">0</span></div>
-                                    </div>
-                                    <div class="stat-mini-box">
-                                        <label>ESCANTEIOS</label>
-                                        <div class="val"><span id="simHomeCorners">0</span></div>
-                                    </div>
-                                    <div class="stat-mini-box">
-                                        <label>ADV. ESCANTEIOS</label>
-                                        <div class="val"><span id="simAwayCorners">0</span></div>
-                                    </div>
-                                    <div class="stat-mini-box">
-                                        <label>CARTÕES</label>
-                                        <div class="val" style="color: var(--warning);"><span id="simHomeCards">0</span>
-                                        </div>
-                                    </div>
-                                    <div class="stat-mini-box">
-                                        <label>ADV. CARTÕES</label>
-                                        <div class="val" style="color: var(--warning);"><span id="simAwayCards">0</span>
-                                        </div>
-                                    </div>
+                                <div id="simStatsList" style="display: flex; flex-direction: column; gap: 5px;">
+                                    <div id="statPossession"></div>
+                                    <div id="statShots"></div>
+                                    <div id="statShotsOnTarget"></div>
+                                    <div id="statXG"></div>
+                                    <div id="statPasses"></div>
+                                    <div id="statTackles"></div>
+                                    <div id="statSaves"></div>
+                                    <div id="statFouls"></div>
+                                    <div id="statCorners"></div>
+                                    <div id="statOffsides"></div>
+                                    <div id="statCards"></div>
                                 </div>
                             </div>
 
@@ -1263,47 +1110,62 @@
                 <!-- Modo Mercado da Bola -->
                 <div id="transferView" class="table-view" style="display: none; padding: 0;">
                     <div style="max-width: 1200px; margin: 0 auto;">
-                        
+
                         <!-- Header do Mercado -->
-                        <div style="background: #111; padding: 25px 30px; border-radius: 12px; border: 1px solid var(--border); margin-bottom: 25px; display: flex; justify-content: space-between; align-items: center;">
+                        <div
+                            style="background: #111; padding: 25px 30px; border-radius: 12px; border: 1px solid var(--border); margin-bottom: 25px; display: flex; justify-content: space-between; align-items: center;">
                             <div>
-                                <h1 style="color: #fff; margin: 0; font-size: 1.8rem; display: flex; align-items: center; gap: 15px;">
-                                    <i data-lucide="shopping-cart" style="color: #a855f7; width: 2rem; height: 2rem;"></i>
+                                <h1
+                                    style="color: #fff; margin: 0; font-size: 1.8rem; display: flex; align-items: center; gap: 15px;">
+                                    <i data-lucide="shopping-cart"
+                                        style="color: #a855f7; width: 2rem; height: 2rem;"></i>
                                     <span>Mercado de <span style="color: #a855f7;">Transferências</span></span>
                                 </h1>
-                                <p style="color: #666; font-size: 0.85rem; margin-top: 5px;">Gerencie contratações e vendas para fortalecer seu elenco</p>
+                                <p style="color: #666; font-size: 0.85rem; margin-top: 5px;">Gerencie contratações e
+                                    vendas para fortalecer seu elenco</p>
                             </div>
                             <div style="display: flex; gap: 12px;">
-                                <button id="transferTabBuyBtn" class="btn-primary" style="width: auto; padding: 10px 20px;">COMPRAR JOGADORES</button>
-                                <button id="transferTabSellBtn" class="btn-secondary" style="width: auto; padding: 10px 20px;">MINHAS VENDAS</button>
+                                <button id="transferTabBuyBtn" class="btn-primary"
+                                    style="width: auto; padding: 10px 20px;">COMPRAR JOGADORES</button>
+                                <button id="transferTabSellBtn" class="btn-secondary"
+                                    style="width: auto; padding: 10px 20px;">MINHAS VENDAS</button>
                             </div>
                         </div>
 
                         <!-- Seção COMPRAR (Busca Global) -->
                         <div id="marketBuySection" style="display: grid; grid-template-columns: 1fr 2fr; gap: 20px;">
                             <!-- Filtros e Busca -->
-                            <div style="background: #111; padding: 25px; border-radius: 12px; border: 1px solid var(--border); height: fit-content;">
-                                <h3 style="color: var(--accent); margin-bottom: 20px; font-size: 1rem; text-transform: uppercase; letter-spacing: 1px;">Rede de Olheiros</h3>
+                            <div
+                                style="background: #111; padding: 25px; border-radius: 12px; border: 1px solid var(--border); height: fit-content;">
+                                <h3
+                                    style="color: var(--accent); margin-bottom: 20px; font-size: 1rem; text-transform: uppercase; letter-spacing: 1px;">
+                                    Rede de Olheiros</h3>
                                 <div class="info-item" style="margin-bottom: 18px;">
                                     <label>LIGA ALVO</label>
-                                    <select id="transferLeagueSelect" style="width: 100%; padding: 12px; background: #050505; border: 1px solid #222; color: white; border-radius: 8px;">
+                                    <select id="transferLeagueSelect"
+                                        style="width: 100%; padding: 12px; background: #050505; border: 1px solid #222; color: white; border-radius: 8px;">
                                         <option value="">-- Carregando --</option>
                                     </select>
                                 </div>
                                 <div class="info-item" style="margin-bottom: 18px;">
                                     <label>CLUBE</label>
-                                    <select id="transferTeamSelect" style="width: 100%; padding: 12px; background: #050505; border: 1px solid #222; color: white; border-radius: 8px;" disabled>
+                                    <select id="transferTeamSelect"
+                                        style="width: 100%; padding: 12px; background: #050505; border: 1px solid #222; color: white; border-radius: 8px;"
+                                        disabled>
                                         <option value="">Selecione a Liga primeiro</option>
                                     </select>
                                 </div>
                                 <div class="info-item" style="margin-bottom: 18px;">
                                     <label>BUSCAR NOME</label>
-                                    <input type="text" id="transferSearchInput" placeholder="Nome do atleta..." style="width: 100%; padding: 12px; background: #050505; border: 1px solid #222; color: white; border-radius: 8px; outline: none;">
+                                    <input type="text" id="transferSearchInput" placeholder="Nome do atleta..."
+                                        style="width: 100%; padding: 12px; background: #050505; border: 1px solid #222; color: white; border-radius: 8px; outline: none;">
                                 </div>
-                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px;">
+                                <div
+                                    style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px;">
                                     <div class="info-item">
                                         <label>POSIÇÃO</label>
-                                        <select id="transferPosFilter" style="width: 100%; padding: 12px; background: #050505; border: 1px solid #222; color: white; border-radius: 8px; outline: none;">
+                                        <select id="transferPosFilter"
+                                            style="width: 100%; padding: 12px; background: #050505; border: 1px solid #222; color: white; border-radius: 8px; outline: none;">
                                             <option value="">Todas</option>
                                             <option value="GL">Goleiros</option>
                                             <option value="ZE">Defensores</option>
@@ -1313,18 +1175,24 @@
                                     </div>
                                     <div class="info-item">
                                         <label>OVR MÍNIMO</label>
-                                        <input type="number" id="transferMinOvr" placeholder="0" min="0" max="99" style="width: 100%; padding: 12px; background: #050505; border: 1px solid #222; color: white; border-radius: 8px; outline: none;">
+                                        <input type="number" id="transferMinOvr" placeholder="0" min="0" max="99"
+                                            style="width: 100%; padding: 12px; background: #050505; border: 1px solid #222; color: white; border-radius: 8px; outline: none;">
                                     </div>
                                 </div>
-                                <button id="transferSearchBtn" class="btn-primary" style="width: 100%; padding: 15px;" disabled>INICIAR BUSCA</button>
+                                <button id="transferSearchBtn" class="btn-primary" style="width: 100%; padding: 15px;"
+                                    disabled>INICIAR BUSCA</button>
                             </div>
 
                             <!-- Resultados da Busca -->
-                            <div style="background: #111; padding: 25px; border-radius: 12px; border: 1px solid var(--border);">
-                                <h3 style="color: #fff; margin-bottom: 20px; font-size: 1rem;">RESULTADOS DISPONÍVEIS</h3>
-                                <div id="transferResultsList" style="display: flex; flex-direction: column; gap: 12px; max-height: 600px; overflow-y: auto; padding-right: 8px;">
+                            <div
+                                style="background: #111; padding: 25px; border-radius: 12px; border: 1px solid var(--border);">
+                                <h3 style="color: #fff; margin-bottom: 20px; font-size: 1rem;">RESULTADOS DISPONÍVEIS
+                                </h3>
+                                <div id="transferResultsList"
+                                    style="display: flex; flex-direction: column; gap: 12px; max-height: 600px; overflow-y: auto; padding-right: 8px;">
                                     <div style="text-align: center; color: #444; padding: 50px;">
-                                        <i data-lucide="search" style="width: 3rem; height: 3rem; margin-bottom: 15px; opacity: 0.2;"></i>
+                                        <i data-lucide="search"
+                                            style="width: 3rem; height: 3rem; margin-bottom: 15px; opacity: 0.2;"></i>
                                         <p>Use os filtros ao lado para buscar atletas</p>
                                     </div>
                                 </div>
@@ -1334,20 +1202,29 @@
                         <!-- Seção VENDER (Meus Jogadores e Propostas) -->
                         <div id="marketSellSection" style="display: none; grid-template-columns: 1fr 1fr; gap: 25px;">
                             <!-- Meus Jogadores Listados -->
-                            <div style="background: #111; padding: 25px; border-radius: 12px; border: 1px solid var(--border);">
-                                <h3 style="color: var(--accent); margin-bottom: 20px; font-size: 1rem; text-transform: uppercase;">Meus Jogadores no Mercado</h3>
-                                <div id="myTransferListedPlayers" style="display: flex; flex-direction: column; gap: 12px;">
+                            <div
+                                style="background: #111; padding: 25px; border-radius: 12px; border: 1px solid var(--border);">
+                                <h3
+                                    style="color: var(--accent); margin-bottom: 20px; font-size: 1rem; text-transform: uppercase;">
+                                    Meus Jogadores no Mercado</h3>
+                                <div id="myTransferListedPlayers"
+                                    style="display: flex; flex-direction: column; gap: 12px;">
                                     <!-- Injetado via JS -->
-                                    <p style="color: #444; text-align: center; padding: 30px;">Nenhum jogador listado para venda no momento.</p>
+                                    <p style="color: #444; text-align: center; padding: 30px;">Nenhum jogador listado
+                                        para venda no momento.</p>
                                 </div>
                             </div>
 
                             <!-- Propostas Recebidas (Reutilizando a lógica existente) -->
-                            <div style="background: #111; padding: 25px; border-radius: 12px; border: 1px solid var(--accent); box-shadow: 0 0 20px rgba(0,255,136,0.05);">
-                                <h3 style="color: var(--accent); margin-bottom: 20px; font-size: 1rem; text-transform: uppercase;">Propostas Ativas</h3>
+                            <div
+                                style="background: #111; padding: 25px; border-radius: 12px; border: 1px solid var(--accent); box-shadow: 0 0 20px rgba(0,255,136,0.05);">
+                                <h3
+                                    style="color: var(--accent); margin-bottom: 20px; font-size: 1rem; text-transform: uppercase;">
+                                    Propostas Ativas</h3>
                                 <div id="marketProposalsList" style="display: flex; flex-direction: column; gap: 15px;">
                                     <!-- Injetado via JS (Mesmo do dashboard mas com foco maior aqui) -->
-                                    <p style="color: #444; text-align: center; padding: 30px;">Sem propostas pendentes.</p>
+                                    <p style="color: #444; text-align: center; padding: 30px;">Sem propostas pendentes.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -1523,6 +1400,11 @@
 
                         </div>
                     </div>
+                </div>
+
+                <!-- Tela de Negociação -->
+                <div id="negotiationView" style="display: none; height: 100%; width: 100%; position: absolute; top: 0; left: 0; background: #080808; z-index: 1001; overflow-y: auto;">
+                    <!-- Renderizado dinamicamente via renderNegotiation -->
                 </div>
             </main>
 

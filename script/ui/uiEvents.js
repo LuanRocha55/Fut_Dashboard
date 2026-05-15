@@ -92,6 +92,9 @@ export async function setupEventListeners() {
     .getElementById("dashToTeamStatsBtn")
     ?.addEventListener("click", () => switchMainView("teamStats"));
   document
+    .getElementById("dashToInboxBtn")
+    ?.addEventListener("click", () => switchMainView("inbox"));
+  document
     .getElementById("navTeamStatsDashboardBtn")
     ?.addEventListener("click", () => switchMainView("dashboard"));
 
@@ -116,7 +119,7 @@ export async function setupEventListeners() {
     document.getElementById("marketSellSection").style.display = "grid";
     document.getElementById("transferTabBuyBtn").className = "btn-secondary";
     document.getElementById("transferTabSellBtn").className = "btn-primary";
-    
+
     // Atualizar lista de vendas e propostas
     const { renderMyTransferMarketHub } = await import("../core/transferMarket.js");
     await renderMyTransferMarketHub();
@@ -182,7 +185,6 @@ export async function setupEventListeners() {
           autoFillTeam(); // Escala automaticamente o novo elenco
           saveToLocal();
           renderApp();
-          render();
 
           showCustomModal(
             `Sucesso! O elenco do <strong>${currentTeam}</strong> foi atualizado com ${newPlayers.length} jogadores reais.`,
@@ -383,7 +385,7 @@ export function initCareerEvents(teams) {
               coachChanged = true;
             }
             if (coachInfo.budget === undefined) {
-              coachInfo.budget = 80000000; 
+              coachInfo.budget = 80000000;
               coachChanged = true;
             }
             if (coachChanged) await Storage.saveCoachInfo(coachInfo);

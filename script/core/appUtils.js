@@ -63,20 +63,33 @@ export const isTransferWindowOpen = (gameDate, leagueType = "br") => {
 };
 
 /**
- * Retorna o número de dias em um mês específico
- */
-export const getDaysInMonth = (month, year) => {
-  return new Date(year, month + 1, 0).getDate();
-};
-
-/**
  * Formata a data do jogo para exibição
  */
 export const formatGameDate = (gameDate) => {
   const date = new Date(gameDate);
-  const months = [
-    "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
-    "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+  const daysOfWeek = [
+    "Domingo",
+    "Segunda",
+    "Terça",
+    "Quarta",
+    "Quinta",
+    "Sexta",
+    "Sábado",
   ];
-  return `${months[date.getMonth()]} de ${date.getFullYear()}`;
+  const day = date.getDate().toString().padStart(2, "0");
+  const months = [
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julho",
+    "Agosto",
+    "Setembro",
+    "Outubro",
+    "Novembro",
+    "Dezembro",
+  ];
+  return `${daysOfWeek[date.getDay()]}, ${day} de ${months[date.getMonth()]} de ${date.getFullYear()}`;
 };

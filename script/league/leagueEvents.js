@@ -49,7 +49,10 @@ export const updateMonthUI = async () => {
   }
 };
 
+let _leagueEventsInitialized = false;
 export function initLeagueEvents() {
+  if (_leagueEventsInitialized) return;
+  _leagueEventsInitialized = true;
   const tabTournament = document.getElementById("tabTournament");
   const tabFixtures = document.getElementById("tabFixtures");
   const tabStats = document.getElementById("tabStats");
@@ -473,7 +476,7 @@ export function initLeagueEvents() {
 
           // GESTÃO DE QUALIFICAÇÃO (Mérito Esportivo)
           // 1. Top 4 da Liga
-          let qualifiedIds = topDiv.table.slice(0, 4).map((t) => t.id);
+          let qualifiedIds = (Array.isArray(topDiv.table) ? topDiv.table.slice(0, 4) : []).map((t) => t.id);
 
           // 2. Campeão da Copa (se não estiver no top 4)
           if (currentData.cup && currentData.cup.winner) {
@@ -517,6 +520,7 @@ export function initLeagueEvents() {
             qualifiedIds,
           );
 
+
           let reportHTML = `
             <div style="text-align: center; margin-bottom: 20px;">
               <h2 style="color: var(--warning); margin: 0;">🏆 Fim de Temporada!</h2>
@@ -553,6 +557,25 @@ export function initLeagueEvents() {
           await showCustomModal(reportHTML, "alert", "btn-primary");
           renderLeagueData();
         }
+      }
+    };
+  }
+
+  const newLeagueBtn = document.getElementById("newLeagueBtn");
+  if (newLeagueBtn) {
+    newLeagueBtn.onclick = async () => {
+      newLeagueBtn.disabled = true;
+      newLeagueBtn.innerText = "GERANDO...";
+      try {
+        await autoInitLeague();
+        await renderLeagueData();
+        showCustomModal("🚀 Campeonatos gerados com sucesso!", "alert", "btn-primary");
+      } catch (e) {
+        console.error(e);
+        showCustomModal("❌ Erro ao gerar campeonato: " + e.message, "alert", "btn-danger");
+      } finally {
+        newLeagueBtn.disabled = false;
+        newLeagueBtn.innerText = "GERAR CAMPEONATO";
       }
     };
   }

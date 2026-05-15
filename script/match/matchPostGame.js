@@ -178,14 +178,13 @@ export const handleMatchPostGame = async ({
   if (isContinentalMatch) compType = "continental";
 
   applyMatchResults(
+    homePlayerRatings,
     homeScorersIds,
+    homeAssistsIds,
     homeCards,
     homeInjuriesList,
-    homeFitnessTracker,
-    homePlayerRatings,
-    homeAssistsIds,
-    daysPassed,
     homeTacklesIds,
+    homeFitnessTracker,
     compType,
   );
   registerMatchResult(

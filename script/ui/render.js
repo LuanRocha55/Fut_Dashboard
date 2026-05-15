@@ -1,5 +1,6 @@
 import { dbgToast } from "./uiUtils.js";
 import { highlightZones, clearZones } from "./zones.js";
+import { switchMainView } from "./views.js";
 import { initDragAndDrop } from "./dragDrop.js";
 import {
   squad,
@@ -20,6 +21,7 @@ import {
   getFormHTML,
   getMatchStatusHTML,
   drawRadar,
+  renderStatsNumbers,
   normalizeTeamName,
 } from "./uiGraphics.js";
 import { showCustomModal } from "./uiModal.js";
@@ -152,6 +154,13 @@ export async function render() {
   // 7. Carrega logos reais
   loadBadgesLazy();
   loadLeagueLogosLazy();
+
+  // 8. Atualiza Dashboard se visível
+  const dashView = document.getElementById("dashboardView");
+  if (dashView && dashView.style.display !== "none") {
+    const coach = await Storage.getCoachInfo();
+    if (coach) await updateDashboardCoach(coach);
+  }
 }
 
 export function renderBench(reservas, benchSortValue) {
@@ -626,7 +635,7 @@ export function renderTeamChemistry(titulares, format, formatName) {
   });
 }
 
-export function updateDashboardCoach(info) {
+export async function updateDashboardCoach(info) {
   const nameEl = document.getElementById("dashCoachName");
   const styleEl = document.getElementById("dashCoachStyle");
   const teamEl = document.getElementById("dashTeamName");
@@ -642,17 +651,183 @@ export function updateDashboardCoach(info) {
   if (dateEl && info.currentDate) {
     dateEl.innerText = formatGameDate(info.currentDate);
     if (windowEl) {
-      const isOpen = isTransferWindowOpen(info.currentDate, info.calendarType || "eu");
+      const isOpen = isTransferWindowOpen(
+        info.currentDate,
+        info.calendarType || "eu",
+      );
       windowEl.innerText = `JANELA: ${isOpen ? "ABERTA" : "FECHADA"}`;
-      windowEl.style.background = isOpen ? "rgba(0,255,136,0.15)" : "rgba(255,255,255,0.05)";
+      windowEl.style.background = isOpen
+        ? "rgba(0,255,136,0.15)"
+        : "rgba(255,255,255,0.05)";
       windowEl.style.color = isOpen ? "var(--accent)" : "#888";
       windowEl.style.border = `1px solid ${isOpen ? "rgba(0,255,136,0.3)" : "rgba(255,255,255,0.1)"}`;
     }
   }
 
   renderProposals(info);
-  renderCalendar(info);
+  await renderCalendar(info);
   renderNewsFeed(info);
+}
+
+export async function getNewsList(info, includeArchived = false) {
+  const news = [];
+  const history = await Storage.getMatchHistory();
+  const leagueData = await Storage.getLeagueData();
+
+  // 0. Histórico de Partidas
+  if (history && history.length > 0) {
+    const lastMatches = history.slice(-3).reverse();
+    lastMatches.forEach((m, i) => {
+      let resColor = "var(--warning)";
+      let resIcon = "minus-circle";
+      let resText = "Empate";
+
+      if (m.result === "V") {
+        resColor = "var(--rating-high)";
+        resIcon = "check-circle";
+        resText = "Vitória";
+      } else if (m.result === "D") {
+        resColor = "#ff4444";
+        resIcon = "x-circle";
+        resText = "Derrota";
+      }
+
+      const compName = m.compType === "cup" ? "Copa Nacional" : m.compType === "continental" ? "Continental" : "Liga Nacional";
+
+      news.push({
+        id: `match-${m.timestamp || i}`,
+        type: "match-result",
+        icon: resIcon,
+        color: resColor,
+        title: `${resText}: ${m.home} ${m.score} ${m.away}`,
+        desc: `Relatório pós-jogo: ${m.home} vs ${m.away} (${compName}).`,
+        longDesc: `Prezado Treinador,<br><br>A partida válida pela <strong>${compName}</strong> entre <strong>${m.home}</strong> e <strong>${m.away}</strong> terminou em <strong>${m.score}</strong>.<br><br>Nossa análise indica que a equipe se comportou de forma ${m.result === "V" ? "excelente" : m.result === "D" ? "abaixo do esperado" : "regular"}. O placar de <strong>${m.score}</strong> reflete o que vimos em campo. Os dados individuais de performance e estatísticas de jogo já foram processados e estão disponíveis para sua revisão tática.<br><br>Seguimos focados na preparação para o próximo compromisso.`,
+        actionLabel: "VER TABELA",
+        actionView: "league",
+      });
+    });
+  }
+
+  // 1. Propostas Individuais
+  if (info.proposals && info.proposals.length > 0) {
+    info.proposals.forEach(prop => {
+      news.push({
+        id: `prop-${prop.id}`,
+        type: "proposal",
+        icon: "shopping-bag",
+        color: "var(--accent)",
+        title: `Proposta: ${prop.playerName}`,
+        desc: `${prop.from} oferece ${formatMoney(prop.value)} pelo atleta.`,
+        longDesc: `Recebemos uma proposta oficial do <strong>${prop.from}</strong> pelo jogador <strong>${prop.playerName}</strong>.<br><br>O valor oferecido é de <strong>${formatMoney(prop.value)}</strong> na modalidade de <strong>${prop.type === "Compra" ? "Transferência Definitiva" : "Empréstimo"}</strong>.<br><br>O mercado está aguardando sua posição. Você pode aceitar, recusar ou tentar negociar termos melhores diretamente na central de transferências.`,
+        actionLabel: "NEGOCIAR AGORA",
+        actionView: "negotiation",
+        secondaryAction: () => renderNegotiation(prop.playerId, prop.id, false),
+      });
+    });
+  }
+
+  // 2. Próximo Jogo
+  if (leagueData && !leagueData.finished) {
+    const round = leagueData.divisions[0].rounds[leagueData.currentRound - 1];
+    const userMatch = round.find(m => m.home === info.teamFile || m.away === info.teamFile);
+    
+    if (userMatch) {
+      const opponent = userMatch.home === info.teamFile ? userMatch.awayName : userMatch.homeName;
+      const stadium = userMatch.home === info.teamFile ? "em casa" : "fora de casa";
+      const leagueName = leagueData.divisions[0].name;
+
+      news.push({
+        id: "next-match-alert",
+        type: "match",
+        icon: "trophy",
+        color: "var(--warning)",
+        title: "Próximo Confronto",
+        desc: `Enfrentaremos o ${opponent} pela ${leagueName}.`,
+        longDesc: `O clima no vestiário é de foco total para o próximo confronto contra o <strong>${opponent}</strong>, válido pela <strong>${leagueName}</strong>.<br><br>Jogaremos <strong>${stadium}</strong> e a expectativa da diretoria é de um desempenho sólido. Nossa equipe de análise já mapeou os pontos fortes e fracos do adversário. É essencial que a prancheta tática esteja definida e que os jogadores estejam em suas melhores condições físicas.<br><br>A torcida já está se mobilizando para apoiar o time neste importante duelo!`,
+        actionLabel: "IR PARA O JOGO",
+        actionView: "dashboard",
+      });
+    }
+  }
+
+  // 3. Desempenho de Jogador (Últimas 5 notas)
+  const sortedByRating = [...squad].filter(p => p.ratingHistory && p.ratingHistory.length > 0)
+    .sort((a, b) => {
+       const avgA = a.ratingHistory.reduce((s,v)=>s+v,0) / a.ratingHistory.length;
+       const avgB = b.ratingHistory.reduce((s,v)=>s+v,0) / b.ratingHistory.length;
+       return avgB - avgA;
+    });
+
+  if (sortedByRating.length > 0) {
+    const p = sortedByRating[0];
+    const notes = p.ratingHistory.map(r => `<span style="background: ${r >= 7 ? 'var(--rating-high)' : r >= 6 ? 'var(--warning)' : '#ff4444'}; color: #000; padding: 2px 6px; border-radius: 4px; font-weight: bold; margin-right: 5px;">${r.toFixed(1)}</span>`).join(" ");
+    
+    news.push({
+      id: `performance-${p.id}`,
+      type: "info",
+      icon: "trending-up",
+      color: "var(--accent)",
+      title: `Performance: ${p.name}`,
+      desc: `Histórico recente do atleta: ${p.ratingHistory.join(" | ")}`,
+      longDesc: `Temos um relatório detalhado sobre o desempenho recente de <strong>${p.name}</strong>.<br><br>Nas últimas partidas, o atleta manteve uma regularidade impressionante. Confira as notas das últimas 5 atuações:<br><br>${notes}<br><br>Este nível de consistência é fundamental para a estabilidade tática da equipe. O jogador demonstra estar em excelente sintonia com o plano de jogo estabelecido pela comissão técnica.`,
+      actionLabel: "VER DETALHES",
+      actionView: "table",
+    });
+  }
+
+  // 4. Jogadores Cansados
+  const lowFitness = squad.filter((p) => p.fitness < 60 && p.matchStatus === "normal");
+  if (lowFitness.length > 0) {
+    news.push({
+      id: "fitness-alert",
+      type: "fitness",
+      icon: "alert-triangle",
+      color: "#ff4444",
+      title: "Alerta de Desgaste",
+      desc: `${lowFitness[0].name} e outros ${lowFitness.length - 1} estão muito cansados.`,
+      longDesc: `O departamento médico emitiu um alerta vermelho sobre a condição física de alguns atletas. <br><br>Jogadores como <strong>${lowFitness[0].name}</strong> apresentam níveis críticos de fadiga e correm sério risco de lesão caso sejam escalados na próxima partida sem o devido descanso.<br><br>Sugerimos um rodízio no elenco ou uma carga reduzida de treinos para preservar a integridade física do grupo.`,
+      actionLabel: "GERENCIAR ELENCO",
+      actionView: "table",
+    });
+  }
+
+  // 5. Jogador em Destaque
+  const star = [...squad].sort((a, b) => (b.rating || 0) - (a.rating || 0))[0];
+  if (star && star.rating > 85) {
+    news.push({
+      id: "star-player",
+      type: "info",
+      icon: "star",
+      color: "#f9c200",
+      title: "Destaque do Treino",
+      desc: `${star.name} está em excelente forma técnica.`,
+      longDesc: `Temos o prazer de informar que <strong>${star.name}</strong> tem se destacado nos treinamentos desta semana de forma excepcional.<br><br>A dedicação e o desempenho técnico do atleta têm sido exemplares, elevando o nível de competitividade do grupo e servindo de inspiração para os jovens da base. Jogadores com este comprometimento são os pilares do nosso projeto esportivo de longo prazo.`,
+      actionLabel: "GERENCIAR ELENCO",
+      actionView: "table",
+    });
+  }
+
+  // 5. Janela de Transferências
+  const isWindow = isTransferWindowOpen(info.currentDate, info.calendarType);
+  if (isWindow) {
+    news.push({
+      id: "market-window",
+      type: "window",
+      icon: "unlock",
+      color: "var(--accent)",
+      title: "Mercado Aberto",
+      desc: "A janela de transferências está aberta para negócios.",
+      longDesc: `A janela de transferências foi oficialmente aberta para este período da temporada!<br><br>Este é o momento ideal para reforçar o elenco ou negociar atletas que não fazem parte dos planos futuros da comissão técnica. O mercado está aquecido e diversas oportunidades de negócio podem surgir a qualquer momento, tanto para compra quanto para venda.<br><br>Fique atento às movimentações dos outros clubes e aos valores de mercado.`,
+      actionLabel: "IR PARA O MERCADO",
+      actionView: "transfer",
+    });
+  }
+
+  // 6. Filtrar Arquivados
+  if (includeArchived) return news;
+  
+  const archived = info.archivedNews || [];
+  return news.filter(n => !archived.includes(n.id));
 }
 
 async function renderNewsFeed(info) {
@@ -660,119 +835,19 @@ async function renderNewsFeed(info) {
   if (!feed) return;
   feed.innerHTML = "";
 
-  const news = [];
-
-  // 0. Histórico de Partidas (Novidade: Agora como Notícia)
-  const history = await Storage.getMatchHistory();
-  if (history && history.length > 0) {
-    const lastMatches = history.slice(-3).reverse();
-    lastMatches.forEach(m => {
-        let resColor = "var(--warning)"; // Empate
-        let resIcon = "minus-circle";
-        let resText = "Empate";
-
-        if (m.result === "V") {
-            resColor = "var(--rating-high)";
-            resIcon = "check-circle";
-            resText = "Vitória";
-        } else if (m.result === "D") {
-            resColor = "#ff4444";
-            resIcon = "x-circle";
-            resText = "Derrota";
-        }
-
-        news.push({
-            type: "match-result",
-            icon: resIcon,
-            color: resColor,
-            title: `Resultado: ${m.home} ${m.score} ${m.away}`,
-            desc: `Partida finalizada com ${resText}. Confira o relatório técnico.`
-        });
-    });
-  }
-
-  // 1. Propostas
-  if (info.proposals && info.proposals.length > 0) {
-    news.push({
-      type: "proposal",
-      icon: "shopping-bag",
-      color: "var(--accent)",
-      title: "Novas Propostas!",
-      desc: `Você recebeu ${info.proposals.length} proposta(s) de transferência.`
-    });
-  }
-
-  // 2. Próximo Jogo
-  const leagueData = await Storage.getLeagueData();
-  if (leagueData && !leagueData.finished) {
-     news.push({
-        type: "match",
-        icon: "trophy",
-        color: "var(--warning)",
-        title: "Preparação para o Jogo",
-        desc: `Sua equipe entra em campo em breve pela liga.`
-     });
-  }
-
-  // 3. Jogadores Cansados / Lesionados
-  const lowFitness = squad.filter(p => p.fitness < 60 && p.matchStatus === "normal");
-  if (lowFitness.length > 0) {
-    news.push({
-      type: "fitness",
-      icon: "alert-triangle",
-      color: "#ff4444",
-      title: "Alerta de Desgaste",
-      desc: `${lowFitness[0].name} e outros ${lowFitness.length - 1} estão muito cansados.`
-    });
-  }
-
-  // 4. Jogador em Destaque
-  const star = [...squad].sort((a,b) => (b.rating || 0) - (a.rating || 0))[0];
-  if (star && star.rating > 85) {
-     news.push({
-        type: "info",
-        icon: "star",
-        color: "#f9c200",
-        title: "Destaque do Treino",
-        desc: `${star.name} está em excelente forma técnica.`
-     });
-  }
-
-  // 5. Reclamações de Jogadores
-  const unhappy = squad.slice(11).filter(p => p.rating > 80 && p.matchStatus === "normal");
-  if (unhappy.length > 0) {
-     news.push({
-        type: "complaint",
-        icon: "message-square",
-        color: "#ff8800",
-        title: "Reclamação de Atleta",
-        desc: `${unhappy[0].name} não está feliz com a reserva e quer mais tempo de jogo.`
-     });
-  }
-
-  // 6. Janela de Transferências
-  const isWindow = isTransferWindowOpen(info.currentDate, info.calendarType);
-  if (isWindow) {
-    news.push({
-      type: "window",
-      icon: "unlock",
-      color: "var(--accent)",
-      title: "Mercado Aberto",
-      desc: "A janela de transferências está aberta para negócios."
-    });
-  }
+  const news = await getNewsList(info);
 
   if (news.length === 0) {
     feed.innerHTML = `<div style="text-align: center; color: #444; padding: 40px; font-size: 0.8rem;">Sem novas mensagens no momento.</div>`;
     return;
   }
 
-  news.forEach(item => {
+  news.forEach((item) => {
     const msg = document.createElement("div");
     msg.style.cssText = `background: #181818; border-left: 3px solid ${item.color}; padding: 12px 15px; border-radius: 8px; display: flex; align-items: flex-start; gap: 15px; transition: all 0.2s; cursor: pointer; border-top: 1px solid #222; border-right: 1px solid #222; border-bottom: 1px solid #222;`;
-    
-    msg.onmouseover = () => msg.style.background = "#202020";
-    msg.onmouseout = () => msg.style.background = "#181818";
+
+    msg.onmouseover = () => (msg.style.background = "#202020");
+    msg.onmouseout = () => (msg.style.background = "#181818");
 
     msg.innerHTML = `
       <div style="background: ${item.color}22; padding: 8px; border-radius: 8px;">
@@ -783,8 +858,157 @@ async function renderNewsFeed(info) {
         <div style="font-size: 0.75rem; color: #999; line-height: 1.4;">${item.desc}</div>
       </div>
     `;
+
+    msg.onclick = () => {
+      import("./views.js").then((m) => {
+        m.switchMainView("inbox");
+        renderInbox(item.id);
+      });
+    };
+
     feed.appendChild(msg);
   });
+
+  if (window.lucide) window.lucide.createIcons();
+}
+
+export async function renderInbox(selectedId = null, showArchived = false) {
+  const sidebar = document.getElementById("inboxSidebarList");
+  const content = document.getElementById("inboxEmailContent");
+  const sidebarHeader = document.querySelector("#inboxSidebar .sidebar-header"); // Assumindo que existe um header
+  
+  if (!sidebar || !content) return;
+
+  const coach = await Storage.getCoachInfo();
+  // Pegamos a lista COMPLETA sem o filtro de arquivados para podermos alternar
+  const allNews = await getNewsList(coach, true); 
+  const archivedIds = coach.archivedNews || [];
+
+  let news = [];
+  if (showArchived) {
+    news = allNews.filter(n => archivedIds.includes(n.id));
+  } else {
+    news = allNews.filter(n => !archivedIds.includes(n.id));
+  }
+
+  // Header com Toggle (Injetar se não existir ou atualizar)
+  const sidebarContainer = sidebar.parentElement;
+  let toggleContainer = document.getElementById("inboxArchiveToggle");
+  if (!toggleContainer) {
+    toggleContainer = document.createElement("div");
+    toggleContainer.id = "inboxArchiveToggle";
+    toggleContainer.style.cssText = "padding: 10px 15px; border-bottom: 1px solid #222; display: flex; justify-content: space-between; align-items: center; background: #111;";
+    sidebarContainer.insertBefore(toggleContainer, sidebar);
+  }
+
+  toggleContainer.innerHTML = `
+    <span style="font-size: 0.65rem; color: #555; font-weight: 800; text-transform: uppercase;">${showArchived ? "Arquivados" : "Caixa de Entrada"}</span>
+    <button id="btnToggleArchive" style="background: transparent; border: 1px solid #333; color: var(--accent); font-size: 0.6rem; padding: 4px 8px; border-radius: 4px; cursor: pointer; font-weight: bold;">
+      ${showArchived ? "VER ATIVOS" : "VER ARQUIVO"}
+    </button>
+  `;
+
+  document.getElementById("btnToggleArchive").onclick = () => renderInbox(null, !showArchived);
+
+  sidebar.innerHTML = "";
+  if (news.length === 0) {
+    sidebar.innerHTML = `<div style="text-align: center; color: #444; padding: 40px; font-size: 0.7rem;">${showArchived ? "Nenhum arquivado" : "Caixa vazia"}</div>`;
+    content.innerHTML = `<div style="flex: 1; display: flex; align-items: center; justify-content: center; color: #333;">Selecione uma mensagem</div>`;
+    return;
+  }
+
+  let selectedItem = news.find((n) => n.id === selectedId) || news[0];
+
+  news.forEach((item) => {
+    const isSelected = item.id === selectedItem.id;
+    const msg = document.createElement("div");
+    msg.style.cssText = `
+      padding: 15px; 
+      border-radius: 8px; 
+      cursor: pointer; 
+      transition: all 0.2s; 
+      border: 1px solid ${isSelected ? "var(--accent)" : "#222"};
+      background: ${isSelected ? "rgba(0,255,136,0.05)" : "#181818"};
+      margin-bottom: 8px;
+    `;
+
+    msg.onclick = () => renderInbox(item.id, showArchived);
+
+    msg.innerHTML = `
+      <div style="font-weight: bold; color: ${isSelected ? "var(--accent)" : "#fff"}; font-size: 0.8rem; margin-bottom: 5px;">${item.title}</div>
+      <div style="font-size: 0.7rem; color: #777; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${item.desc}</div>
+    `;
+    sidebar.appendChild(msg);
+  });
+
+  // Renderizar Conteúdo
+  content.innerHTML = `
+    <div style="padding: 30px; display: flex; flex-direction: column; height: 100%;">
+      
+      <!-- Cabeçalho do E-mail -->
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; border-bottom: 1px solid #222; padding-bottom: 15px;">
+        <div style="display: flex; gap: 15px; align-items: center;">
+          <div style="background: ${selectedItem.color}22; padding: 12px; border-radius: 12px;">
+            <i data-lucide="${selectedItem.icon}" style="width: 1.8rem; height: 1.8rem; color: ${selectedItem.color};"></i>
+          </div>
+          <div>
+            <h2 style="color: #fff; margin: 0 0 5px 0; font-size: 1.4rem; font-weight: 800;">${selectedItem.title}</h2>
+            <div style="color: #666; font-size: 0.75rem;">
+              <span style="color: #999;">De:</span> secretaria@clube.com <span style="margin: 0 10px;">|</span> 
+              <span style="color: #999;">Assunto:</span> Notificação Oficial
+            </div>
+          </div>
+        </div>
+        <button onclick="switchMainView('dashboard')" style="background: transparent; border: 1px solid #333; color: #888; width: 80px; height: 32px; border-radius: 6px; font-size: 0.65rem; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center;" onmouseover="this.style.borderColor='var(--accent)'; this.style.color='var(--accent)'" onmouseout="this.style.borderColor='#333'; this.style.color='#888'">VOLTAR</button>
+      </div>
+
+      <!-- Corpo do E-mail -->
+      <div style="flex: 1; overflow-y: auto; color: #bbb; line-height: 1.8; font-size: 1rem; padding-right: 10px;">
+        <p>${selectedItem.longDesc || selectedItem.desc}</p>
+        <div style="margin-top: 25px; border-top: 1px solid #222; padding-top: 15px; color: #555; font-size: 0.8rem;">
+          Atenciosamente,<br>
+          <strong style="color: #888;">Diretoria Executiva</strong><br>
+          FutDashboard Football Club
+        </div>
+      </div>
+
+      <!-- Ações -->
+      <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid #222; display: flex; gap: 10px; justify-content: flex-end;">
+        ${
+          selectedItem.actionLabel
+            ? `
+          <button id="inboxActionBtn" class="btn-primary" style="padding: 12px 25px; font-weight: 900; font-size: 0.8rem; letter-spacing: 1px; width: auto; margin: 0;">
+            ${selectedItem.actionLabel}
+          </button>
+        `
+            : ""
+        }
+        <button id="inboxArchiveBtn" style="width: 140px; height: 45px; background: #222; border: 1px solid #333; color: #fff; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 0.8rem; transition: all 0.2s; display: flex; align-items: center; justify-content: center;" onmouseover="this.style.background='#333'" onmouseout="this.style.background='#222'">${showArchived ? "RESTAURAR" : "ARQUIVAR"}</button>
+      </div>
+
+    </div>
+  `;
+
+  const actionBtn = document.getElementById("inboxActionBtn");
+  if (actionBtn && selectedItem.actionView) {
+    actionBtn.onclick = () => {
+      switchMainView(selectedItem.actionView);
+      if (selectedItem.secondaryAction) selectedItem.secondaryAction();
+    };
+  }
+
+  const archiveBtn = document.getElementById("inboxArchiveBtn");
+  if (archiveBtn) {
+    archiveBtn.onclick = async () => {
+      const { archiveNews, unarchiveNews } = await import("../core/appCore.js");
+      if (showArchived) {
+        await unarchiveNews(selectedItem.id);
+      } else {
+        await archiveNews(selectedItem.id);
+      }
+      renderInbox(null, showArchived); // Recarrega a lista no mesmo modo
+    };
+  }
 
   if (window.lucide) window.lucide.createIcons();
 }
@@ -799,9 +1023,84 @@ async function renderCalendar(info) {
   const month = date.getMonth(); // 0-11
   const today = date.getDate();
 
+  // --- BUSCAR JOGOS PARA O CALENDÁRIO ---
+  const leagueData = await Storage.getLeagueData();
+  const matchHistory = (await Storage.getMatchHistory()) || [];
+  const matchEvents = {};
+
+  // 1. Marcar Histórico (Passado)
+  matchHistory.forEach((m) => {
+    const parts = m.date ? m.date.split("/") : [];
+    if (parts.length === 3) {
+      const d = parseInt(parts[0]);
+      const mIdx = parseInt(parts[1]) - 1;
+      const y = parseInt(parts[2]);
+      if (mIdx === month && y === year) {
+        matchEvents[d] = {
+          opponent: m.oppTeam || (m.home === info.teamName ? m.away : m.home),
+          result: m.result,
+          isPast: true,
+        };
+      }
+    }
+  });
+
+  // 2. Marcar Futuro (Baseado na Round atual e no salto de 7 dias)
+  if (leagueData && !leagueData.finished && info.teamFile) {
+    const userFile = info.teamFile;
+    const currentRound = leagueData.currentRound || 1;
+    // Tenta pegar a primeira divisão ou o objeto raiz
+    const rounds = leagueData.divisions
+      ? leagueData.divisions[0].rounds
+      : leagueData.rounds || [];
+
+    for (let r = currentRound; r <= rounds.length; r++) {
+      const weekDiff = r - currentRound;
+      const matchDate = new Date(info.currentDate);
+      matchDate.setDate(matchDate.getDate() + weekDiff * 7);
+
+      if (matchDate.getMonth() === month && matchDate.getFullYear() === year) {
+        const roundMatches = rounds[r - 1];
+        if (roundMatches) {
+          const userMatch = roundMatches.find(
+            (m) => m.home === userFile || m.away === userFile,
+          );
+          if (userMatch) {
+            const d = matchDate.getDate();
+            if (!matchEvents[d]) {
+              matchEvents[d] = {
+                opponent:
+                  userMatch.home === userFile
+                    ? userMatch.awayName
+                    : userMatch.homeName,
+                isFuture: true,
+              };
+            }
+          }
+        }
+      }
+      // Se já passou do mês atual, para de procurar
+      if (
+        matchDate.getFullYear() > year ||
+        (matchDate.getFullYear() === year && matchDate.getMonth() > month)
+      )
+        break;
+    }
+  }
+
   const months = [
-    "JANEIRO", "FEVEREIRO", "MARÇO", "ABRIL", "MAIO", "JUNHO",
-    "JULHO", "AGOSTO", "SETEMBRO", "OUTUBRO", "NOVEMBRO", "DEZEMBRO"
+    "JANEIRO",
+    "FEVEREIRO",
+    "MARÇO",
+    "ABRIL",
+    "MAIO",
+    "JUNHO",
+    "JULHO",
+    "AGOSTO",
+    "SETEMBRO",
+    "OUTUBRO",
+    "NOVEMBRO",
+    "DEZEMBRO",
   ];
   title.innerText = `${months[month]} ${year}`;
 
@@ -812,9 +1111,10 @@ async function renderCalendar(info) {
 
   // Headers de Dias da Semana
   const weekDays = ["D", "S", "T", "Q", "Q", "S", "S"];
-  weekDays.forEach(d => {
+  weekDays.forEach((d) => {
     const dayHead = document.createElement("div");
-    dayHead.style.cssText = "font-size: 0.55rem; color: #333; font-weight: 900; padding: 2px 0;";
+    dayHead.style.cssText =
+      "font-size: 0.55rem; color: #333; font-weight: 900; padding: 2px 0;";
     dayHead.innerText = d;
     grid.appendChild(dayHead);
   });
@@ -824,13 +1124,16 @@ async function renderCalendar(info) {
     grid.appendChild(document.createElement("div"));
   }
 
-  const isWindowOpen = isTransferWindowOpen(info.currentDate, info.calendarType || "eu");
+  const isWindowOpen = isTransferWindowOpen(
+    info.currentDate,
+    info.calendarType || "eu",
+  );
 
   for (let d = 1; d <= daysInMonth; d++) {
     const dayEl = document.createElement("div");
     const isToday = d === today;
-    const hasMatch = isToday; 
-    
+    const match = matchEvents[d];
+
     // Estilo Base
     let bgColor = "rgba(255,255,255,0.02)";
     let border = "1px solid rgba(255,255,255,0.04)";
@@ -839,9 +1142,27 @@ async function renderCalendar(info) {
     let boxShadow = "none";
 
     if (isWindowOpen) {
-        bgColor = "rgba(0, 255, 136, 0.05)";
-        border = "1px solid rgba(0, 255, 136, 0.1)";
+      bgColor = "rgba(0, 255, 136, 0.05)";
+      border = "1px solid rgba(0, 255, 136, 0.1)";
+      color = "#888";
+    }
+
+    if (match) {
+      if (match.isFuture) {
+        border = "1px solid var(--accent)";
+        bgColor = "rgba(0, 255, 136, 0.1)";
+        color = "#fff";
+      } else if (match.isPast) {
+        const resColor =
+          match.result === "V"
+            ? "var(--rating-high)"
+            : match.result === "D"
+              ? "#ff4444"
+              : "var(--warning)";
+        border = `1px solid ${resColor}`;
+        bgColor = `${resColor}22`;
         color = "#888";
+      }
     }
 
     if (isToday) {
@@ -852,9 +1173,10 @@ async function renderCalendar(info) {
       transform = "scale(1.1)";
     }
 
-    const isWeekend = (firstDay + d - 1) % 7 === 0 || (firstDay + d - 1) % 7 === 6;
-    if (isWeekend && !isToday && !isWindowOpen) {
-        color = "#444";
+    const isWeekend =
+      (firstDay + d - 1) % 7 === 0 || (firstDay + d - 1) % 7 === 6;
+    if (isWeekend && !isToday && !isWindowOpen && !match) {
+      color = "#444";
     }
 
     dayEl.style.cssText = `
@@ -872,15 +1194,27 @@ async function renderCalendar(info) {
       transform: ${transform};
       box-shadow: ${boxShadow};
       position: relative;
+      cursor: ${match ? "pointer" : "default"};
     `;
-    
-    dayEl.innerText = d;
 
-    // Se tiver jogo (ex: hoje)
-    if (isToday) {
-       const dot = document.createElement("div");
-       dot.style.cssText = "position: absolute; bottom: 2px; width: 4px; height: 4px; background: #000; border-radius: 50%;";
-       dayEl.appendChild(dot);
+    dayEl.innerText = d;
+    if (match) {
+      dayEl.title = `${match.isFuture ? "Jogo contra: " : "Resultado vs: "}${match.opponent}${match.result ? ` (${match.result})` : ""}`;
+    }
+
+    // Marcador de ponto
+    if (isToday || match) {
+      const dot = document.createElement("div");
+      let dotColor = "#000";
+      if (!isToday && match) {
+        dotColor = match.isFuture
+          ? "var(--accent)"
+          : match.result === "V"
+            ? "var(--rating-high)"
+            : "#ff4444";
+      }
+      dot.style.cssText = `position: absolute; bottom: 2px; width: 4px; height: 4px; background: ${dotColor}; border-radius: 50%;`;
+      dayEl.appendChild(dot);
     }
 
     grid.appendChild(dayEl);
@@ -962,6 +1296,407 @@ export async function renderProposals(info, containerId = "proposalsList", badge
       renderApp();
     };
   });
+
+  if (window.lucide) window.lucide.createIcons();
+}
+
+export async function renderPlayerDetail(playerId) {
+  const container = document.getElementById("playerDetailView");
+  if (!container) return;
+
+  const p = squad.find((x) => x.id === playerId);
+  if (!p) return;
+
+  const isGK = p.aptitude && p.aptitude[0] === "GOL";
+  const pRating = p.ovr || p.rating || 5.0;
+  const rColor = getRatingColor(pRating);
+  const mainPos = p.aptitude?.[0] || "CA";
+
+  container.innerHTML = `
+    <div style="height: 100%; display: flex; flex-direction: column; background: #080808; border-radius: 15px; overflow: hidden; border: 1px solid var(--border);">
+      
+      <!-- Top Bar: Nome e Botão Voltar -->
+      <div style="padding: 25px 40px; background: linear-gradient(90deg, #111 0%, #080808 100%); display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #222;">
+        <div style="display: flex; align-items: center; gap: 20px; min-width: 0; flex: 1;">
+          <div style="background: ${rColor}; color: #000; width: 60px; height: 60px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; font-weight: 900; box-shadow: 0 0 20px ${rColor}44; flex-shrink: 0;">
+            ${pRating.toFixed(1)}
+          </div>
+          <div style="overflow: hidden; min-width: 0;">
+            <h1 style="margin: 0; color: #fff; font-size: 2rem; font-weight: 900; letter-spacing: -1px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${p.name.toUpperCase()}</h1>
+            <div style="display: flex; align-items: center; gap: 10px; margin-top: 5px;">
+              <span style="background: #222; color: var(--accent); padding: 4px 10px; border-radius: 4px; font-weight: 800; font-size: 0.8rem; flex-shrink: 0;">${mainPos}</span>
+              <span style="color: #666; font-size: 0.85rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${p.nationality || "BR"} | ${p.age || 25} Anos | Camisa ${p.number || 99}</span>
+            </div>
+          </div>
+        </div>
+        <button onclick="switchMainView('dashboard')" style="background: #222; border: 1px solid #333; color: #fff; width: 120px; height: 45px; border-radius: 8px; font-weight: bold; cursor: pointer; transition: all 0.2s; flex-shrink: 0; display: flex; align-items: center; justify-content: center; gap: 8px; margin-left: 20px;" onmouseover="this.style.background='#333'" onmouseout="this.style.background='#222'">
+          <i data-lucide="arrow-left" style="width: 1rem; height: 1rem;"></i>
+          VOLTAR
+        </button>
+      </div>
+
+      <!-- Main Content: Três Colunas Reorganizadas -->
+      <div style="flex: 1; display: grid; grid-template-columns: 380px 1fr 340px; gap: 20px; padding: 25px; overflow-y: auto; align-items: start;">
+        
+        <!-- Coluna 1: Perfil e Radar -->
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <div style="background: #111; border: 1px solid #222; border-radius: 15px; padding: 20px; display: flex; flex-direction: column; align-items: center;">
+            <h4 style="color: #888; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px;">Perfil de Atributos</h4>
+            <canvas id="detailRadarChart" width="260" height="260"></canvas>
+            <div id="detailStatsNumbers" style="margin-top: 25px; width: 100%;"></div>
+          </div>
+        </div>
+
+        <!-- Coluna 2: Habilidades e Temporada -->
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <div style="background: #111; border: 1px solid #222; border-radius: 15px; padding: 25px;">
+            <h4 style="color: #888; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 25px;">Análise de Habilidades</h4>
+            <div id="detailAttributeBars" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 25px 40px;">
+               <!-- Injetado via JS loop -->
+            </div>
+          </div>
+
+          <div style="background: #111; border: 1px solid #222; border-radius: 15px; padding: 25px;">
+             <h4 style="color: #888; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px;">Estatísticas na Temporada</h4>
+             <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+               <div style="text-align: center; background: rgba(255,255,255,0.02); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.03);">
+                 <div style="color: var(--accent); font-size: 1.8rem; font-weight: 900;">${p.goals || 0}</div>
+                 <div style="color: #555; font-size: 0.65rem; text-transform: uppercase; margin-top: 5px;">Gols Marcados</div>
+               </div>
+               <div style="text-align: center; background: rgba(255,255,255,0.02); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.03);">
+                 <div style="color: #00aaff; font-size: 1.8rem; font-weight: 900;">${p.assists || 0}</div>
+                 <div style="color: #555; font-size: 0.65rem; text-transform: uppercase; margin-top: 5px;">Assistências</div>
+               </div>
+               <div style="text-align: center; background: rgba(255,255,255,0.02); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.03);">
+                 <div style="color: var(--warning); font-size: 1.8rem; font-weight: 900;">${p.avgRating ? p.avgRating.toFixed(1) : "--"}</div>
+                 <div style="color: #555; font-size: 0.65rem; text-transform: uppercase; margin-top: 5px;">Nota Média</div>
+               </div>
+             </div>
+          </div>
+        </div>
+
+        <!-- Coluna 3: Contrato e Gestão -->
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <div style="background: #111; border: 1px solid #222; border-radius: 15px; padding: 25px;">
+            <h4 style="color: #888; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 25px;">Contrato</h4>
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+              <div>
+                <label style="color: #444; font-size: 0.65rem; text-transform: uppercase; display: block; margin-bottom: 5px;">Valor de Mercado</label>
+                <div style="color: var(--accent); font-size: 1.6rem; font-weight: 900;">${formatMoney(p.marketValue || 0)}</div>
+              </div>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                <div>
+                  <label style="color: #444; font-size: 0.6rem; text-transform: uppercase;">Mercado</label>
+                  <div style="color: #fff; font-size: 0.85rem; font-weight: bold; margin-top: 2px;">${p.transferStatus === "transfer" ? "À VENDA" : p.transferStatus === "loan" ? "EMPRÉSTIMO" : "INTOCÁVEL"}</div>
+                </div>
+                <div>
+                  <label style="color: #444; font-size: 0.6rem; text-transform: uppercase;">Vínculo</label>
+                  <div style="color: #fff; font-size: 0.85rem; font-weight: bold; margin-top: 2px;">${Math.floor((p.contractMonths || 24) / 12)}a ${ (p.contractMonths || 24) % 12 }m</div>
+                </div>
+              </div>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                <div>
+                  <label style="color: #444; font-size: 0.6rem; text-transform: uppercase;">Estilo</label>
+                  <div style="color: var(--warning); font-size: 0.85rem; font-weight: bold; margin-top: 2px;">${p.playstyle || "N/A"}</div>
+                </div>
+                <div>
+                  <label style="color: #444; font-size: 0.6rem; text-transform: uppercase;">Salário</label>
+                  <div style="color: #fff; font-size: 0.85rem; font-weight: bold; margin-top: 2px;">${formatMoney((p.marketValue || 0) * 0.005)} /mês</div>
+                </div>
+              </div>
+              <div>
+                <label style="color: #444; font-size: 0.6rem; text-transform: uppercase; display: block; margin-bottom: 8px;">Condição Física (${Math.floor(p.fitness || 100)}%)</label>
+                <div style="width: 100%; height: 6px; background: #222; border-radius: 4px; overflow: hidden;">
+                  <div style="width: ${p.fitness || 100}%; height: 100%; background: var(--accent); box-shadow: 0 0 10px var(--accent)aa;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- Coluna 3: Ações e Opções de Mercado -->
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <div style="background: #111; border: 1px solid #222; border-radius: 15px; padding: 25px;">
+            <h4 style="color: #888; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px;">Gestão</h4>
+            
+            <div style="display: flex; flex-direction: column; gap: 15px;">
+              <button id="detailSellBtn" class="btn-primary" style="padding: 18px; font-weight: 900; font-size: 0.85rem; border-radius: 12px;">VENDER AGORA (80%)</button>
+              
+              <div>
+                <select id="detailMarketStatusSelect" style="width: 100%; padding: 12px; background: #1a1a1a; border: 1px solid #333; color: #fff; border-radius: 10px; outline: none; font-size: 0.85rem;">
+                  <option value="none" ${p.transferStatus === "none" ? "selected" : ""}>Status: Intocável</option>
+                  <option value="transfer" ${p.transferStatus === "transfer" ? "selected" : ""}>Status: Listar Venda</option>
+                  <option value="loan" ${p.transferStatus === "loan" ? "selected" : ""}>Status: Listar Empréstimo</option>
+                </select>
+              </div>
+              <button id="detailReleaseBtn" style="background: transparent; border: 1px solid var(--danger); color: var(--danger); padding: 12px; border-radius: 10px; font-weight: bold; cursor: pointer; font-size: 0.75rem; transition: all 0.2s;" onmouseover="this.style.background='rgba(255,0,0,0.05)'" onmouseout="this.style.background='transparent'">RESCINDIR CONTRATO</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  `;
+
+  // Radar
+  drawRadar("detailRadarChart", p.stats, null, isGK);
+  renderStatsNumbers(p.stats, null, isGK, "detailStatsNumbers");
+
+  // Atributos em Barra
+  const barsContainer = document.getElementById("detailAttributeBars");
+  const statKeys = isGK
+    ? [
+        { key: "alc", label: "ALCANCE" },
+        { key: "seg", label: "SEGURANÇA" },
+        { key: "esp", label: "ESPALMADA" },
+        { key: "ref", label: "REFLEXOS" },
+        { key: "vel", label: "VELOCIDADE" },
+        { key: "pos", label: "POSICION." },
+        { key: "sta", label: "FÔLEGO" },
+      ]
+    : [
+        { key: "vel", label: "VELOCIDADE" },
+        { key: "fin", label: "FINALIZAÇÃO" },
+        { key: "pas", label: "PASSE" },
+        { key: "dri", label: "DRIBLE" },
+        { key: "def", label: "DEFESA" },
+        { key: "fis", label: "FÍSICO" },
+        { key: "sta", label: "FÔLEGO" },
+      ];
+
+  statKeys.forEach((s) => {
+    const val = p.stats[s.key] || 50;
+    const barColor =
+      val > 85
+        ? "var(--accent)"
+        : val > 75
+          ? "#00aaff"
+          : val > 60
+            ? "var(--warning)"
+            : "#ff4444";
+
+    barsContainer.innerHTML += `
+      <div>
+        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+          <span style="font-size: 0.7rem; color: #888; font-weight: 800; letter-spacing: 0.5px;">${s.label}</span>
+          <span style="font-size: 0.85rem; color: #fff; font-weight: 900;">${val}</span>
+        </div>
+        <div style="width: 100%; height: 8px; background: #1a1a1a; border-radius: 4px; overflow: hidden; border: 1px solid rgba(255,255,255,0.03);">
+          <div style="width: ${val}%; height: 100%; background: ${barColor}; border-radius: 4px; box-shadow: 0 0 12px ${barColor}66;"></div>
+        </div>
+      </div>
+    `;
+  });
+
+  // Eventos de Gestão
+  const { sellPlayer, releasePlayer } = await import("../player/playerEditor.js");
+
+  document.getElementById("detailSellBtn").onclick = () => sellPlayer(p.id);
+  document.getElementById("detailReleaseBtn").onclick = () => releasePlayer(p.id);
+
+  document.getElementById("detailMarketStatusSelect").onchange = async (e) => {
+    const { updatePlayerData } = await import("../core/appCore.js");
+    updatePlayerData(p.id, { transferStatus: e.target.value });
+    renderPlayerDetail(p.id);
+  };
+
+  if (window.lucide) window.lucide.createIcons();
+}
+
+export async function renderNegotiation(playerId, propId = null, isBuying = false, externalPlayerData = null) {
+  const container = document.getElementById("negotiationView");
+  if (!container) return;
+
+  switchMainView("negotiation");
+  container.innerHTML = `<div style="display: flex; align-items: center; justify-content: center; height: 100%; color: var(--accent);">Carregando central de negociações...</div>`;
+
+  const coach = await Storage.getCoachInfo();
+  let player = externalPlayerData;
+
+  if (!player) {
+    if (!isBuying) {
+      player = squad.find(p => p.id === playerId);
+    }
+  }
+
+  if (!player) {
+    container.innerHTML = `<div style="padding: 40px; text-align: center;"><p style="color: #666;">Jogador não encontrado.</p><button onclick="switchMainView('transfer')" class="btn-primary" style="width: auto; margin-top: 20px;">VOLTAR</button></div>`;
+    return;
+  }
+
+  const proposal = propId ? coach.proposals.find(p => p.id === propId) : null;
+  const ovr = player.ovr || player.rating || 75;
+  const initialValue = proposal ? proposal.value : (player.marketValue || 0);
+  
+  container.innerHTML = `
+    <div style="padding: 30px; max-width: 1400px; margin: 0 auto; min-height: 100%; display: flex; flex-direction: column; gap: 25px;">
+      
+      <!-- Header -->
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #222; padding-bottom: 20px;">
+        <div style="display: flex; align-items: center; gap: 15px;">
+          <div style="background: var(--accent); width: 45px; height: 45px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+            <i data-lucide="handshake" style="color: #000; width: 1.5rem; height: 1.5rem;"></i>
+          </div>
+          <div>
+            <h1 style="color: #fff; margin: 0; font-size: 1.5rem; font-weight: 900;">CENTRAL DE <span style="color: var(--accent);">NEGOCIAÇÃO</span></h1>
+            <p style="color: #666; font-size: 0.75rem; margin: 0;">${isBuying ? "Proposta de Aquisição" : "Proposta de Venda"}</p>
+          </div>
+        </div>
+        <button onclick="switchMainView('${isBuying ? "transfer" : "inbox"}')" style="background: transparent; border: 1px solid #333; color: #888; padding: 10px 20px; border-radius: 8px; font-weight: 800; cursor: pointer; font-size: 0.75rem;">CANCELAR E SAIR</button>
+      </div>
+
+      <!-- Grid Principal -->
+      <div style="display: grid; grid-template-columns: 350px 1fr 380px; gap: 25px; flex: 1;">
+        
+        <!-- Coluna 1: Perfil do Jogador -->
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <div style="background: #111; border: 1px solid #222; border-radius: 15px; overflow: hidden;">
+            <div style="background: ${getRatingColor(ovr)}; height: 100px; position: relative;">
+               <div style="position: absolute; bottom: -20px; left: 20px; background: #000; padding: 10px; border-radius: 12px; border: 2px solid #222; font-size: 2rem; font-weight: 900; color: ${getRatingColor(ovr)};">${ovr.toFixed(0)}</div>
+            </div>
+            <div style="padding: 40px 20px 20px 20px;">
+              <h2 style="color: #fff; margin: 0; font-size: 1.4rem;">${player.name}</h2>
+              <div style="color: var(--accent); font-weight: 800; font-size: 0.8rem; margin-top: 5px; text-transform: uppercase;">${player.aptitude ? player.aptitude[0] : "---"} | ${player.nationality || "---"}</div>
+              
+              <div style="margin-top: 25px; display: flex; flex-direction: column; gap: 12px;">
+                <div style="display: flex; justify-content: space-between; font-size: 0.8rem;">
+                  <span style="color: #666;">Idade</span>
+                  <span style="color: #fff; font-weight: bold;">${player.age || 25} anos</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-size: 0.8rem;">
+                  <span style="color: #666;">Valor de Mercado</span>
+                  <span style="color: var(--accent); font-weight: bold;">${formatMoney(player.marketValue || 0)}</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-size: 0.8rem;">
+                  <span style="color: #666;">Clube Atual</span>
+                  <span style="color: #fff; font-weight: bold;">${isBuying ? (player.clubName || "Externo") : coach.teamName}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="background: #111; border: 1px solid #222; border-radius: 15px; padding: 20px;">
+            <h3 style="color: #fff; font-size: 0.75rem; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; color: #555;">Último Desempenho</h3>
+            <div style="display: flex; gap: 8px;">
+               ${(player.ratingHistory || []).map(r => `<div style="background: ${getRatingColor(r)}; color: #000; width: 35px; height: 35px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 0.8rem;">${r.toFixed(1)}</div>`).join("")}
+            </div>
+          </div>
+        </div>
+
+        <!-- Coluna 2: Ambiente de Reunião -->
+        <div style="background: #0a0a0a; border: 1px solid #222; border-radius: 15px; display: flex; flex-direction: column; position: relative; background-image: radial-gradient(circle at center, #111 0%, #000 100%);">
+          <div style="flex: 1; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 20px; padding: 40px; text-align: center;">
+             <div style="width: 120px; height: 120px; border: 2px solid var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; background: rgba(0,255,136,0.05); box-shadow: 0 0 30px rgba(0,255,136,0.1);">
+                <i data-lucide="users" style="width: 3.5rem; height: 3.5rem; color: var(--accent);"></i>
+             </div>
+             <h3 style="color: #fff; font-size: 1.2rem; font-weight: 800;">Os diretores estão reunidos</h3>
+             <p style="color: #555; max-width: 400px; line-height: 1.6;">${isBuying ? `Aguardando sua proposta oficial para ser apresentada ao <strong>${player.clubName || "clube detentor"}</strong>.` : `O <strong>${proposal ? proposal.from : "clube interessado"}</strong> apresentou os termos abaixo para a liberação imediata do atleta.`}</p>
+          </div>
+          
+          <div style="background: rgba(0,0,0,0.4); padding: 30px; border-top: 1px solid #222; text-align: center;">
+            <div style="font-size: 0.7rem; color: #666; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px;">PROPOSTA ATUAL</div>
+            <div id="negValueDisplay" style="font-size: 2.8rem; font-weight: 900; color: #fff; letter-spacing: -1px;">${formatMoney(initialValue)}</div>
+          </div>
+        </div>
+
+        <!-- Coluna 3: Painel de Decisão -->
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          
+          <div style="background: #111; border: 1px solid #222; border-radius: 15px; padding: 25px; flex: 1;">
+            <h3 style="color: #fff; font-size: 1rem; margin-bottom: 25px; font-weight: 900;">Ações da Diretoria</h3>
+            
+            <div style="margin-bottom: 30px;">
+              <label style="display: block; font-size: 0.65rem; color: #666; margin-bottom: 15px; font-weight: 800; text-transform: uppercase;">Ajustar Valor (OFERTA)</label>
+              <input type="range" id="negValueSlider" min="${initialValue * 0.5}" max="${initialValue * 2}" step="50000" value="${initialValue}" style="width: 100%; height: 6px; background: #222; border-radius: 5px; outline: none; cursor: pointer; accent-color: var(--accent);">
+              <div style="display: flex; justify-content: space-between; margin-top: 10px; font-size: 0.65rem; color: #444;">
+                <span>Min: ${formatMoney(initialValue * 0.5)}</span>
+                <span>Max: ${formatMoney(initialValue * 2)}</span>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              ${!isBuying && proposal ? `
+                <button id="negAcceptBtn" class="btn-primary" style="padding: 15px; font-weight: 900; letter-spacing: 1px; font-size: 0.9rem;">ACEITAR PROPOSTA</button>
+                <button id="negRejectBtn" class="btn-danger" style="padding: 12px; font-weight: 800; font-size: 0.8rem; opacity: 0.8;">RECUSAR E ENCERRAR</button>
+              ` : `
+                <button id="negSubmitBtn" class="btn-primary" style="padding: 15px; font-weight: 900; letter-spacing: 1px; font-size: 0.9rem;">ENVIAR OFERTA</button>
+              `}
+              <button id="negCounterBtn" style="background: transparent; border: 1px solid #333; color: #fff; padding: 12px; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 0.8rem;">FAZER CONTRA-PROPOSTA</button>
+            </div>
+          </div>
+
+          <div style="background: rgba(255,255,255,0.02); border: 1px solid #222; border-radius: 15px; padding: 20px;">
+            <div style="display: flex; align-items: center; gap: 10px; color: #555; font-size: 0.7rem;">
+               <i data-lucide="info" style="width: 1rem; height: 1rem;"></i>
+               <span>Seu orçamento atual: <strong style="color: var(--accent);">${formatMoney(coach.budget || 0)}</strong></span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  `;
+
+  const slider = document.getElementById("negValueSlider");
+  const valueDisplay = document.getElementById("negValueDisplay");
+  if (slider && valueDisplay) {
+    slider.oninput = () => {
+      valueDisplay.innerText = formatMoney(parseInt(slider.value));
+    };
+  }
+
+  const acceptBtn = document.getElementById("negAcceptBtn");
+  if (acceptBtn) {
+    acceptBtn.onclick = async () => {
+      const confirm = await showCustomModal(`Confirmar venda de <strong>${player.name}</strong> para o <strong>${proposal.from}</strong> por <strong>${formatMoney(proposal.value)}</strong>?`, "confirm", "btn-primary");
+      if (confirm) {
+        const idx = squad.findIndex(p => p.id === player.id);
+        if (idx !== -1) squad.splice(idx, 1);
+        coach.budget += proposal.value;
+        coach.proposals = coach.proposals.filter(p => p.id !== propId);
+        await Storage.saveCoachInfo(coach);
+        import("../core/appCore.js").then(m => m.saveToLocal());
+        showCustomModal(`Venda concluída! O saldo do clube agora é ${formatMoney(coach.budget)}`, "alert", "btn-primary");
+        switchMainView("dashboard");
+      }
+    };
+  }
+
+  const rejectBtn = document.getElementById("negRejectBtn");
+  if (rejectBtn) {
+    rejectBtn.onclick = async () => {
+      coach.proposals = coach.proposals.filter(p => p.id !== propId);
+      await Storage.saveCoachInfo(coach);
+      showCustomModal(`Proposta recusada. Os negociadores do <strong>${proposal.from}</strong> deixaram a mesa.`, "alert", "btn-secondary");
+      switchMainView("inbox");
+    };
+  }
+
+  const submitBtn = document.getElementById("negSubmitBtn");
+  if (submitBtn) {
+    submitBtn.onclick = async () => {
+      const offerValue = parseInt(slider.value);
+      if (offerValue > coach.budget) {
+        showCustomModal("Saldo insuficiente para realizar esta oferta.", "alert", "btn-danger");
+        return;
+      }
+      const confirm = await showCustomModal(`Deseja enviar oferta de <strong>${formatMoney(offerValue)}</strong> para contratar <strong>${player.name}</strong>?`, "confirm", "btn-primary");
+      if (confirm) {
+        const successChance = offerValue >= player.marketValue ? 0.9 : (offerValue / player.marketValue) * 0.8;
+        if (Math.random() < successChance) {
+           coach.budget -= offerValue;
+           await Storage.saveCoachInfo(coach);
+           const newId = squad.length > 0 ? Math.max(...squad.map((x) => x.id)) + 1 : 1;
+           const newPlayer = { ...player, id: newId, status: "reserva", matchStatus: "normal", captain: false };
+           squad.push(newPlayer);
+           import("../core/appCore.js").then(m => m.saveToLocal());
+           showCustomModal(`<strong>OFERTA ACEITA!</strong><br><br>${player.name} já está integrado ao seu elenco.`, "alert", "btn-primary");
+           switchMainView("table");
+        } else {
+           showCustomModal(`<strong>PROPOSTA REJEITADA!</strong><br><br>O <strong>${player.clubName || "clube"}</strong> considerou a oferta muito baixa para liberar o atleta.`, "alert", "btn-danger");
+        }
+      }
+    };
+  }
 
   if (window.lucide) window.lucide.createIcons();
 }

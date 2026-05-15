@@ -7,6 +7,7 @@ import {
 } from "./uiTableView.js";
 
 export function switchMainView(viewName) {
+  window.switchMainView = switchMainView; // Garantir global para handlers inline
   setTableView(viewName === "table");
 
   const pitch = document.getElementById("pitch");
@@ -16,8 +17,14 @@ export function switchMainView(viewName) {
   const league = document.getElementById("leagueView");
   const teamStats = document.getElementById("teamStatsView");
   const transfer = document.getElementById("transferView");
+  const inbox = document.getElementById("inboxView");
+  const playerDetail = document.getElementById("playerDetailView");
+  const negotiation = document.getElementById("negotiationView");
   const bench = document.querySelector(".bottom-bench");
   const sidebar = document.getElementById("sidebar");
+  const globalHeader = document.querySelector(".main-wrapper header");
+  const mainContent = document.querySelector(".main-content");
+  const navDashboard = document.getElementById("navDashboardBtn");
 
   if (pitch) pitch.style.display = "none";
   if (table) table.style.display = "none";
@@ -26,6 +33,14 @@ export function switchMainView(viewName) {
   if (league) league.style.display = "none";
   if (teamStats) teamStats.style.display = "none";
   if (transfer) transfer.style.display = "none";
+  if (inbox) inbox.style.display = "none";
+  if (playerDetail) playerDetail.style.display = "none";
+  if (negotiation) negotiation.style.display = "none";
+  if (globalHeader) globalHeader.style.display = "flex";
+  if (mainContent) {
+    mainContent.style.overflowY = "auto";
+    mainContent.style.padding = "25px";
+  }
 
   const navDash = document.getElementById("navDashboardBtn");
   const navPitch = document.getElementById("navPitchBtn");
@@ -40,6 +55,11 @@ export function switchMainView(viewName) {
     if (sidebar) sidebar.style.display = "none";
     if (sim) sim.style.display = "block";
     if (bench) bench.style.display = "none";
+    if (globalHeader) globalHeader.style.display = "none";
+    if (mainContent) {
+      mainContent.style.overflowY = "hidden";
+      mainContent.style.padding = "0";
+    }
   } else if (viewName === "table") {
     if (sidebar) sidebar.style.display = "flex";
     if (table) table.style.display = "block";
@@ -80,6 +100,25 @@ export function switchMainView(viewName) {
 
     // Inicializar Mercado (Ligas e Times)
     import("../core/transferMarket.js").then(m => m.initTransferMarket());
+  } else if (viewName === "negotiation") {
+    if (sidebar) sidebar.style.display = "none";
+    if (negotiation) negotiation.style.display = "block";
+    if (bench) bench.style.display = "none";
+  } else if (viewName === "inbox") {
+    if (sidebar) sidebar.style.display = "none";
+    if (inbox) inbox.style.display = "block";
+    if (bench) bench.style.display = "none";
+    
+    import("./render.js").then(m => m.renderInbox());
+  } else if (viewName === "playerDetail") {
+    if (sidebar) sidebar.style.display = "none";
+    if (playerDetail) playerDetail.style.display = "block";
+    if (bench) bench.style.display = "none";
+    if (globalHeader) globalHeader.style.display = "none";
+    if (mainContent) {
+      mainContent.style.overflowY = "auto";
+      mainContent.style.padding = "0";
+    }
   } else {
     // dashboard
     if (sidebar) sidebar.style.display = "none";

@@ -23,8 +23,23 @@ const del = async (...args) => {
 };
 
 let _activeSlot = null;
+let _teamsListCache = null;
 
 export const Storage = {
+  async getTeamsList() {
+    if (_teamsListCache) return _teamsListCache;
+    try {
+      const res = await fetch("data/teamsList.json", { cache: "no-store" });
+      if (res.ok) {
+        _teamsListCache = await res.json();
+        return _teamsListCache;
+      }
+    } catch (e) {
+      console.error("Falha ao carregar lista de times:", e);
+    }
+    return [];
+  },
+
   async getActiveSlot() {
     if (_activeSlot) return _activeSlot;
     _activeSlot = (await get("activeSaveSlot")) || "default";

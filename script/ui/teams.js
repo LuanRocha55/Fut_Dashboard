@@ -101,9 +101,8 @@ const LEAGUE_EMOJIS = {
 
 export async function loadTeams() {
   try {
-    const response = await fetch("data/teamsList.json");
-    if (!response.ok) throw new Error("Falha ao carregar lista de times.");
-    const teams = await response.json();
+    const teams = await Storage.getTeamsList();
+    if (!teams || teams.length === 0) throw new Error("Lista de times vazia.");
 
     const teamSelect = document.getElementById("teamSelect");
     const simOpponentSelect = document.getElementById("simOpponentSelect");
@@ -137,7 +136,6 @@ export async function loadTeams() {
         setupTeamSelect.innerHTML =
           '<option value="">-- Selecione um Clube --</option>';
 
-        // Agrupar times por liga
         const leagues = {};
         sortedTeams.forEach((t) => {
           const leagueName = t.league || "Outros";
@@ -145,7 +143,6 @@ export async function loadTeams() {
           leagues[leagueName].push(t);
         });
 
-        // Criar optgroups
         Object.keys(leagues)
           .sort()
           .forEach((league) => {
@@ -223,12 +220,11 @@ export function renderVisualTeams(teams) {
   if (!container) return;
 
   if (!teams || teams.length === 0) {
-    dbgToast("⚠️ Lista de times está vazia ou falhou ao carregar.", "#8b4000");
+    dbgToast("⚠️ Lista de times está vazia. Verifique data/teamsList.json", "#8b4000");
     console.error("renderVisualTeams: teams list is empty");
     return;
   }
 
-  // Agrupar por liga
   const leagues = {};
   teams.forEach((t) => {
     const l = t.league || "Outros";
@@ -236,33 +232,31 @@ export function renderVisualTeams(teams) {
     leagues[l].push(t);
   });
   const leagueNames = Object.keys(leagues);
-  dbgToast(`📂 ${leagueNames.length} ligas identificadas`, "#333");
 
-  // ── TELA 0: Seleção de Gênero ──────────────────────────────────────────
   function showGenderSelection() {
     container.innerHTML = `
-      <div style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#050505;gap:40px;padding:20px;">
+      <div style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#050505;gap:40px;padding:20px;position:relative;z-index:100;">
         <div style="text-align:center;margin-bottom:20px;">
           <h1 style="color:#fff;margin:0;font-size:3rem;font-weight:900;letter-spacing:-1px;">SELECIONE A <span style="color:var(--accent);">MODALIDADE</span></h1>
           <p style="color:#666;margin-top:10px;font-size:1.1rem;">Escolha o universo do futebol que deseja gerenciar</p>
         </div>
         
         <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:30px;max-width:800px;width:100%;">
-          <div id="selectMaleBtn" style="cursor:pointer;background:#0f0f0f;border:1px solid #222;border-radius:24px;padding:40px;text-align:center;transition:all 0.3s;display:flex;flex-direction:column;align-items:center;gap:20px;">
-            <div style="width:80px;height:80px;background:var(--accent)18;border-radius:50%;display:flex;align-items:center;justify-content:center;border:2px solid var(--accent)44;">
+          <div id="selectMaleBtn" style="cursor:pointer;background:#0f0f0f;border:1px solid #222;border-radius:24px;padding:40px;text-align:center;transition:all 0.3s;display:flex;flex-direction:column;align-items:center;gap:20px;pointer-events:auto;">
+            <div style="width:80px;height:80px;background:var(--accent)18;border-radius:50%;display:flex;align-items:center;justify-content:center;border:2px solid var(--accent)44;pointer-events:none;">
               <i data-lucide="users" style="width:40px;height:40px;color:var(--accent);"></i>
             </div>
-            <div>
+            <div style="pointer-events:none;">
               <h2 style="color:#fff;margin:0;font-size:1.8rem;">MASCULINO</h2>
               <p style="color:#555;margin-top:5px;font-size:0.9rem;">Ligas tradicionais, Champions e Brasileirão</p>
             </div>
           </div>
           
-          <div id="selectFemaleBtn" style="cursor:pointer;background:#0f0f0f;border:1px solid #222;border-radius:24px;padding:40px;text-align:center;transition:all 0.3s;display:flex;flex-direction:column;align-items:center;gap:20px;">
-            <div style="width:80px;height:80px;background:#ff006618;border-radius:50%;display:flex;align-items:center;justify-content:center;border:2px solid #ff006644;">
+          <div id="selectFemaleBtn" style="cursor:pointer;background:#0f0f0f;border:1px solid #222;border-radius:24px;padding:40px;text-align:center;transition:all 0.3s;display:flex;flex-direction:column;align-items:center;gap:20px;pointer-events:auto;">
+            <div style="width:80px;height:80px;background:#ff006618;border-radius:50%;display:flex;align-items:center;justify-content:center;border:2px solid #ff006644;pointer-events:none;">
               <i data-lucide="star" style="width:40px;height:40px;color:#ff0066;"></i>
             </div>
-            <div>
+            <div style="pointer-events:none;">
               <h2 style="color:#fff;margin:0;font-size:1.8rem;">FEMININO</h2>
               <p style="color:#555;margin-top:5px;font-size:0.9rem;">NWSL, WSL, Liga F e craques mundiais</p>
             </div>
@@ -275,41 +269,21 @@ export function renderVisualTeams(teams) {
 
     if (window.lucide) window.lucide.createIcons();
 
-    document.getElementById("backToCoachBtnSelect").onclick = () =>
+    document.getElementById("backToCoachBtnSelect").onclick = (e) => {
+      e.preventDefault();
       showScreen("coachCreationScreen");
+    };
 
     const maleBtn = document.getElementById("selectMaleBtn");
-    maleBtn.onmouseenter = () => {
-      maleBtn.style.borderColor = "var(--accent)";
-      maleBtn.style.background = "var(--accent)0a";
-      maleBtn.style.transform = "translateY(-10px)";
-      maleBtn.style.boxShadow = "0 20px 40px var(--accent)18";
-    };
-    maleBtn.onmouseleave = () => {
-      maleBtn.style.borderColor = "#222";
-      maleBtn.style.background = "#0f0f0f";
-      maleBtn.style.transform = "";
-      maleBtn.style.boxShadow = "";
-    };
-    maleBtn.onclick = () => {
+    maleBtn.onclick = (e) => {
+      e.preventDefault();
       dbgToast("⚡ Abrindo Universo Masculino...", "var(--accent)");
       showLeagueGrid("male");
     };
 
     const femaleBtn = document.getElementById("selectFemaleBtn");
-    femaleBtn.onmouseenter = () => {
-      femaleBtn.style.borderColor = "#ff0066";
-      femaleBtn.style.background = "#ff00660a";
-      femaleBtn.style.transform = "translateY(-10px)";
-      femaleBtn.style.boxShadow = "0 20px 40px #ff006618";
-    };
-    femaleBtn.onmouseleave = () => {
-      femaleBtn.style.borderColor = "#222";
-      femaleBtn.style.background = "#0f0f0f";
-      femaleBtn.style.transform = "";
-      femaleBtn.style.boxShadow = "";
-    };
-    femaleBtn.onclick = () => {
+    femaleBtn.onclick = (e) => {
+      e.preventDefault();
       dbgToast("💖 Abrindo Universo Feminino...", "#ff0066");
       showLeagueGrid("female");
     };
@@ -561,6 +535,7 @@ export function renderVisualTeams(teams) {
 }
 
 export async function finalizeCareerSetup(selectedTeam) {
+  dbgToast(`🏟️ Selecionado: ${selectedTeam.name}`, "var(--accent)");
   dbgToast("💾 Criando novo save...", "#1a3a5c");
   try {
     const coachName = document.getElementById("setupCoachName").value;
@@ -570,7 +545,12 @@ export async function finalizeCareerSetup(selectedTeam) {
     );
     const playstyle = checkedStyle ? checkedStyle.value : "possession";
 
-    // Criar o slot primeiro
+    // 1. Carregar elenco real do time selecionado
+    const squadRes = await fetch(`data/teams/${selectedTeam.file}`);
+    if (!squadRes.ok) throw new Error("Falha ao carregar elenco do time.");
+    const teamSquad = await squadRes.json();
+
+    // 2. Criar o slot
     const slotId = await Storage.createSlot(
       `Carreira: ${coachName}`,
       selectedTeam.file,
@@ -591,43 +571,31 @@ export async function finalizeCareerSetup(selectedTeam) {
       specialty: formation,
       playstyle: playstyle,
       startDate: new Date().toLocaleDateString("pt-BR"),
-      currentDate: isBr ? "2024-01-01" : "2024-07-01", // Data inicial dinâmica
+      currentDate: isBr ? "2024-01-01" : "2024-07-01",
       budget: initialBudget,
       calendarType: calendarType,
+      archivedNews: [],
+      proposals: [],
     };
 
+    // 3. Salvar tudo no Storage
     await Storage.saveCoachInfo(coachData);
     await Storage.setCurrentTeamFile(selectedTeam.file);
     await Storage.setCurrentFormation(formation);
+    await Storage.saveSquad(teamSquad.squad || teamSquad);
 
-    // Inicialização AUTOMÁTICA da liga baseada no time escolhido
+    // 4. Inicialização da liga
+    dbgToast("🏆 Gerando campeonato...", "#333");
     await autoInitLeague();
 
-    dbgToast("🔄 Iniciando jornada...", "#333");
+    dbgToast("🔄 Reiniciando sistema...", "#333");
     
-    // Em vez de reload, vamos disparar a inicialização manual
-    const { initSystem } = await import("../core/appCore.js");
-    const { main } = await import("./init.js");
-    
-    // Limpamos o estado atual e reinicializamos
+    // 5. Define flag para pular o menu e recarrega
+    localStorage.setItem("fut_jump_to_dash", "true");
     document.body.style.opacity = "0";
-    setTimeout(async () => {
-      // Forçamos o recarregamento dos dados do Storage
-      await initSystem();
-      
-      const { setupEventListeners } = await import("./uiEvents.js");
-      const { render, updateDashboardCoach } = await import("./render.js");
-      const coachInfo = await Storage.getCoachInfo();
-
-      document.body.style.opacity = "1";
-      showScreen("mainApp");
-      switchMainView("dashboard");
-      
-      if (coachInfo) {
-        updateDashboardCoach(coachInfo);
-      }
-      setupEventListeners();
-      render();
+    document.body.style.transition = "opacity 0.5s";
+    setTimeout(() => {
+      window.location.reload();
     }, 500);
   } catch (e) {
     dbgToast("❌ Erro ao salvar carreira: " + e.message, "#8b0000", 20000);

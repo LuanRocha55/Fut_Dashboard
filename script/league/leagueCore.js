@@ -57,11 +57,7 @@ export const getAutoLeagueType = async () => {
   const currentTeamFile = await Storage.getCurrentTeamFile();
   if (!currentTeamFile) return "br";
 
-  let availableTeams = [];
-  try {
-    const listRes = await fetch("data/teamsList.json", { cache: "no-store" });
-    if (listRes.ok) availableTeams = await listRes.json();
-  } catch (e) {}
+  const availableTeams = await Storage.getTeamsList();
 
   const userTeamInfo = availableTeams.find((t) => t.file === currentTeamFile);
   if (!userTeamInfo || !userTeamInfo.league) return "br";
@@ -79,13 +75,8 @@ export async function autoInitLeague() {
   const currentTeamFile = await Storage.getCurrentTeamFile();
   if (!currentTeamFile) return;
 
-  let availableTeams = [];
-  try {
-    const listRes = await fetch("data/teamsList.json", { cache: "no-store" });
-    if (listRes.ok) availableTeams = await listRes.json();
-  } catch (e) {
-    return;
-  }
+  const availableTeams = await Storage.getTeamsList();
+  if (!availableTeams.length) return;
 
   const userTeamInfo = availableTeams.find((t) => t.file === currentTeamFile);
   if (!userTeamInfo) return;
@@ -108,7 +99,7 @@ export async function autoInitLeague() {
     userTeamName.includes("(Fem)") ||
     femKeywords.some((k) => leagueName.includes(k));
 
-  availableTeams = availableTeams.filter((t) => {
+  let filteredTeams = availableTeams.filter((t) => {
     const isFemTeam =
       t.name.includes("(Fem)") ||
       femKeywords.some((k) => (t.league || "").includes(k));
@@ -116,11 +107,11 @@ export async function autoInitLeague() {
   });
 
   // 1. FILTRAR LIGA (Apenas times da mesma liga)
-  let leagueTeams = availableTeams.filter(
+  let leagueTeams = filteredTeams.filter(
     (t) => t.league === leagueName && t.file !== currentTeamFile,
   );
   leagueTeams.sort((a, b) => (b.ovr || 75) - (a.ovr || 75));
-  if (leagueTeams.length > 19) leagueTeams = leagueTeams.slice(0, 19);
+  if (Array.isArray(leagueTeams) && leagueTeams.length > 19) leagueTeams = leagueTeams.slice(0, 19);
 
   const leagueTable = leagueTeams.map((t) => ({
     id: t.file,
@@ -160,9 +151,38 @@ export async function autoInitLeague() {
     },
   ];
 
-  // 2. FILTRAR COPA NACIONAL (32 times)
-  let cupPool = availableTeams.filter((t) => t.file !== currentTeamFile);
-  // Prioriza times da mesma liga, depois o resto do país se possível
+  // 2. FILTRAR COPA NACIONAL (32 times da mesma nação/região)
+  const leagueToCountry = {
+    "premier": "england", "efl": "england", "wsl": "england",
+    "laliga": "spain", "liga f": "spain",
+    "bundesliga": "germany", "3. liga": "germany", "gpfbl": "germany",
+    "serie a": "italy", "serie b": "italy",
+    "ligue 1": "france", "ligue 2": "france", "arkema": "france",
+    "eredivisie": "netherlands", "liga portugal": "portugal",
+    "libertadores": "southam", "sudamericana": "southam", "brazil": "southam", "brasil": "southam", "argentina": "southam", "colombia": "southam"
+  };
+
+  const getUserCountry = (lName) => {
+    const ln = lName.toLowerCase();
+    for (const [key, country] of Object.entries(leagueToCountry)) {
+      if (ln.includes(key)) return country;
+    }
+    return "other";
+  };
+
+  const userCountry = getUserCountry(leagueName);
+  let cupPool = filteredTeams.filter((t) => {
+    if (t.file === currentTeamFile) return false;
+    const tCountry = getUserCountry(t.league || "");
+    return tCountry === userCountry;
+  });
+
+  // Se o pool ficou muito pequeno (ex: liga obscura), relaxar o filtro mas avisar
+  if (cupPool.length < 31) {
+    cupPool = filteredTeams.filter(t => t.file !== currentTeamFile);
+  }
+
+  // Prioriza times da mesma liga, depois o resto do país
   cupPool.sort((a, b) => {
     if (a.league === leagueName && b.league !== leagueName) return -1;
     if (b.league === leagueName && a.league !== leagueName) return 1;
@@ -171,8 +191,7 @@ export async function autoInitLeague() {
 
   const cupTeams = [
     { id: currentTeamFile, name: userTeamName, ovr: userTeamInfo.ovr || 80 },
-    ...cupPool
-      .slice(0, 31)
+    ... (Array.isArray(cupPool) ? cupPool.slice(0, 31) : [])
       .map((t) => ({ id: t.file, name: t.name, ovr: t.ovr || 70 })),
   ];
   cupTeams.sort(() => 0.5 - Math.random());
@@ -265,8 +284,8 @@ export async function autoInitLeague() {
     contFilter = [leagueName.toLowerCase()];
   }
 
-  let contPool = availableTeams.filter((t) =>
-    contFilter.some((k) => (t.league || "").toLowerCase().includes(k)),
+  let contPool = filteredTeams.filter((t) =>
+    contFilter.some((k) => (t.league || "").toLowerCase().includes(k.toLowerCase())),
   );
   contPool.sort((a, b) => (b.ovr || 75) - (a.ovr || 75));
 
@@ -287,7 +306,7 @@ export async function autoInitLeague() {
   // GERAÇÃO DOS GRUPOS (8 grupos de 4)
   const groups = [];
   for (let i = 0; i < 8; i++) {
-    const groupTeams = contTeamsInfo.slice(i * 4, i * 4 + 4).map((t) => ({
+    const groupTeams = (Array.isArray(contTeamsInfo) ? contTeamsInfo.slice(i * 4, i * 4 + 4) : []).map((t) => ({
       ...t,
       pts: 0,
       p: 0,
@@ -403,7 +422,7 @@ export async function createNewLeague(
   gender = "male",
   qualifiedIds = [],
 ) {
-  const myTeamName = matchInfo.home || "Meu Time";
+  const myTeamName = (await Storage.getCoachInfo())?.teamName || "Meu Time";
   const myTeamId = (await Storage.getCurrentTeamFile()) || "meu_time";
   let divisions = [];
 
@@ -439,7 +458,8 @@ export async function createNewLeague(
     baseYear = oldData.baseYear + 1;
     if (isEuro || leagueType === "euro") {
       startMonth = 7;
-      seasonName = `${baseYear}/${(baseYear + 1).toString().slice(-2)}`;
+      const yearNum = Number(baseYear) || 2025;
+      seasonName = `${yearNum}/${(yearNum + 1).toString().slice(-2)}`;
     } else {
       seasonName = `${baseYear}`;
     }
@@ -464,8 +484,8 @@ export async function createNewLeague(
         (a, b) => b.pts - a.pts || b.w - a.w || b.gd - a.gd || b.gf - a.gf,
       );
 
-      let relegated = higherDiv.table.splice(-3, 3);
-      let promoted = lowerDiv.table.splice(0, 3);
+      let relegated = Array.isArray(higherDiv.table) ? higherDiv.table.splice(-3, 3) : [];
+      let promoted = Array.isArray(lowerDiv.table) ? lowerDiv.table.splice(0, 3) : [];
 
       higherDiv.table.push(...promoted);
       lowerDiv.table.push(...relegated);
@@ -674,7 +694,7 @@ export async function createNewLeague(
   // Pega o usuário + 31 times
   const cupTeams = [
     { id: myTeamId, name: myTeamName, ovr: 80 },
-    ...cupPool.slice(0, 31),
+    ... (Array.isArray(cupPool) ? cupPool.slice(0, 31) : []),
   ];
   cupTeams.sort(() => 0.5 - Math.random());
 
@@ -723,8 +743,7 @@ export async function createNewLeague(
     });
   } else {
     // Temporada 1: Top 8 da Divisão 1
-    contTeamsInfo = divisions[0].table
-      .slice(0, 8)
+    contTeamsInfo = (Array.isArray(divisions[0].table) ? divisions[0].table.slice(0, 8) : [])
       .map((t) => ({ id: t.id, name: t.name, ovr: t.ovr }));
   }
 
@@ -761,8 +780,7 @@ export async function createNewLeague(
 
   // Completa até 32 times
   contTeamsInfo.push(
-    ...foreignTeams
-      .slice(0, 32 - contTeamsInfo.length)
+    ... (Array.isArray(foreignTeams) ? foreignTeams.slice(0, 32 - contTeamsInfo.length) : [])
       .map((t) => ({ id: t.file, name: t.name, ovr: t.ovr || 75 })),
   );
   contTeamsInfo.sort(() => 0.5 - Math.random());
@@ -770,7 +788,7 @@ export async function createNewLeague(
   // GERAÇÃO DOS GRUPOS (8 grupos de 4)
   const groups = [];
   for (let i = 0; i < 8; i++) {
-    const groupTeams = contTeamsInfo.slice(i * 4, i * 4 + 4).map((t) => ({
+    const groupTeams = (Array.isArray(contTeamsInfo) ? contTeamsInfo.slice(i * 4, i * 4 + 4) : []).map((t) => ({
       ...t,
       pts: 0,
       p: 0,
