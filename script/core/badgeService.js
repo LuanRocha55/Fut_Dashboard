@@ -46,7 +46,7 @@ export async function getTeamBadge(teamName, leagueName = "") {
       await Storage.saveBadgeToCache(teamName, badgeUrl);
     }
 
-    return badgeUrl;
+    return badgeUrl || null;
   } catch (error) {
     console.error(`Erro ao buscar badge para ${teamName}:`, error);
     return null;
@@ -72,7 +72,7 @@ export async function getCompetitionBadge(leagueName) {
     await Storage.saveBadgeToCache(cacheKey, url);
   }
 
-  return url;
+  return url || null;
 }
 
 // --- PROVEDORES ---

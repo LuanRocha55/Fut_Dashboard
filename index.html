@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Política de Segurança para o Electron -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://*.api-sports.io https://*.api-football.com; connect-src 'self' https://v3.football.api-sports.io; font-src 'self' https://fonts.gstatic.com;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://*.api-sports.io https://*.api-football.com https://flagcdn.com https://www.thesportsdb.com; connect-src 'self' https://v3.football.api-sports.io https://www.thesportsdb.com; font-src 'self' https://fonts.gstatic.com;">
     <title>FutDashboard</title>
     <!-- CSS do Sistema -->
     <link rel="stylesheet" href="css/base.css">
@@ -27,8 +27,21 @@
         // Captura Erros Silenciosos de Módulos (Arquivos Faltando)
         window.addEventListener('error', function (e) {
             if (e.target && (e.target.tagName === 'SCRIPT' || e.target.tagName === 'LINK')) {
-                const url = e.target.src || e.target.href;
-                alert("🚨 ERRO: ARQUIVO NÃO ENCONTRADO (404) 🚨\n\nO sistema tentou carregar um arquivo essencial, mas ele não está onde deveria.\n\n📂 Arquivo procurado:\n" + url + "\n\n🛠️ COMO RESOLVER:\n1. Verifique se o arquivo foi deletado acidentalmente ou movido para outra pasta.\n2. Verifique se o nome do arquivo está escrito corretamente (letras maiúsculas/minúsculas importam).\n3. Tente limpar o cache do navegador (Ctrl+F5).");
+                const url = e.target.src || e.target.href || "Origem desconhecida (provável script inline ou dinâmico)";
+                
+                console.error('Falha crítica de carregamento:', {
+                    tag: e.target.tagName,
+                    url: url,
+                    element: e.target
+                });
+
+                // Ignora erros de scripts de terceiros se necessário
+                if (url && (typeof url === 'string') && (url.includes('unpkg.com') || url.includes('cdnjs.cloudflare.com'))) {
+                    console.warn('Falha ao carregar recurso externo, mas o sistema continuará:', url);
+                    return;
+                }
+
+                alert(`🚨 ERRO: ARQUIVO NÃO ENCONTRADO (404) 🚨\n\nO sistema tentou carregar um arquivo essencial, mas ele não está onde deveria.\n\n📂 Arquivo procurado:\n${url}\n\n🛠️ COMO RESOLVER:\n1. Verifique se o arquivo foi deletado ou movido.\n2. Verifique o nome do arquivo (Case-Sensitive).\n3. Verifique sua conexão com a internet se for um arquivo externo.\n4. Tente limpar o cache (Ctrl+F5).`);
             } else if (e.message) {
                 alert("🚨 ERRO CRÍTICO DE CÓDIGO (CRASH) 🚨\n\nUm bug na programação impediu o jogo de funcionar corretamente.\n\n🐛 Detalhes do Erro:\n" + e.message + "\n\n📄 Arquivo: " + (e.filename || "Desconhecido") + "\n🔢 Linha: " + (e.lineno || "?") + "\n\n🛠️ COMO RESOLVER:\nVerifique o console do navegador (pressione F12) para ver a pilha de erros completa e informar o desenvolvedor.");
             }

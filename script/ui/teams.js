@@ -192,7 +192,7 @@ export function loadBadgesLazy() {
         observer.unobserve(img);
         
         setTimeout(async () => {
-          const url = await fetchTeamBadge(name, league);
+          const url = await getTeamBadge(name, league);
           if (url && img.isConnected) {
             img.src = url;
           }
