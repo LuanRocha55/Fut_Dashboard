@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap");
+
+:root {
+  /* Core Palette */
+  --bg: #030303;
+  --sidebar: rgba(10, 10, 10, 0.85);
+  --accent: #00ff88;
+  --accent-glow: rgba(0, 255, 136, 0.3);
+  --warning: #ffcc00;
+  --danger: #ff4d4d;
+  --text: #f0f0f0;
+  --text-dim: #a0a0a0;
+
+  /* Glassmorphism */
+  --glass: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-blur: blur(12px);
+
+  /* Rating Palette (Premium Hues) */
+  --rating-top: #00f2ff;
+  --rating-high: #00ff88;
+  --rating-mid: #ffcc00;
+  --rating-low: #ff8800;
+  --rating-bad: #ff4444;
+
+  --border: rgba(255, 255, 255, 0.08);
+  --pitch: #0a1a09;
+
+  /* Transitions */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition: all 0.3s var(--ease);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  image-rendering: -webkit-optimize-contrast; /* Evita logos embaçados */
+}
+
+body {
+  background: var(--bg);
+  background-image:
+    radial-gradient(circle at 50% -20%, rgba(0, 255, 136, 0.05), transparent),
+    radial-gradient(circle at 0% 100%, rgba(0, 242, 255, 0.03), transparent);
+  color: var(--text);
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  letter-spacing: -0.01em;
+  
+  /* Melhorias de Nitidez para Telas Grandes */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+select,
+input {
+  width: 100%;
+  background: rgba(15, 15, 15, 0.6);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 10px;
+  outline: none;
+  font-family: inherit;
+  transition: var(--transition);
+}
+
+select:focus,
+input:focus {
+  border-color: var(--accent);
+  background: rgba(20, 20, 20, 0.8);
+  box-shadow: 0 0 15px var(--accent-glow);
+}
+
+input:disabled,
+select:disabled {
+  background: transparent;
+  border: 1px dashed rgba(255, 255, 255, 0.05);
+  color: var(--text-dim);
+  cursor: not-allowed;
+}
+
+/* Scrollbar Style */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Buttons - Premium Feel */
+button {
+  width: 100%;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  margin-top: 15px;
+  transition: var(--transition);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.button-grid button {
+  margin-top: 0;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent), #00e077);
+  color: #000;
+  box-shadow: 0 4px 15px rgba(0, 255, 136, 0.15);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 255, 136, 0.3);
+  filter: brightness(1.1);
+}
+
+.btn-secondary {
+  background: var(--glass);
+  backdrop-filter: var(--glass-blur);
+  color: var(--text);
+  border: 1px solid var(--glass-border);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.btn-danger {
+  background: rgba(255, 77, 77, 0.08);
+  color: var(--danger);
+  border: 1px solid rgba(255, 77, 77, 0.2);
+}
+
+.btn-danger:hover {
+  background: var(--danger);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 77, 77, 0.2);
+}
+
+.btn-warning {
+  background: linear-gradient(135deg, var(--warning), #ffb800);
+  color: #000;
+}
+
+.btn-warning:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 204, 0, 0.2);
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+  min-height: 0;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(0, 255, 136, 0.02),
+    transparent
+  );
+}
+
+.main-content {
+  flex: 1;
+  padding: 24px;
+  position: relative;
+  min-height: 0;
+  overflow-y: auto;
+}

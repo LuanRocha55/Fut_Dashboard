@@ -1,0 +1,259 @@
+/* Sidebar e Inputs */
+.sidebar {
+  width: 440px;
+  background: var(--sidebar);
+  backdrop-filter: var(--glass-blur);
+  border-right: 1px solid var(--glass-border);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.sidebar label {
+  font-size: 0.65rem;
+  color: var(--text-dim);
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ========================================================= */
+/* UX: Painel do Jogador (Modo Leitura vs Modo Edição)       */
+/* ========================================================= */
+#playerView.view-mode .edit-el {
+  display: none !important;
+}
+
+#playerView.view-mode .view-el {
+  display: block;
+}
+
+#playerView.edit-mode .view-el {
+  display: none !important;
+}
+
+/* Grid de Informações do Jogador */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  background: var(--glass);
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--glass-border);
+  transition: var(--transition);
+}
+
+.info-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.info-item label {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 0.6rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.info-item input,
+.info-item select {
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 0.85rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+.view-el {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Estatísticas Numéricas Comparativas */
+.stats-compare-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid var(--glass-border);
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.stat-row:last-child {
+  border-bottom: none;
+}
+
+.stat-name {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--text-dim);
+  width: 45px;
+  text-transform: uppercase;
+}
+
+.stat-bar-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.stat-val {
+  font-size: 0.95rem;
+  font-weight: 900;
+  width: 35px;
+  text-align: center;
+}
+
+.stat-val.p1 {
+  color: var(--accent);
+}
+
+.stat-val.p2 {
+  color: var(--danger);
+}
+
+.stat-vs {
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.2);
+  font-weight: 800;
+}
+
+.stat-val.winner {
+  text-shadow: 0 0 15px currentColor;
+  transform: scale(1.15);
+}
+
+.stat-val.loser {
+  opacity: 0.25;
+}
+
+.stat-val.tie {
+  opacity: 0.7;
+}
+
+/* ========================================================= */
+/* Sliders de Edição (Range Inputs)                          */
+/* ========================================================= */
+input[type="range"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  background: transparent;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  margin-top: -6px;
+  box-shadow: 0 0 10px var(--accent-glow);
+  border: 2px solid #000;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+/* Itens do Banco de Reservas */
+.bottom-bench {
+  background: var(--sidebar);
+  backdrop-filter: var(--glass-blur);
+  border-top: 1px solid var(--glass-border);
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  z-index: 50;
+}
+
+.bench-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.bench-header h4 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+}
+
+#benchList {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.reserve-item {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  padding: 16px;
+  cursor: grab;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-width: 120px;
+  flex-shrink: 0;
+}
+
+.reserve-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--accent);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.reserve-item:active {
+  cursor: grabbing;
+}
+
+.player-silhouette {
+  width: 32px;
+  height: 32px;
+  fill: rgba(255, 255, 255, 0.1);
+  margin: 8px 0;
+}

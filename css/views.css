@@ -1,0 +1,393 @@
+/* Painel de Estatísticas do Dashboard */
+.stats-container {
+  margin-top: 15px;
+  background: #111;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.stats-title {
+  margin-bottom: 12px;
+  font-size: 0.8rem;
+  color: #a0a0a0;
+  text-transform: uppercase;
+}
+
+.stats-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-item.center {
+  text-align: center;
+}
+
+.stat-item.right {
+  text-align: right;
+}
+
+.stat-label {
+  font-size: 0.65rem;
+  color: #888;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.stat-value {
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+/* ========================================================= */
+/* UX: Modo Tabela (Lista de Elenco Completa)                */
+/* ========================================================= */
+.table-view {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  background: #111;
+  border-radius: 12px;
+  padding: 15px;
+  overflow-y: auto;
+  border: 1px solid var(--border);
+}
+
+/* Estilo Global para Barras de Rolagem */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+.roster-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.roster-table th {
+  padding: 15px 12px;
+  font-size: 0.65rem;
+  color: #888;
+  border-bottom: 1px solid var(--border);
+  text-transform: uppercase;
+  position: sticky;
+  top: 0;
+  background: #111;
+  z-index: 2;
+}
+
+.roster-table td {
+  padding: 12px;
+  font-size: 0.85rem;
+  border-bottom: 1px solid #222;
+  color: #eee;
+  vertical-align: middle;
+}
+
+.roster-table tr {
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.roster-table tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.pos-badge-table {
+  background: #222;
+  border: 1px solid #444;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.65rem;
+  font-weight: 800;
+  display: inline-block;
+  text-align: center;
+  min-width: 35px;
+}
+
+/* Estilos de Ordenação (Sorting) da Tabela */
+.sortable {
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s;
+}
+
+.sortable:hover {
+  color: var(--accent);
+}
+
+.sort-icon {
+  display: inline-block;
+  width: 12px;
+  margin-left: 4px;
+  font-size: 0.6rem;
+  color: var(--accent);
+}
+
+.sortable.asc .sort-icon::after {
+  content: "▲";
+}
+
+.sortable.desc .sort-icon::after {
+  content: "▼";
+}
+
+/* Cards de Destaques (Highlights) */
+.highlight-card {
+  background: #1a1a1a;
+  padding: 12px 10px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.highlight-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 255, 136, 0.1);
+}
+
+.highlight-card-title {
+  font-size: 0.6rem;
+  color: #888;
+  font-weight: 800;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.highlight-card-name {
+  font-size: 0.85rem;
+  color: #fff;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.highlight-card-val {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--accent);
+  margin-top: 4px;
+  line-height: 1;
+}
+
+/* ========================================================= */
+/* Estilos da Simulação de Partida                           */
+/* ========================================================= */
+.log-entry {
+  padding: 8px 12px;
+  border-radius: 4px;
+  background: #1a1a1a;
+  border-left: 3px solid #444;
+  animation: slideIn 0.3s ease;
+}
+
+.log-goal {
+  border-color: var(--accent);
+  background: rgba(0, 255, 136, 0.1);
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.log-chance {
+  border-color: var(--warning);
+  color: #ffeb3b;
+}
+
+.log-foul {
+  border-color: #ff4444;
+  color: #ff8888;
+}
+
+.log-neutral {
+  border-color: #888;
+  color: #ccc;
+}
+
+.log-tackle {
+  border-color: #00aaff;
+  color: #88ccff;
+}
+
+.log-card-yellow {
+  border-color: #ffd700;
+  color: #ffd700;
+  background: rgba(255, 215, 0, 0.05);
+}
+
+.log-card-red {
+  border-color: #ff0000;
+  color: #ff4444;
+  font-weight: bold;
+  background: rgba(255, 0, 0, 0.1);
+}
+
+.log-injury {
+  border-color: #ff8800;
+  color: #ffaa44;
+  background: rgba(255, 136, 0, 0.05);
+}
+
+/* Itens da lista de substituição na Simulação */
+.sub-list-item {
+  padding: 6px;
+  background: #222;
+  border: 1px solid #444;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: all 0.2s;
+  user-select: none;
+}
+
+.sub-list-item:hover {
+  background: #333;
+}
+
+.sub-list-item.selected {
+  border-color: var(--accent);
+  background: rgba(0, 255, 136, 0.1);
+  color: #fff;
+}
+
+.sub-list-item .sub-name {
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sub-list-item .sub-stamina-bar {
+  height: 4px;
+  background: #111;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.sub-list-item .sub-stamina-fill {
+  height: 100%;
+  transition:
+    width 0.3s ease,
+    background 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ========================================================= */
+/* Estilos da Tela de Liga / Competições                     */
+/* ========================================================= */
+.fixture-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1a1a1a;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.fixture-team {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.fixture-team.home {
+  text-align: right;
+}
+
+.fixture-team.away {
+  text-align: left;
+}
+
+.fixture-score {
+  margin: 0 25px;
+  font-size: 1.1rem;
+  color: var(--warning);
+  min-width: 60px;
+  text-align: center;
+}
+
+.fixture-item.user-match {
+  border-color: var(--accent);
+  background: rgba(0, 255, 136, 0.1);
+}
+
+/* ========================================================= */
+/* Botões Gigantes do Menu Principal (Modo Carreira)         */
+/* ========================================================= */
+.dash-btn {
+  background: #111;
+  border: 1px solid #333;
+  color: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.dash-btn:hover {
+  border-color: var(--accent);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 255, 136, 0.1);
+}
+.dash-btn-play {
+  background: var(--warning);
+  color: #000;
+  border: none;
+  box-shadow: 0 10px 30px rgba(255, 208, 0, 0.2);
+}
+.dash-btn-play:hover {
+  background: #e6bc00;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(255, 208, 0, 0.4);
+}

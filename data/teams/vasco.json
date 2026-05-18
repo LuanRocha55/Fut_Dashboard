@@ -1,0 +1,731 @@
+{
+    "matchInfo":  {
+                      "home":  "Vasco da Gama",
+                      "away":  "Olimpia",
+                      "tournament":  "CONMEBOL Sudamericana 2026",
+                      "group":  "G"
+                  },
+    "squad":  [
+                  {
+                      "id":  1,
+                      "number":  1,
+                      "name":  "Léo Jardim",
+                      "status":  "titular",
+                      "aptitude":  [
+                                       "GOL"
+                                   ],
+                      "age":  31,
+                      "foot":  "Destro",
+                      "captain":  false,
+                      "nationality":  "BR",
+                      "playstyle":  "Goleiro Defensivo",
+                      "stats":  {
+                                    "div":  85,
+                                    "han":  85,
+                                    "kic":  60,
+                                    "ref":  85,
+                                    "spd":  40,
+                                    "pos":  85
+                                },
+                      "rating":  7.8,
+                      "form":  1
+                  },
+                  {
+                      "id":  2,
+                      "number":  30,
+                      "name":  "Robert Renan",
+                      "status":  "titular",
+                      "aptitude":  [
+                                       "ZE",
+                                       "LE",
+                                       "ZD"
+                                   ],
+                      "age":  22,
+                      "foot":  "Canhoto",
+                      "captain":  false,
+                      "nationality":  "BR",
+                      "playstyle":  "Defensor Criativo",
+                      "stats":  {
+                                    "pac":  72,
+                                    "sho":  51,
+                                    "pas":  75,
+                                    "dri":  76,
+                                    "def":  78,
+                                    "phy":  70
+                                },
+                      "rating":  7.5,
+                      "form":  1
+                  },
+                  {
+                      "id":  3,
+                      "number":  46,
+                      "name":  "Carlos Cuesta",
+                      "status":  "titular",
+                      "aptitude":  [
+                                       "ZD",
+                                       "LD",
+                                       "ZE"
+                                   ],
+                      "age":  27,
+                      "foot":  "Canhoto",
+                      "captain":  false,
+                      "nationality":  "CO",
+                      "playstyle":  "Zagueiro Rebatedor",
+                      "stats":  {
+                                    "pac":  65,
+                                    "sho":  47,
+                                    "pas":  74,
+                                    "dri":  55,
+                                    "def":  80,
+                                    "phy":  82
+                                },
+                      "rating":  7.2,
+                      "form":  1
+                  },
+                  {
+                      "id":  16,
+                      "number":  2,
+                      "name":  "José L. Rodríguez",
+                      "status":  "titular",
+                      "aptitude":  [
+                                       "LD",
+                                       "LE",
+                                       "MD",
+                                       "ME"
+                                   ],
+                      "age":  27,
+                      "foot":  "Destro",
+                      "captain":  false,
+                      "nationality":  "UY",
+                      "playstyle":  "Lateral Ofensivo",
+                      "stats":  {
+                                    "pac":  82,
+                                    "sho":  65,
+                                    "pas":  72,
+                                    "dri":  70,
+                                    "def":  65,
+                                    "phy":  70
+                                },
+                      "rating":  8.1,
+                      "form":  2
+                  },
+                  {
+                      "id":  4,
+                      "number":  66,
+                      "name":  "Cuiabano",
+                      "status":  "titular",
+                      "aptitude":  [
+                                       "LE",
+                                       "ME"
+                                   ],
+                      "age":  23,
+                      "foot":  "Canhoto",
+                      "captain":  false,
+                      "nationality":  "BR",
+                      "playstyle":  "Lateral Ofensivo",
+                      "stats":  {
+                                    "pac":  85,
+                                    "sho":  65,
+                                    "pas":  72,
+                                    "dri":  75,
+                                    "def":  69,
+                                    "phy":  68
+                                },
+                      "rating":  7.2,
+                      "form":  0
+                  },
+                  {
+                      "id":  6,
+                      "number":  23,
+                      "name":  "Thiago Mendes",
+                      "status":  "titular",
+                      "aptitude":  [
+                                       "VOL",
+                                       "MC"
+                                   ],
+                      "age":  34,
+                      "foot":  "Destro",
+                      "captain":  true,
+                      "nationality":  "BR",
+                      "playstyle":  "Orquestrador",
+                      "stats":  {
+                                    "pac":  65,
+                                    "sho":  65,
+                                    "pas":  85,
+                                    "dri":  75,
+                                    "def":  72,
+                                    "phy":  75
+                                },
+                      "rating":  7.8,
+                      "form":  1
+                  },
+                  {
+                      "id":  7,
+                      "number":  88,
+                      "name":  "Cauan Barros",
+                      "status":  "titular",
+                      "aptitude":  [
+                                       "VOL",
+                                       "MC"
+                                   ],
+                      "age":  21,
+                      "foot":  "Destro",
+                      "captain":  false,
+                      "nationality":  "BR",
+                      "playstyle":  "Motorzinho",
+                      "stats":  {
+                                    "pac":  75,
+                                    "sho":  55,
+                                    "pas":  70,
+                                    "dri":  68,
+                                    "def":  70,
+                                    "phy":  68
+                                },
+                      "rating":  7.3,
+                      "form":  1
+                  },
+                  {
+                      "id":  9,
+                      "number":  11,
+                      "name":  "Andrés Gómez",
+                      "status":  "titular",
+                      "aptitude":  [
+                                       "PE",
+                                       "ME",
+                                       "MD",
+                                       "PD"
+                                   ],
+                      "age":  23,
+                      "foot":  "Destro",
+                      "captain":  false,
+                      "nationality":  "CO",
+                      "playstyle":  "Ponta Prolífico",
+                      "stats":  {
+                                    "pac":  90,
+                                    "sho":  80,
+                                    "pas":  72,
+                                    "dri":  85,
+                                    "def":  35,
+                                    "phy":  65
+                                },
+                      "rating":  7.6,
+                      "form":  1
+                  },
+                  {
+                      "id":  26,
+                      "number":  28,
+                      "name":  "Adson",
+                      "status":  "titular",
+                      "aptitude":  [
+                                       "PD",
+                                       "MD",
+                                       "MEI",
+                                       "SA"
+                                   ],
+                      "age":  25,
+                      "foot":  "Canhoto",
+                      "captain":  false,
+                      "nationality":  "BR",
+                      "playstyle":  "Armador Criativo",
+                      "stats":  {
+                                    "pac":  80,
+                                    "sho":  68,
+                                    "pas":  75,
+                                    "dri":  82,
+                                    "def":  50,
+                                    "phy":  55
+                                },
+                      "rating":  7.3,
+                      "form":  1
+                  },
+                  {
+                      "id":  23,
+                      "number":  10,
+                      "name":  "Johan Rojas",
+                      "status":  "titular",
+                      "aptitude":  [
+                                       "MEI",
+                                       "MD",
+                                       "PD",
+                                       "SA"
+                                   ],
+                      "age":  23,
+                      "foot":  "Destro",
+                      "captain":  false,
+                      "nationality":  "CO",
+                      "playstyle":  "Armador Criativo",
+                      "stats":  {
+                                    "pac":  82,
+                                    "sho":  68,
+                                    "pas":  78,
+                                    "dri":  80,
+                                    "def":  40,
+                                    "phy":  55
+                                },
+                      "rating":  7.2,
+                      "form":  1
+                  },
+                  {
+                      "id":  27,
+                      "number":  77,
+                      "name":  "Claudio Spinelli",
+                      "status":  "titular",
+                      "aptitude":  [
+                                       "CA",
+                                       "SA"
+                                   ],
+                      "age":  29,
+                      "foot":  "Destro",
+                      "captain":  false,
+                      "nationality":  "AR",
+                      "playstyle":  "Artilheiro",
+                      "stats":  {
+                                    "pac":  72,
+                                    "sho":  80,
+                                    "pas":  60,
+                                    "dri":  70,
+                                    "def":  35,
+                                    "phy":  78
+                                },
+                      "rating":  7.1,
+                      "form":  1
+                  },
+                  {
+                      "id":  5,
+                      "number":  96,
+                      "name":  "Paulo Henrique",
+                      "status":  "reserva",
+                      "aptitude":  [
+                                       "LD",
+                                       "MD"
+                                   ],
+                      "age":  29,
+                      "foot":  "Destro",
+                      "captain":  false,
+                      "nationality":  "BR",
+                      "playstyle":  "Lateral Ofensivo",
+                      "stats":  {
+                                    "pac":  88,
+                                    "sho":  67,
+                                    "pas":  68,
+                                    "dri":  70,
+                                    "def":  70,
+                                    "phy":  74
+                                },
+                      "rating":  7.3,
+                      "form":  0
+                  },
+                  {
+                      "id":  12,
+                      "number":  4,
+                      "name":  "Alan Saldivia",
+                      "status":  "reserva",
+                      "aptitude":  [
+                                       "ZD",
+                                       "LD",
+                                       "ZE"
+                                   ],
+                      "age":  24,
+                      "foot":  "Destro",
+                      "captain":  false,
+                      "nationality":  "UY",
+                      "playstyle":  "Zagueiro Rebatedor",
+                      "stats":  {
+                                    "pac":  67,
+                                    "sho":  52,
+                                    "pas":  55,
+                                    "dri":  56,
+                                    "def":  78,
+                                    "phy":  80
+                                },
+                      "rating":  7,
+                      "form":  1
+                  },
+                  {
+                      "id":  22,
+                      "number":  3,
+                      "name":  "Tchê Tchê",
+                      "status":  "reserva",
+                      "aptitude":  [
+                                       "MC",
+                                       "VOL",
+                                       "MEI",
+                                       "LD"
+                                   ],
+                      "age":  33,
+                      "foot":  "Ambidestro",
+                      "captain":  false,
+                      "nationality":  "BR",
+                      "playstyle":  "Motorzinho",
+                      "stats":  {
+                                    "pac":  78,
+                                    "sho":  60,
+                                    "pas":  75,
+                                    "dri":  72,
+                                    "def":  65,
+                                    "phy":  65
+                                },
+                      "rating":  6.9
+                  },
+                  {
+                      "id":  10,
+                      "number":  17,
+                      "name":  "Nuno Moreira",
+                      "status":  "reserva",
+                      "aptitude":  [
+                                       "PE",
+                                       "ME",
+                                       "MD",
+                                       "PD",
+                                       "MEI",
+                                       "MC",
+                                       "SA"
+                                   ],
+                      "age":  26,
+                      "foot":  "Destro",
+                      "captain":  false,
+                      "nationality":  "PT",
+                      "playstyle":  "Armador Criativo",
+                      "stats":  {
+                                    "pac":  75,
+                                    "sho":  68,
+                                    "pas":  80,
+                                    "dri":  78,
+                                    "def":  45,
+                                    "phy":  60
+                                },
+                      "rating":  6.8
+                  },
+                  {
+                      "id":  18,
+                      "number":  25,
+                      "name":  "Hugo Moura",
+                      "status":  "reserva",
+                      "aptitude":  [
+                                       "VOL",
+                                       "MC",
+                                       "ZD",
+                                       "ZE"
+                                   ],
+                      "age":  28,
+                      "foot":  "Destro",
+                      "captain":  false,
+                      "nationality":  "BR",
+                      "playstyle":  "Cão de Guarda",
+                      "stats":  {
+                                    "pac":  68,
+                                    "sho":  40,
+                                    "pas":  77,
+                                    "dri":  60,
+                                    "def":  78,
+                                    "phy":  80
+                                },
+                      "rating":  6.7,
+                      "form":  0
+                  },
+                  {
+                      "id":  24,
+                      "number":  7,
+                      "name":  "David",
+                      "status":  "reserva",
+                      "aptitude":  [
+                                       "PE",
+                                       "CA",
+                                       "SA",
+                                       "ME"
+                                   ],
+                      "age":  30,
+                      "foot":  "Destro",
+                      "captain":  false,
+                      "nationality":  "BR",
+                      "playstyle":  "Ponta Prolífico",
+                      "stats":  {
+                                    "pac":  85,
+                                    "sho":  78,
+                                    "pas":  65,
+                                    "dri":  78,
+                                    "def":  45,
+                                    "phy":  75
+                                },
+                      "rating":  7.1
+                  },
+                  {
+                      "id":  8,
+                      "number":  9,
+                      "name":  "Matheus França",
+                      "status":  "reserva",
+                      "aptitude":  [
+                                       "SA",
+                                       "MEI"
+                                   ],
+                      "age":  22,
+                      "foot":  "Destro",
+                      "captain":  false,
+                      "nationality":  "BR",
+                      "playstyle":  "Criador de Jogadas",
+                      "stats":  {
+                                    "pac":  80,
+                                    "sho":  68,
+                                    "pas":  75,
+                                    "dri":  82,
+                                    "def":  50,
+                                    "phy":  60
+                                },
+                      "rating":  6.4,
+                      "form":  -1
+                  },
+                  {
+                      "id":  17,
+                      "number":  8,
+                      "name":  "Jair",
+                      "status":  "reserva",
+                      "aptitude":  [
+                                       "MC",
+                                       "VOL"
+                                   ],
+                      "age":  31,
+                      "foot":  "Destro",
+                      "captain":  false,
+                      "nationality":  "BR",
+                      "playstyle":  "Orquestrador",
+                      "stats":  {
+                                    "pac":  65,
+                                    "sho":  60,
+                                    "pas":  82,
+                                    "dri":  75,
+                                    "def":  70,
+                                    "phy":  72
+                                },
+                      "rating":  6.1,
+                      "form":  -2
+                  },
+                  {
+                      "id":  28,
+                      "number":  97,
+                      "name":  "Fuzato",
+                      "status":  "reserva",
+                      "aptitude":  [
+                                       "GOL"
+                                   ],
+                      "age":  26,
+                      "foot":  "Destro",
+                      "captain":  false,
+                      "nationality":  "BR",
+                      "playstyle":  "Goleiro Defensivo",
+                      "stats":  {
+                                    "div":  85,
+                                    "han":  85,
+                                    "kic":  60,
+                                    "ref":  85,
+                                    "spd":  40,
+                                    "pos":  81
+                                },
+                      "rating":  7.3,
+                      "form":  0,
+                      "matchStatus":  "normal"
+                  },
+                  {
+                      "id":  11,
+                      "number":  20,
+                      "name":  "Brenner",
+                      "status":  "reserva",
+                      "aptitude":  [
+                                       "CA",
+                                       "SA",
+                                       "PD"
+                                   ],
+                      "age":  26,
+                      "foot":  "Destro",
+                      "captain":  false,
+                      "nationality":  "BR",
+                      "playstyle":  "Artilheiro",
+                      "stats":  {
+                                    "pac":  83,
+                                    "sho":  85,
+                                    "pas":  69,
+                                    "dri":  75,
+                                    "def":  30,
+                                    "phy":  70
+                                },
+                      "rating":  6.9,
+                      "form":  0
+                  },
+                  {
+                      "id":  13,
+                      "number":  43,
+                      "name":  "Lucas Freitas",
+                      "status":  "reserva",
+                      "aptitude":  [
+                                       "ZE",
+                                       "VOL",
+                                       "ZD"
+                                   ],
+                      "age":  25,
+                      "foot":  "Canhoto",
+                      "captain":  false,
+                      "nationality":  "BR",
+                      "playstyle":  "Defensor Criativo",
+                      "stats":  {
+                                    "pac":  65,
+                                    "sho":  47,
+                                    "pas":  68,
+                                    "dri":  63,
+                                    "def":  75,
+                                    "phy":  72
+                                },
+                      "rating":  6.5,
+                      "form":  0
+                  },
+                  {
+                      "id":  14,
+                      "number":  64,
+                      "name":  "Walace Falcão",
+                      "status":  "reserva",
+                      "aptitude":  [
+                                       "ZD",
+                                       "ZE"
+                                   ],
+                      "age":  21,
+                      "foot":  "Destro",
+                      "captain":  false,
+                      "nationality":  "BR",
+                      "playstyle":  "Zagueiro Destruidor",
+                      "stats":  {
+                                    "pac":  60,
+                                    "sho":  34,
+                                    "pas":  45,
+                                    "dri":  40,
+                                    "def":  60,
+                                    "phy":  63
+                                },
+                      "rating":  5,
+                      "form":  0,
+                      "matchStatus":  "normal"
+                  },
+                  {
+                      "id":  15,
+                      "number":  6,
+                      "name":  "Lucas Piton",
+                      "status":  "reserva",
+                      "aptitude":  [
+                                       "LE",
+                                       "ME"
+                                   ],
+                      "age":  25,
+                      "foot":  "Canhoto",
+                      "captain":  false,
+                      "nationality":  "BR",
+                      "playstyle":  "Especialista Cruzamento",
+                      "stats":  {
+                                    "pac":  78,
+                                    "sho":  60,
+                                    "pas":  80,
+                                    "dri":  75,
+                                    "def":  68,
+                                    "phy":  65
+                                },
+                      "rating":  7.1
+                  },
+                  {
+                      "id":  19,
+                      "number":  85,
+                      "name":  "Mateus Carvalho",
+                      "status":  "reserva",
+                      "aptitude":  [
+                                       "VOL",
+                                       "MC"
+                                   ],
+                      "age":  24,
+                      "foot":  "Destro",
+                      "captain":  false,
+                      "nationality":  "BR",
+                      "playstyle":  "Meia Versátil",
+                      "stats":  {
+                                    "pac":  70,
+                                    "sho":  55,
+                                    "pas":  68,
+                                    "dri":  65,
+                                    "def":  68,
+                                    "phy":  70
+                                },
+                      "rating":  5.6,
+                      "form":  -2
+                  },
+                  {
+                      "id":  20,
+                      "number":  "-",
+                      "name":  "Lucas Eduardo",
+                      "status":  "reserva",
+                      "aptitude":  [
+                                       "MC",
+                                       "VOL"
+                                   ],
+                      "age":  22,
+                      "foot":  "Destro",
+                      "captain":  false,
+                      "nationality":  "BR",
+                      "playstyle":  "Infiltrador",
+                      "stats":  {
+                                    "pac":  64,
+                                    "sho":  52,
+                                    "pas":  63,
+                                    "dri":  58,
+                                    "def":  45,
+                                    "phy":  55
+                                },
+                      "rating":  5.6,
+                      "form":  0
+                  },
+                  {
+                      "id":  21,
+                      "number":  98,
+                      "name":  "JP",
+                      "status":  "reserva",
+                      "aptitude":  [
+                                       "MC",
+                                       "MEI",
+                                       "VOL"
+                                   ],
+                      "age":  21,
+                      "foot":  "Destro",
+                      "captain":  false,
+                      "nationality":  "BR",
+                      "playstyle":  "Criador de Jogadas",
+                      "stats":  {
+                                    "pac":  75,
+                                    "sho":  60,
+                                    "pas":  75,
+                                    "dri":  70,
+                                    "def":  50,
+                                    "phy":  60
+                                },
+                      "rating":  6.5
+                  },
+                  {
+                      "id":  25,
+                      "number":  18,
+                      "name":  "M. Hinestroza",
+                      "status":  "reserva",
+                      "aptitude":  [
+                                       "PD",
+                                       "MD",
+                                       "SA"
+                                   ],
+                      "age":  23,
+                      "foot":  "Destro",
+                      "captain":  false,
+                      "nationality":  "CO",
+                      "playstyle":  "Ala Veloz",
+                      "stats":  {
+                                    "pac":  90,
+                                    "sho":  65,
+                                    "pas":  65,
+                                    "dri":  87,
+                                    "def":  40,
+                                    "phy":  71
+                                },
+                      "rating":  6.5,
+                      "form":  -1
+                  }
+              ]
+}

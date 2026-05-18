@@ -1,0 +1,26 @@
+# Configurações de API e Segredos (IMPORTANTE)
+script/core/apiKeys.js
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependências
+node_modules/
+
+# IDEs e Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Temporários do Projeto
+scratch/
+.gemini/

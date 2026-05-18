@@ -1,0 +1,581 @@
+/* ========================================================= */
+/* Badges e Ratings de Jogadores                             */
+/* ========================================================= */
+.p-badge {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  font-size: 0.7rem;
+  padding: 3px 6px;
+  border-radius: 4px;
+  color: #000;
+  font-weight: 900;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.p-pos-badge {
+  position: absolute;
+  bottom: -8px;
+  left: -12px;
+  background: #222;
+  color: var(--text);
+  font-size: 0.6rem;
+  padding: 2px 4px;
+  border-radius: 2px;
+  border: 1px solid #444;
+  font-weight: 800;
+}
+
+.captain-armband {
+  position: absolute;
+  top: 50%;
+  left: -14px;
+  transform: translateY(-50%);
+  background: #f1c40f;
+  color: #000;
+  font-size: 0.65rem;
+  font-weight: 900;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #000;
+  z-index: 11;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Tags de Posições (Chips) */
+.positions-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.pos-chip {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  color: #a0a0a0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.pos-chip.primary {
+  background: var(--accent);
+  color: #000;
+  border-color: var(--accent);
+}
+
+.pos-chip.secondary {
+  background: transparent;
+  color: var(--accent);
+  border-color: var(--accent);
+  border-style: dashed;
+}
+
+/* ========================================================= */
+/* Setas de Momento e Eventos Live                           */
+/* ========================================================= */
+.form-arrow {
+  display: inline-block;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.form-up {
+  color: #00ff88;
+  transform: rotate(-90deg);
+}
+.form-good {
+  color: #8bc34a;
+  transform: rotate(-45deg);
+}
+.form-normal {
+  color: #ffd000;
+}
+.form-poor {
+  color: #ff8c00;
+  transform: rotate(45deg);
+}
+.form-down {
+  color: #ff4d4d;
+  transform: rotate(90deg);
+}
+
+.p-form {
+  position: absolute;
+  top: 24px;
+  right: -8px;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6rem;
+  z-index: 10;
+}
+
+.match-status-icon {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: 12px;
+  height: 16px;
+  border-radius: 2px;
+  z-index: 12;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.status-yellow {
+  background: #ffd000;
+  border: 1px solid #b39200;
+}
+.status-red {
+  background: #ff4d4d;
+  border: 1px solid #cc0000;
+}
+.status-injury {
+  background: #fff;
+  color: #ff4d4d;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  font-size: 0.7rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ========================================================= */
+/* Modais Customizados                                       */
+/* ========================================================= */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.modal-overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-content {
+  background: #111;
+  border: 1px solid var(--border);
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+  transform: translateY(-20px);
+  transition: transform 0.3s ease;
+}
+
+.modal-overlay.show .modal-content {
+  transform: translateY(0);
+}
+
+.modal-content p {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+.modal-buttons button {
+  margin-top: 0;
+  flex: 1;
+}
+
+/* ========================================================= */
+/* Táticas e Setup                                           */
+/* ========================================================= */
+.tactic-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #333;
+  color: #888;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  transition: 0.3s;
+}
+
+.tactic-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+.tactic-btn.active {
+  background: var(--accent);
+  color: #000;
+  border-color: var(--accent);
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
+}
+
+.tactic-btn.active i {
+  color: #000;
+}
+
+.playstyle-option input:checked + .playstyle-box {
+  background: var(--accent) !important;
+  color: #000 !important;
+  border-color: var(--accent) !important;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
+}
+
+select,
+option {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+}
+
+/* ========================================================= */
+/* Galeria Visual e Menu Principal                           */
+/* ========================================================= */
+.team-selection-card {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.team-selection-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: var(--accent) !important;
+  box-shadow:
+    0 15px 30px rgba(0, 0, 0, 0.4),
+    0 0 20px rgba(0, 255, 136, 0.1);
+}
+
+#mainMenuScreen button {
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+#mainMenuScreen button:hover {
+  transform: translateX(10px);
+  box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+#mainMenuScreen button i {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.badge-btn {
+  cursor: pointer;
+  font-size: 0.65rem;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.badge-btn-dark {
+  background: #333;
+  color: white;
+}
+.badge-btn-dark:hover {
+  background: #555;
+}
+.badge-btn-danger {
+  background: transparent;
+  color: var(--danger);
+  border: 1px solid var(--danger);
+}
+.badge-btn-danger:hover {
+  background: var(--danger);
+  color: #000;
+}
+
+.player-silhouette {
+  width: 45px;
+  height: 45px;
+  margin: 10px 0;
+  fill: #444;
+  background: #1a1a1a;
+  border-radius: 50%;
+  border: 1px solid #333;
+}
+/* Simulation View Specifics */
+.stat-mini-box {
+  background: #111;
+  padding: 6px;
+  border-radius: 6px;
+  text-align: center;
+  border: 1px solid #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.stat-mini-box:hover {
+  border-color: #444;
+  background: #161616;
+}
+
+.stat-mini-box label {
+  font-size: 0.55rem;
+  color: #555;
+  font-weight: 800;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-mini-box .val {
+  font-weight: 900;
+  font-size: 0.85rem;
+  color: #fff;
+}
+
+/* Mini-Pitch Simulation Styles */
+.mini-player-node {
+  position: absolute;
+  transition: all 0.2s ease;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+  /* As dimensões e cores reais agora são injetadas dinamicamente via JS */
+}
+
+.mini-player-node:hover {
+  transform: translate(-50%, -50%) scale(1.15);
+  filter: brightness(1.2);
+}
+
+.mini-player-node.selected {
+  background: var(--warning);
+  box-shadow: 0 0 15px var(--warning);
+  border-color: #000;
+}
+
+.mini-player-label {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-size: 0.5rem;
+  white-space: nowrap;
+  margin-top: 2px;
+}
+
+/* Tactic Buttons Styling */
+.tactic-btn.active {
+  background: var(--accent) !important;
+  color: #000 !important;
+  border-color: var(--accent) !important;
+  font-weight: bold;
+  box-shadow: 0 0 8px rgba(0, 255, 136, 0.4);
+}
+
+.tactic-btn:hover:not(.active) {
+  border-color: #666 !important;
+  color: #fff !important;
+}
+/* ========================================================= */
+/* Novo Estilo de Card de Jogador (Prancheta Premium)        */
+/* ========================================================= */
+.player-card {
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 255, 136, 0.3);
+  border-radius: 10px;
+  padding: 6px 10px;
+  min-width: 85px;
+  width: auto;
+  max-width: 130px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+}
+
+.player-card-photo {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  margin: 2px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.player-card-photo svg {
+  width: 30px;
+  height: 30px;
+  fill: rgba(255, 255, 255, 0.2);
+}
+
+.player-card:hover {
+  transform: translate(-50%, -55%) scale(1.1) !important;
+  border-color: var(--accent);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7), 0 0 15px rgba(0, 255, 136, 0.2);
+  z-index: 100 !important;
+}
+
+.player-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.player-card-pos {
+  font-size: 0.65rem;
+  font-weight: 900;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.player-card-ovr {
+  font-size: 0.7rem;
+  font-weight: 900;
+  color: #000;
+  padding: 2px 5px;
+  border-radius: 4px;
+  min-width: 28px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.player-card-name-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 100%;
+  margin: 2px 0;
+}
+
+.player-card-name {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow: 1px 1px 2px #000;
+  max-width: 80%;
+}
+
+.player-card-status-icons {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.player-card-stamina {
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 2px; /* Reduzi de 4px para 2px para aproximar */
+  border: 1px solid rgba(0,0,0,0.3);
+}
+
+.player-card-stamina-fill {
+  height: 100%;
+  transition: width 0.5s ease;
+}
+
+/* Modificadores de Estado para o Card na Prancheta */
+.player.player-card.fit-adapted { 
+    border-color: var(--warning); 
+    border-style: dashed; 
+    background: rgba(255, 208, 0, 0.05);
+}
+.player.player-card.fit-warning { 
+    border-color: var(--danger); 
+    border-style: dotted; 
+    filter: grayscale(40%);
+}
+.player.player-card.is-suspended { 
+    border-color: var(--danger); 
+    opacity: 0.8; 
+    background: rgba(255, 77, 77, 0.1);
+}
+.player.player-card.is-injured { 
+    border-color: #555; 
+    opacity: 0.7; 
+    background: rgba(50, 50, 50, 0.8);
+}
+
+/* Ajustes de Elementos Internos */
+.player-card .match-status-icon {
+    position: static;
+    transform: none;
+    width: 10px;
+    height: 14px;
+}
+
+.player-card .captain-armband-mini {
+    background: var(--warning);
+    color: #000;
+    font-size: 0.55rem;
+    font-weight: 900;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+}
+
+.player-card .p-form {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.65rem;
+    background: transparent;
+    border: none;
+    margin: 0 4px;
+}

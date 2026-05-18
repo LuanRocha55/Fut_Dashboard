@@ -1,0 +1,4382 @@
+[
+  {
+    "name": "1. FC Köln",
+    "file": "1fckln.json",
+    "league": "Bundesliga 2",
+    "ovr": 74
+  },
+  {
+    "name": "1. FC Köln (Fem)",
+    "file": "1fcklnfem.json",
+    "league": "GPFBL",
+    "ovr": 75
+  },
+  {
+    "name": "1. FC Magdeburg",
+    "file": "1fcmagdeburg.json",
+    "league": "Bundesliga 2",
+    "ovr": 69
+  },
+  {
+    "name": "1. FC Nürnberg",
+    "file": "1fcnrnberg.json",
+    "league": "Bundesliga 2",
+    "ovr": 70
+  },
+  {
+    "name": "1. FSV Mainz 05",
+    "file": "1fsvmainz05.json",
+    "league": "Bundesliga",
+    "ovr": 75
+  },
+  {
+    "name": "1860 München",
+    "file": "1860mnchen.json",
+    "league": "3. Liga",
+    "ovr": 67
+  },
+  {
+    "name": "AaB",
+    "file": "aab.json",
+    "league": "3F Superliga",
+    "ovr": 66
+  },
+  {
+    "name": "Aberdeen",
+    "file": "aberdeen.json",
+    "league": "Scottish Prem",
+    "ovr": 69
+  },
+  {
+    "name": "AC Ajaccio",
+    "file": "acajaccio.json",
+    "league": "Ligue 2 BKT",
+    "ovr": 67
+  },
+  {
+    "name": "Accrington",
+    "file": "accrington.json",
+    "league": "EFL League Two",
+    "ovr": 60
+  },
+  {
+    "name": "Adana Demirspor",
+    "file": "adanademirspor.json",
+    "league": "Trendyol Süper Lig",
+    "ovr": 66
+  },
+  {
+    "name": "Adelaide United",
+    "file": "adelaideunited.json",
+    "league": "A-League",
+    "ovr": 64
+  },
+  {
+    "name": "ADT",
+    "file": "adt.json",
+    "league": "Sudamericana",
+    "ovr": 66
+  },
+  {
+    "name": "AEK Athens",
+    "file": "aekathens.json",
+    "league": "Hellas Liga",
+    "ovr": 76
+  },
+  {
+    "name": "AFC Bournemouth",
+    "file": "afcbournemouth.json",
+    "league": "Premier League",
+    "ovr": 78
+  },
+  {
+    "name": "AFC Wimbledon",
+    "file": "afcwimbledon.json",
+    "league": "EFL League Two",
+    "ovr": 63
+  },
+  {
+    "name": "AGF",
+    "file": "agf.json",
+    "league": "3F Superliga",
+    "ovr": 71
+  },
+  {
+    "name": "AIK",
+    "file": "aik.json",
+    "league": "Allsvenskan",
+    "ovr": 67
+  },
+  {
+    "name": "AJ Auxerre",
+    "file": "ajauxerre.json",
+    "league": "Ligue 1 McDonald's",
+    "ovr": 72
+  },
+  {
+    "name": "Ajax",
+    "file": "ajax.json",
+    "league": "Eredivisie",
+    "ovr": 77
+  },
+  {
+    "name": "Ajax (Fem)",
+    "file": "ajaxfem.json",
+    "league": "Nederland Vrouwen Liga",
+    "ovr": 74
+  },
+  {
+    "name": "Al Ahli",
+    "file": "alahli.json",
+    "league": "ROSHN Saudi League",
+    "ovr": 77
+  },
+  {
+    "name": "Al Ain FC",
+    "file": "alainfc.json",
+    "league": "United Emirates League",
+    "ovr": 73
+  },
+  {
+    "name": "Al Fateh",
+    "file": "alfateh.json",
+    "league": "ROSHN Saudi League",
+    "ovr": 69
+  },
+  {
+    "name": "Al Fayha",
+    "file": "alfayha.json",
+    "league": "ROSHN Saudi League",
+    "ovr": 69
+  },
+  {
+    "name": "Al Hilal",
+    "file": "alhilal.json",
+    "league": "ROSHN Saudi League",
+    "ovr": 82
+  },
+  {
+    "name": "Al Ittihad",
+    "file": "alittihad.json",
+    "league": "ROSHN Saudi League",
+    "ovr": 79
+  },
+  {
+    "name": "Al Khaleej",
+    "file": "alkhaleej.json",
+    "league": "ROSHN Saudi League",
+    "ovr": 68
+  },
+  {
+    "name": "Al Kholood",
+    "file": "alkholood.json",
+    "league": "ROSHN Saudi League",
+    "ovr": 67
+  },
+  {
+    "name": "Al Nassr",
+    "file": "alnassr.json",
+    "league": "ROSHN Saudi League",
+    "ovr": 80
+  },
+  {
+    "name": "Al Okhdood",
+    "file": "alokhdood.json",
+    "league": "ROSHN Saudi League",
+    "ovr": 66
+  },
+  {
+    "name": "Al Orobah",
+    "file": "alorobah.json",
+    "league": "ROSHN Saudi League",
+    "ovr": 66
+  },
+  {
+    "name": "Al Qadisiyah",
+    "file": "alqadisiyah.json",
+    "league": "ROSHN Saudi League",
+    "ovr": 76
+  },
+  {
+    "name": "Al Raed",
+    "file": "alraed.json",
+    "league": "ROSHN Saudi League",
+    "ovr": 68
+  },
+  {
+    "name": "Al Riyadh",
+    "file": "alriyadh.json",
+    "league": "ROSHN Saudi League",
+    "ovr": 61
+  },
+  {
+    "name": "Al Shabab",
+    "file": "alshabab.json",
+    "league": "ROSHN Saudi League",
+    "ovr": 74
+  },
+  {
+    "name": "Al Taawoun",
+    "file": "altaawoun.json",
+    "league": "ROSHN Saudi League",
+    "ovr": 71
+  },
+  {
+    "name": "Al Wehda",
+    "file": "alwehda.json",
+    "league": "ROSHN Saudi League",
+    "ovr": 68
+  },
+  {
+    "name": "Alanyaspor",
+    "file": "alanyaspor.json",
+    "league": "Trendyol Süper Lig",
+    "ovr": 70
+  },
+  {
+    "name": "Albacete BP",
+    "file": "albacetebp.json",
+    "league": "LALIGA HYPERMOTION",
+    "ovr": 69
+  },
+  {
+    "name": "Aleman. Aachen",
+    "file": "alemanaachen.json",
+    "league": "3. Liga",
+    "ovr": 64
+  },
+  {
+    "name": "Alianza FC",
+    "file": "alianzafc.json",
+    "league": "Sudamericana",
+    "ovr": 66
+  },
+  {
+    "name": "Alianza Lima",
+    "file": "alianzalima.json",
+    "league": "Libertadores",
+    "ovr": 70
+  },
+  {
+    "name": "Almere City FC",
+    "file": "almerecityfc.json",
+    "league": "Eredivisie",
+    "ovr": 67
+  },
+  {
+    "name": "Always Ready",
+    "file": "alwaysready.json",
+    "league": "Sudamericana",
+    "ovr": 65
+  },
+  {
+    "name": "América de Cali",
+    "file": "amricadecali.json",
+    "league": "Sudamericana",
+    "ovr": 70
+  },
+  {
+    "name": "Amiens SC",
+    "file": "amienssc.json",
+    "league": "Ligue 2 BKT",
+    "ovr": 68
+  },
+  {
+    "name": "Angel City FC (Fem)",
+    "file": "angelcityfcfem.json",
+    "league": "NWSL",
+    "ovr": 78
+  },
+  {
+    "name": "Angers SCO",
+    "file": "angerssco.json",
+    "league": "Ligue 1 McDonald's",
+    "ovr": 71
+  },
+  {
+    "name": "Antalyaspor",
+    "file": "antalyaspor.json",
+    "league": "Trendyol Süper Lig",
+    "ovr": 69
+  },
+  {
+    "name": "APOEL FC",
+    "file": "apoelfc.json",
+    "league": "Liga Cyprus",
+    "ovr": 71
+  },
+  {
+    "name": "Argentinos Jrs.",
+    "file": "argentinosjrs.json",
+    "league": "Sudamericana",
+    "ovr": 72
+  },
+  {
+    "name": "Arminia Bielefeld",
+    "file": "arminiabielefeld.json",
+    "league": "3. Liga",
+    "ovr": 66
+  },
+  {
+    "name": "Arouca",
+    "file": "arouca.json",
+    "league": "Liga Portugal",
+    "ovr": 72
+  },
+  {
+    "name": "Arsenal",
+    "file": "arsenal.json",
+    "league": "Premier League",
+    "ovr": 85
+  },
+  {
+    "name": "Arsenal (Fem)",
+    "file": "arsenalfem.json",
+    "league": "Barclays WSL",
+    "ovr": 85
+  },
+  {
+    "name": "AS Monaco",
+    "file": "asmonaco.json",
+    "league": "Ligue 1 McDonald's",
+    "ovr": 78
+  },
+  {
+    "name": "AS Roma",
+    "file": "asroma.json",
+    "league": "Serie A Enilive",
+    "ovr": 80
+  },
+  {
+    "name": "AS Saint Étienne (Fem)",
+    "file": "assainttiennefem.json",
+    "league": "Arkema PL",
+    "ovr": 72
+  },
+  {
+    "name": "AS Saint-Étienne",
+    "file": "assainttienne.json",
+    "league": "Ligue 1 McDonald's",
+    "ovr": 72
+  },
+  {
+    "name": "Aston Villa",
+    "file": "astonvilla.json",
+    "league": "Premier League",
+    "ovr": 82
+  },
+  {
+    "name": "Aston Villa (Fem)",
+    "file": "astonvillafem.json",
+    "league": "Barclays WSL",
+    "ovr": 80
+  },
+  {
+    "name": "Athletic Club",
+    "file": "athleticclub.json",
+    "league": "LALIGA EA SPORTS",
+    "ovr": 81
+  },
+  {
+    "name": "Athletic Club (Fem)",
+    "file": "athleticclubfem.json",
+    "league": "Liga F",
+    "ovr": 78
+  },
+  {
+    "name": "Atl. Nacional",
+    "file": "atlnacional.json",
+    "league": "Liga Colombia",
+    "ovr": 72
+  },
+  {
+    "name": "Atlanta United",
+    "file": "atlantaunited.json",
+    "league": "MLS",
+    "ovr": 69
+  },
+  {
+    "name": "Atlético de Madrid",
+    "file": "atlticodemadrid.json",
+    "league": "LALIGA EA SPORTS",
+    "ovr": 84
+  },
+  {
+    "name": "Atlético de Madrid (Fem)",
+    "file": "atlticodemadridfem.json",
+    "league": "Liga F",
+    "ovr": 80
+  },
+  {
+    "name": "Atlético Tucumán",
+    "file": "atlticotucumn.json",
+    "league": "Primera División",
+    "ovr": 69
+  },
+  {
+    "name": "Auckland FC",
+    "file": "aucklandfc.json",
+    "league": "A-League",
+    "ovr": 64
+  },
+  {
+    "name": "Austin FC",
+    "file": "austinfc.json",
+    "league": "MLS",
+    "ovr": 71
+  },
+  {
+    "name": "Austria Klagenfurt",
+    "file": "austriaklagenfurt.json",
+    "league": "Ö. Bundesliga",
+    "ovr": 66
+  },
+  {
+    "name": "AVS Futebol SAD",
+    "file": "avsfutebolsad.json",
+    "league": "Liga Portugal",
+    "ovr": 68
+  },
+  {
+    "name": "AZ",
+    "file": "az.json",
+    "league": "Eredivisie",
+    "ovr": 72
+  },
+  {
+    "name": "B. Dortmund II",
+    "file": "bdortmundii.json",
+    "league": "3. Liga",
+    "ovr": 64
+  },
+  {
+    "name": "Banfield",
+    "file": "banfield.json",
+    "league": "Primera División",
+    "ovr": 70
+  },
+  {
+    "name": "Barcelona SC",
+    "file": "barcelonasc.json",
+    "league": "Libertadores",
+    "ovr": 71
+  },
+  {
+    "name": "Bari",
+    "file": "bari.json",
+    "league": "Serie BKT",
+    "ovr": 69
+  },
+  {
+    "name": "Barnsley",
+    "file": "barnsley.json",
+    "league": "EFL League One",
+    "ovr": 66
+  },
+  {
+    "name": "Barracas Central",
+    "file": "barracascentral.json",
+    "league": "Primera División",
+    "ovr": 68
+  },
+  {
+    "name": "Barrow",
+    "file": "barrow.json",
+    "league": "EFL League Two",
+    "ovr": 63
+  },
+  {
+    "name": "Başakşehir",
+    "file": "baakehir.json",
+    "league": "Trendyol Süper Lig",
+    "ovr": 73
+  },
+  {
+    "name": "Bay FC (Fem)",
+    "file": "bayfcfem.json",
+    "league": "NWSL",
+    "ovr": 78
+  },
+  {
+    "name": "Beijing FC",
+    "file": "beijingfc.json",
+    "league": "CSL",
+    "ovr": 69
+  },
+  {
+    "name": "Belgrano",
+    "file": "belgrano.json",
+    "league": "Sudamericana",
+    "ovr": 72
+  },
+  {
+    "name": "Bengaluru FC",
+    "file": "bengalurufc.json",
+    "league": "ISL",
+    "ovr": 65
+  },
+  {
+    "name": "Bergamo Calcio",
+    "file": "bergamocalcio.json",
+    "league": "Serie A Enilive",
+    "ovr": 80
+  },
+  {
+    "name": "Beşiktaş",
+    "file": "beikta.json",
+    "league": "Trendyol Süper Lig",
+    "ovr": 78
+  },
+  {
+    "name": "Birmingham City",
+    "file": "birminghamcity.json",
+    "league": "EFL League One",
+    "ovr": 71
+  },
+  {
+    "name": "BK Häcken",
+    "file": "bkhcken.json",
+    "league": "Allsvenskan",
+    "ovr": 70
+  },
+  {
+    "name": "Blackburn Rovers",
+    "file": "blackburnrovers.json",
+    "league": "EFL Championship",
+    "ovr": 70
+  },
+  {
+    "name": "Blackpool",
+    "file": "blackpool.json",
+    "league": "EFL League One",
+    "ovr": 67
+  },
+  {
+    "name": "Blau-Weiss Linz",
+    "file": "blauweisslinz.json",
+    "league": "Ö. Bundesliga",
+    "ovr": 65
+  },
+  {
+    "name": "Boavista FC",
+    "file": "boavistafc.json",
+    "league": "Liga Portugal",
+    "ovr": 70
+  },
+  {
+    "name": "Boca Juniors",
+    "file": "bocajuniors.json",
+    "league": "Sudamericana",
+    "ovr": 76
+  },
+  {
+    "name": "Bodrum FK",
+    "file": "bodrumfk.json",
+    "league": "Trendyol Süper Lig",
+    "ovr": 66
+  },
+  {
+    "name": "Bohemians",
+    "file": "bohemians.json",
+    "league": "SSE Airtricity PD",
+    "ovr": 61
+  },
+  {
+    "name": "Bolívar",
+    "file": "bolvar.json",
+    "league": "Libertadores",
+    "ovr": 68
+  },
+  {
+    "name": "Bologna",
+    "file": "bologna.json",
+    "league": "Serie A Enilive",
+    "ovr": 78
+  },
+  {
+    "name": "Bolton",
+    "file": "bolton.json",
+    "league": "EFL League One",
+    "ovr": 68
+  },
+  {
+    "name": "Borussia Dortmund",
+    "file": "borussiadortmund.json",
+    "league": "Bundesliga",
+    "ovr": 83
+  },
+  {
+    "name": "Bradford City",
+    "file": "bradfordcity.json",
+    "league": "EFL League Two",
+    "ovr": 64
+  },
+  {
+    "name": "Braunschweig",
+    "file": "braunschweig.json",
+    "league": "Bundesliga 2",
+    "ovr": 69
+  },
+  {
+    "name": "Brentford",
+    "file": "brentford.json",
+    "league": "Premier League",
+    "ovr": 78
+  },
+  {
+    "name": "Brescia",
+    "file": "brescia.json",
+    "league": "Serie BKT",
+    "ovr": 68
+  },
+  {
+    "name": "Brighton",
+    "file": "brighton.json",
+    "league": "Premier League",
+    "ovr": 79
+  },
+  {
+    "name": "Brighton (Fem)",
+    "file": "brightonfem.json",
+    "league": "Barclays WSL",
+    "ovr": 76
+  },
+  {
+    "name": "Brisbane Roar",
+    "file": "brisbaneroar.json",
+    "league": "A-League",
+    "ovr": 64
+  },
+  {
+    "name": "Bristol City",
+    "file": "bristolcity.json",
+    "league": "EFL Championship",
+    "ovr": 70
+  },
+  {
+    "name": "Bristol Rovers",
+    "file": "bristolrovers.json",
+    "league": "EFL League One",
+    "ovr": 65
+  },
+  {
+    "name": "Bromley FC",
+    "file": "bromleyfc.json",
+    "league": "EFL League Two",
+    "ovr": 61
+  },
+  {
+    "name": "Brommapojkarna",
+    "file": "brommapojkarna.json",
+    "league": "Allsvenskan",
+    "ovr": 65
+  },
+  {
+    "name": "Brøndby IF",
+    "file": "brndbyif.json",
+    "league": "3F Superliga",
+    "ovr": 72
+  },
+  {
+    "name": "BSC Young Boys",
+    "file": "bscyoungboys.json",
+    "league": "CSSL",
+    "ovr": 72
+  },
+  {
+    "name": "Burgos CF",
+    "file": "burgoscf.json",
+    "league": "LALIGA HYPERMOTION",
+    "ovr": 70
+  },
+  {
+    "name": "Burnley",
+    "file": "burnley.json",
+    "league": "EFL Championship",
+    "ovr": 74
+  },
+  {
+    "name": "Burton Albion",
+    "file": "burtonalbion.json",
+    "league": "EFL League One",
+    "ovr": 64
+  },
+  {
+    "name": "CA Osasuna",
+    "file": "caosasuna.json",
+    "league": "LALIGA EA SPORTS",
+    "ovr": 77
+  },
+  {
+    "name": "Cádiz CF",
+    "file": "cdizcf.json",
+    "league": "LALIGA HYPERMOTION",
+    "ovr": 74
+  },
+  {
+    "name": "Cagliari",
+    "file": "cagliari.json",
+    "league": "Serie A Enilive",
+    "ovr": 74
+  },
+  {
+    "name": "Cambridge Utd",
+    "file": "cambridgeutd.json",
+    "league": "EFL League One",
+    "ovr": 65
+  },
+  {
+    "name": "Cangzhou FC",
+    "file": "cangzhoufc.json",
+    "league": "CSL",
+    "ovr": 64
+  },
+  {
+    "name": "Carabobo FC",
+    "file": "carabobofc.json",
+    "league": "Sudamericana",
+    "ovr": 66
+  },
+  {
+    "name": "Caracas FC",
+    "file": "caracasfc.json",
+    "league": "Libertadores",
+    "ovr": 67
+  },
+  {
+    "name": "Cardiff City",
+    "file": "cardiffcity.json",
+    "league": "EFL Championship",
+    "ovr": 73
+  },
+  {
+    "name": "Carl Zeiss Jena (Fem)",
+    "file": "carlzeissjenafem.json",
+    "league": "GPFBL",
+    "ovr": 69
+  },
+  {
+    "name": "Carlisle United",
+    "file": "carlisleunited.json",
+    "league": "EFL League Two",
+    "ovr": 64
+  },
+  {
+    "name": "Carrarese Calcio",
+    "file": "carraresecalcio.json",
+    "league": "Serie BKT",
+    "ovr": 67
+  },
+  {
+    "name": "Casa Pia AC",
+    "file": "casapiaac.json",
+    "league": "Liga Portugal",
+    "ovr": 71
+  },
+  {
+    "name": "Catanzaro",
+    "file": "catanzaro.json",
+    "league": "Serie BKT",
+    "ovr": 69
+  },
+  {
+    "name": "Çaykur Rizespor",
+    "file": "aykurrizespor.json",
+    "league": "Trendyol Süper Lig",
+    "ovr": 70
+  },
+  {
+    "name": "CD Castellón",
+    "file": "cdcastelln.json",
+    "league": "LALIGA HYPERMOTION",
+    "ovr": 68
+  },
+  {
+    "name": "CD Eldense",
+    "file": "cdeldense.json",
+    "league": "LALIGA HYPERMOTION",
+    "ovr": 69
+  },
+  {
+    "name": "CD Leganés",
+    "file": "cdlegans.json",
+    "league": "LALIGA EA SPORTS",
+    "ovr": 74
+  },
+  {
+    "name": "CD Mirandés",
+    "file": "cdmirands.json",
+    "league": "LALIGA HYPERMOTION",
+    "ovr": 66
+  },
+  {
+    "name": "CD Tenerife",
+    "file": "cdtenerife.json",
+    "league": "LALIGA HYPERMOTION",
+    "ovr": 71
+  },
+  {
+    "name": "Celtic",
+    "file": "celtic.json",
+    "league": "Scottish Prem",
+    "ovr": 76
+  },
+  {
+    "name": "Central Coast",
+    "file": "centralcoast.json",
+    "league": "A-League",
+    "ovr": 63
+  },
+  {
+    "name": "Central Córdoba",
+    "file": "centralcrdoba.json",
+    "league": "Primera División",
+    "ovr": 66
+  },
+  {
+    "name": "Cercle Brugge",
+    "file": "cerclebrugge.json",
+    "league": "1A Pro League",
+    "ovr": 70
+  },
+  {
+    "name": "Cerro Largo",
+    "file": "cerrolargo.json",
+    "league": "Sudamericana",
+    "ovr": 67
+  },
+  {
+    "name": "Cerro Porteño",
+    "file": "cerroporteo.json",
+    "league": "Libertadores",
+    "ovr": 71
+  },
+  {
+    "name": "Cesena",
+    "file": "cesena.json",
+    "league": "Serie BKT",
+    "ovr": 69
+  },
+  {
+    "name": "CF Montréal",
+    "file": "cfmontral.json",
+    "league": "MLS",
+    "ovr": 69
+  },
+  {
+    "name": "CFR 1907 Cluj",
+    "file": "cfr1907cluj.json",
+    "league": "SUPERLIGA",
+    "ovr": 68
+  },
+  {
+    "name": "Changchun Yatai",
+    "file": "changchunyatai.json",
+    "league": "CSL",
+    "ovr": 68
+  },
+  {
+    "name": "Charlotte FC",
+    "file": "charlottefc.json",
+    "league": "MLS",
+    "ovr": 71
+  },
+  {
+    "name": "Charlton Ath",
+    "file": "charltonath.json",
+    "league": "EFL League One",
+    "ovr": 66
+  },
+  {
+    "name": "Chelsea",
+    "file": "chelsea.json",
+    "league": "Premier League",
+    "ovr": 82
+  },
+  {
+    "name": "Chelsea (Fem)",
+    "file": "chelseafem.json",
+    "league": "Barclays WSL",
+    "ovr": 85
+  },
+  {
+    "name": "Cheltenham Town",
+    "file": "cheltenhamtown.json",
+    "league": "EFL League Two",
+    "ovr": 62
+  },
+  {
+    "name": "Chennaiyin FC",
+    "file": "chennaiyinfc.json",
+    "league": "ISL",
+    "ovr": 60
+  },
+  {
+    "name": "Chesterfield",
+    "file": "chesterfield.json",
+    "league": "EFL League Two",
+    "ovr": 64
+  },
+  {
+    "name": "Chicago Fire FC",
+    "file": "chicagofirefc.json",
+    "league": "MLS",
+    "ovr": 70
+  },
+  {
+    "name": "Chicago Red Stars (Fem)",
+    "file": "chicagoredstarsfem.json",
+    "league": "NWSL",
+    "ovr": 78
+  },
+  {
+    "name": "Cittadella",
+    "file": "cittadella.json",
+    "league": "Serie BKT",
+    "ovr": 68
+  },
+  {
+    "name": "Clermont Foot 63",
+    "file": "clermontfoot63.json",
+    "league": "Ligue 2 BKT",
+    "ovr": 69
+  },
+  {
+    "name": "Club Brugge",
+    "file": "clubbrugge.json",
+    "league": "1A Pro League",
+    "ovr": 76
+  },
+  {
+    "name": "Club Nacional",
+    "file": "clubnacional.json",
+    "league": "Sudamericana",
+    "ovr": 64
+  },
+  {
+    "name": "Cobresal",
+    "file": "cobresal.json",
+    "league": "Libertadores",
+    "ovr": 67
+  },
+  {
+    "name": "Colchester",
+    "file": "colchester.json",
+    "league": "EFL League Two",
+    "ovr": 63
+  },
+  {
+    "name": "Colo-Colo",
+    "file": "colocolo.json",
+    "league": "Libertadores",
+    "ovr": 71
+  },
+  {
+    "name": "Colorado Rapids",
+    "file": "coloradorapids.json",
+    "league": "MLS",
+    "ovr": 69
+  },
+  {
+    "name": "Columbus Crew",
+    "file": "columbuscrew.json",
+    "league": "MLS",
+    "ovr": 71
+  },
+  {
+    "name": "Como",
+    "file": "como.json",
+    "league": "Serie A Enilive",
+    "ovr": 76
+  },
+  {
+    "name": "Coquimbo Unido",
+    "file": "coquimbounido.json",
+    "league": "Sudamericana",
+    "ovr": 67
+  },
+  {
+    "name": "Córdoba CF",
+    "file": "crdobacf.json",
+    "league": "LALIGA HYPERMOTION",
+    "ovr": 65
+  },
+  {
+    "name": "Cosenza",
+    "file": "cosenza.json",
+    "league": "Serie BKT",
+    "ovr": 68
+  },
+  {
+    "name": "Coventry City",
+    "file": "coventrycity.json",
+    "league": "EFL Championship",
+    "ovr": 72
+  },
+  {
+    "name": "Cracovia",
+    "file": "cracovia.json",
+    "league": "PKO BP Ekstraklasa",
+    "ovr": 67
+  },
+  {
+    "name": "Crawley Town",
+    "file": "crawleytown.json",
+    "league": "EFL League One",
+    "ovr": 63
+  },
+  {
+    "name": "Cremonese",
+    "file": "cremonese.json",
+    "league": "Serie BKT",
+    "ovr": 72
+  },
+  {
+    "name": "Crewe Alexandra",
+    "file": "crewealexandra.json",
+    "league": "EFL League Two",
+    "ovr": 62
+  },
+  {
+    "name": "Crystal Palace",
+    "file": "crystalpalace.json",
+    "league": "Premier League",
+    "ovr": 79
+  },
+  {
+    "name": "Crystal Palace (Fem)",
+    "file": "crystalpalacefem.json",
+    "league": "Barclays WSL",
+    "ovr": 71
+  },
+  {
+    "name": "D. Alavés",
+    "file": "dalavs.json",
+    "league": "LALIGA EA SPORTS",
+    "ovr": 75
+  },
+  {
+    "name": "D.C. United",
+    "file": "dcunited.json",
+    "league": "MLS",
+    "ovr": 70
+  },
+  {
+    "name": "Daegu FC",
+    "file": "daegufc.json",
+    "league": "K League 1",
+    "ovr": 69
+  },
+  {
+    "name": "Daejeon",
+    "file": "daejeon.json",
+    "league": "K League 1",
+    "ovr": 69
+  },
+  {
+    "name": "Damac FC",
+    "file": "damacfc.json",
+    "league": "ROSHN Saudi League",
+    "ovr": 71
+  },
+  {
+    "name": "Danubio",
+    "file": "danubio.json",
+    "league": "Sudamericana",
+    "ovr": 68
+  },
+  {
+    "name": "Defensa",
+    "file": "defensa.json",
+    "league": "Sudamericana",
+    "ovr": 71
+  },
+  {
+    "name": "Delfín SC",
+    "file": "delfnsc.json",
+    "league": "Sudamericana",
+    "ovr": 64
+  },
+  {
+    "name": "Dep. Cuenca",
+    "file": "depcuenca.json",
+    "league": "Sudamericana",
+    "ovr": 67
+  },
+  {
+    "name": "Dep. Garcilaso",
+    "file": "depgarcilaso.json",
+    "league": "Sudamericana",
+    "ovr": 67
+  },
+  {
+    "name": "Dep. La Guaira",
+    "file": "deplaguaira.json",
+    "league": "Sudamericana",
+    "ovr": 65
+  },
+  {
+    "name": "Dep. Riestra",
+    "file": "depriestra.json",
+    "league": "Primera División",
+    "ovr": 66
+  },
+  {
+    "name": "Dep. Táchira",
+    "file": "deptchira.json",
+    "league": "Libertadores",
+    "ovr": 67
+  },
+  {
+    "name": "Deportes Tolima",
+    "file": "deportestolima.json",
+    "league": "Sudamericana",
+    "ovr": 71
+  },
+  {
+    "name": "Derby County",
+    "file": "derbycounty.json",
+    "league": "EFL Championship",
+    "ovr": 70
+  },
+  {
+    "name": "Derry City",
+    "file": "derrycity.json",
+    "league": "SSE Airtricity PD",
+    "ovr": 63
+  },
+  {
+    "name": "Dijon FCO (Fem)",
+    "file": "dijonfcofem.json",
+    "league": "Arkema PL",
+    "ovr": 73
+  },
+  {
+    "name": "Dinamo Zagreb",
+    "file": "dinamozagreb.json",
+    "league": "Liga Hrvatska",
+    "ovr": 73
+  },
+  {
+    "name": "Djurgårdens IF",
+    "file": "djurgrdensif.json",
+    "league": "Allsvenskan",
+    "ovr": 69
+  },
+  {
+    "name": "Doncaster",
+    "file": "doncaster.json",
+    "league": "EFL League Two",
+    "ovr": 64
+  },
+  {
+    "name": "Drogheda United",
+    "file": "droghedaunited.json",
+    "league": "SSE Airtricity PD",
+    "ovr": 58
+  },
+  {
+    "name": "Dundalk",
+    "file": "dundalk.json",
+    "league": "SSE Airtricity PD",
+    "ovr": 59
+  },
+  {
+    "name": "Dundee FC",
+    "file": "dundeefc.json",
+    "league": "Scottish Prem",
+    "ovr": 65
+  },
+  {
+    "name": "Dundee United",
+    "file": "dundeeunited.json",
+    "league": "Scottish Prem",
+    "ovr": 64
+  },
+  {
+    "name": "Düsseldorf",
+    "file": "dsseldorf.json",
+    "league": "Bundesliga 2",
+    "ovr": 71
+  },
+  {
+    "name": "Dynamo Dresden",
+    "file": "dynamodresden.json",
+    "league": "3. Liga",
+    "ovr": 67
+  },
+  {
+    "name": "Dynamo Kyiv",
+    "file": "dynamokyiv.json",
+    "league": "Ukrayina Liha",
+    "ovr": 74
+  },
+  {
+    "name": "East Bengal",
+    "file": "eastbengal.json",
+    "league": "ISL",
+    "ovr": 63
+  },
+  {
+    "name": "Elche CF",
+    "file": "elchecf.json",
+    "league": "LALIGA HYPERMOTION",
+    "ovr": 72
+  },
+  {
+    "name": "Empoli",
+    "file": "empoli.json",
+    "league": "Serie A Enilive",
+    "ovr": 73
+  },
+  {
+    "name": "En Avant Guingamp",
+    "file": "enavantguingamp.json",
+    "league": "Ligue 2 BKT",
+    "ovr": 66
+  },
+  {
+    "name": "En Avant Guingamp (Fem)",
+    "file": "enavantguingampfem.json",
+    "league": "Arkema PL",
+    "ovr": 73
+  },
+  {
+    "name": "Energie Cottbus",
+    "file": "energiecottbus.json",
+    "league": "3. Liga",
+    "ovr": 64
+  },
+  {
+    "name": "ESTAC Troyes",
+    "file": "estactroyes.json",
+    "league": "Ligue 2 BKT",
+    "ovr": 67
+  },
+  {
+    "name": "Estoril Praia",
+    "file": "estorilpraia.json",
+    "league": "Liga Portugal",
+    "ovr": 69
+  },
+  {
+    "name": "Estrela Amadora",
+    "file": "estrelaamadora.json",
+    "league": "Liga Portugal",
+    "ovr": 70
+  },
+  {
+    "name": "Estudiantes",
+    "file": "estudiantes.json",
+    "league": "Libertadores",
+    "ovr": 74
+  },
+  {
+    "name": "Ettifaq FC",
+    "file": "ettifaqfc.json",
+    "league": "ROSHN Saudi League",
+    "ovr": 74
+  },
+  {
+    "name": "Everton",
+    "file": "everton.json",
+    "league": "Premier League",
+    "ovr": 78
+  },
+  {
+    "name": "Everton (Fem)",
+    "file": "evertonfem.json",
+    "league": "Barclays WSL",
+    "ovr": 75
+  },
+  {
+    "name": "Exeter City",
+    "file": "exetercity.json",
+    "league": "EFL League One",
+    "ovr": 64
+  },
+  {
+    "name": "Eyüpspor",
+    "file": "eypspor.json",
+    "league": "Trendyol Süper Lig",
+    "ovr": 71
+  },
+  {
+    "name": "F.C. København",
+    "file": "fckbenhavn.json",
+    "league": "3F Superliga",
+    "ovr": 73
+  },
+  {
+    "name": "Farense",
+    "file": "farense.json",
+    "league": "Liga Portugal",
+    "ovr": 70
+  },
+  {
+    "name": "Farul Constanța",
+    "file": "farulconstana.json",
+    "league": "SUPERLIGA",
+    "ovr": 66
+  },
+  {
+    "name": "FC Annecy",
+    "file": "fcannecy.json",
+    "league": "Ligue 2 BKT",
+    "ovr": 65
+  },
+  {
+    "name": "FC Augsburg",
+    "file": "fcaugsburg.json",
+    "league": "Bundesliga",
+    "ovr": 75
+  },
+  {
+    "name": "FC Barcelona",
+    "file": "fcbarcelona.json",
+    "league": "LALIGA EA SPORTS",
+    "ovr": 85
+  },
+  {
+    "name": "FC Barcelona (Fem)",
+    "file": "fcbarcelonafem.json",
+    "league": "Liga F",
+    "ovr": 88
+  },
+  {
+    "name": "FC Basel 1893",
+    "file": "fcbasel1893.json",
+    "league": "CSSL",
+    "ovr": 70
+  },
+  {
+    "name": "FC Bayern München",
+    "file": "fcbayernmnchen.json",
+    "league": "Bundesliga",
+    "ovr": 85
+  },
+  {
+    "name": "FC Bayern München (Fem)",
+    "file": "fcbayernmnchenfem.json",
+    "league": "GPFBL",
+    "ovr": 84
+  },
+  {
+    "name": "FC Botoșani",
+    "file": "fcbotoani.json",
+    "league": "SUPERLIGA",
+    "ovr": 64
+  },
+  {
+    "name": "FC Cartagena",
+    "file": "fccartagena.json",
+    "league": "LALIGA HYPERMOTION",
+    "ovr": 68
+  },
+  {
+    "name": "FC Cincinnati",
+    "file": "fccincinnati.json",
+    "league": "MLS",
+    "ovr": 73
+  },
+  {
+    "name": "FC Dallas",
+    "file": "fcdallas.json",
+    "league": "MLS",
+    "ovr": 71
+  },
+  {
+    "name": "FC Dinamo 1948",
+    "file": "fcdinamo1948.json",
+    "league": "SUPERLIGA",
+    "ovr": 66
+  },
+  {
+    "name": "FC Erzgebirge Aue",
+    "file": "fcerzgebirgeaue.json",
+    "league": "3. Liga",
+    "ovr": 65
+  },
+  {
+    "name": "FC Famalicão",
+    "file": "fcfamalico.json",
+    "league": "Liga Portugal",
+    "ovr": 72
+  },
+  {
+    "name": "FC Fleury 91 (Fem)",
+    "file": "fcfleury91fem.json",
+    "league": "Arkema PL",
+    "ovr": 78
+  },
+  {
+    "name": "FC Gloria Buzău",
+    "file": "fcgloriabuzu.json",
+    "league": "SUPERLIGA",
+    "ovr": 64
+  },
+  {
+    "name": "FC Goa",
+    "file": "fcgoa.json",
+    "league": "ISL",
+    "ovr": 64
+  },
+  {
+    "name": "FC Groningen",
+    "file": "fcgroningen.json",
+    "league": "Eredivisie",
+    "ovr": 68
+  },
+  {
+    "name": "FC Hansa Rostock",
+    "file": "fchansarostock.json",
+    "league": "3. Liga",
+    "ovr": 67
+  },
+  {
+    "name": "FC Hermannstadt",
+    "file": "fchermannstadt.json",
+    "league": "SUPERLIGA",
+    "ovr": 66
+  },
+  {
+    "name": "FC Ingolstadt 04",
+    "file": "fcingolstadt04.json",
+    "league": "3. Liga",
+    "ovr": 66
+  },
+  {
+    "name": "FC Lorient",
+    "file": "fclorient.json",
+    "league": "Ligue 2 BKT",
+    "ovr": 73
+  },
+  {
+    "name": "FC Lugano",
+    "file": "fclugano.json",
+    "league": "CSSL",
+    "ovr": 70
+  },
+  {
+    "name": "FC Luzern",
+    "file": "fcluzern.json",
+    "league": "CSSL",
+    "ovr": 68
+  },
+  {
+    "name": "FC Martigues",
+    "file": "fcmartigues.json",
+    "league": "Ligue 2 BKT",
+    "ovr": 63
+  },
+  {
+    "name": "FC Metz",
+    "file": "fcmetz.json",
+    "league": "Ligue 2 BKT",
+    "ovr": 71
+  },
+  {
+    "name": "FC Midtjylland",
+    "file": "fcmidtjylland.json",
+    "league": "3F Superliga",
+    "ovr": 73
+  },
+  {
+    "name": "FC Nantes",
+    "file": "fcnantes.json",
+    "league": "Ligue 1 McDonald's",
+    "ovr": 74
+  },
+  {
+    "name": "FC Nantes (Fem)",
+    "file": "fcnantesfem.json",
+    "league": "Arkema PL",
+    "ovr": 73
+  },
+  {
+    "name": "FC Nordsjælland",
+    "file": "fcnordsjlland.json",
+    "league": "3F Superliga",
+    "ovr": 69
+  },
+  {
+    "name": "FC Petrolul",
+    "file": "fcpetrolul.json",
+    "league": "SUPERLIGA",
+    "ovr": 65
+  },
+  {
+    "name": "FC Porto",
+    "file": "fcporto.json",
+    "league": "Liga Portugal",
+    "ovr": 78
+  },
+  {
+    "name": "FC Rapid 1923",
+    "file": "fcrapid1923.json",
+    "league": "SUPERLIGA",
+    "ovr": 68
+  },
+  {
+    "name": "FC Rosengård (Fem)",
+    "file": "fcrosengrdfem.json",
+    "league": "Sverige Liga",
+    "ovr": 75
+  },
+  {
+    "name": "FC Schalke 04",
+    "file": "fcschalke04.json",
+    "league": "Bundesliga 2",
+    "ovr": 70
+  },
+  {
+    "name": "FC Seoul",
+    "file": "fcseoul.json",
+    "league": "K League 1",
+    "ovr": 70
+  },
+  {
+    "name": "FC Sion",
+    "file": "fcsion.json",
+    "league": "CSSL",
+    "ovr": 67
+  },
+  {
+    "name": "FC St. Gallen",
+    "file": "fcstgallen.json",
+    "league": "CSSL",
+    "ovr": 71
+  },
+  {
+    "name": "FC St. Pauli",
+    "file": "fcstpauli.json",
+    "league": "Bundesliga",
+    "ovr": 71
+  },
+  {
+    "name": "FC Twente",
+    "file": "fctwente.json",
+    "league": "Eredivisie",
+    "ovr": 74
+  },
+  {
+    "name": "FC Univ. Cluj",
+    "file": "fcunivcluj.json",
+    "league": "SUPERLIGA",
+    "ovr": 67
+  },
+  {
+    "name": "FC Utrecht",
+    "file": "fcutrecht.json",
+    "league": "Eredivisie",
+    "ovr": 70
+  },
+  {
+    "name": "FC Winterthur",
+    "file": "fcwinterthur.json",
+    "league": "CSSL",
+    "ovr": 66
+  },
+  {
+    "name": "FC Zürich",
+    "file": "fczrich.json",
+    "league": "CSSL",
+    "ovr": 70
+  },
+  {
+    "name": "FC Zürich (Fem)",
+    "file": "fczrichfem.json",
+    "league": "Schweizer Damen Liga",
+    "ovr": 71
+  },
+  {
+    "name": "FCSB",
+    "file": "fcsb.json",
+    "league": "SUPERLIGA",
+    "ovr": 69
+  },
+  {
+    "name": "FCV Dender EH",
+    "file": "fcvdendereh.json",
+    "league": "1A Pro League",
+    "ovr": 66
+  },
+  {
+    "name": "Fenerbahçe",
+    "file": "fenerbahe.json",
+    "league": "Trendyol Süper Lig",
+    "ovr": 80
+  },
+  {
+    "name": "Ferencvárosi TC",
+    "file": "ferencvrositc.json",
+    "league": "Magyar Liga",
+    "ovr": 74
+  },
+  {
+    "name": "Feyenoord",
+    "file": "feyenoord.json",
+    "league": "Eredivisie",
+    "ovr": 77
+  },
+  {
+    "name": "Fiorentina",
+    "file": "fiorentina.json",
+    "league": "Serie A Enilive",
+    "ovr": 78
+  },
+  {
+    "name": "FK Austria Wien",
+    "file": "fkaustriawien.json",
+    "league": "Ö. Bundesliga",
+    "ovr": 70
+  },
+  {
+    "name": "FK Bodø/Glimt",
+    "file": "fkbodglimt.json",
+    "league": "Eliteserien",
+    "ovr": 72
+  },
+  {
+    "name": "FK Haugesund",
+    "file": "fkhaugesund.json",
+    "league": "Eliteserien",
+    "ovr": 64
+  },
+  {
+    "name": "Fleetwood Town",
+    "file": "fleetwoodtown.json",
+    "league": "EFL League Two",
+    "ovr": 64
+  },
+  {
+    "name": "Fortuna Sittard",
+    "file": "fortunasittard.json",
+    "league": "Eredivisie",
+    "ovr": 70
+  },
+  {
+    "name": "Frankfurt",
+    "file": "frankfurt.json",
+    "league": "Bundesliga",
+    "ovr": 78
+  },
+  {
+    "name": "Frankfurt (Fem)",
+    "file": "frankfurtfem.json",
+    "league": "GPFBL",
+    "ovr": 81
+  },
+  {
+    "name": "Fredrikstad FK",
+    "file": "fredrikstadfk.json",
+    "league": "Eliteserien",
+    "ovr": 63
+  },
+  {
+    "name": "Frosinone",
+    "file": "frosinone.json",
+    "league": "Serie BKT",
+    "ovr": 69
+  },
+  {
+    "name": "Fulham",
+    "file": "fulham.json",
+    "league": "Premier League",
+    "ovr": 78
+  },
+  {
+    "name": "Fürth",
+    "file": "frth.json",
+    "league": "Bundesliga 2",
+    "ovr": 69
+  },
+  {
+    "name": "GAIS",
+    "file": "gais.json",
+    "league": "Allsvenskan",
+    "ovr": 62
+  },
+  {
+    "name": "Galatasaray",
+    "file": "galatasaray.json",
+    "league": "Trendyol Süper Lig",
+    "ovr": 80
+  },
+  {
+    "name": "Galway United",
+    "file": "galwayunited.json",
+    "league": "SSE Airtricity PD",
+    "ovr": 61
+  },
+  {
+    "name": "Gangwon FC",
+    "file": "gangwonfc.json",
+    "league": "K League 1",
+    "ovr": 67
+  },
+  {
+    "name": "Gaziantep",
+    "file": "gaziantep.json",
+    "league": "Trendyol Süper Lig",
+    "ovr": 69
+  },
+  {
+    "name": "GC Zürich",
+    "file": "gczrich.json",
+    "league": "CSSL",
+    "ovr": 68
+  },
+  {
+    "name": "Genoa",
+    "file": "genoa.json",
+    "league": "Serie A Enilive",
+    "ovr": 74
+  },
+  {
+    "name": "Getafe CF",
+    "file": "getafecf.json",
+    "league": "LALIGA EA SPORTS",
+    "ovr": 77
+  },
+  {
+    "name": "Gil Vicente",
+    "file": "gilvicente.json",
+    "league": "Liga Portugal",
+    "ovr": 70
+  },
+  {
+    "name": "Gillingham",
+    "file": "gillingham.json",
+    "league": "EFL League Two",
+    "ovr": 63
+  },
+  {
+    "name": "Gimcheon Sangmu",
+    "file": "gimcheonsangmu.json",
+    "league": "K League 1",
+    "ovr": 68
+  },
+  {
+    "name": "Gimnasia",
+    "file": "gimnasia.json",
+    "league": "Primera División",
+    "ovr": 70
+  },
+  {
+    "name": "Girona FC",
+    "file": "gironafc.json",
+    "league": "LALIGA EA SPORTS",
+    "ovr": 80
+  },
+  {
+    "name": "GKS Katowice",
+    "file": "gkskatowice.json",
+    "league": "PKO BP Ekstraklasa",
+    "ovr": 65
+  },
+  {
+    "name": "Glasgow City FC (Fem)",
+    "file": "glasgowcityfcfem.json",
+    "league": "Scottish Women's League",
+    "ovr": 72
+  },
+  {
+    "name": "Go Ahead Eagles",
+    "file": "goaheadeagles.json",
+    "league": "Eredivisie",
+    "ovr": 68
+  },
+  {
+    "name": "Godoy Cruz",
+    "file": "godoycruz.json",
+    "league": "Primera División",
+    "ovr": 71
+  },
+  {
+    "name": "Górnik Zabrze",
+    "file": "grnikzabrze.json",
+    "league": "PKO BP Ekstraklasa",
+    "ovr": 66
+  },
+  {
+    "name": "Göztepe",
+    "file": "gztepe.json",
+    "league": "Trendyol Süper Lig",
+    "ovr": 68
+  },
+  {
+    "name": "Granada CF",
+    "file": "granadacf.json",
+    "league": "LALIGA HYPERMOTION",
+    "ovr": 73
+  },
+  {
+    "name": "Granada CF (Fem)",
+    "file": "granadacffem.json",
+    "league": "Liga F",
+    "ovr": 71
+  },
+  {
+    "name": "Grazer AK",
+    "file": "grazerak.json",
+    "league": "Ö. Bundesliga",
+    "ovr": 65
+  },
+  {
+    "name": "Grenoble Foot 38",
+    "file": "grenoblefoot38.json",
+    "league": "Ligue 2 BKT",
+    "ovr": 69
+  },
+  {
+    "name": "Grimsby Town",
+    "file": "grimsbytown.json",
+    "league": "EFL League Two",
+    "ovr": 62
+  },
+  {
+    "name": "Guaraní",
+    "file": "guaran.json",
+    "league": "Sudamericana",
+    "ovr": 67
+  },
+  {
+    "name": "GwangJu FC",
+    "file": "gwangjufc.json",
+    "league": "K League 1",
+    "ovr": 68
+  },
+  {
+    "name": "Hajduk Split",
+    "file": "hajduksplit.json",
+    "league": "Liga Hrvatska",
+    "ovr": 72
+  },
+  {
+    "name": "Halmstads BK",
+    "file": "halmstadsbk.json",
+    "league": "Allsvenskan",
+    "ovr": 64
+  },
+  {
+    "name": "Hamburger SV",
+    "file": "hamburgersv.json",
+    "league": "Bundesliga 2",
+    "ovr": 73
+  },
+  {
+    "name": "HamKam Fotball",
+    "file": "hamkamfotball.json",
+    "league": "Eliteserien",
+    "ovr": 65
+  },
+  {
+    "name": "Hammarby IF",
+    "file": "hammarbyif.json",
+    "league": "Allsvenskan",
+    "ovr": 66
+  },
+  {
+    "name": "Hannover 96",
+    "file": "hannover96.json",
+    "league": "Bundesliga 2",
+    "ovr": 71
+  },
+  {
+    "name": "Hannover 96 II",
+    "file": "hannover96ii.json",
+    "league": "3. Liga",
+    "ovr": 61
+  },
+  {
+    "name": "Harrogate Town",
+    "file": "harrogatetown.json",
+    "league": "EFL League Two",
+    "ovr": 62
+  },
+  {
+    "name": "Hatayspor",
+    "file": "hatayspor.json",
+    "league": "Trendyol Süper Lig",
+    "ovr": 69
+  },
+  {
+    "name": "Havre AC",
+    "file": "havreac.json",
+    "league": "Ligue 1 McDonald's",
+    "ovr": 73
+  },
+  {
+    "name": "Havre AC (Fem)",
+    "file": "havreacfem.json",
+    "league": "Arkema PL",
+    "ovr": 74
+  },
+  {
+    "name": "Hearts",
+    "file": "hearts.json",
+    "league": "Scottish Prem",
+    "ovr": 71
+  },
+  {
+    "name": "Heidenheim",
+    "file": "heidenheim.json",
+    "league": "Bundesliga",
+    "ovr": 73
+  },
+  {
+    "name": "Hellas Verona",
+    "file": "hellasverona.json",
+    "league": "Serie A Enilive",
+    "ovr": 74
+  },
+  {
+    "name": "Henan FC",
+    "file": "henanfc.json",
+    "league": "CSL",
+    "ovr": 67
+  },
+  {
+    "name": "Heracles Almelo",
+    "file": "heraclesalmelo.json",
+    "league": "Eredivisie",
+    "ovr": 67
+  },
+  {
+    "name": "Hertha BSC",
+    "file": "herthabsc.json",
+    "league": "Bundesliga 2",
+    "ovr": 72
+  },
+  {
+    "name": "Hibernian",
+    "file": "hibernian.json",
+    "league": "Scottish Prem",
+    "ovr": 68
+  },
+  {
+    "name": "HJK Helsinki",
+    "file": "hjkhelsinki.json",
+    "league": "Finnliiga",
+    "ovr": 65
+  },
+  {
+    "name": "Holstein Kiel",
+    "file": "holsteinkiel.json",
+    "league": "Bundesliga",
+    "ovr": 70
+  },
+  {
+    "name": "Houston Dash (Fem)",
+    "file": "houstondashfem.json",
+    "league": "NWSL",
+    "ovr": 79
+  },
+  {
+    "name": "Houston Dynamo",
+    "file": "houstondynamo.json",
+    "league": "MLS",
+    "ovr": 71
+  },
+  {
+    "name": "Huachipato",
+    "file": "huachipato.json",
+    "league": "Libertadores",
+    "ovr": 68
+  },
+  {
+    "name": "Huddersfield",
+    "file": "huddersfield.json",
+    "league": "EFL League One",
+    "ovr": 68
+  },
+  {
+    "name": "Hull City",
+    "file": "hullcity.json",
+    "league": "EFL Championship",
+    "ovr": 72
+  },
+  {
+    "name": "Huracán",
+    "file": "huracn.json",
+    "league": "Primera División",
+    "ovr": 71
+  },
+  {
+    "name": "Hyderabad FC",
+    "file": "hyderabadfc.json",
+    "league": "ISL",
+    "ovr": 52
+  },
+  {
+    "name": "IDV",
+    "file": "idv.json",
+    "league": "Libertadores",
+    "ovr": 71
+  },
+  {
+    "name": "IF Elfsborg",
+    "file": "ifelfsborg.json",
+    "league": "Allsvenskan",
+    "ovr": 68
+  },
+  {
+    "name": "IFK Göteborg",
+    "file": "ifkgteborg.json",
+    "league": "Allsvenskan",
+    "ovr": 67
+  },
+  {
+    "name": "IFK Norrköping",
+    "file": "ifknorrkping.json",
+    "league": "Allsvenskan",
+    "ovr": 66
+  },
+  {
+    "name": "IFK Värnamo",
+    "file": "ifkvrnamo.json",
+    "league": "Allsvenskan",
+    "ovr": 65
+  },
+  {
+    "name": "IK Sirius",
+    "file": "iksirius.json",
+    "league": "Allsvenskan",
+    "ovr": 63
+  },
+  {
+    "name": "Incheon United",
+    "file": "incheonunited.json",
+    "league": "K League 1",
+    "ovr": 69
+  },
+  {
+    "name": "Ind. Rivadavia",
+    "file": "indrivadavia.json",
+    "league": "Primera División",
+    "ovr": 69
+  },
+  {
+    "name": "Indep. Medellín",
+    "file": "indepmedelln.json",
+    "league": "Sudamericana",
+    "ovr": 70
+  },
+  {
+    "name": "Independiente",
+    "file": "independiente.json",
+    "league": "Primera División",
+    "ovr": 72
+  },
+  {
+    "name": "Instituto",
+    "file": "instituto.json",
+    "league": "Primera División",
+    "ovr": 71
+  },
+  {
+    "name": "Inter Miami CF",
+    "file": "intermiamicf.json",
+    "league": "MLS",
+    "ovr": 77
+  },
+  {
+    "name": "Ipswich",
+    "file": "ipswich.json",
+    "league": "Premier League",
+    "ovr": 75
+  },
+  {
+    "name": "Jagiellonia",
+    "file": "jagiellonia.json",
+    "league": "PKO BP Ekstraklasa",
+    "ovr": 69
+  },
+  {
+    "name": "Jahn Regensburg",
+    "file": "jahnregensburg.json",
+    "league": "Bundesliga 2",
+    "ovr": 67
+  },
+  {
+    "name": "Jamshedpur FC",
+    "file": "jamshedpurfc.json",
+    "league": "ISL",
+    "ovr": 60
+  },
+  {
+    "name": "Jeju United",
+    "file": "jejuunited.json",
+    "league": "K League 1",
+    "ovr": 69
+  },
+  {
+    "name": "Jeonbuk Hyundai",
+    "file": "jeonbukhyundai.json",
+    "league": "K League 1",
+    "ovr": 70
+  },
+  {
+    "name": "Junior",
+    "file": "junior.json",
+    "league": "Libertadores",
+    "ovr": 72
+  },
+  {
+    "name": "Juventus",
+    "file": "juventus.json",
+    "league": "Serie A Enilive",
+    "ovr": 82
+  },
+  {
+    "name": "Juventus (Fem)",
+    "file": "juventusfem.json",
+    "league": "Calcio A Femminile",
+    "ovr": 82
+  },
+  {
+    "name": "K. Beerschot VA",
+    "file": "kbeerschotva.json",
+    "league": "1A Pro League",
+    "ovr": 65
+  },
+  {
+    "name": "KAA Gent",
+    "file": "kaagent.json",
+    "league": "1A Pro League",
+    "ovr": 72
+  },
+  {
+    "name": "Kaiserslautern",
+    "file": "kaiserslautern.json",
+    "league": "Bundesliga 2",
+    "ovr": 69
+  },
+  {
+    "name": "Kalmar FF",
+    "file": "kalmarff.json",
+    "league": "Allsvenskan",
+    "ovr": 66
+  },
+  {
+    "name": "Karlsruher SC",
+    "file": "karlsruhersc.json",
+    "league": "Bundesliga 2",
+    "ovr": 69
+  },
+  {
+    "name": "Kasımpaşa",
+    "file": "kasmpaa.json",
+    "league": "Trendyol Süper Lig",
+    "ovr": 70
+  },
+  {
+    "name": "Kayserispor",
+    "file": "kayserispor.json",
+    "league": "Trendyol Süper Lig",
+    "ovr": 69
+  },
+  {
+    "name": "KC Current (Fem)",
+    "file": "kccurrentfem.json",
+    "league": "NWSL",
+    "ovr": 81
+  },
+  {
+    "name": "Kerala Blasters",
+    "file": "keralablasters.json",
+    "league": "ISL",
+    "ovr": 62
+  },
+  {
+    "name": "KFUM-Kameratene",
+    "file": "kfumkameratene.json",
+    "league": "Eliteserien",
+    "ovr": 63
+  },
+  {
+    "name": "Kilmarnock",
+    "file": "kilmarnock.json",
+    "league": "Scottish Prem",
+    "ovr": 66
+  },
+  {
+    "name": "Konyaspor",
+    "file": "konyaspor.json",
+    "league": "Trendyol Süper Lig",
+    "ovr": 69
+  },
+  {
+    "name": "Korona Kielce",
+    "file": "koronakielce.json",
+    "league": "PKO BP Ekstraklasa",
+    "ovr": 65
+  },
+  {
+    "name": "KRC Genk",
+    "file": "krcgenk.json",
+    "league": "1A Pro League",
+    "ovr": 72
+  },
+  {
+    "name": "Kristiansund BK",
+    "file": "kristiansundbk.json",
+    "league": "Eliteserien",
+    "ovr": 62
+  },
+  {
+    "name": "KV Kortrijk",
+    "file": "kvkortrijk.json",
+    "league": "1A Pro League",
+    "ovr": 69
+  },
+  {
+    "name": "KV Mechelen",
+    "file": "kvmechelen.json",
+    "league": "1A Pro League",
+    "ovr": 71
+  },
+  {
+    "name": "KVC Westerlo",
+    "file": "kvcwesterlo.json",
+    "league": "1A Pro League",
+    "ovr": 69
+  },
+  {
+    "name": "LA Galaxy",
+    "file": "lagalaxy.json",
+    "league": "MLS",
+    "ovr": 72
+  },
+  {
+    "name": "LAFC",
+    "file": "lafc.json",
+    "league": "MLS",
+    "ovr": 74
+  },
+  {
+    "name": "Lanús",
+    "file": "lans.json",
+    "league": "Sudamericana",
+    "ovr": 74
+  },
+  {
+    "name": "LASK",
+    "file": "lask.json",
+    "league": "Ö. Bundesliga",
+    "ovr": 72
+  },
+  {
+    "name": "Latium",
+    "file": "latium.json",
+    "league": "Serie A Enilive",
+    "ovr": 80
+  },
+  {
+    "name": "Lausanne-Sport",
+    "file": "lausannesport.json",
+    "league": "CSSL",
+    "ovr": 69
+  },
+  {
+    "name": "Laval MFC",
+    "file": "lavalmfc.json",
+    "league": "Ligue 2 BKT",
+    "ovr": 67
+  },
+  {
+    "name": "LDU Quito",
+    "file": "lduquito.json",
+    "league": "Libertadores",
+    "ovr": 70
+  },
+  {
+    "name": "Lecce",
+    "file": "lecce.json",
+    "league": "Serie A Enilive",
+    "ovr": 74
+  },
+  {
+    "name": "Lech Poznań",
+    "file": "lechpozna.json",
+    "league": "PKO BP Ekstraklasa",
+    "ovr": 70
+  },
+  {
+    "name": "Lechia Gdańsk",
+    "file": "lechiagdask.json",
+    "league": "PKO BP Ekstraklasa",
+    "ovr": 65
+  },
+  {
+    "name": "Leeds United",
+    "file": "leedsunited.json",
+    "league": "EFL Championship",
+    "ovr": 75
+  },
+  {
+    "name": "Legia Warszawa",
+    "file": "legiawarszawa.json",
+    "league": "PKO BP Ekstraklasa",
+    "ovr": 69
+  },
+  {
+    "name": "Leicester City",
+    "file": "leicestercity.json",
+    "league": "Premier League",
+    "ovr": 77
+  },
+  {
+    "name": "Leicester City (Fem)",
+    "file": "leicestercityfem.json",
+    "league": "Barclays WSL",
+    "ovr": 75
+  },
+  {
+    "name": "Levante Badalona (Fem)",
+    "file": "levantebadalonafem.json",
+    "league": "Liga F",
+    "ovr": 76
+  },
+  {
+    "name": "Levante UD",
+    "file": "levanteud.json",
+    "league": "LALIGA HYPERMOTION",
+    "ovr": 72
+  },
+  {
+    "name": "Levante UD (Fem)",
+    "file": "levanteudfem.json",
+    "league": "Liga F",
+    "ovr": 77
+  },
+  {
+    "name": "Leverkusen",
+    "file": "leverkusen.json",
+    "league": "Bundesliga",
+    "ovr": 85
+  },
+  {
+    "name": "Leverkusen (Fem)",
+    "file": "leverkusenfem.json",
+    "league": "GPFBL",
+    "ovr": 75
+  },
+  {
+    "name": "Leyton Orient",
+    "file": "leytonorient.json",
+    "league": "EFL League One",
+    "ovr": 65
+  },
+  {
+    "name": "Libertad",
+    "file": "libertad.json",
+    "league": "Libertadores",
+    "ovr": 72
+  },
+  {
+    "name": "Lillestrøm SK",
+    "file": "lillestrmsk.json",
+    "league": "Eliteserien",
+    "ovr": 67
+  },
+  {
+    "name": "Lincoln City",
+    "file": "lincolncity.json",
+    "league": "EFL League One",
+    "ovr": 66
+  },
+  {
+    "name": "Liverpool",
+    "file": "liverpool.json",
+    "league": "Premier League",
+    "ovr": 86
+  },
+  {
+    "name": "Liverpool (Fem)",
+    "file": "liverpoolfem.json",
+    "league": "Barclays WSL",
+    "ovr": 74
+  },
+  {
+    "name": "Lombardia FC",
+    "file": "lombardiafc.json",
+    "league": "Serie A Enilive",
+    "ovr": 85
+  },
+  {
+    "name": "LOSC Lille",
+    "file": "losclille.json",
+    "league": "Ligue 1 McDonald's",
+    "ovr": 78
+  },
+  {
+    "name": "Luton Town",
+    "file": "lutontown.json",
+    "league": "EFL Championship",
+    "ovr": 74
+  },
+  {
+    "name": "Lyngby BK",
+    "file": "lyngbybk.json",
+    "league": "3F Superliga",
+    "ovr": 65
+  },
+  {
+    "name": "M'gladbach",
+    "file": "mgladbach.json",
+    "league": "Bundesliga",
+    "ovr": 77
+  },
+  {
+    "name": "Macarthur FC",
+    "file": "macarthurfc.json",
+    "league": "A-League",
+    "ovr": 66
+  },
+  {
+    "name": "Madrid CFF (Fem)",
+    "file": "madridcfffem.json",
+    "league": "Liga F",
+    "ovr": 76
+  },
+  {
+    "name": "Málaga CF",
+    "file": "mlagacf.json",
+    "league": "LALIGA HYPERMOTION",
+    "ovr": 68
+  },
+  {
+    "name": "Malmö FF",
+    "file": "malmff.json",
+    "league": "Allsvenskan",
+    "ovr": 72
+  },
+  {
+    "name": "Man Utd",
+    "file": "manutd.json",
+    "league": "Premier League",
+    "ovr": 83
+  },
+  {
+    "name": "Manchester City",
+    "file": "manchestercity.json",
+    "league": "Premier League",
+    "ovr": 88
+  },
+  {
+    "name": "Manchester City (Fem)",
+    "file": "manchestercityfem.json",
+    "league": "Barclays WSL",
+    "ovr": 83
+  },
+  {
+    "name": "Manchester Utd (Fem)",
+    "file": "manchesterutdfem.json",
+    "league": "Barclays WSL",
+    "ovr": 82
+  },
+  {
+    "name": "Mansfield Town",
+    "file": "mansfieldtown.json",
+    "league": "EFL League One",
+    "ovr": 65
+  },
+  {
+    "name": "Mantova",
+    "file": "mantova.json",
+    "league": "Serie BKT",
+    "ovr": 67
+  },
+  {
+    "name": "Meizhou Hakka FC",
+    "file": "meizhouhakkafc.json",
+    "league": "CSL",
+    "ovr": 65
+  },
+  {
+    "name": "Melb. Victory",
+    "file": "melbvictory.json",
+    "league": "A-League",
+    "ovr": 65
+  },
+  {
+    "name": "Melbourne City",
+    "file": "melbournecity.json",
+    "league": "A-League",
+    "ovr": 66
+  },
+  {
+    "name": "Metropolitanos",
+    "file": "metropolitanos.json",
+    "league": "Sudamericana",
+    "ovr": 66
+  },
+  {
+    "name": "Middlesbrough",
+    "file": "middlesbrough.json",
+    "league": "EFL Championship",
+    "ovr": 72
+  },
+  {
+    "name": "Milano FC",
+    "file": "milanofc.json",
+    "league": "Serie A Enilive",
+    "ovr": 83
+  },
+  {
+    "name": "Millonarios",
+    "file": "millonarios.json",
+    "league": "Libertadores",
+    "ovr": 73
+  },
+  {
+    "name": "Millwall",
+    "file": "millwall.json",
+    "league": "EFL Championship",
+    "ovr": 71
+  },
+  {
+    "name": "Minnesota United",
+    "file": "minnesotaunited.json",
+    "league": "MLS",
+    "ovr": 71
+  },
+  {
+    "name": "Mjällby AIF",
+    "file": "mjllbyaif.json",
+    "league": "Allsvenskan",
+    "ovr": 64
+  },
+  {
+    "name": "MK Dons",
+    "file": "mkdons.json",
+    "league": "EFL League Two",
+    "ovr": 64
+  },
+  {
+    "name": "Modena",
+    "file": "modena.json",
+    "league": "Serie BKT",
+    "ovr": 70
+  },
+  {
+    "name": "Mohammedan SC",
+    "file": "mohammedansc.json",
+    "league": "ISL",
+    "ovr": 52
+  },
+  {
+    "name": "Mohun Bagan SG",
+    "file": "mohunbagansg.json",
+    "league": "ISL",
+    "ovr": 65
+  },
+  {
+    "name": "Molde FK",
+    "file": "moldefk.json",
+    "league": "Eliteserien",
+    "ovr": 70
+  },
+  {
+    "name": "Montpellier",
+    "file": "montpellier.json",
+    "league": "Ligue 1 McDonald's",
+    "ovr": 75
+  },
+  {
+    "name": "Montpellier (Fem)",
+    "file": "montpellierfem.json",
+    "league": "Arkema PL",
+    "ovr": 78
+  },
+  {
+    "name": "Monza",
+    "file": "monza.json",
+    "league": "Serie A Enilive",
+    "ovr": 75
+  },
+  {
+    "name": "Morecambe",
+    "file": "morecambe.json",
+    "league": "EFL League Two",
+    "ovr": 62
+  },
+  {
+    "name": "Moreirense FC",
+    "file": "moreirensefc.json",
+    "league": "Liga Portugal",
+    "ovr": 71
+  },
+  {
+    "name": "Motherwell",
+    "file": "motherwell.json",
+    "league": "Scottish Prem",
+    "ovr": 65
+  },
+  {
+    "name": "Motor Lublin",
+    "file": "motorlublin.json",
+    "league": "PKO BP Ekstraklasa",
+    "ovr": 64
+  },
+  {
+    "name": "Mumbai City FC",
+    "file": "mumbaicityfc.json",
+    "league": "ISL",
+    "ovr": 65
+  },
+  {
+    "name": "N.E.C. Nijmegen",
+    "file": "necnijmegen.json",
+    "league": "Eredivisie",
+    "ovr": 71
+  },
+  {
+    "name": "NAC Breda",
+    "file": "nacbreda.json",
+    "league": "Eredivisie",
+    "ovr": 67
+  },
+  {
+    "name": "Nacional",
+    "file": "nacional.json",
+    "league": "Libertadores",
+    "ovr": 71
+  },
+  {
+    "name": "Nacional Potosí",
+    "file": "nacionalpotos.json",
+    "league": "Sudamericana",
+    "ovr": 67
+  },
+  {
+    "name": "Nantong Zhiyun FC",
+    "file": "nantongzhiyunfc.json",
+    "league": "CSL",
+    "ovr": 63
+  },
+  {
+    "name": "Nashville SC",
+    "file": "nashvillesc.json",
+    "league": "MLS",
+    "ovr": 71
+  },
+  {
+    "name": "NC Courage (Fem)",
+    "file": "nccouragefem.json",
+    "league": "NWSL",
+    "ovr": 78
+  },
+  {
+    "name": "New England",
+    "file": "newengland.json",
+    "league": "MLS",
+    "ovr": 71
+  },
+  {
+    "name": "New York City FC",
+    "file": "newyorkcityfc.json",
+    "league": "MLS",
+    "ovr": 70
+  },
+  {
+    "name": "Newcastle Jets",
+    "file": "newcastlejets.json",
+    "league": "A-League",
+    "ovr": 62
+  },
+  {
+    "name": "Newcastle Utd",
+    "file": "newcastleutd.json",
+    "league": "Premier League",
+    "ovr": 83
+  },
+  {
+    "name": "Newell's",
+    "file": "newells.json",
+    "league": "Primera División",
+    "ovr": 72
+  },
+  {
+    "name": "Newport County",
+    "file": "newportcounty.json",
+    "league": "EFL League Two",
+    "ovr": 61
+  },
+  {
+    "name": "NJ/NY Gotham (Fem)",
+    "file": "njnygothamfem.json",
+    "league": "NWSL",
+    "ovr": 82
+  },
+  {
+    "name": "Northampton",
+    "file": "northampton.json",
+    "league": "EFL League One",
+    "ovr": 66
+  },
+  {
+    "name": "NorthEast United",
+    "file": "northeastunited.json",
+    "league": "ISL",
+    "ovr": 58
+  },
+  {
+    "name": "Norwich",
+    "file": "norwich.json",
+    "league": "EFL Championship",
+    "ovr": 72
+  },
+  {
+    "name": "Nott'm Forest",
+    "file": "nottmforest.json",
+    "league": "Premier League",
+    "ovr": 78
+  },
+  {
+    "name": "Notts County",
+    "file": "nottscounty.json",
+    "league": "EFL League Two",
+    "ovr": 64
+  },
+  {
+    "name": "Odds BK",
+    "file": "oddsbk.json",
+    "league": "Eliteserien",
+    "ovr": 67
+  },
+  {
+    "name": "Odisha FC",
+    "file": "odishafc.json",
+    "league": "ISL",
+    "ovr": 63
+  },
+  {
+    "name": "OGC Nice",
+    "file": "ogcnice.json",
+    "league": "Ligue 1 McDonald's",
+    "ovr": 78
+  },
+  {
+    "name": "OH Leuven",
+    "file": "ohleuven.json",
+    "league": "1A Pro League",
+    "ovr": 70
+  },
+  {
+    "name": "OL",
+    "file": "ol.json",
+    "league": "Ligue 1 McDonald's",
+    "ovr": 78
+  },
+  {
+    "name": "OL (Fem)",
+    "file": "olfem.json",
+    "league": "Arkema PL",
+    "ovr": 86
+  },
+  {
+    "name": "Olimpia",
+    "file": "olimpia.json",
+    "league": "Sudamericana",
+    "ovr": 70
+  },
+  {
+    "name": "Olympiacos FC",
+    "file": "olympiacosfc.json",
+    "league": "Hellas Liga",
+    "ovr": 76
+  },
+  {
+    "name": "OM",
+    "file": "om.json",
+    "league": "Ligue 1 McDonald's",
+    "ovr": 79
+  },
+  {
+    "name": "Orlando City",
+    "file": "orlandocity.json",
+    "league": "MLS",
+    "ovr": 71
+  },
+  {
+    "name": "Orlando Pride (Fem)",
+    "file": "orlandopridefem.json",
+    "league": "NWSL",
+    "ovr": 78
+  },
+  {
+    "name": "Oxford United",
+    "file": "oxfordunited.json",
+    "league": "EFL Championship",
+    "ovr": 68
+  },
+  {
+    "name": "Palermo",
+    "file": "palermo.json",
+    "league": "Serie BKT",
+    "ovr": 72
+  },
+  {
+    "name": "Palestino",
+    "file": "palestino.json",
+    "league": "Libertadores",
+    "ovr": 69
+  },
+  {
+    "name": "Panathinaikos",
+    "file": "panathinaikos.json",
+    "league": "Hellas Liga",
+    "ovr": 76
+  },
+  {
+    "name": "PAOK FC",
+    "file": "paokfc.json",
+    "league": "Hellas Liga",
+    "ovr": 75
+  },
+  {
+    "name": "Paris FC",
+    "file": "parisfc.json",
+    "league": "Ligue 2 BKT",
+    "ovr": 70
+  },
+  {
+    "name": "Paris FC (Fem)",
+    "file": "parisfcfem.json",
+    "league": "Arkema PL",
+    "ovr": 81
+  },
+  {
+    "name": "Paris SG",
+    "file": "parissg.json",
+    "league": "Ligue 1 McDonald's",
+    "ovr": 84
+  },
+  {
+    "name": "Paris SG (Fem)",
+    "file": "parissgfem.json",
+    "league": "Arkema PL",
+    "ovr": 83
+  },
+  {
+    "name": "Parma",
+    "file": "parma.json",
+    "league": "Serie A Enilive",
+    "ovr": 74
+  },
+  {
+    "name": "Pau FC",
+    "file": "paufc.json",
+    "league": "Ligue 2 BKT",
+    "ovr": 67
+  },
+  {
+    "name": "PEC Zwolle",
+    "file": "peczwolle.json",
+    "league": "Eredivisie",
+    "ovr": 68
+  },
+  {
+    "name": "Peñarol",
+    "file": "pearol.json",
+    "league": "Libertadores",
+    "ovr": 71
+  },
+  {
+    "name": "Perth Glory",
+    "file": "perthglory.json",
+    "league": "A-League",
+    "ovr": 65
+  },
+  {
+    "name": "Peterborough",
+    "file": "peterborough.json",
+    "league": "EFL League One",
+    "ovr": 66
+  },
+  {
+    "name": "Philadelphia",
+    "file": "philadelphia.json",
+    "league": "MLS",
+    "ovr": 72
+  },
+  {
+    "name": "Piast Gliwice",
+    "file": "piastgliwice.json",
+    "league": "PKO BP Ekstraklasa",
+    "ovr": 67
+  },
+  {
+    "name": "Pisa",
+    "file": "pisa.json",
+    "league": "Serie BKT",
+    "ovr": 70
+  },
+  {
+    "name": "Platense",
+    "file": "platense.json",
+    "league": "Primera División",
+    "ovr": 70
+  },
+  {
+    "name": "Plymouth Argyle",
+    "file": "plymouthargyle.json",
+    "league": "EFL Championship",
+    "ovr": 70
+  },
+  {
+    "name": "Pogoń Szczecin",
+    "file": "pogoszczecin.json",
+    "league": "PKO BP Ekstraklasa",
+    "ovr": 69
+  },
+  {
+    "name": "Pohang Steelers",
+    "file": "pohangsteelers.json",
+    "league": "K League 1",
+    "ovr": 70
+  },
+  {
+    "name": "Politehnica Iași",
+    "file": "politehnicaiai.json",
+    "league": "SUPERLIGA",
+    "ovr": 64
+  },
+  {
+    "name": "Port Vale",
+    "file": "portvale.json",
+    "league": "EFL League Two",
+    "ovr": 64
+  },
+  {
+    "name": "Portland Thorns (Fem)",
+    "file": "portlandthornsfem.json",
+    "league": "NWSL",
+    "ovr": 82
+  },
+  {
+    "name": "Portland Timbers",
+    "file": "portlandtimbers.json",
+    "league": "MLS",
+    "ovr": 72
+  },
+  {
+    "name": "Portsmouth",
+    "file": "portsmouth.json",
+    "league": "EFL Championship",
+    "ovr": 68
+  },
+  {
+    "name": "Preston",
+    "file": "preston.json",
+    "league": "EFL Championship",
+    "ovr": 71
+  },
+  {
+    "name": "Preußen Münster",
+    "file": "preuenmnster.json",
+    "league": "Bundesliga 2",
+    "ovr": 67
+  },
+  {
+    "name": "PSV",
+    "file": "psv.json",
+    "league": "Eredivisie",
+    "ovr": 79
+  },
+  {
+    "name": "Punjab FC",
+    "file": "punjabfc.json",
+    "league": "ISL",
+    "ovr": 57
+  },
+  {
+    "name": "Puszcza",
+    "file": "puszcza.json",
+    "league": "PKO BP Ekstraklasa",
+    "ovr": 64
+  },
+  {
+    "name": "Qarabağ FK",
+    "file": "qarabafk.json",
+    "league": "Liga Azerbaijan",
+    "ovr": 70
+  },
+  {
+    "name": "Qingdao Hainiu",
+    "file": "qingdaohainiu.json",
+    "league": "CSL",
+    "ovr": 64
+  },
+  {
+    "name": "Qingdao W. Coast",
+    "file": "qingdaowcoast.json",
+    "league": "CSL",
+    "ovr": 66
+  },
+  {
+    "name": "QPR",
+    "file": "qpr.json",
+    "league": "EFL Championship",
+    "ovr": 72
+  },
+  {
+    "name": "R. Oviedo",
+    "file": "roviedo.json",
+    "league": "LALIGA HYPERMOTION",
+    "ovr": 72
+  },
+  {
+    "name": "R. Racing Club",
+    "file": "rracingclub.json",
+    "league": "LALIGA HYPERMOTION",
+    "ovr": 70
+  },
+  {
+    "name": "R. Sporting",
+    "file": "rsporting.json",
+    "league": "LALIGA HYPERMOTION",
+    "ovr": 72
+  },
+  {
+    "name": "R. Union St.-G.",
+    "file": "runionstg.json",
+    "league": "1A Pro League",
+    "ovr": 73
+  },
+  {
+    "name": "R. Valladolid CF",
+    "file": "rvalladolidcf.json",
+    "league": "LALIGA EA SPORTS",
+    "ovr": 73
+  },
+  {
+    "name": "Rac. Louisville (Fem)",
+    "file": "raclouisvillefem.json",
+    "league": "NWSL",
+    "ovr": 77
+  },
+  {
+    "name": "Racing Club",
+    "file": "racingclub.json",
+    "league": "Sudamericana",
+    "ovr": 74
+  },
+  {
+    "name": "Racing de Ferrol",
+    "file": "racingdeferrol.json",
+    "league": "LALIGA HYPERMOTION",
+    "ovr": 69
+  },
+  {
+    "name": "Radomiak Radom",
+    "file": "radomiakradom.json",
+    "league": "PKO BP Ekstraklasa",
+    "ovr": 66
+  },
+  {
+    "name": "Raków",
+    "file": "rakw.json",
+    "league": "PKO BP Ekstraklasa",
+    "ovr": 69
+  },
+  {
+    "name": "Randers FC",
+    "file": "randersfc.json",
+    "league": "3F Superliga",
+    "ovr": 68
+  },
+  {
+    "name": "Rangers",
+    "file": "rangers.json",
+    "league": "Scottish Prem",
+    "ovr": 75
+  },
+  {
+    "name": "Rayo Vallecano",
+    "file": "rayovallecano.json",
+    "league": "LALIGA EA SPORTS",
+    "ovr": 77
+  },
+  {
+    "name": "Rayo Zuliano",
+    "file": "rayozuliano.json",
+    "league": "Sudamericana",
+    "ovr": 62
+  },
+  {
+    "name": "RB Leipzig",
+    "file": "rbleipzig.json",
+    "league": "Bundesliga",
+    "ovr": 81
+  },
+  {
+    "name": "RB Leipzig (Fem)",
+    "file": "rbleipzigfem.json",
+    "league": "GPFBL",
+    "ovr": 74
+  },
+  {
+    "name": "RB Salzburg",
+    "file": "rbsalzburg.json",
+    "league": "Ö. Bundesliga",
+    "ovr": 74
+  },
+  {
+    "name": "RC Celta",
+    "file": "rccelta.json",
+    "league": "LALIGA EA SPORTS",
+    "ovr": 77
+  },
+  {
+    "name": "RC Deportivo",
+    "file": "rcdeportivo.json",
+    "league": "LALIGA HYPERMOTION",
+    "ovr": 73
+  },
+  {
+    "name": "RC Deportivo (Fem)",
+    "file": "rcdeportivofem.json",
+    "league": "Liga F",
+    "ovr": 70
+  },
+  {
+    "name": "RC Lens",
+    "file": "rclens.json",
+    "league": "Ligue 1 McDonald's",
+    "ovr": 78
+  },
+  {
+    "name": "RCD Espanyol",
+    "file": "rcdespanyol.json",
+    "league": "LALIGA EA SPORTS",
+    "ovr": 74
+  },
+  {
+    "name": "RCD Espanyol (Fem)",
+    "file": "rcdespanyolfem.json",
+    "league": "Liga F",
+    "ovr": 71
+  },
+  {
+    "name": "RCD Mallorca",
+    "file": "rcdmallorca.json",
+    "league": "LALIGA EA SPORTS",
+    "ovr": 77
+  },
+  {
+    "name": "Reading",
+    "file": "reading.json",
+    "league": "EFL League One",
+    "ovr": 66
+  },
+  {
+    "name": "Real Betis",
+    "file": "realbetis.json",
+    "league": "LALIGA EA SPORTS",
+    "ovr": 79
+  },
+  {
+    "name": "Real Betis (Fem)",
+    "file": "realbetisfem.json",
+    "league": "Liga F",
+    "ovr": 72
+  },
+  {
+    "name": "Real Madrid",
+    "file": "realmadrid.json",
+    "league": "LALIGA EA SPORTS",
+    "ovr": 88
+  },
+  {
+    "name": "Real Madrid CF (Fem)",
+    "file": "realmadridcffem.json",
+    "league": "Liga F",
+    "ovr": 82
+  },
+  {
+    "name": "Real Salt Lake",
+    "file": "realsaltlake.json",
+    "league": "MLS",
+    "ovr": 70
+  },
+  {
+    "name": "Real Sociedad",
+    "file": "realsociedad.json",
+    "league": "LALIGA EA SPORTS",
+    "ovr": 80
+  },
+  {
+    "name": "Real Sociedad (Fem)",
+    "file": "realsociedadfem.json",
+    "league": "Liga F",
+    "ovr": 78
+  },
+  {
+    "name": "Real Tomayapo",
+    "file": "realtomayapo.json",
+    "league": "Sudamericana",
+    "ovr": 64
+  },
+  {
+    "name": "Real Zaragoza",
+    "file": "realzaragoza.json",
+    "league": "LALIGA HYPERMOTION",
+    "ovr": 71
+  },
+  {
+    "name": "Red Bulls",
+    "file": "redbulls.json",
+    "league": "MLS",
+    "ovr": 70
+  },
+  {
+    "name": "Red Star FC",
+    "file": "redstarfc.json",
+    "league": "Ligue 2 BKT",
+    "ovr": 65
+  },
+  {
+    "name": "Reggiana",
+    "file": "reggiana.json",
+    "league": "Serie BKT",
+    "ovr": 69
+  },
+  {
+    "name": "Rio Ave FC",
+    "file": "rioavefc.json",
+    "league": "Liga Portugal",
+    "ovr": 72
+  },
+  {
+    "name": "River Plate",
+    "file": "riverplate.json",
+    "league": "Libertadores",
+    "ovr": 77
+  },
+  {
+    "name": "RKC Waalwijk",
+    "file": "rkcwaalwijk.json",
+    "league": "Eredivisie",
+    "ovr": 67
+  },
+  {
+    "name": "Rodez AF",
+    "file": "rodezaf.json",
+    "league": "Ligue 2 BKT",
+    "ovr": 65
+  },
+  {
+    "name": "Roma (Fem)",
+    "file": "romafem.json",
+    "league": "Calcio A Femminile",
+    "ovr": 81
+  },
+  {
+    "name": "Rongcheng FC",
+    "file": "rongchengfc.json",
+    "league": "CSL",
+    "ovr": 69
+  },
+  {
+    "name": "Rosario Central",
+    "file": "rosariocentral.json",
+    "league": "Libertadores",
+    "ovr": 72
+  },
+  {
+    "name": "Rosenborg BK",
+    "file": "rosenborgbk.json",
+    "league": "Eliteserien",
+    "ovr": 68
+  },
+  {
+    "name": "Ross County",
+    "file": "rosscounty.json",
+    "league": "Scottish Prem",
+    "ovr": 63
+  },
+  {
+    "name": "Rot-Weiss Essen",
+    "file": "rotweissessen.json",
+    "league": "3. Liga",
+    "ovr": 66
+  },
+  {
+    "name": "Rotherham Utd",
+    "file": "rotherhamutd.json",
+    "league": "EFL League One",
+    "ovr": 68
+  },
+  {
+    "name": "Royal Antwerp FC",
+    "file": "royalantwerpfc.json",
+    "league": "1A Pro League",
+    "ovr": 74
+  },
+  {
+    "name": "RSC Anderlecht",
+    "file": "rscanderlecht.json",
+    "league": "1A Pro League",
+    "ovr": 75
+  },
+  {
+    "name": "S. Ameliano",
+    "file": "sameliano.json",
+    "league": "Sudamericana",
+    "ovr": 67
+  },
+  {
+    "name": "S. Trinidense",
+    "file": "strinidense.json",
+    "league": "Sudamericana",
+    "ovr": 65
+  },
+  {
+    "name": "Saarbrücken",
+    "file": "saarbrcken.json",
+    "league": "3. Liga",
+    "ovr": 67
+  },
+  {
+    "name": "Salernitana",
+    "file": "salernitana.json",
+    "league": "Serie BKT",
+    "ovr": 70
+  },
+  {
+    "name": "Salford City",
+    "file": "salfordcity.json",
+    "league": "EFL League Two",
+    "ovr": 64
+  },
+  {
+    "name": "Sampdoria",
+    "file": "sampdoria.json",
+    "league": "Serie BKT",
+    "ovr": 73
+  },
+  {
+    "name": "Samsunspor",
+    "file": "samsunspor.json",
+    "league": "Trendyol Süper Lig",
+    "ovr": 70
+  },
+  {
+    "name": "San Diego Wave (Fem)",
+    "file": "sandiegowavefem.json",
+    "league": "NWSL",
+    "ovr": 81
+  },
+  {
+    "name": "San Lorenzo",
+    "file": "sanlorenzo.json",
+    "league": "Libertadores",
+    "ovr": 72
+  },
+  {
+    "name": "Sandefjord",
+    "file": "sandefjord.json",
+    "league": "Eliteserien",
+    "ovr": 63
+  },
+  {
+    "name": "Santa Clara",
+    "file": "santaclara.json",
+    "league": "Liga Portugal",
+    "ovr": 69
+  },
+  {
+    "name": "Sarmiento",
+    "file": "sarmiento.json",
+    "league": "Primera División",
+    "ovr": 70
+  },
+  {
+    "name": "Sarpsborg 08",
+    "file": "sarpsborg08.json",
+    "league": "Eliteserien",
+    "ovr": 65
+  },
+  {
+    "name": "Sassuolo",
+    "file": "sassuolo.json",
+    "league": "Serie BKT",
+    "ovr": 74
+  },
+  {
+    "name": "SC Bastia",
+    "file": "scbastia.json",
+    "league": "Ligue 2 BKT",
+    "ovr": 67
+  },
+  {
+    "name": "SC Braga",
+    "file": "scbraga.json",
+    "league": "Liga Portugal",
+    "ovr": 77
+  },
+  {
+    "name": "SC Freiburg",
+    "file": "scfreiburg.json",
+    "league": "Bundesliga",
+    "ovr": 78
+  },
+  {
+    "name": "SC Freiburg (Fem)",
+    "file": "scfreiburgfem.json",
+    "league": "GPFBL",
+    "ovr": 77
+  },
+  {
+    "name": "sc Heerenveen",
+    "file": "scheerenveen.json",
+    "league": "Eredivisie",
+    "ovr": 69
+  },
+  {
+    "name": "SC Oțelul Galați",
+    "file": "scoelulgalai.json",
+    "league": "SUPERLIGA",
+    "ovr": 66
+  },
+  {
+    "name": "SC Paderborn 07",
+    "file": "scpaderborn07.json",
+    "league": "Bundesliga 2",
+    "ovr": 69
+  },
+  {
+    "name": "SC Verl",
+    "file": "scverl.json",
+    "league": "3. Liga",
+    "ovr": 64
+  },
+  {
+    "name": "SCR Altach",
+    "file": "scraltach.json",
+    "league": "Ö. Bundesliga",
+    "ovr": 67
+  },
+  {
+    "name": "SD Eibar",
+    "file": "sdeibar.json",
+    "league": "LALIGA HYPERMOTION",
+    "ovr": 71
+  },
+  {
+    "name": "SD Eibar (Fem)",
+    "file": "sdeibarfem.json",
+    "league": "Liga F",
+    "ovr": 73
+  },
+  {
+    "name": "SD Huesca",
+    "file": "sdhuesca.json",
+    "league": "LALIGA HYPERMOTION",
+    "ovr": 68
+  },
+  {
+    "name": "Seattle Reign (Fem)",
+    "file": "seattlereignfem.json",
+    "league": "NWSL",
+    "ovr": 78
+  },
+  {
+    "name": "Sepsi OSK",
+    "file": "sepsiosk.json",
+    "league": "SUPERLIGA",
+    "ovr": 67
+  },
+  {
+    "name": "Servette FC",
+    "file": "servettefc.json",
+    "league": "CSSL",
+    "ovr": 71
+  },
+  {
+    "name": "Sevilla FC",
+    "file": "sevillafc.json",
+    "league": "LALIGA EA SPORTS",
+    "ovr": 78
+  },
+  {
+    "name": "Sevilla FC (Fem)",
+    "file": "sevillafcfem.json",
+    "league": "Liga F",
+    "ovr": 74
+  },
+  {
+    "name": "SGS Essen (Fem)",
+    "file": "sgsessenfem.json",
+    "league": "GPFBL",
+    "ovr": 75
+  },
+  {
+    "name": "Shakhtar Donetsk",
+    "file": "shakhtardonetsk.json",
+    "league": "Ukrayina Liha",
+    "ovr": 75
+  },
+  {
+    "name": "Shamrock Rovers",
+    "file": "shamrockrovers.json",
+    "league": "SSE Airtricity PD",
+    "ovr": 64
+  },
+  {
+    "name": "Shandong Taishan",
+    "file": "shandongtaishan.json",
+    "league": "CSL",
+    "ovr": 70
+  },
+  {
+    "name": "Shanghai Port FC",
+    "file": "shanghaiportfc.json",
+    "league": "CSL",
+    "ovr": 71
+  },
+  {
+    "name": "Shanghai Shenhua",
+    "file": "shanghaishenhua.json",
+    "league": "CSL",
+    "ovr": 70
+  },
+  {
+    "name": "Sheffield Utd",
+    "file": "sheffieldutd.json",
+    "league": "EFL Championship",
+    "ovr": 73
+  },
+  {
+    "name": "Sheffield Wed",
+    "file": "sheffieldwed.json",
+    "league": "EFL Championship",
+    "ovr": 70
+  },
+  {
+    "name": "Shelbourne",
+    "file": "shelbourne.json",
+    "league": "SSE Airtricity PD",
+    "ovr": 62
+  },
+  {
+    "name": "Shrewsbury",
+    "file": "shrewsbury.json",
+    "league": "EFL League One",
+    "ovr": 64
+  },
+  {
+    "name": "Silkeborg IF",
+    "file": "silkeborgif.json",
+    "league": "3F Superliga",
+    "ovr": 67
+  },
+  {
+    "name": "Sivasspor",
+    "file": "sivasspor.json",
+    "league": "Trendyol Süper Lig",
+    "ovr": 68
+  },
+  {
+    "name": "SJ Earthquakes",
+    "file": "sjearthquakes.json",
+    "league": "MLS",
+    "ovr": 72
+  },
+  {
+    "name": "SK Brann",
+    "file": "skbrann.json",
+    "league": "Eliteserien",
+    "ovr": 66
+  },
+  {
+    "name": "SK Rapid",
+    "file": "skrapid.json",
+    "league": "Ö. Bundesliga",
+    "ovr": 70
+  },
+  {
+    "name": "SK Sturm Graz",
+    "file": "sksturmgraz.json",
+    "league": "Ö. Bundesliga",
+    "ovr": 72
+  },
+  {
+    "name": "SL Benfica",
+    "file": "slbenfica.json",
+    "league": "Liga Portugal",
+    "ovr": 80
+  },
+  {
+    "name": "SL Benfica (Fem)",
+    "file": "slbenficafem.json",
+    "league": "Liga Portugal Feminino",
+    "ovr": 75
+  },
+  {
+    "name": "Śląsk Wrocław",
+    "file": "lskwrocaw.json",
+    "league": "PKO BP Ekstraklasa",
+    "ovr": 67
+  },
+  {
+    "name": "Slavia Praha",
+    "file": "slaviapraha.json",
+    "league": "Česká Liga",
+    "ovr": 75
+  },
+  {
+    "name": "Sligo Rovers",
+    "file": "sligorovers.json",
+    "league": "SSE Airtricity PD",
+    "ovr": 60
+  },
+  {
+    "name": "SM Caen",
+    "file": "smcaen.json",
+    "league": "Ligue 2 BKT",
+    "ovr": 69
+  },
+  {
+    "name": "Sønderjyske",
+    "file": "snderjyske.json",
+    "league": "3F Superliga",
+    "ovr": 63
+  },
+  {
+    "name": "Sounders FC",
+    "file": "soundersfc.json",
+    "league": "MLS",
+    "ovr": 72
+  },
+  {
+    "name": "Southampton",
+    "file": "southampton.json",
+    "league": "Premier League",
+    "ovr": 76
+  },
+  {
+    "name": "Sp. Charleroi",
+    "file": "spcharleroi.json",
+    "league": "1A Pro League",
+    "ovr": 70
+  },
+  {
+    "name": "Sparta Praha",
+    "file": "spartapraha.json",
+    "league": "Česká Liga",
+    "ovr": 76
+  },
+  {
+    "name": "Sparta Rotterdam",
+    "file": "spartarotterdam.json",
+    "league": "Eredivisie",
+    "ovr": 70
+  },
+  {
+    "name": "Spezia",
+    "file": "spezia.json",
+    "league": "Serie BKT",
+    "ovr": 69
+  },
+  {
+    "name": "Sport Huancayo",
+    "file": "sporthuancayo.json",
+    "league": "Sudamericana",
+    "ovr": 68
+  },
+  {
+    "name": "Sporting CP",
+    "file": "sportingcp.json",
+    "league": "Liga Portugal",
+    "ovr": 80
+  },
+  {
+    "name": "Sporting KC",
+    "file": "sportingkc.json",
+    "league": "MLS",
+    "ovr": 70
+  },
+  {
+    "name": "Sportivo Luqueño",
+    "file": "sportivoluqueo.json",
+    "league": "Sudamericana",
+    "ovr": 68
+  },
+  {
+    "name": "Spurs",
+    "file": "spurs.json",
+    "league": "Premier League",
+    "ovr": 83
+  },
+  {
+    "name": "Spurs (Fem)",
+    "file": "spursfem.json",
+    "league": "Barclays WSL",
+    "ovr": 78
+  },
+  {
+    "name": "SS Juve Stabia",
+    "file": "ssjuvestabia.json",
+    "league": "Serie BKT",
+    "ovr": 64
+  },
+  {
+    "name": "SSC Napoli",
+    "file": "sscnapoli.json",
+    "league": "Serie A Enilive",
+    "ovr": 82
+  },
+  {
+    "name": "SSV Ulm 1846",
+    "file": "ssvulm1846.json",
+    "league": "Bundesliga 2",
+    "ovr": 66
+  },
+  {
+    "name": "St. Johnstone",
+    "file": "stjohnstone.json",
+    "league": "Scottish Prem",
+    "ovr": 64
+  },
+  {
+    "name": "St. Louis CITY SC",
+    "file": "stlouiscitysc.json",
+    "league": "MLS",
+    "ovr": 71
+  },
+  {
+    "name": "St. Mirren",
+    "file": "stmirren.json",
+    "league": "Scottish Prem",
+    "ovr": 65
+  },
+  {
+    "name": "St. Pats",
+    "file": "stpats.json",
+    "league": "SSE Airtricity PD",
+    "ovr": 63
+  },
+  {
+    "name": "Stade Brestois 29",
+    "file": "stadebrestois29.json",
+    "league": "Ligue 1 McDonald's",
+    "ovr": 77
+  },
+  {
+    "name": "Stade de Reims",
+    "file": "stadedereims.json",
+    "league": "Ligue 1 McDonald's",
+    "ovr": 76
+  },
+  {
+    "name": "Stade de Reims (Fem)",
+    "file": "stadedereimsfem.json",
+    "league": "Arkema PL",
+    "ovr": 71
+  },
+  {
+    "name": "Stade Rennais FC",
+    "file": "staderennaisfc.json",
+    "league": "Ligue 1 McDonald's",
+    "ovr": 76
+  },
+  {
+    "name": "Stal Mielec",
+    "file": "stalmielec.json",
+    "league": "PKO BP Ekstraklasa",
+    "ovr": 65
+  },
+  {
+    "name": "Standard Liège",
+    "file": "standardlige.json",
+    "league": "1A Pro League",
+    "ovr": 70
+  },
+  {
+    "name": "Stevenage",
+    "file": "stevenage.json",
+    "league": "EFL League One",
+    "ovr": 66
+  },
+  {
+    "name": "Stockport",
+    "file": "stockport.json",
+    "league": "EFL League One",
+    "ovr": 65
+  },
+  {
+    "name": "Stoke City",
+    "file": "stokecity.json",
+    "league": "EFL Championship",
+    "ovr": 71
+  },
+  {
+    "name": "Strasbourg",
+    "file": "strasbourg.json",
+    "league": "Ligue 1 McDonald's",
+    "ovr": 73
+  },
+  {
+    "name": "Strasbourg (Fem)",
+    "file": "strasbourgfem.json",
+    "league": "Arkema PL",
+    "ovr": 69
+  },
+  {
+    "name": "Strømsgodset IF",
+    "file": "strmsgodsetif.json",
+    "league": "Eliteserien",
+    "ovr": 66
+  },
+  {
+    "name": "STVV",
+    "file": "stvv.json",
+    "league": "1A Pro League",
+    "ovr": 68
+  },
+  {
+    "name": "Südtirol",
+    "file": "sdtirol.json",
+    "league": "Serie BKT",
+    "ovr": 69
+  },
+  {
+    "name": "Sunderland",
+    "file": "sunderland.json",
+    "league": "EFL Championship",
+    "ovr": 72
+  },
+  {
+    "name": "Suwon FC",
+    "file": "suwonfc.json",
+    "league": "K League 1",
+    "ovr": 68
+  },
+  {
+    "name": "SV Darmstadt 98",
+    "file": "svdarmstadt98.json",
+    "league": "Bundesliga 2",
+    "ovr": 71
+  },
+  {
+    "name": "SV Elversberg",
+    "file": "svelversberg.json",
+    "league": "Bundesliga 2",
+    "ovr": 68
+  },
+  {
+    "name": "SV Sandhausen",
+    "file": "svsandhausen.json",
+    "league": "3. Liga",
+    "ovr": 66
+  },
+  {
+    "name": "SV Waldhof",
+    "file": "svwaldhof.json",
+    "league": "3. Liga",
+    "ovr": 66
+  },
+  {
+    "name": "SV Werder Bremen",
+    "file": "svwerderbremen.json",
+    "league": "Bundesliga",
+    "ovr": 75
+  },
+  {
+    "name": "SV Werder Bremen (Fem)",
+    "file": "svwerderbremenfem.json",
+    "league": "GPFBL",
+    "ovr": 74
+  },
+  {
+    "name": "Swansea City",
+    "file": "swanseacity.json",
+    "league": "EFL Championship",
+    "ovr": 70
+  },
+  {
+    "name": "Swindon Town",
+    "file": "swindontown.json",
+    "league": "EFL League Two",
+    "ovr": 63
+  },
+  {
+    "name": "Sydney FC",
+    "file": "sydneyfc.json",
+    "league": "A-League",
+    "ovr": 63
+  },
+  {
+    "name": "SZ Peng City",
+    "file": "szpengcity.json",
+    "league": "CSL",
+    "ovr": 64
+  },
+  {
+    "name": "Talleres",
+    "file": "talleres.json",
+    "league": "Libertadores",
+    "ovr": 73
+  },
+  {
+    "name": "Técnico U.",
+    "file": "tcnicou.json",
+    "league": "Sudamericana",
+    "ovr": 66
+  },
+  {
+    "name": "The Strongest",
+    "file": "thestrongest.json",
+    "league": "Libertadores",
+    "ovr": 69
+  },
+  {
+    "name": "Tianjin JMT FC",
+    "file": "tianjinjmtfc.json",
+    "league": "CSL",
+    "ovr": 66
+  },
+  {
+    "name": "Tigre",
+    "file": "tigre.json",
+    "league": "Primera División",
+    "ovr": 68
+  },
+  {
+    "name": "Torino",
+    "file": "torino.json",
+    "league": "Serie A Enilive",
+    "ovr": 77
+  },
+  {
+    "name": "Toronto FC",
+    "file": "torontofc.json",
+    "league": "MLS",
+    "ovr": 70
+  },
+  {
+    "name": "Toulouse FC",
+    "file": "toulousefc.json",
+    "league": "Ligue 1 McDonald's",
+    "ovr": 74
+  },
+  {
+    "name": "Trabzonspor",
+    "file": "trabzonspor.json",
+    "league": "Trendyol Süper Lig",
+    "ovr": 76
+  },
+  {
+    "name": "Tranmere Rovers",
+    "file": "tranmererovers.json",
+    "league": "EFL League Two",
+    "ovr": 63
+  },
+  {
+    "name": "Tromsø IL",
+    "file": "tromsil.json",
+    "league": "Eliteserien",
+    "ovr": 64
+  },
+  {
+    "name": "TSG Hoffenheim",
+    "file": "tsghoffenheim.json",
+    "league": "Bundesliga",
+    "ovr": 77
+  },
+  {
+    "name": "TSG Hoffenheim (Fem)",
+    "file": "tsghoffenheimfem.json",
+    "league": "GPFBL",
+    "ovr": 78
+  },
+  {
+    "name": "TSV Hartberg",
+    "file": "tsvhartberg.json",
+    "league": "Ö. Bundesliga",
+    "ovr": 67
+  },
+  {
+    "name": "Turbine Potsdam (Fem)",
+    "file": "turbinepotsdamfem.json",
+    "league": "GPFBL",
+    "ovr": 71
+  },
+  {
+    "name": "U. Católica",
+    "file": "ucatlica.json",
+    "league": "Sudamericana",
+    "ovr": 69
+  },
+  {
+    "name": "UCV",
+    "file": "ucv.json",
+    "league": "Sudamericana",
+    "ovr": 69
+  },
+  {
+    "name": "UD Almería",
+    "file": "udalmera.json",
+    "league": "LALIGA HYPERMOTION",
+    "ovr": 75
+  },
+  {
+    "name": "UD Las Palmas",
+    "file": "udlaspalmas.json",
+    "league": "LALIGA EA SPORTS",
+    "ovr": 77
+  },
+  {
+    "name": "UD Tenerife (Fem)",
+    "file": "udtenerifefem.json",
+    "league": "Liga F",
+    "ovr": 75
+  },
+  {
+    "name": "Udinese",
+    "file": "udinese.json",
+    "league": "Serie A Enilive",
+    "ovr": 73
+  },
+  {
+    "name": "Ulsan Hyundai",
+    "file": "ulsanhyundai.json",
+    "league": "K League 1",
+    "ovr": 72
+  },
+  {
+    "name": "Uni. Católica",
+    "file": "unicatlica.json",
+    "league": "Sudamericana",
+    "ovr": 70
+  },
+  {
+    "name": "Unión",
+    "file": "unin.json",
+    "league": "Primera División",
+    "ovr": 70
+  },
+  {
+    "name": "Union Berlin",
+    "file": "unionberlin.json",
+    "league": "Bundesliga",
+    "ovr": 76
+  },
+  {
+    "name": "Unión La Calera",
+    "file": "uninlacalera.json",
+    "league": "Sudamericana",
+    "ovr": 65
+  },
+  {
+    "name": "Unirea Slobozia",
+    "file": "unireaslobozia.json",
+    "league": "SUPERLIGA",
+    "ovr": 63
+  },
+  {
+    "name": "Univ. Craiova",
+    "file": "univcraiova.json",
+    "league": "SUPERLIGA",
+    "ovr": 68
+  },
+  {
+    "name": "Universitario",
+    "file": "universitario.json",
+    "league": "Libertadores",
+    "ovr": 70
+  },
+  {
+    "name": "Unterhaching",
+    "file": "unterhaching.json",
+    "league": "3. Liga",
+    "ovr": 64
+  },
+  {
+    "name": "USL Dunkerque",
+    "file": "usldunkerque.json",
+    "league": "Ligue 2 BKT",
+    "ovr": 66
+  },
+  {
+    "name": "UTA Arad",
+    "file": "utaarad.json",
+    "league": "SUPERLIGA",
+    "ovr": 65
+  },
+  {
+    "name": "Utah Royals FC (Fem)",
+    "file": "utahroyalsfcfem.json",
+    "league": "NWSL",
+    "ovr": 76
+  },
+  {
+    "name": "Valencia CF",
+    "file": "valenciacf.json",
+    "league": "LALIGA EA SPORTS",
+    "ovr": 79
+  },
+  {
+    "name": "Valencia CF (Fem)",
+    "file": "valenciacffem.json",
+    "league": "Liga F",
+    "ovr": 75
+  },
+  {
+    "name": "Västerås SK",
+    "file": "vsterssk.json",
+    "league": "Allsvenskan",
+    "ovr": 62
+  },
+  {
+    "name": "Vejle Boldklub",
+    "file": "vejleboldklub.json",
+    "league": "3F Superliga",
+    "ovr": 66
+  },
+  {
+    "name": "Vélez Sarsfield",
+    "file": "vlezsarsfield.json",
+    "league": "Primera División",
+    "ovr": 73
+  },
+  {
+    "name": "Venezia",
+    "file": "venezia.json",
+    "league": "Serie A Enilive",
+    "ovr": 72
+  },
+  {
+    "name": "VfB Stuttgart",
+    "file": "vfbstuttgart.json",
+    "league": "Bundesliga",
+    "ovr": 78
+  },
+  {
+    "name": "VfB Stuttgart II",
+    "file": "vfbstuttgartii.json",
+    "league": "3. Liga",
+    "ovr": 61
+  },
+  {
+    "name": "VfL Bochum 1848",
+    "file": "vflbochum1848.json",
+    "league": "Bundesliga",
+    "ovr": 74
+  },
+  {
+    "name": "VfL Osnabrück",
+    "file": "vflosnabrck.json",
+    "league": "3. Liga",
+    "ovr": 67
+  },
+  {
+    "name": "VfL Wolfsburg",
+    "file": "vflwolfsburg.json",
+    "league": "Bundesliga",
+    "ovr": 77
+  },
+  {
+    "name": "VfL Wolfsburg (Fem)",
+    "file": "vflwolfsburgfem.json",
+    "league": "GPFBL",
+    "ovr": 83
+  },
+  {
+    "name": "Viborg FF",
+    "file": "viborgff.json",
+    "league": "3F Superliga",
+    "ovr": 67
+  },
+  {
+    "name": "Viking FK",
+    "file": "vikingfk.json",
+    "league": "Eliteserien",
+    "ovr": 67
+  },
+  {
+    "name": "Viktoria Köln",
+    "file": "viktoriakln.json",
+    "league": "3. Liga",
+    "ovr": 64
+  },
+  {
+    "name": "Viktoria Plzeň",
+    "file": "viktoriaplze.json",
+    "league": "Česká Liga",
+    "ovr": 73
+  },
+  {
+    "name": "Villarreal CF",
+    "file": "villarrealcf.json",
+    "league": "LALIGA EA SPORTS",
+    "ovr": 79
+  },
+  {
+    "name": "Vitória SC",
+    "file": "vitriasc.json",
+    "league": "Liga Portugal",
+    "ovr": 73
+  },
+  {
+    "name": "Walsall",
+    "file": "walsall.json",
+    "league": "EFL League Two",
+    "ovr": 63
+  },
+  {
+    "name": "Wanderers",
+    "file": "wanderers.json",
+    "league": "Sudamericana",
+    "ovr": 68
+  },
+  {
+    "name": "Washington Spirit (Fem)",
+    "file": "washingtonspiritfem.json",
+    "league": "NWSL",
+    "ovr": 80
+  },
+  {
+    "name": "Waterford",
+    "file": "waterford.json",
+    "league": "SSE Airtricity PD",
+    "ovr": 60
+  },
+  {
+    "name": "Watford",
+    "file": "watford.json",
+    "league": "EFL Championship",
+    "ovr": 70
+  },
+  {
+    "name": "Wehen Wiesbaden",
+    "file": "wehenwiesbaden.json",
+    "league": "3. Liga",
+    "ovr": 67
+  },
+  {
+    "name": "Well. Phoenix",
+    "file": "wellphoenix.json",
+    "league": "A-League",
+    "ovr": 64
+  },
+  {
+    "name": "West Brom",
+    "file": "westbrom.json",
+    "league": "EFL Championship",
+    "ovr": 72
+  },
+  {
+    "name": "West Ham",
+    "file": "westham.json",
+    "league": "Premier League",
+    "ovr": 81
+  },
+  {
+    "name": "West Ham (Fem)",
+    "file": "westhamfem.json",
+    "league": "Barclays WSL",
+    "ovr": 77
+  },
+  {
+    "name": "Western United",
+    "file": "westernunited.json",
+    "league": "A-League",
+    "ovr": 63
+  },
+  {
+    "name": "Whitecaps FC",
+    "file": "whitecapsfc.json",
+    "league": "MLS",
+    "ovr": 72
+  },
+  {
+    "name": "Widzew Łódź",
+    "file": "widzewd.json",
+    "league": "PKO BP Ekstraklasa",
+    "ovr": 66
+  },
+  {
+    "name": "Wigan Athletic",
+    "file": "wiganathletic.json",
+    "league": "EFL League One",
+    "ovr": 65
+  },
+  {
+    "name": "Willem II",
+    "file": "willemii.json",
+    "league": "Eredivisie",
+    "ovr": 66
+  },
+  {
+    "name": "Wilstermann",
+    "file": "wilstermann.json",
+    "league": "Sudamericana",
+    "ovr": 66
+  },
+  {
+    "name": "Wolfsberger AC",
+    "file": "wolfsbergerac.json",
+    "league": "Ö. Bundesliga",
+    "ovr": 68
+  },
+  {
+    "name": "Wolves",
+    "file": "wolves.json",
+    "league": "Premier League",
+    "ovr": 78
+  },
+  {
+    "name": "Wrexham",
+    "file": "wrexham.json",
+    "league": "EFL League One",
+    "ovr": 67
+  },
+  {
+    "name": "WS Wanderers",
+    "file": "wswanderers.json",
+    "league": "A-League",
+    "ovr": 65
+  },
+  {
+    "name": "WSG Tirol",
+    "file": "wsgtirol.json",
+    "league": "Ö. Bundesliga",
+    "ovr": 66
+  },
+  {
+    "name": "Wuhan Three Towns",
+    "file": "wuhanthreetowns.json",
+    "league": "CSL",
+    "ovr": 67
+  },
+  {
+    "name": "Wycombe",
+    "file": "wycombe.json",
+    "league": "EFL League One",
+    "ovr": 66
+  },
+  {
+    "name": "Yverdon Sport FC",
+    "file": "yverdonsportfc.json",
+    "league": "CSSL",
+    "ovr": 68
+  },
+  {
+    "name": "Zagłębie Lubin",
+    "file": "zagbielubin.json",
+    "league": "PKO BP Ekstraklasa",
+    "ovr": 66
+  },
+  {
+    "name": "Zhejiang Pro",
+    "file": "zhejiangpro.json",
+    "league": "CSL",
+    "ovr": 68
+  }
+]
