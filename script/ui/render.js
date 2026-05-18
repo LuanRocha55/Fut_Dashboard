@@ -1,6 +1,6 @@
 import { dbgToast } from "./uiUtils.js";
 import { highlightZones, clearZones } from "./zones.js";
-import { switchMainView } from "./views.js";
+// switchMainView is accessed via window.switchMainView to avoid circular dependency with views.js
 import { initDragAndDrop } from "./dragDrop.js";
 import {
   squad,
@@ -34,6 +34,7 @@ import { Storage } from "../core/appStorage.js";
 import { showOnlyFitPlayers } from "./state.js";
 import { loadBadgesLazy, loadLeagueLogosLazy } from "./teams.js";
 import { formatMoney, formatGameDate, isTransferWindowOpen } from "../core/appUtils.js";
+import { getFIFAEvent, getSeasonWeek } from "../core/fifaCalendar.js";
 
 export function renderApp() {
   render();
@@ -60,7 +61,7 @@ export async function render() {
   const reservas = squad.slice(11).filter((p) => p !== null);
   const benchSortValue = document.getElementById("benchSortSelect").value;
 
-  // 1. Limpa o campo e reconstroi com grid-cells (necessário para highlightZones)
+  // 1. Limpa o campo e reconstroi com grid-cells (necessÃ¡rio para highlightZones)
   const pitch = document.getElementById("pitch");
   if (pitch) {
     const GRID_POSITIONS = [
@@ -70,7 +71,7 @@ export async function render() {
       ["GOL", "LD", "LD", "MD", "MD", "PD", "PD"],
     ];
 
-    // Lógica para unir blocos da mesma posição (Grid Spanning)
+    // LÃ³gica para unir blocos da mesma posiÃ§Ã£o (Grid Spanning)
     const cells = [];
     const visited = Array.from({ length: 4 }, () => Array(7).fill(false));
 
@@ -136,17 +137,17 @@ export async function render() {
   // 2. Renderiza Titulares
   const teamStats = renderPitchPlayers(titulares, format, squad);
 
-  // 3. Atualiza UI de Estatísticas e Radar
+  // 3. Atualiza UI de EstatÃ­sticas e Radar
   updateTeamStatsUI(teamStats, titulares.length);
 
-  // 4. Renderiza Química
+  // 4. Renderiza QuÃ­mica
   renderTeamChemistry(titulares, format, formatName);
 
-  // 5. Renderiza Histórico e Banco
+  // 5. Renderiza HistÃ³rico e Banco
   renderMatchHistory(data);
   renderBench(reservas, benchSortValue);
 
-  // 6. Finalização
+  // 6. FinalizaÃ§Ã£o
   initDragAndDrop();
   if (isTableView) renderTable();
   if (window.lucide) window.lucide.createIcons();
@@ -155,7 +156,7 @@ export async function render() {
   loadBadgesLazy();
   loadLeagueLogosLazy();
 
-  // 8. Atualiza Dashboard se visível
+  // 8. Atualiza Dashboard se visÃ­vel
   const dashView = document.getElementById("dashboardView");
   if (dashView && dashView.style.display !== "none") {
     const coach = await Storage.getCoachInfo();
@@ -208,7 +209,7 @@ export function renderBench(reservas, benchSortValue) {
           : "var(--danger)";
     res.className = "reserve-item";
     res.dataset.id = p.id;
-    res.innerHTML = `<div style="display: flex; justify-content: space-between; width: 100%; align-items: center; position: relative;">${mStatusHtml}<span style="font-size: 0.65rem; background: #222; padding: 2px 4px; border-radius: 4px; border: 1px solid #444; font-weight: 800; margin-left: ${mStatusHtml ? "12px" : "0"};">${p.aptitude?.[0] || "??"}</span><div style="display: flex; align-items: center; gap: 4px;">${getFormHTML(p.form)} <span style="background: ${getRatingColor(pRating)}; color: #000; font-size: 0.7rem; font-weight: 900; padding: 2px 4px; border-radius: 4px;">${pRating.toFixed(1)}</span></div></div><svg class="player-silhouette" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg><div style="margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; width: 100%;"><strong>${p.name}</strong></div><div style="width: 90%; height: 5px; background: rgba(0,0,0,0.6); border: 1px solid rgba(0,0,0,0.8); border-radius: 2px; overflow: hidden; margin: 6px auto;"><div style="height: 100%; width: ${fitLevel}%; background: ${fitColor}; transition: width 0.3s ease;"></div></div><div style="font-size: 0.6rem; color: #888; margin-top: 2px;">Nº ${p.number} | ${p.age || "--"}A | <span style="color:var(--accent); font-weight:bold;">${formatMoney(p.marketValue || 0)}</span></div>`;
+    res.innerHTML = `<div style="display: flex; justify-content: space-between; width: 100%; align-items: center; position: relative;">${mStatusHtml}<span style="font-size: 0.65rem; background: #222; padding: 2px 4px; border-radius: 4px; border: 1px solid #444; font-weight: 800; margin-left: ${mStatusHtml ? "12px" : "0"};">${p.aptitude?.[0] || "??"}</span><div style="display: flex; align-items: center; gap: 4px;">${getFormHTML(p.form)} <span style="background: ${getRatingColor(pRating)}; color: #000; font-size: 0.7rem; font-weight: 900; padding: 2px 4px; border-radius: 4px;">${pRating.toFixed(1)}</span></div></div><svg class="player-silhouette" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg><div style="margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; width: 100%;"><strong>${p.name}</strong></div><div style="width: 90%; height: 5px; background: rgba(0,0,0,0.6); border: 1px solid rgba(0,0,0,0.8); border-radius: 2px; overflow: hidden; margin: 6px auto;"><div style="height: 100%; width: ${fitLevel}%; background: ${fitColor}; transition: width 0.3s ease;"></div></div><div style="font-size: 0.6rem; color: #888; margin-top: 2px;">NÂº ${p.number} | ${p.age || "--"}A | <span style="color:var(--accent); font-weight:bold;">${formatMoney(p.marketValue || 0)}</span></div>`;
     res.onclick = () => openMenu(p.id);
     benchFragment.appendChild(res);
   });
@@ -287,7 +288,7 @@ export function renderTeamStats() {
 
       const tr = document.createElement("tr");
       tr.innerHTML = `
-                <td style="font-weight: bold; color: ${i < 3 ? "var(--warning)" : "#aaa"}; width: 40px;">${i + 1}º</td>
+                <td style="font-weight: bold; color: ${i < 3 ? "var(--warning)" : "#aaa"}; width: 40px;">${i + 1}Âº</td>
                 <td style="text-align: left; font-weight: bold; color: #fff;">
                     ${p.name}
                     <span style="font-size: 0.65rem; color: #888; margin-left: 5px; font-weight: normal;">${p.aptitude?.[0] || "?"}</span>
@@ -473,7 +474,7 @@ export function renderPitchPlayers(titulares, format, squad) {
               resPlayer.matchStatus === "injury")
           ) {
             showCustomModal(
-              "Jogadores suspensos ou machucados não podem ser escalados.",
+              "Jogadores suspensos ou machucados nÃ£o podem ser escalados.",
               "alert",
               "btn-danger",
             );
@@ -674,7 +675,7 @@ export async function getNewsList(info, includeArchived = false) {
   const history = await Storage.getMatchHistory();
   const leagueData = await Storage.getLeagueData();
 
-  // 0. Histórico de Partidas
+  // 0. HistÃ³rico de Partidas (Ãºltimas 3)
   if (history && history.length > 0) {
     const lastMatches = history.slice(-3).reverse();
     lastMatches.forEach((m, i) => {
@@ -685,7 +686,7 @@ export async function getNewsList(info, includeArchived = false) {
       if (m.result === "V") {
         resColor = "var(--rating-high)";
         resIcon = "check-circle";
-        resText = "Vitória";
+        resText = "VitÃ³ria";
       } else if (m.result === "D") {
         resColor = "#ff4444";
         resIcon = "x-circle";
@@ -693,22 +694,23 @@ export async function getNewsList(info, includeArchived = false) {
       }
 
       const compName = m.compType === "cup" ? "Copa Nacional" : m.compType === "continental" ? "Continental" : "Liga Nacional";
+      const scoreDisplay = m.score || `${m.home} vs ${m.away}`;
 
       news.push({
         id: `match-${m.timestamp || i}`,
         type: "match-result",
         icon: resIcon,
         color: resColor,
-        title: `${resText}: ${m.home} ${m.score} ${m.away}`,
-        desc: `Relatório pós-jogo: ${m.home} vs ${m.away} (${compName}).`,
-        longDesc: `Prezado Treinador,<br><br>A partida válida pela <strong>${compName}</strong> entre <strong>${m.home}</strong> e <strong>${m.away}</strong> terminou em <strong>${m.score}</strong>.<br><br>Nossa análise indica que a equipe se comportou de forma ${m.result === "V" ? "excelente" : m.result === "D" ? "abaixo do esperado" : "regular"}. O placar de <strong>${m.score}</strong> reflete o que vimos em campo. Os dados individuais de performance e estatísticas de jogo já foram processados e estão disponíveis para sua revisão tática.<br><br>Seguimos focados na preparação para o próximo compromisso.`,
+        title: `${resText}: ${scoreDisplay}`,
+        desc: `PÃ³s-jogo: ${m.home || "Seu Time"} vs ${m.away || "AdversÃ¡rio"} (${compName}).`,
+        longDesc: `Prezado Treinador,<br><br>A partida vÃ¡lida pela <strong>${compName}</strong> entre <strong>${m.home || "Seu Time"}</strong> e <strong>${m.away || "AdversÃ¡rio"}</strong> terminou em <strong>${scoreDisplay}</strong>.<br><br>Nossa anÃ¡lise indica que a equipe se comportou de forma ${m.result === "V" ? "excelente, com grande entrega coletiva" : m.result === "D" ? "abaixo do esperado, precisamos revisar os pontos tÃ¡ticos" : "regular, com equilÃ­brio entre os times"}. O placar de <strong>${scoreDisplay}</strong> reflete o que vimos em campo.<br><br>Seguimos focados na preparaÃ§Ã£o para o prÃ³ximo compromisso.`,
         actionLabel: "VER TABELA",
         actionView: "league",
       });
     });
   }
 
-  // 1. Propostas Individuais
+  // 1. Propostas Individuais â€” sempre dinÃ¢mico pois mudam a cada rodada
   if (info.proposals && info.proposals.length > 0) {
     info.proposals.forEach(prop => {
       news.push({
@@ -718,7 +720,7 @@ export async function getNewsList(info, includeArchived = false) {
         color: "var(--accent)",
         title: `Proposta: ${prop.playerName}`,
         desc: `${prop.from} oferece ${formatMoney(prop.value)} pelo atleta.`,
-        longDesc: `Recebemos uma proposta oficial do <strong>${prop.from}</strong> pelo jogador <strong>${prop.playerName}</strong>.<br><br>O valor oferecido é de <strong>${formatMoney(prop.value)}</strong> na modalidade de <strong>${prop.type === "Compra" ? "Transferência Definitiva" : "Empréstimo"}</strong>.<br><br>O mercado está aguardando sua posição. Você pode aceitar, recusar ou tentar negociar termos melhores diretamente na central de transferências.`,
+        longDesc: `Recebemos uma proposta oficial do <strong>${prop.from}</strong> pelo jogador <strong>${prop.playerName}</strong>.<br><br>O valor oferecido Ã© de <strong>${formatMoney(prop.value)}</strong> na modalidade de <strong>${prop.type === "Compra" ? "TransferÃªncia Definitiva" : "EmprÃ©stimo"}</strong>.<br><br>O mercado estÃ¡ aguardando sua posiÃ§Ã£o. VocÃª pode aceitar, recusar ou tentar negociar termos melhores diretamente na central de transferÃªncias.`,
         actionLabel: "NEGOCIAR AGORA",
         actionView: "negotiation",
         secondaryAction: () => renderNegotiation(prop.playerId, prop.id, false),
@@ -726,31 +728,43 @@ export async function getNewsList(info, includeArchived = false) {
     });
   }
 
-  // 2. Próximo Jogo
-  if (leagueData && !leagueData.finished) {
-    const round = leagueData.divisions[0].rounds[leagueData.currentRound - 1];
-    const userMatch = round.find(m => m.home === info.teamFile || m.away === info.teamFile);
-    
+  // 2. PrÃ³ximo Jogo / Data FIFA
+  const fifaEvent = getFIFAEvent(info.currentDate, info.calendarType || "europe");
+  if (fifaEvent) {
+    const isTournament = fifaEvent.type === "tournament";
+    news.push({
+      id: "fifa-match-alert",
+      type: "match",
+      icon: isTournament ? "globe" : "flag",
+      color: "#00aaff",
+      title: fifaEvent.name,
+      desc: isTournament ? "O maior torneio de seleÃ§Ãµes do planeta!" : "O calendÃ¡rio de clubes estÃ¡ pausado para as datas internacionais.",
+      longDesc: `Prezado Treinador,<br><br>O calendÃ¡rio oficial de clubes estÃ¡ temporariamente suspenso para a realizaÃ§Ã£o do perÃ­odo de seleÃ§Ãµes nacionais.<br><br><strong>Evento:</strong> ${fifaEvent.name}<br><strong>Status:</strong> Ativo<br><br>${isTournament ? "As maiores seleÃ§Ãµes do mundo disputam a fase final da Copa Internacional. SÃ£o 16 seleÃ§Ãµes disputando o tÃ­tulo mÃ¡ximo em jogos mata-mata eletrizantes!" : "Seus atletas de elite viajaram para representar suas respectivas seleÃ§Ãµes. Esta semana Ã© uma excelente oportunidade para descansar e regenerar o elenco."}<br><br>Clique abaixo para simular as rodadas internacionais.`,
+      actionLabel: isTournament ? "SIMULAR COPA INTERNACIONAL" : "SIMULAR DATA FIFA",
+      actionView: "dashboard",
+    });
+  } else if (leagueData && !leagueData.finished) {
+    const round = leagueData.divisions?.[0]?.rounds?.[leagueData.currentRound - 1];
+    const userMatch = round?.find(m => m.home === info.teamFile || m.away === info.teamFile);
     if (userMatch) {
       const opponent = userMatch.home === info.teamFile ? userMatch.awayName : userMatch.homeName;
       const stadium = userMatch.home === info.teamFile ? "em casa" : "fora de casa";
       const leagueName = leagueData.divisions[0].name;
-
       news.push({
-        id: "next-match-alert",
+        id: `next-match-${leagueData.currentRound}`,
         type: "match",
         icon: "trophy",
         color: "var(--warning)",
-        title: "Próximo Confronto",
-        desc: `Enfrentaremos o ${opponent} pela ${leagueName}.`,
-        longDesc: `O clima no vestiário é de foco total para o próximo confronto contra o <strong>${opponent}</strong>, válido pela <strong>${leagueName}</strong>.<br><br>Jogaremos <strong>${stadium}</strong> e a expectativa da diretoria é de um desempenho sólido. Nossa equipe de análise já mapeou os pontos fortes e fracos do adversário. É essencial que a prancheta tática esteja definida e que os jogadores estejam em suas melhores condições físicas.<br><br>A torcida já está se mobilizando para apoiar o time neste importante duelo!`,
+        title: `Rodada ${leagueData.currentRound}: ${opponent}`,
+        desc: `Enfrentaremos o ${opponent} ${stadium} pela ${leagueName}.`,
+        longDesc: `O clima no vestiÃ¡rio Ã© de foco total para o prÃ³ximo confronto contra o <strong>${opponent}</strong>, vÃ¡lido pela <strong>${leagueName}</strong> â€” Rodada ${leagueData.currentRound}.<br><br>Jogaremos <strong>${stadium}</strong>. Nossa equipe de anÃ¡lise jÃ¡ mapeou os pontos fortes e fracos do adversÃ¡rio. Ã‰ essencial que a prancheta tÃ¡tica esteja definida e que os jogadores estejam em plenas condiÃ§Ãµes fÃ­sicas.<br><br>A torcida jÃ¡ estÃ¡ mobilizada para este importante duelo!`,
         actionLabel: "IR PARA O JOGO",
         actionView: "dashboard",
       });
     }
   }
 
-  // 3. Desempenho de Jogador (Últimas 5 notas)
+  // 3. Desempenho de Jogador
   const sortedByRating = [...squad].filter(p => p.ratingHistory && p.ratingHistory.length > 0)
     .sort((a, b) => {
        const avgA = a.ratingHistory.reduce((s,v)=>s+v,0) / a.ratingHistory.length;
@@ -761,71 +775,80 @@ export async function getNewsList(info, includeArchived = false) {
   if (sortedByRating.length > 0) {
     const p = sortedByRating[0];
     const notes = p.ratingHistory.map(r => `<span style="background: ${r >= 7 ? 'var(--rating-high)' : r >= 6 ? 'var(--warning)' : '#ff4444'}; color: #000; padding: 2px 6px; border-radius: 4px; font-weight: bold; margin-right: 5px;">${r.toFixed(1)}</span>`).join(" ");
-    
     news.push({
-      id: `performance-${p.id}`,
+      id: `performance-top`,
       type: "info",
       icon: "trending-up",
       color: "var(--accent)",
-      title: `Performance: ${p.name}`,
-      desc: `Histórico recente do atleta: ${p.ratingHistory.join(" | ")}`,
-      longDesc: `Temos um relatório detalhado sobre o desempenho recente de <strong>${p.name}</strong>.<br><br>Nas últimas partidas, o atleta manteve uma regularidade impressionante. Confira as notas das últimas 5 atuações:<br><br>${notes}<br><br>Este nível de consistência é fundamental para a estabilidade tática da equipe. O jogador demonstra estar em excelente sintonia com o plano de jogo estabelecido pela comissão técnica.`,
-      actionLabel: "VER DETALHES",
+      title: `Destaque: ${p.name}`,
+      desc: `Melhor mÃ©dia recente: ${(p.ratingHistory.reduce((s,v)=>s+v,0)/p.ratingHistory.length).toFixed(1)} â€” notas: ${p.ratingHistory.join(" | ")}`,
+      longDesc: `Temos um relatÃ³rio sobre o desempenho recente de <strong>${p.name}</strong>.<br><br>Nas Ãºltimas partidas, o atleta manteve uma regularidade impressionante. Confira as notas das Ãºltimas atuaÃ§Ãµes:<br><br>${notes}<br><br>Este nÃ­vel de consistÃªncia Ã© fundamental para a estabilidade tÃ¡tica da equipe.`,
+      actionLabel: "VER ELENCO",
       actionView: "table",
     });
   }
 
-  // 4. Jogadores Cansados
-  const lowFitness = squad.filter((p) => p.fitness < 60 && p.matchStatus === "normal");
+  // 4. Alerta de Desgaste
+  const lowFitness = squad.filter(p => p.fitness < 60 && p.matchStatus === "normal");
   if (lowFitness.length > 0) {
     news.push({
-      id: "fitness-alert",
+      id: `fitness-alert-${lowFitness.map(p=>p.id).sort().join("-")}`,
       type: "fitness",
       icon: "alert-triangle",
       color: "#ff4444",
-      title: "Alerta de Desgaste",
-      desc: `${lowFitness[0].name} e outros ${lowFitness.length - 1} estão muito cansados.`,
-      longDesc: `O departamento médico emitiu um alerta vermelho sobre a condição física de alguns atletas. <br><br>Jogadores como <strong>${lowFitness[0].name}</strong> apresentam níveis críticos de fadiga e correm sério risco de lesão caso sejam escalados na próxima partida sem o devido descanso.<br><br>Sugerimos um rodízio no elenco ou uma carga reduzida de treinos para preservar a integridade física do grupo.`,
+      title: "Alerta de Desgaste FÃ­sico",
+      desc: `${lowFitness[0].name}${lowFitness.length > 1 ? ` e mais ${lowFitness.length - 1}` : ""} com energia crÃ­tica.`,
+      longDesc: `O departamento mÃ©dico emitiu um alerta sobre a condiÃ§Ã£o fÃ­sica dos seguintes atletas:<br><br><strong>${lowFitness.map(p => `${p.name} (${Math.floor(p.fitness)}%)`).join("<br>")}</strong><br><br>Esses jogadores apresentam nÃ­veis crÃ­ticos de fadiga e correm risco de lesÃ£o caso sejam escalados sem o devido descanso. Sugerimos um rodÃ­zio no elenco ou carga reduzida nos treinos.`,
       actionLabel: "GERENCIAR ELENCO",
       actionView: "table",
     });
   }
 
-  // 5. Jogador em Destaque
+  // 5. Jogador em Destaque TÃ©cnico
   const star = [...squad].sort((a, b) => (b.rating || 0) - (a.rating || 0))[0];
-  if (star && star.rating > 85) {
+  if (star && (star.rating || 0) > 85) {
     news.push({
-      id: "star-player",
+      id: `star-${star.id}`,
       type: "info",
       icon: "star",
       color: "#f9c200",
-      title: "Destaque do Treino",
-      desc: `${star.name} está em excelente forma técnica.`,
-      longDesc: `Temos o prazer de informar que <strong>${star.name}</strong> tem se destacado nos treinamentos desta semana de forma excepcional.<br><br>A dedicação e o desempenho técnico do atleta têm sido exemplares, elevando o nível de competitividade do grupo e servindo de inspiração para os jovens da base. Jogadores com este comprometimento são os pilares do nosso projeto esportivo de longo prazo.`,
+      title: `${star.name} em Destaque`,
+      desc: `${star.name} estÃ¡ em excelente forma tÃ©cnica (OVR ${Math.round(star.rating || star.ovr)}).`,
+      longDesc: `Temos o prazer de informar que <strong>${star.name}</strong> tem se destacado nos treinamentos desta semana de forma excepcional.<br><br>Com overall de <strong>${Math.round(star.rating || star.ovr)}</strong>, o atleta Ã© atualmente o melhor classificado do seu elenco. A dedicaÃ§Ã£o e o desempenho tÃ©cnico do jogador tÃªm elevado o nÃ­vel de competitividade do grupo e servindo de inspiraÃ§Ã£o para os mais jovens.`,
       actionLabel: "GERENCIAR ELENCO",
       actionView: "table",
     });
   }
 
-  // 5. Janela de Transferências
+  // 6. Janela de TransferÃªncias
   const isWindow = isTransferWindowOpen(info.currentDate, info.calendarType);
   if (isWindow) {
     news.push({
-      id: "market-window",
+      id: "market-window-open",
       type: "window",
       icon: "unlock",
       color: "var(--accent)",
-      title: "Mercado Aberto",
-      desc: "A janela de transferências está aberta para negócios.",
-      longDesc: `A janela de transferências foi oficialmente aberta para este período da temporada!<br><br>Este é o momento ideal para reforçar o elenco ou negociar atletas que não fazem parte dos planos futuros da comissão técnica. O mercado está aquecido e diversas oportunidades de negócio podem surgir a qualquer momento, tanto para compra quanto para venda.<br><br>Fique atento às movimentações dos outros clubes e aos valores de mercado.`,
+      title: "Janela de TransferÃªncias Aberta",
+      desc: "A janela estÃ¡ aberta. Este Ã© o momento de agir no mercado.",
+      longDesc: `A janela de transferÃªncias foi oficialmente aberta para este perÃ­odo da temporada!<br><br>Este Ã© o momento ideal para reforÃ§ar o elenco ou negociar atletas que nÃ£o fazem parte dos planos futuros da comissÃ£o tÃ©cnica. O mercado estÃ¡ aquecido e diversas oportunidades de negÃ³cio podem surgir a qualquer momento.<br><br>Fique atento Ã s movimentaÃ§Ãµes dos outros clubes e aos valores de mercado.`,
       actionLabel: "IR PARA O MERCADO",
       actionView: "transfer",
     });
   }
 
-  // 6. Filtrar Arquivados
+  // Persistir mensagens novas no inbox (sem duplicar as dinÃ¢micas de proposta)
+  const persistTypes = ["match-result", "match", "fitness", "info", "window"];
+  for (const n of news) {
+    if (persistTypes.includes(n.type)) {
+      // Remover secondaryAction antes de salvar (funÃ§Ãµes nÃ£o sÃ£o serializÃ¡veis)
+      const toSave = { ...n };
+      delete toSave.secondaryAction;
+      await Storage.appendInboxMessage(toSave);
+    }
+  }
+
+  // Filtro de arquivados
   if (includeArchived) return news;
-  
   const archived = info.archivedNews || [];
   return news.filter(n => !archived.includes(n.id));
 }
@@ -875,23 +898,31 @@ async function renderNewsFeed(info) {
 export async function renderInbox(selectedId = null, showArchived = false) {
   const sidebar = document.getElementById("inboxSidebarList");
   const content = document.getElementById("inboxEmailContent");
-  const sidebarHeader = document.querySelector("#inboxSidebar .sidebar-header"); // Assumindo que existe um header
-  
   if (!sidebar || !content) return;
 
   const coach = await Storage.getCoachInfo();
-  // Pegamos a lista COMPLETA sem o filtro de arquivados para podermos alternar
-  const allNews = await getNewsList(coach, true); 
-  const archivedIds = coach.archivedNews || [];
 
-  let news = [];
-  if (showArchived) {
-    news = allNews.filter(n => archivedIds.includes(n.id));
-  } else {
-    news = allNews.filter(n => !archivedIds.includes(n.id));
-  }
+  // LÃª o inbox persistido (histÃ³rico real salvo)
+  const persistedInbox = await Storage.getInbox();
 
-  // Header com Toggle (Injetar se não existir ou atualizar)
+  // LÃª tambÃ©m as mensagens dinÃ¢micas atuais (propostas ativas) que nÃ£o sÃ£o persistidas
+  const allDynamic = await getNewsList(coach, true);
+  const dynamicProposals = allDynamic.filter(n => n.type === "proposal");
+
+  // Merge: propostas dinÃ¢micas + histÃ³rico persistido (sem duplicar por id)
+  const persistedIds = new Set(persistedInbox.map(m => m.id));
+  const merged = [
+    ...dynamicProposals.filter(p => !persistedIds.has(p.id)),
+    ...persistedInbox
+  ].sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
+
+  // Filtro por estado arquivado
+  const archivedIds = new Set(coach.archivedNews || []);
+  let news = showArchived
+    ? merged.filter(n => archivedIds.has(n.id))
+    : merged.filter(n => !archivedIds.has(n.id));
+
+  // Header com toggle
   const sidebarContainer = sidebar.parentElement;
   let toggleContainer = document.getElementById("inboxArchiveToggle");
   if (!toggleContainer) {
@@ -902,12 +933,11 @@ export async function renderInbox(selectedId = null, showArchived = false) {
   }
 
   toggleContainer.innerHTML = `
-    <span style="font-size: 0.65rem; color: #555; font-weight: 800; text-transform: uppercase;">${showArchived ? "Arquivados" : "Caixa de Entrada"}</span>
+    <span style="font-size: 0.65rem; color: #555; font-weight: 800; text-transform: uppercase;">${showArchived ? "Arquivados" : "Caixa de Entrada"} <span style="color:#333;">(${news.length})</span></span>
     <button id="btnToggleArchive" style="background: transparent; border: 1px solid #333; color: var(--accent); font-size: 0.6rem; padding: 4px 8px; border-radius: 4px; cursor: pointer; font-weight: bold;">
       ${showArchived ? "VER ATIVOS" : "VER ARQUIVO"}
     </button>
   `;
-
   document.getElementById("btnToggleArchive").onclick = () => renderInbox(null, !showArchived);
 
   sidebar.innerHTML = "";
@@ -917,35 +947,37 @@ export async function renderInbox(selectedId = null, showArchived = false) {
     return;
   }
 
-  let selectedItem = news.find((n) => n.id === selectedId) || news[0];
+  let selectedItem = news.find(n => n.id === selectedId) || news[0];
 
   news.forEach((item) => {
     const isSelected = item.id === selectedItem.id;
+    const dateLabel = item.savedDate || item.timestamp
+      ? `<div style="font-size:0.65rem; color:#444; margin-top:4px;">${item.savedDate || new Date(item.timestamp).toLocaleDateString("pt-BR")}</div>`
+      : "";
+
     const msg = document.createElement("div");
     msg.style.cssText = `
-      padding: 15px; 
-      border-radius: 8px; 
-      cursor: pointer; 
-      transition: all 0.2s; 
-      border: 1px solid ${isSelected ? "var(--accent)" : "#222"};
+      padding: 14px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+      border: 1px solid ${isSelected ? "var(--accent)" : "#1e1e1e"};
       background: ${isSelected ? "rgba(0,255,136,0.05)" : "#181818"};
-      margin-bottom: 8px;
+      margin-bottom: 6px;
+      border-left: 3px solid ${item.color || "#333"};
     `;
-
     msg.onclick = () => renderInbox(item.id, showArchived);
-
     msg.innerHTML = `
-      <div style="font-weight: bold; color: ${isSelected ? "var(--accent)" : "#fff"}; font-size: 0.8rem; margin-bottom: 5px;">${item.title}</div>
-      <div style="font-size: 0.7rem; color: #777; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${item.desc}</div>
+      <div style="font-weight: bold; color: ${isSelected ? "var(--accent)" : "#fff"}; font-size: 0.8rem; margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${item.title}</div>
+      <div style="font-size: 0.7rem; color: #666; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${item.desc}</div>
+      ${dateLabel}
     `;
     sidebar.appendChild(msg);
   });
 
-  // Renderizar Conteúdo
+  // Renderizar ConteÃºdo
   content.innerHTML = `
     <div style="padding: 30px; display: flex; flex-direction: column; height: 100%;">
-      
-      <!-- Cabeçalho do E-mail -->
       <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; border-bottom: 1px solid #222; padding-bottom: 15px;">
         <div style="display: flex; gap: 15px; align-items: center;">
           <div style="background: ${selectedItem.color}22; padding: 12px; border-radius: 12px;">
@@ -953,16 +985,16 @@ export async function renderInbox(selectedId = null, showArchived = false) {
           </div>
           <div>
             <h2 style="color: #fff; margin: 0 0 5px 0; font-size: 1.4rem; font-weight: 800;">${selectedItem.title}</h2>
-            <div style="color: #666; font-size: 0.75rem;">
-              <span style="color: #999;">De:</span> secretaria@clube.com <span style="margin: 0 10px;">|</span> 
-              <span style="color: #999;">Assunto:</span> Notificação Oficial
+            <div style="color: #555; font-size: 0.73rem;">
+              <span style="color: #888;">${selectedItem.savedDate || (selectedItem.timestamp ? new Date(selectedItem.timestamp).toLocaleDateString("pt-BR") : "Hoje")}</span>
+              <span style="margin: 0 8px;">Â·</span>
+              <span style="text-transform: uppercase; font-size: 0.65rem; font-weight: 800; color: ${selectedItem.color};">${selectedItem.type || "info"}</span>
             </div>
           </div>
         </div>
-        <button onclick="switchMainView('dashboard')" style="background: transparent; border: 1px solid #333; color: #888; width: 80px; height: 32px; border-radius: 6px; font-size: 0.65rem; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center;" onmouseover="this.style.borderColor='var(--accent)'; this.style.color='var(--accent)'" onmouseout="this.style.borderColor='#333'; this.style.color='#888'">VOLTAR</button>
+        <button onclick="window.switchMainView('dashboard')" style="background: transparent; border: 1px solid #333; color: #888; padding: 7px 14px; border-radius: 6px; font-size: 0.65rem; cursor: pointer; transition: all 0.2s;" onmouseover="this.style.borderColor='var(--accent)'; this.style.color='var(--accent)'" onmouseout="this.style.borderColor='#333'; this.style.color='#888'">VOLTAR</button>
       </div>
 
-      <!-- Corpo do E-mail -->
       <div style="flex: 1; overflow-y: auto; color: #bbb; line-height: 1.8; font-size: 1rem; padding-right: 10px;">
         <p>${selectedItem.longDesc || selectedItem.desc}</p>
         <div style="margin-top: 25px; border-top: 1px solid #222; padding-top: 15px; color: #555; font-size: 0.8rem;">
@@ -972,27 +1004,19 @@ export async function renderInbox(selectedId = null, showArchived = false) {
         </div>
       </div>
 
-      <!-- Ações -->
       <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid #222; display: flex; gap: 10px; justify-content: flex-end;">
-        ${
-          selectedItem.actionLabel
-            ? `
-          <button id="inboxActionBtn" class="btn-primary" style="padding: 12px 25px; font-weight: 900; font-size: 0.8rem; letter-spacing: 1px; width: auto; margin: 0;">
-            ${selectedItem.actionLabel}
-          </button>
-        `
-            : ""
-        }
+        ${selectedItem.actionLabel
+          ? `<button id="inboxActionBtn" class="btn-primary" style="padding: 12px 25px; font-weight: 900; font-size: 0.8rem; letter-spacing: 1px; width: auto; margin: 0;">${selectedItem.actionLabel}</button>`
+          : ""}
         <button id="inboxArchiveBtn" style="width: 140px; height: 45px; background: #222; border: 1px solid #333; color: #fff; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 0.8rem; transition: all 0.2s; display: flex; align-items: center; justify-content: center;" onmouseover="this.style.background='#333'" onmouseout="this.style.background='#222'">${showArchived ? "RESTAURAR" : "ARQUIVAR"}</button>
       </div>
-
     </div>
   `;
 
   const actionBtn = document.getElementById("inboxActionBtn");
   if (actionBtn && selectedItem.actionView) {
     actionBtn.onclick = () => {
-      switchMainView(selectedItem.actionView);
+      window.switchMainView(selectedItem.actionView);
       if (selectedItem.secondaryAction) selectedItem.secondaryAction();
     };
   }
@@ -1000,18 +1024,23 @@ export async function renderInbox(selectedId = null, showArchived = false) {
   const archiveBtn = document.getElementById("inboxArchiveBtn");
   if (archiveBtn) {
     archiveBtn.onclick = async () => {
-      const { archiveNews, unarchiveNews } = await import("../core/appCore.js");
+      const coach2 = await Storage.getCoachInfo();
+      if (!coach2.archivedNews) coach2.archivedNews = [];
       if (showArchived) {
-        await unarchiveNews(selectedItem.id);
+        coach2.archivedNews = coach2.archivedNews.filter(id => id !== selectedItem.id);
       } else {
-        await archiveNews(selectedItem.id);
+        if (!coach2.archivedNews.includes(selectedItem.id)) {
+          coach2.archivedNews.push(selectedItem.id);
+        }
       }
-      renderInbox(null, showArchived); // Recarrega a lista no mesmo modo
+      await Storage.saveCoachInfo(coach2);
+      renderInbox(null, showArchived);
     };
   }
 
   if (window.lucide) window.lucide.createIcons();
 }
+
 
 async function renderCalendar(info) {
   const grid = document.getElementById("calendarGrid");
@@ -1023,12 +1052,12 @@ async function renderCalendar(info) {
   const month = date.getMonth(); // 0-11
   const today = date.getDate();
 
-  // --- BUSCAR JOGOS PARA O CALENDÁRIO ---
+  // --- BUSCAR JOGOS PARA O CALENDÃRIO ---
   const leagueData = await Storage.getLeagueData();
   const matchHistory = (await Storage.getMatchHistory()) || [];
   const matchEvents = {};
 
-  // 1. Marcar Histórico (Passado)
+  // 1. Marcar HistÃ³rico (Passado)
   matchHistory.forEach((m) => {
     const parts = m.date ? m.date.split("/") : [];
     if (parts.length === 3) {
@@ -1049,7 +1078,7 @@ async function renderCalendar(info) {
   if (leagueData && !leagueData.finished && info.teamFile) {
     const userFile = info.teamFile;
     const currentRound = leagueData.currentRound || 1;
-    // Tenta pegar a primeira divisão ou o objeto raiz
+    // Tenta pegar a primeira divisÃ£o ou o objeto raiz
     const rounds = leagueData.divisions
       ? leagueData.divisions[0].rounds
       : leagueData.rounds || [];
@@ -1079,7 +1108,7 @@ async function renderCalendar(info) {
           }
         }
       }
-      // Se já passou do mês atual, para de procurar
+      // Se jÃ¡ passou do mÃªs atual, para de procurar
       if (
         matchDate.getFullYear() > year ||
         (matchDate.getFullYear() === year && matchDate.getMonth() > month)
@@ -1091,7 +1120,7 @@ async function renderCalendar(info) {
   const months = [
     "JANEIRO",
     "FEVEREIRO",
-    "MARÇO",
+    "MARÃ‡O",
     "ABRIL",
     "MAIO",
     "JUNHO",
@@ -1104,7 +1133,7 @@ async function renderCalendar(info) {
   ];
   title.innerText = `${months[month]} ${year}`;
 
-  const firstDay = new Date(year, month, 1).getDay(); // 0 (Dom) a 6 (Sáb)
+  const firstDay = new Date(year, month, 1).getDay(); // 0 (Dom) a 6 (SÃ¡b)
   const daysInMonth = new Date(year, month + 1, 0).getDate();
 
   grid.innerHTML = "";
@@ -1119,7 +1148,7 @@ async function renderCalendar(info) {
     grid.appendChild(dayHead);
   });
 
-  // Espaços vazios para o primeiro dia
+  // EspaÃ§os vazios para o primeiro dia
   for (let i = 0; i < firstDay; i++) {
     grid.appendChild(document.createElement("div"));
   }
@@ -1141,10 +1170,25 @@ async function renderCalendar(info) {
     let transform = "none";
     let boxShadow = "none";
 
+    const cellDateStr = `${year}-${(month + 1).toString().padStart(2, "0")}-${d.toString().padStart(2, "0")}`;
+    const cellFifaEvent = getFIFAEvent(cellDateStr, info.calendarType || "europe");
+
     if (isWindowOpen) {
       bgColor = "rgba(0, 255, 136, 0.05)";
       border = "1px solid rgba(0, 255, 136, 0.1)";
       color = "#888";
+    }
+
+    if (cellFifaEvent) {
+      if (cellFifaEvent.type === "tournament") {
+        bgColor = "rgba(255, 170, 0, 0.12)";
+        border = "1px solid var(--warning)";
+        color = "var(--warning)";
+      } else {
+        bgColor = "rgba(0, 170, 255, 0.12)";
+        border = "1px dashed #00aaff";
+        color = "#00aaff";
+      }
     }
 
     if (match) {
@@ -1282,7 +1326,7 @@ export async function renderProposals(info, containerId = "proposalsList", badge
         }
         await Storage.saveCoachInfo(coach);
         renderApp();
-        showCustomModal("Transferência concretizada!", "alert", "btn-primary");
+        showCustomModal("TransferÃªncia concretizada!", "alert", "btn-primary");
       }
     };
   });
@@ -1315,7 +1359,7 @@ export async function renderPlayerDetail(playerId) {
   container.innerHTML = `
     <div style="height: 100%; display: flex; flex-direction: column; background: #080808; border-radius: 15px; overflow: hidden; border: 1px solid var(--border);">
       
-      <!-- Top Bar: Nome e Botão Voltar -->
+      <!-- Top Bar: Nome e BotÃ£o Voltar -->
       <div style="padding: 25px 40px; background: linear-gradient(90deg, #111 0%, #080808 100%); display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #222;">
         <div style="display: flex; align-items: center; gap: 20px; min-width: 0; flex: 1;">
           <div style="background: ${rColor}; color: #000; width: 60px; height: 60px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; font-weight: 900; box-shadow: 0 0 20px ${rColor}44; flex-shrink: 0;">
@@ -1335,7 +1379,7 @@ export async function renderPlayerDetail(playerId) {
         </button>
       </div>
 
-      <!-- Main Content: Três Colunas Reorganizadas -->
+      <!-- Main Content: TrÃªs Colunas Reorganizadas -->
       <div style="flex: 1; display: grid; grid-template-columns: 380px 1fr 340px; gap: 20px; padding: 25px; overflow-y: auto; align-items: start;">
         
         <!-- Coluna 1: Perfil e Radar -->
@@ -1350,14 +1394,14 @@ export async function renderPlayerDetail(playerId) {
         <!-- Coluna 2: Habilidades e Temporada -->
         <div style="display: flex; flex-direction: column; gap: 20px;">
           <div style="background: #111; border: 1px solid #222; border-radius: 15px; padding: 25px;">
-            <h4 style="color: #888; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 25px;">Análise de Habilidades</h4>
+            <h4 style="color: #888; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 25px;">AnÃ¡lise de Habilidades</h4>
             <div id="detailAttributeBars" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 25px 40px;">
                <!-- Injetado via JS loop -->
             </div>
           </div>
 
           <div style="background: #111; border: 1px solid #222; border-radius: 15px; padding: 25px;">
-             <h4 style="color: #888; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px;">Estatísticas na Temporada</h4>
+             <h4 style="color: #888; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px;">EstatÃ­sticas na Temporada</h4>
              <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
                <div style="text-align: center; background: rgba(255,255,255,0.02); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.03);">
                  <div style="color: var(--accent); font-size: 1.8rem; font-weight: 900;">${p.goals || 0}</div>
@@ -1365,17 +1409,17 @@ export async function renderPlayerDetail(playerId) {
                </div>
                <div style="text-align: center; background: rgba(255,255,255,0.02); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.03);">
                  <div style="color: #00aaff; font-size: 1.8rem; font-weight: 900;">${p.assists || 0}</div>
-                 <div style="color: #555; font-size: 0.65rem; text-transform: uppercase; margin-top: 5px;">Assistências</div>
+                 <div style="color: #555; font-size: 0.65rem; text-transform: uppercase; margin-top: 5px;">AssistÃªncias</div>
                </div>
                <div style="text-align: center; background: rgba(255,255,255,0.02); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.03);">
                  <div style="color: var(--warning); font-size: 1.8rem; font-weight: 900;">${p.avgRating ? p.avgRating.toFixed(1) : "--"}</div>
-                 <div style="color: #555; font-size: 0.65rem; text-transform: uppercase; margin-top: 5px;">Nota Média</div>
+                 <div style="color: #555; font-size: 0.65rem; text-transform: uppercase; margin-top: 5px;">Nota MÃ©dia</div>
                </div>
              </div>
           </div>
         </div>
 
-        <!-- Coluna 3: Contrato e Gestão -->
+        <!-- Coluna 3: Contrato e GestÃ£o -->
         <div style="display: flex; flex-direction: column; gap: 20px;">
           <div style="background: #111; border: 1px solid #222; border-radius: 15px; padding: 25px;">
             <h4 style="color: #888; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 25px;">Contrato</h4>
@@ -1387,10 +1431,10 @@ export async function renderPlayerDetail(playerId) {
               <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
                 <div>
                   <label style="color: #444; font-size: 0.6rem; text-transform: uppercase;">Mercado</label>
-                  <div style="color: #fff; font-size: 0.85rem; font-weight: bold; margin-top: 2px;">${p.transferStatus === "transfer" ? "À VENDA" : p.transferStatus === "loan" ? "EMPRÉSTIMO" : "INTOCÁVEL"}</div>
+                  <div style="color: #fff; font-size: 0.85rem; font-weight: bold; margin-top: 2px;">${p.transferStatus === "transfer" ? "Ã€ VENDA" : p.transferStatus === "loan" ? "EMPRÃ‰STIMO" : "INTOCÃVEL"}</div>
                 </div>
                 <div>
-                  <label style="color: #444; font-size: 0.6rem; text-transform: uppercase;">Vínculo</label>
+                  <label style="color: #444; font-size: 0.6rem; text-transform: uppercase;">VÃ­nculo</label>
                   <div style="color: #fff; font-size: 0.85rem; font-weight: bold; margin-top: 2px;">${Math.floor((p.contractMonths || 24) / 12)}a ${ (p.contractMonths || 24) % 12 }m</div>
                 </div>
               </div>
@@ -1400,31 +1444,31 @@ export async function renderPlayerDetail(playerId) {
                   <div style="color: var(--warning); font-size: 0.85rem; font-weight: bold; margin-top: 2px;">${p.playstyle || "N/A"}</div>
                 </div>
                 <div>
-                  <label style="color: #444; font-size: 0.6rem; text-transform: uppercase;">Salário</label>
-                  <div style="color: #fff; font-size: 0.85rem; font-weight: bold; margin-top: 2px;">${formatMoney((p.marketValue || 0) * 0.005)} /mês</div>
+                  <label style="color: #444; font-size: 0.6rem; text-transform: uppercase;">SalÃ¡rio</label>
+                  <div style="color: #fff; font-size: 0.85rem; font-weight: bold; margin-top: 2px;">${formatMoney((p.marketValue || 0) * 0.005)} /mÃªs</div>
                 </div>
               </div>
               <div>
-                <label style="color: #444; font-size: 0.6rem; text-transform: uppercase; display: block; margin-bottom: 8px;">Condição Física (${Math.floor(p.fitness || 100)}%)</label>
+                <label style="color: #444; font-size: 0.6rem; text-transform: uppercase; display: block; margin-bottom: 8px;">CondiÃ§Ã£o FÃ­sica (${Math.floor(p.fitness || 100)}%)</label>
                 <div style="width: 100%; height: 6px; background: #222; border-radius: 4px; overflow: hidden;">
                   <div style="width: ${p.fitness || 100}%; height: 100%; background: var(--accent); box-shadow: 0 0 10px var(--accent)aa;"></div>
                 </div>
               </div>
             </div>
           </div>
-        <!-- Coluna 3: Ações e Opções de Mercado -->
+        <!-- Coluna 3: AÃ§Ãµes e OpÃ§Ãµes de Mercado -->
         <div style="display: flex; flex-direction: column; gap: 20px;">
           <div style="background: #111; border: 1px solid #222; border-radius: 15px; padding: 25px;">
-            <h4 style="color: #888; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px;">Gestão</h4>
+            <h4 style="color: #888; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px;">GestÃ£o</h4>
             
             <div style="display: flex; flex-direction: column; gap: 15px;">
               <button id="detailSellBtn" class="btn-primary" style="padding: 18px; font-weight: 900; font-size: 0.85rem; border-radius: 12px;">VENDER AGORA (80%)</button>
               
               <div>
                 <select id="detailMarketStatusSelect" style="width: 100%; padding: 12px; background: #1a1a1a; border: 1px solid #333; color: #fff; border-radius: 10px; outline: none; font-size: 0.85rem;">
-                  <option value="none" ${p.transferStatus === "none" ? "selected" : ""}>Status: Intocável</option>
+                  <option value="none" ${p.transferStatus === "none" ? "selected" : ""}>Status: IntocÃ¡vel</option>
                   <option value="transfer" ${p.transferStatus === "transfer" ? "selected" : ""}>Status: Listar Venda</option>
-                  <option value="loan" ${p.transferStatus === "loan" ? "selected" : ""}>Status: Listar Empréstimo</option>
+                  <option value="loan" ${p.transferStatus === "loan" ? "selected" : ""}>Status: Listar EmprÃ©stimo</option>
                 </select>
               </div>
               <button id="detailReleaseBtn" style="background: transparent; border: 1px solid var(--danger); color: var(--danger); padding: 12px; border-radius: 10px; font-weight: bold; cursor: pointer; font-size: 0.75rem; transition: all 0.2s;" onmouseover="this.style.background='rgba(255,0,0,0.05)'" onmouseout="this.style.background='transparent'">RESCINDIR CONTRATO</button>
@@ -1445,21 +1489,21 @@ export async function renderPlayerDetail(playerId) {
   const statKeys = isGK
     ? [
         { key: "alc", label: "ALCANCE" },
-        { key: "seg", label: "SEGURANÇA" },
+        { key: "seg", label: "SEGURANÃ‡A" },
         { key: "esp", label: "ESPALMADA" },
         { key: "ref", label: "REFLEXOS" },
         { key: "vel", label: "VELOCIDADE" },
         { key: "pos", label: "POSICION." },
-        { key: "sta", label: "FÔLEGO" },
+        { key: "sta", label: "FÃ”LEGO" },
       ]
     : [
         { key: "vel", label: "VELOCIDADE" },
-        { key: "fin", label: "FINALIZAÇÃO" },
+        { key: "fin", label: "FINALIZAÃ‡ÃƒO" },
         { key: "pas", label: "PASSE" },
         { key: "dri", label: "DRIBLE" },
         { key: "def", label: "DEFESA" },
-        { key: "fis", label: "FÍSICO" },
-        { key: "sta", label: "FÔLEGO" },
+        { key: "fis", label: "FÃSICO" },
+        { key: "sta", label: "FÃ”LEGO" },
       ];
 
   statKeys.forEach((s) => {
@@ -1486,7 +1530,7 @@ export async function renderPlayerDetail(playerId) {
     `;
   });
 
-  // Eventos de Gestão
+  // Eventos de GestÃ£o
   const { sellPlayer, releasePlayer } = await import("../player/playerEditor.js");
 
   document.getElementById("detailSellBtn").onclick = () => sellPlayer(p.id);
@@ -1505,8 +1549,8 @@ export async function renderNegotiation(playerId, propId = null, isBuying = fals
   const container = document.getElementById("negotiationView");
   if (!container) return;
 
-  switchMainView("negotiation");
-  container.innerHTML = `<div style="display: flex; align-items: center; justify-content: center; height: 100%; color: var(--accent);">Carregando central de negociações...</div>`;
+  window.switchMainView("negotiation");
+  container.innerHTML = `<div style="display: flex; align-items: center; justify-content: center; height: 100%; color: var(--accent);">Carregando central de negociaÃ§Ãµes...</div>`;
 
   const coach = await Storage.getCoachInfo();
   let player = externalPlayerData;
@@ -1518,7 +1562,7 @@ export async function renderNegotiation(playerId, propId = null, isBuying = fals
   }
 
   if (!player) {
-    container.innerHTML = `<div style="padding: 40px; text-align: center;"><p style="color: #666;">Jogador não encontrado.</p><button onclick="switchMainView('transfer')" class="btn-primary" style="width: auto; margin-top: 20px;">VOLTAR</button></div>`;
+    container.innerHTML = `<div style="padding: 40px; text-align: center;"><p style="color: #666;">Jogador nÃ£o encontrado.</p><button onclick="switchMainView('transfer')" class="btn-primary" style="width: auto; margin-top: 20px;">VOLTAR</button></div>`;
     return;
   }
 
@@ -1536,8 +1580,8 @@ export async function renderNegotiation(playerId, propId = null, isBuying = fals
             <i data-lucide="handshake" style="color: #000; width: 1.5rem; height: 1.5rem;"></i>
           </div>
           <div>
-            <h1 style="color: #fff; margin: 0; font-size: 1.5rem; font-weight: 900;">CENTRAL DE <span style="color: var(--accent);">NEGOCIAÇÃO</span></h1>
-            <p style="color: #666; font-size: 0.75rem; margin: 0;">${isBuying ? "Proposta de Aquisição" : "Proposta de Venda"}</p>
+            <h1 style="color: #fff; margin: 0; font-size: 1.5rem; font-weight: 900;">CENTRAL DE <span style="color: var(--accent);">NEGOCIAÃ‡ÃƒO</span></h1>
+            <p style="color: #666; font-size: 0.75rem; margin: 0;">${isBuying ? "Proposta de AquisiÃ§Ã£o" : "Proposta de Venda"}</p>
           </div>
         </div>
         <button onclick="switchMainView('${isBuying ? "transfer" : "inbox"}')" style="background: transparent; border: 1px solid #333; color: #888; padding: 10px 20px; border-radius: 8px; font-weight: 800; cursor: pointer; font-size: 0.75rem;">CANCELAR E SAIR</button>
@@ -1574,21 +1618,21 @@ export async function renderNegotiation(playerId, propId = null, isBuying = fals
           </div>
 
           <div style="background: #111; border: 1px solid #222; border-radius: 15px; padding: 20px;">
-            <h3 style="color: #fff; font-size: 0.75rem; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; color: #555;">Último Desempenho</h3>
+            <h3 style="color: #fff; font-size: 0.75rem; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; color: #555;">Ãšltimo Desempenho</h3>
             <div style="display: flex; gap: 8px;">
                ${(player.ratingHistory || []).map(r => `<div style="background: ${getRatingColor(r)}; color: #000; width: 35px; height: 35px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 0.8rem;">${r.toFixed(1)}</div>`).join("")}
             </div>
           </div>
         </div>
 
-        <!-- Coluna 2: Ambiente de Reunião -->
+        <!-- Coluna 2: Ambiente de ReuniÃ£o -->
         <div style="background: #0a0a0a; border: 1px solid #222; border-radius: 15px; display: flex; flex-direction: column; position: relative; background-image: radial-gradient(circle at center, #111 0%, #000 100%);">
           <div style="flex: 1; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 20px; padding: 40px; text-align: center;">
              <div style="width: 120px; height: 120px; border: 2px solid var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; background: rgba(0,255,136,0.05); box-shadow: 0 0 30px rgba(0,255,136,0.1);">
                 <i data-lucide="users" style="width: 3.5rem; height: 3.5rem; color: var(--accent);"></i>
              </div>
-             <h3 style="color: #fff; font-size: 1.2rem; font-weight: 800;">Os diretores estão reunidos</h3>
-             <p style="color: #555; max-width: 400px; line-height: 1.6;">${isBuying ? `Aguardando sua proposta oficial para ser apresentada ao <strong>${player.clubName || "clube detentor"}</strong>.` : `O <strong>${proposal ? proposal.from : "clube interessado"}</strong> apresentou os termos abaixo para a liberação imediata do atleta.`}</p>
+             <h3 style="color: #fff; font-size: 1.2rem; font-weight: 800;">Os diretores estÃ£o reunidos</h3>
+             <p style="color: #555; max-width: 400px; line-height: 1.6;">${isBuying ? `Aguardando sua proposta oficial para ser apresentada ao <strong>${player.clubName || "clube detentor"}</strong>.` : `O <strong>${proposal ? proposal.from : "clube interessado"}</strong> apresentou os termos abaixo para a liberaÃ§Ã£o imediata do atleta.`}</p>
           </div>
           
           <div style="background: rgba(0,0,0,0.4); padding: 30px; border-top: 1px solid #222; text-align: center;">
@@ -1597,11 +1641,11 @@ export async function renderNegotiation(playerId, propId = null, isBuying = fals
           </div>
         </div>
 
-        <!-- Coluna 3: Painel de Decisão -->
+        <!-- Coluna 3: Painel de DecisÃ£o -->
         <div style="display: flex; flex-direction: column; gap: 20px;">
           
           <div style="background: #111; border: 1px solid #222; border-radius: 15px; padding: 25px; flex: 1;">
-            <h3 style="color: #fff; font-size: 1rem; margin-bottom: 25px; font-weight: 900;">Ações da Diretoria</h3>
+            <h3 style="color: #fff; font-size: 1rem; margin-bottom: 25px; font-weight: 900;">AÃ§Ãµes da Diretoria</h3>
             
             <div style="margin-bottom: 30px;">
               <label style="display: block; font-size: 0.65rem; color: #666; margin-bottom: 15px; font-weight: 800; text-transform: uppercase;">Ajustar Valor (OFERTA)</label>
@@ -1626,7 +1670,7 @@ export async function renderNegotiation(playerId, propId = null, isBuying = fals
           <div style="background: rgba(255,255,255,0.02); border: 1px solid #222; border-radius: 15px; padding: 20px;">
             <div style="display: flex; align-items: center; gap: 10px; color: #555; font-size: 0.7rem;">
                <i data-lucide="info" style="width: 1rem; height: 1rem;"></i>
-               <span>Seu orçamento atual: <strong style="color: var(--accent);">${formatMoney(coach.budget || 0)}</strong></span>
+               <span>Seu orÃ§amento atual: <strong style="color: var(--accent);">${formatMoney(coach.budget || 0)}</strong></span>
             </div>
           </div>
 
@@ -1652,11 +1696,18 @@ export async function renderNegotiation(playerId, propId = null, isBuying = fals
         const idx = squad.findIndex(p => p.id === player.id);
         if (idx !== -1) squad.splice(idx, 1);
         coach.budget += proposal.value;
+        if (!coach.transactions) coach.transactions = [];
+        coach.transactions.push({
+          type: "revenue",
+          desc: `Venda de ${player.name} para ${proposal.from}`,
+          amount: proposal.value,
+          date: new Date().toLocaleDateString("pt-BR")
+        });
         coach.proposals = coach.proposals.filter(p => p.id !== propId);
         await Storage.saveCoachInfo(coach);
         import("../core/appCore.js").then(m => m.saveToLocal());
-        showCustomModal(`Venda concluída! O saldo do clube agora é ${formatMoney(coach.budget)}`, "alert", "btn-primary");
-        switchMainView("dashboard");
+        showCustomModal(`Venda concluÃ­da! O saldo do clube agora Ã© ${formatMoney(coach.budget)}`, "alert", "btn-primary");
+        window.switchMainView("dashboard");
       }
     };
   }
@@ -1667,7 +1718,7 @@ export async function renderNegotiation(playerId, propId = null, isBuying = fals
       coach.proposals = coach.proposals.filter(p => p.id !== propId);
       await Storage.saveCoachInfo(coach);
       showCustomModal(`Proposta recusada. Os negociadores do <strong>${proposal.from}</strong> deixaram a mesa.`, "alert", "btn-secondary");
-      switchMainView("inbox");
+      window.switchMainView("inbox");
     };
   }
 
@@ -1684,19 +1735,459 @@ export async function renderNegotiation(playerId, propId = null, isBuying = fals
         const successChance = offerValue >= player.marketValue ? 0.9 : (offerValue / player.marketValue) * 0.8;
         if (Math.random() < successChance) {
            coach.budget -= offerValue;
+           if (!coach.transactions) coach.transactions = [];
+           coach.transactions.push({
+             type: "expense",
+             desc: `ContrataÃ§Ã£o de ${player.name} (${player.clubName || "Livre"})`,
+             amount: offerValue,
+             date: new Date().toLocaleDateString("pt-BR")
+           });
            await Storage.saveCoachInfo(coach);
            const newId = squad.length > 0 ? Math.max(...squad.map((x) => x.id)) + 1 : 1;
            const newPlayer = { ...player, id: newId, status: "reserva", matchStatus: "normal", captain: false };
            squad.push(newPlayer);
            import("../core/appCore.js").then(m => m.saveToLocal());
-           showCustomModal(`<strong>OFERTA ACEITA!</strong><br><br>${player.name} já está integrado ao seu elenco.`, "alert", "btn-primary");
-           switchMainView("table");
+           showCustomModal(`<strong>OFERTA ACEITA!</strong><br><br>${player.name} jÃ¡ estÃ¡ integrado ao seu elenco.`, "alert", "btn-primary");
+           window.switchMainView("table");
         } else {
            showCustomModal(`<strong>PROPOSTA REJEITADA!</strong><br><br>O <strong>${player.clubName || "clube"}</strong> considerou a oferta muito baixa para liberar o atleta.`, "alert", "btn-danger");
         }
       }
     };
   }
+
+  if (window.lucide) window.lucide.createIcons();
+}
+
+let trainingSlots = [
+  { playerId: null, focus: "Fisico" },
+  { playerId: null, focus: "Fisico" },
+  { playerId: null, focus: "Fisico" }
+];
+
+export async function renderTraining() {
+  const { getEvolutionPotential, runWeeklyTraining } = await import("../core/training.js");
+  const coach = await Storage.getCoachInfo();
+  
+  if (!coach) return;
+  
+  // Status semanal
+  const badge = document.getElementById("trainingStatusBadge");
+  const runBtn = document.getElementById("runTrainingBtn");
+  const trainingUsed = coach.trainingUsed || false;
+  
+  if (badge) {
+    if (trainingUsed) {
+      badge.innerText = "Treino ConcluÃ­do";
+      badge.style.background = "rgba(255, 68, 68, 0.15)";
+      badge.style.color = "#ff4444";
+      badge.style.borderColor = "rgba(255, 68, 68, 0.3)";
+    } else {
+      badge.innerText = "SessÃ£o DisponÃ­vel";
+      badge.style.background = "rgba(245, 158, 11, 0.15)";
+      badge.style.color = "#f59e0b";
+      badge.style.borderColor = "rgba(245, 158, 11, 0.3)";
+    }
+  }
+  
+  if (runBtn) {
+    runBtn.disabled = trainingUsed;
+    runBtn.style.opacity = trainingUsed ? "0.5" : "1";
+    runBtn.style.cursor = trainingUsed ? "not-allowed" : "pointer";
+  }
+
+  // Renderizar Slots
+  for (let i = 0; i < 3; i++) {
+    const slotEl = document.getElementById(`tSlot${i + 1}`);
+    if (!slotEl) continue;
+    
+    const slot = trainingSlots[i];
+    const player = slot.playerId ? squad.find(p => p.id === parseInt(slot.playerId, 10)) : null;
+    
+    if (!player) {
+      // Slot Vazio
+      let selectOptions = `<option value="">-- Selecionar Jogador --</option>`;
+      squad.sort((a,b) => a.name.localeCompare(b.name)).forEach(p => {
+        // Verifica se jÃ¡ estÃ¡ selecionado em outro slot
+        const isSelectedElsewhere = trainingSlots.some((s, idx) => idx !== i && s.playerId === p.id.toString());
+        if (!isSelectedElsewhere) {
+          selectOptions += `<option value="${p.id}">${p.name} (${p.aptitude?.[0] || "?"} - OVR ${Math.round(p.rating || p.ovr)})</option>`;
+        }
+      });
+
+      slotEl.innerHTML = `
+        <div style="font-weight: 800; color: #555; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px;">Slot 0${i + 1}</div>
+        <div style="margin: auto 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: #444;">
+          <i data-lucide="user-plus" style="width: 2.5rem; height: 2.5rem; color: #333;"></i>
+          <span style="font-size: 0.85rem; font-weight: 600;">Nenhum jogador escalado</span>
+        </div>
+        <select data-slot="${i}" class="slot-player-select" style="width: 100%; padding: 10px; background: #1a1a1a; border: 1px solid #333; color: #fff; border-radius: 8px; font-size: 0.85rem; outline: none; cursor: pointer;" ${trainingUsed ? "disabled" : ""}>
+          ${selectOptions}
+        </select>
+      `;
+    } else {
+      // Slot Preenchido
+      const isGK = player.aptitude && player.aptitude[0] === "GOL";
+      const potential = getEvolutionPotential(player.age);
+      const potentialColor = potential === "Jovem Promessa" ? "#f59e0b" : (potential === "Auge TÃ©cnico" ? "#00ff88" : (potential === "Experiente" ? "#00aaff" : "#888"));
+      
+      const maxMatches = Math.max(...squad.map(p => p.matchesPlayed || 0), 1);
+      const rhythm = Math.round(((player.matchesPlayed || 0) / maxMatches) * 100);
+      
+      slotEl.innerHTML = `
+        <button data-slot="${i}" class="slot-remove-btn" style="position: absolute; top: 12px; right: 15px; background: transparent; border: none; color: #ff4444; font-size: 1.3rem; cursor: pointer; font-weight: bold; opacity: 0.7; transition: opacity 0.2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.7" ${trainingUsed ? "disabled style='display:none;'" : ""}>&times;</button>
+        <div style="font-weight: 800; color: var(--accent); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px;">Slot 0${i + 1}</div>
+        
+        <div style="text-align: center; display: flex; flex-direction: column; gap: 4px; margin: 10px 0;">
+          <strong style="color: #fff; font-size: 1.15rem; word-break: break-word;">${player.name}</strong>
+          <span style="font-size: 0.75rem; color: #aaa; font-weight: bold; text-transform: uppercase;">
+            ${player.aptitude?.[0] || "?"} â€¢ OVR ${Math.round(player.rating || player.ovr)} â€¢ ${player.age} anos
+          </span>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 8px; background: rgba(255,255,255,0.01); padding: 10px; border-radius: 10px; border: 1px solid #222; margin-bottom: auto;">
+          <div style="display: flex; justify-content: space-between; font-size: 0.75rem;">
+            <span style="color: #666;">Desenvolvimento:</span>
+            <strong style="color: ${potentialColor};">${potential}</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between; font-size: 0.75rem;">
+            <span style="color: #666;">Ritmo de Jogo:</span>
+            <strong style="color: #fff;">${player.matchesPlayed || 0} jogos (${rhythm}%)</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between; font-size: 0.75rem;">
+            <span style="color: #666;">Nota MÃ©dia:</span>
+            <strong style="color: ${getRatingColor(player.avgRating || 6.0)};">${(player.avgRating || 6.0).toFixed(1)}</strong>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 5px; text-align: left;">
+          <label style="font-size: 0.7rem; color: #555; font-weight: 800; text-transform: uppercase;">Foco do Treinamento</label>
+          <select data-slot="${i}" class="slot-focus-select" style="width: 100%; padding: 8px 10px; background: #1a1a1a; border: 1px solid #333; color: #fff; border-radius: 8px; font-size: 0.85rem; outline: none; cursor: pointer;" ${trainingUsed ? "disabled" : ""}>
+            <option value="Fisico" ${slot.focus === "Fisico" ? "selected" : ""}>ðŸƒâ€â™‚ï¸ FÃ­sico (Sta, Fis, Vel)</option>
+            ${isGK ? `
+              <option value="Goleiro" ${slot.focus === "Goleiro" ? "selected" : ""}>ðŸ§¤ Goleiro (Ref, Pos, Alc)</option>
+            ` : `
+              <option value="Ataque" ${slot.focus === "Ataque" ? "selected" : ""}>âš¡ Ataque (Vel, Fin, Dri)</option>
+              <option value="Meio" ${slot.focus === "Meio" ? "selected" : ""}>ðŸ§  Meio-Campo (Pas, Dri, Fis)</option>
+              <option value="Defesa" ${slot.focus === "Defesa" ? "selected" : ""}>ðŸ›¡ï¸ Defesa (Def, Fis, Sta)</option>
+            `}
+          </select>
+        </div>
+      `;
+    }
+  }
+
+  // Renderizar Tabela
+  const tbody = document.getElementById("trainingRosterBody");
+  if (tbody) {
+    tbody.innerHTML = "";
+    
+    // Ordena do maior OVR para o menor
+    const sortedSquad = [...squad].sort((a, b) => b.rating - a.rating);
+    const maxMatches = Math.max(...squad.map(p => p.matchesPlayed || 0), 1);
+    
+    sortedSquad.forEach(player => {
+      const isGK = player.aptitude && player.aptitude[0] === "GOL";
+      const potential = getEvolutionPotential(player.age);
+      const potentialColor = potential === "Jovem Promessa" ? "var(--warning)" : (potential === "Auge TÃ©cnico" ? "var(--rating-high)" : (potential === "Experiente" ? "#00aaff" : "#888"));
+      
+      const rhythm = Math.round(((player.matchesPlayed || 0) / maxMatches) * 100);
+      const avg = player.avgRating || 6.0;
+      
+      const slotIndex = trainingSlots.findIndex(s => s.playerId === player.id.toString());
+      
+      let actionBtn = "";
+      if (slotIndex !== -1) {
+        actionBtn = `
+          <span style="background: rgba(0, 255, 136, 0.1); color: var(--accent); border: 1px solid rgba(0, 255, 136, 0.3); padding: 5px 10px; border-radius: 8px; font-size: 0.7rem; font-weight: bold; text-transform: uppercase;">
+            Slot 0${slotIndex + 1}
+          </span>
+        `;
+      } else if (trainingUsed) {
+        actionBtn = `
+          <button class="btn-secondary" style="padding: 5px 10px; font-size: 0.7rem; cursor: not-allowed; opacity: 0.4; margin: 0; width: auto;" disabled>
+            Treinar
+          </button>
+        `;
+      } else {
+        actionBtn = `
+          <button class="btn-primary quick-train-btn" data-player-id="${player.id}" style="padding: 5px 10px; font-size: 0.7rem; margin: 0; width: auto; background: var(--accent); color: #000;">
+            Treinar
+          </button>
+        `;
+      }
+
+      const tr = document.createElement("tr");
+      tr.style.cssText = "border-bottom: 1px solid #222; transition: background 0.2s;";
+      tr.onmouseover = () => tr.style.background = "rgba(255,255,255,0.01)";
+      tr.onmouseout = () => tr.style.background = "transparent";
+      
+      tr.innerHTML = `
+        <td style="text-align: left; padding: 12px; font-weight: bold; color: #fff;">${player.name}</td>
+        <td><span style="font-weight: 800; color: #aaa;">${player.aptitude?.[0] || "?"}</span></td>
+        <td>${player.age} anos</td>
+        <td><strong style="color: ${getRatingColor(player.rating || player.ovr)}; font-size: 1rem;">${Math.round(player.rating || player.ovr)}</strong></td>
+        <td>${player.matchesPlayed || 0} jogos <span style="font-size: 0.7rem; color: #666; margin-left: 4px;">(${rhythm}%)</span></td>
+        <td><strong style="color: ${getRatingColor(avg)};">${avg.toFixed(1)}</strong></td>
+        <td><span style="color: ${potentialColor}; font-weight: bold; font-size: 0.75rem;">${potential.toUpperCase()}</span></td>
+        <td>${actionBtn}</td>
+      `;
+      tbody.appendChild(tr);
+    });
+  }
+
+  // Event Listeners
+  if (!trainingUsed) {
+    // Escalar Jogador
+    document.querySelectorAll(".slot-player-select").forEach(el => {
+      el.addEventListener("change", (e) => {
+        const slotIdx = parseInt(e.target.dataset.slot, 10);
+        trainingSlots[slotIdx].playerId = e.target.value || null;
+        trainingSlots[slotIdx].focus = "Fisico"; // Reset do foco
+        renderTraining();
+      });
+    });
+
+    // Mudar Foco
+    document.querySelectorAll(".slot-focus-select").forEach(el => {
+      el.addEventListener("change", (e) => {
+        const slotIdx = parseInt(e.target.dataset.slot, 10);
+        trainingSlots[slotIdx].focus = e.target.value;
+      });
+    });
+
+    // Remover Jogador
+    document.querySelectorAll(".slot-remove-btn").forEach(el => {
+      el.addEventListener("click", (e) => {
+        const slotIdx = parseInt(e.target.dataset.slot, 10);
+        trainingSlots[slotIdx].playerId = null;
+        renderTraining();
+      });
+    });
+
+    // Quick train Roster button
+    document.querySelectorAll(".quick-train-btn").forEach(el => {
+      el.addEventListener("click", (e) => {
+        const playerId = e.target.dataset.playerId;
+        const firstEmptySlot = trainingSlots.findIndex(s => !s.playerId);
+        if (firstEmptySlot !== -1) {
+          trainingSlots[firstEmptySlot].playerId = playerId;
+          trainingSlots[firstEmptySlot].focus = "Fisico";
+          renderTraining();
+        } else {
+          showCustomModal("Todos os 3 slots de treinamento jÃ¡ estÃ£o ocupados!", "alert", "btn-secondary");
+        }
+      });
+    });
+  }
+
+  // Executar Treino
+  const runButton = document.getElementById("runTrainingBtn");
+  if (runButton && !trainingUsed) {
+    runButton.onclick = async () => {
+      const selectedSlots = trainingSlots.filter(s => s.playerId);
+      if (selectedSlots.length === 0) {
+        showCustomModal("Por favor, selecione pelo menos um jogador para treinar!", "alert", "btn-secondary");
+        return;
+      }
+
+      const proceed = await showCustomModal(
+        `Deseja iniciar a sessÃ£o semanal de treinos para os <strong>${selectedSlots.length}</strong> atletas escalados?<br><br><small style="color: #aaa;">Isso consumirÃ¡ a sessÃ£o desta semana.</small>`,
+        "confirm",
+        "btn-primary"
+      );
+
+      if (proceed) {
+        dbgToast("âš¡ Simulando treinamentos...", "#f59e0b");
+        const logs = runWeeklyTraining(squad, selectedSlots);
+        
+        // Registrar consumo no coach
+        coach.trainingUsed = true;
+        await Storage.saveCoachInfo(coach);
+        await Storage.saveSquad(squad);
+        
+        // Criar modal de resultados extremamente premium
+        let reportHtml = `
+          <div style="text-align: center; max-width: 500px; max-height: 480px; overflow-y: auto; padding-right: 5px;">
+            <div style="font-size: 2.5rem; margin-bottom: 10px;">âš¡</div>
+            <h2 style="color: #fff; margin-bottom: 20px; font-weight: 900; letter-spacing: -0.5px;">BOLETIM DE <span style="color: #f59e0b;">EVOLUÃ‡ÃƒO</span></h2>
+        `;
+
+        if (logs.length === 0) {
+          reportHtml += `
+            <p style="color: #bbb; line-height: 1.6; font-size: 0.95rem; margin-bottom: 20px;">
+              A sessÃ£o de treinos foi concluÃ­da de forma regular. Os atletas trabalharam duro, mas nenhum obteve aumento de atributos significativo nesta rodada.<br><br>
+              <span style="color: #666;">Continue mantendo-os ativos em partidas e sob rotina constante de treinos para aumentar as chances de evoluÃ§Ã£o!</span>
+            </p>
+          `;
+        } else {
+          reportHtml += `
+            <div style="display: flex; flex-direction: column; gap: 15px; text-align: left; margin-bottom: 20px;">
+          `;
+          
+          logs.forEach(log => {
+            const p = squad.find(pl => pl.id === log.playerId);
+            const upgradedStatStrings = log.upgrades.map(u => `
+              <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.02); padding: 6px 12px; border-radius: 8px; font-size: 0.82rem; border: 1px solid rgba(255,255,255,0.03);">
+                <span style="color: #aaa;">${u.label}</span>
+                <span style="font-weight: 800; color: #00ff88;">${u.oldVal} âž” ${u.newVal} <span style="font-size: 0.7rem; margin-left: 2px;">â–²</span></span>
+              </div>
+            `).join("");
+
+            reportHtml += `
+              <div style="background: #111; border: 1px solid var(--border); border-radius: 12px; padding: 15px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #222; padding-bottom: 8px; margin-bottom: 10px;">
+                  <strong style="color: #fff; font-size: 0.95rem;">${log.playerName}</strong>
+                  <span style="background: var(--accent)18; border: 1px solid var(--accent)33; color: var(--accent); padding: 2px 8px; border-radius: 8px; font-size: 0.7rem; font-weight: 900;">
+                    OVR ${Math.round(p.rating || p.ovr)}
+                  </span>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 6px;">
+                  ${upgradedStatStrings}
+                </div>
+              </div>
+            `;
+          });
+
+          reportHtml += `</div>`;
+        }
+
+        reportHtml += `
+            <button id="modalBackBtn" class="btn-primary" style="width: 100%; padding: 12px; border-radius: 8px; font-weight: bold; background: #f59e0b; color: #000; border: none;">CONCLUIR SESSÃƒO</button>
+          </div>
+        `;
+
+        await showCustomModal(reportHtml, "custom");
+        
+        // Limpar slots locais para a prÃ³xima vez
+        trainingSlots.forEach(s => s.playerId = null);
+        
+        // Recarregar tela
+        renderTraining();
+        renderApp();
+      }
+    };
+  }
+
+  if (window.lucide) window.lucide.createIcons();
+}
+
+export async function renderFinances() {
+  const container = document.getElementById("financeView");
+  if (!container) return;
+
+  const coachInfo = await Storage.getCoachInfo();
+  if (!coachInfo) return;
+
+  const budget = coachInfo.budget || 0;
+  const history = (await Storage.getMatchHistory()) || [];
+  const transactions = coachInfo.transactions || [];
+
+  // Agrupa transaÃ§Ãµes por tipo
+  const revenues = transactions.filter(t => t.type === "revenue");
+  const expenses = transactions.filter(t => t.type === "expense");
+  const totalRevenue = revenues.reduce((s, t) => s + (t.amount || 0), 0);
+  const totalExpense = expenses.reduce((s, t) => s + (t.amount || 0), 0);
+  const balance = totalRevenue - totalExpense;
+  const balanceColor = balance >= 0 ? "var(--accent)" : "#ff4444";
+
+  const formatVal = (v) => {
+    const abs = Math.abs(v);
+    if (abs >= 1e9) return `â‚¬${(abs / 1e9).toFixed(2)}B`;
+    if (abs >= 1e6) return `â‚¬${(abs / 1e6).toFixed(2)}M`;
+    if (abs >= 1e3) return `â‚¬${(abs / 1e3).toFixed(1)}K`;
+    return `â‚¬${abs.toFixed(0)}`;
+  };
+
+  const statCard = (label, value, color, icon) => `
+    <div style="background:#111; border:1px solid ${color}33; border-radius:14px; padding:22px 25px; display:flex; flex-direction:column; gap:8px; position:relative; overflow:hidden;">
+      <div style="position:absolute; top:15px; right:18px; opacity:0.08; font-size:3rem;">ðŸ’°</div>
+      <div style="font-size:0.7rem; color:#666; text-transform:uppercase; letter-spacing:2px; font-weight:800;">${label}</div>
+      <div style="font-size:1.9rem; font-weight:900; color:${color}; letter-spacing:-0.5px;">${value}</div>
+    </div>
+  `;
+
+  const txRow = (t) => {
+    const isRev = t.type === "revenue";
+    const color = isRev ? "var(--accent)" : "#ff4444";
+    const sign = isRev ? "+" : "-";
+    return `
+      <div style="display:flex; align-items:center; justify-content:space-between; padding:12px 16px; background:#0d0d0d; border-radius:8px; border:1px solid #1a1a1a; transition: background 0.2s;" onmouseover="this.style.background='#151515'" onmouseout="this.style.background='#0d0d0d'">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <div style="width:8px; height:8px; border-radius:50%; background:${color}; flex-shrink:0;"></div>
+          <div>
+            <div style="font-size:0.9rem; font-weight:600; color:#fff;">${t.desc || "TransaÃ§Ã£o"}</div>
+            <div style="font-size:0.72rem; color:#555; margin-top:2px;">${t.date || ""}</div>
+          </div>
+        </div>
+        <div style="font-size:1rem; font-weight:900; color:${color};">${sign}${formatVal(t.amount || 0)}</div>
+      </div>
+    `;
+  };
+
+  const txList = transactions.length > 0
+    ? [...transactions].reverse().map(txRow).join("")
+    : `<div style="text-align:center; padding:40px; color:#444; font-size:0.9rem;">Nenhuma transaÃ§Ã£o registrada nesta temporada.</div>`;
+
+  container.innerHTML = `
+    <div style="max-width:1100px; margin:0 auto; padding:25px; display:flex; flex-direction:column; gap:24px;">
+
+      <!-- Header -->
+      <div style="display:flex; align-items:center; justify-content:space-between; background:#111; padding:22px 28px; border-radius:16px; border:1px solid var(--border);">
+        <div style="display:flex; align-items:center; gap:14px;">
+          <div style="width:52px; height:52px; background:rgba(34,211,238,0.1); border-radius:50%; display:flex; align-items:center; justify-content:center; border:1px solid #22d3ee44;">
+            <i data-lucide="landmark" style="width:28px; height:28px; color:#22d3ee;"></i>
+          </div>
+          <div>
+            <h1 style="margin:0; font-size:1.8rem; font-weight:900; color:#fff;">FinanÃ§as do Clube</h1>
+            <div style="font-size:0.8rem; color:#555; margin-top:3px; text-transform:uppercase; letter-spacing:1px;">Temporada Atual â€¢ ${coachInfo.teamName || ""}</div>
+          </div>
+        </div>
+        <button onclick="window.switchMainView('dashboard')" style="background:#1a1a1a; border:1px solid #333; color:#888; padding:10px 20px; border-radius:8px; cursor:pointer; font-size:0.8rem; font-weight:700; transition:all 0.2s;" onmouseover="this.style.color='#fff'; this.style.borderColor='#555'" onmouseout="this.style.color='#888'; this.style.borderColor='#333'">â† VOLTAR</button>
+      </div>
+
+      <!-- KPI Cards -->
+      <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:16px;">
+        ${statCard("Saldo Atual", formatVal(budget), "#22d3ee", "wallet")}
+        ${statCard("Receitas da Temporada", formatVal(totalRevenue), "var(--accent)", "trending-up")}
+        ${statCard("Despesas da Temporada", formatVal(totalExpense), "#ff4444", "trending-down")}
+        ${statCard("BalanÃ§o LÃ­quido", (balance >= 0 ? "+" : "") + formatVal(balance), balanceColor, "activity")}
+      </div>
+
+      <!-- GrÃ¡fico de Barra Simples (Receita vs Despesa) -->
+      ${totalRevenue + totalExpense > 0 ? `
+      <div style="background:#111; border:1px solid var(--border); border-radius:14px; padding:22px 25px;">
+        <h3 style="margin:0 0 18px 0; font-size:0.75rem; color:#666; text-transform:uppercase; letter-spacing:2px; font-weight:800;">BalanÃ§o Visual</h3>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <div style="display:flex; align-items:center; gap:12px;">
+            <div style="font-size:0.8rem; color:var(--accent); width:80px; text-align:right; font-weight:700;">RECEITAS</div>
+            <div style="flex:1; background:#1a1a1a; border-radius:6px; height:28px; overflow:hidden;">
+              <div style="height:100%; width:${totalRevenue + totalExpense > 0 ? Math.round((totalRevenue / (totalRevenue + totalExpense)) * 100) : 0}%; background:var(--accent); border-radius:6px; transition:width 0.8s ease; display:flex; align-items:center; padding-left:10px;">
+                <span style="font-size:0.75rem; font-weight:900; color:#000;">${formatVal(totalRevenue)}</span>
+              </div>
+            </div>
+          </div>
+          <div style="display:flex; align-items:center; gap:12px;">
+            <div style="font-size:0.8rem; color:#ff4444; width:80px; text-align:right; font-weight:700;">DESPESAS</div>
+            <div style="flex:1; background:#1a1a1a; border-radius:6px; height:28px; overflow:hidden;">
+              <div style="height:100%; width:${totalRevenue + totalExpense > 0 ? Math.round((totalExpense / (totalRevenue + totalExpense)) * 100) : 0}%; background:#ff4444; border-radius:6px; transition:width 0.8s ease; display:flex; align-items:center; padding-left:10px;">
+                <span style="font-size:0.75rem; font-weight:900; color:#fff;">${formatVal(totalExpense)}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      ` : ""}
+
+      <!-- HistÃ³rico de TransaÃ§Ãµes -->
+      <div style="background:#111; border:1px solid var(--border); border-radius:14px; padding:22px 25px; flex:1;">
+        <h3 style="margin:0 0 16px 0; font-size:0.75rem; color:#666; text-transform:uppercase; letter-spacing:2px; font-weight:800;">HistÃ³rico de MovimentaÃ§Ãµes</h3>
+        <div style="display:flex; flex-direction:column; gap:8px; max-height:360px; overflow-y:auto; padding-right:4px;">
+          ${txList}
+        </div>
+      </div>
+    </div>
+  `;
 
   if (window.lucide) window.lucide.createIcons();
 }

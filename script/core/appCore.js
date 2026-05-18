@@ -235,6 +235,9 @@ export async function applyMatchResults(
       d.setDate(d.getDate() + 7);
       const newMonth = d.getMonth();
       coach.currentDate = d.toISOString().split("T")[0];
+      
+      // Reset da sessão semanal de treinamento
+      coach.trainingUsed = false;
 
       // Se mudou o mês, reduz tempo de contrato de todos os jogadores
       if (oldMonth !== newMonth) {

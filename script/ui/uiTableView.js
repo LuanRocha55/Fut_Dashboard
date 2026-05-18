@@ -233,7 +233,12 @@ export function initTableEvents() {
         tableSortDesc = !tableSortDesc;
       } else {
         tableSortCol = col;
-        tableSortDesc = col === "rating" || col === "age";
+        // Colunas numéricas: maior primeiro. Idade: mais jovem primeiro. Strings: A→Z.
+        const numericDesc = ["rating", "goals", "assists", "avgRating", "fitness", "marketValue", "form"];
+        const numericAsc  = ["age", "pos"];
+        if (numericDesc.includes(col)) tableSortDesc = true;
+        else if (numericAsc.includes(col)) tableSortDesc = false;
+        else tableSortDesc = false; // strings: A→Z
       }
       renderTable();
     });

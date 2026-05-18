@@ -70,6 +70,9 @@ export async function setupEventListeners() {
     .getElementById("navTableBtn")
     ?.addEventListener("click", () => switchMainView("table"));
   document
+    .getElementById("navTrainingBtn")
+    ?.addEventListener("click", () => switchMainView("training"));
+  document
     .getElementById("headerHomeBtn")
     ?.addEventListener("click", () => showScreen("mainMenuScreen"));
 
@@ -82,6 +85,12 @@ export async function setupEventListeners() {
   document
     .getElementById("dashToTransferBtn")
     ?.addEventListener("click", () => switchMainView("transfer"));
+  document
+    .getElementById("dashToTrainingBtn")
+    ?.addEventListener("click", () => switchMainView("training"));
+  document
+    .getElementById("dashToFinanceBtn")
+    ?.addEventListener("click", () => switchMainView("finance"));
 
   document.getElementById("dashToLeagueBtn")?.addEventListener("click", () => {
     switchMainView("league");

@@ -35,7 +35,15 @@ import {
   calculateMatchPowers,
 } from "./simTactics.js";
 import { loadBadgesLazy, loadLeagueLogosLazy } from "../ui/teams.js";
+import { getFIFAEvent, generateFIFAMatches } from "../core/fifaCalendar.js";
 export async function openMatchSimulation() {
+  const coachInfo = await Storage.getCoachInfo();
+  const fifaEvent = getFIFAEvent(coachInfo?.currentDate, coachInfo?.calendarType || "europe");
+  if (fifaEvent) {
+    openFIFAMatchSimulation(fifaEvent, coachInfo);
+    return;
+  }
+
   const titulares = squad.filter((p) => p.status === "titular");
   if (titulares.length < 11) {
     showCustomModal(
@@ -90,7 +98,6 @@ export async function openMatchSimulation() {
   let homePossession = 50;
   let currentReferee = getRandomReferee();
 
-  const coachInfo = await Storage.getCoachInfo();
   let currentPlaystyle = (coachInfo && coachInfo.playstyle) || "possession";
 
   const updateTacticButtons = () => {
@@ -1873,4 +1880,561 @@ export async function openMatchSimulation() {
   // Inicialização Visual
   renderMiniPitch();
   updateStatsUI();
+}
+
+export async function openFIFAMatchSimulation(fifaEvent, coachInfo) {
+  const isTournament = fifaEvent.type === "tournament";
+  const userNationalTeam = coachInfo.nationalTeam || null; // ex: "Brasil"
+  
+  // Criar overlay principal
+  const overlay = document.createElement("div");
+  overlay.id = "fifaSimOverlay";
+  overlay.style.cssText = `
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(15, 23, 42, 0.98);
+    backdrop-filter: blur(12px);
+    z-index: 11000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    padding: 30px;
+    box-sizing: border-box;
+  `;
+  
+  // Inicializa dados das rodadas/torneio
+  const matchesData = generateFIFAMatches(fifaEvent.type);
+  let currentRoundIdx = 0; // Para datas curtas (0 e 1)
+  let currentPhaseIdx = 0; // Para torneios (0: Oitavas, 1: Quartas, 2: Semi, 3: Final)
+  
+  // Lista de resultados simulados acumulados para exibir no final
+  const simulationHistory = [];
+
+  const container = document.createElement("div");
+  container.style.cssText = `
+    width: 100%;
+    max-width: 850px;
+    background: #0f0f0f;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255,255,255,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  `;
+  overlay.appendChild(container);
+  document.body.appendChild(overlay);
+
+  // Função para simular partida única
+  function simulateSingleMatch(home, away) {
+    const potencies = {
+      "Brasil": 88, "França": 88, "Argentina": 87, "Inglaterra": 86,
+      "Alemanha": 85, "Espanha": 86, "Portugal": 85, "Itália": 83,
+      "Holanda": 84, "Bélgica": 83, "Uruguai": 83, "Colômbia": 82,
+      "Croácia": 81, "Marrocos": 81, "Senegal": 80, "Japão": 80
+    };
+    const powerHome = potencies[home] || 78;
+    const powerAway = potencies[away] || 78;
+    const diff = powerHome - powerAway;
+    const lambdaHome = Math.max(0.5, 1.4 + diff * 0.05 + Math.random() * 0.4);
+    const lambdaAway = Math.max(0.5, 1.2 - diff * 0.05 + Math.random() * 0.4);
+    
+    let homeScore = Math.floor(Math.random() * (lambdaHome + 1.3));
+    let awayScore = Math.floor(Math.random() * (lambdaAway + 1.3));
+    
+    let penalties = null;
+    if (isTournament && homeScore === awayScore) {
+      const homePen = Math.floor(Math.random() * 3) + 3;
+      let awayPen = Math.floor(Math.random() * 3) + 3;
+      while (awayPen === homePen) {
+        awayPen = Math.floor(Math.random() * 3) + 3;
+      }
+      penalties = { home: homePen, away: awayPen };
+    }
+    
+    const getGoalEvents = (team, score) => {
+      const teamSquad = {
+        "Brasil": ['Vinicius Jr', 'Rodrygo', 'Neymar', 'Raphinha', 'Endrick', 'Bruno Guimarães'],
+        "Argentina": ['Messi', 'Lautaro Martínez', 'Julián Álvarez', 'De Paul', 'Mac Allister'],
+        "França": ['Mbappé', 'Griezmann', 'Giroud', 'Dembélé', 'Tchouaméni'],
+        "Inglaterra": ['Kane', 'Saka', 'Bellingham', 'Foden', 'Palmer'],
+        "Alemanha": ['Musiala', 'Wirtz', 'Havertz', 'Füllkrug', 'Gündogan'],
+        "Espanha": ['Morata', 'Dani Olmo', 'Yamal', 'Nico Williams', 'Pedri'],
+        "Portugal": ['Cristiano Ronaldo', 'Bruno Fernandes', 'Bernardo Silva', 'João Félix', 'Rafael Leão'],
+        "Itália": ['Chiesa', 'Retegui', 'Barella', 'Pellegrini', 'Scamacca'],
+        "Holanda": ['Depay', 'Gakpo', 'Xavi Simons', 'De Jong', 'Malen'],
+        "Bélgica": ['Lukaku', 'De Bruyne', 'Doku', 'Trossard', 'Tielemans'],
+        "Uruguai": ['Darwin Núñez', 'Suárez', 'Valverde', 'De la Cruz', 'Pellistri'],
+        "Colômbia": ['Luis Díaz', 'James Rodríguez', 'Borré', 'Arias', 'Lerma'],
+        "Croácia": ['Modric', 'Kramaric', 'Perisic', 'Kovacic', 'Pasalic'],
+        "Marrocos": ['En-Nesyri', 'Ziyech', 'Hakimi', 'Ounahi', 'Amrabat'],
+        "Senegal": ['Mané', 'Jackson', 'Sarr', 'Gueye', 'Mendy'],
+        "Japão": ['Mitoma', 'Minamino', 'Kubo', 'Endo', 'Doan']
+      };
+      const players = teamSquad[team] || ['Atleta ' + team];
+      const list = [];
+      for (let i = 0; i < score; i++) {
+        const scorer = players[Math.floor(Math.random() * players.length)];
+        const min = Math.floor(Math.random() * 90) + 1;
+        list.push({ scorer, min });
+      }
+      list.sort((a, b) => a.min - b.min);
+      return list;
+    };
+    
+    return {
+      homeScore,
+      awayScore,
+      homeGoals: getGoalEvents(home, homeScore),
+      awayGoals: getGoalEvents(away, awayScore),
+      penalties
+    };
+  }
+
+  // Renderiza o cabeçalho
+  function renderHeader() {
+    container.innerHTML = `
+      <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid rgba(245, 158, 11, 0.2); padding-bottom: 15px; margin-bottom: 10px;">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <div style="width: 50px; height: 50px; background: rgba(245,158,11,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid var(--accent); color: var(--accent);">
+            <i data-lucide="globe" style="width: 28px; height: 28px;"></i>
+          </div>
+          <div>
+            <h2 style="margin: 0; font-size: 1.6rem; color: #fff; font-weight: 800; letter-spacing: 0.5px;">DATA FIFA &bull; SELEÇÕES</h2>
+            <div style="font-size: 0.85rem; color: var(--accent); margin-top: 3px; font-weight: bold; text-transform: uppercase;">
+              ${fifaEvent.name}
+            </div>
+          </div>
+        </div>
+        <div style="text-align: right;">
+          <div style="font-size: 0.75rem; color: #888;">TEMPORADA ATUAL</div>
+          <div style="font-size: 1.1rem; font-weight: bold; color: #fff;">${coachInfo.currentDate.split("-")[0]}</div>
+        </div>
+      </div>
+      <p style="color: #bbb; font-size: 0.9rem; line-height: 1.5; margin: 0;">
+        ${fifaEvent.desc}
+      </p>
+    `;
+  }
+
+  // Desenha a visualização de simulação geral por rodadas
+  async function showSpectatorSimulation() {
+    renderHeader();
+    
+    const activeRoundName = isTournament 
+      ? matchesData[currentPhaseIdx].name 
+      : `Rodada ${currentRoundIdx + 1} de 2`;
+      
+    const activeMatches = isTournament 
+      ? matchesData[currentPhaseIdx].matches 
+      : matchesData[currentRoundIdx];
+
+    const roundTitle = document.createElement("h3");
+    roundTitle.style.cssText = "color: var(--accent); margin: 15px 0 5px 0; font-size: 1.1rem; text-transform: uppercase; font-weight: 800;";
+    roundTitle.innerText = activeRoundName;
+    container.appendChild(roundTitle);
+
+    const matchesList = document.createElement("div");
+    matchesList.style.cssText = "display: flex; flex-direction: column; gap: 10px; max-height: 380px; overflow-y: auto; padding-right: 5px;";
+    container.appendChild(matchesList);
+
+    // Desenhar cards vazios dos jogos da rodada
+    activeMatches.forEach((m, idx) => {
+      const matchEl = document.createElement("div");
+      matchEl.id = `spectator-match-${idx}`;
+      matchEl.style.cssText = `
+        background: #151515;
+        border: 1px solid rgba(255,255,255,0.05);
+        border-radius: 8px;
+        padding: 12px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.3s ease;
+      `;
+      matchEl.innerHTML = `
+        <div style="flex: 1; text-align: right; font-weight: bold; font-size: 0.95rem;">${m.home}</div>
+        <div id="score-${idx}" style="margin: 0 25px; color: var(--accent); font-weight: 900; font-size: 1.1rem; min-width: 70px; text-align: center;">VS</div>
+        <div style="flex: 1; text-align: left; font-weight: bold; font-size: 0.95rem;">${m.away}</div>
+      `;
+      matchesList.appendChild(matchEl);
+    });
+
+    const actionArea = document.createElement("div");
+    actionArea.style.cssText = "display: flex; justify-content: flex-end; margin-top: 15px;";
+    
+    const simBtn = document.createElement("button");
+    simBtn.className = "btn-warning";
+    simBtn.style.cssText = "padding: 14px 28px; font-weight: bold; border-radius: 8px; cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px;";
+    simBtn.innerText = "Simular Confrontos ➔";
+    actionArea.appendChild(simBtn);
+    container.appendChild(actionArea);
+
+    if (window.lucide) window.lucide.createIcons();
+
+    simBtn.onclick = async () => {
+      simBtn.disabled = true;
+      simBtn.innerText = "Simulando Rodada...";
+      
+      // Simulação progressiva animada de minutos
+      const stepScores = activeMatches.map(m => simulateSingleMatch(m.home, m.away));
+      
+      for (let min = 10; min <= 90; min += 20) {
+        activeMatches.forEach((m, idx) => {
+          const score = stepScores[idx];
+          const scoreEl = document.getElementById(`score-${idx}`);
+          const currentHomeScore = score.homeGoals.filter(g => g.min <= min).length;
+          const currentAwayScore = score.awayGoals.filter(g => g.min <= min).length;
+          
+          scoreEl.innerHTML = `<span style="color:#aaa; font-size:0.8rem; font-weight:normal; margin-right:5px;">${min}'</span> <strong>${currentHomeScore}</strong> - <strong>${currentAwayScore}</strong>`;
+        });
+        await new Promise(resolve => setTimeout(resolve, 300));
+      }
+
+      // Mostra o resultado final definitivo com detalhes e goleadores
+      activeMatches.forEach((m, idx) => {
+        const score = stepScores[idx];
+        m.played = true;
+        m.score = score;
+        
+        const scoreEl = document.getElementById(`score-${idx}`);
+        const cardEl = document.getElementById(`spectator-match-${idx}`);
+        cardEl.style.borderColor = "rgba(245, 158, 11, 0.4)";
+        
+        let scoreStr = `<strong>${score.homeScore}</strong> - <strong>${score.awayScore}</strong>`;
+        if (score.penalties) {
+          scoreStr = `<strong>${score.homeScore}</strong> (${score.penalties.home}) - (${score.penalties.away}) <strong>${score.awayScore}</strong>`;
+          m.winner = score.penalties.home > score.penalties.away ? m.home : m.away;
+        } else {
+          m.winner = score.homeScore > score.awayScore ? m.home : (score.awayScore > score.homeScore ? m.away : null);
+        }
+
+        scoreEl.innerHTML = scoreStr;
+        
+        const details = document.createElement("div");
+        details.style.cssText = "width: 100%; display: flex; justify-content: space-between; font-size: 0.75rem; color: #888; margin-top: 8px; border-top: 1px dashed rgba(255,255,255,0.05); padding-top: 5px;";
+        
+        const homeScorersText = score.homeGoals.map(g => `${g.scorer} ${g.min}'`).join(", ") || "-";
+        const awayScorersText = score.awayGoals.map(g => `${g.scorer} ${g.min}'`).join(", ") || "-";
+        
+        details.innerHTML = `
+          <div style="flex: 1; text-align: right; padding-right: 10px;">${homeScorersText}</div>
+          <div style="width: 70px;"></div>
+          <div style="flex: 1; text-align: left; padding-left: 10px;">${awayScorersText}</div>
+        `;
+        cardEl.style.flexDirection = "column";
+        const row = document.createElement("div");
+        row.style.cssText = "width: 100%; display: flex; justify-content: space-between; align-items: center;";
+        row.innerHTML = `
+          <div style="flex: 1; text-align: right; font-weight: bold;">${m.home}</div>
+          <div style="margin: 0 25px; color: var(--accent); font-weight: 900; font-size: 1.1rem; min-width: 70px; text-align: center;">${scoreStr}</div>
+          <div style="flex: 1; text-align: left; font-weight: bold;">${m.away}</div>
+        `;
+        cardEl.innerHTML = "";
+        cardEl.appendChild(row);
+        cardEl.appendChild(details);
+        
+        simulationHistory.push({
+          phaseName: activeRoundName,
+          home: m.home,
+          away: m.away,
+          scoreText: `${score.homeScore} x ${score.awayScore}` + (score.penalties ? ` (Pen: ${score.penalties.home}-${score.penalties.away})` : "")
+        });
+      });
+
+      simBtn.style.display = "none";
+      const nextBtn = document.createElement("button");
+      nextBtn.className = "btn-primary";
+      nextBtn.style.cssText = "padding: 14px 28px; font-weight: bold; border-radius: 8px; cursor: pointer; text-transform: uppercase;";
+      
+      if (isTournament) {
+        if (currentPhaseIdx < 3) {
+          nextBtn.innerText = "Avançar de Fase ➔";
+          nextBtn.onclick = () => {
+            const currentPhase = matchesData[currentPhaseIdx];
+            const nextPhase = matchesData[currentPhaseIdx + 1];
+            for (let i = 0; i < nextPhase.matches.length; i++) {
+              const match1 = currentPhase.matches[i * 2];
+              const match2 = currentPhase.matches[i * 2 + 1];
+              nextPhase.matches[i].home = match1.winner;
+              nextPhase.matches[i].away = match2.winner;
+            }
+            currentPhaseIdx++;
+            showSpectatorSimulation();
+          };
+        } else {
+          nextBtn.innerText = "Concluir Copa de Seleções 🏆";
+          nextBtn.onclick = finishFIFADate;
+        }
+      } else {
+        if (currentRoundIdx < 1) {
+          nextBtn.innerText = "Ir para a Rodada 2 ➔";
+          nextBtn.onclick = () => {
+            currentRoundIdx++;
+            showSpectatorSimulation();
+          };
+        } else {
+          nextBtn.innerText = "Concluir Data FIFA ➔";
+          nextBtn.onclick = finishFIFADate;
+        }
+      }
+      actionArea.appendChild(nextBtn);
+    };
+  }
+
+  // Desenha a visualização detalhada focada nos comandados do Treinador
+  async function showCoachSimulation() {
+    renderHeader();
+    
+    const activeRoundName = isTournament 
+      ? matchesData[currentPhaseIdx].name 
+      : `Rodada ${currentRoundIdx + 1} de 2`;
+      
+    const activeMatches = isTournament 
+      ? matchesData[currentPhaseIdx].matches 
+      : matchesData[currentRoundIdx];
+
+    let userMatchIdx = activeMatches.findIndex(m => m.home === userNationalTeam || m.away === userNationalTeam);
+    let userMatch = activeMatches[userMatchIdx];
+    
+    if (userMatchIdx === -1) {
+      const specMsg = document.createElement("div");
+      specMsg.style.cssText = "background: rgba(255, 68, 68, 0.1); border: 1px solid rgba(255, 68, 68, 0.3); border-radius: 8px; padding: 12px; text-align: center; color: #ff6666; font-size: 0.85rem; font-weight: bold;";
+      specMsg.innerText = `Sua seleção (${userNationalTeam}) não está disputando esta fase (${activeRoundName}). Acompanhe os outros confrontos abaixo!`;
+      container.appendChild(specMsg);
+      
+      await new Promise(resolve => setTimeout(resolve, 1500));
+      showSpectatorSimulation();
+      return;
+    }
+
+    const panelGrid = document.createElement("div");
+    panelGrid.style.cssText = "display: grid; grid-template-columns: 3fr 2fr; gap: 20px; margin-top: 10px;";
+    container.appendChild(panelGrid);
+
+    const leftPanel = document.createElement("div");
+    leftPanel.style.cssText = "background: #111; border: 1px solid rgba(245, 158, 11, 0.2); border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 15px;";
+    panelGrid.appendChild(leftPanel);
+
+    leftPanel.innerHTML = `
+      <h3 style="color: var(--accent); margin: 0; font-size: 1.1rem; text-transform: uppercase; font-weight: 800; text-align: center; border-bottom: 1px solid #222; padding-bottom: 8px;">
+        SEU CONFRONTO &bull; ${activeRoundName}
+      </h3>
+      <div style="display: flex; justify-content: space-between; align-items: center; padding: 15px 0;">
+        <div style="flex: 1; text-align: center;">
+          <div style="font-size: 2.2rem; margin-bottom: 5px;">🌍</div>
+          <div style="font-weight: bold; font-size: 1.1rem; color: ${userMatch.home === userNationalTeam ? 'var(--accent)' : '#fff'};">${userMatch.home}</div>
+        </div>
+        <div id="coachScoreEl" style="font-size: 1.8rem; font-weight: 900; color: var(--warning); min-width: 100px; text-align: center;">VS</div>
+        <div style="flex: 1; text-align: center;">
+          <div style="font-size: 2.2rem; margin-bottom: 5px;">🌍</div>
+          <div style="font-weight: bold; font-size: 1.1rem; color: ${userMatch.away === userNationalTeam ? 'var(--accent)' : '#fff'};">${userMatch.away}</div>
+        </div>
+      </div>
+      <div id="coachLogEl" style="background:#090909; border:1px solid #222; border-radius:8px; height:120px; overflow-y:auto; padding:12px; font-size:0.85rem; color:#ccc; display:flex; flex-direction:column; gap:5px; line-height:1.4;">
+        <div style="color: #666; text-align: center; margin-top: 35px;">Aguardando início do apito inicial...</div>
+      </div>
+    `;
+
+    const rightPanel = document.createElement("div");
+    rightPanel.style.cssText = "background: #0d0d0d; border: 1px solid rgba(255,255,255,0.05); border-radius: 12px; padding: 15px; display: flex; flex-direction: column; gap: 10px;";
+    panelGrid.appendChild(rightPanel);
+
+    rightPanel.innerHTML = `<h4 style="margin:0 0 5px 0; color:#888; font-size:0.8rem; text-transform:uppercase; font-weight:bold; border-bottom: 1px solid #222; padding-bottom: 5px;">OUTROS CONFRONTOS</h4>`;
+    
+    const rightMatchesList = document.createElement("div");
+    rightMatchesList.style.cssText = "display: flex; flex-direction: column; gap: 8px; max-height: 260px; overflow-y: auto;";
+    rightPanel.appendChild(rightMatchesList);
+
+    activeMatches.forEach((m, idx) => {
+      if (idx === userMatchIdx) return;
+      const matchEl = document.createElement("div");
+      matchEl.style.cssText = "background: #151515; border-radius: 6px; padding: 8px 12px; display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: bold;";
+      matchEl.innerHTML = `
+        <span style="flex: 1; text-align: right; padding-right: 5px;">${m.home}</span>
+        <span id="aside-score-${idx}" style="color: var(--accent); min-width: 40px; text-align: center;">VS</span>
+        <span style="flex: 1; text-align: left; padding-left: 5px;">${m.away}</span>
+      `;
+      rightMatchesList.appendChild(matchEl);
+    });
+
+    const actionArea = document.createElement("div");
+    actionArea.style.cssText = "display: flex; justify-content: flex-end; margin-top: 15px;";
+    const simBtn = document.createElement("button");
+    simBtn.className = "btn-warning";
+    simBtn.style.cssText = "padding: 14px 28px; font-weight: bold; border-radius: 8px; cursor: pointer; text-transform: uppercase;";
+    simBtn.innerText = "Comandar Seleção na Rodada ➔";
+    actionArea.appendChild(simBtn);
+    container.appendChild(actionArea);
+
+    simBtn.onclick = async () => {
+      simBtn.disabled = true;
+      simBtn.innerText = "Simulando Jogos...";
+      
+      const coachLogEl = document.getElementById("coachLogEl");
+      coachLogEl.innerHTML = `<div>⚽ <strong>0' Apita o árbitro! Começa a partida decisiva!</strong></div>`;
+      
+      const results = activeMatches.map(m => simulateSingleMatch(m.home, m.away));
+      const userRes = results[userMatchIdx];
+
+      const events = [];
+      userRes.homeGoals.forEach(g => {
+        events.push({ min: g.min, text: `⚽ <strong>GOOOL do ${userMatch.home}!</strong> ${g.scorer} balança as redes de forma genial aos ${g.min} minutos!`, type: "goal" });
+      });
+      userRes.awayGoals.forEach(g => {
+        events.push({ min: g.min, text: `⚽ <strong>GOOOL do ${userMatch.away}!</strong> ${g.scorer} desfere um chute indefensável aos ${g.min} minutos!`, type: "goal" });
+      });
+      
+      const randomMinutes = [12, 28, 42, 57, 68, 79, 86].sort(() => 0.5 - Math.random()).slice(0, 3);
+      const narratives = [
+        "Chute perigoso para fora! A zaga respira aliviada.",
+        "Cartão amarelo aplicado após falta dura no meio-campo.",
+        "Excelente defesa do goleiro espalmando para escanteio!",
+        "Substituição tática: renovando as energias no campo."
+      ];
+      randomMinutes.forEach((m, i) => {
+        events.push({ min: m, text: `⏱️ ${m}' &bull; ${narratives[i % narratives.length]}`, type: "neutral" });
+      });
+
+      events.sort((a, b) => a.min - b.min);
+
+      for (let min = 10; min <= 90; min += 10) {
+        const activeEvents = events.filter(e => e.min <= min);
+        coachLogEl.innerHTML = activeEvents.map(e => `<div>${e.text}</div>`).join("");
+        coachLogEl.innerHTML += `<div style="color:var(--accent); font-weight:bold; text-align:center; padding:5px 0;">--- ANDAMENTO: ${min} MINUTOS ---</div>`;
+        coachLogEl.scrollTop = coachLogEl.scrollHeight;
+
+        const currentHomeScore = userRes.homeGoals.filter(g => g.min <= min).length;
+        const currentAwayScore = userRes.awayGoals.filter(g => g.min <= min).length;
+        document.getElementById("coachScoreEl").innerHTML = `<strong>${currentHomeScore}</strong> - <strong>${currentAwayScore}</strong>`;
+
+        activeMatches.forEach((m, idx) => {
+          if (idx === userMatchIdx) return;
+          const res = results[idx];
+          const curH = res.homeGoals.filter(g => g.min <= min).length;
+          const curA = res.awayGoals.filter(g => g.min <= min).length;
+          document.getElementById(`aside-score-${idx}`).innerText = `${curH} - ${curA}`;
+        });
+
+        await new Promise(resolve => setTimeout(resolve, 300));
+      }
+
+      coachLogEl.innerHTML += `<div style="color:var(--warning); font-weight:bold; text-align:center; padding:10px 0;">🎉 FIM DE JOGO! Partida finalizada com sucesso!</div>`;
+      coachLogEl.scrollTop = coachLogEl.scrollHeight;
+      
+      let finalScoreText = `<strong>${userRes.homeScore}</strong> - <strong>${userRes.awayScore}</strong>`;
+      if (userRes.penalties) {
+        finalScoreText = `<strong>${userRes.homeScore}</strong> (${userRes.penalties.home}) - (${userRes.penalties.away}) <strong>${userRes.awayScore}</strong>`;
+      }
+      document.getElementById("coachScoreEl").innerHTML = finalScoreText;
+
+      activeMatches.forEach((m, idx) => {
+        const score = results[idx];
+        m.played = true;
+        m.score = score;
+        
+        if (score.penalties) {
+          m.winner = score.penalties.home > score.penalties.away ? m.home : m.away;
+        } else {
+          m.winner = score.homeScore > score.awayScore ? m.home : (score.awayScore > score.homeScore ? m.away : null);
+        }
+
+        simulationHistory.push({
+          phaseName: activeRoundName,
+          home: m.home,
+          away: m.away,
+          scoreText: `${score.homeScore} x ${score.awayScore}` + (score.penalties ? ` (Pen: ${score.penalties.home}-${score.penalties.away})` : "")
+        });
+      });
+
+      simBtn.style.display = "none";
+      const nextBtn = document.createElement("button");
+      nextBtn.className = "btn-primary";
+      nextBtn.style.cssText = "padding: 14px 28px; font-weight: bold; border-radius: 8px; cursor: pointer; text-transform: uppercase;";
+      
+      if (isTournament) {
+        if (currentPhaseIdx < 3) {
+          nextBtn.innerText = "Avançar de Fase ➔";
+          nextBtn.onclick = () => {
+            const currentPhase = matchesData[currentPhaseIdx];
+            const nextPhase = matchesData[currentPhaseIdx + 1];
+            for (let i = 0; i < nextPhase.matches.length; i++) {
+              const match1 = currentPhase.matches[i * 2];
+              const match2 = currentPhase.matches[i * 2 + 1];
+              nextPhase.matches[i].home = match1.winner;
+              nextPhase.matches[i].away = match2.winner;
+            }
+            currentPhaseIdx++;
+            showCoachSimulation();
+          };
+        } else {
+          nextBtn.innerText = "Concluir Copa de Seleções 🏆";
+          nextBtn.onclick = finishFIFADate;
+        }
+      } else {
+        if (currentRoundIdx < 1) {
+          nextBtn.innerText = "Ir para a Rodada 2 ➔";
+          nextBtn.onclick = () => {
+            currentRoundIdx++;
+            showCoachSimulation();
+          };
+        } else {
+          nextBtn.innerText = "Concluir Data FIFA ➔";
+          nextBtn.onclick = finishFIFADate;
+        }
+      }
+      actionArea.appendChild(nextBtn);
+    };
+  }
+
+  // Executa o avanço e fecha o overlay da Data FIFA
+  async function finishFIFADate() {
+    renderHeader();
+    container.innerHTML += `<div style="text-align:center; padding: 20px; color:#888;"><span style="font-size:1.5rem;">⚙️</span><br>Processando resultados finais de seleções e regenerando atletas...</div>`;
+    
+    const d = new Date(coachInfo.currentDate);
+    const advanceDays = isTournament ? 21 : 7;
+    d.setDate(d.getDate() + advanceDays);
+    coachInfo.currentDate = d.toISOString().split("T")[0];
+    
+    coachInfo.trainingUsed = false;
+    await Storage.saveCoachInfo(coachInfo);
+    
+    const history = (await Storage.getMatchHistory()) || [];
+    simulationHistory.forEach(item => {
+      history.push({
+        oppTeam: item.away,
+        score: item.scoreText,
+        result: "FIFA",
+        date: coachInfo.currentDate.split("-").reverse().join("/"),
+        compType: isTournament ? "continental" : "league",
+        timestamp: Date.now() + Math.random()
+      });
+    });
+    await Storage.saveMatchHistory(history.slice(-50));
+
+    overlay.remove();
+    
+    showCustomModal(
+      `<h3>Período de Seleções Finalizado!</h3>Os jogos internacionais foram simulados com sucesso. Seu elenco profissional retornou ao clube em plenas condições de jogo para a sequência da temporada.`,
+      "alert",
+      "btn-primary"
+    );
+
+    const { updateDashboardCoach } = await import("../ui/render.js");
+    updateDashboardCoach(coachInfo);
+  }
+
+  if (userNationalTeam) {
+    showCoachSimulation();
+  } else {
+    showSpectatorSimulation();
+  }
 }

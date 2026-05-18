@@ -184,6 +184,24 @@ export const Storage = {
     await del(await this.k("coachInfo"));
   },
 
+  async getInbox() {
+    return (await get(await this.k("inboxMessages"))) || [];
+  },
+  async saveInbox(messages) {
+    await set(await this.k("inboxMessages"), messages);
+  },
+  async appendInboxMessage(msg) {
+    const inbox = await this.getInbox();
+    // Evita duplicatas pelo mesmo id no mesmo dia
+    const today = new Date().toISOString().split("T")[0];
+    const alreadyExists = inbox.some(m => m.id === msg.id && m.savedDate === today);
+    if (alreadyExists) return;
+    inbox.push({ ...msg, savedDate: today, timestamp: Date.now(), archived: false });
+    // Mantém no máximo 100 mensagens
+    if (inbox.length > 100) inbox.splice(0, inbox.length - 100);
+    await this.saveInbox(inbox);
+  },
+
   // --- CACHE DE ESCUDOS (BADGES) ---
   async getBadgeFromCache(name) {
     const cache = (await get("fut_badge_cache")) || {};

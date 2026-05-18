@@ -1,6 +1,8 @@
 import {
   renderApp,
   renderTeamStats,
+  renderTraining,
+  renderFinances,
 } from "./render.js";
 import {
   setTableView,
@@ -20,6 +22,8 @@ export function switchMainView(viewName) {
   const inbox = document.getElementById("inboxView");
   const playerDetail = document.getElementById("playerDetailView");
   const negotiation = document.getElementById("negotiationView");
+  const training = document.getElementById("trainingView");
+  const finance = document.getElementById("financeView");
   const bench = document.querySelector(".bottom-bench");
   const sidebar = document.getElementById("sidebar");
   const globalHeader = document.querySelector(".main-wrapper header");
@@ -36,6 +40,8 @@ export function switchMainView(viewName) {
   if (inbox) inbox.style.display = "none";
   if (playerDetail) playerDetail.style.display = "none";
   if (negotiation) negotiation.style.display = "none";
+  if (training) training.style.display = "none";
+  if (finance) finance.style.display = "none";
   if (globalHeader) globalHeader.style.display = "flex";
   if (mainContent) {
     mainContent.style.overflowY = "auto";
@@ -46,10 +52,12 @@ export function switchMainView(viewName) {
   const navPitch = document.getElementById("navPitchBtn");
   const navTable = document.getElementById("navTableBtn");
   const navTransfer = document.getElementById("navTransferBtn");
+  const navTraining = document.getElementById("navTrainingBtn");
 
   if (navPitch) navPitch.className = "btn-secondary";
   if (navTable) navTable.className = "btn-secondary";
   if (navTransfer) navTransfer.className = "btn-secondary";
+  if (navTraining) navTraining.className = "btn-secondary";
 
   if (viewName === "simulation") {
     if (sidebar) sidebar.style.display = "none";
@@ -72,6 +80,12 @@ export function switchMainView(viewName) {
     if (bench) bench.style.display = "flex";
     if (navPitch) navPitch.className = "btn-primary";
     renderApp();
+  } else if (viewName === "training") {
+    if (sidebar) sidebar.style.display = "flex";
+    if (training) training.style.display = "block";
+    if (bench) bench.style.display = "none";
+    if (navTraining) navTraining.className = "btn-primary";
+    renderTraining();
   } else if (viewName === "league") {
     if (sidebar) sidebar.style.display = "none";
     if (league) league.style.display = "block";
@@ -119,6 +133,11 @@ export function switchMainView(viewName) {
       mainContent.style.overflowY = "auto";
       mainContent.style.padding = "0";
     }
+  } else if (viewName === "finance") {
+    if (sidebar) sidebar.style.display = "none";
+    if (finance) finance.style.display = "block";
+    if (bench) bench.style.display = "none";
+    renderFinances();
   } else {
     // dashboard
     if (sidebar) sidebar.style.display = "none";
