@@ -59,61 +59,34 @@ export async function setupEventListeners() {
     switchMainView(e.detail);
   });
 
-  // Religando os botões do Menu de Navegação Lateral
-  document
-    .getElementById("navDashboardBtn")
-    ?.addEventListener("click", () => switchMainView("dashboard"));
-  document
-    .getElementById("navPitchBtn")
-    ?.addEventListener("click", () => switchMainView("pitch"));
-  document
-    .getElementById("navTableBtn")
-    ?.addEventListener("click", () => switchMainView("table"));
-  document
-    .getElementById("navTrainingBtn")
-    ?.addEventListener("click", () => switchMainView("training"));
-  document
-    .getElementById("headerHomeBtn")
-    ?.addEventListener("click", () => showScreen("mainMenuScreen"));
+  const navLinks = {
+    navDashboardBtn: "dashboard",
+    navPitchBtn: "pitch",
+    navTableBtn: "table",
+    navTrainingBtn: "training",
+    dashToPitchBtn: "pitch",
+    dashToTableBtn: "table",
+    dashToTransferBtn: "transfer",
+    dashToTrainingBtn: "training",
+    dashToFinanceBtn: "finance",
+    dashToLeagueBtn: "league",
+    dashToTeamStatsBtn: "teamStats",
+    dashToInboxBtn: "inbox",
+    navTeamStatsDashboardBtn: "dashboard",
+    navLeagueDashboardBtn: "dashboard",
+    navTransferDashboardBtn: "dashboard"
+  };
 
-  document
-    .getElementById("dashToPitchBtn")
-    ?.addEventListener("click", () => switchMainView("pitch"));
-  document
-    .getElementById("dashToTableBtn")
-    ?.addEventListener("click", () => switchMainView("table"));
-  document
-    .getElementById("dashToTransferBtn")
-    ?.addEventListener("click", () => switchMainView("transfer"));
-  document
-    .getElementById("dashToTrainingBtn")
-    ?.addEventListener("click", () => switchMainView("training"));
-  document
-    .getElementById("dashToFinanceBtn")
-    ?.addEventListener("click", () => switchMainView("finance"));
-
-  document.getElementById("dashToLeagueBtn")?.addEventListener("click", () => {
-    switchMainView("league");
-    renderLeagueData();
+  Object.entries(navLinks).forEach(([id, view]) => {
+    document.getElementById(id)?.addEventListener("click", () => {
+      switchMainView(view);
+      if (id === "dashToLeagueBtn") renderLeagueData();
+    });
   });
 
   document
-    .getElementById("dashToTeamStatsBtn")
-    ?.addEventListener("click", () => switchMainView("teamStats"));
-  document
-    .getElementById("dashToInboxBtn")
-    ?.addEventListener("click", () => switchMainView("inbox"));
-  document
-    .getElementById("navTeamStatsDashboardBtn")
-    ?.addEventListener("click", () => switchMainView("dashboard"));
-
-  document
-    .getElementById("navLeagueDashboardBtn")
-    ?.addEventListener("click", () => switchMainView("dashboard"));
-
-  document
-    .getElementById("navTransferDashboardBtn")
-    ?.addEventListener("click", () => switchMainView("dashboard"));
+    .getElementById("headerHomeBtn")
+    ?.addEventListener("click", () => showScreen("mainMenuScreen"));
 
   // Eventos das Abas do Mercado
   document.getElementById("transferTabBuyBtn")?.addEventListener("click", () => {
@@ -518,4 +491,3 @@ export function initCareerEvents(teams) {
   const backBtn = document.getElementById("backToCoachBtn");
   if (backBtn) backBtn.onclick = () => showScreen("coachCreationScreen");
 }
-

@@ -119,6 +119,7 @@ export async function applyMatchResults(
   compType = "league",
 ) {
   let updated = false;
+  const squadMap = new Map(squad.map(p => [p.id, p]));
 
   squad.forEach((p) => {
     if (!p.compStats) p.compStats = {};
@@ -173,7 +174,7 @@ export async function applyMatchResults(
   });
 
   scorersIds.forEach((id) => {
-    let p = squad.find((x) => x.id === id);
+    let p = squadMap.get(id);
     if (p) {
       p.goals = (p.goals || 0) + 1;
       p.compStats[compType].goals++;
@@ -182,7 +183,7 @@ export async function applyMatchResults(
   });
 
   assistsIds.forEach((id) => {
-    let p = squad.find((x) => x.id === id);
+    let p = squadMap.get(id);
     if (p) {
       p.assists = (p.assists || 0) + 1;
       p.compStats[compType].assists++;
@@ -191,7 +192,7 @@ export async function applyMatchResults(
   });
 
   cards.forEach((c) => {
-    let p = squad.find((x) => x.id === c.id);
+    let p = squadMap.get(c.id);
     if (p) {
       if (c.type === "red") {
         p.matchStatus = "red";
@@ -209,7 +210,7 @@ export async function applyMatchResults(
   });
 
   injuriesList.forEach((inj) => {
-    let p = squad.find((x) => x.id === inj.id);
+    let p = squadMap.get(inj.id);
     if (p) {
       p.matchStatus = "injury";
       p.status = "reserva";
@@ -218,7 +219,7 @@ export async function applyMatchResults(
   });
 
   tacklesIds.forEach((id) => {
-    let p = squad.find((x) => x.id === id);
+    let p = squadMap.get(id);
     if (p) {
       p.tackles = (p.tackles || 0) + 1;
       p.compStats[compType].tackles++;

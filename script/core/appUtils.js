@@ -29,9 +29,13 @@ export const calculateMarketValue = (rating, age = 25) => {
  * Formata valores numéricos para moeda (Ex: € 150.5M)
  */
 export const formatMoney = (value) => {
-  if (value >= 1000000) return `€${(value / 1000000).toFixed(1)}M`;
-  if (value >= 1000) return `€${(value / 1000).toFixed(0)}K`;
-  return `€${value}`;
+  const isNegative = value < 0;
+  const abs = Math.abs(value);
+  const sign = isNegative ? "-" : "";
+  if (abs >= 1e9) return `${sign}€${(abs / 1e9).toFixed(2)}B`;
+  if (abs >= 1e6) return `${sign}€${(abs / 1e6).toFixed(1)}M`;
+  if (abs >= 1e3) return `${sign}€${(abs / 1e3).toFixed(0)}K`;
+  return `${sign}€${abs}`;
 };
 
 /**
