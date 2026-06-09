@@ -786,8 +786,8 @@ export async function getNewsList(info, includeArchived = false) {
     if (userMatch) {
       const opponent =
         userMatch.home === info.teamFile
-          ? userMatch.awayName
-          : userMatch.homeName;
+          ? normalizeTeamName(userMatch.away)
+          : normalizeTeamName(userMatch.home);
       const stadium =
         userMatch.home === info.teamFile ? "em casa" : "fora de casa";
       const leagueName = leagueData.divisions[0].name;
